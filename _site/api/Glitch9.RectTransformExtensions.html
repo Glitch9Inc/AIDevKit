@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RectTransformExtensions | AI DevKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RectTransformExtensions | AI DevKit ">
+      
+      <meta name="description" content="RectTransform의 변수들과 함수들이 존나 헷갈려서 만든 RawName">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_RectTransformExtensions.md&amp;value=---%0Auid%3A%20Glitch9.RectTransformExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AI DevKit">
+            AI DevKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Glitch9.RectTransformExtensions">
+
+
+
+  <h1 id="Glitch9_RectTransformExtensions" data-uid="Glitch9.RectTransformExtensions" class="text-break">
+Class RectTransformExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>RectTransform의 변수들과 함수들이 존나 헷갈려서 만든 RawName</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RectTransformExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RectTransformExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Glitch9_RectTransformExtensions_Expand_" data-uid="Glitch9.RectTransformExtensions.Expand*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_Expand_RectTransform_RectOffset_" data-uid="Glitch9.RectTransformExtensions.Expand(RectTransform,RectOffset)">
+  Expand(RectTransform, RectOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Expand(this RectTransform rectTransform, RectOffset padding = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rectTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>padding</code> <span class="xref">RectOffset</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_ExpandBottom_" data-uid="Glitch9.RectTransformExtensions.ExpandBottom*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_ExpandBottom_RectTransform_RectOffset_" data-uid="Glitch9.RectTransformExtensions.ExpandBottom(RectTransform,RectOffset)">
+  ExpandBottom(RectTransform, RectOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExpandBottom(this RectTransform rectTransform, RectOffset padding = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rectTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>padding</code> <span class="xref">RectOffset</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_ExpandHorizontally_" data-uid="Glitch9.RectTransformExtensions.ExpandHorizontally*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_ExpandHorizontally_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.ExpandHorizontally(RectTransform,System.Single)">
+  ExpandHorizontally(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExpandHorizontally(this RectTransform rectTransform, float height = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rectTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_ExpandLeft_" data-uid="Glitch9.RectTransformExtensions.ExpandLeft*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_ExpandLeft_RectTransform_RectOffset_" data-uid="Glitch9.RectTransformExtensions.ExpandLeft(RectTransform,RectOffset)">
+  ExpandLeft(RectTransform, RectOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExpandLeft(this RectTransform rectTransform, RectOffset padding = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rectTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>padding</code> <span class="xref">RectOffset</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_ExpandRight_" data-uid="Glitch9.RectTransformExtensions.ExpandRight*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_ExpandRight_RectTransform_RectOffset_" data-uid="Glitch9.RectTransformExtensions.ExpandRight(RectTransform,RectOffset)">
+  ExpandRight(RectTransform, RectOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExpandRight(this RectTransform rectTransform, RectOffset padding = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rectTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>padding</code> <span class="xref">RectOffset</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_ExpandTop_" data-uid="Glitch9.RectTransformExtensions.ExpandTop*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_ExpandTop_RectTransform_RectOffset_" data-uid="Glitch9.RectTransformExtensions.ExpandTop(RectTransform,RectOffset)">
+  ExpandTop(RectTransform, RectOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExpandTop(this RectTransform rectTransform, RectOffset padding = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rectTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>padding</code> <span class="xref">RectOffset</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_ExpandVertically_" data-uid="Glitch9.RectTransformExtensions.ExpandVertically*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_ExpandVertically_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.ExpandVertically(RectTransform,System.Single)">
+  ExpandVertically(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExpandVertically(this RectTransform rectTransform, float width = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rectTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_ResetAll_" data-uid="Glitch9.RectTransformExtensions.ResetAll*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_ResetAll_Transform_" data-uid="Glitch9.RectTransformExtensions.ResetAll(Transform)">
+  ResetAll(Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetAll(this Transform transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_ResetPivotToDefault_" data-uid="Glitch9.RectTransformExtensions.ResetPivotToDefault*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_ResetPivotToDefault_RectTransform_" data-uid="Glitch9.RectTransformExtensions.ResetPivotToDefault(RectTransform)">
+  ResetPivotToDefault(RectTransform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetPivotToDefault(this RectTransform rectTransform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rectTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_ResetPositionToZero_" data-uid="Glitch9.RectTransformExtensions.ResetPositionToZero*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_ResetPositionToZero_RectTransform_" data-uid="Glitch9.RectTransformExtensions.ResetPositionToZero(RectTransform)">
+  ResetPositionToZero(RectTransform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetPositionToZero(this RectTransform rectTransform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rectTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetActive_" data-uid="Glitch9.RectTransformExtensions.SetActive*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetActive_RectTransform_System_Boolean_" data-uid="Glitch9.RectTransformExtensions.SetActive(RectTransform,System.Boolean)">
+  SetActive(RectTransform, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetActive(this RectTransform rect, bool active)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>active</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetAnchor_" data-uid="Glitch9.RectTransformExtensions.SetAnchor*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetAnchor_RectTransform_TextAnchor_" data-uid="Glitch9.RectTransformExtensions.SetAnchor(RectTransform,TextAnchor)">
+  SetAnchor(RectTransform, TextAnchor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAnchor(this RectTransform rect, TextAnchor anchor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>anchor</code> <span class="xref">TextAnchor</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetHeight_" data-uid="Glitch9.RectTransformExtensions.SetHeight*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetHeight_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.SetHeight(RectTransform,System.Single)">
+  SetHeight(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetHeight(this RectTransform rect, float height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetParentAndReset_" data-uid="Glitch9.RectTransformExtensions.SetParentAndReset*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetParentAndReset_Transform_Transform_" data-uid="Glitch9.RectTransformExtensions.SetParentAndReset(Transform,Transform)">
+  SetParentAndReset(Transform, Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform SetParentAndReset(this Transform transform, Transform parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>parent</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetPosX_" data-uid="Glitch9.RectTransformExtensions.SetPosX*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetPosX_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.SetPosX(RectTransform,System.Single)">
+  SetPosX(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPosX(this RectTransform rect, float x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetPosY_" data-uid="Glitch9.RectTransformExtensions.SetPosY*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetPosY_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.SetPosY(RectTransform,System.Single)">
+  SetPosY(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPosY(this RectTransform rect, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetPosZ_" data-uid="Glitch9.RectTransformExtensions.SetPosZ*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetPosZ_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.SetPosZ(RectTransform,System.Single)">
+  SetPosZ(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPosZ(this RectTransform rect, float z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetPositionToBottom_" data-uid="Glitch9.RectTransformExtensions.SetPositionToBottom*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetPositionToBottom_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.SetPositionToBottom(RectTransform,System.Single)">
+  SetPositionToBottom(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPositionToBottom(this RectTransform rect, float bottom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>bottom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetPositionToLeft_" data-uid="Glitch9.RectTransformExtensions.SetPositionToLeft*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetPositionToLeft_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.SetPositionToLeft(RectTransform,System.Single)">
+  SetPositionToLeft(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPositionToLeft(this RectTransform rect, float left)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetPositionToRight_" data-uid="Glitch9.RectTransformExtensions.SetPositionToRight*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetPositionToRight_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.SetPositionToRight(RectTransform,System.Single)">
+  SetPositionToRight(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPositionToRight(this RectTransform rect, float right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetPositionToTop_" data-uid="Glitch9.RectTransformExtensions.SetPositionToTop*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetPositionToTop_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.SetPositionToTop(RectTransform,System.Single)">
+  SetPositionToTop(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPositionToTop(this RectTransform rect, float top)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>top</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_RectTransformExtensions_SetWidth_" data-uid="Glitch9.RectTransformExtensions.SetWidth*"></a>
+
+  <h3 id="Glitch9_RectTransformExtensions_SetWidth_RectTransform_System_Single_" data-uid="Glitch9.RectTransformExtensions.SetWidth(RectTransform,System.Single)">
+  SetWidth(RectTransform, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWidth(this RectTransform rect, float width)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Extensions/Unity/RectTransformExtensions.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

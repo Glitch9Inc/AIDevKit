@@ -1,0 +1,1606 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  id: RealtimeEventReceiverBase
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  children:
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.Conversation)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated(System.String,System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted(System.String,System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted(System.String,System.Nullable{System.Int32},System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta(System.String,System.String,System.Nullable{System.Int32},System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed(System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.ErrorResponse)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError(System.String,Glitch9.AIDevKit.ErrorResponse)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared(System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted(System.String,System.String,System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted(System.String,System.Nullable{System.Int32},System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped(System.String,System.Nullable{System.Int32},System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[])
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionStateChanged
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  langs:
+  - csharp
+  - vb
+  name: RealtimeEventReceiverBase
+  nameWithType: RealtimeEventReceiverBase
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  type: Class
+  source:
+    id: RealtimeEventReceiverBase
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Extend this class if you want to do custom handling of Realtime Events.
+  example: []
+  syntax:
+    content: public abstract class RealtimeEventReceiverBase
+    content.vb: Public MustInherit Class RealtimeEventReceiverBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiver
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionStateChanged
+  commentId: F:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionStateChanged
+  id: OnSessionStateChanged
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnSessionStateChanged
+  nameWithType: RealtimeEventReceiverBase.OnSessionStateChanged
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionStateChanged
+  type: Field
+  source:
+    id: OnSessionStateChanged
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 10
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: protected Action<string> OnSessionStateChanged
+    return:
+      type: System.Action{System.String}
+    content.vb: Protected OnSessionStateChanged As Action(Of String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent)
+  id: OnRealtimeEventReceived(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnRealtimeEventReceived(RealtimeEvent)
+  nameWithType: RealtimeEventReceiverBase.OnRealtimeEventReceived(RealtimeEvent)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent)
+  type: Method
+  source:
+    id: OnRealtimeEventReceived
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 13
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public void OnRealtimeEventReceived(RealtimeEvent realtimeEvent)
+    parameters:
+    - id: realtimeEvent
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+    content.vb: Public Sub OnRealtimeEventReceived(realtimeEvent As RealtimeEvent)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError(System.String,Glitch9.AIDevKit.ErrorResponse)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError(System.String,Glitch9.AIDevKit.ErrorResponse)
+  id: OnError(System.String,Glitch9.AIDevKit.ErrorResponse)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnError(string, ErrorResponse)
+  nameWithType: RealtimeEventReceiverBase.OnError(string, ErrorResponse)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError(string, Glitch9.AIDevKit.ErrorResponse)
+  type: Method
+  source:
+    id: OnError
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 126
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when an error occurs.
+  example: []
+  syntax:
+    content: public virtual void OnError(string eventId, ErrorResponse error)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: error
+      type: Glitch9.AIDevKit.ErrorResponse
+      description: Details of the error.
+    content.vb: Public Overridable Sub OnError(eventId As String, [error] As ErrorResponse)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError*
+  nameWithType.vb: RealtimeEventReceiverBase.OnError(String, ErrorResponse)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError(String, Glitch9.AIDevKit.ErrorResponse)
+  name.vb: OnError(String, ErrorResponse)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  id: OnSessionCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnSessionCreated(string, RealtimeSession)
+  nameWithType: RealtimeEventReceiverBase.OnSessionCreated(string, RealtimeSession)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated(string, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  type: Method
+  source:
+    id: OnSessionCreated
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 136
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when a session is created. Emitted automatically when a new connection is established.
+  example: []
+  syntax:
+    content: public virtual void OnSessionCreated(string eventId, RealtimeSession session)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: session
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
+      description: The session resource.
+    content.vb: Public Overridable Sub OnSessionCreated(eventId As String, session As RealtimeSession)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated*
+  nameWithType.vb: RealtimeEventReceiverBase.OnSessionCreated(String, RealtimeSession)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated(String, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  name.vb: OnSessionCreated(String, RealtimeSession)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  id: OnSessionUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnSessionUpdated(string, RealtimeSession)
+  nameWithType: RealtimeEventReceiverBase.OnSessionUpdated(string, RealtimeSession)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated(string, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  type: Method
+  source:
+    id: OnSessionUpdated
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 147
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when a session is updated.
+  example: []
+  syntax:
+    content: public virtual void OnSessionUpdated(string eventId, RealtimeSession session)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: session
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
+      description: The updated session resource.
+    content.vb: Public Overridable Sub OnSessionUpdated(eventId As String, session As RealtimeSession)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated*
+  nameWithType.vb: RealtimeEventReceiverBase.OnSessionUpdated(String, RealtimeSession)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated(String, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  name.vb: OnSessionUpdated(String, RealtimeSession)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.Conversation)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.Conversation)
+  id: OnConversationCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.Conversation)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnConversationCreated(string, Conversation)
+  nameWithType: RealtimeEventReceiverBase.OnConversationCreated(string, Conversation)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated(string, Glitch9.AIDevKit.OpenAI.Realtime.Conversation)
+  type: Method
+  source:
+    id: OnConversationCreated
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 158
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when a conversation is created. Emitted right after session creation.
+  example: []
+  syntax:
+    content: public virtual void OnConversationCreated(string eventId, Conversation conversation)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: conversation
+      type: Glitch9.AIDevKit.OpenAI.Realtime.Conversation
+      description: The conversation resource.
+    content.vb: Public Overridable Sub OnConversationCreated(eventId As String, conversation As Conversation)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated*
+  nameWithType.vb: RealtimeEventReceiverBase.OnConversationCreated(String, Conversation)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated(String, Glitch9.AIDevKit.OpenAI.Realtime.Conversation)
+  name.vb: OnConversationCreated(String, Conversation)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted(System.String,System.String,System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted(System.String,System.String,System.String)
+  id: OnInputAudioBufferCommitted(System.String,System.String,System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnInputAudioBufferCommitted(string, string, string)
+  nameWithType: RealtimeEventReceiverBase.OnInputAudioBufferCommitted(string, string, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted(string, string, string)
+  type: Method
+  source:
+    id: OnInputAudioBufferCommitted
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 170
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when an input audio buffer is committed, either by the client or automatically in server VAD mode.
+  example: []
+  syntax:
+    content: public virtual void OnInputAudioBufferCommitted(string eventId, string previousItemId, string itemId)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: previousItemId
+      type: System.String
+      description: The ID of the preceding item.
+    - id: itemId
+      type: System.String
+      description: The ID of the new item.
+    content.vb: Public Overridable Sub OnInputAudioBufferCommitted(eventId As String, previousItemId As String, itemId As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted*
+  nameWithType.vb: RealtimeEventReceiverBase.OnInputAudioBufferCommitted(String, String, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted(String, String, String)
+  name.vb: OnInputAudioBufferCommitted(String, String, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared(System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared(System.String)
+  id: OnInputAudioBufferCleared(System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnInputAudioBufferCleared(string)
+  nameWithType: RealtimeEventReceiverBase.OnInputAudioBufferCleared(string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared(string)
+  type: Method
+  source:
+    id: OnInputAudioBufferCleared
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 189
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when the input audio buffer is cleared by the client.
+  example: []
+  syntax:
+    content: public virtual void OnInputAudioBufferCleared(string eventId)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    content.vb: Public Overridable Sub OnInputAudioBufferCleared(eventId As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared*
+  nameWithType.vb: RealtimeEventReceiverBase.OnInputAudioBufferCleared(String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared(String)
+  name.vb: OnInputAudioBufferCleared(String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted(System.String,System.Nullable{System.Int32},System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted(System.String,System.Nullable{System.Int32},System.String)
+  id: OnInputAudioBufferSpeechStarted(System.String,System.Nullable{System.Int32},System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnInputAudioBufferSpeechStarted(string, int?, string)
+  nameWithType: RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted(string, int?, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted(string, int?, string)
+  type: Method
+  source:
+    id: OnInputAudioBufferSpeechStarted
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 201
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned in server turn detection mode when speech is detected.
+  example: []
+  syntax:
+    content: public virtual void OnInputAudioBufferSpeechStarted(string eventId, int? audioStartMs, string itemId)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: audioStartMs
+      type: System.Nullable{System.Int32}
+      description: Milliseconds since the session started when speech was detected.
+    - id: itemId
+      type: System.String
+      description: The ID of the new item.
+    content.vb: Public Overridable Sub OnInputAudioBufferSpeechStarted(eventId As String, audioStartMs As Integer?, itemId As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted*
+  nameWithType.vb: RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted(String, Integer?, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted(String, Integer?, String)
+  name.vb: OnInputAudioBufferSpeechStarted(String, Integer?, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped(System.String,System.Nullable{System.Int32},System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped(System.String,System.Nullable{System.Int32},System.String)
+  id: OnInputAudioBufferSpeechStopped(System.String,System.Nullable{System.Int32},System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnInputAudioBufferSpeechStopped(string, int?, string)
+  nameWithType: RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped(string, int?, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped(string, int?, string)
+  type: Method
+  source:
+    id: OnInputAudioBufferSpeechStopped
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 213
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned in server turn detection mode when speech stops.
+  example: []
+  syntax:
+    content: public virtual void OnInputAudioBufferSpeechStopped(string eventId, int? audioEndMs, string itemId)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: audioEndMs
+      type: System.Nullable{System.Int32}
+      description: Milliseconds since the session started when speech stopped.
+    - id: itemId
+      type: System.String
+      description: The ID of the new item.
+    content.vb: Public Overridable Sub OnInputAudioBufferSpeechStopped(eventId As String, audioEndMs As Integer?, itemId As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped*
+  nameWithType.vb: RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped(String, Integer?, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped(String, Integer?, String)
+  name.vb: OnInputAudioBufferSpeechStopped(String, Integer?, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated(System.String,System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated(System.String,System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  id: OnConversationItemCreated(System.String,System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnConversationItemCreated(string, string, RealtimeItem)
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemCreated(string, string, RealtimeItem)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated(string, string, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  type: Method
+  source:
+    id: OnConversationItemCreated
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 225
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when a conversation item is created.
+  example: []
+  syntax:
+    content: public virtual void OnConversationItemCreated(string eventId, string previousItemId, RealtimeItem item)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: previousItemId
+      type: System.String
+      description: The ID of the preceding item.
+    - id: item
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+      description: The newly created conversation item.
+    content.vb: Public Overridable Sub OnConversationItemCreated(eventId As String, previousItemId As String, item As RealtimeItem)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated*
+  nameWithType.vb: RealtimeEventReceiverBase.OnConversationItemCreated(String, String, RealtimeItem)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated(String, String, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  name.vb: OnConversationItemCreated(String, String, RealtimeItem)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted(System.String,System.Nullable{System.Int32},System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted(System.String,System.Nullable{System.Int32},System.String)
+  id: OnConversationItemInputAudioTranscriptionCompleted(System.String,System.Nullable{System.Int32},System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnConversationItemInputAudioTranscriptionCompleted(string, int?, string)
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted(string, int?, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted(string, int?, string)
+  type: Method
+  source:
+    id: OnConversationItemInputAudioTranscriptionCompleted
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 237
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when input audio transcription is enabled and a transcription succeeds.
+  example: []
+  syntax:
+    content: public virtual void OnConversationItemInputAudioTranscriptionCompleted(string eventId, int? contentIndex, string transcription)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part containing the audio.
+    - id: transcription
+      type: System.String
+      description: The transcribed text.
+    content.vb: Public Overridable Sub OnConversationItemInputAudioTranscriptionCompleted(eventId As String, contentIndex As Integer?, transcription As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted*
+  nameWithType.vb: RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted(String, Integer?, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted(String, Integer?, String)
+  name.vb: OnConversationItemInputAudioTranscriptionCompleted(String, Integer?, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed(System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.ErrorResponse)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed(System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.ErrorResponse)
+  id: OnConversationItemInputAudioTranscriptionFailed(System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.ErrorResponse)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnConversationItemInputAudioTranscriptionFailed(string, int?, ErrorResponse)
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed(string, int?, ErrorResponse)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed(string, int?, Glitch9.AIDevKit.ErrorResponse)
+  type: Method
+  source:
+    id: OnConversationItemInputAudioTranscriptionFailed
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 249
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when input audio transcription is configured, and a transcription request for a user message failed.
+  example: []
+  syntax:
+    content: public virtual void OnConversationItemInputAudioTranscriptionFailed(string eventId, int? contentIndex, ErrorResponse error)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part containing the audio.
+    - id: error
+      type: Glitch9.AIDevKit.ErrorResponse
+      description: Details of the transcription error.
+    content.vb: Public Overridable Sub OnConversationItemInputAudioTranscriptionFailed(eventId As String, contentIndex As Integer?, [error] As ErrorResponse)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed*
+  nameWithType.vb: RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed(String, Integer?, ErrorResponse)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed(String, Integer?, Glitch9.AIDevKit.ErrorResponse)
+  name.vb: OnConversationItemInputAudioTranscriptionFailed(String, Integer?, ErrorResponse)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  id: OnConversationItemTruncated(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnConversationItemTruncated(string, string, int?, int?)
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemTruncated(string, string, int?, int?)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated(string, string, int?, int?)
+  type: Method
+  source:
+    id: OnConversationItemTruncated
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 263
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when an earlier assistant audio message item is truncated by the client.
+  example: []
+  syntax:
+    content: public virtual void OnConversationItemTruncated(string eventId, string itemId, int? contentIndex, int? audioEndMs)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: itemId
+      type: System.String
+      description: The ID of the assistant message item that was truncated.
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part that was truncated.
+    - id: audioEndMs
+      type: System.Nullable{System.Int32}
+      description: The duration up to which the audio was truncated, in milliseconds.
+    content.vb: Public Overridable Sub OnConversationItemTruncated(eventId As String, itemId As String, contentIndex As Integer?, audioEndMs As Integer?)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated*
+  nameWithType.vb: RealtimeEventReceiverBase.OnConversationItemTruncated(String, String, Integer?, Integer?)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated(String, String, Integer?, Integer?)
+  name.vb: OnConversationItemTruncated(String, String, Integer?, Integer?)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted(System.String,System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted(System.String,System.String)
+  id: OnConversationItemDeleted(System.String,System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnConversationItemDeleted(string, string)
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemDeleted(string, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted(string, string)
+  type: Method
+  source:
+    id: OnConversationItemDeleted
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 274
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when an item in the conversation is deleted.
+  example: []
+  syntax:
+    content: public virtual void OnConversationItemDeleted(string eventId, string itemId)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: itemId
+      type: System.String
+      description: The ID of the item that was deleted.
+    content.vb: Public Overridable Sub OnConversationItemDeleted(eventId As String, itemId As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted*
+  nameWithType.vb: RealtimeEventReceiverBase.OnConversationItemDeleted(String, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted(String, String)
+  name.vb: OnConversationItemDeleted(String, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  id: OnResponseCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseCreated(string, RealtimeItem)
+  nameWithType: RealtimeEventReceiverBase.OnResponseCreated(string, RealtimeItem)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated(string, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  type: Method
+  source:
+    id: OnResponseCreated
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 285
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when a new Response is created.
+  example: []
+  syntax:
+    content: public virtual void OnResponseCreated(string eventId, RealtimeItem response)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: response
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+      description: The response resource.
+    content.vb: Public Overridable Sub OnResponseCreated(eventId As String, response As RealtimeItem)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseCreated(String, RealtimeItem)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated(String, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  name.vb: OnResponseCreated(String, RealtimeItem)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  id: OnResponseDone(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseDone(string, RealtimeItem)
+  nameWithType: RealtimeEventReceiverBase.OnResponseDone(string, RealtimeItem)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone(string, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  type: Method
+  source:
+    id: OnResponseDone
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 297
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: >-
+    Returned when a Response is done streaming. 
+
+    Always emitted, no matter the final state.
+  example: []
+  syntax:
+    content: public virtual void OnResponseDone(string eventId, RealtimeItem response)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: response
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+      description: The response resource.
+    content.vb: Public Overridable Sub OnResponseDone(eventId As String, response As RealtimeItem)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseDone(String, RealtimeItem)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone(String, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  name.vb: OnResponseDone(String, RealtimeItem)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  id: OnResponseOutputItemAdded(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseOutputItemAdded(string, string, int?, RealtimeItem)
+  nameWithType: RealtimeEventReceiverBase.OnResponseOutputItemAdded(string, string, int?, RealtimeItem)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded(string, string, int?, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  type: Method
+  source:
+    id: OnResponseOutputItemAdded
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 310
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when a new Item is created during response generation.
+  example: []
+  syntax:
+    content: public virtual void OnResponseOutputItemAdded(string eventId, string responseId, int? itemIndex, RealtimeItem item)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response to which the item belongs.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: item
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+      description: The created item.
+    content.vb: Public Overridable Sub OnResponseOutputItemAdded(eventId As String, responseId As String, itemIndex As Integer?, item As RealtimeItem)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseOutputItemAdded(String, String, Integer?, RealtimeItem)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded(String, String, Integer?, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  name.vb: OnResponseOutputItemAdded(String, String, Integer?, RealtimeItem)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  id: OnResponseOutputItemDone(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseOutputItemDone(string, string, int?, RealtimeItem)
+  nameWithType: RealtimeEventReceiverBase.OnResponseOutputItemDone(string, string, int?, RealtimeItem)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone(string, string, int?, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  type: Method
+  source:
+    id: OnResponseOutputItemDone
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 323
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when an Item is done streaming.
+  example: []
+  syntax:
+    content: public virtual void OnResponseOutputItemDone(string eventId, string responseId, int? itemIndex, RealtimeItem item)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response to which the item belongs.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: item
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+      description: The completed item.
+    content.vb: Public Overridable Sub OnResponseOutputItemDone(eventId As String, responseId As String, itemIndex As Integer?, item As RealtimeItem)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseOutputItemDone(String, String, Integer?, RealtimeItem)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone(String, String, Integer?, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)
+  name.vb: OnResponseOutputItemDone(String, String, Integer?, RealtimeItem)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  id: OnResponseContentPartAdded(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseContentPartAdded(string, string, string, int?, int?, RealtimeItemContent)
+  nameWithType: RealtimeEventReceiverBase.OnResponseContentPartAdded(string, string, string, int?, int?, RealtimeItemContent)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded(string, string, string, int?, int?, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  type: Method
+  source:
+    id: OnResponseContentPartAdded
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 338
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when a new content part is added to an assistant message item during response generation.
+  example: []
+  syntax:
+    content: public virtual void OnResponseContentPartAdded(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, RealtimeItemContent part)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response.
+    - id: itemId
+      type: System.String
+      description: The ID of the item to which the content part was added.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part in the item's content array.
+    - id: part
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent
+      description: The added content part.
+    content.vb: Public Overridable Sub OnResponseContentPartAdded(eventId As String, responseId As String, itemId As String, itemIndex As Integer?, contentIndex As Integer?, part As RealtimeItemContent)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseContentPartAdded(String, String, String, Integer?, Integer?, RealtimeItemContent)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded(String, String, String, Integer?, Integer?, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  name.vb: OnResponseContentPartAdded(String, String, String, Integer?, Integer?, RealtimeItemContent)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  id: OnResponseContentPartDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseContentPartDone(string, string, string, int?, int?, RealtimeItemContent)
+  nameWithType: RealtimeEventReceiverBase.OnResponseContentPartDone(string, string, string, int?, int?, RealtimeItemContent)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone(string, string, string, int?, int?, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  type: Method
+  source:
+    id: OnResponseContentPartDone
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 353
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when a content part is done streaming in an assistant message item.
+  example: []
+  syntax:
+    content: public virtual void OnResponseContentPartDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, RealtimeItemContent part)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response.
+    - id: itemId
+      type: System.String
+      description: The ID of the item.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part in the item's content array.
+    - id: part
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent
+      description: The completed content part.
+    content.vb: Public Overridable Sub OnResponseContentPartDone(eventId As String, responseId As String, itemId As String, itemIndex As Integer?, contentIndex As Integer?, part As RealtimeItemContent)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseContentPartDone(String, String, String, Integer?, Integer?, RealtimeItemContent)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone(String, String, String, Integer?, Integer?, Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)
+  name.vb: OnResponseContentPartDone(String, String, String, Integer?, Integer?, RealtimeItemContent)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  id: OnResponseTextDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseTextDelta(string, string, string, int?, int?, string)
+  nameWithType: RealtimeEventReceiverBase.OnResponseTextDelta(string, string, string, int?, int?, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta(string, string, string, int?, int?, string)
+  type: Method
+  source:
+    id: OnResponseTextDelta
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 368
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when the text value of a "text" content part is updated.
+  example: []
+  syntax:
+    content: public virtual void OnResponseTextDelta(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string delta)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response.
+    - id: itemId
+      type: System.String
+      description: The ID of the item.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part in the item's content array.
+    - id: delta
+      type: System.String
+      description: The text delta.
+    content.vb: Public Overridable Sub OnResponseTextDelta(eventId As String, responseId As String, itemId As String, itemIndex As Integer?, contentIndex As Integer?, delta As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseTextDelta(String, String, String, Integer?, Integer?, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta(String, String, String, Integer?, Integer?, String)
+  name.vb: OnResponseTextDelta(String, String, String, Integer?, Integer?, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  id: OnResponseTextDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseTextDone(string, string, string, int?, int?, string)
+  nameWithType: RealtimeEventReceiverBase.OnResponseTextDone(string, string, string, int?, int?, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone(string, string, string, int?, int?, string)
+  type: Method
+  source:
+    id: OnResponseTextDone
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 383
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when the text value of a "text" content part is done streaming.
+  example: []
+  syntax:
+    content: public virtual void OnResponseTextDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string text)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response.
+    - id: itemId
+      type: System.String
+      description: The ID of the item.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part in the item's content array.
+    - id: text
+      type: System.String
+      description: The final text content.
+    content.vb: Public Overridable Sub OnResponseTextDone(eventId As String, responseId As String, itemId As String, itemIndex As Integer?, contentIndex As Integer?, text As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseTextDone(String, String, String, Integer?, Integer?, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone(String, String, String, Integer?, Integer?, String)
+  name.vb: OnResponseTextDone(String, String, String, Integer?, Integer?, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  id: OnResponseAudioTranscriptDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseAudioTranscriptDelta(string, string, string, int?, int?, string)
+  nameWithType: RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta(string, string, string, int?, int?, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta(string, string, string, int?, int?, string)
+  type: Method
+  source:
+    id: OnResponseAudioTranscriptDelta
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 399
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when the model-generated transcription of audio output is updated.
+  example: []
+  syntax:
+    content: public virtual void OnResponseAudioTranscriptDelta(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string delta)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response.
+    - id: itemId
+      type: System.String
+      description: The ID of the item.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part in the item's content array.
+    - id: delta
+      type: System.String
+      description: The transcript delta.
+    content.vb: Public Overridable Sub OnResponseAudioTranscriptDelta(eventId As String, responseId As String, itemId As String, itemIndex As Integer?, contentIndex As Integer?, delta As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta(String, String, String, Integer?, Integer?, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta(String, String, String, Integer?, Integer?, String)
+  name.vb: OnResponseAudioTranscriptDelta(String, String, String, Integer?, Integer?, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  id: OnResponseAudioTranscriptDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseAudioTranscriptDone(string, string, string, int?, int?, string)
+  nameWithType: RealtimeEventReceiverBase.OnResponseAudioTranscriptDone(string, string, string, int?, int?, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone(string, string, string, int?, int?, string)
+  type: Method
+  source:
+    id: OnResponseAudioTranscriptDone
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 415
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when the model-generated transcription of audio output is done streaming.
+  example: []
+  syntax:
+    content: public virtual void OnResponseAudioTranscriptDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string transcript)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response.
+    - id: itemId
+      type: System.String
+      description: The ID of the item.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part in the item's content array.
+    - id: transcript
+      type: System.String
+      description: The final transcript of the audio.
+    content.vb: Public Overridable Sub OnResponseAudioTranscriptDone(eventId As String, responseId As String, itemId As String, itemIndex As Integer?, contentIndex As Integer?, transcript As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseAudioTranscriptDone(String, String, String, Integer?, Integer?, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone(String, String, String, Integer?, Integer?, String)
+  name.vb: OnResponseAudioTranscriptDone(String, String, String, Integer?, Integer?, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  id: OnResponseAudioDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseAudioDelta(string, string, string, int?, int?, string)
+  nameWithType: RealtimeEventReceiverBase.OnResponseAudioDelta(string, string, string, int?, int?, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta(string, string, string, int?, int?, string)
+  type: Method
+  source:
+    id: OnResponseAudioDelta
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 431
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when the model-generated audio is updated.
+  example: []
+  syntax:
+    content: public virtual void OnResponseAudioDelta(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string delta)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response.
+    - id: itemId
+      type: System.String
+      description: The ID of the item.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part in the item's content array.
+    - id: delta
+      type: System.String
+      description: Base64-encoded audio data delta.
+    content.vb: Public Overridable Sub OnResponseAudioDelta(eventId As String, responseId As String, itemId As String, itemIndex As Integer?, contentIndex As Integer?, delta As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseAudioDelta(String, String, String, Integer?, Integer?, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta(String, String, String, Integer?, Integer?, String)
+  name.vb: OnResponseAudioDelta(String, String, String, Integer?, Integer?, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  id: OnResponseAudioDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseAudioDone(string, string, string, int?, int?)
+  nameWithType: RealtimeEventReceiverBase.OnResponseAudioDone(string, string, string, int?, int?)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone(string, string, string, int?, int?)
+  type: Method
+  source:
+    id: OnResponseAudioDone
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 446
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when the model-generated audio is done.
+  example: []
+  syntax:
+    content: public virtual void OnResponseAudioDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response.
+    - id: itemId
+      type: System.String
+      description: The ID of the item.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the content part in the item's content array.
+    content.vb: Public Overridable Sub OnResponseAudioDone(eventId As String, responseId As String, itemId As String, itemIndex As Integer?, contentIndex As Integer?)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseAudioDone(String, String, String, Integer?, Integer?)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone(String, String, String, Integer?, Integer?)
+  name.vb: OnResponseAudioDone(String, String, String, Integer?, Integer?)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)
+  id: OnResponseFunctionCallArgumentsDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseFunctionCallArgumentsDelta(string, string, string, int?, string, string)
+  nameWithType: RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta(string, string, string, int?, string, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta(string, string, string, int?, string, string)
+  type: Method
+  source:
+    id: OnResponseFunctionCallArgumentsDelta
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 462
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Returned when the model-generated function call arguments are updated.
+  example: []
+  syntax:
+    content: public virtual void OnResponseFunctionCallArgumentsDelta(string eventId, string responseId, string itemId, int? itemIndex, string callId, string delta)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response.
+    - id: itemId
+      type: System.String
+      description: The ID of the function call item.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: callId
+      type: System.String
+      description: The ID of the function call.
+    - id: delta
+      type: System.String
+      description: The arguments delta as a JSON string.
+    content.vb: Public Overridable Sub OnResponseFunctionCallArgumentsDelta(eventId As String, responseId As String, itemId As String, itemIndex As Integer?, callId As String, delta As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta(String, String, String, Integer?, String, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta(String, String, String, Integer?, String, String)
+  name.vb: OnResponseFunctionCallArgumentsDelta(String, String, String, Integer?, String, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)
+  id: OnResponseFunctionCallArgumentsDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnResponseFunctionCallArgumentsDone(string, string, string, int?, string, string)
+  nameWithType: RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone(string, string, string, int?, string, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone(string, string, string, int?, string, string)
+  type: Method
+  source:
+    id: OnResponseFunctionCallArgumentsDone
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 478
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: >-
+    Returned when the model-generated function call arguments are done streaming. 
+
+    Also emitted when a Response is interrupted, incomplete, or cancelled.
+  example: []
+  syntax:
+    content: public virtual void OnResponseFunctionCallArgumentsDone(string eventId, string responseId, string itemId, int? itemIndex, string callId, string arguments)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: responseId
+      type: System.String
+      description: The ID of the response.
+    - id: itemId
+      type: System.String
+      description: The ID of the function call item.
+    - id: itemIndex
+      type: System.Nullable{System.Int32}
+    - id: callId
+      type: System.String
+      description: The ID of the function call.
+    - id: arguments
+      type: System.String
+      description: The final arguments as a JSON string.
+    content.vb: Public Overridable Sub OnResponseFunctionCallArgumentsDone(eventId As String, responseId As String, itemId As String, itemIndex As Integer?, callId As String, arguments As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone*
+  nameWithType.vb: RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone(String, String, String, Integer?, String, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone(String, String, String, Integer?, String, String)
+  name.vb: OnResponseFunctionCallArgumentsDone(String, String, String, Integer?, String, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[])
+  id: OnRateLimitsUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[])
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnRateLimitsUpdated(string, RateLimit[])
+  nameWithType: RealtimeEventReceiverBase.OnRateLimitsUpdated(string, RateLimit[])
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated(string, Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[])
+  type: Method
+  source:
+    id: OnRateLimitsUpdated
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 489
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Emitted after every "response.done" event to indicate the updated rate limits.
+  example: []
+  syntax:
+    content: public virtual void OnRateLimitsUpdated(string eventId, RateLimit[] rateLimits)
+    parameters:
+    - id: eventId
+      type: System.String
+      description: The unique ID of the event.
+    - id: rateLimits
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[]
+      description: List of rate limit information.
+    content.vb: Public Overridable Sub OnRateLimitsUpdated(eventId As String, rateLimits As RateLimit())
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated*
+  nameWithType.vb: RealtimeEventReceiverBase.OnRateLimitsUpdated(String, RateLimit())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated(String, Glitch9.AIDevKit.OpenAI.Realtime.RateLimit())
+  name.vb: OnRateLimitsUpdated(String, RateLimit())
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta(System.String,System.String,System.Nullable{System.Int32},System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta(System.String,System.String,System.Nullable{System.Int32},System.String)
+  id: OnConversationItemInputAudioTranscriptionDelta(System.String,System.String,System.Nullable{System.Int32},System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  langs:
+  - csharp
+  - vb
+  name: OnConversationItemInputAudioTranscriptionDelta(string, string, int?, string)
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta(string, string, int?, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta(string, string, int?, string)
+  type: Method
+  source:
+    id: OnConversationItemInputAudioTranscriptionDelta
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventReceiverBase.cs
+    startLine: 495
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public virtual void OnConversationItemInputAudioTranscriptionDelta(string eventId, string itemId, int? contentIndex, string delta)
+    parameters:
+    - id: eventId
+      type: System.String
+    - id: itemId
+      type: System.String
+    - id: contentIndex
+      type: System.Nullable{System.Int32}
+    - id: delta
+      type: System.String
+    content.vb: Public Overridable Sub OnConversationItemInputAudioTranscriptionDelta(eventId As String, itemId As String, contentIndex As Integer?, delta As String)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta*
+  nameWithType.vb: RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta(String, String, Integer?, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta(String, String, Integer?, String)
+  name.vb: OnConversationItemInputAudioTranscriptionDelta(String, String, Integer?, String)
+references:
+- uid: Glitch9.AIDevKit.OpenAI.Realtime
+  commentId: N:Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI.Realtime
+  nameWithType: Glitch9.AIDevKit.OpenAI.Realtime
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime
+    name: Realtime
+    href: Glitch9.AIDevKit.OpenAI.Realtime.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime
+    name: Realtime
+    href: Glitch9.AIDevKit.OpenAI.Realtime.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  name: Action<string>
+  nameWithType: Action<string>
+  fullName: System.Action<string>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnRealtimeEventReceived_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_
+  name: OnRealtimeEventReceived
+  nameWithType: RealtimeEventReceiverBase.OnRealtimeEventReceived
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  name: RealtimeEvent
+  nameWithType: RealtimeEvent
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnError_System_String_Glitch9_AIDevKit_ErrorResponse_
+  name: OnError
+  nameWithType: RealtimeEventReceiverBase.OnError
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.ErrorResponse
+  commentId: T:Glitch9.AIDevKit.ErrorResponse
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ErrorResponse.html
+  name: ErrorResponse
+  nameWithType: ErrorResponse
+  fullName: Glitch9.AIDevKit.ErrorResponse
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnSessionCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSession_
+  name: OnSessionCreated
+  nameWithType: RealtimeEventReceiverBase.OnSessionCreated
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession.html
+  name: RealtimeSession
+  nameWithType: RealtimeSession
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnSessionUpdated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSession_
+  name: OnSessionUpdated
+  nameWithType: RealtimeEventReceiverBase.OnSessionUpdated
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_Conversation_
+  name: OnConversationCreated
+  nameWithType: RealtimeEventReceiverBase.OnConversationCreated
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.Conversation
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.Conversation
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.Conversation.html
+  name: Conversation
+  nameWithType: Conversation
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.Conversation
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferCommitted_System_String_System_String_System_String_
+  name: OnInputAudioBufferCommitted
+  nameWithType: RealtimeEventReceiverBase.OnInputAudioBufferCommitted
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferCleared_System_String_
+  name: OnInputAudioBufferCleared
+  nameWithType: RealtimeEventReceiverBase.OnInputAudioBufferCleared
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferSpeechStarted_System_String_System_Nullable_System_Int32__System_String_
+  name: OnInputAudioBufferSpeechStarted
+  nameWithType: RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferSpeechStopped_System_String_System_Nullable_System_Int32__System_String_
+  name: OnInputAudioBufferSpeechStopped
+  nameWithType: RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemCreated_System_String_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_
+  name: OnConversationItemCreated
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemCreated
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html
+  name: RealtimeItem
+  nameWithType: RealtimeItem
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionCompleted_System_String_System_Nullable_System_Int32__System_String_
+  name: OnConversationItemInputAudioTranscriptionCompleted
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionFailed_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_ErrorResponse_
+  name: OnConversationItemInputAudioTranscriptionFailed
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemTruncated_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__
+  name: OnConversationItemTruncated
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemTruncated
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemDeleted_System_String_System_String_
+  name: OnConversationItemDeleted
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemDeleted
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_
+  name: OnResponseCreated
+  nameWithType: RealtimeEventReceiverBase.OnResponseCreated
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseDone_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_
+  name: OnResponseDone
+  nameWithType: RealtimeEventReceiverBase.OnResponseDone
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseOutputItemAdded_System_String_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_
+  name: OnResponseOutputItemAdded
+  nameWithType: RealtimeEventReceiverBase.OnResponseOutputItemAdded
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseOutputItemDone_System_String_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_
+  name: OnResponseOutputItemDone
+  nameWithType: RealtimeEventReceiverBase.OnResponseOutputItemDone
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseContentPartAdded_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemContent_
+  name: OnResponseContentPartAdded
+  nameWithType: RealtimeEventReceiverBase.OnResponseContentPartAdded
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html
+  name: RealtimeItemContent
+  nameWithType: RealtimeItemContent
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseContentPartDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemContent_
+  name: OnResponseContentPartDone
+  nameWithType: RealtimeEventReceiverBase.OnResponseContentPartDone
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseTextDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_
+  name: OnResponseTextDelta
+  nameWithType: RealtimeEventReceiverBase.OnResponseTextDelta
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseTextDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_
+  name: OnResponseTextDone
+  nameWithType: RealtimeEventReceiverBase.OnResponseTextDone
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioTranscriptDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_
+  name: OnResponseAudioTranscriptDelta
+  nameWithType: RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioTranscriptDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_
+  name: OnResponseAudioTranscriptDone
+  nameWithType: RealtimeEventReceiverBase.OnResponseAudioTranscriptDone
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_
+  name: OnResponseAudioDelta
+  nameWithType: RealtimeEventReceiverBase.OnResponseAudioDelta
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__
+  name: OnResponseAudioDone
+  nameWithType: RealtimeEventReceiverBase.OnResponseAudioDone
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseFunctionCallArgumentsDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_
+  name: OnResponseFunctionCallArgumentsDelta
+  nameWithType: RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseFunctionCallArgumentsDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_
+  name: OnResponseFunctionCallArgumentsDone
+  nameWithType: RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnRateLimitsUpdated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RateLimit___
+  name: OnRateLimitsUpdated
+  nameWithType: RealtimeEventReceiverBase.OnRateLimitsUpdated
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[]
+  isExternal: true
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit.html
+  name: RateLimit[]
+  nameWithType: RateLimit[]
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[]
+  nameWithType.vb: RateLimit()
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit()
+  name.vb: RateLimit()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit
+    name: RateLimit
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit
+    name: RateLimit
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit.html
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionDelta_System_String_System_String_System_Nullable_System_Int32__System_String_
+  name: OnConversationItemInputAudioTranscriptionDelta
+  nameWithType: RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta

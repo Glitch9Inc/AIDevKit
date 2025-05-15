@@ -1,0 +1,418 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.Document
+  commentId: T:Glitch9.AIDevKit.Google.Document
+  id: Document
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.Document.CreateTime
+  - Glitch9.AIDevKit.Google.Document.CustomMetadata
+  - Glitch9.AIDevKit.Google.Document.DisplayName
+  - Glitch9.AIDevKit.Google.Document.Name
+  - Glitch9.AIDevKit.Google.Document.UpdateTime
+  langs:
+  - csharp
+  - vb
+  name: Document
+  nameWithType: Document
+  fullName: Glitch9.AIDevKit.Google.Document
+  type: Class
+  source:
+    id: Document
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Documents/Document.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit.Google
+  summary: A <xref href="Glitch9.AIDevKit.Google.Document" data-throw-if-not-resolved="false"></xref> is a collection of Chunks. A Corpus can have a maximum of 10,000 Documents.
+  example: []
+  syntax:
+    content: public class Document
+    content.vb: Public Class Document
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.Google.Document.Name
+  commentId: P:Glitch9.AIDevKit.Google.Document.Name
+  id: Name
+  parent: Glitch9.AIDevKit.Google.Document
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Document.Name
+  fullName: Glitch9.AIDevKit.Google.Document.Name
+  type: Property
+  source:
+    id: Name
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Documents/Document.cs
+    startLine: 18
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Immutable. Identifier.
+
+    The  <xref href="Glitch9.AIDevKit.Google.Document" data-throw-if-not-resolved="false"></xref> resource name.
+
+    The ID (name excluding the "corpora/*/documents/" prefix) can contain up to 40 characters that are lowercase alphanumeric or dashes (-).
+
+    The ID cannot start or end with a dash.
+
+    If the name is empty on create, a unique name will be derived from displayName along with a 12 character random suffix.
+
+    Example: corpora/{corpus_id}/documents/my-awesome-doc-123a456b789c
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Glitch9.AIDevKit.Google.Document.Name*
+- uid: Glitch9.AIDevKit.Google.Document.DisplayName
+  commentId: P:Glitch9.AIDevKit.Google.Document.DisplayName
+  id: DisplayName
+  parent: Glitch9.AIDevKit.Google.Document
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: Document.DisplayName
+  fullName: Glitch9.AIDevKit.Google.Document.DisplayName
+  type: Property
+  source:
+    id: DisplayName
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Documents/Document.cs
+    startLine: 26
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Optional.
+
+    The human-readable display name for the  <xref href="Glitch9.AIDevKit.Google.Document" data-throw-if-not-resolved="false"></xref>.
+
+    The display name must be no more than 512 characters in length, including spaces.
+
+    Example: "Semantic Retriever Documentation"
+  example: []
+  syntax:
+    content: public string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DisplayName As String
+  overload: Glitch9.AIDevKit.Google.Document.DisplayName*
+- uid: Glitch9.AIDevKit.Google.Document.CustomMetadata
+  commentId: P:Glitch9.AIDevKit.Google.Document.CustomMetadata
+  id: CustomMetadata
+  parent: Glitch9.AIDevKit.Google.Document
+  langs:
+  - csharp
+  - vb
+  name: CustomMetadata
+  nameWithType: Document.CustomMetadata
+  fullName: Glitch9.AIDevKit.Google.Document.CustomMetadata
+  type: Property
+  source:
+    id: CustomMetadata
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Documents/Document.cs
+    startLine: 31
+  namespace: Glitch9.AIDevKit.Google
+  summary: Optional. User provided custom metadata stored as key-value pairs used for querying. A  <xref href="Glitch9.AIDevKit.Google.Document" data-throw-if-not-resolved="false"></xref> can have a maximum of 20 CustomMetadata.
+  example: []
+  syntax:
+    content: public Dictionary<string, CustomMetadataValue> CustomMetadata { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,Glitch9.AIDevKit.Google.CustomMetadataValue}
+    content.vb: Public Property CustomMetadata As Dictionary(Of String, CustomMetadataValue)
+  overload: Glitch9.AIDevKit.Google.Document.CustomMetadata*
+- uid: Glitch9.AIDevKit.Google.Document.UpdateTime
+  commentId: P:Glitch9.AIDevKit.Google.Document.UpdateTime
+  id: UpdateTime
+  parent: Glitch9.AIDevKit.Google.Document
+  langs:
+  - csharp
+  - vb
+  name: UpdateTime
+  nameWithType: Document.UpdateTime
+  fullName: Glitch9.AIDevKit.Google.Document.UpdateTime
+  type: Property
+  source:
+    id: UpdateTime
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Documents/Document.cs
+    startLine: 37
+  namespace: Glitch9.AIDevKit.Google
+  summary: Output only. The Timestamp of when the  <xref href="Glitch9.AIDevKit.Google.Document" data-throw-if-not-resolved="false"></xref> was last updated.
+  example: []
+  syntax:
+    content: public ZuluTime? UpdateTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.ZuluTime}
+    content.vb: Public Property UpdateTime As ZuluTime?
+  overload: Glitch9.AIDevKit.Google.Document.UpdateTime*
+- uid: Glitch9.AIDevKit.Google.Document.CreateTime
+  commentId: P:Glitch9.AIDevKit.Google.Document.CreateTime
+  id: CreateTime
+  parent: Glitch9.AIDevKit.Google.Document
+  langs:
+  - csharp
+  - vb
+  name: CreateTime
+  nameWithType: Document.CreateTime
+  fullName: Glitch9.AIDevKit.Google.Document.CreateTime
+  type: Property
+  source:
+    id: CreateTime
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Documents/Document.cs
+    startLine: 42
+  namespace: Glitch9.AIDevKit.Google
+  summary: Output only. The Timestamp of when the  <xref href="Glitch9.AIDevKit.Google.Document" data-throw-if-not-resolved="false"></xref> was created.
+  example: []
+  syntax:
+    content: public ZuluTime? CreateTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.ZuluTime}
+    content.vb: Public Property CreateTime As ZuluTime?
+  overload: Glitch9.AIDevKit.Google.Document.CreateTime*
+references:
+- uid: Glitch9.AIDevKit.Google.Document
+  commentId: T:Glitch9.AIDevKit.Google.Document
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.Document.html
+  name: Document
+  nameWithType: Document
+  fullName: Glitch9.AIDevKit.Google.Document
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.Google.Document.Name*
+  commentId: Overload:Glitch9.AIDevKit.Google.Document.Name
+  href: Glitch9.AIDevKit.Google.Document.html#Glitch9_AIDevKit_Google_Document_Name
+  name: Name
+  nameWithType: Document.Name
+  fullName: Glitch9.AIDevKit.Google.Document.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.Google.Document.DisplayName*
+  commentId: Overload:Glitch9.AIDevKit.Google.Document.DisplayName
+  href: Glitch9.AIDevKit.Google.Document.html#Glitch9_AIDevKit_Google_Document_DisplayName
+  name: DisplayName
+  nameWithType: Document.DisplayName
+  fullName: Glitch9.AIDevKit.Google.Document.DisplayName
+- uid: Glitch9.AIDevKit.Google.Document.CustomMetadata*
+  commentId: Overload:Glitch9.AIDevKit.Google.Document.CustomMetadata
+  href: Glitch9.AIDevKit.Google.Document.html#Glitch9_AIDevKit_Google_Document_CustomMetadata
+  name: CustomMetadata
+  nameWithType: Document.CustomMetadata
+  fullName: Glitch9.AIDevKit.Google.Document.CustomMetadata
+- uid: System.Collections.Generic.Dictionary{System.String,Glitch9.AIDevKit.Google.CustomMetadataValue}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Glitch9.AIDevKit.Google.CustomMetadataValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: Glitch9.AIDevKit.Google.CustomMetadataValue.html
+  name: Dictionary<string, CustomMetadataValue>
+  nameWithType: Dictionary<string, CustomMetadataValue>
+  fullName: System.Collections.Generic.Dictionary<string, Glitch9.AIDevKit.Google.CustomMetadataValue>
+  nameWithType.vb: Dictionary(Of String, CustomMetadataValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Glitch9.AIDevKit.Google.CustomMetadataValue)
+  name.vb: Dictionary(Of String, CustomMetadataValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.CustomMetadataValue
+    name: CustomMetadataValue
+    href: Glitch9.AIDevKit.Google.CustomMetadataValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.CustomMetadataValue
+    name: CustomMetadataValue
+    href: Glitch9.AIDevKit.Google.CustomMetadataValue.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Glitch9.AIDevKit.Google.Document.UpdateTime*
+  commentId: Overload:Glitch9.AIDevKit.Google.Document.UpdateTime
+  href: Glitch9.AIDevKit.Google.Document.html#Glitch9_AIDevKit_Google_Document_UpdateTime
+  name: UpdateTime
+  nameWithType: Document.UpdateTime
+  fullName: Glitch9.AIDevKit.Google.Document.UpdateTime
+- uid: System.Nullable{Glitch9.ZuluTime}
+  commentId: T:System.Nullable{Glitch9.ZuluTime}
+  parent: System
+  definition: System.Nullable`1
+  name: ZuluTime?
+  nameWithType: ZuluTime?
+  fullName: Glitch9.ZuluTime?
+  spec.csharp:
+  - uid: Glitch9.ZuluTime
+    name: ZuluTime
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.ZuluTime
+    name: ZuluTime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Document.CreateTime*
+  commentId: Overload:Glitch9.AIDevKit.Google.Document.CreateTime
+  href: Glitch9.AIDevKit.Google.Document.html#Glitch9_AIDevKit_Google_Document_CreateTime
+  name: CreateTime
+  nameWithType: Document.CreateTime
+  fullName: Glitch9.AIDevKit.Google.Document.CreateTime

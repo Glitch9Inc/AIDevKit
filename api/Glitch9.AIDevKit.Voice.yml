@@ -1,0 +1,354 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Voice
+  commentId: T:Glitch9.AIDevKit.Voice
+  id: Voice
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.Voice.Name
+  - Glitch9.AIDevKit.Voice.op_Implicit(System.String)~Glitch9.AIDevKit.Voice
+  langs:
+  - csharp
+  - vb
+  name: Voice
+  nameWithType: Voice
+  fullName: Glitch9.AIDevKit.Voice
+  type: Class
+  source:
+    id: Voice
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Voice.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: 'public class Voice : AIDevKitAsset'
+    content.vb: Public Class Voice Inherits AIDevKitAsset
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.AIDevKitAsset
+  inheritedMembers:
+  - Glitch9.AIDevKit.AIDevKitAsset.id
+  - Glitch9.AIDevKit.AIDevKitAsset.displayName
+  - Glitch9.AIDevKit.AIDevKitAsset.api
+  - Glitch9.AIDevKit.AIDevKitAsset.deprecated
+  - Glitch9.AIDevKit.AIDevKitAsset.custom
+  - Glitch9.AIDevKit.AIDevKitAsset.locked
+  - Glitch9.AIDevKit.AIDevKitAsset.Id
+  - Glitch9.AIDevKit.AIDevKitAsset.Api
+  - Glitch9.AIDevKit.AIDevKitAsset.IsCustom
+  - Glitch9.AIDevKit.AIDevKitAsset.IsDeprecated
+  - Glitch9.AIDevKit.AIDevKitAsset.ToString
+  - Glitch9.AIDevKit.AIDevKitAsset.Equals(Glitch9.AIDevKit.AIDevKitAsset)
+  - Glitch9.AIDevKit.AIDevKitAsset.Equals(System.Object)
+  - Glitch9.AIDevKit.AIDevKitAsset.GetHashCode
+- uid: Glitch9.AIDevKit.Voice.Name
+  commentId: P:Glitch9.AIDevKit.Voice.Name
+  id: Name
+  parent: Glitch9.AIDevKit.Voice
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Voice.Name
+  fullName: Glitch9.AIDevKit.Voice.Name
+  type: Property
+  source:
+    id: Name
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Voice.cs
+    startLine: 16
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    The name of the asset 
+
+    If it's a model: "gpt-3.5-turbo", "gemini-pro-vision"
+
+    If it's a voice: "alloy"(OpenAI), "rachel"(ElevenLabs)
+
+    This is a human-readable name for the model that can be displayed in the UI or logs.
+  example: []
+  syntax:
+    content: public override string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property Name As String
+  overridden: Glitch9.AIDevKit.AIDevKitAsset.Name
+  overload: Glitch9.AIDevKit.Voice.Name*
+- uid: Glitch9.AIDevKit.Voice.op_Implicit(System.String)~Glitch9.AIDevKit.Voice
+  commentId: M:Glitch9.AIDevKit.Voice.op_Implicit(System.String)~Glitch9.AIDevKit.Voice
+  id: op_Implicit(System.String)~Glitch9.AIDevKit.Voice
+  parent: Glitch9.AIDevKit.Voice
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Voice(string)
+  nameWithType: Voice.implicit operator Voice(string)
+  fullName: Glitch9.AIDevKit.Voice.implicit operator Glitch9.AIDevKit.Voice(string)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Voice.cs
+    startLine: 100
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static implicit operator Voice(string apiName)
+    parameters:
+    - id: apiName
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.Voice
+    content.vb: Public Shared Widening Operator CType(apiName As String) As Voice
+  overload: Glitch9.AIDevKit.Voice.op_Implicit*
+  nameWithType.vb: Voice.CType(String)
+  fullName.vb: Glitch9.AIDevKit.Voice.CType(String)
+  name.vb: CType(String)
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.AIDevKitAsset
+  commentId: T:Glitch9.AIDevKit.AIDevKitAsset
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.AIDevKitAsset.html
+  name: AIDevKitAsset
+  nameWithType: AIDevKitAsset
+  fullName: Glitch9.AIDevKit.AIDevKitAsset
+- uid: Glitch9.AIDevKit.AIDevKitAsset.id
+  commentId: F:Glitch9.AIDevKit.AIDevKitAsset.id
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_id
+  name: id
+  nameWithType: AIDevKitAsset.id
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.id
+- uid: Glitch9.AIDevKit.AIDevKitAsset.displayName
+  commentId: F:Glitch9.AIDevKit.AIDevKitAsset.displayName
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_displayName
+  name: displayName
+  nameWithType: AIDevKitAsset.displayName
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.displayName
+- uid: Glitch9.AIDevKit.AIDevKitAsset.api
+  commentId: F:Glitch9.AIDevKit.AIDevKitAsset.api
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_api
+  name: api
+  nameWithType: AIDevKitAsset.api
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.api
+- uid: Glitch9.AIDevKit.AIDevKitAsset.deprecated
+  commentId: F:Glitch9.AIDevKit.AIDevKitAsset.deprecated
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_deprecated
+  name: deprecated
+  nameWithType: AIDevKitAsset.deprecated
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.deprecated
+- uid: Glitch9.AIDevKit.AIDevKitAsset.custom
+  commentId: F:Glitch9.AIDevKit.AIDevKitAsset.custom
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_custom
+  name: custom
+  nameWithType: AIDevKitAsset.custom
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.custom
+- uid: Glitch9.AIDevKit.AIDevKitAsset.locked
+  commentId: F:Glitch9.AIDevKit.AIDevKitAsset.locked
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_locked
+  name: locked
+  nameWithType: AIDevKitAsset.locked
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.locked
+- uid: Glitch9.AIDevKit.AIDevKitAsset.Id
+  commentId: P:Glitch9.AIDevKit.AIDevKitAsset.Id
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_Id
+  name: Id
+  nameWithType: AIDevKitAsset.Id
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.Id
+- uid: Glitch9.AIDevKit.AIDevKitAsset.Api
+  commentId: P:Glitch9.AIDevKit.AIDevKitAsset.Api
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_Api
+  name: Api
+  nameWithType: AIDevKitAsset.Api
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.Api
+- uid: Glitch9.AIDevKit.AIDevKitAsset.IsCustom
+  commentId: P:Glitch9.AIDevKit.AIDevKitAsset.IsCustom
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_IsCustom
+  name: IsCustom
+  nameWithType: AIDevKitAsset.IsCustom
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.IsCustom
+- uid: Glitch9.AIDevKit.AIDevKitAsset.IsDeprecated
+  commentId: P:Glitch9.AIDevKit.AIDevKitAsset.IsDeprecated
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_IsDeprecated
+  name: IsDeprecated
+  nameWithType: AIDevKitAsset.IsDeprecated
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.IsDeprecated
+- uid: Glitch9.AIDevKit.AIDevKitAsset.ToString
+  commentId: M:Glitch9.AIDevKit.AIDevKitAsset.ToString
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_ToString
+  name: ToString()
+  nameWithType: AIDevKitAsset.ToString()
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.ToString()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.AIDevKitAsset.ToString
+    name: ToString
+    href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.AIDevKitAsset.ToString
+    name: ToString
+    href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_ToString
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.AIDevKitAsset.Equals(Glitch9.AIDevKit.AIDevKitAsset)
+  commentId: M:Glitch9.AIDevKit.AIDevKitAsset.Equals(Glitch9.AIDevKit.AIDevKitAsset)
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_Equals_Glitch9_AIDevKit_AIDevKitAsset_
+  name: Equals(AIDevKitAsset)
+  nameWithType: AIDevKitAsset.Equals(AIDevKitAsset)
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.Equals(Glitch9.AIDevKit.AIDevKitAsset)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.AIDevKitAsset.Equals(Glitch9.AIDevKit.AIDevKitAsset)
+    name: Equals
+    href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_Equals_Glitch9_AIDevKit_AIDevKitAsset_
+  - name: (
+  - uid: Glitch9.AIDevKit.AIDevKitAsset
+    name: AIDevKitAsset
+    href: Glitch9.AIDevKit.AIDevKitAsset.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.AIDevKitAsset.Equals(Glitch9.AIDevKit.AIDevKitAsset)
+    name: Equals
+    href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_Equals_Glitch9_AIDevKit_AIDevKitAsset_
+  - name: (
+  - uid: Glitch9.AIDevKit.AIDevKitAsset
+    name: AIDevKitAsset
+    href: Glitch9.AIDevKit.AIDevKitAsset.html
+  - name: )
+- uid: Glitch9.AIDevKit.AIDevKitAsset.Equals(System.Object)
+  commentId: M:Glitch9.AIDevKit.AIDevKitAsset.Equals(System.Object)
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  isExternal: true
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: AIDevKitAsset.Equals(object)
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.Equals(object)
+  nameWithType.vb: AIDevKitAsset.Equals(Object)
+  fullName.vb: Glitch9.AIDevKit.AIDevKitAsset.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.AIDevKitAsset.Equals(System.Object)
+    name: Equals
+    href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.AIDevKitAsset.Equals(System.Object)
+    name: Equals
+    href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.AIDevKitAsset.GetHashCode
+  commentId: M:Glitch9.AIDevKit.AIDevKitAsset.GetHashCode
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_GetHashCode
+  name: GetHashCode()
+  nameWithType: AIDevKitAsset.GetHashCode()
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.GetHashCode()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.AIDevKitAsset.GetHashCode
+    name: GetHashCode
+    href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.AIDevKitAsset.GetHashCode
+    name: GetHashCode
+    href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_GetHashCode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.AIDevKitAsset.Name
+  commentId: P:Glitch9.AIDevKit.AIDevKitAsset.Name
+  parent: Glitch9.AIDevKit.AIDevKitAsset
+  href: Glitch9.AIDevKit.AIDevKitAsset.html#Glitch9_AIDevKit_AIDevKitAsset_Name
+  name: Name
+  nameWithType: AIDevKitAsset.Name
+  fullName: Glitch9.AIDevKit.AIDevKitAsset.Name
+- uid: Glitch9.AIDevKit.Voice.Name*
+  commentId: Overload:Glitch9.AIDevKit.Voice.Name
+  href: Glitch9.AIDevKit.Voice.html#Glitch9_AIDevKit_Voice_Name
+  name: Name
+  nameWithType: Voice.Name
+  fullName: Glitch9.AIDevKit.Voice.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.Voice.op_Implicit*
+  commentId: Overload:Glitch9.AIDevKit.Voice.op_Implicit
+  name: implicit operator
+  nameWithType: Voice.implicit operator
+  fullName: Glitch9.AIDevKit.Voice.implicit operator
+  nameWithType.vb: Voice.CType
+  fullName.vb: Glitch9.AIDevKit.Voice.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Glitch9.AIDevKit.Voice
+  commentId: T:Glitch9.AIDevKit.Voice
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Voice.html
+  name: Voice
+  nameWithType: Voice
+  fullName: Glitch9.AIDevKit.Voice

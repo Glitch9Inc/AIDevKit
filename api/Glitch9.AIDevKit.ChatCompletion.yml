@@ -1,0 +1,620 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ChatCompletion
+  commentId: T:Glitch9.AIDevKit.ChatCompletion
+  id: ChatCompletion
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.ChatCompletion.Choices
+  - Glitch9.AIDevKit.ChatCompletion.Count
+  - Glitch9.AIDevKit.ChatCompletion.GetContents
+  - Glitch9.AIDevKit.ChatCompletion.GetToolCalls
+  - Glitch9.AIDevKit.ChatCompletion.SystemFingerprint
+  - Glitch9.AIDevKit.ChatCompletion.ToContent
+  - Glitch9.AIDevKit.ChatCompletion.ToMessage
+  - Glitch9.AIDevKit.ChatCompletion.ToString
+  - Glitch9.AIDevKit.ChatCompletion.ToTextDelta
+  - Glitch9.AIDevKit.ChatCompletion.op_Implicit(Glitch9.AIDevKit.ChatCompletion)~Glitch9.AIDevKit.Content
+  - Glitch9.AIDevKit.ChatCompletion.op_Implicit(Glitch9.AIDevKit.ChatCompletion)~System.String
+  langs:
+  - csharp
+  - vb
+  name: ChatCompletion
+  nameWithType: ChatCompletion
+  fullName: Glitch9.AIDevKit.ChatCompletion
+  type: Class
+  source:
+    id: ChatCompletion
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 5
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: 'public class ChatCompletion : ModelResponse, IGenerated'
+    content.vb: Public Class ChatCompletion Inherits ModelResponse Implements IGenerated
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.ModelResponse
+  implements:
+  - Glitch9.AIDevKit.IGenerated
+  inheritedMembers:
+  - Glitch9.AIDevKit.ModelResponse.Id
+  - Glitch9.AIDevKit.ModelResponse.Object
+  - Glitch9.AIDevKit.ModelResponse.Model
+  - Glitch9.AIDevKit.ModelResponse.CreatedAt
+  - Glitch9.AIDevKit.ModelResponse.Metadata
+  - Glitch9.AIDevKit.ModelResponse.Usage
+- uid: Glitch9.AIDevKit.ChatCompletion.op_Implicit(Glitch9.AIDevKit.ChatCompletion)~Glitch9.AIDevKit.Content
+  commentId: M:Glitch9.AIDevKit.ChatCompletion.op_Implicit(Glitch9.AIDevKit.ChatCompletion)~Glitch9.AIDevKit.Content
+  id: op_Implicit(Glitch9.AIDevKit.ChatCompletion)~Glitch9.AIDevKit.Content
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Content(ChatCompletion)
+  nameWithType: ChatCompletion.implicit operator Content(ChatCompletion)
+  fullName: Glitch9.AIDevKit.ChatCompletion.implicit operator Glitch9.AIDevKit.Content(Glitch9.AIDevKit.ChatCompletion)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 7
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static implicit operator Content(ChatCompletion chat)
+    parameters:
+    - id: chat
+      type: Glitch9.AIDevKit.ChatCompletion
+    return:
+      type: Glitch9.AIDevKit.Content
+    content.vb: Public Shared Widening Operator CType(chat As ChatCompletion) As Content
+  overload: Glitch9.AIDevKit.ChatCompletion.op_Implicit*
+  nameWithType.vb: ChatCompletion.CType(ChatCompletion)
+  fullName.vb: Glitch9.AIDevKit.ChatCompletion.CType(Glitch9.AIDevKit.ChatCompletion)
+  name.vb: CType(ChatCompletion)
+- uid: Glitch9.AIDevKit.ChatCompletion.op_Implicit(Glitch9.AIDevKit.ChatCompletion)~System.String
+  commentId: M:Glitch9.AIDevKit.ChatCompletion.op_Implicit(Glitch9.AIDevKit.ChatCompletion)~System.String
+  id: op_Implicit(Glitch9.AIDevKit.ChatCompletion)~System.String
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string(ChatCompletion)
+  nameWithType: ChatCompletion.implicit operator string(ChatCompletion)
+  fullName: Glitch9.AIDevKit.ChatCompletion.implicit operator string(Glitch9.AIDevKit.ChatCompletion)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static implicit operator string(ChatCompletion chat)
+    parameters:
+    - id: chat
+      type: Glitch9.AIDevKit.ChatCompletion
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(chat As ChatCompletion) As String
+  overload: Glitch9.AIDevKit.ChatCompletion.op_Implicit*
+  nameWithType.vb: ChatCompletion.CType(ChatCompletion)
+  fullName.vb: Glitch9.AIDevKit.ChatCompletion.CType(Glitch9.AIDevKit.ChatCompletion)
+  name.vb: CType(ChatCompletion)
+- uid: Glitch9.AIDevKit.ChatCompletion.Choices
+  commentId: P:Glitch9.AIDevKit.ChatCompletion.Choices
+  id: Choices
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: Choices
+  nameWithType: ChatCompletion.Choices
+  fullName: Glitch9.AIDevKit.ChatCompletion.Choices
+  type: Property
+  source:
+    id: Choices
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    A list of chat completion choices. Can be more than one if n is greater than 1.
+
+    <p>
+
+    If this is 'ChatCompletionChunk' which is a streamed response,
+
+    This can also be empty for the last chunk if you set stream_options: {"include_usage": true}.
+
+    </p>
+  example: []
+  syntax:
+    content: public ChatChoice[] Choices { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ChatChoice[]
+    content.vb: Public Property Choices As ChatChoice()
+  overload: Glitch9.AIDevKit.ChatCompletion.Choices*
+- uid: Glitch9.AIDevKit.ChatCompletion.SystemFingerprint
+  commentId: P:Glitch9.AIDevKit.ChatCompletion.SystemFingerprint
+  id: SystemFingerprint
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: SystemFingerprint
+  nameWithType: ChatCompletion.SystemFingerprint
+  fullName: Glitch9.AIDevKit.ChatCompletion.SystemFingerprint
+  type: Property
+  source:
+    id: SystemFingerprint
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 23
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    This fingerprint represents the backend configuration that the model runs with.
+
+    Can be used in conjunction with the seed request parameter to understand when backend changes have been made that might impact determinism.
+  example: []
+  syntax:
+    content: public string SystemFingerprint { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SystemFingerprint As String
+  overload: Glitch9.AIDevKit.ChatCompletion.SystemFingerprint*
+- uid: Glitch9.AIDevKit.ChatCompletion.Count
+  commentId: P:Glitch9.AIDevKit.ChatCompletion.Count
+  id: Count
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ChatCompletion.Count
+  fullName: Glitch9.AIDevKit.ChatCompletion.Count
+  type: Property
+  source:
+    id: Count
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 25
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Glitch9.AIDevKit.ChatCompletion.Count*
+  implements:
+  - Glitch9.AIDevKit.IGenerated.Count
+- uid: Glitch9.AIDevKit.ChatCompletion.ToString
+  commentId: M:Glitch9.AIDevKit.ChatCompletion.ToString
+  id: ToString
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ChatCompletion.ToString()
+  fullName: Glitch9.AIDevKit.ChatCompletion.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 26
+  namespace: Glitch9.AIDevKit
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Glitch9.AIDevKit.ChatCompletion.ToString*
+- uid: Glitch9.AIDevKit.ChatCompletion.ToTextDelta
+  commentId: M:Glitch9.AIDevKit.ChatCompletion.ToTextDelta
+  id: ToTextDelta
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: ToTextDelta()
+  nameWithType: ChatCompletion.ToTextDelta()
+  fullName: Glitch9.AIDevKit.ChatCompletion.ToTextDelta()
+  type: Method
+  source:
+    id: ToTextDelta
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 27
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public string ToTextDelta()
+    return:
+      type: System.String
+    content.vb: Public Function ToTextDelta() As String
+  overload: Glitch9.AIDevKit.ChatCompletion.ToTextDelta*
+- uid: Glitch9.AIDevKit.ChatCompletion.ToContent
+  commentId: M:Glitch9.AIDevKit.ChatCompletion.ToContent
+  id: ToContent
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: ToContent()
+  nameWithType: ChatCompletion.ToContent()
+  fullName: Glitch9.AIDevKit.ChatCompletion.ToContent()
+  type: Method
+  source:
+    id: ToContent
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 28
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public Content ToContent()
+    return:
+      type: Glitch9.AIDevKit.Content
+    content.vb: Public Function ToContent() As Content
+  overload: Glitch9.AIDevKit.ChatCompletion.ToContent*
+- uid: Glitch9.AIDevKit.ChatCompletion.ToMessage
+  commentId: M:Glitch9.AIDevKit.ChatCompletion.ToMessage
+  id: ToMessage
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: ToMessage()
+  nameWithType: ChatCompletion.ToMessage()
+  fullName: Glitch9.AIDevKit.ChatCompletion.ToMessage()
+  type: Method
+  source:
+    id: ToMessage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public ChatMessage ToMessage()
+    return:
+      type: Glitch9.AIDevKit.ChatMessage
+    content.vb: Public Function ToMessage() As ChatMessage
+  overload: Glitch9.AIDevKit.ChatCompletion.ToMessage*
+- uid: Glitch9.AIDevKit.ChatCompletion.GetContents
+  commentId: M:Glitch9.AIDevKit.ChatCompletion.GetContents
+  id: GetContents
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: GetContents()
+  nameWithType: ChatCompletion.GetContents()
+  fullName: Glitch9.AIDevKit.ChatCompletion.GetContents()
+  type: Method
+  source:
+    id: GetContents
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 31
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public Content[] GetContents()
+    return:
+      type: Glitch9.AIDevKit.Content[]
+    content.vb: Public Function GetContents() As Content()
+  overload: Glitch9.AIDevKit.ChatCompletion.GetContents*
+- uid: Glitch9.AIDevKit.ChatCompletion.GetToolCalls
+  commentId: M:Glitch9.AIDevKit.ChatCompletion.GetToolCalls
+  id: GetToolCalls
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: GetToolCalls()
+  nameWithType: ChatCompletion.GetToolCalls()
+  fullName: Glitch9.AIDevKit.ChatCompletion.GetToolCalls()
+  type: Method
+  source:
+    id: GetToolCalls
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 32
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public ToolCall[] GetToolCalls()
+    return:
+      type: Glitch9.AIDevKit.ToolCall[]
+    content.vb: Public Function GetToolCalls() As ToolCall()
+  overload: Glitch9.AIDevKit.ChatCompletion.GetToolCalls*
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.ModelResponse
+  commentId: T:Glitch9.AIDevKit.ModelResponse
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelResponse.html
+  name: ModelResponse
+  nameWithType: ModelResponse
+  fullName: Glitch9.AIDevKit.ModelResponse
+- uid: Glitch9.AIDevKit.IGenerated
+  commentId: T:Glitch9.AIDevKit.IGenerated
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IGenerated.html
+  name: IGenerated
+  nameWithType: IGenerated
+  fullName: Glitch9.AIDevKit.IGenerated
+- uid: Glitch9.AIDevKit.ModelResponse.Id
+  commentId: P:Glitch9.AIDevKit.ModelResponse.Id
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Id
+  name: Id
+  nameWithType: ModelResponse.Id
+  fullName: Glitch9.AIDevKit.ModelResponse.Id
+- uid: Glitch9.AIDevKit.ModelResponse.Object
+  commentId: P:Glitch9.AIDevKit.ModelResponse.Object
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Object
+  name: Object
+  nameWithType: ModelResponse.Object
+  fullName: Glitch9.AIDevKit.ModelResponse.Object
+- uid: Glitch9.AIDevKit.ModelResponse.Model
+  commentId: P:Glitch9.AIDevKit.ModelResponse.Model
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Model
+  name: Model
+  nameWithType: ModelResponse.Model
+  fullName: Glitch9.AIDevKit.ModelResponse.Model
+- uid: Glitch9.AIDevKit.ModelResponse.CreatedAt
+  commentId: P:Glitch9.AIDevKit.ModelResponse.CreatedAt
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_CreatedAt
+  name: CreatedAt
+  nameWithType: ModelResponse.CreatedAt
+  fullName: Glitch9.AIDevKit.ModelResponse.CreatedAt
+- uid: Glitch9.AIDevKit.ModelResponse.Metadata
+  commentId: P:Glitch9.AIDevKit.ModelResponse.Metadata
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Metadata
+  name: Metadata
+  nameWithType: ModelResponse.Metadata
+  fullName: Glitch9.AIDevKit.ModelResponse.Metadata
+- uid: Glitch9.AIDevKit.ModelResponse.Usage
+  commentId: P:Glitch9.AIDevKit.ModelResponse.Usage
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Usage
+  name: Usage
+  nameWithType: ModelResponse.Usage
+  fullName: Glitch9.AIDevKit.ModelResponse.Usage
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.ChatCompletion.op_Implicit*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.op_Implicit
+  name: implicit operator
+  nameWithType: ChatCompletion.implicit operator
+  fullName: Glitch9.AIDevKit.ChatCompletion.implicit operator
+  nameWithType.vb: ChatCompletion.CType
+  fullName.vb: Glitch9.AIDevKit.ChatCompletion.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Glitch9.AIDevKit.ChatCompletion
+  commentId: T:Glitch9.AIDevKit.ChatCompletion
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: ChatCompletion
+  nameWithType: ChatCompletion
+  fullName: Glitch9.AIDevKit.ChatCompletion
+- uid: Glitch9.AIDevKit.Content
+  commentId: T:Glitch9.AIDevKit.Content
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Content.html
+  name: Content
+  nameWithType: Content
+  fullName: Glitch9.AIDevKit.Content
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.ChatCompletion.Choices*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.Choices
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_Choices
+  name: Choices
+  nameWithType: ChatCompletion.Choices
+  fullName: Glitch9.AIDevKit.ChatCompletion.Choices
+- uid: Glitch9.AIDevKit.ChatChoice[]
+  isExternal: true
+  href: Glitch9.AIDevKit.ChatChoice.html
+  name: ChatChoice[]
+  nameWithType: ChatChoice[]
+  fullName: Glitch9.AIDevKit.ChatChoice[]
+  nameWithType.vb: ChatChoice()
+  fullName.vb: Glitch9.AIDevKit.ChatChoice()
+  name.vb: ChatChoice()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ChatChoice
+    name: ChatChoice
+    href: Glitch9.AIDevKit.ChatChoice.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ChatChoice
+    name: ChatChoice
+    href: Glitch9.AIDevKit.ChatChoice.html
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.ChatCompletion.SystemFingerprint*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.SystemFingerprint
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_SystemFingerprint
+  name: SystemFingerprint
+  nameWithType: ChatCompletion.SystemFingerprint
+  fullName: Glitch9.AIDevKit.ChatCompletion.SystemFingerprint
+- uid: Glitch9.AIDevKit.ChatCompletion.Count*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.Count
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_Count
+  name: Count
+  nameWithType: ChatCompletion.Count
+  fullName: Glitch9.AIDevKit.ChatCompletion.Count
+- uid: Glitch9.AIDevKit.IGenerated.Count
+  commentId: P:Glitch9.AIDevKit.IGenerated.Count
+  parent: Glitch9.AIDevKit.IGenerated
+  href: Glitch9.AIDevKit.IGenerated.html#Glitch9_AIDevKit_IGenerated_Count
+  name: Count
+  nameWithType: IGenerated.Count
+  fullName: Glitch9.AIDevKit.IGenerated.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.ChatCompletion.ToString*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.ToString
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_ToString
+  name: ToString
+  nameWithType: ChatCompletion.ToString
+  fullName: Glitch9.AIDevKit.ChatCompletion.ToString
+- uid: Glitch9.AIDevKit.ChatCompletion.ToTextDelta*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.ToTextDelta
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_ToTextDelta
+  name: ToTextDelta
+  nameWithType: ChatCompletion.ToTextDelta
+  fullName: Glitch9.AIDevKit.ChatCompletion.ToTextDelta
+- uid: Glitch9.AIDevKit.ChatCompletion.ToContent*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.ToContent
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_ToContent
+  name: ToContent
+  nameWithType: ChatCompletion.ToContent
+  fullName: Glitch9.AIDevKit.ChatCompletion.ToContent
+- uid: Glitch9.AIDevKit.ChatCompletion.ToMessage*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.ToMessage
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_ToMessage
+  name: ToMessage
+  nameWithType: ChatCompletion.ToMessage
+  fullName: Glitch9.AIDevKit.ChatCompletion.ToMessage
+- uid: Glitch9.AIDevKit.ChatMessage
+  commentId: T:Glitch9.AIDevKit.ChatMessage
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatMessage.html
+  name: ChatMessage
+  nameWithType: ChatMessage
+  fullName: Glitch9.AIDevKit.ChatMessage
+- uid: Glitch9.AIDevKit.ChatCompletion.GetContents*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.GetContents
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_GetContents
+  name: GetContents
+  nameWithType: ChatCompletion.GetContents
+  fullName: Glitch9.AIDevKit.ChatCompletion.GetContents
+- uid: Glitch9.AIDevKit.Content[]
+  isExternal: true
+  href: Glitch9.AIDevKit.Content.html
+  name: Content[]
+  nameWithType: Content[]
+  fullName: Glitch9.AIDevKit.Content[]
+  nameWithType.vb: Content()
+  fullName.vb: Glitch9.AIDevKit.Content()
+  name.vb: Content()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Content
+    name: Content
+    href: Glitch9.AIDevKit.Content.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Content
+    name: Content
+    href: Glitch9.AIDevKit.Content.html
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.ChatCompletion.GetToolCalls*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.GetToolCalls
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_GetToolCalls
+  name: GetToolCalls
+  nameWithType: ChatCompletion.GetToolCalls
+  fullName: Glitch9.AIDevKit.ChatCompletion.GetToolCalls
+- uid: Glitch9.AIDevKit.ToolCall[]
+  isExternal: true
+  href: Glitch9.AIDevKit.ToolCall.html
+  name: ToolCall[]
+  nameWithType: ToolCall[]
+  fullName: Glitch9.AIDevKit.ToolCall[]
+  nameWithType.vb: ToolCall()
+  fullName.vb: Glitch9.AIDevKit.ToolCall()
+  name.vb: ToolCall()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ToolCall
+    name: ToolCall
+    href: Glitch9.AIDevKit.ToolCall.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ToolCall
+    name: ToolCall
+    href: Glitch9.AIDevKit.ToolCall.html
+  - name: (
+  - name: )

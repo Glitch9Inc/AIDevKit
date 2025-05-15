@@ -1,0 +1,391 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Ollama.OllamaSettings
+  commentId: T:Glitch9.AIDevKit.Ollama.OllamaSettings
+  id: OllamaSettings
+  parent: Glitch9.AIDevKit.Ollama
+  children:
+  - Glitch9.AIDevKit.Ollama.OllamaSettings.CheckConnectionAsync
+  - Glitch9.AIDevKit.Ollama.OllamaSettings.DefaultModel
+  - Glitch9.AIDevKit.Ollama.OllamaSettings.GetEndpoint
+  - Glitch9.AIDevKit.Ollama.OllamaSettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
+  langs:
+  - csharp
+  - vb
+  name: OllamaSettings
+  nameWithType: OllamaSettings
+  fullName: Glitch9.AIDevKit.Ollama.OllamaSettings
+  type: Class
+  source:
+    id: OllamaSettings
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OllamaSettings.cs
+    startLine: 7
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: 'public class OllamaSettings : ScriptableResource<OllamaSettings>'
+    content.vb: Public Class OllamaSettings Inherits ScriptableResource(Of OllamaSettings)
+  inheritance:
+  - System.Object
+  - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Ollama.OllamaSettings}
+  inheritedMembers:
+  - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Ollama.OllamaSettings}.Instance
+- uid: Glitch9.AIDevKit.Ollama.OllamaSettings.DefaultModel
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaSettings.DefaultModel
+  id: DefaultModel
+  parent: Glitch9.AIDevKit.Ollama.OllamaSettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultModel
+  nameWithType: OllamaSettings.DefaultModel
+  fullName: Glitch9.AIDevKit.Ollama.OllamaSettings.DefaultModel
+  type: Property
+  source:
+    id: DefaultModel
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OllamaSettings.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: public static string DefaultModel { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultModel As String
+  overload: Glitch9.AIDevKit.Ollama.OllamaSettings.DefaultModel*
+- uid: Glitch9.AIDevKit.Ollama.OllamaSettings.GetEndpoint
+  commentId: M:Glitch9.AIDevKit.Ollama.OllamaSettings.GetEndpoint
+  id: GetEndpoint
+  parent: Glitch9.AIDevKit.Ollama.OllamaSettings
+  langs:
+  - csharp
+  - vb
+  name: GetEndpoint()
+  nameWithType: OllamaSettings.GetEndpoint()
+  fullName: Glitch9.AIDevKit.Ollama.OllamaSettings.GetEndpoint()
+  type: Method
+  source:
+    id: GetEndpoint
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OllamaSettings.cs
+    startLine: 19
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: public static string GetEndpoint()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetEndpoint() As String
+  overload: Glitch9.AIDevKit.Ollama.OllamaSettings.GetEndpoint*
+- uid: Glitch9.AIDevKit.Ollama.OllamaSettings.CheckConnectionAsync
+  commentId: M:Glitch9.AIDevKit.Ollama.OllamaSettings.CheckConnectionAsync
+  id: CheckConnectionAsync
+  parent: Glitch9.AIDevKit.Ollama.OllamaSettings
+  langs:
+  - csharp
+  - vb
+  name: CheckConnectionAsync()
+  nameWithType: OllamaSettings.CheckConnectionAsync()
+  fullName: Glitch9.AIDevKit.Ollama.OllamaSettings.CheckConnectionAsync()
+  type: Method
+  source:
+    id: CheckConnectionAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OllamaSettings.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: public static UniTask<bool> CheckConnectionAsync()
+    return:
+      type: UniTask{System.Boolean}
+    content.vb: Public Shared Function CheckConnectionAsync() As UniTask(Of Boolean)
+  overload: Glitch9.AIDevKit.Ollama.OllamaSettings.CheckConnectionAsync*
+- uid: Glitch9.AIDevKit.Ollama.OllamaSettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
+  commentId: M:Glitch9.AIDevKit.Ollama.OllamaSettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
+  id: IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
+  parent: Glitch9.AIDevKit.Ollama.OllamaSettings
+  langs:
+  - csharp
+  - vb
+  name: IsDefaultModel(string, ModelCapability)
+  nameWithType: OllamaSettings.IsDefaultModel(string, ModelCapability)
+  fullName: Glitch9.AIDevKit.Ollama.OllamaSettings.IsDefaultModel(string, Glitch9.AIDevKit.ModelCapability)
+  type: Method
+  source:
+    id: IsDefaultModel
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OllamaSettings.cs
+    startLine: 36
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: public static bool IsDefaultModel(string id, ModelCapability cap)
+    parameters:
+    - id: id
+      type: System.String
+    - id: cap
+      type: Glitch9.AIDevKit.ModelCapability
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsDefaultModel(id As String, cap As ModelCapability) As Boolean
+  overload: Glitch9.AIDevKit.Ollama.OllamaSettings.IsDefaultModel*
+  nameWithType.vb: OllamaSettings.IsDefaultModel(String, ModelCapability)
+  fullName.vb: Glitch9.AIDevKit.Ollama.OllamaSettings.IsDefaultModel(String, Glitch9.AIDevKit.ModelCapability)
+  name.vb: IsDefaultModel(String, ModelCapability)
+references:
+- uid: Glitch9.AIDevKit.Ollama
+  commentId: N:Glitch9.AIDevKit.Ollama
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Ollama
+  nameWithType: Glitch9.AIDevKit.Ollama
+  fullName: Glitch9.AIDevKit.Ollama
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Ollama.OllamaSettings}
+  commentId: T:Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Ollama.OllamaSettings}
+  parent: Glitch9.ScriptableObjects
+  definition: Glitch9.ScriptableObjects.ScriptableResource`1
+  href: Glitch9.AIDevKit.Ollama.OllamaSettings.html
+  name: ScriptableResource<OllamaSettings>
+  nameWithType: ScriptableResource<OllamaSettings>
+  fullName: Glitch9.ScriptableObjects.ScriptableResource<Glitch9.AIDevKit.Ollama.OllamaSettings>
+  nameWithType.vb: ScriptableResource(Of OllamaSettings)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of Glitch9.AIDevKit.Ollama.OllamaSettings)
+  name.vb: ScriptableResource(Of OllamaSettings)
+  spec.csharp:
+  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
+    name: ScriptableResource
+  - name: <
+  - uid: Glitch9.AIDevKit.Ollama.OllamaSettings
+    name: OllamaSettings
+    href: Glitch9.AIDevKit.Ollama.OllamaSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
+    name: ScriptableResource
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Ollama.OllamaSettings
+    name: OllamaSettings
+    href: Glitch9.AIDevKit.Ollama.OllamaSettings.html
+  - name: )
+- uid: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Ollama.OllamaSettings}.Instance
+  commentId: P:Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Ollama.OllamaSettings}.Instance
+  parent: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Ollama.OllamaSettings}
+  definition: Glitch9.ScriptableObjects.ScriptableResource`1.Instance
+  name: Instance
+  nameWithType: ScriptableResource<OllamaSettings>.Instance
+  fullName: Glitch9.ScriptableObjects.ScriptableResource<Glitch9.AIDevKit.Ollama.OllamaSettings>.Instance
+  nameWithType.vb: ScriptableResource(Of OllamaSettings).Instance
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of Glitch9.AIDevKit.Ollama.OllamaSettings).Instance
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.ScriptableObjects.ScriptableResource`1
+  commentId: T:Glitch9.ScriptableObjects.ScriptableResource`1
+  name: ScriptableResource<TSelf>
+  nameWithType: ScriptableResource<TSelf>
+  fullName: Glitch9.ScriptableObjects.ScriptableResource<TSelf>
+  nameWithType.vb: ScriptableResource(Of TSelf)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf)
+  name.vb: ScriptableResource(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
+    name: ScriptableResource
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
+    name: ScriptableResource
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.ScriptableObjects
+  commentId: N:Glitch9.ScriptableObjects
+  href: Glitch9.html
+  name: Glitch9.ScriptableObjects
+  nameWithType: Glitch9.ScriptableObjects
+  fullName: Glitch9.ScriptableObjects
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.ScriptableObjects
+    name: ScriptableObjects
+    href: Glitch9.ScriptableObjects.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.ScriptableObjects
+    name: ScriptableObjects
+    href: Glitch9.ScriptableObjects.html
+- uid: Glitch9.ScriptableObjects.ScriptableResource`1.Instance
+  commentId: P:Glitch9.ScriptableObjects.ScriptableResource`1.Instance
+  name: Instance
+  nameWithType: ScriptableResource<TSelf>.Instance
+  fullName: Glitch9.ScriptableObjects.ScriptableResource<TSelf>.Instance
+  nameWithType.vb: ScriptableResource(Of TSelf).Instance
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf).Instance
+- uid: Glitch9.AIDevKit.Ollama.OllamaSettings.DefaultModel*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaSettings.DefaultModel
+  href: Glitch9.AIDevKit.Ollama.OllamaSettings.html#Glitch9_AIDevKit_Ollama_OllamaSettings_DefaultModel
+  name: DefaultModel
+  nameWithType: OllamaSettings.DefaultModel
+  fullName: Glitch9.AIDevKit.Ollama.OllamaSettings.DefaultModel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.Ollama.OllamaSettings.GetEndpoint*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaSettings.GetEndpoint
+  href: Glitch9.AIDevKit.Ollama.OllamaSettings.html#Glitch9_AIDevKit_Ollama_OllamaSettings_GetEndpoint
+  name: GetEndpoint
+  nameWithType: OllamaSettings.GetEndpoint
+  fullName: Glitch9.AIDevKit.Ollama.OllamaSettings.GetEndpoint
+- uid: Glitch9.AIDevKit.Ollama.OllamaSettings.CheckConnectionAsync*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaSettings.CheckConnectionAsync
+  href: Glitch9.AIDevKit.Ollama.OllamaSettings.html#Glitch9_AIDevKit_Ollama_OllamaSettings_CheckConnectionAsync
+  name: CheckConnectionAsync
+  nameWithType: OllamaSettings.CheckConnectionAsync
+  fullName: Glitch9.AIDevKit.Ollama.OllamaSettings.CheckConnectionAsync
+- uid: UniTask{System.Boolean}
+  commentId: '!:UniTask{System.Boolean}'
+  definition: UniTask`1
+  name: UniTask<bool>
+  nameWithType: UniTask<bool>
+  fullName: UniTask<bool>
+  nameWithType.vb: UniTask(Of Boolean)
+  fullName.vb: UniTask(Of Boolean)
+  name.vb: UniTask(Of Boolean)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.Ollama.OllamaSettings.IsDefaultModel*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaSettings.IsDefaultModel
+  href: Glitch9.AIDevKit.Ollama.OllamaSettings.html#Glitch9_AIDevKit_Ollama_OllamaSettings_IsDefaultModel_System_String_Glitch9_AIDevKit_ModelCapability_
+  name: IsDefaultModel
+  nameWithType: OllamaSettings.IsDefaultModel
+  fullName: Glitch9.AIDevKit.Ollama.OllamaSettings.IsDefaultModel
+- uid: Glitch9.AIDevKit.ModelCapability
+  commentId: T:Glitch9.AIDevKit.ModelCapability
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelCapability.html
+  name: ModelCapability
+  nameWithType: ModelCapability
+  fullName: Glitch9.AIDevKit.ModelCapability
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html

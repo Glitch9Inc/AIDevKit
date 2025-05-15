@@ -1,0 +1,490 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  id: RequestExtensions
+  parent: Glitch9.AIDevKit.ElevenLabs
+  children:
+  - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest)
+  - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery)
+  - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.TranscriptRequest)
+  - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  langs:
+  - csharp
+  - vb
+  name: RequestExtensions
+  nameWithType: RequestExtensions
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  type: Class
+  source:
+    id: RequestExtensions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Extensions/RequestExtensions.cs
+    startLine: 7
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: public static class RequestExtensions
+    content.vb: Public Module RequestExtensions
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  id: ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(SpeechRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(SpeechRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  type: Method
+  source:
+    id: ExecuteAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Extensions/RequestExtensions.cs
+    startLine: 9
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: public static UniTask<GeneratedAudio> ExecuteAsync(this SpeechRequest request)
+    parameters:
+    - id: request
+      type: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.GeneratedAudio}
+    content.vb: Public Shared Function ExecuteAsync(request As SpeechRequest) As UniTask(Of GeneratedAudio)
+  overload: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync*
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  id: StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: StreamAsync(SpeechRequest, StreamAudioPlayer)
+  nameWithType: RequestExtensions.StreamAsync(SpeechRequest, StreamAudioPlayer)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest, Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  type: Method
+  source:
+    id: StreamAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Extensions/RequestExtensions.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: public static UniTask StreamAsync(this SpeechRequest request, StreamAudioPlayer streamAudioPlayer)
+    parameters:
+    - id: request
+      type: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+    - id: streamAudioPlayer
+      type: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+    return:
+      type: UniTask
+    content.vb: Public Shared Function StreamAsync(request As SpeechRequest, streamAudioPlayer As StreamAudioPlayer) As UniTask
+  overload: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync*
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.TranscriptRequest)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.TranscriptRequest)
+  id: ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.TranscriptRequest)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(TranscriptRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(TranscriptRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.TranscriptRequest)
+  type: Method
+  source:
+    id: ExecuteAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Extensions/RequestExtensions.cs
+    startLine: 19
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: public static UniTask<ElevenLabsTranscript> ExecuteAsync(this TranscriptRequest request)
+    parameters:
+    - id: request
+      type: Glitch9.AIDevKit.ElevenLabs.TranscriptRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript}
+    content.vb: Public Shared Function ExecuteAsync(request As TranscriptRequest) As UniTask(Of ElevenLabsTranscript)
+  overload: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync*
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  id: ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(SoundEffectRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(SoundEffectRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  type: Method
+  source:
+    id: ExecuteAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Extensions/RequestExtensions.cs
+    startLine: 24
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: public static UniTask<GeneratedAudio> ExecuteAsync(this SoundEffectRequest request)
+    parameters:
+    - id: request
+      type: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.GeneratedAudio}
+    content.vb: Public Shared Function ExecuteAsync(request As SoundEffectRequest) As UniTask(Of GeneratedAudio)
+  overload: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync*
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery)
+  id: ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(ElevenLabsQuery)
+  nameWithType: RequestExtensions.ExecuteAsync(ElevenLabsQuery)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery)
+  type: Method
+  source:
+    id: ExecuteAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Extensions/RequestExtensions.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: public static UniTask<QueryResponse<ElevenLabsSharedVoiceData>> ExecuteAsync(this ElevenLabsQuery request)
+    parameters:
+    - id: request
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery
+    return:
+      type: UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData}}
+    content.vb: Public Shared Function ExecuteAsync(request As ElevenLabsQuery) As UniTask(Of QueryResponse(Of ElevenLabsSharedVoiceData))
+  overload: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync*
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  id: ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(VoiceChangerRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(VoiceChangerRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  type: Method
+  source:
+    id: ExecuteAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Extensions/RequestExtensions.cs
+    startLine: 34
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: public static UniTask<GeneratedAudio> ExecuteAsync(this VoiceChangerRequest request)
+    parameters:
+    - id: request
+      type: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.GeneratedAudio}
+    content.vb: Public Shared Function ExecuteAsync(request As VoiceChangerRequest) As UniTask(Of GeneratedAudio)
+  overload: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync*
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest)
+  id: ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(AudioIsolationRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(AudioIsolationRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest)
+  type: Method
+  source:
+    id: ExecuteAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Extensions/RequestExtensions.cs
+    startLine: 39
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: public static UniTask<GeneratedAudio> ExecuteAsync(this AudioIsolationRequest request)
+    parameters:
+    - id: request
+      type: Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.GeneratedAudio}
+    content.vb: Public Shared Function ExecuteAsync(request As AudioIsolationRequest) As UniTask(Of GeneratedAudio)
+  overload: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync*
+references:
+- uid: Glitch9.AIDevKit.ElevenLabs
+  commentId: N:Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.ElevenLabs
+  nameWithType: Glitch9.AIDevKit.ElevenLabs
+  fullName: Glitch9.AIDevKit.ElevenLabs
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ElevenLabs
+    name: ElevenLabs
+    href: Glitch9.AIDevKit.ElevenLabs.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ElevenLabs
+    name: ElevenLabs
+    href: Glitch9.AIDevKit.ElevenLabs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_
+  name: ExecuteAsync
+  nameWithType: RequestExtensions.ExecuteAsync
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
+  name: SpeechRequest
+  nameWithType: SpeechRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+- uid: UniTask{Glitch9.AIDevKit.GeneratedAudio}
+  commentId: '!:UniTask{Glitch9.AIDevKit.GeneratedAudio}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.GeneratedAudio.html
+  name: UniTask<GeneratedAudio>
+  nameWithType: UniTask<GeneratedAudio>
+  fullName: UniTask<Glitch9.AIDevKit.GeneratedAudio>
+  nameWithType.vb: UniTask(Of GeneratedAudio)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.GeneratedAudio)
+  name.vb: UniTask(Of GeneratedAudio)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.GeneratedAudio
+    name: GeneratedAudio
+    href: Glitch9.AIDevKit.GeneratedAudio.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.GeneratedAudio
+    name: GeneratedAudio
+    href: Glitch9.AIDevKit.GeneratedAudio.html
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+  name: StreamAsync
+  nameWithType: RequestExtensions.StreamAsync
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync
+- uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+  commentId: T:Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+  parent: Glitch9.CoreLib.IO.Audio
+  name: StreamAudioPlayer
+  nameWithType: StreamAudioPlayer
+  fullName: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+- uid: UniTask
+  isExternal: true
+  name: UniTask
+  nameWithType: UniTask
+  fullName: UniTask
+- uid: Glitch9.CoreLib.IO.Audio
+  commentId: N:Glitch9.CoreLib.IO.Audio
+  href: Glitch9.html
+  name: Glitch9.CoreLib.IO.Audio
+  nameWithType: Glitch9.CoreLib.IO.Audio
+  fullName: Glitch9.CoreLib.IO.Audio
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.CoreLib
+    name: CoreLib
+    href: Glitch9.CoreLib.html
+  - name: .
+  - uid: Glitch9.CoreLib.IO
+    name: IO
+    href: Glitch9.CoreLib.IO.html
+  - name: .
+  - uid: Glitch9.CoreLib.IO.Audio
+    name: Audio
+    href: Glitch9.CoreLib.IO.Audio.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.CoreLib
+    name: CoreLib
+    href: Glitch9.CoreLib.html
+  - name: .
+  - uid: Glitch9.CoreLib.IO
+    name: IO
+    href: Glitch9.CoreLib.IO.html
+  - name: .
+  - uid: Glitch9.CoreLib.IO.Audio
+    name: Audio
+    href: Glitch9.CoreLib.IO.Audio.html
+- uid: Glitch9.AIDevKit.ElevenLabs.TranscriptRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.TranscriptRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.TranscriptRequest.html
+  name: TranscriptRequest
+  nameWithType: TranscriptRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.TranscriptRequest
+- uid: UniTask{Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript}
+  commentId: '!:UniTask{Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript.html
+  name: UniTask<ElevenLabsTranscript>
+  nameWithType: UniTask<ElevenLabsTranscript>
+  fullName: UniTask<Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript>
+  nameWithType.vb: UniTask(Of ElevenLabsTranscript)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript)
+  name.vb: UniTask(Of ElevenLabsTranscript)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript
+    name: ElevenLabsTranscript
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript
+    name: ElevenLabsTranscript
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.html
+  name: SoundEffectRequest
+  nameWithType: SoundEffectRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.html
+  name: ElevenLabsQuery
+  nameWithType: ElevenLabsQuery
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery
+- uid: UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData}}
+  commentId: '!:UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData}}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData.html
+  name: UniTask<QueryResponse<ElevenLabsSharedVoiceData>>
+  nameWithType: UniTask<QueryResponse<ElevenLabsSharedVoiceData>>
+  fullName: UniTask<Glitch9.IO.Networking.RESTApi.QueryResponse<Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData>>
+  nameWithType.vb: UniTask(Of QueryResponse(Of ElevenLabsSharedVoiceData))
+  fullName.vb: UniTask(Of Glitch9.IO.Networking.RESTApi.QueryResponse(Of Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData))
+  name.vb: UniTask(Of QueryResponse(Of ElevenLabsSharedVoiceData))
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.IO.Networking.RESTApi.QueryResponse`1
+    name: QueryResponse
+  - name: <
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData
+    name: ElevenLabsSharedVoiceData
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.IO.Networking.RESTApi.QueryResponse`1
+    name: QueryResponse
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData
+    name: ElevenLabsSharedVoiceData
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData.html
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.html
+  name: VoiceChangerRequest
+  nameWithType: VoiceChangerRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+- uid: Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest.html
+  name: AudioIsolationRequest
+  nameWithType: AudioIsolationRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest

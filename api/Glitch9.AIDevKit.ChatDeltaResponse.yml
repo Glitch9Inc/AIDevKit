@@ -1,0 +1,718 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ChatDeltaResponse
+  commentId: T:Glitch9.AIDevKit.ChatDeltaResponse
+  id: ChatDeltaResponse
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.ChatDeltaResponse.Delta
+  - Glitch9.AIDevKit.ChatDeltaResponse.Usage
+  - Glitch9.AIDevKit.ChatDeltaResponse.op_Implicit(Glitch9.AIDevKit.ChatDelta)~Glitch9.AIDevKit.ChatDeltaResponse
+  - Glitch9.AIDevKit.ChatDeltaResponse.op_Implicit(Glitch9.AIDevKit.ChatDeltaResponse)~Glitch9.AIDevKit.ChatDelta
+  langs:
+  - csharp
+  - vb
+  name: ChatDeltaResponse
+  nameWithType: ChatDeltaResponse
+  fullName: Glitch9.AIDevKit.ChatDeltaResponse
+  type: Class
+  source:
+    id: ChatDeltaResponse
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: 'public class ChatDeltaResponse : StreamResponse<ChatDelta>'
+    content.vb: Public Class ChatDeltaResponse Inherits StreamResponse(Of ChatDelta)
+  inheritance:
+  - System.Object
+  - Glitch9.Result
+  - Glitch9.Result{Glitch9.AIDevKit.ChatDelta}
+  - Glitch9.IO.Networking.RESTApi.StreamResponse{Glitch9.AIDevKit.ChatDelta}
+  inheritedMembers:
+  - Glitch9.IO.Networking.RESTApi.StreamResponse{Glitch9.AIDevKit.ChatDelta}.IsDone
+  - Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Value
+  - Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Success(Glitch9.AIDevKit.ChatDelta)
+  - Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Fail(Glitch9.AIDevKit.ChatDelta,System.String)
+  - Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Fail(Glitch9.AIDevKit.ChatDelta,System.Exception,System.String[])
+  extensionMethods:
+  - Glitch9.IResult.Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert
+- uid: Glitch9.AIDevKit.ChatDeltaResponse.op_Implicit(Glitch9.AIDevKit.ChatDeltaResponse)~Glitch9.AIDevKit.ChatDelta
+  commentId: M:Glitch9.AIDevKit.ChatDeltaResponse.op_Implicit(Glitch9.AIDevKit.ChatDeltaResponse)~Glitch9.AIDevKit.ChatDelta
+  id: op_Implicit(Glitch9.AIDevKit.ChatDeltaResponse)~Glitch9.AIDevKit.ChatDelta
+  parent: Glitch9.AIDevKit.ChatDeltaResponse
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ChatDelta(ChatDeltaResponse)
+  nameWithType: ChatDeltaResponse.implicit operator ChatDelta(ChatDeltaResponse)
+  fullName: Glitch9.AIDevKit.ChatDeltaResponse.implicit operator Glitch9.AIDevKit.ChatDelta(Glitch9.AIDevKit.ChatDeltaResponse)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 10
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static implicit operator ChatDelta(ChatDeltaResponse wrapper)
+    parameters:
+    - id: wrapper
+      type: Glitch9.AIDevKit.ChatDeltaResponse
+    return:
+      type: Glitch9.AIDevKit.ChatDelta
+    content.vb: Public Shared Widening Operator CType(wrapper As ChatDeltaResponse) As ChatDelta
+  overload: Glitch9.AIDevKit.ChatDeltaResponse.op_Implicit*
+  nameWithType.vb: ChatDeltaResponse.CType(ChatDeltaResponse)
+  fullName.vb: Glitch9.AIDevKit.ChatDeltaResponse.CType(Glitch9.AIDevKit.ChatDeltaResponse)
+  name.vb: CType(ChatDeltaResponse)
+- uid: Glitch9.AIDevKit.ChatDeltaResponse.op_Implicit(Glitch9.AIDevKit.ChatDelta)~Glitch9.AIDevKit.ChatDeltaResponse
+  commentId: M:Glitch9.AIDevKit.ChatDeltaResponse.op_Implicit(Glitch9.AIDevKit.ChatDelta)~Glitch9.AIDevKit.ChatDeltaResponse
+  id: op_Implicit(Glitch9.AIDevKit.ChatDelta)~Glitch9.AIDevKit.ChatDeltaResponse
+  parent: Glitch9.AIDevKit.ChatDeltaResponse
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ChatDeltaResponse(ChatDelta)
+  nameWithType: ChatDeltaResponse.implicit operator ChatDeltaResponse(ChatDelta)
+  fullName: Glitch9.AIDevKit.ChatDeltaResponse.implicit operator Glitch9.AIDevKit.ChatDeltaResponse(Glitch9.AIDevKit.ChatDelta)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static implicit operator ChatDeltaResponse(ChatDelta delta)
+    parameters:
+    - id: delta
+      type: Glitch9.AIDevKit.ChatDelta
+    return:
+      type: Glitch9.AIDevKit.ChatDeltaResponse
+    content.vb: Public Shared Widening Operator CType(delta As ChatDelta) As ChatDeltaResponse
+  overload: Glitch9.AIDevKit.ChatDeltaResponse.op_Implicit*
+  nameWithType.vb: ChatDeltaResponse.CType(ChatDelta)
+  fullName.vb: Glitch9.AIDevKit.ChatDeltaResponse.CType(Glitch9.AIDevKit.ChatDelta)
+  name.vb: CType(ChatDelta)
+- uid: Glitch9.AIDevKit.ChatDeltaResponse.Delta
+  commentId: P:Glitch9.AIDevKit.ChatDeltaResponse.Delta
+  id: Delta
+  parent: Glitch9.AIDevKit.ChatDeltaResponse
+  langs:
+  - csharp
+  - vb
+  name: Delta
+  nameWithType: ChatDeltaResponse.Delta
+  fullName: Glitch9.AIDevKit.ChatDeltaResponse.Delta
+  type: Property
+  source:
+    id: Delta
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 12
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public ChatDelta Delta { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ChatDelta
+    content.vb: Public Property Delta As ChatDelta
+  overload: Glitch9.AIDevKit.ChatDeltaResponse.Delta*
+- uid: Glitch9.AIDevKit.ChatDeltaResponse.Usage
+  commentId: P:Glitch9.AIDevKit.ChatDeltaResponse.Usage
+  id: Usage
+  parent: Glitch9.AIDevKit.ChatDeltaResponse
+  langs:
+  - csharp
+  - vb
+  name: Usage
+  nameWithType: ChatDeltaResponse.Usage
+  fullName: Glitch9.AIDevKit.ChatDeltaResponse.Usage
+  type: Property
+  source:
+    id: Usage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 13
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public Usage Usage { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Usage
+    content.vb: Public Property Usage As Usage
+  overload: Glitch9.AIDevKit.ChatDeltaResponse.Usage*
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.Result
+  commentId: T:Glitch9.Result
+  parent: Glitch9
+  name: Result
+  nameWithType: Result
+  fullName: Glitch9.Result
+- uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}
+  commentId: T:Glitch9.Result{Glitch9.AIDevKit.ChatDelta}
+  parent: Glitch9
+  definition: Glitch9.Result`1
+  href: Glitch9.AIDevKit.ChatDelta.html
+  name: Result<ChatDelta>
+  nameWithType: Result<ChatDelta>
+  fullName: Glitch9.Result<Glitch9.AIDevKit.ChatDelta>
+  nameWithType.vb: Result(Of ChatDelta)
+  fullName.vb: Glitch9.Result(Of Glitch9.AIDevKit.ChatDelta)
+  name.vb: Result(Of ChatDelta)
+  spec.csharp:
+  - uid: Glitch9.Result`1
+    name: Result
+  - name: <
+  - uid: Glitch9.AIDevKit.ChatDelta
+    name: ChatDelta
+    href: Glitch9.AIDevKit.ChatDelta.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.Result`1
+    name: Result
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatDelta
+    name: ChatDelta
+    href: Glitch9.AIDevKit.ChatDelta.html
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.StreamResponse{Glitch9.AIDevKit.ChatDelta}
+  commentId: T:Glitch9.IO.Networking.RESTApi.StreamResponse{Glitch9.AIDevKit.ChatDelta}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.StreamResponse`1
+  href: Glitch9.AIDevKit.ChatDelta.html
+  name: StreamResponse<ChatDelta>
+  nameWithType: StreamResponse<ChatDelta>
+  fullName: Glitch9.IO.Networking.RESTApi.StreamResponse<Glitch9.AIDevKit.ChatDelta>
+  nameWithType.vb: StreamResponse(Of ChatDelta)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.StreamResponse(Of Glitch9.AIDevKit.ChatDelta)
+  name.vb: StreamResponse(Of ChatDelta)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.StreamResponse`1
+    name: StreamResponse
+  - name: <
+  - uid: Glitch9.AIDevKit.ChatDelta
+    name: ChatDelta
+    href: Glitch9.AIDevKit.ChatDelta.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.StreamResponse`1
+    name: StreamResponse
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatDelta
+    name: ChatDelta
+    href: Glitch9.AIDevKit.ChatDelta.html
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.StreamResponse{Glitch9.AIDevKit.ChatDelta}.IsDone
+  commentId: P:Glitch9.IO.Networking.RESTApi.StreamResponse{Glitch9.AIDevKit.ChatDelta}.IsDone
+  parent: Glitch9.IO.Networking.RESTApi.StreamResponse{Glitch9.AIDevKit.ChatDelta}
+  definition: Glitch9.IO.Networking.RESTApi.StreamResponse`1.IsDone
+  name: IsDone
+  nameWithType: StreamResponse<ChatDelta>.IsDone
+  fullName: Glitch9.IO.Networking.RESTApi.StreamResponse<Glitch9.AIDevKit.ChatDelta>.IsDone
+  nameWithType.vb: StreamResponse(Of ChatDelta).IsDone
+  fullName.vb: Glitch9.IO.Networking.RESTApi.StreamResponse(Of Glitch9.AIDevKit.ChatDelta).IsDone
+- uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Value
+  commentId: P:Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Value
+  parent: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}
+  definition: Glitch9.Result`1.Value
+  name: Value
+  nameWithType: Result<ChatDelta>.Value
+  fullName: Glitch9.Result<Glitch9.AIDevKit.ChatDelta>.Value
+  nameWithType.vb: Result(Of ChatDelta).Value
+  fullName.vb: Glitch9.Result(Of Glitch9.AIDevKit.ChatDelta).Value
+- uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Success(Glitch9.AIDevKit.ChatDelta)
+  commentId: M:Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Success(Glitch9.AIDevKit.ChatDelta)
+  parent: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}
+  definition: Glitch9.Result`1.Success(`0)
+  href: Glitch9.AIDevKit.ChatDelta.html
+  name: Success(ChatDelta)
+  nameWithType: Result<ChatDelta>.Success(ChatDelta)
+  fullName: Glitch9.Result<Glitch9.AIDevKit.ChatDelta>.Success(Glitch9.AIDevKit.ChatDelta)
+  nameWithType.vb: Result(Of ChatDelta).Success(ChatDelta)
+  fullName.vb: Glitch9.Result(Of Glitch9.AIDevKit.ChatDelta).Success(Glitch9.AIDevKit.ChatDelta)
+  spec.csharp:
+  - uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Success(Glitch9.AIDevKit.ChatDelta)
+    name: Success
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatDelta
+    name: ChatDelta
+    href: Glitch9.AIDevKit.ChatDelta.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Success(Glitch9.AIDevKit.ChatDelta)
+    name: Success
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatDelta
+    name: ChatDelta
+    href: Glitch9.AIDevKit.ChatDelta.html
+  - name: )
+- uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Fail(Glitch9.AIDevKit.ChatDelta,System.String)
+  commentId: M:Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Fail(Glitch9.AIDevKit.ChatDelta,System.String)
+  parent: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}
+  definition: Glitch9.Result`1.Fail(`0,System.String)
+  href: Glitch9.AIDevKit.ChatDelta.html
+  name: Fail(ChatDelta, string)
+  nameWithType: Result<ChatDelta>.Fail(ChatDelta, string)
+  fullName: Glitch9.Result<Glitch9.AIDevKit.ChatDelta>.Fail(Glitch9.AIDevKit.ChatDelta, string)
+  nameWithType.vb: Result(Of ChatDelta).Fail(ChatDelta, String)
+  fullName.vb: Glitch9.Result(Of Glitch9.AIDevKit.ChatDelta).Fail(Glitch9.AIDevKit.ChatDelta, String)
+  name.vb: Fail(ChatDelta, String)
+  spec.csharp:
+  - uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Fail(Glitch9.AIDevKit.ChatDelta,System.String)
+    name: Fail
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatDelta
+    name: ChatDelta
+    href: Glitch9.AIDevKit.ChatDelta.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Fail(Glitch9.AIDevKit.ChatDelta,System.String)
+    name: Fail
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatDelta
+    name: ChatDelta
+    href: Glitch9.AIDevKit.ChatDelta.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Fail(Glitch9.AIDevKit.ChatDelta,System.Exception,System.String[])
+  commentId: M:Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Fail(Glitch9.AIDevKit.ChatDelta,System.Exception,System.String[])
+  parent: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}
+  definition: Glitch9.Result`1.Fail(`0,System.Exception,System.String[])
+  href: Glitch9.AIDevKit.ChatDelta.html
+  name: Fail(ChatDelta, Exception, params string[])
+  nameWithType: Result<ChatDelta>.Fail(ChatDelta, Exception, params string[])
+  fullName: Glitch9.Result<Glitch9.AIDevKit.ChatDelta>.Fail(Glitch9.AIDevKit.ChatDelta, System.Exception, params string[])
+  nameWithType.vb: Result(Of ChatDelta).Fail(ChatDelta, Exception, ParamArray String())
+  fullName.vb: Glitch9.Result(Of Glitch9.AIDevKit.ChatDelta).Fail(Glitch9.AIDevKit.ChatDelta, System.Exception, ParamArray String())
+  name.vb: Fail(ChatDelta, Exception, ParamArray String())
+  spec.csharp:
+  - uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Fail(Glitch9.AIDevKit.ChatDelta,System.Exception,System.String[])
+    name: Fail
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatDelta
+    name: ChatDelta
+    href: Glitch9.AIDevKit.ChatDelta.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.Result{Glitch9.AIDevKit.ChatDelta}.Fail(Glitch9.AIDevKit.ChatDelta,System.Exception,System.String[])
+    name: Fail
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatDelta
+    name: ChatDelta
+    href: Glitch9.AIDevKit.ChatDelta.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IResult.Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
+  definition: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
+  name: Convert(IResult)
+  nameWithType: AssistantsAPIResultExtensions.Convert(IResult)
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
+    name: Convert
+    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
+  - name: (
+  - uid: Glitch9.IResult
+    name: IResult
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
+    name: Convert
+    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
+  - name: (
+  - uid: Glitch9.IResult
+    name: IResult
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9
+  commentId: N:Glitch9
+  href: Glitch9.html
+  name: Glitch9
+  nameWithType: Glitch9
+  fullName: Glitch9
+- uid: Glitch9.Result`1
+  commentId: T:Glitch9.Result`1
+  name: Result<T>
+  nameWithType: Result<T>
+  fullName: Glitch9.Result<T>
+  nameWithType.vb: Result(Of T)
+  fullName.vb: Glitch9.Result(Of T)
+  name.vb: Result(Of T)
+  spec.csharp:
+  - uid: Glitch9.Result`1
+    name: Result
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.Result`1
+    name: Result
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.StreamResponse`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.StreamResponse`1
+  name: StreamResponse<TChunk>
+  nameWithType: StreamResponse<TChunk>
+  fullName: Glitch9.IO.Networking.RESTApi.StreamResponse<TChunk>
+  nameWithType.vb: StreamResponse(Of TChunk)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.StreamResponse(Of TChunk)
+  name.vb: StreamResponse(Of TChunk)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.StreamResponse`1
+    name: StreamResponse
+  - name: <
+  - name: TChunk
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.StreamResponse`1
+    name: StreamResponse
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TChunk
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.IO.Networking.RESTApi.StreamResponse`1.IsDone
+  commentId: P:Glitch9.IO.Networking.RESTApi.StreamResponse`1.IsDone
+  name: IsDone
+  nameWithType: StreamResponse<TChunk>.IsDone
+  fullName: Glitch9.IO.Networking.RESTApi.StreamResponse<TChunk>.IsDone
+  nameWithType.vb: StreamResponse(Of TChunk).IsDone
+  fullName.vb: Glitch9.IO.Networking.RESTApi.StreamResponse(Of TChunk).IsDone
+- uid: Glitch9.Result`1.Value
+  commentId: P:Glitch9.Result`1.Value
+  name: Value
+  nameWithType: Result<T>.Value
+  fullName: Glitch9.Result<T>.Value
+  nameWithType.vb: Result(Of T).Value
+  fullName.vb: Glitch9.Result(Of T).Value
+- uid: Glitch9.Result`1.Success(`0)
+  commentId: M:Glitch9.Result`1.Success(`0)
+  name: Success(T)
+  nameWithType: Result<T>.Success(T)
+  fullName: Glitch9.Result<T>.Success(T)
+  nameWithType.vb: Result(Of T).Success(T)
+  fullName.vb: Glitch9.Result(Of T).Success(T)
+  spec.csharp:
+  - uid: Glitch9.Result`1.Success(`0)
+    name: Success
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Glitch9.Result`1.Success(`0)
+    name: Success
+  - name: (
+  - name: T
+  - name: )
+- uid: Glitch9.Result`1.Fail(`0,System.String)
+  commentId: M:Glitch9.Result`1.Fail(`0,System.String)
+  isExternal: true
+  name: Fail(T, string)
+  nameWithType: Result<T>.Fail(T, string)
+  fullName: Glitch9.Result<T>.Fail(T, string)
+  nameWithType.vb: Result(Of T).Fail(T, String)
+  fullName.vb: Glitch9.Result(Of T).Fail(T, String)
+  name.vb: Fail(T, String)
+  spec.csharp:
+  - uid: Glitch9.Result`1.Fail(`0,System.String)
+    name: Fail
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.Result`1.Fail(`0,System.String)
+    name: Fail
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.Result`1.Fail(`0,System.Exception,System.String[])
+  commentId: M:Glitch9.Result`1.Fail(`0,System.Exception,System.String[])
+  isExternal: true
+  name: Fail(T, Exception, params string[])
+  nameWithType: Result<T>.Fail(T, Exception, params string[])
+  fullName: Glitch9.Result<T>.Fail(T, System.Exception, params string[])
+  nameWithType.vb: Result(Of T).Fail(T, Exception, ParamArray String())
+  fullName.vb: Glitch9.Result(Of T).Fail(T, System.Exception, ParamArray String())
+  name.vb: Fail(T, Exception, ParamArray String())
+  spec.csharp:
+  - uid: Glitch9.Result`1.Fail(`0,System.Exception,System.String[])
+    name: Fail
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.Result`1.Fail(`0,System.Exception,System.String[])
+    name: Fail
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
+  name: Convert(IResult)
+  nameWithType: AssistantsAPIResultExtensions.Convert(IResult)
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
+    name: Convert
+    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
+  - name: (
+  - uid: Glitch9.IResult
+    name: IResult
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
+    name: Convert
+    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
+  - name: (
+  - uid: Glitch9.IResult
+    name: IResult
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
+  parent: Glitch9.AIDevKit.OpenAI.Assistants
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html
+  name: AssistantsAPIResultExtensions
+  nameWithType: AssistantsAPIResultExtensions
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
+- uid: Glitch9.AIDevKit.OpenAI.Assistants
+  commentId: N:Glitch9.AIDevKit.OpenAI.Assistants
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI.Assistants
+  nameWithType: Glitch9.AIDevKit.OpenAI.Assistants
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants
+    name: Assistants
+    href: Glitch9.AIDevKit.OpenAI.Assistants.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants
+    name: Assistants
+    href: Glitch9.AIDevKit.OpenAI.Assistants.html
+- uid: Glitch9.AIDevKit.ChatDeltaResponse.op_Implicit*
+  commentId: Overload:Glitch9.AIDevKit.ChatDeltaResponse.op_Implicit
+  name: implicit operator
+  nameWithType: ChatDeltaResponse.implicit operator
+  fullName: Glitch9.AIDevKit.ChatDeltaResponse.implicit operator
+  nameWithType.vb: ChatDeltaResponse.CType
+  fullName.vb: Glitch9.AIDevKit.ChatDeltaResponse.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Glitch9.AIDevKit.ChatDeltaResponse
+  commentId: T:Glitch9.AIDevKit.ChatDeltaResponse
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatDeltaResponse.html
+  name: ChatDeltaResponse
+  nameWithType: ChatDeltaResponse
+  fullName: Glitch9.AIDevKit.ChatDeltaResponse
+- uid: Glitch9.AIDevKit.ChatDelta
+  commentId: T:Glitch9.AIDevKit.ChatDelta
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatDelta.html
+  name: ChatDelta
+  nameWithType: ChatDelta
+  fullName: Glitch9.AIDevKit.ChatDelta
+- uid: Glitch9.AIDevKit.ChatDeltaResponse.Delta*
+  commentId: Overload:Glitch9.AIDevKit.ChatDeltaResponse.Delta
+  href: Glitch9.AIDevKit.ChatDeltaResponse.html#Glitch9_AIDevKit_ChatDeltaResponse_Delta
+  name: Delta
+  nameWithType: ChatDeltaResponse.Delta
+  fullName: Glitch9.AIDevKit.ChatDeltaResponse.Delta
+- uid: Glitch9.AIDevKit.ChatDeltaResponse.Usage*
+  commentId: Overload:Glitch9.AIDevKit.ChatDeltaResponse.Usage
+  href: Glitch9.AIDevKit.ChatDeltaResponse.html#Glitch9_AIDevKit_ChatDeltaResponse_Usage
+  name: Usage
+  nameWithType: ChatDeltaResponse.Usage
+  fullName: Glitch9.AIDevKit.ChatDeltaResponse.Usage
+- uid: Glitch9.AIDevKit.Usage
+  commentId: T:Glitch9.AIDevKit.Usage
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Usage.html
+  name: Usage
+  nameWithType: Usage
+  fullName: Glitch9.AIDevKit.Usage

@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AssistantEventHandler | AI DevKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AssistantEventHandler | AI DevKit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AI DevKit">
+            AI DevKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler" class="text-break">
+Class AssistantEventHandler  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Assistants.html">Assistants</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Glitch9.AIDevKit.Pro.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AssistantEventHandler</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AssistantEventHandler</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNotSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfNotSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNull__1___0_System_String_System_String_">LogExtensions.LogIfNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_ToSenderName_System_Object_">SystemExtensions.ToSenderName(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.TypeExtensions.html#Glitch9_TypeExtensions_IsInteger_System_Object_">TypeExtensions.IsInteger(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler__ctor_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.#ctor*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler__ctor" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.#ctor">
+  AssistantEventHandler()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssistantEventHandler()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerAssistantCreated_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerAssistantCreated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerAssistantCreated_Glitch9_AIDevKit_OpenAI_Assistant_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerAssistantCreated(Glitch9.AIDevKit.OpenAI.Assistant)">
+  TriggerAssistantCreated(Assistant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerAssistantCreated(Assistant assistant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assistant</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerAssistantRetrieved_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerAssistantRetrieved*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerAssistantRetrieved_Glitch9_AIDevKit_OpenAI_Assistant_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerAssistantRetrieved(Glitch9.AIDevKit.OpenAI.Assistant)">
+  TriggerAssistantRetrieved(Assistant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerAssistantRetrieved(Assistant assistant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assistant</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerAssistantUpdated_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerAssistantUpdated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerAssistantUpdated_Glitch9_AIDevKit_OpenAI_Assistant_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerAssistantUpdated(Glitch9.AIDevKit.OpenAI.Assistant)">
+  TriggerAssistantUpdated(Assistant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerAssistantUpdated(Assistant assistant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assistant</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerError_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerError*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerError_System_String_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerError(System.String)">
+  TriggerError(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerError(string error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>error</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerMessageCompleted_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerMessageCompleted*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerMessageCompleted_Glitch9_AIDevKit_OpenAI_Message_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerMessageCompleted(Glitch9.AIDevKit.OpenAI.Message)">
+  TriggerMessageCompleted(Message)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerMessageCompleted(Message message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Message.html">Message</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerMessageCreated_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerMessageCreated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerMessageCreated_Glitch9_AIDevKit_OpenAI_Message_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerMessageCreated(Glitch9.AIDevKit.OpenAI.Message)">
+  TriggerMessageCreated(Message)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerMessageCreated(Message message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Message.html">Message</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerMessageRetrieved_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerMessageRetrieved*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerMessageRetrieved_Glitch9_AIDevKit_OpenAI_Message_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerMessageRetrieved(Glitch9.AIDevKit.OpenAI.Message)">
+  TriggerMessageRetrieved(Message)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerMessageRetrieved(Message message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Message.html">Message</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerRunCreated_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerRunCreated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerRunCreated_Glitch9_AIDevKit_OpenAI_Run_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerRunCreated(Glitch9.AIDevKit.OpenAI.Run)">
+  TriggerRunCreated(Run)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerRunCreated(Run run)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>run</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerRunRetrieved_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerRunRetrieved*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerRunRetrieved_Glitch9_AIDevKit_OpenAI_Run_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerRunRetrieved(Glitch9.AIDevKit.OpenAI.Run)">
+  TriggerRunRetrieved(Run)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerRunRetrieved(Run run)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>run</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerRunStatusChanged_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerRunStatusChanged*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerRunStatusChanged_Glitch9_AIDevKit_OpenAI_RunStatus_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerRunStatusChanged(Glitch9.AIDevKit.OpenAI.RunStatus)">
+  TriggerRunStatusChanged(RunStatus)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerRunStatusChanged(RunStatus runStatus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runStatus</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStatus.html">RunStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerRunStepRetrieved_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerRunStepRetrieved*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerRunStepRetrieved_Glitch9_AIDevKit_OpenAI_RunStep_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerRunStepRetrieved(Glitch9.AIDevKit.OpenAI.RunStep)">
+  TriggerRunStepRetrieved(RunStep)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerRunStepRetrieved(RunStep runStep)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runStep</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerRunUpdated_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerRunUpdated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerRunUpdated_Glitch9_AIDevKit_OpenAI_Run_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerRunUpdated(Glitch9.AIDevKit.OpenAI.Run)">
+  TriggerRunUpdated(Run)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerRunUpdated(Run run)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>run</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerStreamDone_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerStreamDone*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerStreamDone" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerStreamDone">
+  TriggerStreamDone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerStreamDone()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerTextCreated_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerTextCreated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerTextCreated" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerTextCreated">
+  TriggerTextCreated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerTextCreated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerTextDelta_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerTextDelta*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerTextDelta_System_String_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerTextDelta(System.String)">
+  TriggerTextDelta(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerTextDelta(string delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerThreadCreated_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerThreadCreated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerThreadCreated_Glitch9_AIDevKit_OpenAI_Thread_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerThreadCreated(Glitch9.AIDevKit.OpenAI.Thread)">
+  TriggerThreadCreated(Thread)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerThreadCreated(Thread thread)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thread</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerThreadRetrieved_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerThreadRetrieved*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerThreadRetrieved_Glitch9_AIDevKit_OpenAI_Thread_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerThreadRetrieved(Glitch9.AIDevKit.OpenAI.Thread)">
+  TriggerThreadRetrieved(Thread)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerThreadRetrieved(Thread thread)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thread</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerThreadUpdated_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerThreadUpdated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerThreadUpdated_Glitch9_AIDevKit_OpenAI_Thread_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerThreadUpdated(Glitch9.AIDevKit.OpenAI.Thread)">
+  TriggerThreadUpdated(Thread)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerThreadUpdated(Thread thread)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thread</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerToolCallCreated_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerToolCallCreated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerToolCallCreated_Glitch9_AIDevKit_OpenAI_ToolCall_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerToolCallCreated(Glitch9.AIDevKit.OpenAI.ToolCall)">
+  TriggerToolCallCreated(ToolCall)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerToolCallCreated(ToolCall toolCall)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toolCall</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolCall.html">ToolCall</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerToolCallDelta_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerToolCallDelta*"></a>
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_TriggerToolCallDelta_Glitch9_AIDevKit_OpenAI_ToolCall_" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.TriggerToolCallDelta(Glitch9.AIDevKit.OpenAI.ToolCall)">
+  TriggerToolCallDelta(ToolCall)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerToolCallDelta(ToolCall toolCall)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toolCall</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolCall.html">ToolCall</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onAssistantCreated" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onAssistantCreated">
+  onAssistantCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Assistant&gt; onAssistantCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onAssistantRetrieved" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onAssistantRetrieved">
+  onAssistantRetrieved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Assistant&gt; onAssistantRetrieved</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onAssistantUpdated" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onAssistantUpdated">
+  onAssistantUpdated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Assistant&gt; onAssistantUpdated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onError" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onError">
+  onError
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;string&gt; onError</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onMessageCompleted" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onMessageCompleted">
+  onMessageCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Message&gt; onMessageCompleted</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Message.html">Message</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onMessageCreated" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onMessageCreated">
+  onMessageCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Message&gt; onMessageCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Message.html">Message</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onMessageRetrieved" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onMessageRetrieved">
+  onMessageRetrieved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Message&gt; onMessageRetrieved</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Message.html">Message</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onRunCreated" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onRunCreated">
+  onRunCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Run&gt; onRunCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onRunRetrieved" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onRunRetrieved">
+  onRunRetrieved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Run&gt; onRunRetrieved</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onRunStatusChanged" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onRunStatusChanged">
+  onRunStatusChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RunStatus&gt; onRunStatusChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStatus.html">RunStatus</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onRunStepRetrieved" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onRunStepRetrieved">
+  onRunStepRetrieved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RunStep&gt; onRunStepRetrieved</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onRunUpdated" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onRunUpdated">
+  onRunUpdated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Run&gt; onRunUpdated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onStreamDone" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onStreamDone">
+  onStreamDone
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler onStreamDone</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onTextCreated" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onTextCreated">
+  onTextCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler onTextCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onTextDelta" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onTextDelta">
+  onTextDelta
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;string&gt; onTextDelta</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onThreadCreated" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onThreadCreated">
+  onThreadCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Thread&gt; onThreadCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onThreadRetrieved" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onThreadRetrieved">
+  onThreadRetrieved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Thread&gt; onThreadRetrieved</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onThreadUpdated" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onThreadUpdated">
+  onThreadUpdated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Thread&gt; onThreadUpdated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onToolCallCreated" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onToolCallCreated">
+  onToolCallCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ToolCall&gt; onToolCallCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolCall.html">ToolCall</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_Assistants_AssistantEventHandler_onToolCallDelta" data-uid="Glitch9.AIDevKit.Assistants.AssistantEventHandler.onToolCallDelta">
+  onToolCallDelta
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ToolCall&gt; onToolCallDelta</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolCall.html">ToolCall</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

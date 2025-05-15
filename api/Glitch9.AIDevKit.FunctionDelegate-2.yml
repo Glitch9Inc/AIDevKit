@@ -1,0 +1,388 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.FunctionDelegate`2
+  commentId: T:Glitch9.AIDevKit.FunctionDelegate`2
+  id: FunctionDelegate`2
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.FunctionDelegate`2.DefaultResult
+  - Glitch9.AIDevKit.FunctionDelegate`2.FunctionName
+  - Glitch9.AIDevKit.FunctionDelegate`2.Invoke(System.String)
+  - Glitch9.AIDevKit.FunctionDelegate`2.Invoke(`0)
+  langs:
+  - csharp
+  - vb
+  name: FunctionDelegate<TArgument, TResult>
+  nameWithType: FunctionDelegate<TArgument, TResult>
+  fullName: Glitch9.AIDevKit.FunctionDelegate<TArgument, TResult>
+  type: Class
+  source:
+    id: FunctionDelegate
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDelegate.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit
+  summary: Provides an abstract base class for implementing function delegates with specific argument and result types.
+  example: []
+  syntax:
+    content: 'public abstract class FunctionDelegate<TArgument, TResult> : IFunctionDelegate'
+    typeParameters:
+    - id: TArgument
+      description: The type of the function argument.
+    - id: TResult
+      description: The type of the function result.
+    content.vb: Public MustInherit Class FunctionDelegate(Of TArgument, TResult) Implements IFunctionDelegate
+  inheritance:
+  - System.Object
+  implements:
+  - Glitch9.AIDevKit.IFunctionDelegate
+  nameWithType.vb: FunctionDelegate(Of TArgument, TResult)
+  fullName.vb: Glitch9.AIDevKit.FunctionDelegate(Of TArgument, TResult)
+  name.vb: FunctionDelegate(Of TArgument, TResult)
+- uid: Glitch9.AIDevKit.FunctionDelegate`2.FunctionName
+  commentId: P:Glitch9.AIDevKit.FunctionDelegate`2.FunctionName
+  id: FunctionName
+  parent: Glitch9.AIDevKit.FunctionDelegate`2
+  langs:
+  - csharp
+  - vb
+  name: FunctionName
+  nameWithType: FunctionDelegate<TArgument, TResult>.FunctionName
+  fullName: Glitch9.AIDevKit.FunctionDelegate<TArgument, TResult>.FunctionName
+  type: Property
+  source:
+    id: FunctionName
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDelegate.cs
+    startLine: 34
+  namespace: Glitch9.AIDevKit
+  summary: Gets or sets the name of the function.
+  example: []
+  syntax:
+    content: public string FunctionName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FunctionName As String
+  overload: Glitch9.AIDevKit.FunctionDelegate`2.FunctionName*
+  implements:
+  - Glitch9.AIDevKit.IFunctionDelegate.FunctionName
+  nameWithType.vb: FunctionDelegate(Of TArgument, TResult).FunctionName
+  fullName.vb: Glitch9.AIDevKit.FunctionDelegate(Of TArgument, TResult).FunctionName
+- uid: Glitch9.AIDevKit.FunctionDelegate`2.DefaultResult
+  commentId: P:Glitch9.AIDevKit.FunctionDelegate`2.DefaultResult
+  id: DefaultResult
+  parent: Glitch9.AIDevKit.FunctionDelegate`2
+  langs:
+  - csharp
+  - vb
+  name: DefaultResult
+  nameWithType: FunctionDelegate<TArgument, TResult>.DefaultResult
+  fullName: Glitch9.AIDevKit.FunctionDelegate<TArgument, TResult>.DefaultResult
+  type: Property
+  source:
+    id: DefaultResult
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDelegate.cs
+    startLine: 39
+  namespace: Glitch9.AIDevKit
+  summary: Gets or sets the default result to be used in case of failure.
+  example: []
+  syntax:
+    content: public TResult DefaultResult { get; set; }
+    parameters: []
+    return:
+      type: '{TResult}'
+    content.vb: Public Property DefaultResult As TResult
+  overload: Glitch9.AIDevKit.FunctionDelegate`2.DefaultResult*
+  nameWithType.vb: FunctionDelegate(Of TArgument, TResult).DefaultResult
+  fullName.vb: Glitch9.AIDevKit.FunctionDelegate(Of TArgument, TResult).DefaultResult
+- uid: Glitch9.AIDevKit.FunctionDelegate`2.Invoke(System.String)
+  commentId: M:Glitch9.AIDevKit.FunctionDelegate`2.Invoke(System.String)
+  id: Invoke(System.String)
+  parent: Glitch9.AIDevKit.FunctionDelegate`2
+  langs:
+  - csharp
+  - vb
+  name: Invoke(string)
+  nameWithType: FunctionDelegate<TArgument, TResult>.Invoke(string)
+  fullName: Glitch9.AIDevKit.FunctionDelegate<TArgument, TResult>.Invoke(string)
+  type: Method
+  source:
+    id: Invoke
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDelegate.cs
+    startLine: 46
+  namespace: Glitch9.AIDevKit
+  summary: Executes the function with the provided argument.
+  example: []
+  syntax:
+    content: public UniTask<Result<string>> Invoke(string argument)
+    parameters:
+    - id: argument
+      type: System.String
+      description: The serialized argument for the function.
+    return:
+      type: UniTask{Glitch9.Result{System.String}}
+      description: A task representing the asynchronous operation, with a result containing the serialized function result.
+    content.vb: Public Function Invoke(argument As String) As UniTask(Of Result(Of String))
+  overload: Glitch9.AIDevKit.FunctionDelegate`2.Invoke*
+  implements:
+  - Glitch9.AIDevKit.IFunctionDelegate.Invoke(System.String)
+  nameWithType.vb: FunctionDelegate(Of TArgument, TResult).Invoke(String)
+  fullName.vb: Glitch9.AIDevKit.FunctionDelegate(Of TArgument, TResult).Invoke(String)
+  name.vb: Invoke(String)
+- uid: Glitch9.AIDevKit.FunctionDelegate`2.Invoke(`0)
+  commentId: M:Glitch9.AIDevKit.FunctionDelegate`2.Invoke(`0)
+  id: Invoke(`0)
+  parent: Glitch9.AIDevKit.FunctionDelegate`2
+  langs:
+  - csharp
+  - vb
+  name: Invoke(TArgument)
+  nameWithType: FunctionDelegate<TArgument, TResult>.Invoke(TArgument)
+  fullName: Glitch9.AIDevKit.FunctionDelegate<TArgument, TResult>.Invoke(TArgument)
+  type: Method
+  source:
+    id: Invoke
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDelegate.cs
+    startLine: 77
+  namespace: Glitch9.AIDevKit
+  summary: Executes the function with the specified argument.
+  example: []
+  syntax:
+    content: public abstract UniTask<TResult> Invoke(TArgument argument)
+    parameters:
+    - id: argument
+      type: '{TArgument}'
+      description: The deserialized argument for the function.
+    return:
+      type: UniTask{{TResult}}
+      description: A task representing the asynchronous operation, with a result containing the function result.
+    content.vb: Public MustOverride Function Invoke(argument As TArgument) As UniTask(Of TResult)
+  overload: Glitch9.AIDevKit.FunctionDelegate`2.Invoke*
+  nameWithType.vb: FunctionDelegate(Of TArgument, TResult).Invoke(TArgument)
+  fullName.vb: Glitch9.AIDevKit.FunctionDelegate(Of TArgument, TResult).Invoke(TArgument)
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.IFunctionDelegate
+  commentId: T:Glitch9.AIDevKit.IFunctionDelegate
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IFunctionDelegate.html
+  name: IFunctionDelegate
+  nameWithType: IFunctionDelegate
+  fullName: Glitch9.AIDevKit.IFunctionDelegate
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.FunctionDelegate`2.FunctionName*
+  commentId: Overload:Glitch9.AIDevKit.FunctionDelegate`2.FunctionName
+  href: Glitch9.AIDevKit.FunctionDelegate-2.html#Glitch9_AIDevKit_FunctionDelegate_2_FunctionName
+  name: FunctionName
+  nameWithType: FunctionDelegate<TArgument, TResult>.FunctionName
+  fullName: Glitch9.AIDevKit.FunctionDelegate<TArgument, TResult>.FunctionName
+  nameWithType.vb: FunctionDelegate(Of TArgument, TResult).FunctionName
+  fullName.vb: Glitch9.AIDevKit.FunctionDelegate(Of TArgument, TResult).FunctionName
+- uid: Glitch9.AIDevKit.IFunctionDelegate.FunctionName
+  commentId: P:Glitch9.AIDevKit.IFunctionDelegate.FunctionName
+  parent: Glitch9.AIDevKit.IFunctionDelegate
+  href: Glitch9.AIDevKit.IFunctionDelegate.html#Glitch9_AIDevKit_IFunctionDelegate_FunctionName
+  name: FunctionName
+  nameWithType: IFunctionDelegate.FunctionName
+  fullName: Glitch9.AIDevKit.IFunctionDelegate.FunctionName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.FunctionDelegate`2.DefaultResult*
+  commentId: Overload:Glitch9.AIDevKit.FunctionDelegate`2.DefaultResult
+  href: Glitch9.AIDevKit.FunctionDelegate-2.html#Glitch9_AIDevKit_FunctionDelegate_2_DefaultResult
+  name: DefaultResult
+  nameWithType: FunctionDelegate<TArgument, TResult>.DefaultResult
+  fullName: Glitch9.AIDevKit.FunctionDelegate<TArgument, TResult>.DefaultResult
+  nameWithType.vb: FunctionDelegate(Of TArgument, TResult).DefaultResult
+  fullName.vb: Glitch9.AIDevKit.FunctionDelegate(Of TArgument, TResult).DefaultResult
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  commentId: '!:TResult'
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: Glitch9.AIDevKit.FunctionDelegate`2.Invoke*
+  commentId: Overload:Glitch9.AIDevKit.FunctionDelegate`2.Invoke
+  href: Glitch9.AIDevKit.FunctionDelegate-2.html#Glitch9_AIDevKit_FunctionDelegate_2_Invoke_System_String_
+  name: Invoke
+  nameWithType: FunctionDelegate<TArgument, TResult>.Invoke
+  fullName: Glitch9.AIDevKit.FunctionDelegate<TArgument, TResult>.Invoke
+  nameWithType.vb: FunctionDelegate(Of TArgument, TResult).Invoke
+  fullName.vb: Glitch9.AIDevKit.FunctionDelegate(Of TArgument, TResult).Invoke
+- uid: Glitch9.AIDevKit.IFunctionDelegate.Invoke(System.String)
+  commentId: M:Glitch9.AIDevKit.IFunctionDelegate.Invoke(System.String)
+  parent: Glitch9.AIDevKit.IFunctionDelegate
+  isExternal: true
+  href: Glitch9.AIDevKit.IFunctionDelegate.html#Glitch9_AIDevKit_IFunctionDelegate_Invoke_System_String_
+  name: Invoke(string)
+  nameWithType: IFunctionDelegate.Invoke(string)
+  fullName: Glitch9.AIDevKit.IFunctionDelegate.Invoke(string)
+  nameWithType.vb: IFunctionDelegate.Invoke(String)
+  fullName.vb: Glitch9.AIDevKit.IFunctionDelegate.Invoke(String)
+  name.vb: Invoke(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IFunctionDelegate.Invoke(System.String)
+    name: Invoke
+    href: Glitch9.AIDevKit.IFunctionDelegate.html#Glitch9_AIDevKit_IFunctionDelegate_Invoke_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IFunctionDelegate.Invoke(System.String)
+    name: Invoke
+    href: Glitch9.AIDevKit.IFunctionDelegate.html#Glitch9_AIDevKit_IFunctionDelegate_Invoke_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: UniTask{Glitch9.Result{System.String}}
+  commentId: '!:UniTask{Glitch9.Result{System.String}}'
+  definition: UniTask`1
+  name: UniTask<Result<string>>
+  nameWithType: UniTask<Result<string>>
+  fullName: UniTask<Glitch9.Result<string>>
+  nameWithType.vb: UniTask(Of Result(Of String))
+  fullName.vb: UniTask(Of Glitch9.Result(Of String))
+  name.vb: UniTask(Of Result(Of String))
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.Result`1
+    name: Result
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.Result`1
+    name: Result
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: '{TArgument}'
+  commentId: '!:TArgument'
+  definition: TArgument
+  name: TArgument
+  nameWithType: TArgument
+  fullName: TArgument
+- uid: UniTask{{TResult}}
+  commentId: '!:UniTask{`1}'
+  definition: UniTask`1
+  name: UniTask<TResult>
+  nameWithType: UniTask<TResult>
+  fullName: UniTask<TResult>
+  nameWithType.vb: UniTask(Of TResult)
+  fullName.vb: UniTask(Of TResult)
+  name.vb: UniTask(Of TResult)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: TArgument
+  commentId: '!:TArgument'
+  name: TArgument
+  nameWithType: TArgument
+  fullName: TArgument

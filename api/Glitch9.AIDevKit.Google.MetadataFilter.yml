@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.MetadataFilter
+  commentId: T:Glitch9.AIDevKit.Google.MetadataFilter
+  id: MetadataFilter
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.MetadataFilter.Conditions
+  - Glitch9.AIDevKit.Google.MetadataFilter.Key
+  langs:
+  - csharp
+  - vb
+  name: MetadataFilter
+  nameWithType: MetadataFilter
+  fullName: Glitch9.AIDevKit.Google.MetadataFilter
+  type: Class
+  source:
+    id: MetadataFilter
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerRequest.cs
+    startLine: 104
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    User provided filter to limit retrieval based on Chunk or Document level metadata values.
+
+    Example (genre = drama OR genre = action): key = "document.custom_metadata.genre" conditions = [{stringValue = "drama", operation = EQUAL}, {stringValue = "action", operation = EQUAL}]
+  example: []
+  syntax:
+    content: public class MetadataFilter
+    content.vb: Public Class MetadataFilter
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.Google.MetadataFilter.Key
+  commentId: P:Glitch9.AIDevKit.Google.MetadataFilter.Key
+  id: Key
+  parent: Glitch9.AIDevKit.Google.MetadataFilter
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: MetadataFilter.Key
+  fullName: Glitch9.AIDevKit.Google.MetadataFilter.Key
+  type: Property
+  source:
+    id: Key
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerRequest.cs
+    startLine: 109
+  namespace: Glitch9.AIDevKit.Google
+  summary: Required. The key of the metadata to filter on.
+  example: []
+  syntax:
+    content: public string Key { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Key As String
+  overload: Glitch9.AIDevKit.Google.MetadataFilter.Key*
+- uid: Glitch9.AIDevKit.Google.MetadataFilter.Conditions
+  commentId: P:Glitch9.AIDevKit.Google.MetadataFilter.Conditions
+  id: Conditions
+  parent: Glitch9.AIDevKit.Google.MetadataFilter
+  langs:
+  - csharp
+  - vb
+  name: Conditions
+  nameWithType: MetadataFilter.Conditions
+  fullName: Glitch9.AIDevKit.Google.MetadataFilter.Conditions
+  type: Property
+  source:
+    id: Conditions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerRequest.cs
+    startLine: 114
+  namespace: Glitch9.AIDevKit.Google
+  summary: Required. The Conditions for the given key that will trigger this filter. Multiple Conditions are joined by logical ORs.
+  example: []
+  syntax:
+    content: public List<Condition> Conditions { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Glitch9.AIDevKit.Google.Condition}
+    content.vb: Public Property Conditions As List(Of Condition)
+  overload: Glitch9.AIDevKit.Google.MetadataFilter.Conditions*
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.Google.MetadataFilter.Key*
+  commentId: Overload:Glitch9.AIDevKit.Google.MetadataFilter.Key
+  href: Glitch9.AIDevKit.Google.MetadataFilter.html#Glitch9_AIDevKit_Google_MetadataFilter_Key
+  name: Key
+  nameWithType: MetadataFilter.Key
+  fullName: Glitch9.AIDevKit.Google.MetadataFilter.Key
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.Google.MetadataFilter.Conditions*
+  commentId: Overload:Glitch9.AIDevKit.Google.MetadataFilter.Conditions
+  href: Glitch9.AIDevKit.Google.MetadataFilter.html#Glitch9_AIDevKit_Google_MetadataFilter_Conditions
+  name: Conditions
+  nameWithType: MetadataFilter.Conditions
+  fullName: Glitch9.AIDevKit.Google.MetadataFilter.Conditions
+- uid: System.Collections.Generic.List{Glitch9.AIDevKit.Google.Condition}
+  commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.Google.Condition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: Glitch9.AIDevKit.Google.Condition.html
+  name: List<Condition>
+  nameWithType: List<Condition>
+  fullName: System.Collections.Generic.List<Glitch9.AIDevKit.Google.Condition>
+  nameWithType.vb: List(Of Condition)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.AIDevKit.Google.Condition)
+  name.vb: List(Of Condition)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.Condition
+    name: Condition
+    href: Glitch9.AIDevKit.Google.Condition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.Condition
+    name: Condition
+    href: Glitch9.AIDevKit.Google.Condition.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

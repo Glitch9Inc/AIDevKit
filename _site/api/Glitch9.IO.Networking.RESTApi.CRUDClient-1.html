@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CRUDClient&lt;TSelf&gt; | AI DevKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CRUDClient&lt;TSelf&gt; | AI DevKit ">
+      
+      <meta name="description" content="REST API client for performing CRUD operations.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_CRUDClient_1.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.CRUDClient%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AI DevKit">
+            AI DevKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1">
+
+
+
+  <h1 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1" class="text-break">
+Class CRUDClient&lt;TSelf&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.PathParamHelper.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.IO.html">IO</a>.<a class="xref" href="Glitch9.IO.Networking.html">Networking</a>.<a class="xref" href="Glitch9.IO.Networking.RESTApi.html">RESTApi</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>REST API client for performing CRUD operations.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CRUDClient&lt;TSelf&gt; : RESTClient where TSelf : CRUDClient&lt;TSelf&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSelf</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html">RESTClient</a></div>
+      <div><span class="xref">CRUDClient&lt;TSelf&gt;</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Glitch9.AIDevKit.Client.AIClient-1.html">AIClient&lt;TSelf&gt;</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_JsonSettings">RESTClient.JsonSettings</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Logger">RESTClient.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_LogLevel">RESTClient.LogLevel</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Timeout">RESTClient.Timeout</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_SSEParser">RESTClient.SSEParser</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_AllowBodyWithDELETE">RESTClient.AllowBodyWithDELETE</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_clientSettings">RESTClient.clientSettings</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_LastRequest">RESTClient.LastRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_LastEndpoint">RESTClient.LastEndpoint</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.POSTAsync&lt;TReqBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_POSTAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.POSTAsync&lt;TReqBody, TResBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.POSTAsync&lt;TResBody&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_POSTAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.POSTAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PUTAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.PUTAsync&lt;TReqBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PUTAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.PUTAsync&lt;TReqBody, TResBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_GETAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.GETAsync&lt;TResBody&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_GETAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.GETAsync&lt;TReqBody, TResBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DELETEAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.DELETEAsync&lt;TReqBody, TResBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.DELETEAsync&lt;TReqBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DELETEAsync&lt;TResBody&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DELETEAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DELETEAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_HEADAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.HEADAsync&lt;TReqBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_HEADAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.HEADAsync&lt;TReqBody, TResBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.PATCHAsync&lt;TReqBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PATCHAsync&lt;TResBody&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PATCHAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PATCHAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PATCHAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest___0__">RESTClient.PATCHAsync&lt;TReqBody, TResBody&gt;(RESTRequest&lt;TReqBody&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNotSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfNotSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNull__1___0_System_String_System_String_">LogExtensions.LogIfNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_ToSenderName_System_Object_">SystemExtensions.ToSenderName(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.TypeExtensions.html#Glitch9_TypeExtensions_IsInteger_System_Object_">TypeExtensions.IsInteger(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1__ctor_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.#ctor*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1__ctor_Glitch9_IO_Networking_RESTApi_CRUDClientSettings_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.#ctor(Glitch9.IO.Networking.RESTApi.CRUDClientSettings)">
+  CRUDClient(CRUDClientSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CRUDClient(CRUDClientSettings clientSettings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientSettings</code> <a class="xref" href="Glitch9.IO.Networking.RESTApi.CRUDClientSettings.html">CRUDClientSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_BaseUrl_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_BaseUrl" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl">
+  BaseUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BaseUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_BetaVersion_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_BetaVersion" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion">
+  BetaVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The beta version of the API if available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BetaVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_CRUDLogger_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_CRUDLogger" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger">
+  CRUDLogger
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Special logger for logging CRUD operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CRUDLogger CRUDLogger { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.IO.Networking.RESTApi.CRUDLogger.html">CRUDLogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_Name_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_Name" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_OnException_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_OnException" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException">
+  OnException
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event invoked when an error occurs during an API request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CRUDClient&lt;TSelf&gt;.ExceptionHandler OnException { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.IO.Networking.RESTApi.CRUDClient-1.html">CRUDClient</a>&lt;TSelf&gt;.<a class="xref" href="Glitch9.IO.Networking.RESTApi.CRUDClient-1.ExceptionHandler.html">ExceptionHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_Version_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_Version" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version">
+  Version
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The version of the API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Version { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_FormatErrorMessage_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.FormatErrorMessage*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_FormatErrorMessage_System_String_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.FormatErrorMessage(System.String)">
+  FormatErrorMessage(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parses the error res from the API.
+Override this method to customize the error message parsing logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string FormatErrorMessage(string errorJson)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>errorJson</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The error message.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_GetApiKey_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_GetApiKey" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey">
+  GetApiKey()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetApiKey()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_HandleException_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_HandleException_System_Exception_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)">
+  HandleException(Exception)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HandleException(Exception exception)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>exception</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_IsDeletedPredicate_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.IsDeletedPredicate*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_CRUDClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_" data-uid="Glitch9.IO.Networking.RESTApi.CRUDClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)">
+  IsDeletedPredicate(RESTResponse)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Override this method to handle the status of a <a class="xref" href="Glitch9.IO.Networking.RESTApi.CRUDMethod.html#Glitch9_IO_Networking_RESTApi_CRUDMethod_Delete">Delete</a> operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool IsDeletedPredicate(RESTResponse res)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>res</code> <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/CRUDApi/Client/CRUDClient.PathParamHelper.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

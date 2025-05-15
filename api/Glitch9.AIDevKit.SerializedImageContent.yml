@@ -1,0 +1,383 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.SerializedImageContent
+  commentId: T:Glitch9.AIDevKit.SerializedImageContent
+  id: SerializedImageContent
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.SerializedImageContent.#ctor(Glitch9.IO.Files.UniImageFile)
+  - Glitch9.AIDevKit.SerializedImageContent.op_Implicit(Glitch9.AIDevKit.SerializedImageContent)~Glitch9.IO.Files.UniImageFile
+  - Glitch9.AIDevKit.SerializedImageContent.op_Implicit(Glitch9.IO.Files.UniImageFile)~Glitch9.AIDevKit.SerializedImageContent
+  langs:
+  - csharp
+  - vb
+  name: SerializedImageContent
+  nameWithType: SerializedImageContent
+  fullName: Glitch9.AIDevKit.SerializedImageContent
+  type: Class
+  source:
+    id: SerializedImageContent
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/SerializedContent.cs
+    startLine: 31
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SerializedImageContent : SerializedContent<UniImageFile>, ISerializedContent
+    content.vb: >-
+      <Serializable>
+
+      Public Class SerializedImageContent Inherits SerializedContent(Of UniImageFile) Implements ISerializedContent
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}
+  implements:
+  - Glitch9.AIDevKit.ISerializedContent
+  inheritedMembers:
+  - Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.purpose
+  - Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.content
+  - Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.Purpose
+  - Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.Value
+  - Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.IsNull
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Glitch9.AIDevKit.SerializedImageContent.op_Implicit(Glitch9.IO.Files.UniImageFile)~Glitch9.AIDevKit.SerializedImageContent
+  commentId: M:Glitch9.AIDevKit.SerializedImageContent.op_Implicit(Glitch9.IO.Files.UniImageFile)~Glitch9.AIDevKit.SerializedImageContent
+  id: op_Implicit(Glitch9.IO.Files.UniImageFile)~Glitch9.AIDevKit.SerializedImageContent
+  parent: Glitch9.AIDevKit.SerializedImageContent
+  langs:
+  - csharp
+  - vb
+  name: implicit operator SerializedImageContent(UniImageFile)
+  nameWithType: SerializedImageContent.implicit operator SerializedImageContent(UniImageFile)
+  fullName: Glitch9.AIDevKit.SerializedImageContent.implicit operator Glitch9.AIDevKit.SerializedImageContent(Glitch9.IO.Files.UniImageFile)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/SerializedContent.cs
+    startLine: 34
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static implicit operator SerializedImageContent(UniImageFile value)
+    parameters:
+    - id: value
+      type: Glitch9.IO.Files.UniImageFile
+    return:
+      type: Glitch9.AIDevKit.SerializedImageContent
+    content.vb: Public Shared Widening Operator CType(value As UniImageFile) As SerializedImageContent
+  overload: Glitch9.AIDevKit.SerializedImageContent.op_Implicit*
+  nameWithType.vb: SerializedImageContent.CType(UniImageFile)
+  fullName.vb: Glitch9.AIDevKit.SerializedImageContent.CType(Glitch9.IO.Files.UniImageFile)
+  name.vb: CType(UniImageFile)
+- uid: Glitch9.AIDevKit.SerializedImageContent.op_Implicit(Glitch9.AIDevKit.SerializedImageContent)~Glitch9.IO.Files.UniImageFile
+  commentId: M:Glitch9.AIDevKit.SerializedImageContent.op_Implicit(Glitch9.AIDevKit.SerializedImageContent)~Glitch9.IO.Files.UniImageFile
+  id: op_Implicit(Glitch9.AIDevKit.SerializedImageContent)~Glitch9.IO.Files.UniImageFile
+  parent: Glitch9.AIDevKit.SerializedImageContent
+  langs:
+  - csharp
+  - vb
+  name: implicit operator UniImageFile(SerializedImageContent)
+  nameWithType: SerializedImageContent.implicit operator UniImageFile(SerializedImageContent)
+  fullName: Glitch9.AIDevKit.SerializedImageContent.implicit operator Glitch9.IO.Files.UniImageFile(Glitch9.AIDevKit.SerializedImageContent)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/SerializedContent.cs
+    startLine: 35
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static implicit operator UniImageFile(SerializedImageContent value)
+    parameters:
+    - id: value
+      type: Glitch9.AIDevKit.SerializedImageContent
+    return:
+      type: Glitch9.IO.Files.UniImageFile
+    content.vb: Public Shared Widening Operator CType(value As SerializedImageContent) As UniImageFile
+  overload: Glitch9.AIDevKit.SerializedImageContent.op_Implicit*
+  nameWithType.vb: SerializedImageContent.CType(SerializedImageContent)
+  fullName.vb: Glitch9.AIDevKit.SerializedImageContent.CType(Glitch9.AIDevKit.SerializedImageContent)
+  name.vb: CType(SerializedImageContent)
+- uid: Glitch9.AIDevKit.SerializedImageContent.#ctor(Glitch9.IO.Files.UniImageFile)
+  commentId: M:Glitch9.AIDevKit.SerializedImageContent.#ctor(Glitch9.IO.Files.UniImageFile)
+  id: '#ctor(Glitch9.IO.Files.UniImageFile)'
+  parent: Glitch9.AIDevKit.SerializedImageContent
+  langs:
+  - csharp
+  - vb
+  name: SerializedImageContent(UniImageFile)
+  nameWithType: SerializedImageContent.SerializedImageContent(UniImageFile)
+  fullName: Glitch9.AIDevKit.SerializedImageContent.SerializedImageContent(Glitch9.IO.Files.UniImageFile)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/SerializedContent.cs
+    startLine: 36
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public SerializedImageContent(UniImageFile imageFile)
+    parameters:
+    - id: imageFile
+      type: Glitch9.IO.Files.UniImageFile
+    content.vb: Public Sub New(imageFile As UniImageFile)
+  overload: Glitch9.AIDevKit.SerializedImageContent.#ctor*
+  nameWithType.vb: SerializedImageContent.New(UniImageFile)
+  fullName.vb: Glitch9.AIDevKit.SerializedImageContent.New(Glitch9.IO.Files.UniImageFile)
+  name.vb: New(UniImageFile)
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}
+  commentId: T:Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}
+  parent: Glitch9.AIDevKit
+  definition: Glitch9.AIDevKit.SerializedContent`1
+  href: Glitch9.AIDevKit.SerializedContent-1.html
+  name: SerializedContent<UniImageFile>
+  nameWithType: SerializedContent<UniImageFile>
+  fullName: Glitch9.AIDevKit.SerializedContent<Glitch9.IO.Files.UniImageFile>
+  nameWithType.vb: SerializedContent(Of UniImageFile)
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of Glitch9.IO.Files.UniImageFile)
+  name.vb: SerializedContent(Of UniImageFile)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.SerializedContent`1
+    name: SerializedContent
+    href: Glitch9.AIDevKit.SerializedContent-1.html
+  - name: <
+  - uid: Glitch9.IO.Files.UniImageFile
+    name: UniImageFile
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.SerializedContent`1
+    name: SerializedContent
+    href: Glitch9.AIDevKit.SerializedContent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.IO.Files.UniImageFile
+    name: UniImageFile
+  - name: )
+- uid: Glitch9.AIDevKit.ISerializedContent
+  commentId: T:Glitch9.AIDevKit.ISerializedContent
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ISerializedContent.html
+  name: ISerializedContent
+  nameWithType: ISerializedContent
+  fullName: Glitch9.AIDevKit.ISerializedContent
+- uid: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.purpose
+  commentId: F:Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.purpose
+  parent: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}
+  definition: Glitch9.AIDevKit.SerializedContent`1.purpose
+  href: Glitch9.AIDevKit.SerializedContent-1.html#Glitch9_AIDevKit_SerializedContent_1_purpose
+  name: purpose
+  nameWithType: SerializedContent<UniImageFile>.purpose
+  fullName: Glitch9.AIDevKit.SerializedContent<Glitch9.IO.Files.UniImageFile>.purpose
+  nameWithType.vb: SerializedContent(Of UniImageFile).purpose
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of Glitch9.IO.Files.UniImageFile).purpose
+- uid: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.content
+  commentId: F:Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.content
+  parent: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}
+  definition: Glitch9.AIDevKit.SerializedContent`1.content
+  href: Glitch9.AIDevKit.SerializedContent-1.html#Glitch9_AIDevKit_SerializedContent_1_content
+  name: content
+  nameWithType: SerializedContent<UniImageFile>.content
+  fullName: Glitch9.AIDevKit.SerializedContent<Glitch9.IO.Files.UniImageFile>.content
+  nameWithType.vb: SerializedContent(Of UniImageFile).content
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of Glitch9.IO.Files.UniImageFile).content
+- uid: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.Purpose
+  commentId: P:Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.Purpose
+  parent: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}
+  definition: Glitch9.AIDevKit.SerializedContent`1.Purpose
+  href: Glitch9.AIDevKit.SerializedContent-1.html#Glitch9_AIDevKit_SerializedContent_1_Purpose
+  name: Purpose
+  nameWithType: SerializedContent<UniImageFile>.Purpose
+  fullName: Glitch9.AIDevKit.SerializedContent<Glitch9.IO.Files.UniImageFile>.Purpose
+  nameWithType.vb: SerializedContent(Of UniImageFile).Purpose
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of Glitch9.IO.Files.UniImageFile).Purpose
+- uid: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.Value
+  commentId: P:Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.Value
+  parent: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}
+  definition: Glitch9.AIDevKit.SerializedContent`1.Value
+  href: Glitch9.AIDevKit.SerializedContent-1.html#Glitch9_AIDevKit_SerializedContent_1_Value
+  name: Value
+  nameWithType: SerializedContent<UniImageFile>.Value
+  fullName: Glitch9.AIDevKit.SerializedContent<Glitch9.IO.Files.UniImageFile>.Value
+  nameWithType.vb: SerializedContent(Of UniImageFile).Value
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of Glitch9.IO.Files.UniImageFile).Value
+- uid: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.IsNull
+  commentId: P:Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}.IsNull
+  parent: Glitch9.AIDevKit.SerializedContent{Glitch9.IO.Files.UniImageFile}
+  definition: Glitch9.AIDevKit.SerializedContent`1.IsNull
+  href: Glitch9.AIDevKit.SerializedContent-1.html#Glitch9_AIDevKit_SerializedContent_1_IsNull
+  name: IsNull
+  nameWithType: SerializedContent<UniImageFile>.IsNull
+  fullName: Glitch9.AIDevKit.SerializedContent<Glitch9.IO.Files.UniImageFile>.IsNull
+  nameWithType.vb: SerializedContent(Of UniImageFile).IsNull
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of Glitch9.IO.Files.UniImageFile).IsNull
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.SerializedContent`1
+  commentId: T:Glitch9.AIDevKit.SerializedContent`1
+  href: Glitch9.AIDevKit.SerializedContent-1.html
+  name: SerializedContent<T>
+  nameWithType: SerializedContent<T>
+  fullName: Glitch9.AIDevKit.SerializedContent<T>
+  nameWithType.vb: SerializedContent(Of T)
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of T)
+  name.vb: SerializedContent(Of T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.SerializedContent`1
+    name: SerializedContent
+    href: Glitch9.AIDevKit.SerializedContent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.SerializedContent`1
+    name: SerializedContent
+    href: Glitch9.AIDevKit.SerializedContent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.SerializedContent`1.purpose
+  commentId: F:Glitch9.AIDevKit.SerializedContent`1.purpose
+  href: Glitch9.AIDevKit.SerializedContent-1.html#Glitch9_AIDevKit_SerializedContent_1_purpose
+  name: purpose
+  nameWithType: SerializedContent<T>.purpose
+  fullName: Glitch9.AIDevKit.SerializedContent<T>.purpose
+  nameWithType.vb: SerializedContent(Of T).purpose
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of T).purpose
+- uid: Glitch9.AIDevKit.SerializedContent`1.content
+  commentId: F:Glitch9.AIDevKit.SerializedContent`1.content
+  href: Glitch9.AIDevKit.SerializedContent-1.html#Glitch9_AIDevKit_SerializedContent_1_content
+  name: content
+  nameWithType: SerializedContent<T>.content
+  fullName: Glitch9.AIDevKit.SerializedContent<T>.content
+  nameWithType.vb: SerializedContent(Of T).content
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of T).content
+- uid: Glitch9.AIDevKit.SerializedContent`1.Purpose
+  commentId: P:Glitch9.AIDevKit.SerializedContent`1.Purpose
+  href: Glitch9.AIDevKit.SerializedContent-1.html#Glitch9_AIDevKit_SerializedContent_1_Purpose
+  name: Purpose
+  nameWithType: SerializedContent<T>.Purpose
+  fullName: Glitch9.AIDevKit.SerializedContent<T>.Purpose
+  nameWithType.vb: SerializedContent(Of T).Purpose
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of T).Purpose
+- uid: Glitch9.AIDevKit.SerializedContent`1.Value
+  commentId: P:Glitch9.AIDevKit.SerializedContent`1.Value
+  href: Glitch9.AIDevKit.SerializedContent-1.html#Glitch9_AIDevKit_SerializedContent_1_Value
+  name: Value
+  nameWithType: SerializedContent<T>.Value
+  fullName: Glitch9.AIDevKit.SerializedContent<T>.Value
+  nameWithType.vb: SerializedContent(Of T).Value
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of T).Value
+- uid: Glitch9.AIDevKit.SerializedContent`1.IsNull
+  commentId: P:Glitch9.AIDevKit.SerializedContent`1.IsNull
+  href: Glitch9.AIDevKit.SerializedContent-1.html#Glitch9_AIDevKit_SerializedContent_1_IsNull
+  name: IsNull
+  nameWithType: SerializedContent<T>.IsNull
+  fullName: Glitch9.AIDevKit.SerializedContent<T>.IsNull
+  nameWithType.vb: SerializedContent(Of T).IsNull
+  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of T).IsNull
+- uid: Glitch9.AIDevKit.SerializedImageContent.op_Implicit*
+  commentId: Overload:Glitch9.AIDevKit.SerializedImageContent.op_Implicit
+  name: implicit operator
+  nameWithType: SerializedImageContent.implicit operator
+  fullName: Glitch9.AIDevKit.SerializedImageContent.implicit operator
+  nameWithType.vb: SerializedImageContent.CType
+  fullName.vb: Glitch9.AIDevKit.SerializedImageContent.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Glitch9.IO.Files.UniImageFile
+  commentId: T:Glitch9.IO.Files.UniImageFile
+  parent: Glitch9.IO.Files
+  name: UniImageFile
+  nameWithType: UniImageFile
+  fullName: Glitch9.IO.Files.UniImageFile
+- uid: Glitch9.AIDevKit.SerializedImageContent
+  commentId: T:Glitch9.AIDevKit.SerializedImageContent
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.SerializedImageContent.html
+  name: SerializedImageContent
+  nameWithType: SerializedImageContent
+  fullName: Glitch9.AIDevKit.SerializedImageContent
+- uid: Glitch9.IO.Files
+  commentId: N:Glitch9.IO.Files
+  href: Glitch9.html
+  name: Glitch9.IO.Files
+  nameWithType: Glitch9.IO.Files
+  fullName: Glitch9.IO.Files
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Files
+    name: Files
+    href: Glitch9.IO.Files.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Files
+    name: Files
+    href: Glitch9.IO.Files.html
+- uid: Glitch9.AIDevKit.SerializedImageContent.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.SerializedImageContent.#ctor
+  href: Glitch9.AIDevKit.SerializedImageContent.html#Glitch9_AIDevKit_SerializedImageContent__ctor_Glitch9_IO_Files_UniImageFile_
+  name: SerializedImageContent
+  nameWithType: SerializedImageContent.SerializedImageContent
+  fullName: Glitch9.AIDevKit.SerializedImageContent.SerializedImageContent
+  nameWithType.vb: SerializedImageContent.New
+  fullName.vb: Glitch9.AIDevKit.SerializedImageContent.New
+  name.vb: New

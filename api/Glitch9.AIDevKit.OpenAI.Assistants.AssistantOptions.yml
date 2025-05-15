@@ -1,0 +1,1673 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  id: AssistantOptions
+  parent: Glitch9.AIDevKit.OpenAI.Assistants
+  children:
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.AssistantFetchCount
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomClient
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomEventStreamHandler
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Description
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.EventHandler
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ForcedTool
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasCodeInterpreter
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasFileSearch
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Id
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.InitialDelayForRunStatusCheckSec
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Instructions
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.IsValid
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.LogRunStatusChange
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MaxRequestLength
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Metadata
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MinTokenRequirementPerRequest
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Model
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Name
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RecurringRunStatusCheckIntervalSec
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ResponseFormat
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RunOperationTimeoutSec
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.SaveThreadMessages
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Sender
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Stream
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Temperature
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ToolResources
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Tools
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.TopP
+  langs:
+  - csharp
+  - vb
+  name: AssistantOptions
+  nameWithType: AssistantOptions
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  type: Class
+  source:
+    id: AssistantOptions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Represents configuration options for creating and interacting with an OpenAI Assistant tool.
+  example: []
+  syntax:
+    content: public class AssistantOptions
+    content.vb: Public Class AssistantOptions
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.IsValid
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.IsValid
+  id: IsValid
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: IsValid
+  nameWithType: AssistantOptions.IsValid
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.IsValid
+  type: Property
+  source:
+    id: IsValid
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 16
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Validates if the configuration options are correctly set.
+  example: []
+  syntax:
+    content: public IResult IsValid { get; }
+    parameters: []
+    return:
+      type: Glitch9.IResult
+    content.vb: Public ReadOnly Property IsValid As IResult
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.IsValid*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Id
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Id
+  id: Id
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: AssistantOptions.Id
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Id
+  type: Property
+  source:
+    id: Id
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 33
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    Required. Unique identifier for the AssistantsAPI.
+
+    This is used to locally identify the AssistantsAPI instance and is not related to the OpenAI API.
+  example: []
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Id*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Model
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Model
+  id: Model
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: AssistantOptions.Model
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Model
+  type: Property
+  source:
+    id: Model
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 38
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Required. Gets or sets the GPT model to be used by the tool. Defaults to GPT-3.5 Turbo.
+  example: []
+  syntax:
+    content: public Model Model { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Model
+    content.vb: Public Property Model As Model
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Model*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Name
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Name
+  id: Name
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: AssistantOptions.Name
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Name
+  type: Property
+  source:
+    id: Name
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 43
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Required. Gets or sets the name of the assistant.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Name*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Sender
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Sender
+  id: Sender
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Sender
+  nameWithType: AssistantOptions.Sender
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Sender
+  type: Property
+  source:
+    id: Sender
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 48
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Set the sender name to track prompt history.
+  example: []
+  syntax:
+    content: public string Sender { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Sender As String
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Sender*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Description
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Description
+  id: Description
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: AssistantOptions.Description
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Description
+  type: Property
+  source:
+    id: Description
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 53
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Required. Gets or sets the description of the assistant's functionality.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Description*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Instructions
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Instructions
+  id: Instructions
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Instructions
+  nameWithType: AssistantOptions.Instructions
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Instructions
+  type: Property
+  source:
+    id: Instructions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 58
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Required. Gets or sets the instructions for using the assistant.
+  example: []
+  syntax:
+    content: public string Instructions { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Instructions As String
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Instructions*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Tools
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Tools
+  id: Tools
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Tools
+  nameWithType: AssistantOptions.Tools
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Tools
+  type: Property
+  source:
+    id: Tools
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 65
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    Give the Assistant access to up to 128 tools.
+
+    You can give it access to OpenAI-hosted tools like code_interpreter and file_search,
+
+    or call a third-party tools via a function calling.
+  example: []
+  syntax:
+    content: public List<ToolCall> Tools { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Glitch9.AIDevKit.ToolCall}
+    content.vb: Public Property Tools As List(Of ToolCall)
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Tools*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasCodeInterpreter
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasCodeInterpreter
+  id: HasCodeInterpreter
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: HasCodeInterpreter
+  nameWithType: AssistantOptions.HasCodeInterpreter
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasCodeInterpreter
+  type: Property
+  source:
+    id: HasCodeInterpreter
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 70
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Enable or disable the Assistant's access to the code_interpreter tool.
+  example: []
+  syntax:
+    content: public bool HasCodeInterpreter { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasCodeInterpreter As Boolean
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasCodeInterpreter*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasFileSearch
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasFileSearch
+  id: HasFileSearch
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: HasFileSearch
+  nameWithType: AssistantOptions.HasFileSearch
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasFileSearch
+  type: Property
+  source:
+    id: HasFileSearch
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 75
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Enable or disable the Assistant's access to the file_search tool.
+  example: []
+  syntax:
+    content: public bool HasFileSearch { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasFileSearch As Boolean
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasFileSearch*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ToolResources
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ToolResources
+  id: ToolResources
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: ToolResources
+  nameWithType: AssistantOptions.ToolResources
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ToolResources
+  type: Property
+  source:
+    id: ToolResources
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 82
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    Optional. Give the tools like code_interpreter and file_search access to files.
+
+    Files are uploaded using the File upload endpoint
+
+    and must have the purpose set to assistants to be used with this API.
+  example: []
+  syntax:
+    content: public ToolResources ToolResources { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.ToolResources
+    content.vb: Public Property ToolResources As ToolResources
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ToolResources*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ForcedTool
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ForcedTool
+  id: ForcedTool
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: ForcedTool
+  nameWithType: AssistantOptions.ForcedTool
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ForcedTool
+  type: Property
+  source:
+    id: ForcedTool
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 87
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Forces the AssistantsAPI to use the specified tool on every request.
+  example: []
+  syntax:
+    content: public ToolChoice ForcedTool { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.ToolChoice
+    content.vb: Public Property ForcedTool As ToolChoice
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ForcedTool*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Metadata
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Metadata
+  id: Metadata
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: AssistantOptions.Metadata
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Metadata
+  type: Property
+  source:
+    id: Metadata
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 92
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Gets or sets the metadata associated with this assistant.
+  example: []
+  syntax:
+    content: public Dictionary<string, string> Metadata { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Property Metadata As Dictionary(Of String, String)
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Metadata*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Temperature
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Temperature
+  id: Temperature
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Temperature
+  nameWithType: AssistantOptions.Temperature
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Temperature
+  type: Property
+  source:
+    id: Temperature
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 98
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    Optional. Gets or sets the sampling temperature to use, between 0 and 2.
+
+    Higher values make the output more random, while lower values make it more focused and deterministic.
+  example: []
+  syntax:
+    content: public float Temperature { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Temperature As Single
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Temperature*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.TopP
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.TopP
+  id: TopP
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: TopP
+  nameWithType: AssistantOptions.TopP
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.TopP
+  type: Property
+  source:
+    id: TopP
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 105
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    Optional. Gets or sets the nucleus sampling parameter, where the model considers the results of the tokens with top_p probability mass.
+
+    Values like 0.1 mean only the tokens comprising the top 10% probability mass are considered.
+
+    It is generally recommended to alter either this or the temperature, but not both.
+  example: []
+  syntax:
+    content: public float TopP { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TopP As Single
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.TopP*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ResponseFormat
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ResponseFormat
+  id: ResponseFormat
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: ResponseFormat
+  nameWithType: AssistantOptions.ResponseFormat
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ResponseFormat
+  type: Property
+  source:
+    id: ResponseFormat
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 110
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Gets or sets the response format for this assistant. Defaults to auto.
+  example: []
+  syntax:
+    content: public TextFormat? ResponseFormat { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.AIDevKit.TextFormat}
+    content.vb: Public Property ResponseFormat As TextFormat?
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ResponseFormat*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Stream
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Stream
+  id: Stream
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: AssistantOptions.Stream
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Stream
+  type: Property
+  source:
+    id: Stream
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 116
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    Optional. Gets or sets a value indicating whether the assistant should stream responses.
+
+    [ASSISTANTS API STREAM IS NOT SUPPORTED YET] Defaults to false.
+  example: []
+  syntax:
+    content: public bool Stream { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Stream As Boolean
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Stream*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MinTokenRequirementPerRequest
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MinTokenRequirementPerRequest
+  id: MinTokenRequirementPerRequest
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: MinTokenRequirementPerRequest
+  nameWithType: AssistantOptions.MinTokenRequirementPerRequest
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MinTokenRequirementPerRequest
+  type: Property
+  source:
+    id: MinTokenRequirementPerRequest
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 121
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Gets or sets the minimum number of tokens required per request.
+  example: []
+  syntax:
+    content: public int MinTokenRequirementPerRequest { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MinTokenRequirementPerRequest As Integer
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MinTokenRequirementPerRequest*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MaxRequestLength
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MaxRequestLength
+  id: MaxRequestLength
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: MaxRequestLength
+  nameWithType: AssistantOptions.MaxRequestLength
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MaxRequestLength
+  type: Property
+  source:
+    id: MaxRequestLength
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 127
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    Optional. Gets or sets the maximum number of characters the assistant's responses can contain.
+
+    Use -1 for no limit.
+  example: []
+  syntax:
+    content: public int MaxRequestLength { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxRequestLength As Integer
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MaxRequestLength*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.AssistantFetchCount
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.AssistantFetchCount
+  id: AssistantFetchCount
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: AssistantFetchCount
+  nameWithType: AssistantOptions.AssistantFetchCount
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.AssistantFetchCount
+  type: Property
+  source:
+    id: AssistantFetchCount
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 134
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    Optional if <xref href="Glitch9.IO.Networking.FetchMethod" data-throw-if-not-resolved="false"></xref> is set to <xref href="Glitch9.IO.Networking.FetchMethod.FetchWithName" data-throw-if-not-resolved="false"></xref>.
+
+    The number of Assistants to fetch to find the correct one.
+
+    Default is 20.
+  example: []
+  syntax:
+    content: public int AssistantFetchCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property AssistantFetchCount As Integer
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.AssistantFetchCount*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.InitialDelayForRunStatusCheckSec
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.InitialDelayForRunStatusCheckSec
+  id: InitialDelayForRunStatusCheckSec
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: InitialDelayForRunStatusCheckSec
+  nameWithType: AssistantOptions.InitialDelayForRunStatusCheckSec
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.InitialDelayForRunStatusCheckSec
+  type: Property
+  source:
+    id: InitialDelayForRunStatusCheckSec
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 139
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Gets or sets the initial delay in seconds before checking the run status for the first time.
+  example: []
+  syntax:
+    content: public int InitialDelayForRunStatusCheckSec { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property InitialDelayForRunStatusCheckSec As Integer
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.InitialDelayForRunStatusCheckSec*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RecurringRunStatusCheckIntervalSec
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RecurringRunStatusCheckIntervalSec
+  id: RecurringRunStatusCheckIntervalSec
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: RecurringRunStatusCheckIntervalSec
+  nameWithType: AssistantOptions.RecurringRunStatusCheckIntervalSec
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RecurringRunStatusCheckIntervalSec
+  type: Property
+  source:
+    id: RecurringRunStatusCheckIntervalSec
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 144
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Gets or sets the recurring interval in seconds for checking the run status.
+  example: []
+  syntax:
+    content: public int RecurringRunStatusCheckIntervalSec { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RecurringRunStatusCheckIntervalSec As Integer
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RecurringRunStatusCheckIntervalSec*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RunOperationTimeoutSec
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RunOperationTimeoutSec
+  id: RunOperationTimeoutSec
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: RunOperationTimeoutSec
+  nameWithType: AssistantOptions.RunOperationTimeoutSec
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RunOperationTimeoutSec
+  type: Property
+  source:
+    id: RunOperationTimeoutSec
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 149
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Gets or sets the timeout in seconds for the run operation.
+  example: []
+  syntax:
+    content: public int RunOperationTimeoutSec { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RunOperationTimeoutSec As Integer
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RunOperationTimeoutSec*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.SaveThreadMessages
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.SaveThreadMessages
+  id: SaveThreadMessages
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: SaveThreadMessages
+  nameWithType: AssistantOptions.SaveThreadMessages
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.SaveThreadMessages
+  type: Property
+  source:
+    id: SaveThreadMessages
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 154
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. If true, <xref href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2" data-throw-if-not-resolved="false"></xref> will save the thread messages to PlayerPrefs.
+  example: []
+  syntax:
+    content: public bool SaveThreadMessages { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property SaveThreadMessages As Boolean
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.SaveThreadMessages*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.LogRunStatusChange
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.LogRunStatusChange
+  id: LogRunStatusChange
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: LogRunStatusChange
+  nameWithType: AssistantOptions.LogRunStatusChange
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.LogRunStatusChange
+  type: Property
+  source:
+    id: LogRunStatusChange
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 159
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. If true, <xref href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2" data-throw-if-not-resolved="false"></xref> will log the <xref href="Glitch9.AIDevKit.OpenAI.Run" data-throw-if-not-resolved="false"></xref> status change.
+  example: []
+  syntax:
+    content: public bool LogRunStatusChange { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LogRunStatusChange As Boolean
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.LogRunStatusChange*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomClient
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomClient
+  id: CustomClient
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: CustomClient
+  nameWithType: AssistantOptions.CustomClient
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomClient
+  type: Property
+  source:
+    id: CustomClient
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 164
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Gets or sets the custom client to use for the assistant's operations.
+  example: []
+  syntax:
+    content: public OpenAI CustomClient { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.OpenAI
+    content.vb: Public Property CustomClient As OpenAI
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomClient*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomEventStreamHandler
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomEventStreamHandler
+  id: CustomEventStreamHandler
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: CustomEventStreamHandler
+  nameWithType: AssistantOptions.CustomEventStreamHandler
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomEventStreamHandler
+  type: Property
+  source:
+    id: CustomEventStreamHandler
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 169
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Gets or sets the custom event stream handler for <xref href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IAssistantEventStreamHandler CustomEventStreamHandler { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler
+    content.vb: Public Property CustomEventStreamHandler As IAssistantEventStreamHandler
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomEventStreamHandler*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.EventHandler
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.EventHandler
+  id: EventHandler
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: EventHandler
+  nameWithType: AssistantOptions.EventHandler
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.EventHandler
+  type: Property
+  source:
+    id: EventHandler
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 174
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Optional. Event handler for <xref href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public AssistantEventHandler EventHandler { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler
+    content.vb: Public Property EventHandler As AssistantEventHandler
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.EventHandler*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed
+  id: OnTokensConsumed
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: OnTokensConsumed
+  nameWithType: AssistantOptions.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed
+  type: Property
+  source:
+    id: OnTokensConsumed
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 180
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    [Deprecated] Use customized <xref href="Glitch9.AIDevKit.OpenAI.OpenAI" data-throw-if-not-resolved="false"></xref> with OnTokensValidated, <xref href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed" data-throw-if-not-resolved="false"></xref>, and <xref href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception" data-throw-if-not-resolved="false"></xref> instead.
+
+    Optional. Gets or sets an event handler that is called when tokens are consumed during the assistant's operation.
+  example: []
+  syntax:
+    content: public AIClient<OpenAI>.UsageHandler OnTokensConsumed { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.UsageHandler
+    content.vb: Public Property OnTokensConsumed As AIClient(Of OpenAI).UsageHandler
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed*
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception
+  id: Exception
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: AssistantOptions.Exception
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception
+  type: Property
+  source:
+    id: Exception
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantOptions.cs
+    startLine: 186
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    [Deprecated] Use customized <xref href="Glitch9.AIDevKit.OpenAI.OpenAI" data-throw-if-not-resolved="false"></xref> with OnTokensValidated, <xref href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed" data-throw-if-not-resolved="false"></xref>, and <xref href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception" data-throw-if-not-resolved="false"></xref> instead.
+
+    Optional. Gets or sets an event handler that is called when an error occurs during the assistant's operation.
+  example: []
+  syntax:
+    content: public CRUDClient<OpenAI>.ExceptionHandler Exception { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.ExceptionHandler
+    content.vb: Public Property Exception As CRUDClient(Of OpenAI).ExceptionHandler
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception*
+references:
+- uid: Glitch9.AIDevKit.OpenAI.Assistants
+  commentId: N:Glitch9.AIDevKit.OpenAI.Assistants
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI.Assistants
+  nameWithType: Glitch9.AIDevKit.OpenAI.Assistants
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants
+    name: Assistants
+    href: Glitch9.AIDevKit.OpenAI.Assistants.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants
+    name: Assistants
+    href: Glitch9.AIDevKit.OpenAI.Assistants.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.IsValid*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.IsValid
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_IsValid
+  name: IsValid
+  nameWithType: AssistantOptions.IsValid
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.IsValid
+- uid: Glitch9.IResult
+  commentId: T:Glitch9.IResult
+  parent: Glitch9
+  name: IResult
+  nameWithType: IResult
+  fullName: Glitch9.IResult
+- uid: Glitch9
+  commentId: N:Glitch9
+  href: Glitch9.html
+  name: Glitch9
+  nameWithType: Glitch9
+  fullName: Glitch9
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Id*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Id
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Id
+  name: Id
+  nameWithType: AssistantOptions.Id
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Model*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Model
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Model
+  name: Model
+  nameWithType: AssistantOptions.Model
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Model
+- uid: Glitch9.AIDevKit.Model
+  commentId: T:Glitch9.AIDevKit.Model
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Model.html
+  name: Model
+  nameWithType: Model
+  fullName: Glitch9.AIDevKit.Model
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Name*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Name
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Name
+  name: Name
+  nameWithType: AssistantOptions.Name
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Name
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Sender*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Sender
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Sender
+  name: Sender
+  nameWithType: AssistantOptions.Sender
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Sender
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Description*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Description
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Description
+  name: Description
+  nameWithType: AssistantOptions.Description
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Description
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Instructions*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Instructions
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Instructions
+  name: Instructions
+  nameWithType: AssistantOptions.Instructions
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Instructions
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Tools*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Tools
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Tools
+  name: Tools
+  nameWithType: AssistantOptions.Tools
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Tools
+- uid: System.Collections.Generic.List{Glitch9.AIDevKit.ToolCall}
+  commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.ToolCall}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: Glitch9.AIDevKit.ToolCall.html
+  name: List<ToolCall>
+  nameWithType: List<ToolCall>
+  fullName: System.Collections.Generic.List<Glitch9.AIDevKit.ToolCall>
+  nameWithType.vb: List(Of ToolCall)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.AIDevKit.ToolCall)
+  name.vb: List(Of ToolCall)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ToolCall
+    name: ToolCall
+    href: Glitch9.AIDevKit.ToolCall.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ToolCall
+    name: ToolCall
+    href: Glitch9.AIDevKit.ToolCall.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasCodeInterpreter*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasCodeInterpreter
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_HasCodeInterpreter
+  name: HasCodeInterpreter
+  nameWithType: AssistantOptions.HasCodeInterpreter
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasCodeInterpreter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasFileSearch*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasFileSearch
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_HasFileSearch
+  name: HasFileSearch
+  nameWithType: AssistantOptions.HasFileSearch
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.HasFileSearch
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ToolResources*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ToolResources
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_ToolResources
+  name: ToolResources
+  nameWithType: AssistantOptions.ToolResources
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ToolResources
+- uid: Glitch9.AIDevKit.OpenAI.ToolResources
+  commentId: T:Glitch9.AIDevKit.OpenAI.ToolResources
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.ToolResources.html
+  name: ToolResources
+  nameWithType: ToolResources
+  fullName: Glitch9.AIDevKit.OpenAI.ToolResources
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ForcedTool*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ForcedTool
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_ForcedTool
+  name: ForcedTool
+  nameWithType: AssistantOptions.ForcedTool
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ForcedTool
+- uid: Glitch9.AIDevKit.OpenAI.ToolChoice
+  commentId: T:Glitch9.AIDevKit.OpenAI.ToolChoice
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.ToolChoice.html
+  name: ToolChoice
+  nameWithType: ToolChoice
+  fullName: Glitch9.AIDevKit.OpenAI.ToolChoice
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Metadata*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Metadata
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Metadata
+  name: Metadata
+  nameWithType: AssistantOptions.Metadata
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Metadata
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<string, string>
+  nameWithType: Dictionary<string, string>
+  fullName: System.Collections.Generic.Dictionary<string, string>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Temperature*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Temperature
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Temperature
+  name: Temperature
+  nameWithType: AssistantOptions.Temperature
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Temperature
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.TopP*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.TopP
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_TopP
+  name: TopP
+  nameWithType: AssistantOptions.TopP
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.TopP
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ResponseFormat*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ResponseFormat
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_ResponseFormat
+  name: ResponseFormat
+  nameWithType: AssistantOptions.ResponseFormat
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.ResponseFormat
+- uid: System.Nullable{Glitch9.AIDevKit.TextFormat}
+  commentId: T:System.Nullable{Glitch9.AIDevKit.TextFormat}
+  parent: System
+  definition: System.Nullable`1
+  href: Glitch9.AIDevKit.TextFormat.html
+  name: TextFormat?
+  nameWithType: TextFormat?
+  fullName: Glitch9.AIDevKit.TextFormat?
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.TextFormat
+    name: TextFormat
+    href: Glitch9.AIDevKit.TextFormat.html
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.TextFormat
+    name: TextFormat
+    href: Glitch9.AIDevKit.TextFormat.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Stream*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Stream
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Stream
+  name: Stream
+  nameWithType: AssistantOptions.Stream
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Stream
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MinTokenRequirementPerRequest*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MinTokenRequirementPerRequest
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_MinTokenRequirementPerRequest
+  name: MinTokenRequirementPerRequest
+  nameWithType: AssistantOptions.MinTokenRequirementPerRequest
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MinTokenRequirementPerRequest
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MaxRequestLength*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MaxRequestLength
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_MaxRequestLength
+  name: MaxRequestLength
+  nameWithType: AssistantOptions.MaxRequestLength
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.MaxRequestLength
+- uid: Glitch9.IO.Networking.FetchMethod
+  commentId: T:Glitch9.IO.Networking.FetchMethod
+  name: FetchMethod
+  nameWithType: FetchMethod
+  fullName: Glitch9.IO.Networking.FetchMethod
+- uid: Glitch9.IO.Networking.FetchMethod.FetchWithName
+  commentId: F:Glitch9.IO.Networking.FetchMethod.FetchWithName
+  name: FetchWithName
+  nameWithType: FetchMethod.FetchWithName
+  fullName: Glitch9.IO.Networking.FetchMethod.FetchWithName
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.AssistantFetchCount*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.AssistantFetchCount
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_AssistantFetchCount
+  name: AssistantFetchCount
+  nameWithType: AssistantOptions.AssistantFetchCount
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.AssistantFetchCount
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.InitialDelayForRunStatusCheckSec*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.InitialDelayForRunStatusCheckSec
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_InitialDelayForRunStatusCheckSec
+  name: InitialDelayForRunStatusCheckSec
+  nameWithType: AssistantOptions.InitialDelayForRunStatusCheckSec
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.InitialDelayForRunStatusCheckSec
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RecurringRunStatusCheckIntervalSec*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RecurringRunStatusCheckIntervalSec
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_RecurringRunStatusCheckIntervalSec
+  name: RecurringRunStatusCheckIntervalSec
+  nameWithType: AssistantOptions.RecurringRunStatusCheckIntervalSec
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RecurringRunStatusCheckIntervalSec
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RunOperationTimeoutSec*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RunOperationTimeoutSec
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_RunOperationTimeoutSec
+  name: RunOperationTimeoutSec
+  nameWithType: AssistantOptions.RunOperationTimeoutSec
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.RunOperationTimeoutSec
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
+  parent: Glitch9.AIDevKit.OpenAI.Assistants
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2.html
+  name: AssistantsAPIv2
+  nameWithType: AssistantsAPIv2
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.SaveThreadMessages*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.SaveThreadMessages
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_SaveThreadMessages
+  name: SaveThreadMessages
+  nameWithType: AssistantOptions.SaveThreadMessages
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.SaveThreadMessages
+- uid: Glitch9.AIDevKit.OpenAI.Run
+  commentId: T:Glitch9.AIDevKit.OpenAI.Run
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.Run.html
+  name: Run
+  nameWithType: Run
+  fullName: Glitch9.AIDevKit.OpenAI.Run
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.LogRunStatusChange*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.LogRunStatusChange
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_LogRunStatusChange
+  name: LogRunStatusChange
+  nameWithType: AssistantOptions.LogRunStatusChange
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.LogRunStatusChange
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomClient*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomClient
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_CustomClient
+  name: CustomClient
+  nameWithType: AssistantOptions.CustomClient
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomClient
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI
+  commentId: T:Glitch9.AIDevKit.OpenAI.OpenAI
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  name: OpenAI
+  nameWithType: OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomEventStreamHandler*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomEventStreamHandler
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_CustomEventStreamHandler
+  name: CustomEventStreamHandler
+  nameWithType: AssistantOptions.CustomEventStreamHandler
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.CustomEventStreamHandler
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler
+  parent: Glitch9.AIDevKit.OpenAI.Assistants
+  href: Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler.html
+  name: IAssistantEventStreamHandler
+  nameWithType: IAssistantEventStreamHandler
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.EventHandler*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.EventHandler
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_EventHandler
+  name: EventHandler
+  nameWithType: AssistantOptions.EventHandler
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.EventHandler
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler
+  parent: Glitch9.AIDevKit.OpenAI.Assistants
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.html
+  name: AssistantEventHandler
+  nameWithType: AssistantEventHandler
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_OnTokensConsumed
+  name: OnTokensConsumed
+  nameWithType: AssistantOptions.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Exception
+  name: Exception
+  nameWithType: AssistantOptions.Exception
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_OnTokensConsumed
+  name: OnTokensConsumed
+  nameWithType: AssistantOptions.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.OnTokensConsumed
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.UsageHandler
+  commentId: T:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.UsageHandler
+  parent: Glitch9.AIDevKit.Client
+  definition: Glitch9.AIDevKit.Client.AIClient`1.UsageHandler
+  href: Glitch9.AIDevKit.Client.AIClient-1.html
+  name: AIClient<OpenAI>.UsageHandler
+  nameWithType: AIClient<OpenAI>.UsageHandler
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.OpenAI.OpenAI>.UsageHandler
+  nameWithType.vb: AIClient(Of OpenAI).UsageHandler
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).UsageHandler
+  name.vb: AIClient(Of OpenAI).UsageHandler
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  - name: '>'
+  - name: .
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.UsageHandler
+    name: UsageHandler
+    href: Glitch9.AIDevKit.Client.AIClient-1.UsageHandler.html
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  - name: )
+  - name: .
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.UsageHandler
+    name: UsageHandler
+    href: Glitch9.AIDevKit.Client.AIClient-1.UsageHandler.html
+- uid: Glitch9.AIDevKit.Client.AIClient`1.UsageHandler
+  commentId: T:Glitch9.AIDevKit.Client.AIClient`1.UsageHandler
+  parent: Glitch9.AIDevKit.Client
+  href: Glitch9.AIDevKit.Client.AIClient-1.html
+  name: AIClient<TSelf>.UsageHandler
+  nameWithType: AIClient<TSelf>.UsageHandler
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.UsageHandler
+  nameWithType.vb: AIClient(Of TSelf).UsageHandler
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).UsageHandler
+  name.vb: AIClient(Of TSelf).UsageHandler
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: <
+  - name: TSelf
+  - name: '>'
+  - name: .
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.UsageHandler
+    name: UsageHandler
+    href: Glitch9.AIDevKit.Client.AIClient-1.UsageHandler.html
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+  - name: .
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.UsageHandler
+    name: UsageHandler
+    href: Glitch9.AIDevKit.Client.AIClient-1.UsageHandler.html
+- uid: Glitch9.AIDevKit.Client
+  commentId: N:Glitch9.AIDevKit.Client
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Client
+  nameWithType: Glitch9.AIDevKit.Client
+  fullName: Glitch9.AIDevKit.Client
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantOptions_Exception
+  name: Exception
+  nameWithType: AssistantOptions.Exception
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.Exception
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.ExceptionHandler
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.ExceptionHandler
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.ExceptionHandler
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  name: CRUDClient<OpenAI>.ExceptionHandler
+  nameWithType: CRUDClient<OpenAI>.ExceptionHandler
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.OpenAI.OpenAI>.ExceptionHandler
+  nameWithType.vb: CRUDClient(Of OpenAI).ExceptionHandler
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).ExceptionHandler
+  name.vb: CRUDClient(Of OpenAI).ExceptionHandler
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  - name: '>'
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.ExceptionHandler
+    name: ExceptionHandler
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  - name: )
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.ExceptionHandler
+    name: ExceptionHandler
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.ExceptionHandler
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDClient`1.ExceptionHandler
+  name: CRUDClient<TSelf>.ExceptionHandler
+  nameWithType: CRUDClient<TSelf>.ExceptionHandler
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.ExceptionHandler
+  nameWithType.vb: CRUDClient(Of TSelf).ExceptionHandler
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).ExceptionHandler
+  name.vb: CRUDClient(Of TSelf).ExceptionHandler
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: <
+  - name: TSelf
+  - name: '>'
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.ExceptionHandler
+    name: ExceptionHandler
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.ExceptionHandler
+    name: ExceptionHandler
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html

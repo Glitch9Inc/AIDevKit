@@ -1,0 +1,649 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  id: RealtimeEventHandler
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  children:
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.#ctor(Glitch9.IO.Networking.WebSocket.WebSocketClient{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent})
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.AppendInputAudioBuffer(System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelEvent(System.Int32)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelResponse
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.ClearInputAudioBuffer
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CommitInputAudioBuffer
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.Count
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateConversationItem(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem,System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateResponse
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.DeleteConversationItem(System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.TruncateConversationItem(System.String,System.Int32,System.Int32)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.UpdateSession(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  langs:
+  - csharp
+  - vb
+  name: RealtimeEventHandler
+  nameWithType: RealtimeEventHandler
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  type: Class
+  source:
+    id: RealtimeEventHandler
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 7
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public class RealtimeEventHandler
+    content.vb: Public Class RealtimeEventHandler
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.Count
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.Count
+  id: Count
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: RealtimeEventHandler.Count
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.Count
+  type: Property
+  source:
+    id: Count
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 10
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.Count*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.#ctor(Glitch9.IO.Networking.WebSocket.WebSocketClient{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent})
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.#ctor(Glitch9.IO.Networking.WebSocket.WebSocketClient{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent})
+  id: '#ctor(Glitch9.IO.Networking.WebSocket.WebSocketClient{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent})'
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: RealtimeEventHandler(WebSocketClient<RealtimeEvent>)
+  nameWithType: RealtimeEventHandler.RealtimeEventHandler(WebSocketClient<RealtimeEvent>)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.RealtimeEventHandler(Glitch9.IO.Networking.WebSocket.WebSocketClient<Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 13
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public RealtimeEventHandler(WebSocketClient<RealtimeEvent> webSocketClient)
+    parameters:
+    - id: webSocketClient
+      type: Glitch9.IO.Networking.WebSocket.WebSocketClient{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent}
+    content.vb: Public Sub New(webSocketClient As WebSocketClient(Of RealtimeEvent))
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.#ctor*
+  nameWithType.vb: RealtimeEventHandler.New(WebSocketClient(Of RealtimeEvent))
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.New(Glitch9.IO.Networking.WebSocket.WebSocketClient(Of Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent))
+  name.vb: New(WebSocketClient(Of RealtimeEvent))
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.UpdateSession(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.UpdateSession(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  id: UpdateSession(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: UpdateSession(RealtimeSession)
+  nameWithType: RealtimeEventHandler.UpdateSession(RealtimeSession)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.UpdateSession(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)
+  type: Method
+  source:
+    id: UpdateSession
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 18
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public UniTask<int> UpdateSession(RealtimeSession session)
+    parameters:
+    - id: session
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
+    return:
+      type: UniTask{System.Int32}
+    content.vb: Public Function UpdateSession(session As RealtimeSession) As UniTask(Of Integer)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.UpdateSession*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.AppendInputAudioBuffer(System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.AppendInputAudioBuffer(System.String)
+  id: AppendInputAudioBuffer(System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: AppendInputAudioBuffer(string)
+  nameWithType: RealtimeEventHandler.AppendInputAudioBuffer(string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.AppendInputAudioBuffer(string)
+  type: Method
+  source:
+    id: AppendInputAudioBuffer
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 33
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public UniTask<int> AppendInputAudioBuffer(string base64EncodedAudioBytes)
+    parameters:
+    - id: base64EncodedAudioBytes
+      type: System.String
+    return:
+      type: UniTask{System.Int32}
+    content.vb: Public Function AppendInputAudioBuffer(base64EncodedAudioBytes As String) As UniTask(Of Integer)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.AppendInputAudioBuffer*
+  nameWithType.vb: RealtimeEventHandler.AppendInputAudioBuffer(String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.AppendInputAudioBuffer(String)
+  name.vb: AppendInputAudioBuffer(String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CommitInputAudioBuffer
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CommitInputAudioBuffer
+  id: CommitInputAudioBuffer
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: CommitInputAudioBuffer()
+  nameWithType: RealtimeEventHandler.CommitInputAudioBuffer()
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CommitInputAudioBuffer()
+  type: Method
+  source:
+    id: CommitInputAudioBuffer
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 48
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public UniTask<int> CommitInputAudioBuffer()
+    return:
+      type: UniTask{System.Int32}
+    content.vb: Public Function CommitInputAudioBuffer() As UniTask(Of Integer)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CommitInputAudioBuffer*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.ClearInputAudioBuffer
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.ClearInputAudioBuffer
+  id: ClearInputAudioBuffer
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: ClearInputAudioBuffer()
+  nameWithType: RealtimeEventHandler.ClearInputAudioBuffer()
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.ClearInputAudioBuffer()
+  type: Method
+  source:
+    id: ClearInputAudioBuffer
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 49
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public UniTask<int> ClearInputAudioBuffer()
+    return:
+      type: UniTask{System.Int32}
+    content.vb: Public Function ClearInputAudioBuffer() As UniTask(Of Integer)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.ClearInputAudioBuffer*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateConversationItem(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem,System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateConversationItem(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem,System.String)
+  id: CreateConversationItem(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem,System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: CreateConversationItem(RealtimeItem, string)
+  nameWithType: RealtimeEventHandler.CreateConversationItem(RealtimeItem, string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateConversationItem(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem, string)
+  type: Method
+  source:
+    id: CreateConversationItem
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 51
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public UniTask<int> CreateConversationItem(RealtimeItem item, string previousItemId = null)
+    parameters:
+    - id: item
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+    - id: previousItemId
+      type: System.String
+    return:
+      type: UniTask{System.Int32}
+    content.vb: Public Function CreateConversationItem(item As RealtimeItem, previousItemId As String = Nothing) As UniTask(Of Integer)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateConversationItem*
+  nameWithType.vb: RealtimeEventHandler.CreateConversationItem(RealtimeItem, String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateConversationItem(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem, String)
+  name.vb: CreateConversationItem(RealtimeItem, String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.TruncateConversationItem(System.String,System.Int32,System.Int32)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.TruncateConversationItem(System.String,System.Int32,System.Int32)
+  id: TruncateConversationItem(System.String,System.Int32,System.Int32)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: TruncateConversationItem(string, int, int)
+  nameWithType: RealtimeEventHandler.TruncateConversationItem(string, int, int)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.TruncateConversationItem(string, int, int)
+  type: Method
+  source:
+    id: TruncateConversationItem
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 67
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public UniTask<int> TruncateConversationItem(string itemId, int contentIndex, int audioEndMs)
+    parameters:
+    - id: itemId
+      type: System.String
+    - id: contentIndex
+      type: System.Int32
+    - id: audioEndMs
+      type: System.Int32
+    return:
+      type: UniTask{System.Int32}
+    content.vb: Public Function TruncateConversationItem(itemId As String, contentIndex As Integer, audioEndMs As Integer) As UniTask(Of Integer)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.TruncateConversationItem*
+  nameWithType.vb: RealtimeEventHandler.TruncateConversationItem(String, Integer, Integer)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.TruncateConversationItem(String, Integer, Integer)
+  name.vb: TruncateConversationItem(String, Integer, Integer)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.DeleteConversationItem(System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.DeleteConversationItem(System.String)
+  id: DeleteConversationItem(System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: DeleteConversationItem(string)
+  nameWithType: RealtimeEventHandler.DeleteConversationItem(string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.DeleteConversationItem(string)
+  type: Method
+  source:
+    id: DeleteConversationItem
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 84
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public UniTask<int> DeleteConversationItem(string itemId)
+    parameters:
+    - id: itemId
+      type: System.String
+    return:
+      type: UniTask{System.Int32}
+    content.vb: Public Function DeleteConversationItem(itemId As String) As UniTask(Of Integer)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.DeleteConversationItem*
+  nameWithType.vb: RealtimeEventHandler.DeleteConversationItem(String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.DeleteConversationItem(String)
+  name.vb: DeleteConversationItem(String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateResponse
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateResponse
+  id: CreateResponse
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: CreateResponse()
+  nameWithType: RealtimeEventHandler.CreateResponse()
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateResponse()
+  type: Method
+  source:
+    id: CreateResponse
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 99
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public UniTask<int> CreateResponse()
+    return:
+      type: UniTask{System.Int32}
+    content.vb: Public Function CreateResponse() As UniTask(Of Integer)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateResponse*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelResponse
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelResponse
+  id: CancelResponse
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: CancelResponse()
+  nameWithType: RealtimeEventHandler.CancelResponse()
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelResponse()
+  type: Method
+  source:
+    id: CancelResponse
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 114
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public UniTask<int> CancelResponse()
+    return:
+      type: UniTask{System.Int32}
+    content.vb: Public Function CancelResponse() As UniTask(Of Integer)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelResponse*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelEvent(System.Int32)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelEvent(System.Int32)
+  id: CancelEvent(System.Int32)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
+  langs:
+  - csharp
+  - vb
+  name: CancelEvent(int)
+  nameWithType: RealtimeEventHandler.CancelEvent(int)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelEvent(int)
+  type: Method
+  source:
+    id: CancelEvent
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeEventHandler.cs
+    startLine: 116
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public void CancelEvent(int eventId)
+    parameters:
+    - id: eventId
+      type: System.Int32
+    content.vb: Public Sub CancelEvent(eventId As Integer)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelEvent*
+  nameWithType.vb: RealtimeEventHandler.CancelEvent(Integer)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelEvent(Integer)
+  name.vb: CancelEvent(Integer)
+references:
+- uid: Glitch9.AIDevKit.OpenAI.Realtime
+  commentId: N:Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI.Realtime
+  nameWithType: Glitch9.AIDevKit.OpenAI.Realtime
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime
+    name: Realtime
+    href: Glitch9.AIDevKit.OpenAI.Realtime.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime
+    name: Realtime
+    href: Glitch9.AIDevKit.OpenAI.Realtime.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.Count*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.Count
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_Count
+  name: Count
+  nameWithType: RealtimeEventHandler.Count
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.#ctor
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler__ctor_Glitch9_IO_Networking_WebSocket_WebSocketClient_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent__
+  name: RealtimeEventHandler
+  nameWithType: RealtimeEventHandler.RealtimeEventHandler
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.RealtimeEventHandler
+  nameWithType.vb: RealtimeEventHandler.New
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.New
+  name.vb: New
+- uid: Glitch9.IO.Networking.WebSocket.WebSocketClient{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent}
+  commentId: T:Glitch9.IO.Networking.WebSocket.WebSocketClient{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent}
+  parent: Glitch9.IO.Networking.WebSocket
+  definition: Glitch9.IO.Networking.WebSocket.WebSocketClient`1
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  name: WebSocketClient<RealtimeEvent>
+  nameWithType: WebSocketClient<RealtimeEvent>
+  fullName: Glitch9.IO.Networking.WebSocket.WebSocketClient<Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent>
+  nameWithType.vb: WebSocketClient(Of RealtimeEvent)
+  fullName.vb: Glitch9.IO.Networking.WebSocket.WebSocketClient(Of Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent)
+  name.vb: WebSocketClient(Of RealtimeEvent)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.WebSocket.WebSocketClient`1
+    name: WebSocketClient
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+    name: RealtimeEvent
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.WebSocket.WebSocketClient`1
+    name: WebSocketClient
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+    name: RealtimeEvent
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  - name: )
+- uid: Glitch9.IO.Networking.WebSocket.WebSocketClient`1
+  commentId: T:Glitch9.IO.Networking.WebSocket.WebSocketClient`1
+  name: WebSocketClient<TWebSocketEvent>
+  nameWithType: WebSocketClient<TWebSocketEvent>
+  fullName: Glitch9.IO.Networking.WebSocket.WebSocketClient<TWebSocketEvent>
+  nameWithType.vb: WebSocketClient(Of TWebSocketEvent)
+  fullName.vb: Glitch9.IO.Networking.WebSocket.WebSocketClient(Of TWebSocketEvent)
+  name.vb: WebSocketClient(Of TWebSocketEvent)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.WebSocket.WebSocketClient`1
+    name: WebSocketClient
+  - name: <
+  - name: TWebSocketEvent
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.WebSocket.WebSocketClient`1
+    name: WebSocketClient
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWebSocketEvent
+  - name: )
+- uid: Glitch9.IO.Networking.WebSocket
+  commentId: N:Glitch9.IO.Networking.WebSocket
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.WebSocket
+  nameWithType: Glitch9.IO.Networking.WebSocket
+  fullName: Glitch9.IO.Networking.WebSocket
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.WebSocket
+    name: WebSocket
+    href: Glitch9.IO.Networking.WebSocket.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.WebSocket
+    name: WebSocket
+    href: Glitch9.IO.Networking.WebSocket.html
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.UpdateSession*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.UpdateSession
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_UpdateSession_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSession_
+  name: UpdateSession
+  nameWithType: RealtimeEventHandler.UpdateSession
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.UpdateSession
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession.html
+  name: RealtimeSession
+  nameWithType: RealtimeSession
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
+- uid: UniTask{System.Int32}
+  commentId: '!:UniTask{System.Int32}'
+  definition: UniTask`1
+  name: UniTask<int>
+  nameWithType: UniTask<int>
+  fullName: UniTask<int>
+  nameWithType.vb: UniTask(Of Integer)
+  fullName.vb: UniTask(Of Integer)
+  name.vb: UniTask(Of Integer)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.AppendInputAudioBuffer*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.AppendInputAudioBuffer
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_AppendInputAudioBuffer_System_String_
+  name: AppendInputAudioBuffer
+  nameWithType: RealtimeEventHandler.AppendInputAudioBuffer
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.AppendInputAudioBuffer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CommitInputAudioBuffer*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CommitInputAudioBuffer
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_CommitInputAudioBuffer
+  name: CommitInputAudioBuffer
+  nameWithType: RealtimeEventHandler.CommitInputAudioBuffer
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CommitInputAudioBuffer
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.ClearInputAudioBuffer*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.ClearInputAudioBuffer
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_ClearInputAudioBuffer
+  name: ClearInputAudioBuffer
+  nameWithType: RealtimeEventHandler.ClearInputAudioBuffer
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.ClearInputAudioBuffer
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateConversationItem*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateConversationItem
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_CreateConversationItem_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_System_String_
+  name: CreateConversationItem
+  nameWithType: RealtimeEventHandler.CreateConversationItem
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateConversationItem
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html
+  name: RealtimeItem
+  nameWithType: RealtimeItem
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.TruncateConversationItem*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.TruncateConversationItem
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_TruncateConversationItem_System_String_System_Int32_System_Int32_
+  name: TruncateConversationItem
+  nameWithType: RealtimeEventHandler.TruncateConversationItem
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.TruncateConversationItem
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.DeleteConversationItem*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.DeleteConversationItem
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_DeleteConversationItem_System_String_
+  name: DeleteConversationItem
+  nameWithType: RealtimeEventHandler.DeleteConversationItem
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.DeleteConversationItem
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateResponse*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateResponse
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_CreateResponse
+  name: CreateResponse
+  nameWithType: RealtimeEventHandler.CreateResponse
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CreateResponse
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelResponse*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelResponse
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_CancelResponse
+  name: CancelResponse
+  nameWithType: RealtimeEventHandler.CancelResponse
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelResponse
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelEvent*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelEvent
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventHandler_CancelEvent_System_Int32_
+  name: CancelEvent
+  nameWithType: RealtimeEventHandler.CancelEvent
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.CancelEvent

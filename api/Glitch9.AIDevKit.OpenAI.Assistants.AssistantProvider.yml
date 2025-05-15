@@ -1,0 +1,1751 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
+  id: AssistantProvider
+  parent: Glitch9.AIDevKit.OpenAI.Assistants
+  children:
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.#ctor(Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2)
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.CreateInternalAsync(System.Object[])
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.DeleteInternalAsync(System.String,System.Object[])
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.FindMatchingAssistant(Glitch9.AIDevKit.OpenAI.Assistant[])
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.ListInternalAsync(System.Object[])
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.RetrieveInternalAsync(System.String,System.Object[])
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.UpdateInternalAsync(System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: AssistantProvider
+  nameWithType: AssistantProvider
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
+  type: Class
+  source:
+    id: AssistantProvider
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/ObjectProviders/AssistantProvider.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: Simplifies implementation of HTTP operations for handling <xref href="Glitch9.AIDevKit.OpenAI.Assistant" data-throw-if-not-resolved="false"></xref> for <xref href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class AssistantProvider : AssistantProviderBase<Assistant>, IObjectProvider<Assistant>'
+    content.vb: Public Class AssistantProvider Inherits AssistantProviderBase(Of Assistant) Implements IObjectProvider(Of Assistant)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase{Glitch9.AIDevKit.OpenAI.Assistant}
+  implements:
+  - Glitch9.IO.Networking.RESTApi.IObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  inheritedMembers:
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase{Glitch9.AIDevKit.OpenAI.Assistant}.Api
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnCreate
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnRetrieve
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnUpdate
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnList
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnDelete
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.CreateAsync(System.Object[])
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveAsync(System.String,System.Object[])
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveOrCreateAsync(System.String,System.Object[])
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.UpdateAsync(System.String,System.Object[])
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.ListAsync(System.Object[])
+  - Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.DeleteAsync(System.String,System.Object[])
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.#ctor(Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.#ctor(Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2)
+  id: '#ctor(Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2)'
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
+  langs:
+  - csharp
+  - vb
+  name: AssistantProvider(AssistantsAPIv2)
+  nameWithType: AssistantProvider.AssistantProvider(AssistantsAPIv2)
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.AssistantProvider(Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/ObjectProviders/AssistantProvider.cs
+    startLine: 13
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  syntax:
+    content: public AssistantProvider(AssistantsAPIv2 api)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
+    content.vb: Public Sub New(api As AssistantsAPIv2)
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.#ctor*
+  nameWithType.vb: AssistantProvider.New(AssistantsAPIv2)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.New(Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2)
+  name.vb: New(AssistantsAPIv2)
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.CreateInternalAsync(System.Object[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.CreateInternalAsync(System.Object[])
+  id: CreateInternalAsync(System.Object[])
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateInternalAsync(params object[])
+  nameWithType: AssistantProvider.CreateInternalAsync(params object[])
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.CreateInternalAsync(params object[])
+  type: Method
+  source:
+    id: CreateInternalAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/ObjectProviders/AssistantProvider.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  example: []
+  syntax:
+    content: protected override UniTask<Assistant> CreateInternalAsync(params object[] args)
+    parameters:
+    - id: args
+      type: System.Object[]
+    return:
+      type: UniTask{Glitch9.AIDevKit.OpenAI.Assistant}
+    content.vb: Protected Overrides Function CreateInternalAsync(ParamArray args As Object()) As UniTask(Of Assistant)
+  overridden: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.CreateInternalAsync(System.Object[])
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.CreateInternalAsync*
+  nameWithType.vb: AssistantProvider.CreateInternalAsync(ParamArray Object())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.CreateInternalAsync(ParamArray Object())
+  name.vb: CreateInternalAsync(ParamArray Object())
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.RetrieveInternalAsync(System.String,System.Object[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.RetrieveInternalAsync(System.String,System.Object[])
+  id: RetrieveInternalAsync(System.String,System.Object[])
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
+  langs:
+  - csharp
+  - vb
+  name: RetrieveInternalAsync(string, params object[])
+  nameWithType: AssistantProvider.RetrieveInternalAsync(string, params object[])
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.RetrieveInternalAsync(string, params object[])
+  type: Method
+  source:
+    id: RetrieveInternalAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/ObjectProviders/AssistantProvider.cs
+    startLine: 42
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  example: []
+  syntax:
+    content: protected override UniTask<Assistant> RetrieveInternalAsync(string id, params object[] args)
+    parameters:
+    - id: id
+      type: System.String
+    - id: args
+      type: System.Object[]
+    return:
+      type: UniTask{Glitch9.AIDevKit.OpenAI.Assistant}
+    content.vb: Protected Overrides Function RetrieveInternalAsync(id As String, ParamArray args As Object()) As UniTask(Of Assistant)
+  overridden: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveInternalAsync(System.String,System.Object[])
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.RetrieveInternalAsync*
+  nameWithType.vb: AssistantProvider.RetrieveInternalAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.RetrieveInternalAsync(String, ParamArray Object())
+  name.vb: RetrieveInternalAsync(String, ParamArray Object())
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.UpdateInternalAsync(System.String,System.Object[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.UpdateInternalAsync(System.String,System.Object[])
+  id: UpdateInternalAsync(System.String,System.Object[])
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
+  langs:
+  - csharp
+  - vb
+  name: UpdateInternalAsync(string, params object[])
+  nameWithType: AssistantProvider.UpdateInternalAsync(string, params object[])
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.UpdateInternalAsync(string, params object[])
+  type: Method
+  source:
+    id: UpdateInternalAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/ObjectProviders/AssistantProvider.cs
+    startLine: 81
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  example: []
+  syntax:
+    content: protected override UniTask<Assistant> UpdateInternalAsync(string id, params object[] args)
+    parameters:
+    - id: id
+      type: System.String
+    - id: args
+      type: System.Object[]
+    return:
+      type: UniTask{Glitch9.AIDevKit.OpenAI.Assistant}
+    content.vb: Protected Overrides Function UpdateInternalAsync(id As String, ParamArray args As Object()) As UniTask(Of Assistant)
+  overridden: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.UpdateInternalAsync(System.String,System.Object[])
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.UpdateInternalAsync*
+  nameWithType.vb: AssistantProvider.UpdateInternalAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.UpdateInternalAsync(String, ParamArray Object())
+  name.vb: UpdateInternalAsync(String, ParamArray Object())
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.ListInternalAsync(System.Object[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.ListInternalAsync(System.Object[])
+  id: ListInternalAsync(System.Object[])
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
+  langs:
+  - csharp
+  - vb
+  name: ListInternalAsync(params object[])
+  nameWithType: AssistantProvider.ListInternalAsync(params object[])
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.ListInternalAsync(params object[])
+  type: Method
+  source:
+    id: ListInternalAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/ObjectProviders/AssistantProvider.cs
+    startLine: 105
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  example: []
+  syntax:
+    content: protected override UniTask<Assistant[]> ListInternalAsync(params object[] args)
+    parameters:
+    - id: args
+      type: System.Object[]
+    return:
+      type: UniTask{Glitch9.AIDevKit.OpenAI.Assistant[]}
+    content.vb: Protected Overrides Function ListInternalAsync(ParamArray args As Object()) As UniTask(Of Assistant())
+  overridden: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.ListInternalAsync(System.Object[])
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.ListInternalAsync*
+  nameWithType.vb: AssistantProvider.ListInternalAsync(ParamArray Object())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.ListInternalAsync(ParamArray Object())
+  name.vb: ListInternalAsync(ParamArray Object())
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.DeleteInternalAsync(System.String,System.Object[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.DeleteInternalAsync(System.String,System.Object[])
+  id: DeleteInternalAsync(System.String,System.Object[])
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
+  langs:
+  - csharp
+  - vb
+  name: DeleteInternalAsync(string, params object[])
+  nameWithType: AssistantProvider.DeleteInternalAsync(string, params object[])
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.DeleteInternalAsync(string, params object[])
+  type: Method
+  source:
+    id: DeleteInternalAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/ObjectProviders/AssistantProvider.cs
+    startLine: 111
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  example: []
+  syntax:
+    content: protected override UniTask<bool> DeleteInternalAsync(string id, params object[] args)
+    parameters:
+    - id: id
+      type: System.String
+    - id: args
+      type: System.Object[]
+    return:
+      type: UniTask{System.Boolean}
+    content.vb: Protected Overrides Function DeleteInternalAsync(id As String, ParamArray args As Object()) As UniTask(Of Boolean)
+  overridden: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.DeleteInternalAsync(System.String,System.Object[])
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.DeleteInternalAsync*
+  nameWithType.vb: AssistantProvider.DeleteInternalAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.DeleteInternalAsync(String, ParamArray Object())
+  name.vb: DeleteInternalAsync(String, ParamArray Object())
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.FindMatchingAssistant(Glitch9.AIDevKit.OpenAI.Assistant[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.FindMatchingAssistant(Glitch9.AIDevKit.OpenAI.Assistant[])
+  id: FindMatchingAssistant(Glitch9.AIDevKit.OpenAI.Assistant[])
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
+  langs:
+  - csharp
+  - vb
+  name: FindMatchingAssistant(Assistant[])
+  nameWithType: AssistantProvider.FindMatchingAssistant(Assistant[])
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.FindMatchingAssistant(Glitch9.AIDevKit.OpenAI.Assistant[])
+  type: Method
+  source:
+    id: FindMatchingAssistant
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/ObjectProviders/AssistantProvider.cs
+    startLine: 122
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  summary: >-
+    OpenAI saves your assistant to their server.
+
+    So try retrieving the assistant from the server first instead of creating a new one.
+  example: []
+  syntax:
+    content: protected virtual Assistant FindMatchingAssistant(Assistant[] assistants)
+    parameters:
+    - id: assistants
+      type: Glitch9.AIDevKit.OpenAI.Assistant[]
+      description: Array of existing assistants.
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Assistant
+      description: The matching assistant object if found; otherwise, null.
+    content.vb: Protected Overridable Function FindMatchingAssistant(assistants As Assistant()) As Assistant
+  overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.FindMatchingAssistant*
+  nameWithType.vb: AssistantProvider.FindMatchingAssistant(Assistant())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.FindMatchingAssistant(Glitch9.AIDevKit.OpenAI.Assistant())
+  name.vb: FindMatchingAssistant(Assistant())
+references:
+- uid: Glitch9.AIDevKit.OpenAI.Assistant
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistant
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  name: Assistant
+  nameWithType: Assistant
+  fullName: Glitch9.AIDevKit.OpenAI.Assistant
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
+  parent: Glitch9.AIDevKit.OpenAI.Assistants
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2.html
+  name: AssistantsAPIv2
+  nameWithType: AssistantsAPIv2
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
+- uid: Glitch9.AIDevKit.OpenAI.Assistants
+  commentId: N:Glitch9.AIDevKit.OpenAI.Assistants
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI.Assistants
+  nameWithType: Glitch9.AIDevKit.OpenAI.Assistants
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants
+    name: Assistants
+    href: Glitch9.AIDevKit.OpenAI.Assistants.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants
+    name: Assistants
+    href: Glitch9.AIDevKit.OpenAI.Assistants.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  commentId: T:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1
+  href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  name: ObjectProvider<Assistant>
+  nameWithType: ObjectProvider<Assistant>
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>
+  nameWithType.vb: ObjectProvider(Of Assistant)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant)
+  name.vb: ObjectProvider(Of Assistant)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1
+    name: ObjectProvider
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1
+    name: ObjectProvider
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase{Glitch9.AIDevKit.OpenAI.Assistant}
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase{Glitch9.AIDevKit.OpenAI.Assistant}
+  parent: Glitch9.AIDevKit.OpenAI.Assistants
+  definition: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html
+  name: AssistantProviderBase<Assistant>
+  nameWithType: AssistantProviderBase<Assistant>
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase<Glitch9.AIDevKit.OpenAI.Assistant>
+  nameWithType.vb: AssistantProviderBase(Of Assistant)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase(Of Glitch9.AIDevKit.OpenAI.Assistant)
+  name.vb: AssistantProviderBase(Of Assistant)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
+    name: AssistantProviderBase
+    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
+    name: AssistantProviderBase
+    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.IObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  commentId: T:Glitch9.IO.Networking.RESTApi.IObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.IObjectProvider`1
+  href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  name: IObjectProvider<Assistant>
+  nameWithType: IObjectProvider<Assistant>
+  fullName: Glitch9.IO.Networking.RESTApi.IObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>
+  nameWithType.vb: IObjectProvider(Of Assistant)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.IObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant)
+  name.vb: IObjectProvider(Of Assistant)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.IObjectProvider`1
+    name: IObjectProvider
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.IObjectProvider`1
+    name: IObjectProvider
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase{Glitch9.AIDevKit.OpenAI.Assistant}.Api
+  commentId: F:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase{Glitch9.AIDevKit.OpenAI.Assistant}.Api
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1.Api
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantProviderBase_1_Api
+  name: Api
+  nameWithType: AssistantProviderBase<Assistant>.Api
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase<Glitch9.AIDevKit.OpenAI.Assistant>.Api
+  nameWithType.vb: AssistantProviderBase(Of Assistant).Api
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase(Of Glitch9.AIDevKit.OpenAI.Assistant).Api
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnCreate
+  commentId: P:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnCreate
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnCreate
+  name: OnCreate
+  nameWithType: ObjectProvider<Assistant>.OnCreate
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.OnCreate
+  nameWithType.vb: ObjectProvider(Of Assistant).OnCreate
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).OnCreate
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnRetrieve
+  commentId: P:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnRetrieve
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnRetrieve
+  name: OnRetrieve
+  nameWithType: ObjectProvider<Assistant>.OnRetrieve
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.OnRetrieve
+  nameWithType.vb: ObjectProvider(Of Assistant).OnRetrieve
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).OnRetrieve
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnUpdate
+  commentId: P:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnUpdate
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnUpdate
+  name: OnUpdate
+  nameWithType: ObjectProvider<Assistant>.OnUpdate
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.OnUpdate
+  nameWithType.vb: ObjectProvider(Of Assistant).OnUpdate
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).OnUpdate
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnList
+  commentId: P:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnList
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnList
+  name: OnList
+  nameWithType: ObjectProvider<Assistant>.OnList
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.OnList
+  nameWithType.vb: ObjectProvider(Of Assistant).OnList
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).OnList
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnDelete
+  commentId: P:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.OnDelete
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnDelete
+  name: OnDelete
+  nameWithType: ObjectProvider<Assistant>.OnDelete
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.OnDelete
+  nameWithType.vb: ObjectProvider(Of Assistant).OnDelete
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).OnDelete
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.CreateAsync(System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.CreateAsync(System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.CreateAsync(System.Object[])
+  name: CreateAsync(params object[])
+  nameWithType: ObjectProvider<Assistant>.CreateAsync(params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.CreateAsync(params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).CreateAsync(ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).CreateAsync(ParamArray Object())
+  name.vb: CreateAsync(ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.CreateAsync(System.Object[])
+    name: CreateAsync
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.CreateAsync(System.Object[])
+    name: CreateAsync
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveAsync(System.String,System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveAsync(System.String,System.Object[])
+  name: RetrieveAsync(string, params object[])
+  nameWithType: ObjectProvider<Assistant>.RetrieveAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.RetrieveAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).RetrieveAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).RetrieveAsync(String, ParamArray Object())
+  name.vb: RetrieveAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveAsync(System.String,System.Object[])
+    name: RetrieveAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveAsync(System.String,System.Object[])
+    name: RetrieveAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveOrCreateAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveOrCreateAsync(System.String,System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveOrCreateAsync(System.String,System.Object[])
+  name: RetrieveOrCreateAsync(string, params object[])
+  nameWithType: ObjectProvider<Assistant>.RetrieveOrCreateAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.RetrieveOrCreateAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).RetrieveOrCreateAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).RetrieveOrCreateAsync(String, ParamArray Object())
+  name.vb: RetrieveOrCreateAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveOrCreateAsync(System.String,System.Object[])
+    name: RetrieveOrCreateAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveOrCreateAsync(System.String,System.Object[])
+    name: RetrieveOrCreateAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.UpdateAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.UpdateAsync(System.String,System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.UpdateAsync(System.String,System.Object[])
+  name: UpdateAsync(string, params object[])
+  nameWithType: ObjectProvider<Assistant>.UpdateAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.UpdateAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).UpdateAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).UpdateAsync(String, ParamArray Object())
+  name.vb: UpdateAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.UpdateAsync(System.String,System.Object[])
+    name: UpdateAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.UpdateAsync(System.String,System.Object[])
+    name: UpdateAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.ListAsync(System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.ListAsync(System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.ListAsync(System.Object[])
+  name: ListAsync(params object[])
+  nameWithType: ObjectProvider<Assistant>.ListAsync(params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.ListAsync(params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).ListAsync(ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).ListAsync(ParamArray Object())
+  name.vb: ListAsync(ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.ListAsync(System.Object[])
+    name: ListAsync
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.ListAsync(System.Object[])
+    name: ListAsync
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.DeleteAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.DeleteAsync(System.String,System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.DeleteAsync(System.String,System.Object[])
+  name: DeleteAsync(string, params object[])
+  nameWithType: ObjectProvider<Assistant>.DeleteAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.DeleteAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).DeleteAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).DeleteAsync(String, ParamArray Object())
+  name.vb: DeleteAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.DeleteAsync(System.String,System.Object[])
+    name: DeleteAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.DeleteAsync(System.String,System.Object[])
+    name: DeleteAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.ObjectProvider`1
+  name: ObjectProvider<T>
+  nameWithType: ObjectProvider<T>
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>
+  nameWithType.vb: ObjectProvider(Of T)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T)
+  name.vb: ObjectProvider(Of T)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1
+    name: ObjectProvider
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1
+    name: ObjectProvider
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html
+  name: AssistantProviderBase<T>
+  nameWithType: AssistantProviderBase<T>
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase<T>
+  nameWithType.vb: AssistantProviderBase(Of T)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase(Of T)
+  name.vb: AssistantProviderBase(Of T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
+    name: AssistantProviderBase
+    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
+    name: AssistantProviderBase
+    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.IObjectProvider`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.IObjectProvider`1
+  name: IObjectProvider<T>
+  nameWithType: IObjectProvider<T>
+  fullName: Glitch9.IO.Networking.RESTApi.IObjectProvider<T>
+  nameWithType.vb: IObjectProvider(Of T)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.IObjectProvider(Of T)
+  name.vb: IObjectProvider(Of T)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.IObjectProvider`1
+    name: IObjectProvider
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.IObjectProvider`1
+    name: IObjectProvider
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1.Api
+  commentId: F:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1.Api
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantProviderBase_1_Api
+  name: Api
+  nameWithType: AssistantProviderBase<T>.Api
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase<T>.Api
+  nameWithType.vb: AssistantProviderBase(Of T).Api
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase(Of T).Api
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnCreate
+  commentId: P:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnCreate
+  name: OnCreate
+  nameWithType: ObjectProvider<T>.OnCreate
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.OnCreate
+  nameWithType.vb: ObjectProvider(Of T).OnCreate
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).OnCreate
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnRetrieve
+  commentId: P:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnRetrieve
+  name: OnRetrieve
+  nameWithType: ObjectProvider<T>.OnRetrieve
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.OnRetrieve
+  nameWithType.vb: ObjectProvider(Of T).OnRetrieve
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).OnRetrieve
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnUpdate
+  commentId: P:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnUpdate
+  name: OnUpdate
+  nameWithType: ObjectProvider<T>.OnUpdate
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.OnUpdate
+  nameWithType.vb: ObjectProvider(Of T).OnUpdate
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).OnUpdate
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnList
+  commentId: P:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnList
+  name: OnList
+  nameWithType: ObjectProvider<T>.OnList
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.OnList
+  nameWithType.vb: ObjectProvider(Of T).OnList
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).OnList
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnDelete
+  commentId: P:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.OnDelete
+  name: OnDelete
+  nameWithType: ObjectProvider<T>.OnDelete
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.OnDelete
+  nameWithType.vb: ObjectProvider(Of T).OnDelete
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).OnDelete
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.CreateAsync(System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.CreateAsync(System.Object[])
+  isExternal: true
+  name: CreateAsync(params object[])
+  nameWithType: ObjectProvider<T>.CreateAsync(params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.CreateAsync(params object[])
+  nameWithType.vb: ObjectProvider(Of T).CreateAsync(ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).CreateAsync(ParamArray Object())
+  name.vb: CreateAsync(ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.CreateAsync(System.Object[])
+    name: CreateAsync
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.CreateAsync(System.Object[])
+    name: CreateAsync
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveAsync(System.String,System.Object[])
+  isExternal: true
+  name: RetrieveAsync(string, params object[])
+  nameWithType: ObjectProvider<T>.RetrieveAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.RetrieveAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of T).RetrieveAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).RetrieveAsync(String, ParamArray Object())
+  name.vb: RetrieveAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveAsync(System.String,System.Object[])
+    name: RetrieveAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveAsync(System.String,System.Object[])
+    name: RetrieveAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveOrCreateAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveOrCreateAsync(System.String,System.Object[])
+  isExternal: true
+  name: RetrieveOrCreateAsync(string, params object[])
+  nameWithType: ObjectProvider<T>.RetrieveOrCreateAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.RetrieveOrCreateAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of T).RetrieveOrCreateAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).RetrieveOrCreateAsync(String, ParamArray Object())
+  name.vb: RetrieveOrCreateAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveOrCreateAsync(System.String,System.Object[])
+    name: RetrieveOrCreateAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveOrCreateAsync(System.String,System.Object[])
+    name: RetrieveOrCreateAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.UpdateAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.UpdateAsync(System.String,System.Object[])
+  isExternal: true
+  name: UpdateAsync(string, params object[])
+  nameWithType: ObjectProvider<T>.UpdateAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.UpdateAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of T).UpdateAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).UpdateAsync(String, ParamArray Object())
+  name.vb: UpdateAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.UpdateAsync(System.String,System.Object[])
+    name: UpdateAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.UpdateAsync(System.String,System.Object[])
+    name: UpdateAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.ListAsync(System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.ListAsync(System.Object[])
+  isExternal: true
+  name: ListAsync(params object[])
+  nameWithType: ObjectProvider<T>.ListAsync(params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.ListAsync(params object[])
+  nameWithType.vb: ObjectProvider(Of T).ListAsync(ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).ListAsync(ParamArray Object())
+  name.vb: ListAsync(ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.ListAsync(System.Object[])
+    name: ListAsync
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.ListAsync(System.Object[])
+    name: ListAsync
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.DeleteAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.DeleteAsync(System.String,System.Object[])
+  isExternal: true
+  name: DeleteAsync(string, params object[])
+  nameWithType: ObjectProvider<T>.DeleteAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.DeleteAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of T).DeleteAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).DeleteAsync(String, ParamArray Object())
+  name.vb: DeleteAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.DeleteAsync(System.String,System.Object[])
+    name: DeleteAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.DeleteAsync(System.String,System.Object[])
+    name: DeleteAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.#ctor
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantProvider__ctor_Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIv2_
+  name: AssistantProvider
+  nameWithType: AssistantProvider.AssistantProvider
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.AssistantProvider
+  nameWithType.vb: AssistantProvider.New
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.New
+  name.vb: New
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.CreateInternalAsync(System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.CreateInternalAsync(System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.CreateInternalAsync(System.Object[])
+  name: CreateInternalAsync(params object[])
+  nameWithType: ObjectProvider<Assistant>.CreateInternalAsync(params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.CreateInternalAsync(params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).CreateInternalAsync(ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).CreateInternalAsync(ParamArray Object())
+  name.vb: CreateInternalAsync(ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.CreateInternalAsync(System.Object[])
+    name: CreateInternalAsync
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.CreateInternalAsync(System.Object[])
+    name: CreateInternalAsync
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.CreateInternalAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.CreateInternalAsync
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantProvider_CreateInternalAsync_System_Object___
+  name: CreateInternalAsync
+  nameWithType: AssistantProvider.CreateInternalAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.CreateInternalAsync
+- uid: System.Object[]
+  isExternal: true
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UniTask{Glitch9.AIDevKit.OpenAI.Assistant}
+  commentId: '!:UniTask{Glitch9.AIDevKit.OpenAI.Assistant}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  name: UniTask<Assistant>
+  nameWithType: UniTask<Assistant>
+  fullName: UniTask<Glitch9.AIDevKit.OpenAI.Assistant>
+  nameWithType.vb: UniTask(Of Assistant)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.OpenAI.Assistant)
+  name.vb: UniTask(Of Assistant)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.CreateInternalAsync(System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.CreateInternalAsync(System.Object[])
+  isExternal: true
+  name: CreateInternalAsync(params object[])
+  nameWithType: ObjectProvider<T>.CreateInternalAsync(params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.CreateInternalAsync(params object[])
+  nameWithType.vb: ObjectProvider(Of T).CreateInternalAsync(ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).CreateInternalAsync(ParamArray Object())
+  name.vb: CreateInternalAsync(ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.CreateInternalAsync(System.Object[])
+    name: CreateInternalAsync
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.CreateInternalAsync(System.Object[])
+    name: CreateInternalAsync
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveInternalAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveInternalAsync(System.String,System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveInternalAsync(System.String,System.Object[])
+  name: RetrieveInternalAsync(string, params object[])
+  nameWithType: ObjectProvider<Assistant>.RetrieveInternalAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.RetrieveInternalAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).RetrieveInternalAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).RetrieveInternalAsync(String, ParamArray Object())
+  name.vb: RetrieveInternalAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveInternalAsync(System.String,System.Object[])
+    name: RetrieveInternalAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.RetrieveInternalAsync(System.String,System.Object[])
+    name: RetrieveInternalAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.RetrieveInternalAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.RetrieveInternalAsync
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantProvider_RetrieveInternalAsync_System_String_System_Object___
+  name: RetrieveInternalAsync
+  nameWithType: AssistantProvider.RetrieveInternalAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.RetrieveInternalAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveInternalAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveInternalAsync(System.String,System.Object[])
+  isExternal: true
+  name: RetrieveInternalAsync(string, params object[])
+  nameWithType: ObjectProvider<T>.RetrieveInternalAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.RetrieveInternalAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of T).RetrieveInternalAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).RetrieveInternalAsync(String, ParamArray Object())
+  name.vb: RetrieveInternalAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveInternalAsync(System.String,System.Object[])
+    name: RetrieveInternalAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.RetrieveInternalAsync(System.String,System.Object[])
+    name: RetrieveInternalAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.UpdateInternalAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.UpdateInternalAsync(System.String,System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.UpdateInternalAsync(System.String,System.Object[])
+  name: UpdateInternalAsync(string, params object[])
+  nameWithType: ObjectProvider<Assistant>.UpdateInternalAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.UpdateInternalAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).UpdateInternalAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).UpdateInternalAsync(String, ParamArray Object())
+  name.vb: UpdateInternalAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.UpdateInternalAsync(System.String,System.Object[])
+    name: UpdateInternalAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.UpdateInternalAsync(System.String,System.Object[])
+    name: UpdateInternalAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.UpdateInternalAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.UpdateInternalAsync
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantProvider_UpdateInternalAsync_System_String_System_Object___
+  name: UpdateInternalAsync
+  nameWithType: AssistantProvider.UpdateInternalAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.UpdateInternalAsync
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.UpdateInternalAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.UpdateInternalAsync(System.String,System.Object[])
+  isExternal: true
+  name: UpdateInternalAsync(string, params object[])
+  nameWithType: ObjectProvider<T>.UpdateInternalAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.UpdateInternalAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of T).UpdateInternalAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).UpdateInternalAsync(String, ParamArray Object())
+  name.vb: UpdateInternalAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.UpdateInternalAsync(System.String,System.Object[])
+    name: UpdateInternalAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.UpdateInternalAsync(System.String,System.Object[])
+    name: UpdateInternalAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.ListInternalAsync(System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.ListInternalAsync(System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.ListInternalAsync(System.Object[])
+  name: ListInternalAsync(params object[])
+  nameWithType: ObjectProvider<Assistant>.ListInternalAsync(params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.ListInternalAsync(params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).ListInternalAsync(ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).ListInternalAsync(ParamArray Object())
+  name.vb: ListInternalAsync(ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.ListInternalAsync(System.Object[])
+    name: ListInternalAsync
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.ListInternalAsync(System.Object[])
+    name: ListInternalAsync
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.ListInternalAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.ListInternalAsync
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantProvider_ListInternalAsync_System_Object___
+  name: ListInternalAsync
+  nameWithType: AssistantProvider.ListInternalAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.ListInternalAsync
+- uid: UniTask{Glitch9.AIDevKit.OpenAI.Assistant[]}
+  commentId: '!:UniTask{Glitch9.AIDevKit.OpenAI.Assistant[]}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  name: UniTask<Assistant[]>
+  nameWithType: UniTask<Assistant[]>
+  fullName: UniTask<Glitch9.AIDevKit.OpenAI.Assistant[]>
+  nameWithType.vb: UniTask(Of Assistant())
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.OpenAI.Assistant())
+  name.vb: UniTask(Of Assistant())
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.ListInternalAsync(System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.ListInternalAsync(System.Object[])
+  isExternal: true
+  name: ListInternalAsync(params object[])
+  nameWithType: ObjectProvider<T>.ListInternalAsync(params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.ListInternalAsync(params object[])
+  nameWithType.vb: ObjectProvider(Of T).ListInternalAsync(ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).ListInternalAsync(ParamArray Object())
+  name.vb: ListInternalAsync(ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.ListInternalAsync(System.Object[])
+    name: ListInternalAsync
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.ListInternalAsync(System.Object[])
+    name: ListInternalAsync
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.DeleteInternalAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.DeleteInternalAsync(System.String,System.Object[])
+  parent: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}
+  definition: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.DeleteInternalAsync(System.String,System.Object[])
+  name: DeleteInternalAsync(string, params object[])
+  nameWithType: ObjectProvider<Assistant>.DeleteInternalAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<Glitch9.AIDevKit.OpenAI.Assistant>.DeleteInternalAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of Assistant).DeleteInternalAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of Glitch9.AIDevKit.OpenAI.Assistant).DeleteInternalAsync(String, ParamArray Object())
+  name.vb: DeleteInternalAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.DeleteInternalAsync(System.String,System.Object[])
+    name: DeleteInternalAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider{Glitch9.AIDevKit.OpenAI.Assistant}.DeleteInternalAsync(System.String,System.Object[])
+    name: DeleteInternalAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.DeleteInternalAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.DeleteInternalAsync
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantProvider_DeleteInternalAsync_System_String_System_Object___
+  name: DeleteInternalAsync
+  nameWithType: AssistantProvider.DeleteInternalAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.DeleteInternalAsync
+- uid: UniTask{System.Boolean}
+  commentId: '!:UniTask{System.Boolean}'
+  definition: UniTask`1
+  name: UniTask<bool>
+  nameWithType: UniTask<bool>
+  fullName: UniTask<bool>
+  nameWithType.vb: UniTask(Of Boolean)
+  fullName.vb: UniTask(Of Boolean)
+  name.vb: UniTask(Of Boolean)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.DeleteInternalAsync(System.String,System.Object[])
+  commentId: M:Glitch9.IO.Networking.RESTApi.ObjectProvider`1.DeleteInternalAsync(System.String,System.Object[])
+  isExternal: true
+  name: DeleteInternalAsync(string, params object[])
+  nameWithType: ObjectProvider<T>.DeleteInternalAsync(string, params object[])
+  fullName: Glitch9.IO.Networking.RESTApi.ObjectProvider<T>.DeleteInternalAsync(string, params object[])
+  nameWithType.vb: ObjectProvider(Of T).DeleteInternalAsync(String, ParamArray Object())
+  fullName.vb: Glitch9.IO.Networking.RESTApi.ObjectProvider(Of T).DeleteInternalAsync(String, ParamArray Object())
+  name.vb: DeleteInternalAsync(String, ParamArray Object())
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.DeleteInternalAsync(System.String,System.Object[])
+    name: DeleteInternalAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.ObjectProvider`1.DeleteInternalAsync(System.String,System.Object[])
+    name: DeleteInternalAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.FindMatchingAssistant*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.FindMatchingAssistant
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantProvider_FindMatchingAssistant_Glitch9_AIDevKit_OpenAI_Assistant___
+  name: FindMatchingAssistant
+  nameWithType: AssistantProvider.FindMatchingAssistant
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.FindMatchingAssistant
+- uid: Glitch9.AIDevKit.OpenAI.Assistant[]
+  isExternal: true
+  href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  name: Assistant[]
+  nameWithType: Assistant[]
+  fullName: Glitch9.AIDevKit.OpenAI.Assistant[]
+  nameWithType.vb: Assistant()
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistant()
+  name.vb: Assistant()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Assistant
+    name: Assistant
+    href: Glitch9.AIDevKit.OpenAI.Assistant.html
+  - name: (
+  - name: )

@@ -1,0 +1,1214 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  commentId: T:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  id: CompletionRequestBase.CompletionRequestBuilder`2
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.AttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IUniFile})
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.ExcludeReasoning(System.Boolean)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.IncludeUsage(System.Boolean)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetInstruction(System.String)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetJsonSchema(Glitch9.AIDevKit.StrictJsonSchema)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetJsonSchema(System.Type)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModels(System.Collections.Generic.List{System.String})
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetPrompt(System.String)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningEffort(System.Int32)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetResponseFormat(Glitch9.AIDevKit.ResponseFormat)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetStream(System.Boolean)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetTransforms(System.Collections.Generic.List{System.String})
+  langs:
+  - csharp
+  - vb
+  name: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>
+  type: Class
+  source:
+    id: CompletionRequestBuilder
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 80
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: 'public class CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest> : ModelRequest.ModelRequestBuilder<TBuilder, TRequest> where TBuilder : CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest> where TRequest : CompletionRequestBase'
+    typeParameters:
+    - id: TBuilder
+    - id: TRequest
+    content.vb: Public Class CompletionRequestBase.CompletionRequestBuilder(Of TBuilder As CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest), TRequest As CompletionRequestBase) Inherits ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder{{TBuilder},{TRequest}}
+  - Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}
+  derivedClasses:
+  - Glitch9.AIDevKit.ChatCompletionRequest.Builder
+  - Glitch9.AIDevKit.CompletionRequest.Builder
+  inheritedMembers:
+  - Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}.SetUser(System.String)
+  - Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}.SetModel(Glitch9.AIDevKit.Model)
+  - Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest)
+  name.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetStream(System.Boolean)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetStream(System.Boolean)
+  id: SetStream(System.Boolean)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetStream(bool)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetStream(bool)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetStream(bool)
+  type: Method
+  source:
+    id: SetStream
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 84
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetStream(bool stream = true)
+    parameters:
+    - id: stream
+      type: System.Boolean
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetStream(stream As Boolean = True) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetStream*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetStream(Boolean)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetStream(Boolean)
+  name.vb: SetStream(Boolean)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.IncludeUsage(System.Boolean)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.IncludeUsage(System.Boolean)
+  id: IncludeUsage(System.Boolean)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: IncludeUsage(bool)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.IncludeUsage(bool)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.IncludeUsage(bool)
+  type: Method
+  source:
+    id: IncludeUsage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 90
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder IncludeUsage(bool includeUsage = true)
+    parameters:
+    - id: includeUsage
+      type: System.Boolean
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function IncludeUsage(includeUsage As Boolean = True) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.IncludeUsage*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).IncludeUsage(Boolean)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).IncludeUsage(Boolean)
+  name.vb: IncludeUsage(Boolean)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetPrompt(System.String)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetPrompt(System.String)
+  id: SetPrompt(System.String)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetPrompt(string)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetPrompt(string)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetPrompt(string)
+  type: Method
+  source:
+    id: SetPrompt
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 97
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetPrompt(string prompt)
+    parameters:
+    - id: prompt
+      type: System.String
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetPrompt(prompt As String) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetPrompt*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetPrompt(String)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetPrompt(String)
+  name.vb: SetPrompt(String)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetInstruction(System.String)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetInstruction(System.String)
+  id: SetInstruction(System.String)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetInstruction(string)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetInstruction(string)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetInstruction(string)
+  type: Method
+  source:
+    id: SetInstruction
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 104
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetInstruction(string systemInstruction)
+    parameters:
+    - id: systemInstruction
+      type: System.String
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetInstruction(systemInstruction As String) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetInstruction*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetInstruction(String)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetInstruction(String)
+  name.vb: SetInstruction(String)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetResponseFormat(Glitch9.AIDevKit.ResponseFormat)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetResponseFormat(Glitch9.AIDevKit.ResponseFormat)
+  id: SetResponseFormat(Glitch9.AIDevKit.ResponseFormat)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetResponseFormat(ResponseFormat)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetResponseFormat(ResponseFormat)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetResponseFormat(Glitch9.AIDevKit.ResponseFormat)
+  type: Method
+  source:
+    id: SetResponseFormat
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 111
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetResponseFormat(ResponseFormat responseFormat)
+    parameters:
+    - id: responseFormat
+      type: Glitch9.AIDevKit.ResponseFormat
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetResponseFormat(responseFormat As ResponseFormat) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetResponseFormat*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetResponseFormat(ResponseFormat)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetResponseFormat(Glitch9.AIDevKit.ResponseFormat)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetJsonSchema(System.Type)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetJsonSchema(System.Type)
+  id: SetJsonSchema(System.Type)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetJsonSchema(Type)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetJsonSchema(Type)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetJsonSchema(System.Type)
+  type: Method
+  source:
+    id: SetJsonSchema
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 118
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetJsonSchema(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetJsonSchema(type As Type) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetJsonSchema*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetJsonSchema(Type)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetJsonSchema(System.Type)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetJsonSchema(Glitch9.AIDevKit.StrictJsonSchema)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetJsonSchema(Glitch9.AIDevKit.StrictJsonSchema)
+  id: SetJsonSchema(Glitch9.AIDevKit.StrictJsonSchema)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetJsonSchema(StrictJsonSchema)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetJsonSchema(StrictJsonSchema)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetJsonSchema(Glitch9.AIDevKit.StrictJsonSchema)
+  type: Method
+  source:
+    id: SetJsonSchema
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 131
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetJsonSchema(StrictJsonSchema jsonSchema)
+    parameters:
+    - id: jsonSchema
+      type: Glitch9.AIDevKit.StrictJsonSchema
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetJsonSchema(jsonSchema As StrictJsonSchema) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetJsonSchema*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetJsonSchema(StrictJsonSchema)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetJsonSchema(Glitch9.AIDevKit.StrictJsonSchema)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  id: SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetModelOptions(ModelOptions)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModelOptions(ModelOptions)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  type: Method
+  source:
+    id: SetModelOptions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 138
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetModelOptions(ModelOptions options)
+    parameters:
+    - id: options
+      type: Glitch9.AIDevKit.ModelOptions
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetModelOptions(options As ModelOptions) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModelOptions(ModelOptions)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModels(System.Collections.Generic.List{System.String})
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModels(System.Collections.Generic.List{System.String})
+  id: SetModels(System.Collections.Generic.List{System.String})
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetModels(List<string>)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModels(List<string>)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModels(System.Collections.Generic.List<string>)
+  type: Method
+  source:
+    id: SetModels
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 145
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetModels(List<string> models)
+    parameters:
+    - id: models
+      type: System.Collections.Generic.List{System.String}
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetModels(models As List(Of String)) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModels*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModels(List(Of String))
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModels(System.Collections.Generic.List(Of String))
+  name.vb: SetModels(List(Of String))
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetTransforms(System.Collections.Generic.List{System.String})
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetTransforms(System.Collections.Generic.List{System.String})
+  id: SetTransforms(System.Collections.Generic.List{System.String})
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetTransforms(List<string>)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetTransforms(List<string>)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetTransforms(System.Collections.Generic.List<string>)
+  type: Method
+  source:
+    id: SetTransforms
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 152
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetTransforms(List<string> transforms)
+    parameters:
+    - id: transforms
+      type: System.Collections.Generic.List{System.String}
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetTransforms(transforms As List(Of String)) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetTransforms*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetTransforms(List(Of String))
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetTransforms(System.Collections.Generic.List(Of String))
+  name.vb: SetTransforms(List(Of String))
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
+  id: SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetReasoningOptions(ReasoningOptions)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetReasoningOptions(ReasoningOptions)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
+  type: Method
+  source:
+    id: SetReasoningOptions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 159
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetReasoningOptions(ReasoningOptions options)
+    parameters:
+    - id: options
+      type: Glitch9.AIDevKit.ReasoningOptions
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetReasoningOptions(options As ReasoningOptions) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningOptions*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetReasoningOptions(ReasoningOptions)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
+  id: SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetReasoningEffort(ReasoningEffort)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetReasoningEffort(ReasoningEffort)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
+  type: Method
+  source:
+    id: SetReasoningEffort
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 166
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetReasoningEffort(ReasoningEffort effort)
+    parameters:
+    - id: effort
+      type: Glitch9.AIDevKit.ReasoningEffort
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetReasoningEffort(effort As ReasoningEffort) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningEffort*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetReasoningEffort(ReasoningEffort)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningEffort(System.Int32)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningEffort(System.Int32)
+  id: SetReasoningEffort(System.Int32)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: SetReasoningEffort(int)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetReasoningEffort(int)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetReasoningEffort(int)
+  type: Method
+  source:
+    id: SetReasoningEffort
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 173
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder SetReasoningEffort(int maxTokens)
+    parameters:
+    - id: maxTokens
+      type: System.Int32
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function SetReasoningEffort(maxTokens As Integer) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningEffort*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetReasoningEffort(Integer)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetReasoningEffort(Integer)
+  name.vb: SetReasoningEffort(Integer)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.ExcludeReasoning(System.Boolean)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.ExcludeReasoning(System.Boolean)
+  id: ExcludeReasoning(System.Boolean)
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: ExcludeReasoning(bool)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.ExcludeReasoning(bool)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.ExcludeReasoning(bool)
+  type: Method
+  source:
+    id: ExcludeReasoning
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 180
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder ExcludeReasoning(bool exclude = true)
+    parameters:
+    - id: exclude
+      type: System.Boolean
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function ExcludeReasoning(exclude As Boolean = True) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.ExcludeReasoning*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).ExcludeReasoning(Boolean)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).ExcludeReasoning(Boolean)
+  name.vb: ExcludeReasoning(Boolean)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.AttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IUniFile})
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.AttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IUniFile})
+  id: AttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IUniFile})
+  parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
+  langs:
+  - csharp
+  - vb
+  name: AttachedFiles(List<IUniFile>)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.AttachedFiles(List<IUniFile>)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.AttachedFiles(System.Collections.Generic.List<Glitch9.IO.Files.IUniFile>)
+  type: Method
+  source:
+    id: AttachedFiles
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequestBase.cs
+    startLine: 187
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public TBuilder AttachedFiles(List<IUniFile> files)
+    parameters:
+    - id: files
+      type: System.Collections.Generic.List{Glitch9.IO.Files.IUniFile}
+    return:
+      type: '{TBuilder}'
+    content.vb: Public Function AttachedFiles(files As List(Of IUniFile)) As TBuilder
+  overload: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.AttachedFiles*
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).AttachedFiles(List(Of IUniFile))
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).AttachedFiles(System.Collections.Generic.List(Of Glitch9.IO.Files.IUniFile))
+  name.vb: AttachedFiles(List(Of IUniFile))
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder{{TBuilder},{TRequest}}
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder{`0,`1}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
+  name: RequestBody.RequestBodyBuilder<TBuilder, TRequest>
+  nameWithType: RequestBody.RequestBodyBuilder<TBuilder, TRequest>
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder<TBuilder, TRequest>
+  nameWithType.vb: RequestBody.RequestBodyBuilder(Of TBuilder, TRequest)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder(Of TBuilder, TRequest)
+  name.vb: RequestBody.RequestBodyBuilder(Of TBuilder, TRequest)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
+    name: RequestBody
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
+    name: RequestBodyBuilder
+  - name: <
+  - name: TBuilder
+  - name: ','
+  - name: " "
+  - name: TRequest
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
+    name: RequestBody
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
+    name: RequestBodyBuilder
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBuilder
+  - name: ','
+  - name: " "
+  - name: TRequest
+  - name: )
+- uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}
+  commentId: T:Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{`0,`1}
+  parent: Glitch9.AIDevKit
+  definition: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
+  href: Glitch9.AIDevKit.ModelRequest.html
+  name: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>
+  nameWithType: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>
+  fullName: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder<TBuilder, TRequest>
+  nameWithType.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest)
+  fullName.vb: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest)
+  name.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ModelRequest
+    name: ModelRequest
+    href: Glitch9.AIDevKit.ModelRequest.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
+    name: ModelRequestBuilder
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html
+  - name: <
+  - name: TBuilder
+  - name: ','
+  - name: " "
+  - name: TRequest
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ModelRequest
+    name: ModelRequest
+    href: Glitch9.AIDevKit.ModelRequest.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
+    name: ModelRequestBuilder
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBuilder
+  - name: ','
+  - name: " "
+  - name: TRequest
+  - name: )
+- uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}.SetUser(System.String)
+  commentId: M:Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{`0,`1}.SetUser(System.String)
+  parent: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}
+  definition: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetUser(System.String)
+  href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetUser_System_String_
+  name: SetUser(string)
+  nameWithType: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetUser(string)
+  fullName: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetUser(string)
+  nameWithType.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetUser(String)
+  fullName.vb: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetUser(String)
+  name.vb: SetUser(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{`0,`1}.SetUser(System.String)
+    name: SetUser
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetUser_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{`0,`1}.SetUser(System.String)
+    name: SetUser
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetUser_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}.SetModel(Glitch9.AIDevKit.Model)
+  commentId: M:Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{`0,`1}.SetModel(Glitch9.AIDevKit.Model)
+  parent: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}
+  definition: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetModel(Glitch9.AIDevKit.Model)
+  href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_
+  name: SetModel(Model)
+  nameWithType: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetModel(Model)
+  fullName: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetModel(Glitch9.AIDevKit.Model)
+  nameWithType.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetModel(Model)
+  fullName.vb: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetModel(Glitch9.AIDevKit.Model)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{`0,`1}.SetModel(Glitch9.AIDevKit.Model)
+    name: SetModel
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{`0,`1}.SetModel(Glitch9.AIDevKit.Model)
+    name: SetModel
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+- uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{`0,`1}.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{{TBuilder},{TRequest}}
+  definition: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
+  href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__
+  name: SetMetadata(Dictionary<string, string>)
+  nameWithType: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetMetadata(Dictionary<string, string>)
+  fullName: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetMetadata(System.Collections.Generic.Dictionary<string, string>)
+  nameWithType.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetMetadata(Dictionary(Of String, String))
+  fullName.vb: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetMetadata(System.Collections.Generic.Dictionary(Of String, String))
+  name.vb: SetMetadata(Dictionary(Of String, String))
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{`0,`1}.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
+    name: SetMetadata
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__
+  - name: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder{`0,`1}.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
+    name: SetMetadata
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__
+  - name: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
+  name: RequestBody.RequestBodyBuilder<TBuilder, TReqBody>
+  nameWithType: RequestBody.RequestBodyBuilder<TBuilder, TReqBody>
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder<TBuilder, TReqBody>
+  nameWithType.vb: RequestBody.RequestBodyBuilder(Of TBuilder, TReqBody)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder(Of TBuilder, TReqBody)
+  name.vb: RequestBody.RequestBodyBuilder(Of TBuilder, TReqBody)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
+    name: RequestBody
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
+    name: RequestBodyBuilder
+  - name: <
+  - name: TBuilder
+  - name: ','
+  - name: " "
+  - name: TReqBody
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
+    name: RequestBody
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
+    name: RequestBodyBuilder
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBuilder
+  - name: ','
+  - name: " "
+  - name: TReqBody
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
+  commentId: T:Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
+  href: Glitch9.AIDevKit.ModelRequest.html
+  name: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>
+  nameWithType: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>
+  fullName: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder<TBuilder, TRequest>
+  nameWithType.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest)
+  fullName.vb: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest)
+  name.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ModelRequest
+    name: ModelRequest
+    href: Glitch9.AIDevKit.ModelRequest.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
+    name: ModelRequestBuilder
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html
+  - name: <
+  - name: TBuilder
+  - name: ','
+  - name: " "
+  - name: TRequest
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ModelRequest
+    name: ModelRequest
+    href: Glitch9.AIDevKit.ModelRequest.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
+    name: ModelRequestBuilder
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBuilder
+  - name: ','
+  - name: " "
+  - name: TRequest
+  - name: )
+- uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetUser(System.String)
+  commentId: M:Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetUser(System.String)
+  isExternal: true
+  href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetUser_System_String_
+  name: SetUser(string)
+  nameWithType: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetUser(string)
+  fullName: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetUser(string)
+  nameWithType.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetUser(String)
+  fullName.vb: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetUser(String)
+  name.vb: SetUser(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetUser(System.String)
+    name: SetUser
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetUser_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetUser(System.String)
+    name: SetUser
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetUser_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetModel(Glitch9.AIDevKit.Model)
+  commentId: M:Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetModel(Glitch9.AIDevKit.Model)
+  href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_
+  name: SetModel(Model)
+  nameWithType: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetModel(Model)
+  fullName: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetModel(Glitch9.AIDevKit.Model)
+  nameWithType.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetModel(Model)
+  fullName.vb: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetModel(Glitch9.AIDevKit.Model)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetModel(Glitch9.AIDevKit.Model)
+    name: SetModel
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetModel(Glitch9.AIDevKit.Model)
+    name: SetModel
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+- uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
+  isExternal: true
+  href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__
+  name: SetMetadata(Dictionary<string, string>)
+  nameWithType: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetMetadata(Dictionary<string, string>)
+  fullName: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder<TBuilder, TRequest>.SetMetadata(System.Collections.Generic.Dictionary<string, string>)
+  nameWithType.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetMetadata(Dictionary(Of String, String))
+  fullName.vb: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest).SetMetadata(System.Collections.Generic.Dictionary(Of String, String))
+  name.vb: SetMetadata(Dictionary(Of String, String))
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
+    name: SetMetadata
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__
+  - name: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
+    name: SetMetadata
+    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__
+  - name: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetStream*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetStream
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetStream_System_Boolean_
+  name: SetStream
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetStream
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetStream
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetStream
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetStream
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: '{TBuilder}'
+  commentId: '!:TBuilder'
+  definition: TBuilder
+  name: TBuilder
+  nameWithType: TBuilder
+  fullName: TBuilder
+- uid: TBuilder
+  name: TBuilder
+  nameWithType: TBuilder
+  fullName: TBuilder
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.IncludeUsage*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.IncludeUsage
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_IncludeUsage_System_Boolean_
+  name: IncludeUsage
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.IncludeUsage
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.IncludeUsage
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).IncludeUsage
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).IncludeUsage
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetPrompt*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetPrompt
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetPrompt_System_String_
+  name: SetPrompt
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetPrompt
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetPrompt
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetPrompt
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetPrompt
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetInstruction*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetInstruction
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetInstruction_System_String_
+  name: SetInstruction
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetInstruction
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetInstruction
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetInstruction
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetInstruction
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetResponseFormat*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetResponseFormat
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetResponseFormat_Glitch9_AIDevKit_ResponseFormat_
+  name: SetResponseFormat
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetResponseFormat
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetResponseFormat
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetResponseFormat
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetResponseFormat
+- uid: Glitch9.AIDevKit.ResponseFormat
+  commentId: T:Glitch9.AIDevKit.ResponseFormat
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ResponseFormat.html
+  name: ResponseFormat
+  nameWithType: ResponseFormat
+  fullName: Glitch9.AIDevKit.ResponseFormat
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetJsonSchema*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetJsonSchema
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetJsonSchema_System_Type_
+  name: SetJsonSchema
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetJsonSchema
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetJsonSchema
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetJsonSchema
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetJsonSchema
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Glitch9.AIDevKit.StrictJsonSchema
+  commentId: T:Glitch9.AIDevKit.StrictJsonSchema
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.StrictJsonSchema.html
+  name: StrictJsonSchema
+  nameWithType: StrictJsonSchema
+  fullName: Glitch9.AIDevKit.StrictJsonSchema
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
+  name: SetModelOptions
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModelOptions
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModelOptions
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModelOptions
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModelOptions
+- uid: Glitch9.AIDevKit.ModelOptions
+  commentId: T:Glitch9.AIDevKit.ModelOptions
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelOptions.html
+  name: ModelOptions
+  nameWithType: ModelOptions
+  fullName: Glitch9.AIDevKit.ModelOptions
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModels*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModels
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModels_System_Collections_Generic_List_System_String__
+  name: SetModels
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModels
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModels
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModels
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModels
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetTransforms*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetTransforms
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetTransforms_System_Collections_Generic_List_System_String__
+  name: SetTransforms
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetTransforms
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetTransforms
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetTransforms
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetTransforms
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningOptions*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningOptions
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_
+  name: SetReasoningOptions
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetReasoningOptions
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetReasoningOptions
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetReasoningOptions
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetReasoningOptions
+- uid: Glitch9.AIDevKit.ReasoningOptions
+  commentId: T:Glitch9.AIDevKit.ReasoningOptions
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ReasoningOptions.html
+  name: ReasoningOptions
+  nameWithType: ReasoningOptions
+  fullName: Glitch9.AIDevKit.ReasoningOptions
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningEffort*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetReasoningEffort
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetReasoningEffort_Glitch9_AIDevKit_ReasoningEffort_
+  name: SetReasoningEffort
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetReasoningEffort
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetReasoningEffort
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetReasoningEffort
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetReasoningEffort
+- uid: Glitch9.AIDevKit.ReasoningEffort
+  commentId: T:Glitch9.AIDevKit.ReasoningEffort
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ReasoningEffort.html
+  name: ReasoningEffort
+  nameWithType: ReasoningEffort
+  fullName: Glitch9.AIDevKit.ReasoningEffort
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.ExcludeReasoning*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.ExcludeReasoning
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_ExcludeReasoning_System_Boolean_
+  name: ExcludeReasoning
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.ExcludeReasoning
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.ExcludeReasoning
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).ExcludeReasoning
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).ExcludeReasoning
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.AttachedFiles*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.AttachedFiles
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_AttachedFiles_System_Collections_Generic_List_Glitch9_IO_Files_IUniFile__
+  name: AttachedFiles
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.AttachedFiles
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.AttachedFiles
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).AttachedFiles
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).AttachedFiles
+- uid: System.Collections.Generic.List{Glitch9.IO.Files.IUniFile}
+  commentId: T:System.Collections.Generic.List{Glitch9.IO.Files.IUniFile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IUniFile>
+  nameWithType: List<IUniFile>
+  fullName: System.Collections.Generic.List<Glitch9.IO.Files.IUniFile>
+  nameWithType.vb: List(Of IUniFile)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.IO.Files.IUniFile)
+  name.vb: List(Of IUniFile)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Glitch9.IO.Files.IUniFile
+    name: IUniFile
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.IO.Files.IUniFile
+    name: IUniFile
+  - name: )

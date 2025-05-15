@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TranscriptionRequest | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TranscriptionRequest | AI DevKit ">
+    
+    <meta name="description" content="Transcribes audio into the input language.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI DevKit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest">
+
+
+
+  <h1 id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest" class="text-break">Class TranscriptionRequest</h1>
+  <div class="markdown level0 summary"><p>Transcribes audio into the input language.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">RequestBody</span></div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.ModelRequest.html">ModelRequest</a></div>
+    <div class="level3"><span class="xref">TranscriptionRequest</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model">ModelRequest.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N">ModelRequest.N</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata">ModelRequest.Metadata</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User">ModelRequest.User</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TranscriptionRequest : ModelRequest</code></pre>
+  </div>
+  <h5 id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>returns the transcription object or a verbose transcription object.</p>
+</div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_File_" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.File*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_File" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.File">File</h4>
+  <div class="markdown level1 summary"><p>Required.
+The audio file object (not file name) to transcribe,
+in one of these formats: flac, mp3, mp4, mpeg, mpga, m4a, ogg, wav, or webm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FormFile File { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FormFile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_Language_" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.Language*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_Language" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.Language">Language</h4>
+  <div class="markdown level1 summary"><p>The language of the input audio.
+Supplying the input language in ISO-639-1 format will improve accuracy and latency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemLanguage? Language { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SystemLanguage</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_Prompt_" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.Prompt*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_Prompt" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.Prompt">Prompt</h4>
+  <div class="markdown level1 summary"><p>An optional text to guide the model's style or continue a previous audio segment.
+The prompt should match the audio language.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Prompt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_Temperature_" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.Temperature*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_Temperature" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.Temperature">Temperature</h4>
+  <div class="markdown level1 summary"><p>The sampling temperature, between 0 and 1.
+Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.
+If set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float? Temperature { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_TimestampGranularities_" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.TimestampGranularities*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_TimestampGranularities" data-uid="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.TimestampGranularities">TimestampGranularities</h4>
+  <div class="markdown level1 summary"><p>The timestamp granularities to populate for this transcription.
+response_format must be set verbose_json to use timestamp granularities.
+Either or both of these options are supported: word, or segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] TimestampGranularities { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Glitch9_AIDevKit_OpenAI_TranscriptionRequest_TimestampGranularities_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: There is no additional latency for segment timestamps, but generating word timestamps incurs additional latency.</p>
+</div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_OpenAI_TranscriptionRequest_">RequestExtensions.ExecuteAsync(TranscriptionRequest)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

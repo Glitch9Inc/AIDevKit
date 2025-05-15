@@ -1,0 +1,355 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.VectorStoreRequest
+  commentId: T:Glitch9.AIDevKit.OpenAI.VectorStoreRequest
+  id: VectorStoreRequest
+  parent: Glitch9.AIDevKit.OpenAI
+  children:
+  - Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ChunkingStrategy
+  - Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ExpiresAfter
+  - Glitch9.AIDevKit.OpenAI.VectorStoreRequest.FileIds
+  - Glitch9.AIDevKit.OpenAI.VectorStoreRequest.Name
+  langs:
+  - csharp
+  - vb
+  name: VectorStoreRequest
+  nameWithType: VectorStoreRequest
+  fullName: Glitch9.AIDevKit.OpenAI.VectorStoreRequest
+  type: Class
+  source:
+    id: VectorStoreRequest
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/VectorStores/VectorStores/VectorStoreRequest.cs
+    startLine: 4
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: 'public class VectorStoreRequest : ModelRequest'
+    content.vb: Public Class VectorStoreRequest Inherits ModelRequest
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RequestBody
+  - Glitch9.AIDevKit.ModelRequest
+  inheritedMembers:
+  - Glitch9.AIDevKit.ModelRequest.Model
+  - Glitch9.AIDevKit.ModelRequest.N
+  - Glitch9.AIDevKit.ModelRequest.Metadata
+  - Glitch9.AIDevKit.ModelRequest.User
+- uid: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.FileIds
+  commentId: P:Glitch9.AIDevKit.OpenAI.VectorStoreRequest.FileIds
+  id: FileIds
+  parent: Glitch9.AIDevKit.OpenAI.VectorStoreRequest
+  langs:
+  - csharp
+  - vb
+  name: FileIds
+  nameWithType: VectorStoreRequest.FileIds
+  fullName: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.FileIds
+  type: Property
+  source:
+    id: FileIds
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/VectorStores/VectorStores/VectorStoreRequest.cs
+    startLine: 9
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: A list of File IDs that the vector store should use. Useful for tools like file_search that can access files.
+  example: []
+  syntax:
+    content: public string[] FileIds { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property FileIds As String()
+  overload: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.FileIds*
+- uid: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.Name
+  commentId: P:Glitch9.AIDevKit.OpenAI.VectorStoreRequest.Name
+  id: Name
+  parent: Glitch9.AIDevKit.OpenAI.VectorStoreRequest
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: VectorStoreRequest.Name
+  fullName: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.Name
+  type: Property
+  source:
+    id: Name
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/VectorStores/VectorStores/VectorStoreRequest.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The name of the vector store.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.Name*
+- uid: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ExpiresAfter
+  commentId: P:Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ExpiresAfter
+  id: ExpiresAfter
+  parent: Glitch9.AIDevKit.OpenAI.VectorStoreRequest
+  langs:
+  - csharp
+  - vb
+  name: ExpiresAfter
+  nameWithType: VectorStoreRequest.ExpiresAfter
+  fullName: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ExpiresAfter
+  type: Property
+  source:
+    id: ExpiresAfter
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/VectorStores/VectorStores/VectorStoreRequest.cs
+    startLine: 19
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The expiration policy for a vector store.
+  example: []
+  syntax:
+    content: public Expiration ExpiresAfter { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Expiration
+    content.vb: Public Property ExpiresAfter As Expiration
+  overload: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ExpiresAfter*
+- uid: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ChunkingStrategy
+  commentId: P:Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ChunkingStrategy
+  id: ChunkingStrategy
+  parent: Glitch9.AIDevKit.OpenAI.VectorStoreRequest
+  langs:
+  - csharp
+  - vb
+  name: ChunkingStrategy
+  nameWithType: VectorStoreRequest.ChunkingStrategy
+  fullName: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ChunkingStrategy
+  type: Property
+  source:
+    id: ChunkingStrategy
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/VectorStores/VectorStores/VectorStoreRequest.cs
+    startLine: 25
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: >-
+    The chunking strategy used to chunk the file(s). If not set, will use the auto strategy.
+
+    Only applicable if file_ids is non-empty.
+  example: []
+  syntax:
+    content: public ChunkingStrategy ChunkingStrategy { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.ChunkingStrategy
+    content.vb: Public Property ChunkingStrategy As ChunkingStrategy
+  overload: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ChunkingStrategy*
+references:
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RequestBody
+  nameWithType: RequestBody
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
+- uid: Glitch9.AIDevKit.ModelRequest
+  commentId: T:Glitch9.AIDevKit.ModelRequest
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelRequest.html
+  name: ModelRequest
+  nameWithType: ModelRequest
+  fullName: Glitch9.AIDevKit.ModelRequest
+- uid: Glitch9.AIDevKit.ModelRequest.Model
+  commentId: P:Glitch9.AIDevKit.ModelRequest.Model
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model
+  name: Model
+  nameWithType: ModelRequest.Model
+  fullName: Glitch9.AIDevKit.ModelRequest.Model
+- uid: Glitch9.AIDevKit.ModelRequest.N
+  commentId: P:Glitch9.AIDevKit.ModelRequest.N
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N
+  name: N
+  nameWithType: ModelRequest.N
+  fullName: Glitch9.AIDevKit.ModelRequest.N
+- uid: Glitch9.AIDevKit.ModelRequest.Metadata
+  commentId: P:Glitch9.AIDevKit.ModelRequest.Metadata
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata
+  name: Metadata
+  nameWithType: ModelRequest.Metadata
+  fullName: Glitch9.AIDevKit.ModelRequest.Metadata
+- uid: Glitch9.AIDevKit.ModelRequest.User
+  commentId: P:Glitch9.AIDevKit.ModelRequest.User
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User
+  name: User
+  nameWithType: ModelRequest.User
+  fullName: Glitch9.AIDevKit.ModelRequest.User
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.FileIds*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.VectorStoreRequest.FileIds
+  href: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.html#Glitch9_AIDevKit_OpenAI_VectorStoreRequest_FileIds
+  name: FileIds
+  nameWithType: VectorStoreRequest.FileIds
+  fullName: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.FileIds
+- uid: System.String[]
+  isExternal: true
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.Name*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.VectorStoreRequest.Name
+  href: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.html#Glitch9_AIDevKit_OpenAI_VectorStoreRequest_Name
+  name: Name
+  nameWithType: VectorStoreRequest.Name
+  fullName: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ExpiresAfter*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ExpiresAfter
+  href: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.html#Glitch9_AIDevKit_OpenAI_VectorStoreRequest_ExpiresAfter
+  name: ExpiresAfter
+  nameWithType: VectorStoreRequest.ExpiresAfter
+  fullName: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ExpiresAfter
+- uid: Glitch9.AIDevKit.OpenAI.Expiration
+  commentId: T:Glitch9.AIDevKit.OpenAI.Expiration
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.Expiration.html
+  name: Expiration
+  nameWithType: Expiration
+  fullName: Glitch9.AIDevKit.OpenAI.Expiration
+- uid: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ChunkingStrategy*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ChunkingStrategy
+  href: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.html#Glitch9_AIDevKit_OpenAI_VectorStoreRequest_ChunkingStrategy
+  name: ChunkingStrategy
+  nameWithType: VectorStoreRequest.ChunkingStrategy
+  fullName: Glitch9.AIDevKit.OpenAI.VectorStoreRequest.ChunkingStrategy
+- uid: Glitch9.AIDevKit.OpenAI.ChunkingStrategy
+  commentId: T:Glitch9.AIDevKit.OpenAI.ChunkingStrategy
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.ChunkingStrategy.html
+  name: ChunkingStrategy
+  nameWithType: ChunkingStrategy
+  fullName: Glitch9.AIDevKit.OpenAI.ChunkingStrategy

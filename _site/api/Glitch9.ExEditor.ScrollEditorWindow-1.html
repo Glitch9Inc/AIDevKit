@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScrollEditorWindow&lt;TWindowClass&gt; | AI DevKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScrollEditorWindow&lt;TWindowClass&gt; | AI DevKit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AI DevKit">
+            AI DevKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Glitch9.ExEditor.ScrollEditorWindow`1">
+
+
+
+  <h1 id="Glitch9_ExEditor_ScrollEditorWindow_1" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1" class="text-break">
+Class ScrollEditorWindow&lt;TWindowClass&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.ExEditor.html">ExEditor</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Glitch9.CoreLib.Editor.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ScrollEditorWindow&lt;TWindowClass&gt; : ExtendedEditorWindow&lt;TWindowClass&gt; where TWindowClass : EditorWindow</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TWindowClass</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html">ExtendedEditorWindow</a>&lt;TWindowClass&gt;</div>
+      <div><span class="xref">ScrollEditorWindow&lt;TWindowClass&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_ButtonOptions">ExtendedEditorWindow&lt;TWindowClass&gt;.ButtonOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_MiniButtonOptions">ExtendedEditorWindow&lt;TWindowClass&gt;.MiniButtonOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_Initialize_System_String_">ExtendedEditorWindow&lt;TWindowClass&gt;.Initialize(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_InternalMenuHeader_System_String_System_Boolean__">ExtendedEditorWindow&lt;TWindowClass&gt;.InternalMenuHeader(string, ref bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_OpenSettingsWindow">ExtendedEditorWindow&lt;TWindowClass&gt;.OpenSettingsWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_WindowName">ExtendedEditorWindow&lt;TWindowClass&gt;.WindowName</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_ImageSize">ExtendedEditorWindow&lt;TWindowClass&gt;.ImageSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_IconSize">ExtendedEditorWindow&lt;TWindowClass&gt;.IconSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_MaxWindowSize">ExtendedEditorWindow&lt;TWindowClass&gt;.MaxWindowSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_MinWindowSize">ExtendedEditorWindow&lt;TWindowClass&gt;.MinWindowSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_ButtonSize">ExtendedEditorWindow&lt;TWindowClass&gt;.ButtonSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.ExEditor.ExtendedEditorWindow-1.html#Glitch9_ExEditor_ExtendedEditorWindow_1_MiniButtonSize">ExtendedEditorWindow&lt;TWindowClass&gt;.MiniButtonSize</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNotSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfNotSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNull__1___0_System_String_System_String_">LogExtensions.LogIfNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_ToSenderName_System_Object_">SystemExtensions.ToSenderName(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.TypeExtensions.html#Glitch9_TypeExtensions_IsInteger_System_Object_">TypeExtensions.IsInteger(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1__ctor_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.#ctor*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1__ctor" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.#ctor">
+  ScrollEditorWindow()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ScrollEditorWindow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_DrawWindowLabelButtons_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.DrawWindowLabelButtons*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_DrawWindowLabelButtons" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.DrawWindowLabelButtons">
+  DrawWindowLabelButtons()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawWindowLabelButtons()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_DrawWindowToolBar_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.DrawWindowToolBar*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_DrawWindowToolBar" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.DrawWindowToolBar">
+  DrawWindowToolBar()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawWindowToolBar()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_GoToBottomScrollPosition_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.GoToBottomScrollPosition*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_GoToBottomScrollPosition" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.GoToBottomScrollPosition">
+  GoToBottomScrollPosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GoToBottomScrollPosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_InitializeScrollEditorWindow_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.InitializeScrollEditorWindow*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_InitializeScrollEditorWindow" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.InitializeScrollEditorWindow">
+  InitializeScrollEditorWindow()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InitializeScrollEditorWindow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_OnEnable_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnEnable*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_OnEnable" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnEnable">
+  OnEnable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_OnGUIBottom_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnGUIBottom*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_OnGUIBottom" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnGUIBottom">
+  OnGUIBottom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnGUIBottom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_OnGUIMid_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnGUIMid*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_OnGUIMid" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnGUIMid">
+  OnGUIMid()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnGUIMid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_OnGUITop_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnGUITop*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_OnGUITop" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnGUITop">
+  OnGUITop()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnGUITop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_OnInitialize_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnInitialize*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_OnInitialize" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnInitialize">
+  OnInitialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnInitialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_OnRequirementsNotMet_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnRequirementsNotMet*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_OnRequirementsNotMet" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.OnRequirementsNotMet">
+  OnRequirementsNotMet()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnRequirementsNotMet()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ScrollEditorWindow_1_RequirementsMet_" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.RequirementsMet*"></a>
+
+  <h3 id="Glitch9_ExEditor_ScrollEditorWindow_1_RequirementsMet" data-uid="Glitch9.ExEditor.ScrollEditorWindow`1.RequirementsMet">
+  RequirementsMet()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool RequirementsMet()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

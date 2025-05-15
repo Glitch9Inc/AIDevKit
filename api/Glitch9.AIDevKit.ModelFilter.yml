@@ -1,0 +1,1004 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ModelFilter
+  commentId: T:Glitch9.AIDevKit.ModelFilter
+  id: ModelFilter
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.ModelFilter.Api
+  - Glitch9.AIDevKit.ModelFilter.Capability
+  - Glitch9.AIDevKit.ModelFilter.EMB(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.ModelFilter.Equals(Glitch9.AIDevKit.ModelFilter)
+  - Glitch9.AIDevKit.ModelFilter.Equals(System.Object)
+  - Glitch9.AIDevKit.ModelFilter.GetHashCode
+  - Glitch9.AIDevKit.ModelFilter.IMG(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.ModelFilter.IsEmpty
+  - Glitch9.AIDevKit.ModelFilter.LLM(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.ModelFilter.MOD(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.ModelFilter.Matches(Glitch9.AIDevKit.Model)
+  - Glitch9.AIDevKit.ModelFilter.RTM(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.ModelFilter.SFX(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.ModelFilter.STT(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.ModelFilter.TTS(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.ModelFilter.VCM(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.ModelFilter.VID(Glitch9.AIDevKit.AIProvider)
+  langs:
+  - csharp
+  - vb
+  name: ModelFilter
+  nameWithType: ModelFilter
+  fullName: Glitch9.AIDevKit.ModelFilter
+  type: Class
+  source:
+    id: ModelFilter
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 4
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: 'public class ModelFilter : IEquatable<ModelFilter>, IAIDevKitAssetFilter<Model>'
+    content.vb: Public Class ModelFilter Implements IEquatable(Of ModelFilter), IAIDevKitAssetFilter(Of Model)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Glitch9.AIDevKit.ModelFilter}
+  - Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}
+- uid: Glitch9.AIDevKit.ModelFilter.Api
+  commentId: P:Glitch9.AIDevKit.ModelFilter.Api
+  id: Api
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: Api
+  nameWithType: ModelFilter.Api
+  fullName: Glitch9.AIDevKit.ModelFilter.Api
+  type: Property
+  source:
+    id: Api
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 6
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public AIProvider Api { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.AIProvider
+    content.vb: Public Property Api As AIProvider
+  overload: Glitch9.AIDevKit.ModelFilter.Api*
+  implements:
+  - Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.Api
+- uid: Glitch9.AIDevKit.ModelFilter.Capability
+  commentId: P:Glitch9.AIDevKit.ModelFilter.Capability
+  id: Capability
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: Capability
+  nameWithType: ModelFilter.Capability
+  fullName: Glitch9.AIDevKit.ModelFilter.Capability
+  type: Property
+  source:
+    id: Capability
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 7
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public ModelCapability? Capability { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.AIDevKit.ModelCapability}
+    content.vb: Public Property Capability As ModelCapability?
+  overload: Glitch9.AIDevKit.ModelFilter.Capability*
+- uid: Glitch9.AIDevKit.ModelFilter.IsEmpty
+  commentId: P:Glitch9.AIDevKit.ModelFilter.IsEmpty
+  id: IsEmpty
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: ModelFilter.IsEmpty
+  fullName: Glitch9.AIDevKit.ModelFilter.IsEmpty
+  type: Property
+  source:
+    id: IsEmpty
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 9
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: Glitch9.AIDevKit.ModelFilter.IsEmpty*
+  implements:
+  - Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.IsEmpty
+- uid: Glitch9.AIDevKit.ModelFilter.Matches(Glitch9.AIDevKit.Model)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.Matches(Glitch9.AIDevKit.Model)
+  id: Matches(Glitch9.AIDevKit.Model)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: Matches(Model)
+  nameWithType: ModelFilter.Matches(Model)
+  fullName: Glitch9.AIDevKit.ModelFilter.Matches(Glitch9.AIDevKit.Model)
+  type: Method
+  source:
+    id: Matches
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public bool Matches(Model data)
+    parameters:
+    - id: data
+      type: Glitch9.AIDevKit.Model
+    return:
+      type: System.Boolean
+    content.vb: Public Function Matches(data As Model) As Boolean
+  overload: Glitch9.AIDevKit.ModelFilter.Matches*
+  implements:
+  - Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.Matches(Glitch9.AIDevKit.Model)
+- uid: Glitch9.AIDevKit.ModelFilter.LLM(Glitch9.AIDevKit.AIProvider)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.LLM(Glitch9.AIDevKit.AIProvider)
+  id: LLM(Glitch9.AIDevKit.AIProvider)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: LLM(AIProvider)
+  nameWithType: ModelFilter.LLM(AIProvider)
+  fullName: Glitch9.AIDevKit.ModelFilter.LLM(Glitch9.AIDevKit.AIProvider)
+  type: Method
+  source:
+    id: LLM
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 18
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ModelFilter LLM(AIProvider api = AIProvider.All)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.AIProvider
+    return:
+      type: Glitch9.AIDevKit.ModelFilter
+    content.vb: Public Shared Function LLM(api As AIProvider = AIProvider.All) As ModelFilter
+  overload: Glitch9.AIDevKit.ModelFilter.LLM*
+- uid: Glitch9.AIDevKit.ModelFilter.IMG(Glitch9.AIDevKit.AIProvider)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.IMG(Glitch9.AIDevKit.AIProvider)
+  id: IMG(Glitch9.AIDevKit.AIProvider)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: IMG(AIProvider)
+  nameWithType: ModelFilter.IMG(AIProvider)
+  fullName: Glitch9.AIDevKit.ModelFilter.IMG(Glitch9.AIDevKit.AIProvider)
+  type: Method
+  source:
+    id: IMG
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 19
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ModelFilter IMG(AIProvider api = AIProvider.All)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.AIProvider
+    return:
+      type: Glitch9.AIDevKit.ModelFilter
+    content.vb: Public Shared Function IMG(api As AIProvider = AIProvider.All) As ModelFilter
+  overload: Glitch9.AIDevKit.ModelFilter.IMG*
+- uid: Glitch9.AIDevKit.ModelFilter.TTS(Glitch9.AIDevKit.AIProvider)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.TTS(Glitch9.AIDevKit.AIProvider)
+  id: TTS(Glitch9.AIDevKit.AIProvider)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: TTS(AIProvider)
+  nameWithType: ModelFilter.TTS(AIProvider)
+  fullName: Glitch9.AIDevKit.ModelFilter.TTS(Glitch9.AIDevKit.AIProvider)
+  type: Method
+  source:
+    id: TTS
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 20
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ModelFilter TTS(AIProvider api = AIProvider.All)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.AIProvider
+    return:
+      type: Glitch9.AIDevKit.ModelFilter
+    content.vb: Public Shared Function TTS(api As AIProvider = AIProvider.All) As ModelFilter
+  overload: Glitch9.AIDevKit.ModelFilter.TTS*
+- uid: Glitch9.AIDevKit.ModelFilter.STT(Glitch9.AIDevKit.AIProvider)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.STT(Glitch9.AIDevKit.AIProvider)
+  id: STT(Glitch9.AIDevKit.AIProvider)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: STT(AIProvider)
+  nameWithType: ModelFilter.STT(AIProvider)
+  fullName: Glitch9.AIDevKit.ModelFilter.STT(Glitch9.AIDevKit.AIProvider)
+  type: Method
+  source:
+    id: STT
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 21
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ModelFilter STT(AIProvider api = AIProvider.All)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.AIProvider
+    return:
+      type: Glitch9.AIDevKit.ModelFilter
+    content.vb: Public Shared Function STT(api As AIProvider = AIProvider.All) As ModelFilter
+  overload: Glitch9.AIDevKit.ModelFilter.STT*
+- uid: Glitch9.AIDevKit.ModelFilter.EMB(Glitch9.AIDevKit.AIProvider)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.EMB(Glitch9.AIDevKit.AIProvider)
+  id: EMB(Glitch9.AIDevKit.AIProvider)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: EMB(AIProvider)
+  nameWithType: ModelFilter.EMB(AIProvider)
+  fullName: Glitch9.AIDevKit.ModelFilter.EMB(Glitch9.AIDevKit.AIProvider)
+  type: Method
+  source:
+    id: EMB
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 22
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ModelFilter EMB(AIProvider api = AIProvider.All)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.AIProvider
+    return:
+      type: Glitch9.AIDevKit.ModelFilter
+    content.vb: Public Shared Function EMB(api As AIProvider = AIProvider.All) As ModelFilter
+  overload: Glitch9.AIDevKit.ModelFilter.EMB*
+- uid: Glitch9.AIDevKit.ModelFilter.MOD(Glitch9.AIDevKit.AIProvider)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.MOD(Glitch9.AIDevKit.AIProvider)
+  id: MOD(Glitch9.AIDevKit.AIProvider)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: MOD(AIProvider)
+  nameWithType: ModelFilter.MOD(AIProvider)
+  fullName: Glitch9.AIDevKit.ModelFilter.MOD(Glitch9.AIDevKit.AIProvider)
+  type: Method
+  source:
+    id: MOD
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 23
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ModelFilter MOD(AIProvider api = AIProvider.All)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.AIProvider
+    return:
+      type: Glitch9.AIDevKit.ModelFilter
+    content.vb: Public Shared Function [MOD](api As AIProvider = AIProvider.All) As ModelFilter
+  overload: Glitch9.AIDevKit.ModelFilter.MOD*
+- uid: Glitch9.AIDevKit.ModelFilter.SFX(Glitch9.AIDevKit.AIProvider)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.SFX(Glitch9.AIDevKit.AIProvider)
+  id: SFX(Glitch9.AIDevKit.AIProvider)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: SFX(AIProvider)
+  nameWithType: ModelFilter.SFX(AIProvider)
+  fullName: Glitch9.AIDevKit.ModelFilter.SFX(Glitch9.AIDevKit.AIProvider)
+  type: Method
+  source:
+    id: SFX
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 24
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ModelFilter SFX(AIProvider api = AIProvider.All)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.AIProvider
+    return:
+      type: Glitch9.AIDevKit.ModelFilter
+    content.vb: Public Shared Function SFX(api As AIProvider = AIProvider.All) As ModelFilter
+  overload: Glitch9.AIDevKit.ModelFilter.SFX*
+- uid: Glitch9.AIDevKit.ModelFilter.RTM(Glitch9.AIDevKit.AIProvider)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.RTM(Glitch9.AIDevKit.AIProvider)
+  id: RTM(Glitch9.AIDevKit.AIProvider)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: RTM(AIProvider)
+  nameWithType: ModelFilter.RTM(AIProvider)
+  fullName: Glitch9.AIDevKit.ModelFilter.RTM(Glitch9.AIDevKit.AIProvider)
+  type: Method
+  source:
+    id: RTM
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 25
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ModelFilter RTM(AIProvider api = AIProvider.All)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.AIProvider
+    return:
+      type: Glitch9.AIDevKit.ModelFilter
+    content.vb: Public Shared Function RTM(api As AIProvider = AIProvider.All) As ModelFilter
+  overload: Glitch9.AIDevKit.ModelFilter.RTM*
+- uid: Glitch9.AIDevKit.ModelFilter.VCM(Glitch9.AIDevKit.AIProvider)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.VCM(Glitch9.AIDevKit.AIProvider)
+  id: VCM(Glitch9.AIDevKit.AIProvider)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: VCM(AIProvider)
+  nameWithType: ModelFilter.VCM(AIProvider)
+  fullName: Glitch9.AIDevKit.ModelFilter.VCM(Glitch9.AIDevKit.AIProvider)
+  type: Method
+  source:
+    id: VCM
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 26
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ModelFilter VCM(AIProvider api = AIProvider.All)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.AIProvider
+    return:
+      type: Glitch9.AIDevKit.ModelFilter
+    content.vb: Public Shared Function VCM(api As AIProvider = AIProvider.All) As ModelFilter
+  overload: Glitch9.AIDevKit.ModelFilter.VCM*
+- uid: Glitch9.AIDevKit.ModelFilter.VID(Glitch9.AIDevKit.AIProvider)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.VID(Glitch9.AIDevKit.AIProvider)
+  id: VID(Glitch9.AIDevKit.AIProvider)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: VID(AIProvider)
+  nameWithType: ModelFilter.VID(AIProvider)
+  fullName: Glitch9.AIDevKit.ModelFilter.VID(Glitch9.AIDevKit.AIProvider)
+  type: Method
+  source:
+    id: VID
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 27
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ModelFilter VID(AIProvider api = AIProvider.All)
+    parameters:
+    - id: api
+      type: Glitch9.AIDevKit.AIProvider
+    return:
+      type: Glitch9.AIDevKit.ModelFilter
+    content.vb: Public Shared Function VID(api As AIProvider = AIProvider.All) As ModelFilter
+  overload: Glitch9.AIDevKit.ModelFilter.VID*
+- uid: Glitch9.AIDevKit.ModelFilter.Equals(System.Object)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ModelFilter.Equals(object)
+  fullName: Glitch9.AIDevKit.ModelFilter.Equals(object)
+  type: Method
+  source:
+    id: Equals
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 31
+  namespace: Glitch9.AIDevKit
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Glitch9.AIDevKit.ModelFilter.Equals*
+  nameWithType.vb: ModelFilter.Equals(Object)
+  fullName.vb: Glitch9.AIDevKit.ModelFilter.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Glitch9.AIDevKit.ModelFilter.Equals(Glitch9.AIDevKit.ModelFilter)
+  commentId: M:Glitch9.AIDevKit.ModelFilter.Equals(Glitch9.AIDevKit.ModelFilter)
+  id: Equals(Glitch9.AIDevKit.ModelFilter)
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: Equals(ModelFilter)
+  nameWithType: ModelFilter.Equals(ModelFilter)
+  fullName: Glitch9.AIDevKit.ModelFilter.Equals(Glitch9.AIDevKit.ModelFilter)
+  type: Method
+  source:
+    id: Equals
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 33
+  namespace: Glitch9.AIDevKit
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(ModelFilter other)
+    parameters:
+    - id: other
+      type: Glitch9.AIDevKit.ModelFilter
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As ModelFilter) As Boolean
+  overload: Glitch9.AIDevKit.ModelFilter.Equals*
+  implements:
+  - System.IEquatable{Glitch9.AIDevKit.ModelFilter}.Equals(Glitch9.AIDevKit.ModelFilter)
+- uid: Glitch9.AIDevKit.ModelFilter.GetHashCode
+  commentId: M:Glitch9.AIDevKit.ModelFilter.GetHashCode
+  id: GetHashCode
+  parent: Glitch9.AIDevKit.ModelFilter
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ModelFilter.GetHashCode()
+  fullName: Glitch9.AIDevKit.ModelFilter.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFilter.cs
+    startLine: 39
+  namespace: Glitch9.AIDevKit
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Glitch9.AIDevKit.ModelFilter.GetHashCode*
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Glitch9.AIDevKit.ModelFilter}
+  commentId: T:System.IEquatable{Glitch9.AIDevKit.ModelFilter}
+  parent: System
+  definition: System.IEquatable`1
+  href: Glitch9.AIDevKit.ModelFilter.html
+  name: IEquatable<ModelFilter>
+  nameWithType: IEquatable<ModelFilter>
+  fullName: System.IEquatable<Glitch9.AIDevKit.ModelFilter>
+  nameWithType.vb: IEquatable(Of ModelFilter)
+  fullName.vb: System.IEquatable(Of Glitch9.AIDevKit.ModelFilter)
+  name.vb: IEquatable(Of ModelFilter)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ModelFilter
+    name: ModelFilter
+    href: Glitch9.AIDevKit.ModelFilter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ModelFilter
+    name: ModelFilter
+    href: Glitch9.AIDevKit.ModelFilter.html
+  - name: )
+- uid: Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}
+  commentId: T:Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}
+  parent: Glitch9.AIDevKit
+  definition: Glitch9.AIDevKit.IAIDevKitAssetFilter`1
+  href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html
+  name: IAIDevKitAssetFilter<Model>
+  nameWithType: IAIDevKitAssetFilter<Model>
+  fullName: Glitch9.AIDevKit.IAIDevKitAssetFilter<Glitch9.AIDevKit.Model>
+  nameWithType.vb: IAIDevKitAssetFilter(Of Model)
+  fullName.vb: Glitch9.AIDevKit.IAIDevKitAssetFilter(Of Glitch9.AIDevKit.Model)
+  name.vb: IAIDevKitAssetFilter(Of Model)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1
+    name: IAIDevKitAssetFilter
+    href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html
+  - name: <
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1
+    name: IAIDevKitAssetFilter
+    href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1
+  commentId: T:Glitch9.AIDevKit.IAIDevKitAssetFilter`1
+  href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html
+  name: IAIDevKitAssetFilter<T>
+  nameWithType: IAIDevKitAssetFilter<T>
+  fullName: Glitch9.AIDevKit.IAIDevKitAssetFilter<T>
+  nameWithType.vb: IAIDevKitAssetFilter(Of T)
+  fullName.vb: Glitch9.AIDevKit.IAIDevKitAssetFilter(Of T)
+  name.vb: IAIDevKitAssetFilter(Of T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1
+    name: IAIDevKitAssetFilter
+    href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1
+    name: IAIDevKitAssetFilter
+    href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.ModelFilter.Api*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.Api
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_Api
+  name: Api
+  nameWithType: ModelFilter.Api
+  fullName: Glitch9.AIDevKit.ModelFilter.Api
+- uid: Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.Api
+  commentId: P:Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.Api
+  parent: Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}
+  definition: Glitch9.AIDevKit.IAIDevKitAssetFilter`1.Api
+  href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_Api
+  name: Api
+  nameWithType: IAIDevKitAssetFilter<Model>.Api
+  fullName: Glitch9.AIDevKit.IAIDevKitAssetFilter<Glitch9.AIDevKit.Model>.Api
+  nameWithType.vb: IAIDevKitAssetFilter(Of Model).Api
+  fullName.vb: Glitch9.AIDevKit.IAIDevKitAssetFilter(Of Glitch9.AIDevKit.Model).Api
+- uid: Glitch9.AIDevKit.AIProvider
+  commentId: T:Glitch9.AIDevKit.AIProvider
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.AIProvider.html
+  name: AIProvider
+  nameWithType: AIProvider
+  fullName: Glitch9.AIDevKit.AIProvider
+- uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1.Api
+  commentId: P:Glitch9.AIDevKit.IAIDevKitAssetFilter`1.Api
+  href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_Api
+  name: Api
+  nameWithType: IAIDevKitAssetFilter<T>.Api
+  fullName: Glitch9.AIDevKit.IAIDevKitAssetFilter<T>.Api
+  nameWithType.vb: IAIDevKitAssetFilter(Of T).Api
+  fullName.vb: Glitch9.AIDevKit.IAIDevKitAssetFilter(Of T).Api
+- uid: Glitch9.AIDevKit.ModelFilter.Capability*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.Capability
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_Capability
+  name: Capability
+  nameWithType: ModelFilter.Capability
+  fullName: Glitch9.AIDevKit.ModelFilter.Capability
+- uid: System.Nullable{Glitch9.AIDevKit.ModelCapability}
+  commentId: T:System.Nullable{Glitch9.AIDevKit.ModelCapability}
+  parent: System
+  definition: System.Nullable`1
+  href: Glitch9.AIDevKit.ModelCapability.html
+  name: ModelCapability?
+  nameWithType: ModelCapability?
+  fullName: Glitch9.AIDevKit.ModelCapability?
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ModelCapability
+    name: ModelCapability
+    href: Glitch9.AIDevKit.ModelCapability.html
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ModelCapability
+    name: ModelCapability
+    href: Glitch9.AIDevKit.ModelCapability.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.ModelFilter.IsEmpty*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.IsEmpty
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_IsEmpty
+  name: IsEmpty
+  nameWithType: ModelFilter.IsEmpty
+  fullName: Glitch9.AIDevKit.ModelFilter.IsEmpty
+- uid: Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.IsEmpty
+  commentId: P:Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.IsEmpty
+  parent: Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}
+  definition: Glitch9.AIDevKit.IAIDevKitAssetFilter`1.IsEmpty
+  href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_IsEmpty
+  name: IsEmpty
+  nameWithType: IAIDevKitAssetFilter<Model>.IsEmpty
+  fullName: Glitch9.AIDevKit.IAIDevKitAssetFilter<Glitch9.AIDevKit.Model>.IsEmpty
+  nameWithType.vb: IAIDevKitAssetFilter(Of Model).IsEmpty
+  fullName.vb: Glitch9.AIDevKit.IAIDevKitAssetFilter(Of Glitch9.AIDevKit.Model).IsEmpty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1.IsEmpty
+  commentId: P:Glitch9.AIDevKit.IAIDevKitAssetFilter`1.IsEmpty
+  href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_IsEmpty
+  name: IsEmpty
+  nameWithType: IAIDevKitAssetFilter<T>.IsEmpty
+  fullName: Glitch9.AIDevKit.IAIDevKitAssetFilter<T>.IsEmpty
+  nameWithType.vb: IAIDevKitAssetFilter(Of T).IsEmpty
+  fullName.vb: Glitch9.AIDevKit.IAIDevKitAssetFilter(Of T).IsEmpty
+- uid: Glitch9.AIDevKit.ModelFilter.Matches*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.Matches
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_Matches_Glitch9_AIDevKit_Model_
+  name: Matches
+  nameWithType: ModelFilter.Matches
+  fullName: Glitch9.AIDevKit.ModelFilter.Matches
+- uid: Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.Matches(Glitch9.AIDevKit.Model)
+  commentId: M:Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.Matches(Glitch9.AIDevKit.Model)
+  parent: Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}
+  definition: Glitch9.AIDevKit.IAIDevKitAssetFilter`1.Matches(`0)
+  href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_Matches__0_
+  name: Matches(Model)
+  nameWithType: IAIDevKitAssetFilter<Model>.Matches(Model)
+  fullName: Glitch9.AIDevKit.IAIDevKitAssetFilter<Glitch9.AIDevKit.Model>.Matches(Glitch9.AIDevKit.Model)
+  nameWithType.vb: IAIDevKitAssetFilter(Of Model).Matches(Model)
+  fullName.vb: Glitch9.AIDevKit.IAIDevKitAssetFilter(Of Glitch9.AIDevKit.Model).Matches(Glitch9.AIDevKit.Model)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.Matches(Glitch9.AIDevKit.Model)
+    name: Matches
+    href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_Matches__0_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Model}.Matches(Glitch9.AIDevKit.Model)
+    name: Matches
+    href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_Matches__0_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+- uid: Glitch9.AIDevKit.Model
+  commentId: T:Glitch9.AIDevKit.Model
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Model.html
+  name: Model
+  nameWithType: Model
+  fullName: Glitch9.AIDevKit.Model
+- uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1.Matches(`0)
+  commentId: M:Glitch9.AIDevKit.IAIDevKitAssetFilter`1.Matches(`0)
+  href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_Matches__0_
+  name: Matches(T)
+  nameWithType: IAIDevKitAssetFilter<T>.Matches(T)
+  fullName: Glitch9.AIDevKit.IAIDevKitAssetFilter<T>.Matches(T)
+  nameWithType.vb: IAIDevKitAssetFilter(Of T).Matches(T)
+  fullName.vb: Glitch9.AIDevKit.IAIDevKitAssetFilter(Of T).Matches(T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1.Matches(`0)
+    name: Matches
+    href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_Matches__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1.Matches(`0)
+    name: Matches
+    href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_Matches__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.ModelFilter.LLM*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.LLM
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_LLM_Glitch9_AIDevKit_AIProvider_
+  name: LLM
+  nameWithType: ModelFilter.LLM
+  fullName: Glitch9.AIDevKit.ModelFilter.LLM
+- uid: Glitch9.AIDevKit.ModelFilter
+  commentId: T:Glitch9.AIDevKit.ModelFilter
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelFilter.html
+  name: ModelFilter
+  nameWithType: ModelFilter
+  fullName: Glitch9.AIDevKit.ModelFilter
+- uid: Glitch9.AIDevKit.ModelFilter.IMG*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.IMG
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_IMG_Glitch9_AIDevKit_AIProvider_
+  name: IMG
+  nameWithType: ModelFilter.IMG
+  fullName: Glitch9.AIDevKit.ModelFilter.IMG
+- uid: Glitch9.AIDevKit.ModelFilter.TTS*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.TTS
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_TTS_Glitch9_AIDevKit_AIProvider_
+  name: TTS
+  nameWithType: ModelFilter.TTS
+  fullName: Glitch9.AIDevKit.ModelFilter.TTS
+- uid: Glitch9.AIDevKit.ModelFilter.STT*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.STT
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_STT_Glitch9_AIDevKit_AIProvider_
+  name: STT
+  nameWithType: ModelFilter.STT
+  fullName: Glitch9.AIDevKit.ModelFilter.STT
+- uid: Glitch9.AIDevKit.ModelFilter.EMB*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.EMB
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_EMB_Glitch9_AIDevKit_AIProvider_
+  name: EMB
+  nameWithType: ModelFilter.EMB
+  fullName: Glitch9.AIDevKit.ModelFilter.EMB
+- uid: Glitch9.AIDevKit.ModelFilter.MOD*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.MOD
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_MOD_Glitch9_AIDevKit_AIProvider_
+  name: MOD
+  nameWithType: ModelFilter.MOD
+  fullName: Glitch9.AIDevKit.ModelFilter.MOD
+- uid: Glitch9.AIDevKit.ModelFilter.SFX*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.SFX
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_SFX_Glitch9_AIDevKit_AIProvider_
+  name: SFX
+  nameWithType: ModelFilter.SFX
+  fullName: Glitch9.AIDevKit.ModelFilter.SFX
+- uid: Glitch9.AIDevKit.ModelFilter.RTM*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.RTM
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_RTM_Glitch9_AIDevKit_AIProvider_
+  name: RTM
+  nameWithType: ModelFilter.RTM
+  fullName: Glitch9.AIDevKit.ModelFilter.RTM
+- uid: Glitch9.AIDevKit.ModelFilter.VCM*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.VCM
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_VCM_Glitch9_AIDevKit_AIProvider_
+  name: VCM
+  nameWithType: ModelFilter.VCM
+  fullName: Glitch9.AIDevKit.ModelFilter.VCM
+- uid: Glitch9.AIDevKit.ModelFilter.VID*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.VID
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_VID_Glitch9_AIDevKit_AIProvider_
+  name: VID
+  nameWithType: ModelFilter.VID
+  fullName: Glitch9.AIDevKit.ModelFilter.VID
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.ModelFilter.Equals*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.Equals
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_Equals_System_Object_
+  name: Equals
+  nameWithType: ModelFilter.Equals
+  fullName: Glitch9.AIDevKit.ModelFilter.Equals
+- uid: System.IEquatable{Glitch9.AIDevKit.ModelFilter}.Equals(Glitch9.AIDevKit.ModelFilter)
+  commentId: M:System.IEquatable{Glitch9.AIDevKit.ModelFilter}.Equals(Glitch9.AIDevKit.ModelFilter)
+  parent: System.IEquatable{Glitch9.AIDevKit.ModelFilter}
+  definition: System.IEquatable`1.Equals(`0)
+  href: Glitch9.AIDevKit.ModelFilter.html
+  name: Equals(ModelFilter)
+  nameWithType: IEquatable<ModelFilter>.Equals(ModelFilter)
+  fullName: System.IEquatable<Glitch9.AIDevKit.ModelFilter>.Equals(Glitch9.AIDevKit.ModelFilter)
+  nameWithType.vb: IEquatable(Of ModelFilter).Equals(ModelFilter)
+  fullName.vb: System.IEquatable(Of Glitch9.AIDevKit.ModelFilter).Equals(Glitch9.AIDevKit.ModelFilter)
+  spec.csharp:
+  - uid: System.IEquatable{Glitch9.AIDevKit.ModelFilter}.Equals(Glitch9.AIDevKit.ModelFilter)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: Glitch9.AIDevKit.ModelFilter
+    name: ModelFilter
+    href: Glitch9.AIDevKit.ModelFilter.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Glitch9.AIDevKit.ModelFilter}.Equals(Glitch9.AIDevKit.ModelFilter)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: Glitch9.AIDevKit.ModelFilter
+    name: ModelFilter
+    href: Glitch9.AIDevKit.ModelFilter.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.ModelFilter.GetHashCode*
+  commentId: Overload:Glitch9.AIDevKit.ModelFilter.GetHashCode
+  href: Glitch9.AIDevKit.ModelFilter.html#Glitch9_AIDevKit_ModelFilter_GetHashCode
+  name: GetHashCode
+  nameWithType: ModelFilter.GetHashCode
+  fullName: Glitch9.AIDevKit.ModelFilter.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.SafetyFeedback
+  commentId: T:Glitch9.AIDevKit.SafetyFeedback
+  id: SafetyFeedback
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.SafetyFeedback.Rating
+  - Glitch9.AIDevKit.SafetyFeedback.Setting
+  langs:
+  - csharp
+  - vb
+  name: SafetyFeedback
+  nameWithType: SafetyFeedback
+  fullName: Glitch9.AIDevKit.SafetyFeedback
+  type: Class
+  source:
+    id: SafetyFeedback
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Moderation/SafetyFeedback.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Safety feedback for an entire request.
+
+    <p>This field is populated if content in the input and/or response is blocked due to safety settings.
+
+    SafetyFeedback may not exist for every HarmCategory.
+
+    Each SafetyFeedback will return the safety settings used by the request
+
+    as well as the lowest HarmProbability that should be allowed in order to return a result.</p>
+  example: []
+  syntax:
+    content: public class SafetyFeedback
+    content.vb: Public Class SafetyFeedback
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.SafetyFeedback.Rating
+  commentId: P:Glitch9.AIDevKit.SafetyFeedback.Rating
+  id: Rating
+  parent: Glitch9.AIDevKit.SafetyFeedback
+  langs:
+  - csharp
+  - vb
+  name: Rating
+  nameWithType: SafetyFeedback.Rating
+  fullName: Glitch9.AIDevKit.SafetyFeedback.Rating
+  type: Property
+  source:
+    id: Rating
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Moderation/SafetyFeedback.cs
+    startLine: 16
+  namespace: Glitch9.AIDevKit
+  summary: Safety rating evaluated from content.
+  example: []
+  syntax:
+    content: public SafetyRating Rating { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.SafetyRating
+    content.vb: Public Property Rating As SafetyRating
+  overload: Glitch9.AIDevKit.SafetyFeedback.Rating*
+- uid: Glitch9.AIDevKit.SafetyFeedback.Setting
+  commentId: P:Glitch9.AIDevKit.SafetyFeedback.Setting
+  id: Setting
+  parent: Glitch9.AIDevKit.SafetyFeedback
+  langs:
+  - csharp
+  - vb
+  name: Setting
+  nameWithType: SafetyFeedback.Setting
+  fullName: Glitch9.AIDevKit.SafetyFeedback.Setting
+  type: Property
+  source:
+    id: Setting
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Moderation/SafetyFeedback.cs
+    startLine: 21
+  namespace: Glitch9.AIDevKit
+  summary: Safety settings applied to the request.
+  example: []
+  syntax:
+    content: public SafetySetting Setting { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.SafetySetting
+    content.vb: Public Property Setting As SafetySetting
+  overload: Glitch9.AIDevKit.SafetyFeedback.Setting*
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.SafetyFeedback.Rating*
+  commentId: Overload:Glitch9.AIDevKit.SafetyFeedback.Rating
+  href: Glitch9.AIDevKit.SafetyFeedback.html#Glitch9_AIDevKit_SafetyFeedback_Rating
+  name: Rating
+  nameWithType: SafetyFeedback.Rating
+  fullName: Glitch9.AIDevKit.SafetyFeedback.Rating
+- uid: Glitch9.AIDevKit.SafetyRating
+  commentId: T:Glitch9.AIDevKit.SafetyRating
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.SafetyRating.html
+  name: SafetyRating
+  nameWithType: SafetyRating
+  fullName: Glitch9.AIDevKit.SafetyRating
+- uid: Glitch9.AIDevKit.SafetyFeedback.Setting*
+  commentId: Overload:Glitch9.AIDevKit.SafetyFeedback.Setting
+  href: Glitch9.AIDevKit.SafetyFeedback.html#Glitch9_AIDevKit_SafetyFeedback_Setting
+  name: Setting
+  nameWithType: SafetyFeedback.Setting
+  fullName: Glitch9.AIDevKit.SafetyFeedback.Setting
+- uid: Glitch9.AIDevKit.SafetySetting
+  commentId: T:Glitch9.AIDevKit.SafetySetting
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.SafetySetting.html
+  name: SafetySetting
+  nameWithType: SafetySetting
+  fullName: Glitch9.AIDevKit.SafetySetting

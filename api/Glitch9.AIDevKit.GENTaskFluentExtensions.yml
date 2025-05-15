@@ -1,0 +1,1663 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions
+  commentId: T:Glitch9.AIDevKit.GENTaskFluentExtensions
+  id: GENTaskFluentExtensions
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation(AudioClip)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation(AudioSource)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(Image,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(RawImage,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(SpriteRenderer,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(Image,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(RawImage,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(SpriteRenderer,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(Texture2D,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(Image)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(RawImage)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(SpriteRenderer)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(Texture2D)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENModeration(Glitch9.AIDevKit.Content,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENObject``1(System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect(AudioSource,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect(System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech(AudioSource,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech(System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(Text,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(TextMesh,System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(AudioClip)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(Text,AudioClip)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(TextMesh,AudioClip)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(AudioClip)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(Text,AudioClip)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(TextMesh,AudioClip)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo(System.String)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo(Texture2D)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange(AudioClip)
+  - Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange(AudioSource)
+  langs:
+  - csharp
+  - vb
+  name: GENTaskFluentExtensions
+  nameWithType: GENTaskFluentExtensions
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions
+  type: Class
+  source:
+    id: GENTaskFluentExtensions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 22
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Provides fluent, chainable extension methods that create and configure AI generation tasks.
+
+    These helpers let you start a task directly from the host object (string, AudioClip, Texture2D, etc.)
+
+    and then continue the configuration via the task's fluent API.
+
+    <p>Typical usage:</p>
+
+
+    <pre><code class="lang-csharp">// Create a chat-like text generation
+
+    "Describe a cat playing piano."
+        .GENText()
+        .SetModel(OpenAIModel.GPT4o)
+        .ExecuteAsync();
+
+    // Transcribe recorded speech
+
+    audioClip.GENTranscript().ExecuteAsync();</code></pre>
+  example: []
+  syntax:
+    content: public static class GENTaskFluentExtensions
+    content.vb: Public Module GENTaskFluentExtensions
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(System.String)
+  id: GENText(System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENText(string)
+  nameWithType: GENTaskFluentExtensions.GENText(string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(string)
+  type: Method
+  source:
+    id: GENText
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 41
+  namespace: Glitch9.AIDevKit
+  summary: Creates a text‑generation task that uses this string as the prompt.
+  example:
+  - >-
+    <pre><code class="lang-csharp">"Tell me a joke."
+        .GENText()
+        .SetModel(OpenAIModel.GPT4o)
+        .ExecuteAsync();</code></pre>
+  syntax:
+    content: public static GENTextTask GENText(this string promptText)
+    parameters:
+    - id: promptText
+      type: System.String
+      description: The prompt to send to the model.
+    return:
+      type: Glitch9.AIDevKit.GENTextTask
+      description: A configurable <xref href="Glitch9.AIDevKit.GENTextTask" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Function GENText(promptText As String) As GENTextTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText*
+  nameWithType.vb: GENTaskFluentExtensions.GENText(String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(String)
+  name.vb: GENText(String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(Text,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(Text,System.String)
+  id: GENText(Text,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENText(Text, string)
+  nameWithType: GENTaskFluentExtensions.GENText(Text, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(Text, string)
+  type: Method
+  source:
+    id: GENText
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 44
+  namespace: Glitch9.AIDevKit
+  summary: Creates a text‑generation task that uses this string as the prompt.
+  example:
+  - >-
+    <pre><code class="lang-csharp">"Tell me a joke."
+        .GENText()
+        .SetModel(OpenAIModel.GPT4o)
+        .ExecuteAsync();</code></pre>
+  syntax:
+    content: public static GENTextTask GENText(this Text target, string promptText)
+    parameters:
+    - id: target
+      type: Text
+    - id: promptText
+      type: System.String
+      description: The prompt to send to the model.
+    return:
+      type: Glitch9.AIDevKit.GENTextTask
+      description: A configurable <xref href="Glitch9.AIDevKit.GENTextTask" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Function GENText(target As Text, promptText As String) As GENTextTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText*
+  nameWithType.vb: GENTaskFluentExtensions.GENText(Text, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(Text, String)
+  name.vb: GENText(Text, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(TextMesh,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(TextMesh,System.String)
+  id: GENText(TextMesh,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENText(TextMesh, string)
+  nameWithType: GENTaskFluentExtensions.GENText(TextMesh, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(TextMesh, string)
+  type: Method
+  source:
+    id: GENText
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 47
+  namespace: Glitch9.AIDevKit
+  summary: Creates a text‑generation task that uses this string as the prompt.
+  example:
+  - >-
+    <pre><code class="lang-csharp">"Tell me a joke."
+        .GENText()
+        .SetModel(OpenAIModel.GPT4o)
+        .ExecuteAsync();</code></pre>
+  syntax:
+    content: public static GENTextTask GENText(this TextMesh target, string promptText)
+    parameters:
+    - id: target
+      type: TextMesh
+    - id: promptText
+      type: System.String
+      description: The prompt to send to the model.
+    return:
+      type: Glitch9.AIDevKit.GENTextTask
+      description: A configurable <xref href="Glitch9.AIDevKit.GENTextTask" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Function GENText(target As TextMesh, promptText As String) As GENTextTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText*
+  nameWithType.vb: GENTaskFluentExtensions.GENText(TextMesh, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText(TextMesh, String)
+  name.vb: GENText(TextMesh, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+  id: GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENChat(ChatSession, ChatMessage)
+  nameWithType: GENTaskFluentExtensions.GENChat(ChatSession, ChatMessage)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENChat(Glitch9.AIDevKit.ChatSession, Glitch9.AIDevKit.ChatMessage)
+  type: Method
+  source:
+    id: GENChat
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 68
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates a text generation task using this chat session and message as the prompt.
+
+
+    Example:
+        chatSession.GENChat(chatMessage).SetModel(OpenAIModel.GPT4o).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENChatTask GENChat(this ChatSession chatSession, ChatMessage chatMessage)
+    parameters:
+    - id: chatSession
+      type: Glitch9.AIDevKit.ChatSession
+    - id: chatMessage
+      type: Glitch9.AIDevKit.ChatMessage
+    return:
+      type: Glitch9.AIDevKit.GENChatTask
+    content.vb: Public Shared Function GENChat(chatSession As ChatSession, chatMessage As ChatMessage) As GENChatTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENChat*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(System.String)
+  id: GENImage(System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImage(string)
+  nameWithType: GENTaskFluentExtensions.GENImage(string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(string)
+  type: Method
+  source:
+    id: GENImage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 76
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates an image generation task using this string as the image prompt.
+
+
+    Example:
+        "A cat surfing a wave".GENImage().SetModel(ImageModel.DallE3).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENImageCreationTask GENImage(this string promptText)
+    parameters:
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENImageCreationTask
+    content.vb: Public Shared Function GENImage(promptText As String) As GENImageCreationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage*
+  nameWithType.vb: GENTaskFluentExtensions.GENImage(String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(String)
+  name.vb: GENImage(String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(Image,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(Image,System.String)
+  id: GENImage(Image,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImage(Image, string)
+  nameWithType: GENTaskFluentExtensions.GENImage(Image, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(Image, string)
+  type: Method
+  source:
+    id: GENImage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 79
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates an image generation task using this string as the image prompt.
+
+
+    Example:
+        "A cat surfing a wave".GENImage().SetModel(ImageModel.DallE3).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENImageCreationTask GENImage(this Image target, string promptText)
+    parameters:
+    - id: target
+      type: Image
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENImageCreationTask
+    content.vb: Public Shared Function GENImage(target As Image, promptText As String) As GENImageCreationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage*
+  nameWithType.vb: GENTaskFluentExtensions.GENImage(Image, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(Image, String)
+  name.vb: GENImage(Image, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(RawImage,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(RawImage,System.String)
+  id: GENImage(RawImage,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImage(RawImage, string)
+  nameWithType: GENTaskFluentExtensions.GENImage(RawImage, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(RawImage, string)
+  type: Method
+  source:
+    id: GENImage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 82
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates an image generation task using this string as the image prompt.
+
+
+    Example:
+        "A cat surfing a wave".GENImage().SetModel(ImageModel.DallE3).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENImageCreationTask GENImage(this RawImage target, string promptText)
+    parameters:
+    - id: target
+      type: RawImage
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENImageCreationTask
+    content.vb: Public Shared Function GENImage(target As RawImage, promptText As String) As GENImageCreationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage*
+  nameWithType.vb: GENTaskFluentExtensions.GENImage(RawImage, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(RawImage, String)
+  name.vb: GENImage(RawImage, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(SpriteRenderer,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(SpriteRenderer,System.String)
+  id: GENImage(SpriteRenderer,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImage(SpriteRenderer, string)
+  nameWithType: GENTaskFluentExtensions.GENImage(SpriteRenderer, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(SpriteRenderer, string)
+  type: Method
+  source:
+    id: GENImage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 85
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates an image generation task using this string as the image prompt.
+
+
+    Example:
+        "A cat surfing a wave".GENImage().SetModel(ImageModel.DallE3).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENImageCreationTask GENImage(this SpriteRenderer target, string promptText)
+    parameters:
+    - id: target
+      type: SpriteRenderer
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENImageCreationTask
+    content.vb: Public Shared Function GENImage(target As SpriteRenderer, promptText As String) As GENImageCreationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage*
+  nameWithType.vb: GENTaskFluentExtensions.GENImage(SpriteRenderer, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage(SpriteRenderer, String)
+  name.vb: GENImage(SpriteRenderer, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(Texture2D,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(Texture2D,System.String)
+  id: GENImageEdit(Texture2D,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImageEdit(Texture2D, string)
+  nameWithType: GENTaskFluentExtensions.GENImageEdit(Texture2D, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(Texture2D, string)
+  type: Method
+  source:
+    id: GENImageEdit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 96
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates an image editing task by applying the given prompt to this image.
+
+
+    Note:
+        - DALL·E 3 image editing is not supported with the OpenAI API yet. (Only available in ChatGPT)
+
+    Example:
+        texture.GENImageEdit("Add sunglasses").SetModel(ImageModel.DallE2).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENImageEditTask GENImageEdit(this Texture2D promptImage, string promptText)
+    parameters:
+    - id: promptImage
+      type: Texture2D
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENImageEditTask
+    content.vb: Public Shared Function GENImageEdit(promptImage As Texture2D, promptText As String) As GENImageEditTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit*
+  nameWithType.vb: GENTaskFluentExtensions.GENImageEdit(Texture2D, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(Texture2D, String)
+  name.vb: GENImageEdit(Texture2D, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(Image,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(Image,System.String)
+  id: GENImageEdit(Image,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImageEdit(Image, string)
+  nameWithType: GENTaskFluentExtensions.GENImageEdit(Image, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(Image, string)
+  type: Method
+  source:
+    id: GENImageEdit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 99
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENImageEditTask GENImageEdit(this Image target, string promptText)
+    parameters:
+    - id: target
+      type: Image
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENImageEditTask
+    content.vb: Public Shared Function GENImageEdit(target As Image, promptText As String) As GENImageEditTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit*
+  nameWithType.vb: GENTaskFluentExtensions.GENImageEdit(Image, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(Image, String)
+  name.vb: GENImageEdit(Image, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(RawImage,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(RawImage,System.String)
+  id: GENImageEdit(RawImage,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImageEdit(RawImage, string)
+  nameWithType: GENTaskFluentExtensions.GENImageEdit(RawImage, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(RawImage, string)
+  type: Method
+  source:
+    id: GENImageEdit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 102
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENImageEditTask GENImageEdit(this RawImage target, string promptText)
+    parameters:
+    - id: target
+      type: RawImage
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENImageEditTask
+    content.vb: Public Shared Function GENImageEdit(target As RawImage, promptText As String) As GENImageEditTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit*
+  nameWithType.vb: GENTaskFluentExtensions.GENImageEdit(RawImage, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(RawImage, String)
+  name.vb: GENImageEdit(RawImage, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(SpriteRenderer,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(SpriteRenderer,System.String)
+  id: GENImageEdit(SpriteRenderer,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImageEdit(SpriteRenderer, string)
+  nameWithType: GENTaskFluentExtensions.GENImageEdit(SpriteRenderer, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(SpriteRenderer, string)
+  type: Method
+  source:
+    id: GENImageEdit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 105
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENImageEditTask GENImageEdit(this SpriteRenderer target, string promptText)
+    parameters:
+    - id: target
+      type: SpriteRenderer
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENImageEditTask
+    content.vb: Public Shared Function GENImageEdit(target As SpriteRenderer, promptText As String) As GENImageEditTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit*
+  nameWithType.vb: GENTaskFluentExtensions.GENImageEdit(SpriteRenderer, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit(SpriteRenderer, String)
+  name.vb: GENImageEdit(SpriteRenderer, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(Texture2D)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(Texture2D)
+  id: GENImageVariation(Texture2D)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImageVariation(Texture2D)
+  nameWithType: GENTaskFluentExtensions.GENImageVariation(Texture2D)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(Texture2D)
+  type: Method
+  source:
+    id: GENImageVariation
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 116
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates a task to generate variations (remixes) of the given image.
+
+
+    Note:
+       - DALL·E 3 image variation is not supported with the OpenAI API yet. (Only available in ChatGPT)
+
+    Example:
+        texture.GENImageVariation().SetModel(ImageModel.DallE2).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENImageVariationTask GENImageVariation(this Texture2D promptImage)
+    parameters:
+    - id: promptImage
+      type: Texture2D
+    return:
+      type: Glitch9.AIDevKit.GENImageVariationTask
+    content.vb: Public Shared Function GENImageVariation(promptImage As Texture2D) As GENImageVariationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(Image)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(Image)
+  id: GENImageVariation(Image)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImageVariation(Image)
+  nameWithType: GENTaskFluentExtensions.GENImageVariation(Image)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(Image)
+  type: Method
+  source:
+    id: GENImageVariation
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 119
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENImageVariationTask GENImageVariation(this Image target)
+    parameters:
+    - id: target
+      type: Image
+    return:
+      type: Glitch9.AIDevKit.GENImageVariationTask
+    content.vb: Public Shared Function GENImageVariation(target As Image) As GENImageVariationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(RawImage)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(RawImage)
+  id: GENImageVariation(RawImage)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImageVariation(RawImage)
+  nameWithType: GENTaskFluentExtensions.GENImageVariation(RawImage)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(RawImage)
+  type: Method
+  source:
+    id: GENImageVariation
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 122
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENImageVariationTask GENImageVariation(this RawImage target)
+    parameters:
+    - id: target
+      type: RawImage
+    return:
+      type: Glitch9.AIDevKit.GENImageVariationTask
+    content.vb: Public Shared Function GENImageVariation(target As RawImage) As GENImageVariationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(SpriteRenderer)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(SpriteRenderer)
+  id: GENImageVariation(SpriteRenderer)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENImageVariation(SpriteRenderer)
+  nameWithType: GENTaskFluentExtensions.GENImageVariation(SpriteRenderer)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation(SpriteRenderer)
+  type: Method
+  source:
+    id: GENImageVariation
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 125
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENImageVariationTask GENImageVariation(this SpriteRenderer target)
+    parameters:
+    - id: target
+      type: SpriteRenderer
+    return:
+      type: Glitch9.AIDevKit.GENImageVariationTask
+    content.vb: Public Shared Function GENImageVariation(target As SpriteRenderer) As GENImageVariationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech(System.String)
+  id: GENSpeech(System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENSpeech(string)
+  nameWithType: GENTaskFluentExtensions.GENSpeech(string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech(string)
+  type: Method
+  source:
+    id: GENSpeech
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 133
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates a text-to-speech (TTS) task that reads this string aloud using a realistic AI voice.
+
+
+    Example:
+        "Hello there!".GENSpeech().SetVoice(ElevenLabsVoice.Rachel).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENSpeechTask GENSpeech(this string promptText)
+    parameters:
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENSpeechTask
+    content.vb: Public Shared Function GENSpeech(promptText As String) As GENSpeechTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech*
+  nameWithType.vb: GENTaskFluentExtensions.GENSpeech(String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech(String)
+  name.vb: GENSpeech(String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech(AudioSource,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech(AudioSource,System.String)
+  id: GENSpeech(AudioSource,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENSpeech(AudioSource, string)
+  nameWithType: GENTaskFluentExtensions.GENSpeech(AudioSource, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech(AudioSource, string)
+  type: Method
+  source:
+    id: GENSpeech
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 136
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates a text-to-speech (TTS) task that reads this string aloud using a realistic AI voice.
+
+
+    Example:
+        "Hello there!".GENSpeech().SetVoice(ElevenLabsVoice.Rachel).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENSpeechTask GENSpeech(this AudioSource target, string promptText)
+    parameters:
+    - id: target
+      type: AudioSource
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENSpeechTask
+    content.vb: Public Shared Function GENSpeech(target As AudioSource, promptText As String) As GENSpeechTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech*
+  nameWithType.vb: GENTaskFluentExtensions.GENSpeech(AudioSource, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech(AudioSource, String)
+  name.vb: GENSpeech(AudioSource, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(AudioClip)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(AudioClip)
+  id: GENTranscript(AudioClip)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENTranscript(AudioClip)
+  nameWithType: GENTaskFluentExtensions.GENTranscript(AudioClip)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(AudioClip)
+  type: Method
+  source:
+    id: GENTranscript
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 144
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates a speech-to-text (STT) task that transcribes spoken words from this audio clip.
+
+
+    Example:
+        audioClip.GENTranscript().ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENTranscriptTask GENTranscript(this AudioClip promptAudio)
+    parameters:
+    - id: promptAudio
+      type: AudioClip
+    return:
+      type: Glitch9.AIDevKit.GENTranscriptTask
+    content.vb: Public Shared Function GENTranscript(promptAudio As AudioClip) As GENTranscriptTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(Text,AudioClip)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(Text,AudioClip)
+  id: GENTranscript(Text,AudioClip)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENTranscript(Text, AudioClip)
+  nameWithType: GENTaskFluentExtensions.GENTranscript(Text, AudioClip)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(Text, AudioClip)
+  type: Method
+  source:
+    id: GENTranscript
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 147
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENTranscriptTask GENTranscript(this Text target, AudioClip promptAudio)
+    parameters:
+    - id: target
+      type: Text
+    - id: promptAudio
+      type: AudioClip
+    return:
+      type: Glitch9.AIDevKit.GENTranscriptTask
+    content.vb: Public Shared Function GENTranscript(target As Text, promptAudio As AudioClip) As GENTranscriptTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(TextMesh,AudioClip)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(TextMesh,AudioClip)
+  id: GENTranscript(TextMesh,AudioClip)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENTranscript(TextMesh, AudioClip)
+  nameWithType: GENTaskFluentExtensions.GENTranscript(TextMesh, AudioClip)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript(TextMesh, AudioClip)
+  type: Method
+  source:
+    id: GENTranscript
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 150
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENTranscriptTask GENTranscript(this TextMesh target, AudioClip promptAudio)
+    parameters:
+    - id: target
+      type: TextMesh
+    - id: promptAudio
+      type: AudioClip
+    return:
+      type: Glitch9.AIDevKit.GENTranscriptTask
+    content.vb: Public Shared Function GENTranscript(target As TextMesh, promptAudio As AudioClip) As GENTranscriptTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(AudioClip)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(AudioClip)
+  id: GENTranslation(AudioClip)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENTranslation(AudioClip)
+  nameWithType: GENTaskFluentExtensions.GENTranslation(AudioClip)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(AudioClip)
+  type: Method
+  source:
+    id: GENTranslation
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 171
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Translates the speech in this audio clip into English text.
+
+    Useful for multilingual voice input.
+
+
+    Example:
+        audioClip.GENTranslation().ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENTranslationTask GENTranslation(this AudioClip promptAudio)
+    parameters:
+    - id: promptAudio
+      type: AudioClip
+    return:
+      type: Glitch9.AIDevKit.GENTranslationTask
+    content.vb: Public Shared Function GENTranslation(promptAudio As AudioClip) As GENTranslationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(Text,AudioClip)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(Text,AudioClip)
+  id: GENTranslation(Text,AudioClip)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENTranslation(Text, AudioClip)
+  nameWithType: GENTaskFluentExtensions.GENTranslation(Text, AudioClip)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(Text, AudioClip)
+  type: Method
+  source:
+    id: GENTranslation
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 174
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENTranslationTask GENTranslation(this Text target, AudioClip promptAudio)
+    parameters:
+    - id: target
+      type: Text
+    - id: promptAudio
+      type: AudioClip
+    return:
+      type: Glitch9.AIDevKit.GENTranslationTask
+    content.vb: Public Shared Function GENTranslation(target As Text, promptAudio As AudioClip) As GENTranslationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(TextMesh,AudioClip)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(TextMesh,AudioClip)
+  id: GENTranslation(TextMesh,AudioClip)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENTranslation(TextMesh, AudioClip)
+  nameWithType: GENTaskFluentExtensions.GENTranslation(TextMesh, AudioClip)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation(TextMesh, AudioClip)
+  type: Method
+  source:
+    id: GENTranslation
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 177
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENTranslationTask GENTranslation(this TextMesh target, AudioClip promptAudio)
+    parameters:
+    - id: target
+      type: TextMesh
+    - id: promptAudio
+      type: AudioClip
+    return:
+      type: Glitch9.AIDevKit.GENTranslationTask
+    content.vb: Public Shared Function GENTranslation(target As TextMesh, promptAudio As AudioClip) As GENTranslationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENObject``1(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENObject``1(System.String)
+  id: GENObject``1(System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENObject<T>(string)
+  nameWithType: GENTaskFluentExtensions.GENObject<T>(string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENObject<T>(string)
+  type: Method
+  source:
+    id: GENObject
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 198
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static GENObjectTask<T> GENObject<T>(this string promptText)
+    parameters:
+    - id: promptText
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: Glitch9.AIDevKit.GENObjectTask{{T}}
+    content.vb: Public Shared Function GENObject(Of T)(promptText As String) As GENObjectTask(Of T)
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENObject*
+  nameWithType.vb: GENTaskFluentExtensions.GENObject(Of T)(String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENObject(Of T)(String)
+  name.vb: GENObject(Of T)(String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect(System.String)
+  id: GENSoundEffect(System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENSoundEffect(string)
+  nameWithType: GENTaskFluentExtensions.GENSoundEffect(string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect(string)
+  type: Method
+  source:
+    id: GENSoundEffect
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 206
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Generates a sound effect based on this prompt text.
+
+
+    Example:
+        "Footsteps on snow".GENSoundEffect().ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENSoundEffectTask GENSoundEffect(this string promptText)
+    parameters:
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENSoundEffectTask
+    content.vb: Public Shared Function GENSoundEffect(promptText As String) As GENSoundEffectTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect*
+  nameWithType.vb: GENTaskFluentExtensions.GENSoundEffect(String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect(String)
+  name.vb: GENSoundEffect(String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect(AudioSource,System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect(AudioSource,System.String)
+  id: GENSoundEffect(AudioSource,System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENSoundEffect(AudioSource, string)
+  nameWithType: GENTaskFluentExtensions.GENSoundEffect(AudioSource, string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect(AudioSource, string)
+  type: Method
+  source:
+    id: GENSoundEffect
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 209
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Generates a sound effect based on this prompt text.
+
+
+    Example:
+        "Footsteps on snow".GENSoundEffect().ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENSoundEffectTask GENSoundEffect(this AudioSource target, string promptText)
+    parameters:
+    - id: target
+      type: AudioSource
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENSoundEffectTask
+    content.vb: Public Shared Function GENSoundEffect(target As AudioSource, promptText As String) As GENSoundEffectTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect*
+  nameWithType.vb: GENTaskFluentExtensions.GENSoundEffect(AudioSource, String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect(AudioSource, String)
+  name.vb: GENSoundEffect(AudioSource, String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange(AudioClip)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange(AudioClip)
+  id: GENVoiceChange(AudioClip)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENVoiceChange(AudioClip)
+  nameWithType: GENTaskFluentExtensions.GENVoiceChange(AudioClip)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange(AudioClip)
+  type: Method
+  source:
+    id: GENVoiceChange
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 217
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Changes the voice in this audio clip using AI voice transformation.
+
+
+    Example:
+        audioClip.GENVoiceChange().SetVoice(ElevenLabsVoice.Rachel).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENVoiceChangeTask GENVoiceChange(this AudioClip promptAudio)
+    parameters:
+    - id: promptAudio
+      type: AudioClip
+    return:
+      type: Glitch9.AIDevKit.GENVoiceChangeTask
+    content.vb: Public Shared Function GENVoiceChange(promptAudio As AudioClip) As GENVoiceChangeTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange(AudioSource)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange(AudioSource)
+  id: GENVoiceChange(AudioSource)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENVoiceChange(AudioSource)
+  nameWithType: GENTaskFluentExtensions.GENVoiceChange(AudioSource)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange(AudioSource)
+  type: Method
+  source:
+    id: GENVoiceChange
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 220
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENVoiceChangeTask GENVoiceChange(this AudioSource target)
+    parameters:
+    - id: target
+      type: AudioSource
+    return:
+      type: Glitch9.AIDevKit.GENVoiceChangeTask
+    content.vb: Public Shared Function GENVoiceChange(target As AudioSource) As GENVoiceChangeTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation(AudioClip)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation(AudioClip)
+  id: GENAudioIsolation(AudioClip)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENAudioIsolation(AudioClip)
+  nameWithType: GENTaskFluentExtensions.GENAudioIsolation(AudioClip)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation(AudioClip)
+  type: Method
+  source:
+    id: GENAudioIsolation
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 228
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Isolates vocals or removes background noise from this audio clip.
+
+
+    Example:
+        audioClip.GENAudioIsolation().ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENAudioIsolationTask GENAudioIsolation(this AudioClip promptAudio)
+    parameters:
+    - id: promptAudio
+      type: AudioClip
+    return:
+      type: Glitch9.AIDevKit.GENAudioIsolationTask
+    content.vb: Public Shared Function GENAudioIsolation(promptAudio As AudioClip) As GENAudioIsolationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation(AudioSource)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation(AudioSource)
+  id: GENAudioIsolation(AudioSource)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENAudioIsolation(AudioSource)
+  nameWithType: GENTaskFluentExtensions.GENAudioIsolation(AudioSource)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation(AudioSource)
+  type: Method
+  source:
+    id: GENAudioIsolation
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 231
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public static GENAudioIsolationTask GENAudioIsolation(this AudioSource target)
+    parameters:
+    - id: target
+      type: AudioSource
+    return:
+      type: Glitch9.AIDevKit.GENAudioIsolationTask
+    content.vb: Public Shared Function GENAudioIsolation(target As AudioSource) As GENAudioIsolationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo(System.String)
+  id: GENVideo(System.String)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENVideo(string)
+  nameWithType: GENTaskFluentExtensions.GENVideo(string)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo(string)
+  type: Method
+  source:
+    id: GENVideo
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 239
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Generates a video based on this prompt text.
+
+
+    Example:
+       "A cat surfing a wave".GENVideoGen().ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENVideoTask GENVideo(this string promptText)
+    parameters:
+    - id: promptText
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.GENVideoTask
+    content.vb: Public Shared Function GENVideo(promptText As String) As GENVideoTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo*
+  nameWithType.vb: GENTaskFluentExtensions.GENVideo(String)
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo(String)
+  name.vb: GENVideo(String)
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo(Texture2D)
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo(Texture2D)
+  id: GENVideo(Texture2D)
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENVideo(Texture2D)
+  nameWithType: GENTaskFluentExtensions.GENVideo(Texture2D)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo(Texture2D)
+  type: Method
+  source:
+    id: GENVideo
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 247
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Generates a video based on this prompt image.
+
+
+    Example:
+      texture.GENVideoGen().ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENVideoTask GENVideo(this Texture2D promptImage)
+    parameters:
+    - id: promptImage
+      type: Texture2D
+    return:
+      type: Glitch9.AIDevKit.GENVideoTask
+    content.vb: Public Shared Function GENVideo(promptImage As Texture2D) As GENVideoTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo*
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENModeration(Glitch9.AIDevKit.Content,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})
+  commentId: M:Glitch9.AIDevKit.GENTaskFluentExtensions.GENModeration(Glitch9.AIDevKit.Content,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})
+  id: GENModeration(Glitch9.AIDevKit.Content,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.GENTaskFluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GENModeration(Content, IEnumerable<SafetySetting>)
+  nameWithType: GENTaskFluentExtensions.GENModeration(Content, IEnumerable<SafetySetting>)
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENModeration(Glitch9.AIDevKit.Content, System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.SafetySetting>)
+  type: Method
+  source:
+    id: GENModeration
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTaskFluentExtensions.cs
+    startLine: 259
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Creates a moderation task to evaluate potentially harmful or sensitive content.
+
+    This can be used to detect categories like hate speech, violence, self-harm, etc., 
+
+    depending on the model and provider.
+
+
+    Example:
+        content.GENModeration().SetModel(OpenAIModel.Moderation).ExecuteAsync();
+  example: []
+  syntax:
+    content: public static GENModerationTask GENModeration(this Content prompt, IEnumerable<SafetySetting> safetySettings)
+    parameters:
+    - id: prompt
+      type: Glitch9.AIDevKit.Content
+      description: The content to be evaluated for moderation.
+    - id: safetySettings
+      type: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting}
+    return:
+      type: Glitch9.AIDevKit.GENModerationTask
+      description: A <xref href="Glitch9.AIDevKit.GENModerationTask" data-throw-if-not-resolved="false"></xref> that can be configured and executed.
+    content.vb: Public Shared Function GENModeration(prompt As Content, safetySettings As IEnumerable(Of SafetySetting)) As GENModerationTask
+  overload: Glitch9.AIDevKit.GENTaskFluentExtensions.GENModeration*
+  nameWithType.vb: GENTaskFluentExtensions.GENModeration(Content, IEnumerable(Of SafetySetting))
+  fullName.vb: Glitch9.AIDevKit.GENTaskFluentExtensions.GENModeration(Glitch9.AIDevKit.Content, System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.SafetySetting))
+  name.vb: GENModeration(Content, IEnumerable(Of SafetySetting))
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.GENTextTask
+  commentId: T:Glitch9.AIDevKit.GENTextTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENTextTask.html
+  name: GENTextTask
+  nameWithType: GENTextTask
+  fullName: Glitch9.AIDevKit.GENTextTask
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENText
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENText_System_String_
+  name: GENText
+  nameWithType: GENTaskFluentExtensions.GENText
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Text
+  isExternal: true
+  name: Text
+  nameWithType: Text
+  fullName: Text
+- uid: TextMesh
+  isExternal: true
+  name: TextMesh
+  nameWithType: TextMesh
+  fullName: TextMesh
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENChat*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENChat
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENChat_Glitch9_AIDevKit_ChatSession_Glitch9_AIDevKit_ChatMessage_
+  name: GENChat
+  nameWithType: GENTaskFluentExtensions.GENChat
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENChat
+- uid: Glitch9.AIDevKit.ChatSession
+  commentId: T:Glitch9.AIDevKit.ChatSession
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatSession.html
+  name: ChatSession
+  nameWithType: ChatSession
+  fullName: Glitch9.AIDevKit.ChatSession
+- uid: Glitch9.AIDevKit.ChatMessage
+  commentId: T:Glitch9.AIDevKit.ChatMessage
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatMessage.html
+  name: ChatMessage
+  nameWithType: ChatMessage
+  fullName: Glitch9.AIDevKit.ChatMessage
+- uid: Glitch9.AIDevKit.GENChatTask
+  commentId: T:Glitch9.AIDevKit.GENChatTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENChatTask.html
+  name: GENChatTask
+  nameWithType: GENChatTask
+  fullName: Glitch9.AIDevKit.GENChatTask
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENImage_System_String_
+  name: GENImage
+  nameWithType: GENTaskFluentExtensions.GENImage
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImage
+- uid: Glitch9.AIDevKit.GENImageCreationTask
+  commentId: T:Glitch9.AIDevKit.GENImageCreationTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENImageCreationTask.html
+  name: GENImageCreationTask
+  nameWithType: GENImageCreationTask
+  fullName: Glitch9.AIDevKit.GENImageCreationTask
+- uid: Image
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: Image
+- uid: RawImage
+  isExternal: true
+  name: RawImage
+  nameWithType: RawImage
+  fullName: RawImage
+- uid: SpriteRenderer
+  isExternal: true
+  name: SpriteRenderer
+  nameWithType: SpriteRenderer
+  fullName: SpriteRenderer
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENImageEdit_Texture2D_System_String_
+  name: GENImageEdit
+  nameWithType: GENTaskFluentExtensions.GENImageEdit
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageEdit
+- uid: Texture2D
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: Texture2D
+- uid: Glitch9.AIDevKit.GENImageEditTask
+  commentId: T:Glitch9.AIDevKit.GENImageEditTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENImageEditTask.html
+  name: GENImageEditTask
+  nameWithType: GENImageEditTask
+  fullName: Glitch9.AIDevKit.GENImageEditTask
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENImageVariation_Texture2D_
+  name: GENImageVariation
+  nameWithType: GENTaskFluentExtensions.GENImageVariation
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENImageVariation
+- uid: Glitch9.AIDevKit.GENImageVariationTask
+  commentId: T:Glitch9.AIDevKit.GENImageVariationTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENImageVariationTask.html
+  name: GENImageVariationTask
+  nameWithType: GENImageVariationTask
+  fullName: Glitch9.AIDevKit.GENImageVariationTask
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENSpeech_System_String_
+  name: GENSpeech
+  nameWithType: GENTaskFluentExtensions.GENSpeech
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSpeech
+- uid: Glitch9.AIDevKit.GENSpeechTask
+  commentId: T:Glitch9.AIDevKit.GENSpeechTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENSpeechTask.html
+  name: GENSpeechTask
+  nameWithType: GENSpeechTask
+  fullName: Glitch9.AIDevKit.GENSpeechTask
+- uid: AudioSource
+  isExternal: true
+  name: AudioSource
+  nameWithType: AudioSource
+  fullName: AudioSource
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENTranscript_AudioClip_
+  name: GENTranscript
+  nameWithType: GENTaskFluentExtensions.GENTranscript
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranscript
+- uid: AudioClip
+  isExternal: true
+  name: AudioClip
+  nameWithType: AudioClip
+  fullName: AudioClip
+- uid: Glitch9.AIDevKit.GENTranscriptTask
+  commentId: T:Glitch9.AIDevKit.GENTranscriptTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENTranscriptTask.html
+  name: GENTranscriptTask
+  nameWithType: GENTranscriptTask
+  fullName: Glitch9.AIDevKit.GENTranscriptTask
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENTranslation_AudioClip_
+  name: GENTranslation
+  nameWithType: GENTaskFluentExtensions.GENTranslation
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENTranslation
+- uid: Glitch9.AIDevKit.GENTranslationTask
+  commentId: T:Glitch9.AIDevKit.GENTranslationTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENTranslationTask.html
+  name: GENTranslationTask
+  nameWithType: GENTranslationTask
+  fullName: Glitch9.AIDevKit.GENTranslationTask
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENObject*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENObject
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENObject__1_System_String_
+  name: GENObject
+  nameWithType: GENTaskFluentExtensions.GENObject
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENObject
+- uid: Glitch9.AIDevKit.GENObjectTask{{T}}
+  commentId: T:Glitch9.AIDevKit.GENObjectTask{``0}
+  parent: Glitch9.AIDevKit
+  definition: Glitch9.AIDevKit.GENObjectTask`1
+  href: Glitch9.AIDevKit.GENObjectTask-1.html
+  name: GENObjectTask<T>
+  nameWithType: GENObjectTask<T>
+  fullName: Glitch9.AIDevKit.GENObjectTask<T>
+  nameWithType.vb: GENObjectTask(Of T)
+  fullName.vb: Glitch9.AIDevKit.GENObjectTask(Of T)
+  name.vb: GENObjectTask(Of T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENObjectTask`1
+    name: GENObjectTask
+    href: Glitch9.AIDevKit.GENObjectTask-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENObjectTask`1
+    name: GENObjectTask
+    href: Glitch9.AIDevKit.GENObjectTask-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.GENObjectTask`1
+  commentId: T:Glitch9.AIDevKit.GENObjectTask`1
+  href: Glitch9.AIDevKit.GENObjectTask-1.html
+  name: GENObjectTask<T>
+  nameWithType: GENObjectTask<T>
+  fullName: Glitch9.AIDevKit.GENObjectTask<T>
+  nameWithType.vb: GENObjectTask(Of T)
+  fullName.vb: Glitch9.AIDevKit.GENObjectTask(Of T)
+  name.vb: GENObjectTask(Of T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENObjectTask`1
+    name: GENObjectTask
+    href: Glitch9.AIDevKit.GENObjectTask-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENObjectTask`1
+    name: GENObjectTask
+    href: Glitch9.AIDevKit.GENObjectTask-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENSoundEffect_System_String_
+  name: GENSoundEffect
+  nameWithType: GENTaskFluentExtensions.GENSoundEffect
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENSoundEffect
+- uid: Glitch9.AIDevKit.GENSoundEffectTask
+  commentId: T:Glitch9.AIDevKit.GENSoundEffectTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENSoundEffectTask.html
+  name: GENSoundEffectTask
+  nameWithType: GENSoundEffectTask
+  fullName: Glitch9.AIDevKit.GENSoundEffectTask
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENVoiceChange_AudioClip_
+  name: GENVoiceChange
+  nameWithType: GENTaskFluentExtensions.GENVoiceChange
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVoiceChange
+- uid: Glitch9.AIDevKit.GENVoiceChangeTask
+  commentId: T:Glitch9.AIDevKit.GENVoiceChangeTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENVoiceChangeTask.html
+  name: GENVoiceChangeTask
+  nameWithType: GENVoiceChangeTask
+  fullName: Glitch9.AIDevKit.GENVoiceChangeTask
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENAudioIsolation_AudioClip_
+  name: GENAudioIsolation
+  nameWithType: GENTaskFluentExtensions.GENAudioIsolation
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENAudioIsolation
+- uid: Glitch9.AIDevKit.GENAudioIsolationTask
+  commentId: T:Glitch9.AIDevKit.GENAudioIsolationTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENAudioIsolationTask.html
+  name: GENAudioIsolationTask
+  nameWithType: GENAudioIsolationTask
+  fullName: Glitch9.AIDevKit.GENAudioIsolationTask
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENVideo_System_String_
+  name: GENVideo
+  nameWithType: GENTaskFluentExtensions.GENVideo
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENVideo
+- uid: Glitch9.AIDevKit.GENVideoTask
+  commentId: T:Glitch9.AIDevKit.GENVideoTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENVideoTask.html
+  name: GENVideoTask
+  nameWithType: GENVideoTask
+  fullName: Glitch9.AIDevKit.GENVideoTask
+- uid: Glitch9.AIDevKit.GENModerationTask
+  commentId: T:Glitch9.AIDevKit.GENModerationTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENModerationTask.html
+  name: GENModerationTask
+  nameWithType: GENModerationTask
+  fullName: Glitch9.AIDevKit.GENModerationTask
+- uid: Glitch9.AIDevKit.GENTaskFluentExtensions.GENModeration*
+  commentId: Overload:Glitch9.AIDevKit.GENTaskFluentExtensions.GENModeration
+  href: Glitch9.AIDevKit.GENTaskFluentExtensions.html#Glitch9_AIDevKit_GENTaskFluentExtensions_GENModeration_Glitch9_AIDevKit_Content_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_SafetySetting__
+  name: GENModeration
+  nameWithType: GENTaskFluentExtensions.GENModeration
+  fullName: Glitch9.AIDevKit.GENTaskFluentExtensions.GENModeration
+- uid: Glitch9.AIDevKit.Content
+  commentId: T:Glitch9.AIDevKit.Content
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Content.html
+  name: Content
+  nameWithType: Content
+  fullName: Glitch9.AIDevKit.Content
+- uid: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting}
+  commentId: T:System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: Glitch9.AIDevKit.SafetySetting.html
+  name: IEnumerable<SafetySetting>
+  nameWithType: IEnumerable<SafetySetting>
+  fullName: System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.SafetySetting>
+  nameWithType.vb: IEnumerable(Of SafetySetting)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.SafetySetting)
+  name.vb: IEnumerable(Of SafetySetting)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.SafetySetting
+    name: SafetySetting
+    href: Glitch9.AIDevKit.SafetySetting.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.SafetySetting
+    name: SafetySetting
+    href: Glitch9.AIDevKit.SafetySetting.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

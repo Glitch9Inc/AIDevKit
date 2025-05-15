@@ -1,0 +1,379 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.GenerateMediaRequest
+  commentId: T:Glitch9.AIDevKit.Google.GenerateMediaRequest
+  id: GenerateMediaRequest
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.GenerateMediaRequest.Config
+  - Glitch9.AIDevKit.Google.GenerateMediaRequest.Prompt
+  - Glitch9.AIDevKit.Google.GenerateMediaRequest.ValidateBody
+  langs:
+  - csharp
+  - vb
+  name: GenerateMediaRequest
+  nameWithType: GenerateMediaRequest
+  fullName: Glitch9.AIDevKit.Google.GenerateMediaRequest
+  type: Class
+  source:
+    id: GenerateMediaRequest
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateMedia/GenerateMediaRequest.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Generate image(s) from a prompt using the Imagen 3 model, 
+
+    or generate a video from a prompt using the Veo model.
+
+    Both Imagen 3 and Veo models are only available on the google paid tier.
+  example: []
+  syntax:
+    content: 'public class GenerateMediaRequest : GenerativeAIRequest'
+    content.vb: Public Class GenerateMediaRequest Inherits GenerativeAIRequest
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RequestBody
+  - Glitch9.AIDevKit.Google.GenerativeAIRequest
+  inheritedMembers:
+  - Glitch9.AIDevKit.Google.GenerativeAIRequest.Model
+  extensionMethods:
+  - Glitch9.AIDevKit.Google.GenerateMediaRequest.Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync
+  - Glitch9.AIDevKit.Google.GenerateMediaRequest.Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync
+- uid: Glitch9.AIDevKit.Google.GenerateMediaRequest.Prompt
+  commentId: P:Glitch9.AIDevKit.Google.GenerateMediaRequest.Prompt
+  id: Prompt
+  parent: Glitch9.AIDevKit.Google.GenerateMediaRequest
+  langs:
+  - csharp
+  - vb
+  name: Prompt
+  nameWithType: GenerateMediaRequest.Prompt
+  fullName: Glitch9.AIDevKit.Google.GenerateMediaRequest.Prompt
+  type: Property
+  source:
+    id: Prompt
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateMedia/GenerateMediaRequest.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public string Prompt { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Prompt As String
+  overload: Glitch9.AIDevKit.Google.GenerateMediaRequest.Prompt*
+- uid: Glitch9.AIDevKit.Google.GenerateMediaRequest.Config
+  commentId: P:Glitch9.AIDevKit.Google.GenerateMediaRequest.Config
+  id: Config
+  parent: Glitch9.AIDevKit.Google.GenerateMediaRequest
+  langs:
+  - csharp
+  - vb
+  name: Config
+  nameWithType: GenerateMediaRequest.Config
+  fullName: Glitch9.AIDevKit.Google.GenerateMediaRequest.Config
+  type: Property
+  source:
+    id: Config
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateMedia/GenerateMediaRequest.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public GenerateMediaConfig Config { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.GenerateMediaConfig
+    content.vb: Public Property Config As GenerateMediaConfig
+  overload: Glitch9.AIDevKit.Google.GenerateMediaRequest.Config*
+- uid: Glitch9.AIDevKit.Google.GenerateMediaRequest.ValidateBody
+  commentId: M:Glitch9.AIDevKit.Google.GenerateMediaRequest.ValidateBody
+  id: ValidateBody
+  parent: Glitch9.AIDevKit.Google.GenerateMediaRequest
+  langs:
+  - csharp
+  - vb
+  name: ValidateBody()
+  nameWithType: GenerateMediaRequest.ValidateBody()
+  fullName: Glitch9.AIDevKit.Google.GenerateMediaRequest.ValidateBody()
+  type: Method
+  source:
+    id: ValidateBody
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateMedia/GenerateMediaRequest.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Validate the request. 
+
+    This is used to check if all required properties are set.
+
+    Fix the request if needed.
+  example: []
+  syntax:
+    content: public override void ValidateBody()
+    content.vb: Public Overrides Sub ValidateBody()
+  overridden: Glitch9.IO.Networking.RESTApi.RequestBody.ValidateBody
+  overload: Glitch9.AIDevKit.Google.GenerateMediaRequest.ValidateBody*
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RequestBody
+  nameWithType: RequestBody
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
+- uid: Glitch9.AIDevKit.Google.GenerativeAIRequest
+  commentId: T:Glitch9.AIDevKit.Google.GenerativeAIRequest
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GenerativeAIRequest.html
+  name: GenerativeAIRequest
+  nameWithType: GenerativeAIRequest
+  fullName: Glitch9.AIDevKit.Google.GenerativeAIRequest
+- uid: Glitch9.AIDevKit.Google.GenerativeAIRequest.Model
+  commentId: P:Glitch9.AIDevKit.Google.GenerativeAIRequest.Model
+  parent: Glitch9.AIDevKit.Google.GenerativeAIRequest
+  href: Glitch9.AIDevKit.Google.GenerativeAIRequest.html#Glitch9_AIDevKit_Google_GenerativeAIRequest_Model
+  name: Model
+  nameWithType: GenerativeAIRequest.Model
+  fullName: Glitch9.AIDevKit.Google.GenerativeAIRequest.Model
+- uid: Glitch9.AIDevKit.Google.GenerateMediaRequest.Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync
+  commentId: M:Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  parent: Glitch9.AIDevKit.Google.RequestExtensions
+  definition: Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateImageAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  name: GenerateImageAsync(GenerateMediaRequest)
+  nameWithType: RequestExtensions.GenerateImageAsync(GenerateMediaRequest)
+  fullName: Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+    name: GenerateImageAsync
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateImageAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.GenerateMediaRequest
+    name: GenerateMediaRequest
+    href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+    name: GenerateImageAsync
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateImageAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.GenerateMediaRequest
+    name: GenerateMediaRequest
+    href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.GenerateMediaRequest.Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync
+  commentId: M:Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  parent: Glitch9.AIDevKit.Google.RequestExtensions
+  definition: Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateVideoAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  name: GenerateVideoAsync(GenerateMediaRequest)
+  nameWithType: RequestExtensions.GenerateVideoAsync(GenerateMediaRequest)
+  fullName: Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+    name: GenerateVideoAsync
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateVideoAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.GenerateMediaRequest
+    name: GenerateMediaRequest
+    href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+    name: GenerateVideoAsync
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateVideoAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.GenerateMediaRequest
+    name: GenerateMediaRequest
+    href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  commentId: M:Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateImageAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  name: GenerateImageAsync(GenerateMediaRequest)
+  nameWithType: RequestExtensions.GenerateImageAsync(GenerateMediaRequest)
+  fullName: Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+    name: GenerateImageAsync
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateImageAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.GenerateMediaRequest
+    name: GenerateMediaRequest
+    href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+    name: GenerateImageAsync
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateImageAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.GenerateMediaRequest
+    name: GenerateMediaRequest
+    href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.RequestExtensions
+  commentId: T:Glitch9.AIDevKit.Google.RequestExtensions
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.RequestExtensions.html
+  name: RequestExtensions
+  nameWithType: RequestExtensions
+  fullName: Glitch9.AIDevKit.Google.RequestExtensions
+- uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  commentId: M:Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateVideoAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  name: GenerateVideoAsync(GenerateMediaRequest)
+  nameWithType: RequestExtensions.GenerateVideoAsync(GenerateMediaRequest)
+  fullName: Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+    name: GenerateVideoAsync
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateVideoAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.GenerateMediaRequest
+    name: GenerateMediaRequest
+    href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+    name: GenerateVideoAsync
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_GenerateVideoAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.GenerateMediaRequest
+    name: GenerateMediaRequest
+    href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.GenerateMediaRequest.Prompt*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateMediaRequest.Prompt
+  href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html#Glitch9_AIDevKit_Google_GenerateMediaRequest_Prompt
+  name: Prompt
+  nameWithType: GenerateMediaRequest.Prompt
+  fullName: Glitch9.AIDevKit.Google.GenerateMediaRequest.Prompt
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.Google.GenerateMediaRequest.Config*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateMediaRequest.Config
+  href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html#Glitch9_AIDevKit_Google_GenerateMediaRequest_Config
+  name: Config
+  nameWithType: GenerateMediaRequest.Config
+  fullName: Glitch9.AIDevKit.Google.GenerateMediaRequest.Config
+- uid: Glitch9.AIDevKit.Google.GenerateMediaConfig
+  commentId: T:Glitch9.AIDevKit.Google.GenerateMediaConfig
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GenerateMediaConfig.html
+  name: GenerateMediaConfig
+  nameWithType: GenerateMediaConfig
+  fullName: Glitch9.AIDevKit.Google.GenerateMediaConfig
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody.ValidateBody
+  commentId: M:Glitch9.IO.Networking.RESTApi.RequestBody.ValidateBody
+  parent: Glitch9.IO.Networking.RESTApi.RequestBody
+  name: ValidateBody()
+  nameWithType: RequestBody.ValidateBody()
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody.ValidateBody()
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.ValidateBody
+    name: ValidateBody
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.ValidateBody
+    name: ValidateBody
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Google.GenerateMediaRequest.ValidateBody*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateMediaRequest.ValidateBody
+  href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html#Glitch9_AIDevKit_Google_GenerateMediaRequest_ValidateBody
+  name: ValidateBody
+  nameWithType: GenerateMediaRequest.ValidateBody
+  fullName: Glitch9.AIDevKit.Google.GenerateMediaRequest.ValidateBody

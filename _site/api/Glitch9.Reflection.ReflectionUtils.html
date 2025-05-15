@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ReflectionUtils | AI DevKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ReflectionUtils | AI DevKit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Reflection_ReflectionUtils.md&amp;value=---%0Auid%3A%20Glitch9.Reflection.ReflectionUtils%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AI DevKit">
+            AI DevKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Glitch9.Reflection.ReflectionUtils">
+
+
+
+  <h1 id="Glitch9_Reflection_ReflectionUtils" data-uid="Glitch9.Reflection.ReflectionUtils" class="text-break">
+Class ReflectionUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.Reflection.html">Reflection</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ReflectionUtils</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ReflectionUtils</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_CanReadMemberValue_" data-uid="Glitch9.Reflection.ReflectionUtils.CanReadMemberValue*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_CanReadMemberValue_System_Reflection_MemberInfo_System_Boolean_" data-uid="Glitch9.Reflection.ReflectionUtils.CanReadMemberValue(System.Reflection.MemberInfo,System.Boolean)">
+  CanReadMemberValue(MemberInfo, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified MemberInfo can be read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanReadMemberValue(MemberInfo member, bool nonPublic)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd><p>The MemberInfo to determine whether can be read.</p>
+</dd>
+    <dt><code>nonPublic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>if set to <code>true</code> then allow the member to be gotten non-publicly.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the specified MemberInfo can be read; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_CanSetMemberValue_" data-uid="Glitch9.Reflection.ReflectionUtils.CanSetMemberValue*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_CanSetMemberValue_System_Reflection_MemberInfo_System_Boolean_System_Boolean_" data-uid="Glitch9.Reflection.ReflectionUtils.CanSetMemberValue(System.Reflection.MemberInfo,System.Boolean,System.Boolean)">
+  CanSetMemberValue(MemberInfo, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified MemberInfo can be set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanSetMemberValue(MemberInfo member, bool nonPublic, bool canSetReadOnly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd><p>The MemberInfo to determine whether can be set.</p>
+</dd>
+    <dt><code>nonPublic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>if set to <code>true</code> then allow the member to be set non-publicly.</p>
+</dd>
+    <dt><code>canSetReadOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>if set to <code>true</code> then allow the member to be set if read-only.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the specified MemberInfo can be set; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_CreateInstance_" data-uid="Glitch9.Reflection.ReflectionUtils.CreateInstance*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_CreateInstance__1_System_Object___" data-uid="Glitch9.Reflection.ReflectionUtils.CreateInstance``1(System.Object[])">
+  CreateInstance&lt;T&gt;(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CreateInstance&lt;T&gt;(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_EnsureNotByRefType_" data-uid="Glitch9.Reflection.ReflectionUtils.EnsureNotByRefType*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_EnsureNotByRefType_System_Type_" data-uid="Glitch9.Reflection.ReflectionUtils.EnsureNotByRefType(System.Type)">
+  EnsureNotByRefType(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type EnsureNotByRefType(Type t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_EnsureNotNullableType_" data-uid="Glitch9.Reflection.ReflectionUtils.EnsureNotNullableType*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_EnsureNotNullableType_System_Type_" data-uid="Glitch9.Reflection.ReflectionUtils.EnsureNotNullableType(System.Type)">
+  EnsureNotNullableType(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type EnsureNotNullableType(Type t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_FindEnumNames_" data-uid="Glitch9.Reflection.ReflectionUtils.FindEnumNames*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_FindEnumNames_System_String_" data-uid="Glitch9.Reflection.ReflectionUtils.FindEnumNames(System.String)">
+  FindEnumNames(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] FindEnumNames(this string enumName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_FindEnumType_" data-uid="Glitch9.Reflection.ReflectionUtils.FindEnumType*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_FindEnumType_System_String_" data-uid="Glitch9.Reflection.ReflectionUtils.FindEnumType(System.String)">
+  FindEnumType(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type FindEnumType(this string enumName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetAttribute_" data-uid="Glitch9.Reflection.ReflectionUtils.GetAttribute*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetAttribute__1_System_Object_" data-uid="Glitch9.Reflection.ReflectionUtils.GetAttribute``1(System.Object)">
+  GetAttribute&lt;T&gt;(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L599"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetAttribute&lt;T&gt;(object attributeProvider) where T : Attribute</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetAttribute_" data-uid="Glitch9.Reflection.ReflectionUtils.GetAttribute*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetAttribute__1_System_Object_System_Boolean_" data-uid="Glitch9.Reflection.ReflectionUtils.GetAttribute``1(System.Object,System.Boolean)">
+  GetAttribute&lt;T&gt;(object, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetAttribute&lt;T&gt;(object attributeProvider, bool inherit) where T : Attribute</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>inherit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetAttributes_" data-uid="Glitch9.Reflection.ReflectionUtils.GetAttributes*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetAttributes_System_Object_System_Type_System_Boolean_" data-uid="Glitch9.Reflection.ReflectionUtils.GetAttributes(System.Object,System.Type,System.Boolean)">
+  GetAttributes(object, Type, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L623"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Attribute[] GetAttributes(object attributeProvider, Type attributeType, bool inherit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>attributeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>inherit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetAttributes_" data-uid="Glitch9.Reflection.ReflectionUtils.GetAttributes*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetAttributes__1_System_Object_System_Boolean_" data-uid="Glitch9.Reflection.ReflectionUtils.GetAttributes``1(System.Object,System.Boolean)">
+  GetAttributes&lt;T&gt;(object, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L611"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] GetAttributes&lt;T&gt;(object attributeProvider, bool inherit) where T : Attribute</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>inherit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetBaseDefinition_" data-uid="Glitch9.Reflection.ReflectionUtils.GetBaseDefinition*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetBaseDefinition_System_Reflection_PropertyInfo_" data-uid="Glitch9.Reflection.ReflectionUtils.GetBaseDefinition(System.Reflection.PropertyInfo)">
+  GetBaseDefinition(PropertyInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MethodInfo GetBaseDefinition(this PropertyInfo propertyInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetCollectionItemType_" data-uid="Glitch9.Reflection.ReflectionUtils.GetCollectionItemType*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetCollectionItemType_System_Type_" data-uid="Glitch9.Reflection.ReflectionUtils.GetCollectionItemType(System.Type)">
+  GetCollectionItemType(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type of the typed collection's items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetCollectionItemType(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type of the typed collection's items.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetFields_" data-uid="Glitch9.Reflection.ReflectionUtils.GetFields*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetFields_System_Type_System_Reflection_BindingFlags_" data-uid="Glitch9.Reflection.ReflectionUtils.GetFields(System.Type,System.Reflection.BindingFlags)">
+  GetFields(Type, BindingFlags)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L670"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;FieldInfo&gt; GetFields(Type targetType, BindingFlags bindingAttr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>bindingAttr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags">BindingFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo">FieldInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetFieldsAndProperties_" data-uid="Glitch9.Reflection.ReflectionUtils.GetFieldsAndProperties*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetFieldsAndProperties_System_Type_System_Reflection_BindingFlags_" data-uid="Glitch9.Reflection.ReflectionUtils.GetFieldsAndProperties(System.Type,System.Reflection.BindingFlags)">
+  GetFieldsAndProperties(Type, BindingFlags)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;MemberInfo&gt; GetFieldsAndProperties(Type type, BindingFlags bindingAttr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>bindingAttr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags">BindingFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetMemberInfoFromType_" data-uid="Glitch9.Reflection.ReflectionUtils.GetMemberInfoFromType*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetMemberInfoFromType_System_Type_System_Reflection_MemberInfo_" data-uid="Glitch9.Reflection.ReflectionUtils.GetMemberInfoFromType(System.Type,System.Reflection.MemberInfo)">
+  GetMemberInfoFromType(Type, MemberInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L653"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemberInfo GetMemberInfoFromType(Type targetType, MemberInfo memberInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>memberInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetMemberUnderlyingType_" data-uid="Glitch9.Reflection.ReflectionUtils.GetMemberUnderlyingType*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetMemberUnderlyingType_System_Reflection_MemberInfo_" data-uid="Glitch9.Reflection.ReflectionUtils.GetMemberUnderlyingType(System.Reflection.MemberInfo)">
+  GetMemberUnderlyingType(MemberInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the member's underlying type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetMemberUnderlyingType(MemberInfo member)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd><p>The member.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The underlying type of the member.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetMemberValue_" data-uid="Glitch9.Reflection.ReflectionUtils.GetMemberValue*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetMemberValue_System_Reflection_MemberInfo_System_Object_" data-uid="Glitch9.Reflection.ReflectionUtils.GetMemberValue(System.Reflection.MemberInfo,System.Object)">
+  GetMemberValue(MemberInfo, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the member's value on the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetMemberValue(MemberInfo member, object target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd><p>The member.</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The target object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The member's value on the object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetProperties_" data-uid="Glitch9.Reflection.ReflectionUtils.GetProperties*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetProperties_System_Type_System_Reflection_BindingFlags_" data-uid="Glitch9.Reflection.ReflectionUtils.GetProperties(System.Type,System.Reflection.BindingFlags)">
+  GetProperties(Type, BindingFlags)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;PropertyInfo&gt; GetProperties(Type targetType, BindingFlags bindingAttr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>bindingAttr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags">BindingFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetSubclassTypes_" data-uid="Glitch9.Reflection.ReflectionUtils.GetSubclassTypes*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetSubclassTypes_System_Type_System_Boolean_System_Boolean_System_String___" data-uid="Glitch9.Reflection.ReflectionUtils.GetSubclassTypes(System.Type,System.Boolean,System.Boolean,System.String[])">
+  GetSubclassTypes(Type, bool, bool, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Type&gt; GetSubclassTypes(Type parent, bool excludeAbstract = true, bool excludeInterface = true, params string[] excludes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>excludeAbstract</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>excludeInterface</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>excludes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_GetSubclassTypesWithAttribute_" data-uid="Glitch9.Reflection.ReflectionUtils.GetSubclassTypesWithAttribute*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_GetSubclassTypesWithAttribute__1_System_Type_" data-uid="Glitch9.Reflection.ReflectionUtils.GetSubclassTypesWithAttribute``1(System.Type)">
+  GetSubclassTypesWithAttribute&lt;TAttribute&gt;(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Type&gt; GetSubclassTypesWithAttribute&lt;TAttribute&gt;(Type parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TAttribute</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_ImplementsGenericDefinition_" data-uid="Glitch9.Reflection.ReflectionUtils.ImplementsGenericDefinition*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_ImplementsGenericDefinition_System_Type_System_Type_" data-uid="Glitch9.Reflection.ReflectionUtils.ImplementsGenericDefinition(System.Type,System.Type)">
+  ImplementsGenericDefinition(Type, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ImplementsGenericDefinition(Type type, Type genericInterfaceDefinition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>genericInterfaceDefinition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_ImplementsGenericDefinition_" data-uid="Glitch9.Reflection.ReflectionUtils.ImplementsGenericDefinition*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_ImplementsGenericDefinition_System_Type_System_Type_System_Type__" data-uid="Glitch9.Reflection.ReflectionUtils.ImplementsGenericDefinition(System.Type,System.Type,System.Type@)">
+  ImplementsGenericDefinition(Type, Type, out Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ImplementsGenericDefinition(Type type, Type genericInterfaceDefinition, out Type implementingType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>genericInterfaceDefinition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>implementingType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_InstantiateSubclasses_" data-uid="Glitch9.Reflection.ReflectionUtils.InstantiateSubclasses*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_InstantiateSubclasses__1_System_Action___0__System_String___" data-uid="Glitch9.Reflection.ReflectionUtils.InstantiateSubclasses``1(System.Action{``0},System.String[])">
+  InstantiateSubclasses&lt;T&gt;(Action&lt;T&gt;, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; InstantiateSubclasses&lt;T&gt;(Action&lt;T&gt; onGet = null, params string[] excludes) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onGet</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>excludes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_IsGenericDefinition_" data-uid="Glitch9.Reflection.ReflectionUtils.IsGenericDefinition*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_IsGenericDefinition_System_Type_System_Type_" data-uid="Glitch9.Reflection.ReflectionUtils.IsGenericDefinition(System.Type,System.Type)">
+  IsGenericDefinition(Type, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsGenericDefinition(Type type, Type genericInterfaceDefinition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>genericInterfaceDefinition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_IsIndexedProperty_" data-uid="Glitch9.Reflection.ReflectionUtils.IsIndexedProperty*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_IsIndexedProperty_System_Reflection_PropertyInfo_" data-uid="Glitch9.Reflection.ReflectionUtils.IsIndexedProperty(System.Reflection.PropertyInfo)">
+  IsIndexedProperty(PropertyInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the property is an indexed property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsIndexedProperty(PropertyInfo property)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a></dt>
+    <dd><p>The property.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the property is an indexed property; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_IsNullable_" data-uid="Glitch9.Reflection.ReflectionUtils.IsNullable*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_IsNullable_System_Type_" data-uid="Glitch9.Reflection.ReflectionUtils.IsNullable(System.Type)">
+  IsNullable(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNullable(Type t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_IsNullableType_" data-uid="Glitch9.Reflection.ReflectionUtils.IsNullableType*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_IsNullableType_System_Type_" data-uid="Glitch9.Reflection.ReflectionUtils.IsNullableType(System.Type)">
+  IsNullableType(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNullableType(Type t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_IsPublic_" data-uid="Glitch9.Reflection.ReflectionUtils.IsPublic*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_IsPublic_System_Reflection_PropertyInfo_" data-uid="Glitch9.Reflection.ReflectionUtils.IsPublic(System.Reflection.PropertyInfo)">
+  IsPublic(PropertyInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPublic(PropertyInfo property)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_IsVirtual_" data-uid="Glitch9.Reflection.ReflectionUtils.IsVirtual*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_IsVirtual_System_Reflection_PropertyInfo_" data-uid="Glitch9.Reflection.ReflectionUtils.IsVirtual(System.Reflection.PropertyInfo)">
+  IsVirtual(PropertyInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsVirtual(this PropertyInfo propertyInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_RemoveFlag_" data-uid="Glitch9.Reflection.ReflectionUtils.RemoveFlag*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_RemoveFlag_System_Reflection_BindingFlags_System_Reflection_BindingFlags_" data-uid="Glitch9.Reflection.ReflectionUtils.RemoveFlag(System.Reflection.BindingFlags,System.Reflection.BindingFlags)">
+  RemoveFlag(BindingFlags, BindingFlags)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L739"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BindingFlags RemoveFlag(this BindingFlags bindingAttr, BindingFlags flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bindingAttr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags">BindingFlags</a></dt>
+    <dd></dd>
+    <dt><code>flag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags">BindingFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags">BindingFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_SetMemberValue_" data-uid="Glitch9.Reflection.ReflectionUtils.SetMemberValue*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_SetMemberValue_System_Reflection_MemberInfo_System_Object_System_Object_" data-uid="Glitch9.Reflection.ReflectionUtils.SetMemberValue(System.Reflection.MemberInfo,System.Object,System.Object)">
+  SetMemberValue(MemberInfo, object, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the member's value on the target object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetMemberValue(MemberInfo member, object target, object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd><p>The member.</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The target.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_Reflection_ReflectionUtils_TypeNameWithNamespace_" data-uid="Glitch9.Reflection.ReflectionUtils.TypeNameWithNamespace*"></a>
+
+  <h3 id="Glitch9_Reflection_ReflectionUtils_TypeNameWithNamespace_System_Type_" data-uid="Glitch9.Reflection.ReflectionUtils.TypeNameWithNamespace(System.Type)">
+  TypeNameWithNamespace(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TypeNameWithNamespace(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Common/Utils/ReflectionUtils.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

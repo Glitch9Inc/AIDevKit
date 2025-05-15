@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AssistantEventStream | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AssistantEventStream | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI DevKit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream">
+
+
+
+  <h1 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream" class="text-break">Class AssistantEventStream</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">AssistantEventStream</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistants.html">Assistants</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AssistantEventStream</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_Done" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.Done">Done</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Done = &quot;done&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_Error" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.Error">Error</h4>
+  <div class="markdown level1 summary"><p>Occurs when an error occurs. This can happen due to an internal server error or a timeout.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.ErrorResponse.html">ErrorResponse</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Error = &quot;error&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadCreated">ThreadCreated</h4>
+  <div class="markdown level1 summary"><p>Occurs when a new thread is created.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadCreated = &quot;thread.created&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadMessageCompleted" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadMessageCompleted">ThreadMessageCompleted</h4>
+  <div class="markdown level1 summary"><p>Occurs when a message is completed.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadMessageCompleted = &quot;thread.message.completed&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadMessageCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadMessageCreated">ThreadMessageCreated</h4>
+  <div class="markdown level1 summary"><p>Occurs when a message is created.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadMessageCreated = &quot;thread.message.created&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadMessageDelta" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadMessageDelta">ThreadMessageDelta</h4>
+  <div class="markdown level1 summary"><p>Occurs when parts of a Message are being streamed.</p>
+<p>Data type is a OpenAI.ThreadMessageDelta.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadMessageDelta = &quot;thread.message.delta&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadMessageInProgress" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadMessageInProgress">ThreadMessageInProgress</h4>
+  <div class="markdown level1 summary"><p>Occurs when a message moves to an in_progress state.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadMessageInProgress = &quot;thread.message.in_progress&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadMessageIncomplete" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadMessageIncomplete">ThreadMessageIncomplete</h4>
+  <div class="markdown level1 summary"><p>Occurs when a message ends before it is completed.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadMessageIncomplete = &quot;thread.message.incomplete&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunCancelled" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunCancelled">ThreadRunCancelled</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run is cancelled.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunCancelled = &quot;thread.run.cancelled&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunCancelling" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunCancelling">ThreadRunCancelling</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run moves to a cancelling status.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunCancelling = &quot;thread.run.cancelling&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunCompleted" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunCompleted">ThreadRunCompleted</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run is completed.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunCompleted = &quot;thread.run.completed&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunCreated">ThreadRunCreated</h4>
+  <div class="markdown level1 summary"><p>Occurs when a new run is created.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunCreated = &quot;thread.run.created&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunExpired" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunExpired">ThreadRunExpired</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run expires.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunExpired = &quot;thread.run.expired&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunFailed" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunFailed">ThreadRunFailed</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run fails.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunFailed = &quot;thread.run.failed&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunInProgress" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunInProgress">ThreadRunInProgress</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run moves to an in_progress status.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunInProgress = &quot;thread.run.in_progress&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunIncomplete" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunIncomplete">ThreadRunIncomplete</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run ends with status incomplete.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunIncomplete = &quot;thread.run.incomplete&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunQueued" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunQueued">ThreadRunQueued</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run moves to a queued status.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunQueued = &quot;thread.run.queued&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunRequiresAction" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunRequiresAction">ThreadRunRequiresAction</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run moves to a requires_action status.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunRequiresAction = &quot;thread.run.requires_action&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunStepCancelled" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunStepCancelled">ThreadRunStepCancelled</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run step is cancelled.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunStepCancelled = &quot;thread.run.step.cancelled&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunStepCompleted" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunStepCompleted">ThreadRunStepCompleted</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run step is completed.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunStepCompleted = &quot;thread.run.step.completed&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunStepCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunStepCreated">ThreadRunStepCreated</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run step is created.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunStepCreated = &quot;thread.run.step.created&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunStepDelta" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunStepDelta">ThreadRunStepDelta</h4>
+  <div class="markdown level1 summary"><p>Occurs when parts of a run step are being streamed.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStepDelta.html">RunStepDelta</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunStepDelta = &quot;thread.run.step.delta&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunStepExpired" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunStepExpired">ThreadRunStepExpired</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run step expires.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunStepExpired = &quot;thread.run.step.expired&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunStepFailed" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunStepFailed">ThreadRunStepFailed</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run step fails.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunStepFailed = &quot;thread.run.step.failed&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventStream_ThreadRunStepInProgress" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.ThreadRunStepInProgress">ThreadRunStepInProgress</h4>
+  <div class="markdown level1 summary"><p>Occurs when a run step moves to an in_progress state.</p>
+<p>Data type is a <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ThreadRunStepInProgress = &quot;thread.run.step.in_progress&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

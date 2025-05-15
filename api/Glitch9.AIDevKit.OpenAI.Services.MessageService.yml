@@ -1,0 +1,762 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.MessageService
+  id: MessageService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  children:
+  - Glitch9.AIDevKit.OpenAI.Services.MessageService.#ctor(Glitch9.AIDevKit.OpenAI.OpenAI,Glitch9.IO.Networking.RESTApi.RESTHeader[])
+  - Glitch9.AIDevKit.OpenAI.Services.MessageService.CreateAsync(System.String,Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  - Glitch9.AIDevKit.OpenAI.Services.MessageService.DeleteAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  - Glitch9.AIDevKit.OpenAI.Services.MessageService.ListAsync(System.String,Glitch9.IO.Networking.RESTApi.CursorQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  - Glitch9.AIDevKit.OpenAI.Services.MessageService.ListFilesAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.CursorQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  - Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  - Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveFileAsync(System.String,System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  - Glitch9.AIDevKit.OpenAI.Services.MessageService.UpdateAsync(System.String,System.String,Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  langs:
+  - csharp
+  - vb
+  name: MessageService
+  nameWithType: MessageService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService
+  type: Class
+  source:
+    id: MessageService
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Services/Assistants/MessageService.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit.OpenAI.Services
+  summary: 'Messages: https://platform.openai.com/docs/api-reference/messages'
+  example: []
+  syntax:
+    content: 'public class MessageService : CRUDServiceBase<OpenAI>'
+    content.vb: Public Class MessageService Inherits CRUDServiceBase(Of OpenAI)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.OpenAI.OpenAI}
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.#ctor(Glitch9.AIDevKit.OpenAI.OpenAI,Glitch9.IO.Networking.RESTApi.RESTHeader[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.Services.MessageService.#ctor(Glitch9.AIDevKit.OpenAI.OpenAI,Glitch9.IO.Networking.RESTApi.RESTHeader[])
+  id: '#ctor(Glitch9.AIDevKit.OpenAI.OpenAI,Glitch9.IO.Networking.RESTApi.RESTHeader[])'
+  parent: Glitch9.AIDevKit.OpenAI.Services.MessageService
+  langs:
+  - csharp
+  - vb
+  name: MessageService(OpenAI, params RESTHeader[])
+  nameWithType: MessageService.MessageService(OpenAI, params RESTHeader[])
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.MessageService(Glitch9.AIDevKit.OpenAI.OpenAI, params Glitch9.IO.Networking.RESTApi.RESTHeader[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Services/Assistants/MessageService.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit.OpenAI.Services
+  syntax:
+    content: public MessageService(OpenAI client, params RESTHeader[] extraHeaders)
+    parameters:
+    - id: client
+      type: Glitch9.AIDevKit.OpenAI.OpenAI
+    - id: extraHeaders
+      type: Glitch9.IO.Networking.RESTApi.RESTHeader[]
+    content.vb: Public Sub New(client As OpenAI, ParamArray extraHeaders As RESTHeader())
+  overload: Glitch9.AIDevKit.OpenAI.Services.MessageService.#ctor*
+  nameWithType.vb: MessageService.New(OpenAI, ParamArray RESTHeader())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Services.MessageService.New(Glitch9.AIDevKit.OpenAI.OpenAI, ParamArray Glitch9.IO.Networking.RESTApi.RESTHeader())
+  name.vb: New(OpenAI, ParamArray RESTHeader())
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.CreateAsync(System.String,Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Services.MessageService.CreateAsync(System.String,Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  id: CreateAsync(System.String,Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  parent: Glitch9.AIDevKit.OpenAI.Services.MessageService
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(string, ThreadMessageRequest)
+  nameWithType: MessageService.CreateAsync(string, ThreadMessageRequest)
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.CreateAsync(string, Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  type: Method
+  source:
+    id: CreateAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Services/Assistants/MessageService.cs
+    startLine: 18
+  namespace: Glitch9.AIDevKit.OpenAI.Services
+  syntax:
+    content: public UniTask<ThreadMessage> CreateAsync(string threadId, ThreadMessageRequest req)
+    parameters:
+    - id: threadId
+      type: System.String
+    - id: req
+      type: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.OpenAI.ThreadMessage}
+    content.vb: Public Function CreateAsync(threadId As String, req As ThreadMessageRequest) As UniTask(Of ThreadMessage)
+  overload: Glitch9.AIDevKit.OpenAI.Services.MessageService.CreateAsync*
+  nameWithType.vb: MessageService.CreateAsync(String, ThreadMessageRequest)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Services.MessageService.CreateAsync(String, Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  name.vb: CreateAsync(String, ThreadMessageRequest)
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListAsync(System.String,Glitch9.IO.Networking.RESTApi.CursorQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Services.MessageService.ListAsync(System.String,Glitch9.IO.Networking.RESTApi.CursorQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  id: ListAsync(System.String,Glitch9.IO.Networking.RESTApi.CursorQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  parent: Glitch9.AIDevKit.OpenAI.Services.MessageService
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(string, CursorQuery, RequestOptions)
+  nameWithType: MessageService.ListAsync(string, CursorQuery, RequestOptions)
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListAsync(string, Glitch9.IO.Networking.RESTApi.CursorQuery, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  type: Method
+  source:
+    id: ListAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Services/Assistants/MessageService.cs
+    startLine: 77
+  namespace: Glitch9.AIDevKit.OpenAI.Services
+  syntax:
+    content: public UniTask<QueryResponse<ThreadMessage>> ListAsync(string threadId, CursorQuery query = null, RequestOptions options = null)
+    parameters:
+    - id: threadId
+      type: System.String
+    - id: query
+      type: Glitch9.IO.Networking.RESTApi.CursorQuery
+    - id: options
+      type: Glitch9.IO.Networking.RESTApi.RequestOptions
+    return:
+      type: UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.OpenAI.ThreadMessage}}
+    content.vb: Public Function ListAsync(threadId As String, query As CursorQuery = Nothing, options As RequestOptions = Nothing) As UniTask(Of QueryResponse(Of ThreadMessage))
+  overload: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListAsync*
+  nameWithType.vb: MessageService.ListAsync(String, CursorQuery, RequestOptions)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListAsync(String, Glitch9.IO.Networking.RESTApi.CursorQuery, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  name.vb: ListAsync(String, CursorQuery, RequestOptions)
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  id: RetrieveAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  parent: Glitch9.AIDevKit.OpenAI.Services.MessageService
+  langs:
+  - csharp
+  - vb
+  name: RetrieveAsync(string, string, RequestOptions)
+  nameWithType: MessageService.RetrieveAsync(string, string, RequestOptions)
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveAsync(string, string, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  type: Method
+  source:
+    id: RetrieveAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Services/Assistants/MessageService.cs
+    startLine: 83
+  namespace: Glitch9.AIDevKit.OpenAI.Services
+  syntax:
+    content: public UniTask<ThreadMessage> RetrieveAsync(string threadId, string messageId, RequestOptions options = null)
+    parameters:
+    - id: threadId
+      type: System.String
+    - id: messageId
+      type: System.String
+    - id: options
+      type: Glitch9.IO.Networking.RESTApi.RequestOptions
+    return:
+      type: UniTask{Glitch9.AIDevKit.OpenAI.ThreadMessage}
+    content.vb: Public Function RetrieveAsync(threadId As String, messageId As String, options As RequestOptions = Nothing) As UniTask(Of ThreadMessage)
+  overload: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveAsync*
+  nameWithType.vb: MessageService.RetrieveAsync(String, String, RequestOptions)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveAsync(String, String, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  name.vb: RetrieveAsync(String, String, RequestOptions)
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.UpdateAsync(System.String,System.String,Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Services.MessageService.UpdateAsync(System.String,System.String,Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  id: UpdateAsync(System.String,System.String,Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  parent: Glitch9.AIDevKit.OpenAI.Services.MessageService
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(string, string, ThreadMessageRequest)
+  nameWithType: MessageService.UpdateAsync(string, string, ThreadMessageRequest)
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.UpdateAsync(string, string, Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  type: Method
+  source:
+    id: UpdateAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Services/Assistants/MessageService.cs
+    startLine: 90
+  namespace: Glitch9.AIDevKit.OpenAI.Services
+  syntax:
+    content: public UniTask<ThreadMessage> UpdateAsync(string threadId, string messageId, ThreadMessageRequest req)
+    parameters:
+    - id: threadId
+      type: System.String
+    - id: messageId
+      type: System.String
+    - id: req
+      type: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.OpenAI.ThreadMessage}
+    content.vb: Public Function UpdateAsync(threadId As String, messageId As String, req As ThreadMessageRequest) As UniTask(Of ThreadMessage)
+  overload: Glitch9.AIDevKit.OpenAI.Services.MessageService.UpdateAsync*
+  nameWithType.vb: MessageService.UpdateAsync(String, String, ThreadMessageRequest)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Services.MessageService.UpdateAsync(String, String, Glitch9.AIDevKit.OpenAI.ThreadMessageRequest)
+  name.vb: UpdateAsync(String, String, ThreadMessageRequest)
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.DeleteAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Services.MessageService.DeleteAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  id: DeleteAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  parent: Glitch9.AIDevKit.OpenAI.Services.MessageService
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(string, string, RequestOptions)
+  nameWithType: MessageService.DeleteAsync(string, string, RequestOptions)
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.DeleteAsync(string, string, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  type: Method
+  source:
+    id: DeleteAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Services/Assistants/MessageService.cs
+    startLine: 97
+  namespace: Glitch9.AIDevKit.OpenAI.Services
+  syntax:
+    content: public UniTask<bool> DeleteAsync(string threadId, string messageId, RequestOptions options = null)
+    parameters:
+    - id: threadId
+      type: System.String
+    - id: messageId
+      type: System.String
+    - id: options
+      type: Glitch9.IO.Networking.RESTApi.RequestOptions
+    return:
+      type: UniTask{System.Boolean}
+    content.vb: Public Function DeleteAsync(threadId As String, messageId As String, options As RequestOptions = Nothing) As UniTask(Of Boolean)
+  overload: Glitch9.AIDevKit.OpenAI.Services.MessageService.DeleteAsync*
+  nameWithType.vb: MessageService.DeleteAsync(String, String, RequestOptions)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Services.MessageService.DeleteAsync(String, String, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  name.vb: DeleteAsync(String, String, RequestOptions)
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListFilesAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.CursorQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Services.MessageService.ListFilesAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.CursorQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  id: ListFilesAsync(System.String,System.String,Glitch9.IO.Networking.RESTApi.CursorQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  parent: Glitch9.AIDevKit.OpenAI.Services.MessageService
+  langs:
+  - csharp
+  - vb
+  name: ListFilesAsync(string, string, CursorQuery, RequestOptions)
+  nameWithType: MessageService.ListFilesAsync(string, string, CursorQuery, RequestOptions)
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListFilesAsync(string, string, Glitch9.IO.Networking.RESTApi.CursorQuery, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  type: Method
+  source:
+    id: ListFilesAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Services/Assistants/MessageService.cs
+    startLine: 104
+  namespace: Glitch9.AIDevKit.OpenAI.Services
+  syntax:
+    content: public UniTask<QueryResponse<MessageFile>> ListFilesAsync(string threadId, string messageId, CursorQuery query = null, RequestOptions options = null)
+    parameters:
+    - id: threadId
+      type: System.String
+    - id: messageId
+      type: System.String
+    - id: query
+      type: Glitch9.IO.Networking.RESTApi.CursorQuery
+    - id: options
+      type: Glitch9.IO.Networking.RESTApi.RequestOptions
+    return:
+      type: UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.OpenAI.MessageFile}}
+    content.vb: Public Function ListFilesAsync(threadId As String, messageId As String, query As CursorQuery = Nothing, options As RequestOptions = Nothing) As UniTask(Of QueryResponse(Of MessageFile))
+  overload: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListFilesAsync*
+  nameWithType.vb: MessageService.ListFilesAsync(String, String, CursorQuery, RequestOptions)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListFilesAsync(String, String, Glitch9.IO.Networking.RESTApi.CursorQuery, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  name.vb: ListFilesAsync(String, String, CursorQuery, RequestOptions)
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveFileAsync(System.String,System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveFileAsync(System.String,System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  id: RetrieveFileAsync(System.String,System.String,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  parent: Glitch9.AIDevKit.OpenAI.Services.MessageService
+  langs:
+  - csharp
+  - vb
+  name: RetrieveFileAsync(string, string, string, RequestOptions)
+  nameWithType: MessageService.RetrieveFileAsync(string, string, string, RequestOptions)
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveFileAsync(string, string, string, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  type: Method
+  source:
+    id: RetrieveFileAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Services/Assistants/MessageService.cs
+    startLine: 111
+  namespace: Glitch9.AIDevKit.OpenAI.Services
+  syntax:
+    content: public UniTask<MessageFile> RetrieveFileAsync(string threadId, string messageId, string fileId, RequestOptions options = null)
+    parameters:
+    - id: threadId
+      type: System.String
+    - id: messageId
+      type: System.String
+    - id: fileId
+      type: System.String
+    - id: options
+      type: Glitch9.IO.Networking.RESTApi.RequestOptions
+    return:
+      type: UniTask{Glitch9.AIDevKit.OpenAI.MessageFile}
+    content.vb: Public Function RetrieveFileAsync(threadId As String, messageId As String, fileId As String, options As RequestOptions = Nothing) As UniTask(Of MessageFile)
+  overload: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveFileAsync*
+  nameWithType.vb: MessageService.RetrieveFileAsync(String, String, String, RequestOptions)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveFileAsync(String, String, String, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  name.vb: RetrieveFileAsync(String, String, String, RequestOptions)
+references:
+- uid: Glitch9.AIDevKit.OpenAI.Services
+  commentId: N:Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI.Services
+  nameWithType: Glitch9.AIDevKit.OpenAI.Services
+  fullName: Glitch9.AIDevKit.OpenAI.Services
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Services
+    name: Services
+    href: Glitch9.AIDevKit.OpenAI.Services.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Services
+    name: Services
+    href: Glitch9.AIDevKit.OpenAI.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.OpenAI.OpenAI}
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.OpenAI.OpenAI}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  name: CRUDServiceBase<OpenAI>
+  nameWithType: CRUDServiceBase<OpenAI>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<Glitch9.AIDevKit.OpenAI.OpenAI>
+  nameWithType.vb: CRUDServiceBase(Of OpenAI)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of Glitch9.AIDevKit.OpenAI.OpenAI)
+  name.vb: CRUDServiceBase(Of OpenAI)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  name: CRUDServiceBase<TClient>
+  nameWithType: CRUDServiceBase<TClient>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<TClient>
+  nameWithType.vb: CRUDServiceBase(Of TClient)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of TClient)
+  name.vb: CRUDServiceBase(Of TClient)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - name: TClient
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TClient
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Services.MessageService.#ctor
+  href: Glitch9.AIDevKit.OpenAI.Services.MessageService.html#Glitch9_AIDevKit_OpenAI_Services_MessageService__ctor_Glitch9_AIDevKit_OpenAI_OpenAI_Glitch9_IO_Networking_RESTApi_RESTHeader___
+  name: MessageService
+  nameWithType: MessageService.MessageService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.MessageService
+  nameWithType.vb: MessageService.New
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Services.MessageService.New
+  name.vb: New
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI
+  commentId: T:Glitch9.AIDevKit.OpenAI.OpenAI
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  name: OpenAI
+  nameWithType: OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI
+- uid: Glitch9.IO.Networking.RESTApi.RESTHeader[]
+  isExternal: true
+  name: RESTHeader[]
+  nameWithType: RESTHeader[]
+  fullName: Glitch9.IO.Networking.RESTApi.RESTHeader[]
+  nameWithType.vb: RESTHeader()
+  fullName.vb: Glitch9.IO.Networking.RESTApi.RESTHeader()
+  name.vb: RESTHeader()
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.RESTHeader
+    name: RESTHeader
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.RESTHeader
+    name: RESTHeader
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.CreateAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Services.MessageService.CreateAsync
+  href: Glitch9.AIDevKit.OpenAI.Services.MessageService.html#Glitch9_AIDevKit_OpenAI_Services_MessageService_CreateAsync_System_String_Glitch9_AIDevKit_OpenAI_ThreadMessageRequest_
+  name: CreateAsync
+  nameWithType: MessageService.CreateAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.CreateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
+  commentId: T:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html
+  name: ThreadMessageRequest
+  nameWithType: ThreadMessageRequest
+  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
+- uid: UniTask{Glitch9.AIDevKit.OpenAI.ThreadMessage}
+  commentId: '!:UniTask{Glitch9.AIDevKit.OpenAI.ThreadMessage}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
+  name: UniTask<ThreadMessage>
+  nameWithType: UniTask<ThreadMessage>
+  fullName: UniTask<Glitch9.AIDevKit.OpenAI.ThreadMessage>
+  nameWithType.vb: UniTask(Of ThreadMessage)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.OpenAI.ThreadMessage)
+  name.vb: UniTask(Of ThreadMessage)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessage
+    name: ThreadMessage
+    href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessage
+    name: ThreadMessage
+    href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Services.MessageService.ListAsync
+  href: Glitch9.AIDevKit.OpenAI.Services.MessageService.html#Glitch9_AIDevKit_OpenAI_Services_MessageService_ListAsync_System_String_Glitch9_IO_Networking_RESTApi_CursorQuery_Glitch9_IO_Networking_RESTApi_RequestOptions_
+  name: ListAsync
+  nameWithType: MessageService.ListAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListAsync
+- uid: Glitch9.IO.Networking.RESTApi.CursorQuery
+  commentId: T:Glitch9.IO.Networking.RESTApi.CursorQuery
+  parent: Glitch9.IO.Networking.RESTApi
+  name: CursorQuery
+  nameWithType: CursorQuery
+  fullName: Glitch9.IO.Networking.RESTApi.CursorQuery
+- uid: Glitch9.IO.Networking.RESTApi.RequestOptions
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestOptions
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RequestOptions
+  nameWithType: RequestOptions
+  fullName: Glitch9.IO.Networking.RESTApi.RequestOptions
+- uid: UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.OpenAI.ThreadMessage}}
+  commentId: '!:UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.OpenAI.ThreadMessage}}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
+  name: UniTask<QueryResponse<ThreadMessage>>
+  nameWithType: UniTask<QueryResponse<ThreadMessage>>
+  fullName: UniTask<Glitch9.IO.Networking.RESTApi.QueryResponse<Glitch9.AIDevKit.OpenAI.ThreadMessage>>
+  nameWithType.vb: UniTask(Of QueryResponse(Of ThreadMessage))
+  fullName.vb: UniTask(Of Glitch9.IO.Networking.RESTApi.QueryResponse(Of Glitch9.AIDevKit.OpenAI.ThreadMessage))
+  name.vb: UniTask(Of QueryResponse(Of ThreadMessage))
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.IO.Networking.RESTApi.QueryResponse`1
+    name: QueryResponse
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessage
+    name: ThreadMessage
+    href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.IO.Networking.RESTApi.QueryResponse`1
+    name: QueryResponse
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessage
+    name: ThreadMessage
+    href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveAsync
+  href: Glitch9.AIDevKit.OpenAI.Services.MessageService.html#Glitch9_AIDevKit_OpenAI_Services_MessageService_RetrieveAsync_System_String_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_
+  name: RetrieveAsync
+  nameWithType: MessageService.RetrieveAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveAsync
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.UpdateAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Services.MessageService.UpdateAsync
+  href: Glitch9.AIDevKit.OpenAI.Services.MessageService.html#Glitch9_AIDevKit_OpenAI_Services_MessageService_UpdateAsync_System_String_System_String_Glitch9_AIDevKit_OpenAI_ThreadMessageRequest_
+  name: UpdateAsync
+  nameWithType: MessageService.UpdateAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.UpdateAsync
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.DeleteAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Services.MessageService.DeleteAsync
+  href: Glitch9.AIDevKit.OpenAI.Services.MessageService.html#Glitch9_AIDevKit_OpenAI_Services_MessageService_DeleteAsync_System_String_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_
+  name: DeleteAsync
+  nameWithType: MessageService.DeleteAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.DeleteAsync
+- uid: UniTask{System.Boolean}
+  commentId: '!:UniTask{System.Boolean}'
+  definition: UniTask`1
+  name: UniTask<bool>
+  nameWithType: UniTask<bool>
+  fullName: UniTask<bool>
+  nameWithType.vb: UniTask(Of Boolean)
+  fullName.vb: UniTask(Of Boolean)
+  name.vb: UniTask(Of Boolean)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListFilesAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Services.MessageService.ListFilesAsync
+  href: Glitch9.AIDevKit.OpenAI.Services.MessageService.html#Glitch9_AIDevKit_OpenAI_Services_MessageService_ListFilesAsync_System_String_System_String_Glitch9_IO_Networking_RESTApi_CursorQuery_Glitch9_IO_Networking_RESTApi_RequestOptions_
+  name: ListFilesAsync
+  nameWithType: MessageService.ListFilesAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.ListFilesAsync
+- uid: UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.OpenAI.MessageFile}}
+  commentId: '!:UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.OpenAI.MessageFile}}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.OpenAI.MessageFile.html
+  name: UniTask<QueryResponse<MessageFile>>
+  nameWithType: UniTask<QueryResponse<MessageFile>>
+  fullName: UniTask<Glitch9.IO.Networking.RESTApi.QueryResponse<Glitch9.AIDevKit.OpenAI.MessageFile>>
+  nameWithType.vb: UniTask(Of QueryResponse(Of MessageFile))
+  fullName.vb: UniTask(Of Glitch9.IO.Networking.RESTApi.QueryResponse(Of Glitch9.AIDevKit.OpenAI.MessageFile))
+  name.vb: UniTask(Of QueryResponse(Of MessageFile))
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.IO.Networking.RESTApi.QueryResponse`1
+    name: QueryResponse
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.MessageFile
+    name: MessageFile
+    href: Glitch9.AIDevKit.OpenAI.MessageFile.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.IO.Networking.RESTApi.QueryResponse`1
+    name: QueryResponse
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.MessageFile
+    name: MessageFile
+    href: Glitch9.AIDevKit.OpenAI.MessageFile.html
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveFileAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveFileAsync
+  href: Glitch9.AIDevKit.OpenAI.Services.MessageService.html#Glitch9_AIDevKit_OpenAI_Services_MessageService_RetrieveFileAsync_System_String_System_String_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_
+  name: RetrieveFileAsync
+  nameWithType: MessageService.RetrieveFileAsync
+  fullName: Glitch9.AIDevKit.OpenAI.Services.MessageService.RetrieveFileAsync
+- uid: UniTask{Glitch9.AIDevKit.OpenAI.MessageFile}
+  commentId: '!:UniTask{Glitch9.AIDevKit.OpenAI.MessageFile}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.OpenAI.MessageFile.html
+  name: UniTask<MessageFile>
+  nameWithType: UniTask<MessageFile>
+  fullName: UniTask<Glitch9.AIDevKit.OpenAI.MessageFile>
+  nameWithType.vb: UniTask(Of MessageFile)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.OpenAI.MessageFile)
+  name.vb: UniTask(Of MessageFile)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.MessageFile
+    name: MessageFile
+    href: Glitch9.AIDevKit.OpenAI.MessageFile.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.MessageFile
+    name: MessageFile
+    href: Glitch9.AIDevKit.OpenAI.MessageFile.html
+  - name: )

@@ -1,0 +1,899 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  commentId: T:Glitch9.AIDevKit.OpenAI.OpenAISettings
+  id: OpenAISettings
+  parent: Glitch9.AIDevKit.OpenAI
+  children:
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultAssistantAPIModel
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultEMB
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultIMG
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultLLM
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultMOD
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultRTM
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultSTT
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultTTS
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultVoice
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.GetAdminApiKey
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultVoice(System.String)
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.Organization
+  - Glitch9.AIDevKit.OpenAI.OpenAISettings.ProjectId
+  langs:
+  - csharp
+  - vb
+  name: OpenAISettings
+  nameWithType: OpenAISettings
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  type: Class
+  source:
+    id: OpenAISettings
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 5
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: 'public class OpenAISettings : AIClientSettings<OpenAISettings>'
+    content.vb: Public Class OpenAISettings Inherits AIClientSettings(Of OpenAISettings)
+  inheritance:
+  - System.Object
+  - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  inheritedMembers:
+  - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.oldApiKey
+  - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.encryptedApiKey
+  - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.encryptApiKey
+  - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.apiKey
+  - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.GetApiKey
+  - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.HasApiKey
+  - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenAI.OpenAISettings}.Instance
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.Organization
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.Organization
+  id: Organization
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: Organization
+  nameWithType: OpenAISettings.Organization
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.Organization
+  type: Property
+  source:
+    id: Organization
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Optional. Specifies the organization under which API calls are made, used for organizational billing and access management.
+  example: []
+  syntax:
+    content: public static string Organization { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Organization As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.Organization*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.ProjectId
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.ProjectId
+  id: ProjectId
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: ProjectId
+  nameWithType: OpenAISettings.ProjectId
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.ProjectId
+  type: Property
+  source:
+    id: ProjectId
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 34
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Optional. Project IDs can be found on your general settings page by selecting the specific project.
+  example: []
+  syntax:
+    content: public static string ProjectId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ProjectId As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.ProjectId*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultAssistantAPIModel
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultAssistantAPIModel
+  id: DefaultAssistantAPIModel
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultAssistantAPIModel
+  nameWithType: OpenAISettings.DefaultAssistantAPIModel
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultAssistantAPIModel
+  type: Property
+  source:
+    id: DefaultAssistantAPIModel
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 39
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Default model used for the Assistant API, setting a standard for automated interactions.
+  example: []
+  syntax:
+    content: public static string DefaultAssistantAPIModel { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultAssistantAPIModel As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultAssistantAPIModel*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultLLM
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultLLM
+  id: DefaultLLM
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultLLM
+  nameWithType: OpenAISettings.DefaultLLM
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultLLM
+  type: Property
+  source:
+    id: DefaultLLM
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 41
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static string DefaultLLM { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultLLM As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultLLM*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultIMG
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultIMG
+  id: DefaultIMG
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultIMG
+  nameWithType: OpenAISettings.DefaultIMG
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultIMG
+  type: Property
+  source:
+    id: DefaultIMG
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 42
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static string DefaultIMG { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultIMG As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultIMG*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultTTS
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultTTS
+  id: DefaultTTS
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultTTS
+  nameWithType: OpenAISettings.DefaultTTS
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultTTS
+  type: Property
+  source:
+    id: DefaultTTS
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 43
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static string DefaultTTS { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultTTS As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultTTS*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultSTT
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultSTT
+  id: DefaultSTT
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultSTT
+  nameWithType: OpenAISettings.DefaultSTT
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultSTT
+  type: Property
+  source:
+    id: DefaultSTT
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 44
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static string DefaultSTT { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultSTT As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultSTT*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultEMB
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultEMB
+  id: DefaultEMB
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultEMB
+  nameWithType: OpenAISettings.DefaultEMB
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultEMB
+  type: Property
+  source:
+    id: DefaultEMB
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 45
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static string DefaultEMB { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultEMB As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultEMB*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultMOD
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultMOD
+  id: DefaultMOD
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultMOD
+  nameWithType: OpenAISettings.DefaultMOD
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultMOD
+  type: Property
+  source:
+    id: DefaultMOD
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 46
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static string DefaultMOD { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultMOD As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultMOD*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultRTM
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultRTM
+  id: DefaultRTM
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultRTM
+  nameWithType: OpenAISettings.DefaultRTM
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultRTM
+  type: Property
+  source:
+    id: DefaultRTM
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 47
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static string DefaultRTM { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultRTM As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultRTM*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultVoice
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultVoice
+  id: DefaultVoice
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultVoice
+  nameWithType: OpenAISettings.DefaultVoice
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultVoice
+  type: Property
+  source:
+    id: DefaultVoice
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 48
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static string DefaultVoice { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultVoice As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultVoice*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.GetAdminApiKey
+  commentId: M:Glitch9.AIDevKit.OpenAI.OpenAISettings.GetAdminApiKey
+  id: GetAdminApiKey
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: GetAdminApiKey()
+  nameWithType: OpenAISettings.GetAdminApiKey()
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.GetAdminApiKey()
+  type: Method
+  source:
+    id: GetAdminApiKey
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 49
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static string GetAdminApiKey()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetAdminApiKey() As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.GetAdminApiKey*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
+  commentId: M:Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
+  id: IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: IsDefaultModel(string, ModelCapability)
+  nameWithType: OpenAISettings.IsDefaultModel(string, ModelCapability)
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel(string, Glitch9.AIDevKit.ModelCapability)
+  type: Method
+  source:
+    id: IsDefaultModel
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 51
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static bool IsDefaultModel(string id, ModelCapability cap)
+    parameters:
+    - id: id
+      type: System.String
+    - id: cap
+      type: Glitch9.AIDevKit.ModelCapability
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsDefaultModel(id As String, cap As ModelCapability) As Boolean
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel*
+  nameWithType.vb: OpenAISettings.IsDefaultModel(String, ModelCapability)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel(String, Glitch9.AIDevKit.ModelCapability)
+  name.vb: IsDefaultModel(String, ModelCapability)
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultVoice(System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultVoice(System.String)
+  id: IsDefaultVoice(System.String)
+  parent: Glitch9.AIDevKit.OpenAI.OpenAISettings
+  langs:
+  - csharp
+  - vb
+  name: IsDefaultVoice(string)
+  nameWithType: OpenAISettings.IsDefaultVoice(string)
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultVoice(string)
+  type: Method
+  source:
+    id: IsDefaultVoice
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Settings/OpenAISettings.cs
+    startLine: 67
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static bool IsDefaultVoice(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsDefaultVoice(id As String) As Boolean
+  overload: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultVoice*
+  nameWithType.vb: OpenAISettings.IsDefaultVoice(String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultVoice(String)
+  name.vb: IsDefaultVoice(String)
+references:
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  commentId: T:Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  parent: Glitch9.ScriptableObjects
+  definition: Glitch9.ScriptableObjects.ScriptableResource`1
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html
+  name: ScriptableResource<OpenAISettings>
+  nameWithType: ScriptableResource<OpenAISettings>
+  fullName: Glitch9.ScriptableObjects.ScriptableResource<Glitch9.AIDevKit.OpenAI.OpenAISettings>
+  nameWithType.vb: ScriptableResource(Of OpenAISettings)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of Glitch9.AIDevKit.OpenAI.OpenAISettings)
+  name.vb: ScriptableResource(Of OpenAISettings)
+  spec.csharp:
+  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
+    name: ScriptableResource
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAISettings
+    name: OpenAISettings
+    href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
+    name: ScriptableResource
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAISettings
+    name: OpenAISettings
+    href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  commentId: T:Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  parent: Glitch9.AIDevKit.Client
+  definition: Glitch9.AIDevKit.Client.AIClientSettings`1
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html
+  name: AIClientSettings<OpenAISettings>
+  nameWithType: AIClientSettings<OpenAISettings>
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<Glitch9.AIDevKit.OpenAI.OpenAISettings>
+  nameWithType.vb: AIClientSettings(Of OpenAISettings)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of Glitch9.AIDevKit.OpenAI.OpenAISettings)
+  name.vb: AIClientSettings(Of OpenAISettings)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings`1
+    name: AIClientSettings
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAISettings
+    name: OpenAISettings
+    href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings`1
+    name: AIClientSettings
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAISettings
+    name: OpenAISettings
+    href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.oldApiKey
+  commentId: F:Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.oldApiKey
+  parent: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  definition: Glitch9.AIDevKit.Client.AIClientSettings`1.oldApiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_oldApiKey
+  name: oldApiKey
+  nameWithType: AIClientSettings<OpenAISettings>.oldApiKey
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<Glitch9.AIDevKit.OpenAI.OpenAISettings>.oldApiKey
+  nameWithType.vb: AIClientSettings(Of OpenAISettings).oldApiKey
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of Glitch9.AIDevKit.OpenAI.OpenAISettings).oldApiKey
+- uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.encryptedApiKey
+  commentId: F:Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.encryptedApiKey
+  parent: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  definition: Glitch9.AIDevKit.Client.AIClientSettings`1.encryptedApiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_encryptedApiKey
+  name: encryptedApiKey
+  nameWithType: AIClientSettings<OpenAISettings>.encryptedApiKey
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<Glitch9.AIDevKit.OpenAI.OpenAISettings>.encryptedApiKey
+  nameWithType.vb: AIClientSettings(Of OpenAISettings).encryptedApiKey
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of Glitch9.AIDevKit.OpenAI.OpenAISettings).encryptedApiKey
+- uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.encryptApiKey
+  commentId: F:Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.encryptApiKey
+  parent: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  definition: Glitch9.AIDevKit.Client.AIClientSettings`1.encryptApiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_encryptApiKey
+  name: encryptApiKey
+  nameWithType: AIClientSettings<OpenAISettings>.encryptApiKey
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<Glitch9.AIDevKit.OpenAI.OpenAISettings>.encryptApiKey
+  nameWithType.vb: AIClientSettings(Of OpenAISettings).encryptApiKey
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of Glitch9.AIDevKit.OpenAI.OpenAISettings).encryptApiKey
+- uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.apiKey
+  commentId: F:Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.apiKey
+  parent: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  definition: Glitch9.AIDevKit.Client.AIClientSettings`1.apiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_apiKey
+  name: apiKey
+  nameWithType: AIClientSettings<OpenAISettings>.apiKey
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<Glitch9.AIDevKit.OpenAI.OpenAISettings>.apiKey
+  nameWithType.vb: AIClientSettings(Of OpenAISettings).apiKey
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of Glitch9.AIDevKit.OpenAI.OpenAISettings).apiKey
+- uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.GetApiKey
+  commentId: M:Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.GetApiKey
+  parent: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  definition: Glitch9.AIDevKit.Client.AIClientSettings`1.GetApiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_GetApiKey
+  name: GetApiKey()
+  nameWithType: AIClientSettings<OpenAISettings>.GetApiKey()
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<Glitch9.AIDevKit.OpenAI.OpenAISettings>.GetApiKey()
+  nameWithType.vb: AIClientSettings(Of OpenAISettings).GetApiKey()
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of Glitch9.AIDevKit.OpenAI.OpenAISettings).GetApiKey()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.GetApiKey
+    name: GetApiKey
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_GetApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.GetApiKey
+    name: GetApiKey
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_GetApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.HasApiKey
+  commentId: M:Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.HasApiKey
+  parent: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  definition: Glitch9.AIDevKit.Client.AIClientSettings`1.HasApiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_HasApiKey
+  name: HasApiKey()
+  nameWithType: AIClientSettings<OpenAISettings>.HasApiKey()
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<Glitch9.AIDevKit.OpenAI.OpenAISettings>.HasApiKey()
+  nameWithType.vb: AIClientSettings(Of OpenAISettings).HasApiKey()
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of Glitch9.AIDevKit.OpenAI.OpenAISettings).HasApiKey()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.HasApiKey
+    name: HasApiKey
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_HasApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenAI.OpenAISettings}.HasApiKey
+    name: HasApiKey
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_HasApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenAI.OpenAISettings}.Instance
+  commentId: P:Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenAI.OpenAISettings}.Instance
+  parent: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenAI.OpenAISettings}
+  definition: Glitch9.ScriptableObjects.ScriptableResource`1.Instance
+  name: Instance
+  nameWithType: ScriptableResource<OpenAISettings>.Instance
+  fullName: Glitch9.ScriptableObjects.ScriptableResource<Glitch9.AIDevKit.OpenAI.OpenAISettings>.Instance
+  nameWithType.vb: ScriptableResource(Of OpenAISettings).Instance
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of Glitch9.AIDevKit.OpenAI.OpenAISettings).Instance
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.ScriptableObjects.ScriptableResource`1
+  commentId: T:Glitch9.ScriptableObjects.ScriptableResource`1
+  name: ScriptableResource<TSelf>
+  nameWithType: ScriptableResource<TSelf>
+  fullName: Glitch9.ScriptableObjects.ScriptableResource<TSelf>
+  nameWithType.vb: ScriptableResource(Of TSelf)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf)
+  name.vb: ScriptableResource(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
+    name: ScriptableResource
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
+    name: ScriptableResource
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.ScriptableObjects
+  commentId: N:Glitch9.ScriptableObjects
+  href: Glitch9.html
+  name: Glitch9.ScriptableObjects
+  nameWithType: Glitch9.ScriptableObjects
+  fullName: Glitch9.ScriptableObjects
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.ScriptableObjects
+    name: ScriptableObjects
+    href: Glitch9.ScriptableObjects.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.ScriptableObjects
+    name: ScriptableObjects
+    href: Glitch9.ScriptableObjects.html
+- uid: Glitch9.AIDevKit.Client.AIClientSettings`1
+  commentId: T:Glitch9.AIDevKit.Client.AIClientSettings`1
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html
+  name: AIClientSettings<TSelf>
+  nameWithType: AIClientSettings<TSelf>
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<TSelf>
+  nameWithType.vb: AIClientSettings(Of TSelf)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of TSelf)
+  name.vb: AIClientSettings(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings`1
+    name: AIClientSettings
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings`1
+    name: AIClientSettings
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.AIDevKit.Client
+  commentId: N:Glitch9.AIDevKit.Client
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Client
+  nameWithType: Glitch9.AIDevKit.Client
+  fullName: Glitch9.AIDevKit.Client
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+- uid: Glitch9.AIDevKit.Client.AIClientSettings`1.oldApiKey
+  commentId: F:Glitch9.AIDevKit.Client.AIClientSettings`1.oldApiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_oldApiKey
+  name: oldApiKey
+  nameWithType: AIClientSettings<TSelf>.oldApiKey
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<TSelf>.oldApiKey
+  nameWithType.vb: AIClientSettings(Of TSelf).oldApiKey
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of TSelf).oldApiKey
+- uid: Glitch9.AIDevKit.Client.AIClientSettings`1.encryptedApiKey
+  commentId: F:Glitch9.AIDevKit.Client.AIClientSettings`1.encryptedApiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_encryptedApiKey
+  name: encryptedApiKey
+  nameWithType: AIClientSettings<TSelf>.encryptedApiKey
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<TSelf>.encryptedApiKey
+  nameWithType.vb: AIClientSettings(Of TSelf).encryptedApiKey
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of TSelf).encryptedApiKey
+- uid: Glitch9.AIDevKit.Client.AIClientSettings`1.encryptApiKey
+  commentId: F:Glitch9.AIDevKit.Client.AIClientSettings`1.encryptApiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_encryptApiKey
+  name: encryptApiKey
+  nameWithType: AIClientSettings<TSelf>.encryptApiKey
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<TSelf>.encryptApiKey
+  nameWithType.vb: AIClientSettings(Of TSelf).encryptApiKey
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of TSelf).encryptApiKey
+- uid: Glitch9.AIDevKit.Client.AIClientSettings`1.apiKey
+  commentId: F:Glitch9.AIDevKit.Client.AIClientSettings`1.apiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_apiKey
+  name: apiKey
+  nameWithType: AIClientSettings<TSelf>.apiKey
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<TSelf>.apiKey
+  nameWithType.vb: AIClientSettings(Of TSelf).apiKey
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of TSelf).apiKey
+- uid: Glitch9.AIDevKit.Client.AIClientSettings`1.GetApiKey
+  commentId: M:Glitch9.AIDevKit.Client.AIClientSettings`1.GetApiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_GetApiKey
+  name: GetApiKey()
+  nameWithType: AIClientSettings<TSelf>.GetApiKey()
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<TSelf>.GetApiKey()
+  nameWithType.vb: AIClientSettings(Of TSelf).GetApiKey()
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of TSelf).GetApiKey()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings`1.GetApiKey
+    name: GetApiKey
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_GetApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings`1.GetApiKey
+    name: GetApiKey
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_GetApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClientSettings`1.HasApiKey
+  commentId: M:Glitch9.AIDevKit.Client.AIClientSettings`1.HasApiKey
+  href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_HasApiKey
+  name: HasApiKey()
+  nameWithType: AIClientSettings<TSelf>.HasApiKey()
+  fullName: Glitch9.AIDevKit.Client.AIClientSettings<TSelf>.HasApiKey()
+  nameWithType.vb: AIClientSettings(Of TSelf).HasApiKey()
+  fullName.vb: Glitch9.AIDevKit.Client.AIClientSettings(Of TSelf).HasApiKey()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings`1.HasApiKey
+    name: HasApiKey
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_HasApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClientSettings`1.HasApiKey
+    name: HasApiKey
+    href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_HasApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.ScriptableObjects.ScriptableResource`1.Instance
+  commentId: P:Glitch9.ScriptableObjects.ScriptableResource`1.Instance
+  name: Instance
+  nameWithType: ScriptableResource<TSelf>.Instance
+  fullName: Glitch9.ScriptableObjects.ScriptableResource<TSelf>.Instance
+  nameWithType.vb: ScriptableResource(Of TSelf).Instance
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf).Instance
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.Organization*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.Organization
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_Organization
+  name: Organization
+  nameWithType: OpenAISettings.Organization
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.Organization
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.ProjectId*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.ProjectId
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_ProjectId
+  name: ProjectId
+  nameWithType: OpenAISettings.ProjectId
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.ProjectId
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultAssistantAPIModel*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultAssistantAPIModel
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_DefaultAssistantAPIModel
+  name: DefaultAssistantAPIModel
+  nameWithType: OpenAISettings.DefaultAssistantAPIModel
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultAssistantAPIModel
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultLLM*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultLLM
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_DefaultLLM
+  name: DefaultLLM
+  nameWithType: OpenAISettings.DefaultLLM
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultLLM
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultIMG*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultIMG
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_DefaultIMG
+  name: DefaultIMG
+  nameWithType: OpenAISettings.DefaultIMG
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultIMG
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultTTS*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultTTS
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_DefaultTTS
+  name: DefaultTTS
+  nameWithType: OpenAISettings.DefaultTTS
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultTTS
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultSTT*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultSTT
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_DefaultSTT
+  name: DefaultSTT
+  nameWithType: OpenAISettings.DefaultSTT
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultSTT
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultEMB*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultEMB
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_DefaultEMB
+  name: DefaultEMB
+  nameWithType: OpenAISettings.DefaultEMB
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultEMB
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultMOD*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultMOD
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_DefaultMOD
+  name: DefaultMOD
+  nameWithType: OpenAISettings.DefaultMOD
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultMOD
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultRTM*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultRTM
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_DefaultRTM
+  name: DefaultRTM
+  nameWithType: OpenAISettings.DefaultRTM
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultRTM
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultVoice*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultVoice
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_DefaultVoice
+  name: DefaultVoice
+  nameWithType: OpenAISettings.DefaultVoice
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.DefaultVoice
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.GetAdminApiKey*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.GetAdminApiKey
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_GetAdminApiKey
+  name: GetAdminApiKey
+  nameWithType: OpenAISettings.GetAdminApiKey
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.GetAdminApiKey
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_IsDefaultModel_System_String_Glitch9_AIDevKit_ModelCapability_
+  name: IsDefaultModel
+  nameWithType: OpenAISettings.IsDefaultModel
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel
+- uid: Glitch9.AIDevKit.ModelCapability
+  commentId: T:Glitch9.AIDevKit.ModelCapability
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelCapability.html
+  name: ModelCapability
+  nameWithType: ModelCapability
+  fullName: Glitch9.AIDevKit.ModelCapability
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultVoice*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultVoice
+  href: Glitch9.AIDevKit.OpenAI.OpenAISettings.html#Glitch9_AIDevKit_OpenAI_OpenAISettings_IsDefaultVoice_System_String_
+  name: IsDefaultVoice
+  nameWithType: OpenAISettings.IsDefaultVoice
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultVoice

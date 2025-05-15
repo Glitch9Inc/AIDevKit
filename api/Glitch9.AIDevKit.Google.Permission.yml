@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.Permission
+  commentId: T:Glitch9.AIDevKit.Google.Permission
+  id: Permission
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.Permission.EmailAddress
+  - Glitch9.AIDevKit.Google.Permission.GranteeType
+  - Glitch9.AIDevKit.Google.Permission.Name
+  - Glitch9.AIDevKit.Google.Permission.Role
+  langs:
+  - csharp
+  - vb
+  name: Permission
+  nameWithType: Permission
+  fullName: Glitch9.AIDevKit.Google.Permission
+  type: Class
+  source:
+    id: Permission
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Permission.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Permission resource grants user, group or the rest of the world access to the PaLM API resource (e.g. <xref href="Glitch9.AIDevKit.Google.TunedModel" data-throw-if-not-resolved="false"></xref> or <xref href="Glitch9.AIDevKit.Google.Corpus" data-throw-if-not-resolved="false"></xref>).
+
+    <p>A role is a collection of permitted operations that allows users to perform specific actions on PaLM API resources.
+
+    To make them available to users, groups, or service accounts, you assign roles. When you assign a role,
+
+    you grant permissions that the role contains.</p>
+
+    <p>There are three concentric roles. Each role is a superset of the previous role's permitted operations:</p>
+
+    <p>- reader can use the resource (e.g. tuned model, corpus) for inference</p>
+
+    <p>- writer has reader's permissions and additionally can edit and share</p>
+
+    <p>- owner has writer's permissions and additionally can delete</p>
+  example: []
+  syntax:
+    content: public class Permission
+    content.vb: Public Class Permission
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.Google.Permission.Name
+  commentId: P:Glitch9.AIDevKit.Google.Permission.Name
+  id: Name
+  parent: Glitch9.AIDevKit.Google.Permission
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Permission.Name
+  fullName: Glitch9.AIDevKit.Google.Permission.Name
+  type: Property
+  source:
+    id: Name
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Permission.cs
+    startLine: 20
+  namespace: Glitch9.AIDevKit.Google
+  summary: Output only. Identifier. The permission name. A unique name will be generated on create.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Glitch9.AIDevKit.Google.Permission.Name*
+- uid: Glitch9.AIDevKit.Google.Permission.GranteeType
+  commentId: P:Glitch9.AIDevKit.Google.Permission.GranteeType
+  id: GranteeType
+  parent: Glitch9.AIDevKit.Google.Permission
+  langs:
+  - csharp
+  - vb
+  name: GranteeType
+  nameWithType: Permission.GranteeType
+  fullName: Glitch9.AIDevKit.Google.Permission.GranteeType
+  type: Property
+  source:
+    id: GranteeType
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Permission.cs
+    startLine: 25
+  namespace: Glitch9.AIDevKit.Google
+  summary: Optional. Immutable. The type of the grantee.
+  example: []
+  syntax:
+    content: public GranteeType GranteeType { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.GranteeType
+    content.vb: Public Property GranteeType As GranteeType
+  overload: Glitch9.AIDevKit.Google.Permission.GranteeType*
+- uid: Glitch9.AIDevKit.Google.Permission.EmailAddress
+  commentId: P:Glitch9.AIDevKit.Google.Permission.EmailAddress
+  id: EmailAddress
+  parent: Glitch9.AIDevKit.Google.Permission
+  langs:
+  - csharp
+  - vb
+  name: EmailAddress
+  nameWithType: Permission.EmailAddress
+  fullName: Glitch9.AIDevKit.Google.Permission.EmailAddress
+  type: Property
+  source:
+    id: EmailAddress
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Permission.cs
+    startLine: 30
+  namespace: Glitch9.AIDevKit.Google
+  summary: Optional. Immutable. The email address of the user of group which this permission refers. Field is not set when permission's grantee type is EVERYONE.
+  example: []
+  syntax:
+    content: public string EmailAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EmailAddress As String
+  overload: Glitch9.AIDevKit.Google.Permission.EmailAddress*
+- uid: Glitch9.AIDevKit.Google.Permission.Role
+  commentId: P:Glitch9.AIDevKit.Google.Permission.Role
+  id: Role
+  parent: Glitch9.AIDevKit.Google.Permission
+  langs:
+  - csharp
+  - vb
+  name: Role
+  nameWithType: Permission.Role
+  fullName: Glitch9.AIDevKit.Google.Permission.Role
+  type: Property
+  source:
+    id: Role
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Permission.cs
+    startLine: 35
+  namespace: Glitch9.AIDevKit.Google
+  summary: Required. The role granted by this permission.
+  example: []
+  syntax:
+    content: public ChatRole Role { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ChatRole
+    content.vb: Public Property Role As ChatRole
+  overload: Glitch9.AIDevKit.Google.Permission.Role*
+references:
+- uid: Glitch9.AIDevKit.Google.TunedModel
+  commentId: T:Glitch9.AIDevKit.Google.TunedModel
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.TunedModel.html
+  name: TunedModel
+  nameWithType: TunedModel
+  fullName: Glitch9.AIDevKit.Google.TunedModel
+- uid: Glitch9.AIDevKit.Google.Corpus
+  commentId: T:Glitch9.AIDevKit.Google.Corpus
+  href: Glitch9.AIDevKit.Google.Corpus.html
+  name: Corpus
+  nameWithType: Corpus
+  fullName: Glitch9.AIDevKit.Google.Corpus
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.Google.Permission.Name*
+  commentId: Overload:Glitch9.AIDevKit.Google.Permission.Name
+  href: Glitch9.AIDevKit.Google.Permission.html#Glitch9_AIDevKit_Google_Permission_Name
+  name: Name
+  nameWithType: Permission.Name
+  fullName: Glitch9.AIDevKit.Google.Permission.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.Google.Permission.GranteeType*
+  commentId: Overload:Glitch9.AIDevKit.Google.Permission.GranteeType
+  href: Glitch9.AIDevKit.Google.Permission.html#Glitch9_AIDevKit_Google_Permission_GranteeType
+  name: GranteeType
+  nameWithType: Permission.GranteeType
+  fullName: Glitch9.AIDevKit.Google.Permission.GranteeType
+- uid: Glitch9.AIDevKit.Google.GranteeType
+  commentId: T:Glitch9.AIDevKit.Google.GranteeType
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GranteeType.html
+  name: GranteeType
+  nameWithType: GranteeType
+  fullName: Glitch9.AIDevKit.Google.GranteeType
+- uid: Glitch9.AIDevKit.Google.Permission.EmailAddress*
+  commentId: Overload:Glitch9.AIDevKit.Google.Permission.EmailAddress
+  href: Glitch9.AIDevKit.Google.Permission.html#Glitch9_AIDevKit_Google_Permission_EmailAddress
+  name: EmailAddress
+  nameWithType: Permission.EmailAddress
+  fullName: Glitch9.AIDevKit.Google.Permission.EmailAddress
+- uid: Glitch9.AIDevKit.Google.Permission.Role*
+  commentId: Overload:Glitch9.AIDevKit.Google.Permission.Role
+  href: Glitch9.AIDevKit.Google.Permission.html#Glitch9_AIDevKit_Google_Permission_Role
+  name: Role
+  nameWithType: Permission.Role
+  fullName: Glitch9.AIDevKit.Google.Permission.Role
+- uid: Glitch9.AIDevKit.ChatRole
+  commentId: T:Glitch9.AIDevKit.ChatRole
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatRole.html
+  name: ChatRole
+  nameWithType: ChatRole
+  fullName: Glitch9.AIDevKit.ChatRole
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html

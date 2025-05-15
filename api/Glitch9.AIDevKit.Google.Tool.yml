@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.Tool
+  commentId: T:Glitch9.AIDevKit.Google.Tool
+  id: Tool
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.Tool.#ctor
+  - Glitch9.AIDevKit.Google.Tool.#ctor(Glitch9.AIDevKit.FunctionDeclaration[])
+  - Glitch9.AIDevKit.Google.Tool.#ctor(Glitch9.AIDevKit.IFunctionDelegate[])
+  - Glitch9.AIDevKit.Google.Tool.#ctor(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.FunctionDeclaration})
+  - Glitch9.AIDevKit.Google.Tool.#ctor(System.String[])
+  - Glitch9.AIDevKit.Google.Tool.FunctionDeclarations
+  langs:
+  - csharp
+  - vb
+  name: Tool
+  nameWithType: Tool
+  fullName: Glitch9.AIDevKit.Google.Tool
+  type: Class
+  source:
+    id: Tool
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Tool.cs
+    startLine: 33
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public class Tool
+    content.vb: Public Class Tool
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.Google.Tool.FunctionDeclarations
+  commentId: P:Glitch9.AIDevKit.Google.Tool.FunctionDeclarations
+  id: FunctionDeclarations
+  parent: Glitch9.AIDevKit.Google.Tool
+  langs:
+  - csharp
+  - vb
+  name: FunctionDeclarations
+  nameWithType: Tool.FunctionDeclarations
+  fullName: Glitch9.AIDevKit.Google.Tool.FunctionDeclarations
+  type: Property
+  source:
+    id: FunctionDeclarations
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Tool.cs
+    startLine: 49
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Optional.
+
+    <p>
+
+    A list of FunctionDeclarations available to the model that can be used for function calling.
+
+    </p>
+
+    <p>
+
+    The model or system does not execute the function. Instead, the defined function may be
+
+    returned as a [FunctionCall][content.part.function_call] with arguments to the client side for execution.
+
+
+    The model may decide to call a subset of these functions by populating[FunctionCall][content.part.function_call] in the response.
+
+    The next conversation turn may contain a [FunctionResponse][content.part.function_response]
+
+    with the [content.role] "function" generation context for the next model turn.
+
+    </p>
+  example: []
+  syntax:
+    content: public List<FunctionDeclaration> FunctionDeclarations { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Glitch9.AIDevKit.FunctionDeclaration}
+    content.vb: Public Property FunctionDeclarations As List(Of FunctionDeclaration)
+  overload: Glitch9.AIDevKit.Google.Tool.FunctionDeclarations*
+- uid: Glitch9.AIDevKit.Google.Tool.#ctor
+  commentId: M:Glitch9.AIDevKit.Google.Tool.#ctor
+  id: '#ctor'
+  parent: Glitch9.AIDevKit.Google.Tool
+  langs:
+  - csharp
+  - vb
+  name: Tool()
+  nameWithType: Tool.Tool()
+  fullName: Glitch9.AIDevKit.Google.Tool.Tool()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Tool.cs
+    startLine: 51
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public Tool()
+    content.vb: Public Sub New()
+  overload: Glitch9.AIDevKit.Google.Tool.#ctor*
+  nameWithType.vb: Tool.New()
+  fullName.vb: Glitch9.AIDevKit.Google.Tool.New()
+  name.vb: New()
+- uid: Glitch9.AIDevKit.Google.Tool.#ctor(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.FunctionDeclaration})
+  commentId: M:Glitch9.AIDevKit.Google.Tool.#ctor(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.FunctionDeclaration})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.FunctionDeclaration})'
+  parent: Glitch9.AIDevKit.Google.Tool
+  langs:
+  - csharp
+  - vb
+  name: Tool(IEnumerable<FunctionDeclaration>)
+  nameWithType: Tool.Tool(IEnumerable<FunctionDeclaration>)
+  fullName: Glitch9.AIDevKit.Google.Tool.Tool(System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.FunctionDeclaration>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Tool.cs
+    startLine: 53
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public Tool(IEnumerable<FunctionDeclaration> selectMany)
+    parameters:
+    - id: selectMany
+      type: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.FunctionDeclaration}
+    content.vb: Public Sub New(selectMany As IEnumerable(Of FunctionDeclaration))
+  overload: Glitch9.AIDevKit.Google.Tool.#ctor*
+  nameWithType.vb: Tool.New(IEnumerable(Of FunctionDeclaration))
+  fullName.vb: Glitch9.AIDevKit.Google.Tool.New(System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.FunctionDeclaration))
+  name.vb: New(IEnumerable(Of FunctionDeclaration))
+- uid: Glitch9.AIDevKit.Google.Tool.#ctor(Glitch9.AIDevKit.FunctionDeclaration[])
+  commentId: M:Glitch9.AIDevKit.Google.Tool.#ctor(Glitch9.AIDevKit.FunctionDeclaration[])
+  id: '#ctor(Glitch9.AIDevKit.FunctionDeclaration[])'
+  parent: Glitch9.AIDevKit.Google.Tool
+  langs:
+  - csharp
+  - vb
+  name: Tool(params FunctionDeclaration[])
+  nameWithType: Tool.Tool(params FunctionDeclaration[])
+  fullName: Glitch9.AIDevKit.Google.Tool.Tool(params Glitch9.AIDevKit.FunctionDeclaration[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Tool.cs
+    startLine: 58
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public Tool(params FunctionDeclaration[] functionDeclarations)
+    parameters:
+    - id: functionDeclarations
+      type: Glitch9.AIDevKit.FunctionDeclaration[]
+    content.vb: Public Sub New(ParamArray functionDeclarations As FunctionDeclaration())
+  overload: Glitch9.AIDevKit.Google.Tool.#ctor*
+  nameWithType.vb: Tool.New(ParamArray FunctionDeclaration())
+  fullName.vb: Glitch9.AIDevKit.Google.Tool.New(ParamArray Glitch9.AIDevKit.FunctionDeclaration())
+  name.vb: New(ParamArray FunctionDeclaration())
+- uid: Glitch9.AIDevKit.Google.Tool.#ctor(System.String[])
+  commentId: M:Glitch9.AIDevKit.Google.Tool.#ctor(System.String[])
+  id: '#ctor(System.String[])'
+  parent: Glitch9.AIDevKit.Google.Tool
+  langs:
+  - csharp
+  - vb
+  name: Tool(params string[])
+  nameWithType: Tool.Tool(params string[])
+  fullName: Glitch9.AIDevKit.Google.Tool.Tool(params string[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Tool.cs
+    startLine: 63
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public Tool(params string[] toolNames)
+    parameters:
+    - id: toolNames
+      type: System.String[]
+    content.vb: Public Sub New(ParamArray toolNames As String())
+  overload: Glitch9.AIDevKit.Google.Tool.#ctor*
+  nameWithType.vb: Tool.New(ParamArray String())
+  fullName.vb: Glitch9.AIDevKit.Google.Tool.New(ParamArray String())
+  name.vb: New(ParamArray String())
+- uid: Glitch9.AIDevKit.Google.Tool.#ctor(Glitch9.AIDevKit.IFunctionDelegate[])
+  commentId: M:Glitch9.AIDevKit.Google.Tool.#ctor(Glitch9.AIDevKit.IFunctionDelegate[])
+  id: '#ctor(Glitch9.AIDevKit.IFunctionDelegate[])'
+  parent: Glitch9.AIDevKit.Google.Tool
+  langs:
+  - csharp
+  - vb
+  name: Tool(params IFunctionDelegate[])
+  nameWithType: Tool.Tool(params IFunctionDelegate[])
+  fullName: Glitch9.AIDevKit.Google.Tool.Tool(params Glitch9.AIDevKit.IFunctionDelegate[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Common/Tool.cs
+    startLine: 73
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public Tool(params IFunctionDelegate[] functionDelegates)
+    parameters:
+    - id: functionDelegates
+      type: Glitch9.AIDevKit.IFunctionDelegate[]
+    content.vb: Public Sub New(ParamArray functionDelegates As IFunctionDelegate())
+  overload: Glitch9.AIDevKit.Google.Tool.#ctor*
+  nameWithType.vb: Tool.New(ParamArray IFunctionDelegate())
+  fullName.vb: Glitch9.AIDevKit.Google.Tool.New(ParamArray Glitch9.AIDevKit.IFunctionDelegate())
+  name.vb: New(ParamArray IFunctionDelegate())
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.Google.Tool.FunctionDeclarations*
+  commentId: Overload:Glitch9.AIDevKit.Google.Tool.FunctionDeclarations
+  href: Glitch9.AIDevKit.Google.Tool.html#Glitch9_AIDevKit_Google_Tool_FunctionDeclarations
+  name: FunctionDeclarations
+  nameWithType: Tool.FunctionDeclarations
+  fullName: Glitch9.AIDevKit.Google.Tool.FunctionDeclarations
+- uid: System.Collections.Generic.List{Glitch9.AIDevKit.FunctionDeclaration}
+  commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.FunctionDeclaration}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: Glitch9.AIDevKit.FunctionDeclaration.html
+  name: List<FunctionDeclaration>
+  nameWithType: List<FunctionDeclaration>
+  fullName: System.Collections.Generic.List<Glitch9.AIDevKit.FunctionDeclaration>
+  nameWithType.vb: List(Of FunctionDeclaration)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.AIDevKit.FunctionDeclaration)
+  name.vb: List(Of FunctionDeclaration)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.FunctionDeclaration
+    name: FunctionDeclaration
+    href: Glitch9.AIDevKit.FunctionDeclaration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.FunctionDeclaration
+    name: FunctionDeclaration
+    href: Glitch9.AIDevKit.FunctionDeclaration.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Glitch9.AIDevKit.Google.Tool.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.Google.Tool.#ctor
+  href: Glitch9.AIDevKit.Google.Tool.html#Glitch9_AIDevKit_Google_Tool__ctor
+  name: Tool
+  nameWithType: Tool.Tool
+  fullName: Glitch9.AIDevKit.Google.Tool.Tool
+  nameWithType.vb: Tool.New
+  fullName.vb: Glitch9.AIDevKit.Google.Tool.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.FunctionDeclaration}
+  commentId: T:System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.FunctionDeclaration}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: Glitch9.AIDevKit.FunctionDeclaration.html
+  name: IEnumerable<FunctionDeclaration>
+  nameWithType: IEnumerable<FunctionDeclaration>
+  fullName: System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.FunctionDeclaration>
+  nameWithType.vb: IEnumerable(Of FunctionDeclaration)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.FunctionDeclaration)
+  name.vb: IEnumerable(Of FunctionDeclaration)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.FunctionDeclaration
+    name: FunctionDeclaration
+    href: Glitch9.AIDevKit.FunctionDeclaration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.FunctionDeclaration
+    name: FunctionDeclaration
+    href: Glitch9.AIDevKit.FunctionDeclaration.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.FunctionDeclaration[]
+  isExternal: true
+  href: Glitch9.AIDevKit.FunctionDeclaration.html
+  name: FunctionDeclaration[]
+  nameWithType: FunctionDeclaration[]
+  fullName: Glitch9.AIDevKit.FunctionDeclaration[]
+  nameWithType.vb: FunctionDeclaration()
+  fullName.vb: Glitch9.AIDevKit.FunctionDeclaration()
+  name.vb: FunctionDeclaration()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.FunctionDeclaration
+    name: FunctionDeclaration
+    href: Glitch9.AIDevKit.FunctionDeclaration.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.FunctionDeclaration
+    name: FunctionDeclaration
+    href: Glitch9.AIDevKit.FunctionDeclaration.html
+  - name: (
+  - name: )
+- uid: System.String[]
+  isExternal: true
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.IFunctionDelegate[]
+  isExternal: true
+  href: Glitch9.AIDevKit.IFunctionDelegate.html
+  name: IFunctionDelegate[]
+  nameWithType: IFunctionDelegate[]
+  fullName: Glitch9.AIDevKit.IFunctionDelegate[]
+  nameWithType.vb: IFunctionDelegate()
+  fullName.vb: Glitch9.AIDevKit.IFunctionDelegate()
+  name.vb: IFunctionDelegate()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IFunctionDelegate
+    name: IFunctionDelegate
+    href: Glitch9.AIDevKit.IFunctionDelegate.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IFunctionDelegate
+    name: IFunctionDelegate
+    href: Glitch9.AIDevKit.IFunctionDelegate.html
+  - name: (
+  - name: )

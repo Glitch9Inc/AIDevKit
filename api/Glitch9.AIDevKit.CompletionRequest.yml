@@ -1,0 +1,849 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.CompletionRequest
+  commentId: T:Glitch9.AIDevKit.CompletionRequest
+  id: CompletionRequest
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.CompletionRequest.Context
+  - Glitch9.AIDevKit.CompletionRequest.Raw
+  - Glitch9.AIDevKit.CompletionRequest.Suffix
+  - Glitch9.AIDevKit.CompletionRequest.Template
+  langs:
+  - csharp
+  - vb
+  name: CompletionRequest
+  nameWithType: CompletionRequest
+  fullName: Glitch9.AIDevKit.CompletionRequest
+  type: Class
+  source:
+    id: CompletionRequest
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequest.cs
+    startLine: 9
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: 'public class CompletionRequest : CompletionRequestBase'
+    content.vb: Public Class CompletionRequest Inherits CompletionRequestBase
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RequestBody
+  - Glitch9.AIDevKit.ModelRequest
+  - Glitch9.AIDevKit.CompletionRequestBase
+  inheritedMembers:
+  - Glitch9.AIDevKit.CompletionRequestBase.Prompt
+  - Glitch9.AIDevKit.CompletionRequestBase.SystemInstruction
+  - Glitch9.AIDevKit.CompletionRequestBase.Stream
+  - Glitch9.AIDevKit.CompletionRequestBase.StreamOptions
+  - Glitch9.AIDevKit.CompletionRequestBase.ModelOptions
+  - Glitch9.AIDevKit.CompletionRequestBase.ResponseFormat
+  - Glitch9.AIDevKit.CompletionRequestBase.ReasoningOptions
+  - Glitch9.AIDevKit.CompletionRequestBase.Models
+  - Glitch9.AIDevKit.CompletionRequestBase.Transforms
+  - Glitch9.AIDevKit.CompletionRequestBase.KeepAlive
+  - Glitch9.AIDevKit.CompletionRequestBase.AttachedFiles
+  - Glitch9.AIDevKit.ModelRequest.Model
+  - Glitch9.AIDevKit.ModelRequest.N
+  - Glitch9.AIDevKit.ModelRequest.Metadata
+  - Glitch9.AIDevKit.ModelRequest.User
+  extensionMethods:
+  - Glitch9.AIDevKit.CompletionRequest.Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync
+  - Glitch9.AIDevKit.CompletionRequest.Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatStreamHandler)
+  - Glitch9.AIDevKit.CompletionRequest.Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync
+  - Glitch9.AIDevKit.CompletionRequest.Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.CompletionRequest.Suffix
+  commentId: P:Glitch9.AIDevKit.CompletionRequest.Suffix
+  id: Suffix
+  parent: Glitch9.AIDevKit.CompletionRequest
+  langs:
+  - csharp
+  - vb
+  name: Suffix
+  nameWithType: CompletionRequest.Suffix
+  fullName: Glitch9.AIDevKit.CompletionRequest.Suffix
+  type: Property
+  source:
+    id: Suffix
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequest.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit
+  summary: Optional (Ollama-only). The text after the model response.
+  example: []
+  syntax:
+    content: public string Suffix { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Suffix As String
+  overload: Glitch9.AIDevKit.CompletionRequest.Suffix*
+- uid: Glitch9.AIDevKit.CompletionRequest.Template
+  commentId: P:Glitch9.AIDevKit.CompletionRequest.Template
+  id: Template
+  parent: Glitch9.AIDevKit.CompletionRequest
+  langs:
+  - csharp
+  - vb
+  name: Template
+  nameWithType: CompletionRequest.Template
+  fullName: Glitch9.AIDevKit.CompletionRequest.Template
+  type: Property
+  source:
+    id: Template
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequest.cs
+    startLine: 20
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Optional (Ollama-only). 
+
+    The prompt template to use (overrides what is defined in the Modelfile).
+  example: []
+  syntax:
+    content: public string Template { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Template As String
+  overload: Glitch9.AIDevKit.CompletionRequest.Template*
+- uid: Glitch9.AIDevKit.CompletionRequest.Raw
+  commentId: P:Glitch9.AIDevKit.CompletionRequest.Raw
+  id: Raw
+  parent: Glitch9.AIDevKit.CompletionRequest
+  langs:
+  - csharp
+  - vb
+  name: Raw
+  nameWithType: CompletionRequest.Raw
+  fullName: Glitch9.AIDevKit.CompletionRequest.Raw
+  type: Property
+  source:
+    id: Raw
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequest.cs
+    startLine: 26
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Optional (Ollama-only). 
+
+    If true no formatting will be applied to the prompt.
+  example: []
+  syntax:
+    content: public bool? Raw { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property Raw As Boolean?
+  overload: Glitch9.AIDevKit.CompletionRequest.Raw*
+- uid: Glitch9.AIDevKit.CompletionRequest.Context
+  commentId: P:Glitch9.AIDevKit.CompletionRequest.Context
+  id: Context
+  parent: Glitch9.AIDevKit.CompletionRequest
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: CompletionRequest.Context
+  fullName: Glitch9.AIDevKit.CompletionRequest.Context
+  type: Property
+  source:
+    id: Context
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Request/CompletionRequest.cs
+    startLine: 32
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Optional (Ollama-only). 
+
+    The context parameter returned from a previous request to /generate.
+  example: []
+  syntax:
+    content: public List<int> Context { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Property Context As List(Of Integer)
+  overload: Glitch9.AIDevKit.CompletionRequest.Context*
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RequestBody
+  nameWithType: RequestBody
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
+- uid: Glitch9.AIDevKit.ModelRequest
+  commentId: T:Glitch9.AIDevKit.ModelRequest
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelRequest.html
+  name: ModelRequest
+  nameWithType: ModelRequest
+  fullName: Glitch9.AIDevKit.ModelRequest
+- uid: Glitch9.AIDevKit.CompletionRequestBase
+  commentId: T:Glitch9.AIDevKit.CompletionRequestBase
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.CompletionRequestBase.html
+  name: CompletionRequestBase
+  nameWithType: CompletionRequestBase
+  fullName: Glitch9.AIDevKit.CompletionRequestBase
+- uid: Glitch9.AIDevKit.CompletionRequestBase.Prompt
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.Prompt
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_Prompt
+  name: Prompt
+  nameWithType: CompletionRequestBase.Prompt
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.Prompt
+- uid: Glitch9.AIDevKit.CompletionRequestBase.SystemInstruction
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.SystemInstruction
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_SystemInstruction
+  name: SystemInstruction
+  nameWithType: CompletionRequestBase.SystemInstruction
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.SystemInstruction
+- uid: Glitch9.AIDevKit.CompletionRequestBase.Stream
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.Stream
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_Stream
+  name: Stream
+  nameWithType: CompletionRequestBase.Stream
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.Stream
+- uid: Glitch9.AIDevKit.CompletionRequestBase.StreamOptions
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.StreamOptions
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_StreamOptions
+  name: StreamOptions
+  nameWithType: CompletionRequestBase.StreamOptions
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.StreamOptions
+- uid: Glitch9.AIDevKit.CompletionRequestBase.ModelOptions
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.ModelOptions
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_ModelOptions
+  name: ModelOptions
+  nameWithType: CompletionRequestBase.ModelOptions
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.ModelOptions
+- uid: Glitch9.AIDevKit.CompletionRequestBase.ResponseFormat
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.ResponseFormat
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_ResponseFormat
+  name: ResponseFormat
+  nameWithType: CompletionRequestBase.ResponseFormat
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.ResponseFormat
+- uid: Glitch9.AIDevKit.CompletionRequestBase.ReasoningOptions
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.ReasoningOptions
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_ReasoningOptions
+  name: ReasoningOptions
+  nameWithType: CompletionRequestBase.ReasoningOptions
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.ReasoningOptions
+- uid: Glitch9.AIDevKit.CompletionRequestBase.Models
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.Models
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_Models
+  name: Models
+  nameWithType: CompletionRequestBase.Models
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.Models
+- uid: Glitch9.AIDevKit.CompletionRequestBase.Transforms
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.Transforms
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_Transforms
+  name: Transforms
+  nameWithType: CompletionRequestBase.Transforms
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.Transforms
+- uid: Glitch9.AIDevKit.CompletionRequestBase.KeepAlive
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.KeepAlive
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_KeepAlive
+  name: KeepAlive
+  nameWithType: CompletionRequestBase.KeepAlive
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.KeepAlive
+- uid: Glitch9.AIDevKit.CompletionRequestBase.AttachedFiles
+  commentId: P:Glitch9.AIDevKit.CompletionRequestBase.AttachedFiles
+  parent: Glitch9.AIDevKit.CompletionRequestBase
+  href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_AttachedFiles
+  name: AttachedFiles
+  nameWithType: CompletionRequestBase.AttachedFiles
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.AttachedFiles
+- uid: Glitch9.AIDevKit.ModelRequest.Model
+  commentId: P:Glitch9.AIDevKit.ModelRequest.Model
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model
+  name: Model
+  nameWithType: ModelRequest.Model
+  fullName: Glitch9.AIDevKit.ModelRequest.Model
+- uid: Glitch9.AIDevKit.ModelRequest.N
+  commentId: P:Glitch9.AIDevKit.ModelRequest.N
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N
+  name: N
+  nameWithType: ModelRequest.N
+  fullName: Glitch9.AIDevKit.ModelRequest.N
+- uid: Glitch9.AIDevKit.ModelRequest.Metadata
+  commentId: P:Glitch9.AIDevKit.ModelRequest.Metadata
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata
+  name: Metadata
+  nameWithType: ModelRequest.Metadata
+  fullName: Glitch9.AIDevKit.ModelRequest.Metadata
+- uid: Glitch9.AIDevKit.ModelRequest.User
+  commentId: P:Glitch9.AIDevKit.ModelRequest.User
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User
+  name: User
+  nameWithType: ModelRequest.User
+  fullName: Glitch9.AIDevKit.ModelRequest.User
+- uid: Glitch9.AIDevKit.CompletionRequest.Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync
+  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  parent: Glitch9.AIDevKit.Ollama.RequestExtensions
+  definition: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  name: ExecuteAsync(CompletionRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(CompletionRequest)
+  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.CompletionRequest.Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  parent: Glitch9.AIDevKit.Ollama.RequestExtensions
+  definition: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  name: StreamAsync(CompletionRequest, ChatStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(CompletionRequest, ChatStreamHandler)
+  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatStreamHandler
+    name: ChatStreamHandler
+    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatStreamHandler
+    name: ChatStreamHandler
+    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - name: )
+- uid: Glitch9.AIDevKit.CompletionRequest.Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync
+  commentId: M:Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  parent: Glitch9.AIDevKit.OpenRouter.RequestExtensions
+  definition: Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  name: ExecuteAsync(CompletionRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(CompletionRequest)
+  fullName: Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.CompletionRequest.Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatStreamHandler)
+  commentId: M:Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  parent: Glitch9.AIDevKit.OpenRouter.RequestExtensions
+  definition: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  name: StreamAsync(CompletionRequest, ChatStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(CompletionRequest, ChatStreamHandler)
+  fullName: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatStreamHandler
+    name: ChatStreamHandler
+    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatStreamHandler
+    name: ChatStreamHandler
+    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  name: ExecuteAsync(CompletionRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(CompletionRequest)
+  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.Ollama.RequestExtensions
+  commentId: T:Glitch9.AIDevKit.Ollama.RequestExtensions
+  parent: Glitch9.AIDevKit.Ollama
+  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html
+  name: RequestExtensions
+  nameWithType: RequestExtensions
+  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions
+- uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  name: StreamAsync(CompletionRequest, ChatStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(CompletionRequest, ChatStreamHandler)
+  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatStreamHandler
+    name: ChatStreamHandler
+    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatStreamHandler
+    name: ChatStreamHandler
+    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - name: )
+- uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  commentId: M:Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  name: ExecuteAsync(CompletionRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(CompletionRequest)
+  fullName: Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_CompletionRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions
+  commentId: T:Glitch9.AIDevKit.OpenRouter.RequestExtensions
+  parent: Glitch9.AIDevKit.OpenRouter
+  href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html
+  name: RequestExtensions
+  nameWithType: RequestExtensions
+  fullName: Glitch9.AIDevKit.OpenRouter.RequestExtensions
+- uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  commentId: M:Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  name: StreamAsync(CompletionRequest, ChatStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(CompletionRequest, ChatStreamHandler)
+  fullName: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatStreamHandler
+    name: ChatStreamHandler
+    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  - name: (
+  - uid: Glitch9.AIDevKit.CompletionRequest
+    name: CompletionRequest
+    href: Glitch9.AIDevKit.CompletionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatStreamHandler
+    name: ChatStreamHandler
+    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - name: )
+- uid: Glitch9.AIDevKit.Ollama
+  commentId: N:Glitch9.AIDevKit.Ollama
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Ollama
+  nameWithType: Glitch9.AIDevKit.Ollama
+  fullName: Glitch9.AIDevKit.Ollama
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+- uid: Glitch9.AIDevKit.OpenRouter
+  commentId: N:Glitch9.AIDevKit.OpenRouter
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenRouter
+  nameWithType: Glitch9.AIDevKit.OpenRouter
+  fullName: Glitch9.AIDevKit.OpenRouter
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenRouter
+    name: OpenRouter
+    href: Glitch9.AIDevKit.OpenRouter.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenRouter
+    name: OpenRouter
+    href: Glitch9.AIDevKit.OpenRouter.html
+- uid: Glitch9.AIDevKit.CompletionRequest.Suffix*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequest.Suffix
+  href: Glitch9.AIDevKit.CompletionRequest.html#Glitch9_AIDevKit_CompletionRequest_Suffix
+  name: Suffix
+  nameWithType: CompletionRequest.Suffix
+  fullName: Glitch9.AIDevKit.CompletionRequest.Suffix
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.CompletionRequest.Template*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequest.Template
+  href: Glitch9.AIDevKit.CompletionRequest.html#Glitch9_AIDevKit_CompletionRequest_Template
+  name: Template
+  nameWithType: CompletionRequest.Template
+  fullName: Glitch9.AIDevKit.CompletionRequest.Template
+- uid: Glitch9.AIDevKit.CompletionRequest.Raw*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequest.Raw
+  href: Glitch9.AIDevKit.CompletionRequest.html#Glitch9_AIDevKit_CompletionRequest_Raw
+  name: Raw
+  nameWithType: CompletionRequest.Raw
+  fullName: Glitch9.AIDevKit.CompletionRequest.Raw
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.CompletionRequest.Context*
+  commentId: Overload:Glitch9.AIDevKit.CompletionRequest.Context
+  href: Glitch9.AIDevKit.CompletionRequest.html#Glitch9_AIDevKit_CompletionRequest_Context
+  name: Context
+  nameWithType: CompletionRequest.Context
+  fullName: Glitch9.AIDevKit.CompletionRequest.Context
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

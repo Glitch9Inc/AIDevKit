@@ -1,0 +1,339 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService
+  commentId: T:Glitch9.AIDevKit.Ollama.Services.EmbeddingsService
+  id: EmbeddingsService
+  parent: Glitch9.AIDevKit.Ollama.Services
+  children:
+  - Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.#ctor(Glitch9.AIDevKit.Ollama.Ollama)
+  - Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.CreateAsync(Glitch9.AIDevKit.Ollama.EmbedRequest)
+  langs:
+  - csharp
+  - vb
+  name: EmbeddingsService
+  nameWithType: EmbeddingsService
+  fullName: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService
+  type: Class
+  source:
+    id: EmbeddingsService
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Services/EmbeddingsService.cs
+    startLine: 5
+  namespace: Glitch9.AIDevKit.Ollama.Services
+  syntax:
+    content: 'public class EmbeddingsService : CRUDServiceBase<Ollama>'
+    content.vb: Public Class EmbeddingsService Inherits CRUDServiceBase(Of Ollama)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Ollama.Ollama}
+- uid: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.#ctor(Glitch9.AIDevKit.Ollama.Ollama)
+  commentId: M:Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.#ctor(Glitch9.AIDevKit.Ollama.Ollama)
+  id: '#ctor(Glitch9.AIDevKit.Ollama.Ollama)'
+  parent: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService
+  langs:
+  - csharp
+  - vb
+  name: EmbeddingsService(Ollama)
+  nameWithType: EmbeddingsService.EmbeddingsService(Ollama)
+  fullName: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.EmbeddingsService(Glitch9.AIDevKit.Ollama.Ollama)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Services/EmbeddingsService.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit.Ollama.Services
+  syntax:
+    content: public EmbeddingsService(Ollama client)
+    parameters:
+    - id: client
+      type: Glitch9.AIDevKit.Ollama.Ollama
+    content.vb: Public Sub New(client As Ollama)
+  overload: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.#ctor*
+  nameWithType.vb: EmbeddingsService.New(Ollama)
+  fullName.vb: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.New(Glitch9.AIDevKit.Ollama.Ollama)
+  name.vb: New(Ollama)
+- uid: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.CreateAsync(Glitch9.AIDevKit.Ollama.EmbedRequest)
+  commentId: M:Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.CreateAsync(Glitch9.AIDevKit.Ollama.EmbedRequest)
+  id: CreateAsync(Glitch9.AIDevKit.Ollama.EmbedRequest)
+  parent: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(EmbedRequest)
+  nameWithType: EmbeddingsService.CreateAsync(EmbedRequest)
+  fullName: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.CreateAsync(Glitch9.AIDevKit.Ollama.EmbedRequest)
+  type: Method
+  source:
+    id: CreateAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Services/EmbeddingsService.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit.Ollama.Services
+  summary: Generate embeddings from a model
+  example: []
+  syntax:
+    content: public UniTask<EmbedResponse> CreateAsync(EmbedRequest request)
+    parameters:
+    - id: request
+      type: Glitch9.AIDevKit.Ollama.EmbedRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.Ollama.EmbedResponse}
+      description: ''
+    content.vb: Public Function CreateAsync(request As EmbedRequest) As UniTask(Of EmbedResponse)
+  overload: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.CreateAsync*
+references:
+- uid: Glitch9.AIDevKit.Ollama.Services
+  commentId: N:Glitch9.AIDevKit.Ollama.Services
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Ollama.Services
+  nameWithType: Glitch9.AIDevKit.Ollama.Services
+  fullName: Glitch9.AIDevKit.Ollama.Services
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama.Services
+    name: Services
+    href: Glitch9.AIDevKit.Ollama.Services.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama.Services
+    name: Services
+    href: Glitch9.AIDevKit.Ollama.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Ollama.Ollama}
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Ollama.Ollama}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  href: Glitch9.AIDevKit.Ollama.Ollama.html
+  name: CRUDServiceBase<Ollama>
+  nameWithType: CRUDServiceBase<Ollama>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<Glitch9.AIDevKit.Ollama.Ollama>
+  nameWithType.vb: CRUDServiceBase(Of Ollama)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of Glitch9.AIDevKit.Ollama.Ollama)
+  name.vb: CRUDServiceBase(Of Ollama)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - uid: Glitch9.AIDevKit.Ollama.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.Ollama.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Ollama.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.Ollama.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  name: CRUDServiceBase<TClient>
+  nameWithType: CRUDServiceBase<TClient>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<TClient>
+  nameWithType.vb: CRUDServiceBase(Of TClient)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of TClient)
+  name.vb: CRUDServiceBase(Of TClient)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - name: TClient
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TClient
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.#ctor
+  href: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.html#Glitch9_AIDevKit_Ollama_Services_EmbeddingsService__ctor_Glitch9_AIDevKit_Ollama_Ollama_
+  name: EmbeddingsService
+  nameWithType: EmbeddingsService.EmbeddingsService
+  fullName: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.EmbeddingsService
+  nameWithType.vb: EmbeddingsService.New
+  fullName.vb: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.New
+  name.vb: New
+- uid: Glitch9.AIDevKit.Ollama.Ollama
+  commentId: T:Glitch9.AIDevKit.Ollama.Ollama
+  parent: Glitch9.AIDevKit.Ollama
+  href: Glitch9.AIDevKit.Ollama.Ollama.html
+  name: Ollama
+  nameWithType: Ollama
+  fullName: Glitch9.AIDevKit.Ollama.Ollama
+- uid: Glitch9.AIDevKit.Ollama
+  commentId: N:Glitch9.AIDevKit.Ollama
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Ollama
+  nameWithType: Glitch9.AIDevKit.Ollama
+  fullName: Glitch9.AIDevKit.Ollama
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+- uid: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.CreateAsync*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.CreateAsync
+  href: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.html#Glitch9_AIDevKit_Ollama_Services_EmbeddingsService_CreateAsync_Glitch9_AIDevKit_Ollama_EmbedRequest_
+  name: CreateAsync
+  nameWithType: EmbeddingsService.CreateAsync
+  fullName: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.CreateAsync
+- uid: Glitch9.AIDevKit.Ollama.EmbedRequest
+  commentId: T:Glitch9.AIDevKit.Ollama.EmbedRequest
+  parent: Glitch9.AIDevKit.Ollama
+  href: Glitch9.AIDevKit.Ollama.EmbedRequest.html
+  name: EmbedRequest
+  nameWithType: EmbedRequest
+  fullName: Glitch9.AIDevKit.Ollama.EmbedRequest
+- uid: UniTask{Glitch9.AIDevKit.Ollama.EmbedResponse}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Ollama.EmbedResponse}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Ollama.EmbedResponse.html
+  name: UniTask<EmbedResponse>
+  nameWithType: UniTask<EmbedResponse>
+  fullName: UniTask<Glitch9.AIDevKit.Ollama.EmbedResponse>
+  nameWithType.vb: UniTask(Of EmbedResponse)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Ollama.EmbedResponse)
+  name.vb: UniTask(Of EmbedResponse)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Ollama.EmbedResponse
+    name: EmbedResponse
+    href: Glitch9.AIDevKit.Ollama.EmbedResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Ollama.EmbedResponse
+    name: EmbedResponse
+    href: Glitch9.AIDevKit.Ollama.EmbedResponse.html
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )

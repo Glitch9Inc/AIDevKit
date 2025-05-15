@@ -1,0 +1,796 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Mubert.Mubert
+  commentId: T:Glitch9.AIDevKit.Mubert.Mubert
+  id: Mubert
+  parent: Glitch9.AIDevKit.Mubert
+  children:
+  - Glitch9.AIDevKit.Mubert.Mubert.#ctor
+  - Glitch9.AIDevKit.Mubert.Mubert.DefaultInstance
+  - Glitch9.AIDevKit.Mubert.Mubert.TrackGeneration
+  langs:
+  - csharp
+  - vb
+  name: Mubert
+  nameWithType: Mubert
+  fullName: Glitch9.AIDevKit.Mubert.Mubert
+  type: Class
+  source:
+    id: Mubert
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Mubert/Client/Mubert.cs
+    startLine: 27
+  namespace: Glitch9.AIDevKit.Mubert
+  syntax:
+    content: 'public class Mubert : AIClient<Mubert>'
+    content.vb: Public Class Mubert Inherits AIClient(Of Mubert)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RESTClient
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}
+  inheritedMembers:
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.OnTokensConsumed
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.FormatErrorMessage(System.String)
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.Name
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.Version
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.BetaVersion
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.OnException
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.CRUDLogger
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.BaseUrl
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.GetApiKey
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.HandleException(System.Exception)
+- uid: Glitch9.AIDevKit.Mubert.Mubert.TrackGeneration
+  commentId: P:Glitch9.AIDevKit.Mubert.Mubert.TrackGeneration
+  id: TrackGeneration
+  parent: Glitch9.AIDevKit.Mubert.Mubert
+  langs:
+  - csharp
+  - vb
+  name: TrackGeneration
+  nameWithType: Mubert.TrackGeneration
+  fullName: Glitch9.AIDevKit.Mubert.Mubert.TrackGeneration
+  type: Property
+  source:
+    id: TrackGeneration
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Mubert/Client/Mubert.cs
+    startLine: 30
+  namespace: Glitch9.AIDevKit.Mubert
+  syntax:
+    content: public TrackGenerationService TrackGeneration { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Mubert.Services.TrackGenerationService
+    content.vb: Public ReadOnly Property TrackGeneration As TrackGenerationService
+  overload: Glitch9.AIDevKit.Mubert.Mubert.TrackGeneration*
+- uid: Glitch9.AIDevKit.Mubert.Mubert.DefaultInstance
+  commentId: P:Glitch9.AIDevKit.Mubert.Mubert.DefaultInstance
+  id: DefaultInstance
+  parent: Glitch9.AIDevKit.Mubert.Mubert
+  langs:
+  - csharp
+  - vb
+  name: DefaultInstance
+  nameWithType: Mubert.DefaultInstance
+  fullName: Glitch9.AIDevKit.Mubert.Mubert.DefaultInstance
+  type: Property
+  source:
+    id: DefaultInstance
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Mubert/Client/Mubert.cs
+    startLine: 35
+  namespace: Glitch9.AIDevKit.Mubert
+  summary: The default instance of the MubertClient client.
+  example: []
+  syntax:
+    content: public static Mubert DefaultInstance { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Mubert.Mubert
+    content.vb: Public Shared ReadOnly Property DefaultInstance As Mubert
+  overload: Glitch9.AIDevKit.Mubert.Mubert.DefaultInstance*
+- uid: Glitch9.AIDevKit.Mubert.Mubert.#ctor
+  commentId: M:Glitch9.AIDevKit.Mubert.Mubert.#ctor
+  id: '#ctor'
+  parent: Glitch9.AIDevKit.Mubert.Mubert
+  langs:
+  - csharp
+  - vb
+  name: Mubert()
+  nameWithType: Mubert.Mubert()
+  fullName: Glitch9.AIDevKit.Mubert.Mubert.Mubert()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Mubert/Client/Mubert.cs
+    startLine: 51
+  namespace: Glitch9.AIDevKit.Mubert
+  syntax:
+    content: public Mubert()
+    content.vb: Public Sub New()
+  overload: Glitch9.AIDevKit.Mubert.Mubert.#ctor*
+  nameWithType.vb: Mubert.New()
+  fullName.vb: Glitch9.AIDevKit.Mubert.Mubert.New()
+  name.vb: New()
+references:
+- uid: Glitch9.AIDevKit.Mubert
+  commentId: N:Glitch9.AIDevKit.Mubert
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Mubert
+  nameWithType: Glitch9.AIDevKit.Mubert
+  fullName: Glitch9.AIDevKit.Mubert
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Mubert
+    name: Mubert
+    href: Glitch9.AIDevKit.Mubert.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Mubert
+    name: Mubert
+    href: Glitch9.AIDevKit.Mubert.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RESTClient
+  commentId: T:Glitch9.IO.Networking.RESTApi.RESTClient
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RESTClient
+  nameWithType: RESTClient
+  fullName: Glitch9.IO.Networking.RESTApi.RESTClient
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  href: Glitch9.AIDevKit.Mubert.Mubert.html
+  name: CRUDClient<Mubert>
+  nameWithType: CRUDClient<Mubert>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Mubert.Mubert>
+  nameWithType.vb: CRUDClient(Of Mubert)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Mubert.Mubert)
+  name.vb: CRUDClient(Of Mubert)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: <
+  - uid: Glitch9.AIDevKit.Mubert.Mubert
+    name: Mubert
+    href: Glitch9.AIDevKit.Mubert.Mubert.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Mubert.Mubert
+    name: Mubert
+    href: Glitch9.AIDevKit.Mubert.Mubert.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}
+  commentId: T:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}
+  parent: Glitch9.AIDevKit.Client
+  definition: Glitch9.AIDevKit.Client.AIClient`1
+  href: Glitch9.AIDevKit.Client.AIClient-1.html
+  name: AIClient<Mubert>
+  nameWithType: AIClient<Mubert>
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Mubert.Mubert>
+  nameWithType.vb: AIClient(Of Mubert)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Mubert.Mubert)
+  name.vb: AIClient(Of Mubert)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: <
+  - uid: Glitch9.AIDevKit.Mubert.Mubert
+    name: Mubert
+    href: Glitch9.AIDevKit.Mubert.Mubert.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Mubert.Mubert
+    name: Mubert
+    href: Glitch9.AIDevKit.Mubert.Mubert.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.OnTokensConsumed
+  commentId: P:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.OnTokensConsumed
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed
+  name: OnTokensConsumed
+  nameWithType: AIClient<Mubert>.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Mubert.Mubert>.OnTokensConsumed
+  nameWithType.vb: AIClient(Of Mubert).OnTokensConsumed
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Mubert.Mubert).OnTokensConsumed
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  name: HandleTokenUsage(Model, Usage)
+  nameWithType: AIClient<Mubert>.HandleTokenUsage(Model, Usage)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Mubert.Mubert>.HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  nameWithType.vb: AIClient(Of Mubert).HandleTokenUsage(Model, Usage)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Mubert.Mubert).HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.FormatErrorMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.FormatErrorMessage(System.String)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  name: FormatErrorMessage(string)
+  nameWithType: AIClient<Mubert>.FormatErrorMessage(string)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Mubert.Mubert>.FormatErrorMessage(string)
+  nameWithType.vb: AIClient(Of Mubert).FormatErrorMessage(String)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Mubert.Mubert).FormatErrorMessage(String)
+  name.vb: FormatErrorMessage(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  name: IsDeletedPredicate(RESTResponse)
+  nameWithType: AIClient<Mubert>.IsDeletedPredicate(RESTResponse)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Mubert.Mubert>.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  nameWithType.vb: AIClient(Of Mubert).IsDeletedPredicate(RESTResponse)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Mubert.Mubert).IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Mubert.Mubert}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.Name
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.Name
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  name: Name
+  nameWithType: CRUDClient<Mubert>.Name
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Mubert.Mubert>.Name
+  nameWithType.vb: CRUDClient(Of Mubert).Name
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Mubert.Mubert).Name
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.Version
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.Version
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  name: Version
+  nameWithType: CRUDClient<Mubert>.Version
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Mubert.Mubert>.Version
+  nameWithType.vb: CRUDClient(Of Mubert).Version
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Mubert.Mubert).Version
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.BetaVersion
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.BetaVersion
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  name: BetaVersion
+  nameWithType: CRUDClient<Mubert>.BetaVersion
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Mubert.Mubert>.BetaVersion
+  nameWithType.vb: CRUDClient(Of Mubert).BetaVersion
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Mubert.Mubert).BetaVersion
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.OnException
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.OnException
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  name: OnException
+  nameWithType: CRUDClient<Mubert>.OnException
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Mubert.Mubert>.OnException
+  nameWithType.vb: CRUDClient(Of Mubert).OnException
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Mubert.Mubert).OnException
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.CRUDLogger
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.CRUDLogger
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  name: CRUDLogger
+  nameWithType: CRUDClient<Mubert>.CRUDLogger
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Mubert.Mubert>.CRUDLogger
+  nameWithType.vb: CRUDClient(Of Mubert).CRUDLogger
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Mubert.Mubert).CRUDLogger
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.BaseUrl
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.BaseUrl
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  name: BaseUrl
+  nameWithType: CRUDClient<Mubert>.BaseUrl
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Mubert.Mubert>.BaseUrl
+  nameWithType.vb: CRUDClient(Of Mubert).BaseUrl
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Mubert.Mubert).BaseUrl
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.GetApiKey
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.GetApiKey
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  name: GetApiKey()
+  nameWithType: CRUDClient<Mubert>.GetApiKey()
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Mubert.Mubert>.GetApiKey()
+  nameWithType.vb: CRUDClient(Of Mubert).GetApiKey()
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Mubert.Mubert).GetApiKey()
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.HandleException(System.Exception)
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.HandleException(System.Exception)
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  name: HandleException(Exception)
+  nameWithType: CRUDClient<Mubert>.HandleException(Exception)
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Mubert.Mubert>.HandleException(System.Exception)
+  nameWithType.vb: CRUDClient(Of Mubert).HandleException(Exception)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Mubert.Mubert).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Mubert.Mubert}.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  name: CRUDClient<TSelf>
+  nameWithType: CRUDClient<TSelf>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>
+  nameWithType.vb: CRUDClient(Of TSelf)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf)
+  name.vb: CRUDClient(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1
+  commentId: T:Glitch9.AIDevKit.Client.AIClient`1
+  href: Glitch9.AIDevKit.Client.AIClient-1.html
+  name: AIClient<TSelf>
+  nameWithType: AIClient<TSelf>
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>
+  nameWithType.vb: AIClient(Of TSelf)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf)
+  name.vb: AIClient(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.AIDevKit.Client
+  commentId: N:Glitch9.AIDevKit.Client
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Client
+  nameWithType: Glitch9.AIDevKit.Client
+  fullName: Glitch9.AIDevKit.Client
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+- uid: Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  commentId: P:Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed
+  name: OnTokensConsumed
+  nameWithType: AIClient<TSelf>.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.OnTokensConsumed
+  nameWithType.vb: AIClient(Of TSelf).OnTokensConsumed
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).OnTokensConsumed
+- uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  name: HandleTokenUsage(Model, Usage)
+  nameWithType: AIClient<TSelf>.HandleTokenUsage(Model, Usage)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  nameWithType.vb: AIClient(Of TSelf).HandleTokenUsage(Model, Usage)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  isExternal: true
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  name: FormatErrorMessage(string)
+  nameWithType: AIClient<TSelf>.FormatErrorMessage(string)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.FormatErrorMessage(string)
+  nameWithType.vb: AIClient(Of TSelf).FormatErrorMessage(String)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).FormatErrorMessage(String)
+  name.vb: FormatErrorMessage(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  name: IsDeletedPredicate(RESTResponse)
+  nameWithType: AIClient<TSelf>.IsDeletedPredicate(RESTResponse)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  nameWithType.vb: AIClient(Of TSelf).IsDeletedPredicate(RESTResponse)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  name: Name
+  nameWithType: CRUDClient<TSelf>.Name
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.Name
+  nameWithType.vb: CRUDClient(Of TSelf).Name
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).Name
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  name: Version
+  nameWithType: CRUDClient<TSelf>.Version
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.Version
+  nameWithType.vb: CRUDClient(Of TSelf).Version
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).Version
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  name: BetaVersion
+  nameWithType: CRUDClient<TSelf>.BetaVersion
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.BetaVersion
+  nameWithType.vb: CRUDClient(Of TSelf).BetaVersion
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).BetaVersion
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  name: OnException
+  nameWithType: CRUDClient<TSelf>.OnException
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.OnException
+  nameWithType.vb: CRUDClient(Of TSelf).OnException
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).OnException
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  name: CRUDLogger
+  nameWithType: CRUDClient<TSelf>.CRUDLogger
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.CRUDLogger
+  nameWithType.vb: CRUDClient(Of TSelf).CRUDLogger
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).CRUDLogger
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  name: BaseUrl
+  nameWithType: CRUDClient<TSelf>.BaseUrl
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.BaseUrl
+  nameWithType.vb: CRUDClient(Of TSelf).BaseUrl
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).BaseUrl
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  name: GetApiKey()
+  nameWithType: CRUDClient<TSelf>.GetApiKey()
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.GetApiKey()
+  nameWithType.vb: CRUDClient(Of TSelf).GetApiKey()
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).GetApiKey()
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  isExternal: true
+  name: HandleException(Exception)
+  nameWithType: CRUDClient<TSelf>.HandleException(Exception)
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.HandleException(System.Exception)
+  nameWithType.vb: CRUDClient(Of TSelf).HandleException(Exception)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Mubert.Mubert.TrackGeneration*
+  commentId: Overload:Glitch9.AIDevKit.Mubert.Mubert.TrackGeneration
+  href: Glitch9.AIDevKit.Mubert.Mubert.html#Glitch9_AIDevKit_Mubert_Mubert_TrackGeneration
+  name: TrackGeneration
+  nameWithType: Mubert.TrackGeneration
+  fullName: Glitch9.AIDevKit.Mubert.Mubert.TrackGeneration
+- uid: Glitch9.AIDevKit.Mubert.Services.TrackGenerationService
+  commentId: T:Glitch9.AIDevKit.Mubert.Services.TrackGenerationService
+  parent: Glitch9.AIDevKit.Mubert.Services
+  href: Glitch9.AIDevKit.Mubert.Services.TrackGenerationService.html
+  name: TrackGenerationService
+  nameWithType: TrackGenerationService
+  fullName: Glitch9.AIDevKit.Mubert.Services.TrackGenerationService
+- uid: Glitch9.AIDevKit.Mubert.Services
+  commentId: N:Glitch9.AIDevKit.Mubert.Services
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Mubert.Services
+  nameWithType: Glitch9.AIDevKit.Mubert.Services
+  fullName: Glitch9.AIDevKit.Mubert.Services
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Mubert
+    name: Mubert
+    href: Glitch9.AIDevKit.Mubert.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Mubert.Services
+    name: Services
+    href: Glitch9.AIDevKit.Mubert.Services.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Mubert
+    name: Mubert
+    href: Glitch9.AIDevKit.Mubert.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Mubert.Services
+    name: Services
+    href: Glitch9.AIDevKit.Mubert.Services.html
+- uid: Glitch9.AIDevKit.Mubert.Mubert.DefaultInstance*
+  commentId: Overload:Glitch9.AIDevKit.Mubert.Mubert.DefaultInstance
+  href: Glitch9.AIDevKit.Mubert.Mubert.html#Glitch9_AIDevKit_Mubert_Mubert_DefaultInstance
+  name: DefaultInstance
+  nameWithType: Mubert.DefaultInstance
+  fullName: Glitch9.AIDevKit.Mubert.Mubert.DefaultInstance
+- uid: Glitch9.AIDevKit.Mubert.Mubert
+  commentId: T:Glitch9.AIDevKit.Mubert.Mubert
+  parent: Glitch9.AIDevKit.Mubert
+  href: Glitch9.AIDevKit.Mubert.Mubert.html
+  name: Mubert
+  nameWithType: Mubert
+  fullName: Glitch9.AIDevKit.Mubert.Mubert
+- uid: Glitch9.AIDevKit.Mubert.Mubert.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.Mubert.Mubert.#ctor
+  href: Glitch9.AIDevKit.Mubert.Mubert.html#Glitch9_AIDevKit_Mubert_Mubert__ctor
+  name: Mubert
+  nameWithType: Mubert.Mubert
+  fullName: Glitch9.AIDevKit.Mubert.Mubert.Mubert
+  nameWithType.vb: Mubert.New
+  fullName.vb: Glitch9.AIDevKit.Mubert.Mubert.New
+  name.vb: New

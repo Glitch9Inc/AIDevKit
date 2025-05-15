@@ -1,0 +1,795 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  id: RealtimeItem
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  children:
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetOutputText
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetTranscript
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserAudio(System.String)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage(System.String)
+  langs:
+  - csharp
+  - vb
+  name: RealtimeItem
+  nameWithType: RealtimeItem
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  type: Class
+  source:
+    id: RealtimeItem
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: >-
+    A realtime Item is of three types: message, function_call, or function_call_output.
+
+    <p>A message item can contain text or audio.</p>
+
+    <p>A function_call item indicates a model's desire to call a tool.</p>
+
+    <p>A function_call_output item indicates a function response.</p>
+
+    <p>The client may add and remove message and function_call_output Items using conversation.item.create and conversation.item.delete.</p>
+  example: []
+  syntax:
+    content: public class RealtimeItem
+    content.vb: Public Class RealtimeItem
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id
+  id: Id
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: RealtimeItem.Id
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id
+  type: Property
+  source:
+    id: Id
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 16
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: The unique ID of the item.
+  example: []
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object
+  id: Object
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: Object
+  nameWithType: RealtimeItem.Object
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object
+  type: Property
+  source:
+    id: Object
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 21
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: The object type.
+  example: []
+  syntax:
+    content: public string Object { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property [Object] As String
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type
+  id: Type
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: RealtimeItem.Type
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type
+  type: Property
+  source:
+    id: Type
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 26
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: The type of the item.
+  example: []
+  syntax:
+    content: public RealtimeItemType Type { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemType
+    content.vb: Public Property Type As RealtimeItemType
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status
+  id: Status
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: RealtimeItem.Status
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status
+  type: Property
+  source:
+    id: Status
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 31
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: The status of the item.
+  example: []
+  syntax:
+    content: public RealtimeItemStatus? Status { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus}
+    content.vb: Public Property Status As RealtimeItemStatus?
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails
+  id: StatusDetails
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: StatusDetails
+  nameWithType: RealtimeItem.StatusDetails
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails
+  type: Property
+  source:
+    id: StatusDetails
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 36
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Additional details about the status.
+  example: []
+  syntax:
+    content: public RealtimeItemStatusDetails StatusDetails { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatusDetails
+    content.vb: Public Property StatusDetails As RealtimeItemStatusDetails
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role
+  id: Role
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: Role
+  nameWithType: RealtimeItem.Role
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role
+  type: Property
+  source:
+    id: Role
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 41
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: The role associated with the item.
+  example: []
+  syntax:
+    content: public ChatRole? Role { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.AIDevKit.ChatRole}
+    content.vb: Public Property Role As ChatRole?
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content
+  id: Content
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: RealtimeItem.Content
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content
+  type: Property
+  source:
+    id: Content
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 46
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: The content of the item.
+  example: []
+  syntax:
+    content: public RealtimeItemContent[] Content { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent[]
+    content.vb: Public Property Content As RealtimeItemContent()
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId
+  id: CallId
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: CallId
+  nameWithType: RealtimeItem.CallId
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId
+  type: Property
+  source:
+    id: CallId
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 51
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: The ID of the function call (for "function_call" items).
+  example: []
+  syntax:
+    content: public string CallId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CallId As String
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name
+  id: Name
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: RealtimeItem.Name
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name
+  type: Property
+  source:
+    id: Name
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 56
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: The name of the function being called (for "function_call" items).
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments
+  id: Arguments
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: Arguments
+  nameWithType: RealtimeItem.Arguments
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments
+  type: Property
+  source:
+    id: Arguments
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 61
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: The arguments of the function call (for "function_call" items).
+  example: []
+  syntax:
+    content: public string Arguments { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Arguments As String
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output
+  id: Output
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: Output
+  nameWithType: RealtimeItem.Output
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output
+  type: Property
+  source:
+    id: Output
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 66
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: The list of output items generated by the response.
+  example: []
+  syntax:
+    content: public RealtimeItem[] Output { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem[]
+    content.vb: Public Property Output As RealtimeItem()
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage
+  id: Usage
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: Usage
+  nameWithType: RealtimeItem.Usage
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage
+  type: Property
+  source:
+    id: Usage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 71
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Usage statistics for the response.
+  example: []
+  syntax:
+    content: public Usage Usage { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Usage
+    content.vb: Public Property Usage As Usage
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage(System.String)
+  id: UserMessage(System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: UserMessage(string)
+  nameWithType: RealtimeItem.UserMessage(string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage(string)
+  type: Method
+  source:
+    id: UserMessage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 73
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public static RealtimeItem UserMessage(string text)
+    parameters:
+    - id: text
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+    content.vb: Public Shared Function UserMessage(text As String) As RealtimeItem
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage*
+  nameWithType.vb: RealtimeItem.UserMessage(String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage(String)
+  name.vb: UserMessage(String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserAudio(System.String)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserAudio(System.String)
+  id: UserAudio(System.String)
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: UserAudio(string)
+  nameWithType: RealtimeItem.UserAudio(string)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserAudio(string)
+  type: Method
+  source:
+    id: UserAudio
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 83
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public static RealtimeItem UserAudio(string base64EncodedAudio)
+    parameters:
+    - id: base64EncodedAudio
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+    content.vb: Public Shared Function UserAudio(base64EncodedAudio As String) As RealtimeItem
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserAudio*
+  nameWithType.vb: RealtimeItem.UserAudio(String)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserAudio(String)
+  name.vb: UserAudio(String)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString
+  id: ToStatusString
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: ToStatusString()
+  nameWithType: RealtimeItem.ToStatusString()
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString()
+  type: Method
+  source:
+    id: ToStatusString
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 93
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public string ToStatusString()
+    return:
+      type: System.String
+    content.vb: Public Function ToStatusString() As String
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetTranscript
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetTranscript
+  id: GetTranscript
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: GetTranscript()
+  nameWithType: RealtimeItem.GetTranscript()
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetTranscript()
+  type: Method
+  source:
+    id: GetTranscript
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 98
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public string GetTranscript()
+    return:
+      type: System.String
+    content.vb: Public Function GetTranscript() As String
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetTranscript*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetOutputText
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetOutputText
+  id: GetOutputText
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  langs:
+  - csharp
+  - vb
+  name: GetOutputText()
+  nameWithType: RealtimeItem.GetOutputText()
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetOutputText()
+  type: Method
+  source:
+    id: GetOutputText
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs
+    startLine: 112
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  syntax:
+    content: public string GetOutputText()
+    return:
+      type: System.String
+    content.vb: Public Function GetOutputText() As String
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetOutputText*
+references:
+- uid: Glitch9.AIDevKit.OpenAI.Realtime
+  commentId: N:Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI.Realtime
+  nameWithType: Glitch9.AIDevKit.OpenAI.Realtime
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime
+    name: Realtime
+    href: Glitch9.AIDevKit.OpenAI.Realtime.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime
+    name: Realtime
+    href: Glitch9.AIDevKit.OpenAI.Realtime.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Id
+  name: Id
+  nameWithType: RealtimeItem.Id
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Object
+  name: Object
+  nameWithType: RealtimeItem.Object
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Type
+  name: Type
+  nameWithType: RealtimeItem.Type
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemType
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemType
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemType.html
+  name: RealtimeItemType
+  nameWithType: RealtimeItemType
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemType
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Status
+  name: Status
+  nameWithType: RealtimeItem.Status
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status
+- uid: System.Nullable{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus}
+  commentId: T:System.Nullable{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus}
+  parent: System
+  definition: System.Nullable`1
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus.html
+  name: RealtimeItemStatus?
+  nameWithType: RealtimeItemStatus?
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus?
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus
+    name: RealtimeItemStatus
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus.html
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus
+    name: RealtimeItemStatus
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_StatusDetails
+  name: StatusDetails
+  nameWithType: RealtimeItem.StatusDetails
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatusDetails
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatusDetails
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatusDetails.html
+  name: RealtimeItemStatusDetails
+  nameWithType: RealtimeItemStatusDetails
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatusDetails
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Role
+  name: Role
+  nameWithType: RealtimeItem.Role
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role
+- uid: System.Nullable{Glitch9.AIDevKit.ChatRole}
+  commentId: T:System.Nullable{Glitch9.AIDevKit.ChatRole}
+  parent: System
+  definition: System.Nullable`1
+  href: Glitch9.AIDevKit.ChatRole.html
+  name: ChatRole?
+  nameWithType: ChatRole?
+  fullName: Glitch9.AIDevKit.ChatRole?
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ChatRole
+    name: ChatRole
+    href: Glitch9.AIDevKit.ChatRole.html
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ChatRole
+    name: ChatRole
+    href: Glitch9.AIDevKit.ChatRole.html
+  - name: '?'
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Content
+  name: Content
+  nameWithType: RealtimeItem.Content
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent[]
+  isExternal: true
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html
+  name: RealtimeItemContent[]
+  nameWithType: RealtimeItemContent[]
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent[]
+  nameWithType.vb: RealtimeItemContent()
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent()
+  name.vb: RealtimeItemContent()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent
+    name: RealtimeItemContent
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent
+    name: RealtimeItemContent
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_CallId
+  name: CallId
+  nameWithType: RealtimeItem.CallId
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Name
+  name: Name
+  nameWithType: RealtimeItem.Name
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Arguments
+  name: Arguments
+  nameWithType: RealtimeItem.Arguments
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Output
+  name: Output
+  nameWithType: RealtimeItem.Output
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem[]
+  isExternal: true
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html
+  name: RealtimeItem[]
+  nameWithType: RealtimeItem[]
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem[]
+  nameWithType.vb: RealtimeItem()
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem()
+  name.vb: RealtimeItem()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+    name: RealtimeItem
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+    name: RealtimeItem
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Usage
+  name: Usage
+  nameWithType: RealtimeItem.Usage
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage
+- uid: Glitch9.AIDevKit.Usage
+  commentId: T:Glitch9.AIDevKit.Usage
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Usage.html
+  name: Usage
+  nameWithType: Usage
+  fullName: Glitch9.AIDevKit.Usage
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_UserMessage_System_String_
+  name: UserMessage
+  nameWithType: RealtimeItem.UserMessage
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html
+  name: RealtimeItem
+  nameWithType: RealtimeItem
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserAudio*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserAudio
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_UserAudio_System_String_
+  name: UserAudio
+  nameWithType: RealtimeItem.UserAudio
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserAudio
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ToStatusString
+  name: ToStatusString
+  nameWithType: RealtimeItem.ToStatusString
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetTranscript*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetTranscript
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_GetTranscript
+  name: GetTranscript
+  nameWithType: RealtimeItem.GetTranscript
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetTranscript
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetOutputText*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetOutputText
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_GetOutputText
+  name: GetOutputText
+  nameWithType: RealtimeItem.GetOutputText
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetOutputText

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Changelog | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Changelog | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI DevKit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<h4 id="v3419-apr-21-2025">v.3.4.19 (Apr 21, 2025)</h4>
+<ul>
+<li>Added ElevenLabs prompt history builder</li>
+<li>Fixed CustomEditor not saving values</li>
+<li>Integrated FunctionManager into ChatCompletionTool and ChatSessionTool</li>
+<li>Fixed broken demo scenes</li>
+<li>Fixed OpenAI prompt history builder</li>
+<li>Fixed Google prompt history builder</li>
+<li>Refactored PromptHistoryViewer</li>
+</ul>
+<h4 id="v3418-apr-20-2025">v.3.4.18 (Apr 20, 2025)</h4>
+<ul>
+<li>Changed edit icon for clarity</li>
+<li>Added argument support to FunctionManager</li>
+<li>Added save button to CodeGen</li>
+<li>Fixed multi-image rendering in IconGen</li>
+<li>Improved ModelSelector by hiding providers with no models</li>
+</ul>
+<h4 id="v3417-apr-20-2025">v.3.4.17 (Apr 20, 2025)</h4>
+<ul>
+<li>Fixed index out of range issue in VoiceSelectorGUI</li>
+</ul>
+<h4 id="v3416-apr-18-2025">v.3.4.16 (Apr 18, 2025)</h4>
+<ul>
+<li>Added FunctionManager</li>
+<li>[Demo] Realtime API + Function integration</li>
+</ul>
+<h4 id="v3415-apr-18-2025">v.3.4.15 (Apr 18, 2025)</h4>
+<ul>
+<li>Fixed model categorizing regex</li>
+<li>Added cancel request feature to GENTask</li>
+<li>Implemented IconGenWindow</li>
+<li>Cleaned up codegen files</li>
+<li>Added output path tracking for GeneratedImage and GeneratedAudio</li>
+<li>Fixed realtime API sample voice paths</li>
+<li>Fixed Addressables amsdef</li>
+</ul>
+<h4 id="v3414-apr-18-2025">v.3.4.14 (Apr 18, 2025)</h4>
+<ul>
+<li>Removed implicit operator from EPrefs to prevent Mono JIT crash</li>
+</ul>
+<h4 id="v3413-apr-17-2025">v.3.4.13 (Apr 17, 2025)</h4>
+<ul>
+<li><p>Added missing constraints to:</p>
+<ul>
+<li>Samples.Editor</li>
+<li>MaterialDesign</li>
+<li>MaterialDesign.Editor</li>
+</ul>
+</li>
+<li><p>Moved Setup folder outside of assembly</p>
+</li>
+</ul>
+<h4 id="v3412-apr-17-2025">v.3.4.12 (Apr 17, 2025)</h4>
+<ul>
+<li>Fixed ElevenLabs voice library errors</li>
+</ul>
+<h4 id="v3408-apr-17-2025">v.3.4.08 (Apr 17, 2025)</h4>
+<ul>
+<li>Refactored EditorChatToolbar as separate component</li>
+<li>Implemented export chat as .txt</li>
+<li>Displayed chat list names as date instead of thread ID</li>
+<li>Added more options to GENText and ElevenLabs GENTasks</li>
+<li>Added Texture generator</li>
+<li>Added default model settings to each API</li>
+<li>Added fallback model support using default models</li>
+<li>Renamed ImageModel → DallEModel, TTSModel → OpenAITTS</li>
+<li>Fixed issue fetching Google models</li>
+<li>Improved model family categorization</li>
+</ul>
+<h4 id="v3407-apr-16-2025">v.3.4.07 (Apr 16, 2025)</h4>
+<ul>
+<li><p>Fixed TTS file path issues</p>
+</li>
+<li><p>Fixed build errors related to StartOnInit</p>
+</li>
+<li><p>Fixed Unity hang on startup</p>
+</li>
+<li><p>Fixed model update triggering every time</p>
+</li>
+<li><p>Added ElevenLabs subscription feature</p>
+</li>
+<li><p>Added VoiceChanger and AudioIsolation to GENTask</p>
+</li>
+<li><p>Added more options to GENText</p>
+</li>
+<li><p>Improved EditorChat GUI and stream handling</p>
+</li>
+<li><p>Added drag &amp; drop support in EditorChat</p>
+</li>
+<li><p>Added AI-powered script menu options:</p>
+<ul>
+<li>&quot;Improve Readability&quot;</li>
+<li>&quot;Refactor&quot;</li>
+</ul>
+</li>
+</ul>
+<h4 id="v342-apr-13-2025">v.3.4.2 (Apr 13, 2025)</h4>
+<ul>
+<li>Broken GUIDs fixed</li>
+</ul>
+<h4 id="v320-apr-10-2025">v.3.2.0 (Apr 10, 2025)</h4>
+<ul>
+<li>Compile errors resolved</li>
+<li>Refactored tons of codes</li>
+</ul>
+<h4 id="v314-apr-7-2025">v.3.1.4 (Apr 7, 2025)</h4>
+<ul>
+<li>Build errors resolved</li>
+</ul>
+<h4 id="v312-mar-31-2025">v.3.1.2 (Mar 31, 2025)</h4>
+<ul>
+<li>Added Google image models (Gemini, Imagen) to Editor Tool</li>
+<li>Added new Google model families</li>
+<li>Refactored the project</li>
+</ul>
+<h4 id="v300-mar-17-2025">v.3.0.0 (Mar 17, 2025)</h4>
+<ul>
+<li>Added automatic model updates on Editor startup</li>
+<li>Added automatic model enum code generation</li>
+</ul>
+<h4 id="v254-jan-19-2025">v.2.5.4 (Jan 19, 2025)</h4>
+<ul>
+<li>Resolved issues with WebGL microphone</li>
+<li>Microphone switching issue resolved</li>
+</ul>
+<h4 id="v243-dec-17-2024">v.2.4.3 (Dec 17, 2024)</h4>
+<ul>
+<li>Added microphone support for WebGL builds</li>
+<li>Minor bug fixes related to function call delegates</li>
+</ul>
+<h4 id="v242-dec-1-2024">v.2.4.2 (Dec 1, 2024)</h4>
+<ul>
+<li>Fixed issues with SubmitToolCallOutput calls</li>
+</ul>
+<h4 id="v241-oct-22-2024">v.2.4.1 (Oct 22, 2024)</h4>
+<ul>
+<li>Fixed package assembly errors</li>
+</ul>
+<h4 id="v240-oct-14-2024">v.2.4.0 (Oct 14, 2024)</h4>
+<ul>
+<li>Added Realtime API</li>
+<li>Resolved model repository issue</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="v232-sep-20-2024">v.2.3.2 (Sep 20, 2024)</h4>
+<ul>
+<li>Fixed JsonSettings not applying to MultipartFormSection requests</li>
+<li>Fixed null checks for ImageEditRequest and ImageVariationRequest</li>
+</ul>
+<h4 id="v222-aug-29-2024">v.2.2.2 (Aug 29, 2024)</h4>
+<ul>
+<li>Fixed UnityWebRequest becoming null</li>
+</ul>
+<h4 id="v212-aug-9-2024">v.2.1.2 (Aug 9, 2024)</h4>
+<ul>
+<li>Implemented vision request in ChatCompletion API demo scene</li>
+</ul>
+<h4 id="v211-aug-8-2024">v.2.1.1 (Aug 8, 2024)</h4>
+<ul>
+<li>Fixed ChatCompletion API issues from the last update</li>
+</ul>
+<h4 id="v210-aug-6-2024">v.2.1.0 (Aug 6, 2024)</h4>
+<ul>
+<li>Fixed Codice namespace issue</li>
+<li>Added more assistant event handlers</li>
+<li>Added ChatCompletion API vision request sample codes</li>
+</ul>
+<h4 id="v209-aug-2-2024">v.2.0.9 (Aug 2, 2024)</h4>
+<ul>
+<li>Fixed GPT-4o Mini ID issue</li>
+<li>Added FileSearch and CodeInterpreter to AssistantApiV2</li>
+</ul>
+<h4 id="v208-jul-24-2024">v.2.0.8 (Jul 24, 2024)</h4>
+<ul>
+<li>Fixed editor assembly definitions causing build issue</li>
+</ul>
+<h4 id="v207-jul-23-2024">v.2.0.7 (Jul 23, 2024)</h4>
+<ul>
+<li>Added GPT-4o Mini and GPT-4o Mini-2024-07-19</li>
+<li>Added thread deletion in EditorChatGPT</li>
+<li>Improved GUI in editor tools</li>
+</ul>
+<h4 id="v206-jul-19-2024">v.2.0.6 (Jul 19, 2024)</h4>
+<ul>
+<li>Fixed build issues with Asset Database</li>
+<li>Fixed build issues with Model Data</li>
+<li>AssistantsApiV2 demo now generates images</li>
+</ul>
+<h4 id="v205-jul-17-2024">v.2.0.5 (Jul 17, 2024)</h4>
+<ul>
+<li>Fixed Unity.Plastic.Newtonsoft.Json namespace issue</li>
+</ul>
+<h4 id="v204-jul-9-2024">v.2.0.4 (Jul 9, 2024)</h4>
+<ul>
+<li>Fixed Google recursive query crash</li>
+<li>Updated model manager</li>
+</ul>
+<h4 id="v203-jul-8-2024">v.2.0.3 (Jul 8, 2024)</h4>
+<ul>
+<li>Fixed OpenAI recursive query freeze</li>
+<li>Enhanced EditorChatGPT UI (with syntax highlighting)</li>
+<li>Removed confusing error messages</li>
+</ul>
+<h4 id="v202-jul-3-2024">v.2.0.2 (Jul 3, 2024)</h4>
+<ul>
+<li>Fixed build errors</li>
+</ul>
+<h4 id="v200-jul-2-2024">v.2.0.0 (Jul 2, 2024)</h4>
+<ul>
+<li>Added full support for Google Gemini API</li>
+<li>Refactored to support multiple APIs</li>
+</ul>
+<blockquote>
+<p>⚠️ Note: Model/log data incompatible with v.1.<em>.</em> versions. Backup required.</p>
+</blockquote>
+<h4 id="v133-jun-18-2024">v.1.3.3 (Jun 18, 2024)</h4>
+<ul>
+<li>Fixed issues with download paths</li>
+</ul>
+<h4 id="v132-jun-17-2024">v.1.3.2 (Jun 17, 2024)</h4>
+<ul>
+<li>Fixed build issue with CoreLib</li>
+</ul>
+<h4 id="v130-jun-16-2024">v.1.3.0 (Jun 16, 2024)</h4>
+<ul>
+<li>Added new Editor Tool: File Manager</li>
+<li>Added Assistants API v2 demo scene</li>
+<li>Added Moderations API demo scene</li>
+</ul>
+<h4 id="v125-jun-14-2024">v.1.2.5 (Jun 14, 2024)</h4>
+<ul>
+<li>Renamed classes to avoid API confusion</li>
+<li>Added AssistantsAPI-v2 demo scene</li>
+</ul>
+<h4 id="v124-jun-9-2024">v.1.2.4 (Jun 9, 2024)</h4>
+<ul>
+<li>Fixed OpenAISettings loading</li>
+<li>Fixed RunLog duplication and model detection</li>
+</ul>
+<h4 id="v122-jun-7-2024">v.1.2.2 (Jun 7, 2024)</h4>
+<ul>
+<li>Fixed Message class string output</li>
+<li>Added price calculation to image request logs</li>
+</ul>
+<h4 id="v120-jun-5-2024">v.1.2.0 (Jun 5, 2024)</h4>
+<ul>
+<li>Added AssistantsAPI streaming</li>
+<li>Introduced new management tool: Assistant Manager</li>
+<li>Added Batch APIs and Vector Store APIs</li>
+<li>Improved Chat streaming usage handling</li>
+<li>Refactored OpenAI client</li>
+</ul>
+<h4 id="v114-may-24-2024">v.1.1.4 (May 24, 2024)</h4>
+<ul>
+<li>Support for AssistantsAPI v2</li>
+<li>EditorChatGPT now uses AssistantsAPI</li>
+</ul>
+<h4 id="v015-may-15-2024">v.0.1.5 (May 15, 2024)</h4>
+<ul>
+<li>Added GPT-4o support</li>
+</ul>
+<h4 id="v010-apr-4-2024">v.0.1.0 (Apr 4, 2024)</h4>
+<ul>
+<li>First release</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

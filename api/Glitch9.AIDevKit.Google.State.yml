@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.State
+  commentId: T:Glitch9.AIDevKit.Google.State
+  id: State
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.State.Active
+  - Glitch9.AIDevKit.Google.State.Failed
+  - Glitch9.AIDevKit.Google.State.PendingProcessing
+  - Glitch9.AIDevKit.Google.State.Unspecified
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: State
+  fullName: Glitch9.AIDevKit.Google.State
+  type: Enum
+  source:
+    id: State
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 59
+  namespace: Glitch9.AIDevKit.Google
+  summary: States for the lifecycle of a Chunk.
+  example: []
+  syntax:
+    content: public enum State
+    content.vb: Public Enum State
+- uid: Glitch9.AIDevKit.Google.State.Unspecified
+  commentId: F:Glitch9.AIDevKit.Google.State.Unspecified
+  id: Unspecified
+  parent: Glitch9.AIDevKit.Google.State
+  langs:
+  - csharp
+  - vb
+  name: Unspecified
+  nameWithType: State.Unspecified
+  fullName: Glitch9.AIDevKit.Google.State.Unspecified
+  type: Field
+  source:
+    id: Unspecified
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 64
+  namespace: Glitch9.AIDevKit.Google
+  summary: The default value. This value is used if the state is omitted.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Unspecified = 0
+    return:
+      type: Glitch9.AIDevKit.Google.State
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Unspecified = 0
+- uid: Glitch9.AIDevKit.Google.State.PendingProcessing
+  commentId: F:Glitch9.AIDevKit.Google.State.PendingProcessing
+  id: PendingProcessing
+  parent: Glitch9.AIDevKit.Google.State
+  langs:
+  - csharp
+  - vb
+  name: PendingProcessing
+  nameWithType: State.PendingProcessing
+  fullName: Glitch9.AIDevKit.Google.State.PendingProcessing
+  type: Field
+  source:
+    id: PendingProcessing
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 69
+  namespace: Glitch9.AIDevKit.Google
+  summary: Chunk is being processed (embedding and vector storage).
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      PendingProcessing = 1
+    return:
+      type: Glitch9.AIDevKit.Google.State
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      PendingProcessing = 1
+- uid: Glitch9.AIDevKit.Google.State.Active
+  commentId: F:Glitch9.AIDevKit.Google.State.Active
+  id: Active
+  parent: Glitch9.AIDevKit.Google.State
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: State.Active
+  fullName: Glitch9.AIDevKit.Google.State.Active
+  type: Field
+  source:
+    id: Active
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 74
+  namespace: Glitch9.AIDevKit.Google
+  summary: Chunk is processed and available for querying.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Active = 2
+    return:
+      type: Glitch9.AIDevKit.Google.State
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Active = 2
+- uid: Glitch9.AIDevKit.Google.State.Failed
+  commentId: F:Glitch9.AIDevKit.Google.State.Failed
+  id: Failed
+  parent: Glitch9.AIDevKit.Google.State
+  langs:
+  - csharp
+  - vb
+  name: Failed
+  nameWithType: State.Failed
+  fullName: Glitch9.AIDevKit.Google.State.Failed
+  type: Field
+  source:
+    id: Failed
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 79
+  namespace: Glitch9.AIDevKit.Google
+  summary: Chunk failed processing.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Failed = 3
+    return:
+      type: Glitch9.AIDevKit.Google.State
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Failed = 3
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: Glitch9.AIDevKit.Google.State
+  commentId: T:Glitch9.AIDevKit.Google.State
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.State.html
+  name: State
+  nameWithType: State
+  fullName: Glitch9.AIDevKit.Google.State

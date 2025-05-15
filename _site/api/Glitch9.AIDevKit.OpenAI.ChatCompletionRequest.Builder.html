@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ChatCompletionRequest.Builder | AI DevKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ChatCompletionRequest.Builder | AI DevKit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AI DevKit">
+            AI DevKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder">
+
+
+
+  <h1 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder" class="text-break">
+Class ChatCompletionRequest.Builder  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Glitch9.AIDevKit.OpenAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ChatCompletionRequest.Builder : OpenAIRequest.GPTRequestBuilder&lt;ChatCompletionRequest.Builder, ChatCompletionRequest&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIRequest.html">OpenAIRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIRequest.BaseRequestBuilder-2.html">BaseRequestBuilder</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a>, <a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>&gt;</div>
+      <div><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIRequest.html">OpenAIRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIRequest.GPTRequestBuilder-2.html">GPTRequestBuilder</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a>, <a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>&gt;</div>
+      <div><span class="xref">ChatCompletionRequest.Builder</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIRequest.GPTRequestBuilder-2.html#Glitch9_AIDevKit_OpenAI_OpenAIRequest_GPTRequestBuilder_2_SetModel_Glitch9_AIDevKit_OpenAI_GPTModel_">OpenAIRequest.GPTRequestBuilder&lt;ChatCompletionRequest.Builder, ChatCompletionRequest&gt;.SetModel(GPTModel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIRequest.GPTRequestBuilder-2.html#Glitch9_AIDevKit_OpenAI_OpenAIRequest_GPTRequestBuilder_2_SetResponseFormat_Glitch9_AIDevKit_TextFormat_">OpenAIRequest.GPTRequestBuilder&lt;ChatCompletionRequest.Builder, ChatCompletionRequest&gt;.SetResponseFormat(TextFormat)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIRequest.BaseRequestBuilder-2.html#Glitch9_AIDevKit_OpenAI_OpenAIRequest_BaseRequestBuilder_2_SetUser_System_String_">OpenAIRequest.BaseRequestBuilder&lt;ChatCompletionRequest.Builder, ChatCompletionRequest&gt;.SetUser(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIRequest.BaseRequestBuilder-2.html#Glitch9_AIDevKit_OpenAI_OpenAIRequest_BaseRequestBuilder_2_SetModel_System_String_">OpenAIRequest.BaseRequestBuilder&lt;ChatCompletionRequest.Builder, ChatCompletionRequest&gt;.SetModel(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIRequest.BaseRequestBuilder-2.html#Glitch9_AIDevKit_OpenAI_OpenAIRequest_BaseRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__">OpenAIRequest.BaseRequestBuilder&lt;ChatCompletionRequest.Builder, ChatCompletionRequest&gt;.SetMetadata(Dictionary&lt;string, string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIRequest.BaseRequestBuilder-2.html#Glitch9_AIDevKit_OpenAI_OpenAIRequest_BaseRequestBuilder_2_SetResponseFormat_Glitch9_AIDevKit_ResponseFormat_">OpenAIRequest.BaseRequestBuilder&lt;ChatCompletionRequest.Builder, ChatCompletionRequest&gt;.SetResponseFormat(ResponseFormat)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNotSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfNotSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNull__1___0_System_String_System_String_">LogExtensions.LogIfNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_ToSenderName_System_Object_">SystemExtensions.ToSenderName(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.TypeExtensions.html#Glitch9_TypeExtensions_IsInteger_System_Object_">TypeExtensions.IsInteger(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder__ctor_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.#ctor*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder__ctor" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.#ctor">
+  Builder()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Builder()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_Glitch9_AIDevKit_Role_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage(Glitch9.AIDevKit.Role,System.String)">
+  AddMessage(Role, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder AddMessage(Role role, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>role</code> <a class="xref" href="Glitch9.AIDevKit.Role.html">Role</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_Glitch9_AIDevKit_Role_System_String_Glitch9_IO_Files_UnityFile___" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage(Glitch9.AIDevKit.Role,System.String,Glitch9.IO.Files.UnityFile[])">
+  AddMessage(Role, string, params UnityFile[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder AddMessage(Role role, string message, params UnityFile[] files)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>role</code> <a class="xref" href="Glitch9.AIDevKit.Role.html">Role</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>files</code> <a class="xref" href="Glitch9.IO.Files.UnityFile.html">UnityFile</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_Glitch9_AIDevKit_Role_System_String_Glitch9_IO_Files_UnityImageFile___" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage(Glitch9.AIDevKit.Role,System.String,Glitch9.IO.Files.UnityImageFile[])">
+  AddMessage(Role, string, params UnityImageFile[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder AddMessage(Role role, string message, params UnityImageFile[] imageFiles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>role</code> <a class="xref" href="Glitch9.AIDevKit.Role.html">Role</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>imageFiles</code> <a class="xref" href="Glitch9.IO.Files.UnityImageFile.html">UnityImageFile</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_Glitch9_AIDevKit_Role_System_String_System_Collections_Generic_IList_Glitch9_IO_Files_UnityFile__" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage(Glitch9.AIDevKit.Role,System.String,System.Collections.Generic.IList{Glitch9.IO.Files.UnityFile})">
+  AddMessage(Role, string, IList&lt;UnityFile&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder AddMessage(Role role, string message, IList&lt;UnityFile&gt; files)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>role</code> <a class="xref" href="Glitch9.AIDevKit.Role.html">Role</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>files</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Glitch9.IO.Files.UnityFile.html">UnityFile</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_Glitch9_AIDevKit_Role_System_String_System_Collections_Generic_IList_Glitch9_IO_Files_UnityImageFile__" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage(Glitch9.AIDevKit.Role,System.String,System.Collections.Generic.IList{Glitch9.IO.Files.UnityImageFile})">
+  AddMessage(Role, string, IList&lt;UnityImageFile&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder AddMessage(Role role, string message, IList&lt;UnityImageFile&gt; imageFiles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>role</code> <a class="xref" href="Glitch9.AIDevKit.Role.html">Role</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>imageFiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Glitch9.IO.Files.UnityImageFile.html">UnityImageFile</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_Glitch9_AIDevKit_Role_System_String_System_Collections_Generic_IList_System_String__" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage(Glitch9.AIDevKit.Role,System.String,System.Collections.Generic.IList{System.String})">
+  AddMessage(Role, string, IList&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder AddMessage(Role role, string message, IList&lt;string&gt; imageUrls)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>role</code> <a class="xref" href="Glitch9.AIDevKit.Role.html">Role</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>imageUrls</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessage_Glitch9_AIDevKit_Role_System_String_System_String___" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessage(Glitch9.AIDevKit.Role,System.String,System.String[])">
+  AddMessage(Role, string, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder AddMessage(Role role, string message, params string[] imageUrls)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>role</code> <a class="xref" href="Glitch9.AIDevKit.Role.html">Role</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>imageUrls</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessages_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessages*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_AddMessages_Glitch9_AIDevKit_OpenAI_Message___" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.AddMessages(Glitch9.AIDevKit.OpenAI.Message[])">
+  AddMessages(params Message[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder AddMessages(params Message[] messages)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messages</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Message.html">Message</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetFrequencyPenalty_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetFrequencyPenalty*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetFrequencyPenalty_System_Single_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetFrequencyPenalty(System.Single)">
+  SetFrequencyPenalty(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetFrequencyPenalty(float frequencyPenalty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frequencyPenalty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetInstruction_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetInstruction*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetInstruction_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetInstruction(System.String)">
+  SetInstruction(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetInstruction(string systemInstruction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>systemInstruction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetJsonSchema_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetJsonSchema*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetJsonSchema_Glitch9_AIDevKit_OpenAI_OpenAIJsonSchema_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetJsonSchema(Glitch9.AIDevKit.OpenAI.OpenAIJsonSchema)">
+  SetJsonSchema(OpenAIJsonSchema)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetJsonSchema(OpenAIJsonSchema jsonSchema)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jsonSchema</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIJsonSchema.html">OpenAIJsonSchema</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetJsonSchema_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetJsonSchema*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetJsonSchema_System_Type_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetJsonSchema(System.Type)">
+  SetJsonSchema(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetJsonSchema(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetLogitBias_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetLogitBias*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetLogitBias_System_Collections_Generic_Dictionary_System_String_System_Single__" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetLogitBias(System.Collections.Generic.Dictionary{System.String,System.Single})">
+  SetLogitBias(Dictionary&lt;string, float&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetLogitBias(Dictionary&lt;string, float&gt; logitBias)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logitBias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetLogprobs_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetLogprobs*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetLogprobs_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetLogprobs(System.Boolean)">
+  SetLogprobs(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetLogprobs(bool logprobs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logprobs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetMaxTokens_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetMaxTokens*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetMaxTokens_System_Int32_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetMaxTokens(System.Int32)">
+  SetMaxTokens(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetMaxTokens(int maxTokens)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxTokens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetMessages_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetMessages*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetMessages_System_Collections_Generic_IList_Glitch9_AIDevKit_OpenAI_Message__" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetMessages(System.Collections.Generic.IList{Glitch9.AIDevKit.OpenAI.Message})">
+  SetMessages(IList&lt;Message&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetMessages(IList&lt;Message&gt; messages)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messages</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Message.html">Message</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetN_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetN*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetN_System_Int32_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetN(System.Int32)">
+  SetN(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetN(int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetPresencePenalty_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetPresencePenalty*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetPresencePenalty_System_Single_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetPresencePenalty(System.Single)">
+  SetPresencePenalty(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetPresencePenalty(float presencePenalty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>presencePenalty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetPrompt_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetPrompt*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetPrompt_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetPrompt(System.String)">
+  SetPrompt(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetPrompt(string prompt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetSeed_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetSeed*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetSeed_System_Int32_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetSeed(System.Int32)">
+  SetSeed(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetSeed(int seed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetStartingMessage_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetStartingMessage*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetStartingMessage_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetStartingMessage(System.String)">
+  SetStartingMessage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetStartingMessage(string startingMessage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startingMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetStop_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetStop*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetStop_System_String___" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetStop(System.String[])">
+  SetStop(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetStop(string[] stop)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetStream_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetStream*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetStream_System_Boolean_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetStream(System.Boolean,System.Boolean)">
+  SetStream(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetStream(bool stream, bool includeUsage = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>includeUsage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetTemperature_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetTemperature*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetTemperature_System_Single_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetTemperature(System.Single)">
+  SetTemperature(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetTemperature(float temperature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>temperature</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetToolChoice_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetToolChoice*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetToolChoice_Glitch9_AIDevKit_OpenAI_ToolCall_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetToolChoice(Glitch9.AIDevKit.OpenAI.ToolCall)">
+  SetToolChoice(ToolCall)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetToolChoice(ToolCall toolChoice)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toolChoice</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolCall.html">ToolCall</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetTools_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetTools*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetTools_Glitch9_AIDevKit_OpenAI_ToolCall___" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetTools(Glitch9.AIDevKit.OpenAI.ToolCall[])">
+  SetTools(params ToolCall[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetTools(params ToolCall[] tools)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tools</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolCall.html">ToolCall</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetTopLogprobs_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetTopLogprobs*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetTopLogprobs_System_Int32_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetTopLogprobs(System.Int32)">
+  SetTopLogprobs(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetTopLogprobs(int topLogprobs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>topLogprobs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetTopP_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetTopP*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_ChatCompletionRequest_Builder_SetTopP_System_Single_" data-uid="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.SetTopP(System.Single)">
+  SetTopP(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletionRequest.Builder SetTopP(float topP)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>topP</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.html">ChatCompletionRequest</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ChatCompletionRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

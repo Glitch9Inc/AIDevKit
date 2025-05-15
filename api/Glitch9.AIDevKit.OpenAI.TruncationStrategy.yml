@@ -1,0 +1,217 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.TruncationStrategy
+  commentId: T:Glitch9.AIDevKit.OpenAI.TruncationStrategy
+  id: TruncationStrategy
+  parent: Glitch9.AIDevKit.OpenAI
+  children:
+  - Glitch9.AIDevKit.OpenAI.TruncationStrategy.LastMessage
+  - Glitch9.AIDevKit.OpenAI.TruncationStrategy.Type
+  langs:
+  - csharp
+  - vb
+  name: TruncationStrategy
+  nameWithType: TruncationStrategy
+  fullName: Glitch9.AIDevKit.OpenAI.TruncationStrategy
+  type: Class
+  source:
+    id: TruncationStrategy
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
+    startLine: 78
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: >-
+    Controls for how a <xref href="Glitch9.AIDevKit.OpenAI.Thread" data-throw-if-not-resolved="false"></xref> will be truncated prior to the run. 
+
+    Use this to control the intial context window of the run.
+  example: []
+  syntax:
+    content: public class TruncationStrategy
+    content.vb: Public Class TruncationStrategy
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.OpenAI.TruncationStrategy.Type
+  commentId: P:Glitch9.AIDevKit.OpenAI.TruncationStrategy.Type
+  id: Type
+  parent: Glitch9.AIDevKit.OpenAI.TruncationStrategy
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: TruncationStrategy.Type
+  fullName: Glitch9.AIDevKit.OpenAI.TruncationStrategy.Type
+  type: Property
+  source:
+    id: Type
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
+    startLine: 86
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: >-
+    The truncation strategy to use for the <xref href="Glitch9.AIDevKit.OpenAI.Thread" data-throw-if-not-resolved="false"></xref>. 
+
+    The default is auto. 
+
+    If set to last_messages, the <xref href="Glitch9.AIDevKit.OpenAI.Thread" data-throw-if-not-resolved="false"></xref> will be truncated to the n most recent messages in the <xref href="Glitch9.AIDevKit.OpenAI.Thread" data-throw-if-not-resolved="false"></xref>. 
+
+    When set to auto, messages in the middle of the <xref href="Glitch9.AIDevKit.OpenAI.Thread" data-throw-if-not-resolved="false"></xref> will be dropped to fit the context length of the model, max_prompt_tokens.
+  example: []
+  syntax:
+    content: public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Type As String
+  overload: Glitch9.AIDevKit.OpenAI.TruncationStrategy.Type*
+- uid: Glitch9.AIDevKit.OpenAI.TruncationStrategy.LastMessage
+  commentId: P:Glitch9.AIDevKit.OpenAI.TruncationStrategy.LastMessage
+  id: LastMessage
+  parent: Glitch9.AIDevKit.OpenAI.TruncationStrategy
+  langs:
+  - csharp
+  - vb
+  name: LastMessage
+  nameWithType: TruncationStrategy.LastMessage
+  fullName: Glitch9.AIDevKit.OpenAI.TruncationStrategy.LastMessage
+  type: Property
+  source:
+    id: LastMessage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
+    startLine: 91
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The number of most recent messages from the <xref href="Glitch9.AIDevKit.OpenAI.Thread" data-throw-if-not-resolved="false"></xref> when constructing the context for the <xref href="Glitch9.AIDevKit.OpenAI.Run" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int? LastMessage { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property LastMessage As Integer?
+  overload: Glitch9.AIDevKit.OpenAI.TruncationStrategy.LastMessage*
+references:
+- uid: Glitch9.AIDevKit.OpenAI.Thread
+  commentId: T:Glitch9.AIDevKit.OpenAI.Thread
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.Thread.html
+  name: Thread
+  nameWithType: Thread
+  fullName: Glitch9.AIDevKit.OpenAI.Thread
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.OpenAI.TruncationStrategy.Type*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.TruncationStrategy.Type
+  href: Glitch9.AIDevKit.OpenAI.TruncationStrategy.html#Glitch9_AIDevKit_OpenAI_TruncationStrategy_Type
+  name: Type
+  nameWithType: TruncationStrategy.Type
+  fullName: Glitch9.AIDevKit.OpenAI.TruncationStrategy.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.Run
+  commentId: T:Glitch9.AIDevKit.OpenAI.Run
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.Run.html
+  name: Run
+  nameWithType: Run
+  fullName: Glitch9.AIDevKit.OpenAI.Run
+- uid: Glitch9.AIDevKit.OpenAI.TruncationStrategy.LastMessage*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.TruncationStrategy.LastMessage
+  href: Glitch9.AIDevKit.OpenAI.TruncationStrategy.html#Glitch9_AIDevKit_OpenAI_TruncationStrategy_LastMessage
+  name: LastMessage
+  nameWithType: TruncationStrategy.LastMessage
+  fullName: Glitch9.AIDevKit.OpenAI.TruncationStrategy.LastMessage
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

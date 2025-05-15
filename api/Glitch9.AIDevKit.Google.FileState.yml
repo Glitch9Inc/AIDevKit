@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.FileState
+  commentId: T:Glitch9.AIDevKit.Google.FileState
+  id: FileState
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.FileState.Active
+  - Glitch9.AIDevKit.Google.FileState.Failed
+  - Glitch9.AIDevKit.Google.FileState.Processing
+  - Glitch9.AIDevKit.Google.FileState.Unspecified
+  langs:
+  - csharp
+  - vb
+  name: FileState
+  nameWithType: FileState
+  fullName: Glitch9.AIDevKit.Google.FileState
+  type: Enum
+  source:
+    id: FileState
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
+    startLine: 142
+  namespace: Glitch9.AIDevKit.Google
+  summary: States for the lifecycle of a File.
+  example: []
+  syntax:
+    content: public enum FileState
+    content.vb: Public Enum FileState
+- uid: Glitch9.AIDevKit.Google.FileState.Unspecified
+  commentId: F:Glitch9.AIDevKit.Google.FileState.Unspecified
+  id: Unspecified
+  parent: Glitch9.AIDevKit.Google.FileState
+  langs:
+  - csharp
+  - vb
+  name: Unspecified
+  nameWithType: FileState.Unspecified
+  fullName: Glitch9.AIDevKit.Google.FileState.Unspecified
+  type: Field
+  source:
+    id: Unspecified
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
+    startLine: 147
+  namespace: Glitch9.AIDevKit.Google
+  summary: The default value. This value is used if the state is omitted.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Unspecified = 0
+    return:
+      type: Glitch9.AIDevKit.Google.FileState
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Unspecified = 0
+- uid: Glitch9.AIDevKit.Google.FileState.Processing
+  commentId: F:Glitch9.AIDevKit.Google.FileState.Processing
+  id: Processing
+  parent: Glitch9.AIDevKit.Google.FileState
+  langs:
+  - csharp
+  - vb
+  name: Processing
+  nameWithType: FileState.Processing
+  fullName: Glitch9.AIDevKit.Google.FileState.Processing
+  type: Field
+  source:
+    id: Processing
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
+    startLine: 152
+  namespace: Glitch9.AIDevKit.Google
+  summary: File is being processed and cannot be used for inference yet.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Processing = 1
+    return:
+      type: Glitch9.AIDevKit.Google.FileState
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Processing = 1
+- uid: Glitch9.AIDevKit.Google.FileState.Active
+  commentId: F:Glitch9.AIDevKit.Google.FileState.Active
+  id: Active
+  parent: Glitch9.AIDevKit.Google.FileState
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: FileState.Active
+  fullName: Glitch9.AIDevKit.Google.FileState.Active
+  type: Field
+  source:
+    id: Active
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
+    startLine: 157
+  namespace: Glitch9.AIDevKit.Google
+  summary: File is processed and available for inference.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Active = 2
+    return:
+      type: Glitch9.AIDevKit.Google.FileState
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Active = 2
+- uid: Glitch9.AIDevKit.Google.FileState.Failed
+  commentId: F:Glitch9.AIDevKit.Google.FileState.Failed
+  id: Failed
+  parent: Glitch9.AIDevKit.Google.FileState
+  langs:
+  - csharp
+  - vb
+  name: Failed
+  nameWithType: FileState.Failed
+  fullName: Glitch9.AIDevKit.Google.FileState.Failed
+  type: Field
+  source:
+    id: Failed
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
+    startLine: 162
+  namespace: Glitch9.AIDevKit.Google
+  summary: File failed processing.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Failed = 3
+    return:
+      type: Glitch9.AIDevKit.Google.FileState
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Failed = 3
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: Glitch9.AIDevKit.Google.FileState
+  commentId: T:Glitch9.AIDevKit.Google.FileState
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.FileState.html
+  name: FileState
+  nameWithType: FileState
+  fullName: Glitch9.AIDevKit.Google.FileState

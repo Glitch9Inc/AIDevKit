@@ -1,0 +1,354 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+  id: SoundEffectRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  children:
+  - Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.DurationSeconds
+  - Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.PromptInfluence
+  - Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.Text
+  langs:
+  - csharp
+  - vb
+  name: SoundEffectRequest
+  nameWithType: SoundEffectRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+  type: Class
+  source:
+    id: SoundEffectRequest
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/SoundEffect/SoundEffectRequest.cs
+    startLine: 7
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: Request body for converting text to sound effects using ElevenLabs API.
+  example: []
+  syntax:
+    content: 'public class SoundEffectRequest : AudioRequest'
+    content.vb: Public Class SoundEffectRequest Inherits AudioRequest
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RequestBody
+  - Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  inheritedMembers:
+  - Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+  extensionMethods:
+  - Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
+- uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.Text
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.Text
+  id: Text
+  parent: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: SoundEffectRequest.Text
+  fullName: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.Text
+  type: Property
+  source:
+    id: Text
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/SoundEffect/SoundEffectRequest.cs
+    startLine: 12
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: Text to convert into a sound effect.
+  example: []
+  syntax:
+    content: public string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Text As String
+  overload: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.Text*
+- uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.DurationSeconds
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.DurationSeconds
+  id: DurationSeconds
+  parent: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+  langs:
+  - csharp
+  - vb
+  name: DurationSeconds
+  nameWithType: SoundEffectRequest.DurationSeconds
+  fullName: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.DurationSeconds
+  type: Property
+  source:
+    id: DurationSeconds
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/SoundEffect/SoundEffectRequest.cs
+    startLine: 18
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. Length of the resulting sound effect in seconds. Must be between 0.5 and 22 seconds (inclusive).
+
+    If not set, the duration will be automatically determined based on the prompt.
+  example: []
+  syntax:
+    content: public double? DurationSeconds { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property DurationSeconds As Double?
+  overload: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.DurationSeconds*
+- uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.PromptInfluence
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.PromptInfluence
+  id: PromptInfluence
+  parent: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+  langs:
+  - csharp
+  - vb
+  name: PromptInfluence
+  nameWithType: SoundEffectRequest.PromptInfluence
+  fullName: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.PromptInfluence
+  type: Property
+  source:
+    id: PromptInfluence
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/SoundEffect/SoundEffectRequest.cs
+    startLine: 25
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. Value between 0 and 1 that determines how strongly the prompt should be followed.
+
+    Higher values will follow the prompt more strictly but may reduce the diversity of generations.
+
+    Default is 0.3.
+  example: []
+  syntax:
+    content: public double? PromptInfluence { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property PromptInfluence As Double?
+  overload: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.PromptInfluence*
+references:
+- uid: Glitch9.AIDevKit.ElevenLabs
+  commentId: N:Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.ElevenLabs
+  nameWithType: Glitch9.AIDevKit.ElevenLabs
+  fullName: Glitch9.AIDevKit.ElevenLabs
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ElevenLabs
+    name: ElevenLabs
+    href: Glitch9.AIDevKit.ElevenLabs.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ElevenLabs
+    name: ElevenLabs
+    href: Glitch9.AIDevKit.ElevenLabs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RequestBody
+  nameWithType: RequestBody
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
+- uid: Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.AudioRequest.html
+  name: AudioRequest
+  nameWithType: AudioRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.AudioRequest
+- uid: Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+  parent: Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  href: Glitch9.AIDevKit.ElevenLabs.AudioRequest.html#Glitch9_AIDevKit_ElevenLabs_AudioRequest_OutputFormat
+  name: OutputFormat
+  nameWithType: AudioRequest.OutputFormat
+  fullName: Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+- uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  definition: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SoundEffectRequest_
+  name: ExecuteAsync(SoundEffectRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(SoundEffectRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SoundEffectRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+    name: SoundEffectRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SoundEffectRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+    name: SoundEffectRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SoundEffectRequest_
+  name: ExecuteAsync(SoundEffectRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(SoundEffectRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SoundEffectRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+    name: SoundEffectRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SoundEffectRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest
+    name: SoundEffectRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html
+  name: RequestExtensions
+  nameWithType: RequestExtensions
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+- uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.Text*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.Text
+  href: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.html#Glitch9_AIDevKit_ElevenLabs_SoundEffectRequest_Text
+  name: Text
+  nameWithType: SoundEffectRequest.Text
+  fullName: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.Text
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.DurationSeconds*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.DurationSeconds
+  href: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.html#Glitch9_AIDevKit_ElevenLabs_SoundEffectRequest_DurationSeconds
+  name: DurationSeconds
+  nameWithType: SoundEffectRequest.DurationSeconds
+  fullName: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.DurationSeconds
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.PromptInfluence*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.PromptInfluence
+  href: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.html#Glitch9_AIDevKit_ElevenLabs_SoundEffectRequest_PromptInfluence
+  name: PromptInfluence
+  nameWithType: SoundEffectRequest.PromptInfluence
+  fullName: Glitch9.AIDevKit.ElevenLabs.SoundEffectRequest.PromptInfluence

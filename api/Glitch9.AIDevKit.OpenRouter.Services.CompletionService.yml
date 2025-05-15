@@ -1,0 +1,404 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenRouter.Services.CompletionService
+  commentId: T:Glitch9.AIDevKit.OpenRouter.Services.CompletionService
+  id: CompletionService
+  parent: Glitch9.AIDevKit.OpenRouter.Services
+  children:
+  - Glitch9.AIDevKit.OpenRouter.Services.CompletionService.#ctor(Glitch9.AIDevKit.OpenRouter.OpenRouter)
+  - Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CreateAsync(Glitch9.AIDevKit.CompletionRequest)
+  - Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  langs:
+  - csharp
+  - vb
+  name: CompletionService
+  nameWithType: CompletionService
+  fullName: Glitch9.AIDevKit.OpenRouter.Services.CompletionService
+  type: Class
+  source:
+    id: CompletionService
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenRouter/Services/CompletionService.cs
+    startLine: 5
+  namespace: Glitch9.AIDevKit.OpenRouter.Services
+  syntax:
+    content: 'public class CompletionService : CRUDServiceBase<OpenRouter>'
+    content.vb: Public Class CompletionService Inherits CRUDServiceBase(Of OpenRouter)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.OpenRouter.OpenRouter}
+- uid: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.#ctor(Glitch9.AIDevKit.OpenRouter.OpenRouter)
+  commentId: M:Glitch9.AIDevKit.OpenRouter.Services.CompletionService.#ctor(Glitch9.AIDevKit.OpenRouter.OpenRouter)
+  id: '#ctor(Glitch9.AIDevKit.OpenRouter.OpenRouter)'
+  parent: Glitch9.AIDevKit.OpenRouter.Services.CompletionService
+  langs:
+  - csharp
+  - vb
+  name: CompletionService(OpenRouter)
+  nameWithType: CompletionService.CompletionService(OpenRouter)
+  fullName: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CompletionService(Glitch9.AIDevKit.OpenRouter.OpenRouter)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenRouter/Services/CompletionService.cs
+    startLine: 9
+  namespace: Glitch9.AIDevKit.OpenRouter.Services
+  syntax:
+    content: public CompletionService(OpenRouter client)
+    parameters:
+    - id: client
+      type: Glitch9.AIDevKit.OpenRouter.OpenRouter
+    content.vb: Public Sub New(client As OpenRouter)
+  overload: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.#ctor*
+  nameWithType.vb: CompletionService.New(OpenRouter)
+  fullName.vb: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.New(Glitch9.AIDevKit.OpenRouter.OpenRouter)
+  name.vb: New(OpenRouter)
+- uid: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CreateAsync(Glitch9.AIDevKit.CompletionRequest)
+  commentId: M:Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CreateAsync(Glitch9.AIDevKit.CompletionRequest)
+  id: CreateAsync(Glitch9.AIDevKit.CompletionRequest)
+  parent: Glitch9.AIDevKit.OpenRouter.Services.CompletionService
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(CompletionRequest)
+  nameWithType: CompletionService.CreateAsync(CompletionRequest)
+  fullName: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CreateAsync(Glitch9.AIDevKit.CompletionRequest)
+  type: Method
+  source:
+    id: CreateAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenRouter/Services/CompletionService.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit.OpenRouter.Services
+  syntax:
+    content: public UniTask<ChatCompletion> CreateAsync(CompletionRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.CompletionRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.ChatCompletion}
+    content.vb: Public Function CreateAsync(req As CompletionRequest) As UniTask(Of ChatCompletion)
+  overload: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CreateAsync*
+- uid: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  commentId: M:Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  id: Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  parent: Glitch9.AIDevKit.OpenRouter.Services.CompletionService
+  langs:
+  - csharp
+  - vb
+  name: Stream(CompletionRequest, ChatStreamHandler)
+  nameWithType: CompletionService.Stream(CompletionRequest, ChatStreamHandler)
+  fullName: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  type: Method
+  source:
+    id: Stream
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenRouter/Services/CompletionService.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.OpenRouter.Services
+  syntax:
+    content: public UniTask Stream(CompletionRequest req, ChatStreamHandler streamHandler)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.CompletionRequest
+    - id: streamHandler
+      type: Glitch9.AIDevKit.ChatStreamHandler
+    return:
+      type: UniTask
+    content.vb: Public Function Stream(req As CompletionRequest, streamHandler As ChatStreamHandler) As UniTask
+  overload: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream*
+references:
+- uid: Glitch9.AIDevKit.OpenRouter.Services
+  commentId: N:Glitch9.AIDevKit.OpenRouter.Services
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenRouter.Services
+  nameWithType: Glitch9.AIDevKit.OpenRouter.Services
+  fullName: Glitch9.AIDevKit.OpenRouter.Services
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenRouter
+    name: OpenRouter
+    href: Glitch9.AIDevKit.OpenRouter.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenRouter.Services
+    name: Services
+    href: Glitch9.AIDevKit.OpenRouter.Services.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenRouter
+    name: OpenRouter
+    href: Glitch9.AIDevKit.OpenRouter.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenRouter.Services
+    name: Services
+    href: Glitch9.AIDevKit.OpenRouter.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.OpenRouter.OpenRouter}
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.OpenRouter.OpenRouter}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  href: Glitch9.AIDevKit.OpenRouter.OpenRouter.html
+  name: CRUDServiceBase<OpenRouter>
+  nameWithType: CRUDServiceBase<OpenRouter>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<Glitch9.AIDevKit.OpenRouter.OpenRouter>
+  nameWithType.vb: CRUDServiceBase(Of OpenRouter)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of Glitch9.AIDevKit.OpenRouter.OpenRouter)
+  name.vb: CRUDServiceBase(Of OpenRouter)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenRouter.OpenRouter
+    name: OpenRouter
+    href: Glitch9.AIDevKit.OpenRouter.OpenRouter.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenRouter.OpenRouter
+    name: OpenRouter
+    href: Glitch9.AIDevKit.OpenRouter.OpenRouter.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  name: CRUDServiceBase<TClient>
+  nameWithType: CRUDServiceBase<TClient>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<TClient>
+  nameWithType.vb: CRUDServiceBase(Of TClient)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of TClient)
+  name.vb: CRUDServiceBase(Of TClient)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - name: TClient
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TClient
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.OpenRouter.Services.CompletionService.#ctor
+  href: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.html#Glitch9_AIDevKit_OpenRouter_Services_CompletionService__ctor_Glitch9_AIDevKit_OpenRouter_OpenRouter_
+  name: CompletionService
+  nameWithType: CompletionService.CompletionService
+  fullName: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CompletionService
+  nameWithType.vb: CompletionService.New
+  fullName.vb: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.New
+  name.vb: New
+- uid: Glitch9.AIDevKit.OpenRouter.OpenRouter
+  commentId: T:Glitch9.AIDevKit.OpenRouter.OpenRouter
+  parent: Glitch9.AIDevKit.OpenRouter
+  href: Glitch9.AIDevKit.OpenRouter.OpenRouter.html
+  name: OpenRouter
+  nameWithType: OpenRouter
+  fullName: Glitch9.AIDevKit.OpenRouter.OpenRouter
+- uid: Glitch9.AIDevKit.OpenRouter
+  commentId: N:Glitch9.AIDevKit.OpenRouter
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenRouter
+  nameWithType: Glitch9.AIDevKit.OpenRouter
+  fullName: Glitch9.AIDevKit.OpenRouter
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenRouter
+    name: OpenRouter
+    href: Glitch9.AIDevKit.OpenRouter.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenRouter
+    name: OpenRouter
+    href: Glitch9.AIDevKit.OpenRouter.html
+- uid: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CreateAsync*
+  commentId: Overload:Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CreateAsync
+  href: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.html#Glitch9_AIDevKit_OpenRouter_Services_CompletionService_CreateAsync_Glitch9_AIDevKit_CompletionRequest_
+  name: CreateAsync
+  nameWithType: CompletionService.CreateAsync
+  fullName: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CreateAsync
+- uid: Glitch9.AIDevKit.CompletionRequest
+  commentId: T:Glitch9.AIDevKit.CompletionRequest
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.CompletionRequest.html
+  name: CompletionRequest
+  nameWithType: CompletionRequest
+  fullName: Glitch9.AIDevKit.CompletionRequest
+- uid: UniTask{Glitch9.AIDevKit.ChatCompletion}
+  commentId: '!:UniTask{Glitch9.AIDevKit.ChatCompletion}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: UniTask<ChatCompletion>
+  nameWithType: UniTask<ChatCompletion>
+  fullName: UniTask<Glitch9.AIDevKit.ChatCompletion>
+  nameWithType.vb: UniTask(Of ChatCompletion)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.ChatCompletion)
+  name.vb: UniTask(Of ChatCompletion)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
+  - name: )
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream*
+  commentId: Overload:Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream
+  href: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.html#Glitch9_AIDevKit_OpenRouter_Services_CompletionService_Stream_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  name: Stream
+  nameWithType: CompletionService.Stream
+  fullName: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream
+- uid: Glitch9.AIDevKit.ChatStreamHandler
+  commentId: T:Glitch9.AIDevKit.ChatStreamHandler
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatStreamHandler.html
+  name: ChatStreamHandler
+  nameWithType: ChatStreamHandler
+  fullName: Glitch9.AIDevKit.ChatStreamHandler
+- uid: UniTask
+  isExternal: true
+  name: UniTask
+  nameWithType: UniTask
+  fullName: UniTask

@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.HarmBlockThreshold
+  commentId: T:Glitch9.AIDevKit.HarmBlockThreshold
+  id: HarmBlockThreshold
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.HarmBlockThreshold.BlockLowAndAbove
+  - Glitch9.AIDevKit.HarmBlockThreshold.BlockMediumAndAbove
+  - Glitch9.AIDevKit.HarmBlockThreshold.BlockNone
+  - Glitch9.AIDevKit.HarmBlockThreshold.BlockOnlyHigh
+  - Glitch9.AIDevKit.HarmBlockThreshold.Unspecified
+  langs:
+  - csharp
+  - vb
+  name: HarmBlockThreshold
+  nameWithType: HarmBlockThreshold
+  fullName: Glitch9.AIDevKit.HarmBlockThreshold
+  type: Enum
+  source:
+    id: HarmBlockThreshold
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Moderation/HarmBlockThreshold.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit
+  summary: Block at and beyond a specified harm probability.
+  example: []
+  syntax:
+    content: public enum HarmBlockThreshold
+    content.vb: Public Enum HarmBlockThreshold
+- uid: Glitch9.AIDevKit.HarmBlockThreshold.Unspecified
+  commentId: F:Glitch9.AIDevKit.HarmBlockThreshold.Unspecified
+  id: Unspecified
+  parent: Glitch9.AIDevKit.HarmBlockThreshold
+  langs:
+  - csharp
+  - vb
+  name: Unspecified
+  nameWithType: HarmBlockThreshold.Unspecified
+  fullName: Glitch9.AIDevKit.HarmBlockThreshold.Unspecified
+  type: Field
+  source:
+    id: Unspecified
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Moderation/HarmBlockThreshold.cs
+    startLine: 13
+  namespace: Glitch9.AIDevKit
+  summary: Threshold is unspecified.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Unspecified = 0
+    return:
+      type: Glitch9.AIDevKit.HarmBlockThreshold
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Unspecified = 0
+- uid: Glitch9.AIDevKit.HarmBlockThreshold.BlockLowAndAbove
+  commentId: F:Glitch9.AIDevKit.HarmBlockThreshold.BlockLowAndAbove
+  id: BlockLowAndAbove
+  parent: Glitch9.AIDevKit.HarmBlockThreshold
+  langs:
+  - csharp
+  - vb
+  name: BlockLowAndAbove
+  nameWithType: HarmBlockThreshold.BlockLowAndAbove
+  fullName: Glitch9.AIDevKit.HarmBlockThreshold.BlockLowAndAbove
+  type: Field
+  source:
+    id: BlockLowAndAbove
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Moderation/HarmBlockThreshold.cs
+    startLine: 18
+  namespace: Glitch9.AIDevKit
+  summary: Content with NEGLIGIBLE will be allowed.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      BlockLowAndAbove = 1
+    return:
+      type: Glitch9.AIDevKit.HarmBlockThreshold
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      BlockLowAndAbove = 1
+- uid: Glitch9.AIDevKit.HarmBlockThreshold.BlockMediumAndAbove
+  commentId: F:Glitch9.AIDevKit.HarmBlockThreshold.BlockMediumAndAbove
+  id: BlockMediumAndAbove
+  parent: Glitch9.AIDevKit.HarmBlockThreshold
+  langs:
+  - csharp
+  - vb
+  name: BlockMediumAndAbove
+  nameWithType: HarmBlockThreshold.BlockMediumAndAbove
+  fullName: Glitch9.AIDevKit.HarmBlockThreshold.BlockMediumAndAbove
+  type: Field
+  source:
+    id: BlockMediumAndAbove
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Moderation/HarmBlockThreshold.cs
+    startLine: 23
+  namespace: Glitch9.AIDevKit
+  summary: Content with NEGLIGIBLE and LOW will be allowed.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      BlockMediumAndAbove = 2
+    return:
+      type: Glitch9.AIDevKit.HarmBlockThreshold
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      BlockMediumAndAbove = 2
+- uid: Glitch9.AIDevKit.HarmBlockThreshold.BlockOnlyHigh
+  commentId: F:Glitch9.AIDevKit.HarmBlockThreshold.BlockOnlyHigh
+  id: BlockOnlyHigh
+  parent: Glitch9.AIDevKit.HarmBlockThreshold
+  langs:
+  - csharp
+  - vb
+  name: BlockOnlyHigh
+  nameWithType: HarmBlockThreshold.BlockOnlyHigh
+  fullName: Glitch9.AIDevKit.HarmBlockThreshold.BlockOnlyHigh
+  type: Field
+  source:
+    id: BlockOnlyHigh
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Moderation/HarmBlockThreshold.cs
+    startLine: 28
+  namespace: Glitch9.AIDevKit
+  summary: Content with NEGLIGIBLE, LOW, and MEDIUM will be allowed.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      BlockOnlyHigh = 3
+    return:
+      type: Glitch9.AIDevKit.HarmBlockThreshold
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      BlockOnlyHigh = 3
+- uid: Glitch9.AIDevKit.HarmBlockThreshold.BlockNone
+  commentId: F:Glitch9.AIDevKit.HarmBlockThreshold.BlockNone
+  id: BlockNone
+  parent: Glitch9.AIDevKit.HarmBlockThreshold
+  langs:
+  - csharp
+  - vb
+  name: BlockNone
+  nameWithType: HarmBlockThreshold.BlockNone
+  fullName: Glitch9.AIDevKit.HarmBlockThreshold.BlockNone
+  type: Field
+  source:
+    id: BlockNone
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Moderation/HarmBlockThreshold.cs
+    startLine: 33
+  namespace: Glitch9.AIDevKit
+  summary: All content will be allowed.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      BlockNone = 4
+    return:
+      type: Glitch9.AIDevKit.HarmBlockThreshold
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      BlockNone = 4
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.HarmBlockThreshold
+  commentId: T:Glitch9.AIDevKit.HarmBlockThreshold
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.HarmBlockThreshold.html
+  name: HarmBlockThreshold
+  nameWithType: HarmBlockThreshold
+  fullName: Glitch9.AIDevKit.HarmBlockThreshold

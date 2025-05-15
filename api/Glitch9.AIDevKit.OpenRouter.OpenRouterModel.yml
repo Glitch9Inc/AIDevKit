@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenRouter.OpenRouterModel
+  commentId: T:Glitch9.AIDevKit.OpenRouter.OpenRouterModel
+  id: OpenRouterModel
+  parent: Glitch9.AIDevKit.OpenRouter
+  children:
+  - Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Dolphin_Mixtral_8x7b
+  - Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Ministral8b
+  langs:
+  - csharp
+  - vb
+  name: OpenRouterModel
+  nameWithType: OpenRouterModel
+  fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterModel
+  type: Class
+  source:
+    id: OpenRouterModel
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenRouter/Config/OpenRouterModel.cs
+    startLine: 4
+  namespace: Glitch9.AIDevKit.OpenRouter
+  syntax:
+    content: public class OpenRouterModel
+    content.vb: Public Class OpenRouterModel
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Dolphin_Mixtral_8x7b
+  commentId: F:Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Dolphin_Mixtral_8x7b
+  id: Dolphin_Mixtral_8x7b
+  parent: Glitch9.AIDevKit.OpenRouter.OpenRouterModel
+  langs:
+  - csharp
+  - vb
+  name: Dolphin_Mixtral_8x7b
+  nameWithType: OpenRouterModel.Dolphin_Mixtral_8x7b
+  fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Dolphin_Mixtral_8x7b
+  type: Field
+  source:
+    id: Dolphin_Mixtral_8x7b
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenRouter/Config/OpenRouterModel.cs
+    startLine: 19
+  namespace: Glitch9.AIDevKit.OpenRouter
+  summary: >-
+    OpenRouter's Large Language Model
+
+    This is a 16k context fine-tune of
+
+    [Mixtral-8x7b](/models/mistralai/mixtral-8x7b).
+
+    It excels in coding tasks due to extensive training with coding data
+
+    and is known for its obedience, although it lacks DPO tuning.
+
+    The model is uncensored and is stripped of alignment and bias.
+
+    It requires an external alignment layer for ethical use.
+
+    Users are cautioned to use this highly compliant model responsibly,
+
+    as detailed in a blog post about uncensored models at [erichartford.
+
+    com/uncensored-models](https://erichartford.com/uncensored-models).
+
+    #moe #uncensored
+  example: []
+  syntax:
+    content: public const string Dolphin_Mixtral_8x7b = "cognitivecomputations/dolphin-mixtral-8x7b"
+    return:
+      type: System.String
+    content.vb: Public Const Dolphin_Mixtral_8x7b As String = "cognitivecomputations/dolphin-mixtral-8x7b"
+- uid: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Ministral8b
+  commentId: F:Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Ministral8b
+  id: Ministral8b
+  parent: Glitch9.AIDevKit.OpenRouter.OpenRouterModel
+  langs:
+  - csharp
+  - vb
+  name: Ministral8b
+  nameWithType: OpenRouterModel.Ministral8b
+  fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Ministral8b
+  type: Field
+  source:
+    id: Ministral8b
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenRouter/Config/OpenRouterModel.cs
+    startLine: 39
+  namespace: Glitch9.AIDevKit.OpenRouter
+  summary: >-
+    OpenRouter's Large Language Model
+
+    Ministral 8B is a state-of-the-art language model optimized for on-device
+
+    and edge computing.
+
+    Designed for efficiency in knowledge-intensive tasks, commonsense reasoning,
+
+    and function-calling,
+
+    it features a specialized interleaved sliding-window attention mechanism,
+
+    enabling faster and more memory-efficient inference.
+
+    Ministral 8B excels in local,
+
+    low-latency applications such as offline translation, smart assistants,
+
+    autonomous robotics, and local analytics.
+
+    The model supports up to 128k context length
+
+    and can function as a performant intermediary in multi-step agentic workflows,
+
+    efficiently handling tasks like input parsing, API calls, and task routing.
+
+    It consistently outperforms comparable models like Mistral 7B across
+
+    benchmarks, making it particularly suitable for compute-efficient,
+
+    privacy-focused scenarios.
+  example: []
+  syntax:
+    content: public const string Ministral8b = "mistral/ministral-8b"
+    return:
+      type: System.String
+    content.vb: Public Const Ministral8b As String = "mistral/ministral-8b"
+references:
+- uid: Glitch9.AIDevKit.OpenRouter
+  commentId: N:Glitch9.AIDevKit.OpenRouter
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenRouter
+  nameWithType: Glitch9.AIDevKit.OpenRouter
+  fullName: Glitch9.AIDevKit.OpenRouter
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenRouter
+    name: OpenRouter
+    href: Glitch9.AIDevKit.OpenRouter.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenRouter
+    name: OpenRouter
+    href: Glitch9.AIDevKit.OpenRouter.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

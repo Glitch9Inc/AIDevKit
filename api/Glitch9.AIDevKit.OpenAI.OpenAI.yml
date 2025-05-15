@@ -1,0 +1,1296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI
+  commentId: T:Glitch9.AIDevKit.OpenAI.OpenAI
+  id: OpenAI
+  parent: Glitch9.AIDevKit.OpenAI
+  children:
+  - Glitch9.AIDevKit.OpenAI.OpenAI.#ctor
+  - Glitch9.AIDevKit.OpenAI.OpenAI.AssistantsApiHeader
+  - Glitch9.AIDevKit.OpenAI.OpenAI.Audio
+  - Glitch9.AIDevKit.OpenAI.OpenAI.Batch
+  - Glitch9.AIDevKit.OpenAI.OpenAI.Beta
+  - Glitch9.AIDevKit.OpenAI.OpenAI.Chat
+  - Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance
+  - Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings
+  - Glitch9.AIDevKit.OpenAI.OpenAI.Files
+  - Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning
+  - Glitch9.AIDevKit.OpenAI.OpenAI.Images
+  - Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  - Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents
+  - Glitch9.AIDevKit.OpenAI.OpenAI.Models
+  - Glitch9.AIDevKit.OpenAI.OpenAI.Moderations
+  - Glitch9.AIDevKit.OpenAI.OpenAI.RealtimeApiHeader
+  langs:
+  - csharp
+  - vb
+  name: OpenAI
+  nameWithType: OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI
+  type: Class
+  source:
+    id: OpenAI
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 76
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Represents the OpenAI service with methods to interact with the API.
+  example: []
+  syntax:
+    content: 'public class OpenAI : AIClient<OpenAI>'
+    content.vb: Public Class OpenAI Inherits AIClient(Of OpenAI)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RESTClient
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  inheritedMembers:
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.OnTokensConsumed
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.FormatErrorMessage(System.String)
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.Name
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.Version
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.BetaVersion
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.OnException
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.CRUDLogger
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.BaseUrl
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.GetApiKey
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.HandleException(System.Exception)
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance
+  id: DefaultInstance
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: DefaultInstance
+  nameWithType: OpenAI.DefaultInstance
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance
+  type: Property
+  source:
+    id: DefaultInstance
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 81
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The default instance of the OpenAI client.
+  example: []
+  syntax:
+    content: public static OpenAI DefaultInstance { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.OpenAI
+    content.vb: Public Shared ReadOnly Property DefaultInstance As OpenAI
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.AssistantsApiHeader
+  commentId: F:Glitch9.AIDevKit.OpenAI.OpenAI.AssistantsApiHeader
+  id: AssistantsApiHeader
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: AssistantsApiHeader
+  nameWithType: OpenAI.AssistantsApiHeader
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.AssistantsApiHeader
+  type: Field
+  source:
+    id: AssistantsApiHeader
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 84
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static RESTHeader AssistantsApiHeader
+    return:
+      type: Glitch9.IO.Networking.RESTApi.RESTHeader
+    content.vb: Public Shared AssistantsApiHeader As RESTHeader
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.RealtimeApiHeader
+  commentId: F:Glitch9.AIDevKit.OpenAI.OpenAI.RealtimeApiHeader
+  id: RealtimeApiHeader
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: RealtimeApiHeader
+  nameWithType: OpenAI.RealtimeApiHeader
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.RealtimeApiHeader
+  type: Field
+  source:
+    id: RealtimeApiHeader
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 85
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static RESTHeader RealtimeApiHeader
+    return:
+      type: Glitch9.IO.Networking.RESTApi.RESTHeader
+    content.vb: Public Shared RealtimeApiHeader As RESTHeader
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents
+  id: LogOpenAIStreamEvents
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: LogOpenAIStreamEvents
+  nameWithType: OpenAI.LogOpenAIStreamEvents
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents
+  type: Property
+  source:
+    id: LogOpenAIStreamEvents
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 90
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Gets or sets a value indicating whether OpenAI stream events should be logged.
+  example: []
+  syntax:
+    content: public bool LogOpenAIStreamEvents { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LogOpenAIStreamEvents As Boolean
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Audio
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.Audio
+  id: Audio
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: Audio
+  nameWithType: OpenAI.Audio
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Audio
+  type: Property
+  source:
+    id: Audio
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 96
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Learn how to turn audio into text or text into audio.
+  example: []
+  syntax:
+    content: public AudioService Audio { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Services.AudioService
+    content.vb: Public ReadOnly Property Audio As AudioService
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.Audio*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Chat
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.Chat
+  id: Chat
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: Chat
+  nameWithType: OpenAI.Chat
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Chat
+  type: Property
+  source:
+    id: Chat
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 101
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Given a list of messages comprising a conversation, the model will return a response.
+  example: []
+  syntax:
+    content: public ChatService Chat { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Services.ChatService
+    content.vb: Public ReadOnly Property Chat As ChatService
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.Chat*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings
+  id: Embeddings
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: Embeddings
+  nameWithType: OpenAI.Embeddings
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings
+  type: Property
+  source:
+    id: Embeddings
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 106
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Get a vector representation of a given input that can be easily consumed by machine learning models and algorithms.
+  example: []
+  syntax:
+    content: public EmbeddingService Embeddings { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Services.EmbeddingService
+    content.vb: Public ReadOnly Property Embeddings As EmbeddingService
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning
+  id: FineTuning
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: FineTuning
+  nameWithType: OpenAI.FineTuning
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning
+  type: Property
+  source:
+    id: FineTuning
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 111
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Manage fine-tuning jobs to tailor a model to your specific training data.
+  example: []
+  syntax:
+    content: public FineTuningService FineTuning { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Services.FineTuningService
+    content.vb: Public ReadOnly Property FineTuning As FineTuningService
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Batch
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.Batch
+  id: Batch
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: Batch
+  nameWithType: OpenAI.Batch
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Batch
+  type: Property
+  source:
+    id: Batch
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 117
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: >-
+    Create large batches of API requests for asynchronous processing.
+
+    The Batch API returns completions within 24 hours for a 50% discount.
+  example: []
+  syntax:
+    content: public BatchService Batch { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Services.BatchService
+    content.vb: Public ReadOnly Property Batch As BatchService
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.Batch*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Files
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.Files
+  id: Files
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: Files
+  nameWithType: OpenAI.Files
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Files
+  type: Property
+  source:
+    id: Files
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 122
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Files are used to upload documents that can be used with features like Assistants, Fine-tuning, and Batch API.
+  example: []
+  syntax:
+    content: public FileService Files { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Services.FileService
+    content.vb: Public ReadOnly Property Files As FileService
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.Files*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Images
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.Images
+  id: Images
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: Images
+  nameWithType: OpenAI.Images
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Images
+  type: Property
+  source:
+    id: Images
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 127
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Given a prompt and/or an input image, the model will generate a new image.
+  example: []
+  syntax:
+    content: public ImageService Images { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Services.ImageService
+    content.vb: Public ReadOnly Property Images As ImageService
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.Images*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Models
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.Models
+  id: Models
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: Models
+  nameWithType: OpenAI.Models
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Models
+  type: Property
+  source:
+    id: Models
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 133
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: >-
+    List and describe the various models available in the API.
+
+    You can refer to the Models documentation to understand what models are available and the differences between them.
+  example: []
+  syntax:
+    content: public ModelService Models { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Services.ModelService
+    content.vb: Public ReadOnly Property Models As ModelService
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.Models*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Moderations
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.Moderations
+  id: Moderations
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: Moderations
+  nameWithType: OpenAI.Moderations
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Moderations
+  type: Property
+  source:
+    id: Moderations
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 138
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Given some input text, outputs if the model classifies it as potentially harmful across several categories.
+  example: []
+  syntax:
+    content: public ModerationService Moderations { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Services.ModerationService
+    content.vb: Public ReadOnly Property Moderations As ModerationService
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.Moderations*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Beta
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAI.Beta
+  id: Beta
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: Beta
+  nameWithType: OpenAI.Beta
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Beta
+  type: Property
+  source:
+    id: Beta
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 143
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Beta features that are not yet available in the main API.
+  example: []
+  syntax:
+    content: public BetaService Beta { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Services.BetaService
+    content.vb: Public ReadOnly Property Beta As BetaService
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.Beta*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.#ctor
+  commentId: M:Glitch9.AIDevKit.OpenAI.OpenAI.#ctor
+  id: '#ctor'
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: OpenAI()
+  nameWithType: OpenAI.OpenAI()
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.OpenAI()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 159
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public OpenAI()
+    content.vb: Public Sub New()
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.#ctor*
+  nameWithType.vb: OpenAI.New()
+  fullName.vb: Glitch9.AIDevKit.OpenAI.OpenAI.New()
+  name.vb: New()
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  commentId: M:Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  id: IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  parent: Glitch9.AIDevKit.OpenAI.OpenAI
+  langs:
+  - csharp
+  - vb
+  name: IsDeletedPredicate(RESTResponse)
+  nameWithType: OpenAI.IsDeletedPredicate(RESTResponse)
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  type: Method
+  source:
+    id: IsDeletedPredicate
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Client/OpenAI.cs
+    startLine: 174
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Override this method to handle the status of a <xref href="Glitch9.IO.Networking.RESTApi.CRUDMethod.Delete" data-throw-if-not-resolved="false"></xref> operation.
+  example: []
+  syntax:
+    content: protected override bool IsDeletedPredicate(RESTResponse res)
+    parameters:
+    - id: res
+      type: Glitch9.IO.Networking.RESTApi.RESTResponse
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Protected Overrides Function IsDeletedPredicate(res As RESTResponse) As Boolean
+  overridden: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  overload: Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate*
+references:
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RESTClient
+  commentId: T:Glitch9.IO.Networking.RESTApi.RESTClient
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RESTClient
+  nameWithType: RESTClient
+  fullName: Glitch9.IO.Networking.RESTApi.RESTClient
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  name: CRUDClient<OpenAI>
+  nameWithType: CRUDClient<OpenAI>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.OpenAI.OpenAI>
+  nameWithType.vb: CRUDClient(Of OpenAI)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.OpenAI.OpenAI)
+  name.vb: CRUDClient(Of OpenAI)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  commentId: T:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  parent: Glitch9.AIDevKit.Client
+  definition: Glitch9.AIDevKit.Client.AIClient`1
+  href: Glitch9.AIDevKit.Client.AIClient-1.html
+  name: AIClient<OpenAI>
+  nameWithType: AIClient<OpenAI>
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.OpenAI.OpenAI>
+  nameWithType.vb: AIClient(Of OpenAI)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.OpenAI.OpenAI)
+  name.vb: AIClient(Of OpenAI)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: <
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.OnTokensConsumed
+  commentId: P:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.OnTokensConsumed
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed
+  name: OnTokensConsumed
+  nameWithType: AIClient<OpenAI>.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.OpenAI.OpenAI>.OnTokensConsumed
+  nameWithType.vb: AIClient(Of OpenAI).OnTokensConsumed
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).OnTokensConsumed
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  name: HandleTokenUsage(Model, Usage)
+  nameWithType: AIClient<OpenAI>.HandleTokenUsage(Model, Usage)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.OpenAI.OpenAI>.HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  nameWithType.vb: AIClient(Of OpenAI).HandleTokenUsage(Model, Usage)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.FormatErrorMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.FormatErrorMessage(System.String)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  name: FormatErrorMessage(string)
+  nameWithType: AIClient<OpenAI>.FormatErrorMessage(string)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.OpenAI.OpenAI>.FormatErrorMessage(string)
+  nameWithType.vb: AIClient(Of OpenAI).FormatErrorMessage(String)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).FormatErrorMessage(String)
+  name.vb: FormatErrorMessage(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.Name
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.Name
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  name: Name
+  nameWithType: CRUDClient<OpenAI>.Name
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.OpenAI.OpenAI>.Name
+  nameWithType.vb: CRUDClient(Of OpenAI).Name
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).Name
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.Version
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.Version
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  name: Version
+  nameWithType: CRUDClient<OpenAI>.Version
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.OpenAI.OpenAI>.Version
+  nameWithType.vb: CRUDClient(Of OpenAI).Version
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).Version
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.BetaVersion
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.BetaVersion
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  name: BetaVersion
+  nameWithType: CRUDClient<OpenAI>.BetaVersion
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.OpenAI.OpenAI>.BetaVersion
+  nameWithType.vb: CRUDClient(Of OpenAI).BetaVersion
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).BetaVersion
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.OnException
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.OnException
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  name: OnException
+  nameWithType: CRUDClient<OpenAI>.OnException
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.OpenAI.OpenAI>.OnException
+  nameWithType.vb: CRUDClient(Of OpenAI).OnException
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).OnException
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.CRUDLogger
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.CRUDLogger
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  name: CRUDLogger
+  nameWithType: CRUDClient<OpenAI>.CRUDLogger
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.OpenAI.OpenAI>.CRUDLogger
+  nameWithType.vb: CRUDClient(Of OpenAI).CRUDLogger
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).CRUDLogger
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.BaseUrl
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.BaseUrl
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  name: BaseUrl
+  nameWithType: CRUDClient<OpenAI>.BaseUrl
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.OpenAI.OpenAI>.BaseUrl
+  nameWithType.vb: CRUDClient(Of OpenAI).BaseUrl
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).BaseUrl
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.GetApiKey
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.GetApiKey
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  name: GetApiKey()
+  nameWithType: CRUDClient<OpenAI>.GetApiKey()
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.OpenAI.OpenAI>.GetApiKey()
+  nameWithType.vb: CRUDClient(Of OpenAI).GetApiKey()
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).GetApiKey()
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.HandleException(System.Exception)
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.HandleException(System.Exception)
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  name: HandleException(Exception)
+  nameWithType: CRUDClient<OpenAI>.HandleException(Exception)
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.OpenAI.OpenAI>.HandleException(System.Exception)
+  nameWithType.vb: CRUDClient(Of OpenAI).HandleException(Exception)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.OpenAI.OpenAI}.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  name: CRUDClient<TSelf>
+  nameWithType: CRUDClient<TSelf>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>
+  nameWithType.vb: CRUDClient(Of TSelf)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf)
+  name.vb: CRUDClient(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1
+  commentId: T:Glitch9.AIDevKit.Client.AIClient`1
+  href: Glitch9.AIDevKit.Client.AIClient-1.html
+  name: AIClient<TSelf>
+  nameWithType: AIClient<TSelf>
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>
+  nameWithType.vb: AIClient(Of TSelf)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf)
+  name.vb: AIClient(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.AIDevKit.Client
+  commentId: N:Glitch9.AIDevKit.Client
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Client
+  nameWithType: Glitch9.AIDevKit.Client
+  fullName: Glitch9.AIDevKit.Client
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+- uid: Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  commentId: P:Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed
+  name: OnTokensConsumed
+  nameWithType: AIClient<TSelf>.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.OnTokensConsumed
+  nameWithType.vb: AIClient(Of TSelf).OnTokensConsumed
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).OnTokensConsumed
+- uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  name: HandleTokenUsage(Model, Usage)
+  nameWithType: AIClient<TSelf>.HandleTokenUsage(Model, Usage)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  nameWithType.vb: AIClient(Of TSelf).HandleTokenUsage(Model, Usage)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  isExternal: true
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  name: FormatErrorMessage(string)
+  nameWithType: AIClient<TSelf>.FormatErrorMessage(string)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.FormatErrorMessage(string)
+  nameWithType.vb: AIClient(Of TSelf).FormatErrorMessage(String)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).FormatErrorMessage(String)
+  name.vb: FormatErrorMessage(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  name: Name
+  nameWithType: CRUDClient<TSelf>.Name
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.Name
+  nameWithType.vb: CRUDClient(Of TSelf).Name
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).Name
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  name: Version
+  nameWithType: CRUDClient<TSelf>.Version
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.Version
+  nameWithType.vb: CRUDClient(Of TSelf).Version
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).Version
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  name: BetaVersion
+  nameWithType: CRUDClient<TSelf>.BetaVersion
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.BetaVersion
+  nameWithType.vb: CRUDClient(Of TSelf).BetaVersion
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).BetaVersion
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  name: OnException
+  nameWithType: CRUDClient<TSelf>.OnException
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.OnException
+  nameWithType.vb: CRUDClient(Of TSelf).OnException
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).OnException
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  name: CRUDLogger
+  nameWithType: CRUDClient<TSelf>.CRUDLogger
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.CRUDLogger
+  nameWithType.vb: CRUDClient(Of TSelf).CRUDLogger
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).CRUDLogger
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  name: BaseUrl
+  nameWithType: CRUDClient<TSelf>.BaseUrl
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.BaseUrl
+  nameWithType.vb: CRUDClient(Of TSelf).BaseUrl
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).BaseUrl
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  name: GetApiKey()
+  nameWithType: CRUDClient<TSelf>.GetApiKey()
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.GetApiKey()
+  nameWithType.vb: CRUDClient(Of TSelf).GetApiKey()
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).GetApiKey()
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  isExternal: true
+  name: HandleException(Exception)
+  nameWithType: CRUDClient<TSelf>.HandleException(Exception)
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.HandleException(System.Exception)
+  nameWithType.vb: CRUDClient(Of TSelf).HandleException(Exception)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_DefaultInstance
+  name: DefaultInstance
+  nameWithType: OpenAI.DefaultInstance
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI
+  commentId: T:Glitch9.AIDevKit.OpenAI.OpenAI
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html
+  name: OpenAI
+  nameWithType: OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI
+- uid: Glitch9.IO.Networking.RESTApi.RESTHeader
+  commentId: T:Glitch9.IO.Networking.RESTApi.RESTHeader
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RESTHeader
+  nameWithType: RESTHeader
+  fullName: Glitch9.IO.Networking.RESTApi.RESTHeader
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_LogOpenAIStreamEvents
+  name: LogOpenAIStreamEvents
+  nameWithType: OpenAI.LogOpenAIStreamEvents
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Audio*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.Audio
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_Audio
+  name: Audio
+  nameWithType: OpenAI.Audio
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Audio
+- uid: Glitch9.AIDevKit.OpenAI.Services.AudioService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.AudioService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.AIDevKit.OpenAI.Services.AudioService.html
+  name: AudioService
+  nameWithType: AudioService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.AudioService
+- uid: Glitch9.AIDevKit.OpenAI.Services
+  commentId: N:Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI.Services
+  nameWithType: Glitch9.AIDevKit.OpenAI.Services
+  fullName: Glitch9.AIDevKit.OpenAI.Services
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Services
+    name: Services
+    href: Glitch9.AIDevKit.OpenAI.Services.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Services
+    name: Services
+    href: Glitch9.AIDevKit.OpenAI.Services.html
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Chat*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.Chat
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_Chat
+  name: Chat
+  nameWithType: OpenAI.Chat
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Chat
+- uid: Glitch9.AIDevKit.OpenAI.Services.ChatService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.ChatService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.AIDevKit.OpenAI.Services.ChatService.html
+  name: ChatService
+  nameWithType: ChatService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.ChatService
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_Embeddings
+  name: Embeddings
+  nameWithType: OpenAI.Embeddings
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings
+- uid: Glitch9.AIDevKit.OpenAI.Services.EmbeddingService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.EmbeddingService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.AIDevKit.OpenAI.Services.EmbeddingService.html
+  name: EmbeddingService
+  nameWithType: EmbeddingService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.EmbeddingService
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_FineTuning
+  name: FineTuning
+  nameWithType: OpenAI.FineTuning
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning
+- uid: Glitch9.AIDevKit.OpenAI.Services.FineTuningService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.FineTuningService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.AIDevKit.OpenAI.Services.FineTuningService.html
+  name: FineTuningService
+  nameWithType: FineTuningService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.FineTuningService
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Batch*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.Batch
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_Batch
+  name: Batch
+  nameWithType: OpenAI.Batch
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Batch
+- uid: Glitch9.AIDevKit.OpenAI.Services.BatchService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.BatchService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.AIDevKit.OpenAI.Services.BatchService.html
+  name: BatchService
+  nameWithType: BatchService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.BatchService
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Files*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.Files
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_Files
+  name: Files
+  nameWithType: OpenAI.Files
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Files
+- uid: Glitch9.AIDevKit.OpenAI.Services.FileService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.FileService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.AIDevKit.OpenAI.Services.FileService.html
+  name: FileService
+  nameWithType: FileService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.FileService
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Images*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.Images
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_Images
+  name: Images
+  nameWithType: OpenAI.Images
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Images
+- uid: Glitch9.AIDevKit.OpenAI.Services.ImageService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.ImageService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.AIDevKit.OpenAI.Services.ImageService.html
+  name: ImageService
+  nameWithType: ImageService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.ImageService
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Models*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.Models
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_Models
+  name: Models
+  nameWithType: OpenAI.Models
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Models
+- uid: Glitch9.AIDevKit.OpenAI.Services.ModelService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.ModelService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.AIDevKit.OpenAI.Services.ModelService.html
+  name: ModelService
+  nameWithType: ModelService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.ModelService
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Moderations*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.Moderations
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_Moderations
+  name: Moderations
+  nameWithType: OpenAI.Moderations
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Moderations
+- uid: Glitch9.AIDevKit.OpenAI.Services.ModerationService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.ModerationService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.AIDevKit.OpenAI.Services.ModerationService.html
+  name: ModerationService
+  nameWithType: ModerationService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.ModerationService
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.Beta*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.Beta
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_Beta
+  name: Beta
+  nameWithType: OpenAI.Beta
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.Beta
+- uid: Glitch9.AIDevKit.OpenAI.Services.BetaService
+  commentId: T:Glitch9.AIDevKit.OpenAI.Services.BetaService
+  parent: Glitch9.AIDevKit.OpenAI.Services
+  href: Glitch9.AIDevKit.OpenAI.Services.BetaService.html
+  name: BetaService
+  nameWithType: BetaService
+  fullName: Glitch9.AIDevKit.OpenAI.Services.BetaService
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.#ctor
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI__ctor
+  name: OpenAI
+  nameWithType: OpenAI.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.OpenAI
+  nameWithType.vb: OpenAI.New
+  fullName.vb: Glitch9.AIDevKit.OpenAI.OpenAI.New
+  name.vb: New
+- uid: Glitch9.IO.Networking.RESTApi.CRUDMethod.Delete
+  commentId: F:Glitch9.IO.Networking.RESTApi.CRUDMethod.Delete
+  name: Delete
+  nameWithType: CRUDMethod.Delete
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDMethod.Delete
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  name: IsDeletedPredicate(RESTResponse)
+  nameWithType: AIClient<OpenAI>.IsDeletedPredicate(RESTResponse)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.OpenAI.OpenAI>.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  nameWithType.vb: AIClient(Of OpenAI).IsDeletedPredicate(RESTResponse)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.OpenAI.OpenAI).IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.OpenAI.OpenAI}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate
+  href: Glitch9.AIDevKit.OpenAI.OpenAI.html#Glitch9_AIDevKit_OpenAI_OpenAI_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  name: IsDeletedPredicate
+  nameWithType: OpenAI.IsDeletedPredicate
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate
+- uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+  commentId: T:Glitch9.IO.Networking.RESTApi.RESTResponse
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RESTResponse
+  nameWithType: RESTResponse
+  fullName: Glitch9.IO.Networking.RESTApi.RESTResponse
+- uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  name: IsDeletedPredicate(RESTResponse)
+  nameWithType: AIClient<TSelf>.IsDeletedPredicate(RESTResponse)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  nameWithType.vb: AIClient(Of TSelf).IsDeletedPredicate(RESTResponse)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )

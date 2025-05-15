@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ExGUIUtility | AI DevKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ExGUIUtility | AI DevKit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AI DevKit">
+            AI DevKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Glitch9.ExEditor.ExGUIUtility">
+
+
+
+  <h1 id="Glitch9_ExEditor_ExGUIUtility" data-uid="Glitch9.ExEditor.ExGUIUtility" class="text-break">
+Class ExGUIUtility  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.ExEditor.html">ExEditor</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Glitch9.CoreLib.Editor.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ExGUIUtility</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ExGUIUtility</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_blackTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.blackTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_blackTexture" data-uid="Glitch9.ExEditor.ExGUIUtility.blackTexture">
+  blackTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D blackTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_blueTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.blueTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_blueTexture" data-uid="Glitch9.ExEditor.ExGUIUtility.blueTexture">
+  blueTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D blueTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_borderTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.borderTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_borderTexture" data-uid="Glitch9.ExEditor.ExGUIUtility.borderTexture">
+  borderTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D borderTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_darkGrayTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.darkGrayTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_darkGrayTexture" data-uid="Glitch9.ExEditor.ExGUIUtility.darkGrayTexture">
+  darkGrayTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D darkGrayTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_grayTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.grayTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_grayTexture" data-uid="Glitch9.ExEditor.ExGUIUtility.grayTexture">
+  grayTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D grayTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_greenTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.greenTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_greenTexture" data-uid="Glitch9.ExEditor.ExGUIUtility.greenTexture">
+  greenTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D greenTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_orangeTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.orangeTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_orangeTexture" data-uid="Glitch9.ExEditor.ExGUIUtility.orangeTexture">
+  orangeTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D orangeTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_purpleTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.purpleTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_purpleTexture" data-uid="Glitch9.ExEditor.ExGUIUtility.purpleTexture">
+  purpleTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D purpleTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_redTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.redTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_redTexture" data-uid="Glitch9.ExEditor.ExGUIUtility.redTexture">
+  redTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D redTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_yellowTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.yellowTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_yellowTexture" data-uid="Glitch9.ExEditor.ExGUIUtility.yellowTexture">
+  yellowTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D yellowTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_AdjustTreeViewMenuRect_" data-uid="Glitch9.ExEditor.ExGUIUtility.AdjustTreeViewMenuRect*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_AdjustTreeViewMenuRect_UnityEngine_Rect_" data-uid="Glitch9.ExEditor.ExGUIUtility.AdjustTreeViewMenuRect(UnityEngine.Rect)">
+  AdjustTreeViewMenuRect(Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect AdjustTreeViewMenuRect(Rect cellRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cellRect</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_AdjustTreeViewRect_" data-uid="Glitch9.ExEditor.ExGUIUtility.AdjustTreeViewRect*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_AdjustTreeViewRect_UnityEngine_Rect_" data-uid="Glitch9.ExEditor.ExGUIUtility.AdjustTreeViewRect(UnityEngine.Rect)">
+  AdjustTreeViewRect(Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect AdjustTreeViewRect(Rect cellRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cellRect</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_CreateReorderableArray_" data-uid="Glitch9.ExEditor.ExGUIUtility.CreateReorderableArray*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_CreateReorderableArray__1___0___System_Func_UnityEngine_Rect_System_Int32___0___0__System_Action___0____UnityEngine_GUIContent_System_Single_" data-uid="Glitch9.ExEditor.ExGUIUtility.CreateReorderableArray``1(``0[],System.Func{UnityEngine.Rect,System.Int32,``0,``0},System.Action{``0[]},UnityEngine.GUIContent,System.Single)">
+  CreateReorderableArray&lt;T&gt;(T[], Func&lt;Rect, int, T, T&gt;, Action&lt;T[]&gt;, GUIContent, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReorderableList CreateReorderableArray&lt;T&gt;(T[] array, Func&lt;Rect, int, T, T&gt; customElementDrawer, Action&lt;T[]&gt; onEdited, GUIContent label = null, float rectHeightMultiplier = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>customElementDrawer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<span class="xref">Rect</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, T, T&gt;</dt>
+    <dd></dd>
+    <dt><code>onEdited</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T[]&gt;</dt>
+    <dd></dd>
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>rectHeightMultiplier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ReorderableList</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_CreateReorderableDictionary_" data-uid="Glitch9.ExEditor.ExGUIUtility.CreateReorderableDictionary*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_CreateReorderableDictionary_System_Collections_Generic_Dictionary_System_String_System_String__UnityEngine_GUIContent_System_Single_" data-uid="Glitch9.ExEditor.ExGUIUtility.CreateReorderableDictionary(System.Collections.Generic.Dictionary{System.String,System.String},UnityEngine.GUIContent,System.Single)">
+  CreateReorderableDictionary(Dictionary&lt;string, string&gt;, GUIContent, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReorderableList CreateReorderableDictionary(Dictionary&lt;string, string&gt; dictionary, GUIContent label = null, float rectHeightMultiplier = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dictionary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>rectHeightMultiplier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ReorderableList</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_CreateReorderableList_" data-uid="Glitch9.ExEditor.ExGUIUtility.CreateReorderableList*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_CreateReorderableList__1___0___System_Func_UnityEngine_Rect_System_Int32___0___0__UnityEngine_GUIContent_System_Func_System_Int32_System_Single__System_Action___0____" data-uid="Glitch9.ExEditor.ExGUIUtility.CreateReorderableList``1(``0[],System.Func{UnityEngine.Rect,System.Int32,``0,``0},UnityEngine.GUIContent,System.Func{System.Int32,System.Single},System.Action{``0[]})">
+  CreateReorderableList&lt;T&gt;(T[], Func&lt;Rect, int, T, T&gt;, GUIContent, Func&lt;int, float&gt;, Action&lt;T[]&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReorderableList CreateReorderableList&lt;T&gt;(T[] array, Func&lt;Rect, int, T, T&gt; customElementDrawer, GUIContent label, Func&lt;int, float&gt; heightMultiplierPerIndex, Action&lt;T[]&gt; onEdited = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>customElementDrawer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<span class="xref">Rect</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, T, T&gt;</dt>
+    <dd></dd>
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>heightMultiplierPerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onEdited</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ReorderableList</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_CreateTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.CreateTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_CreateTexture_System_Int32_System_Int32_UnityEngine_Color_" data-uid="Glitch9.ExEditor.ExGUIUtility.CreateTexture(System.Int32,System.Int32,UnityEngine.Color)">
+  CreateTexture(int, int, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D CreateTexture(int width, int height, Color col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>col</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_DragAndDropArea_" data-uid="Glitch9.ExEditor.ExGUIUtility.DragAndDropArea*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_DragAndDropArea_UnityEngine_Rect_System_Action_System_String__" data-uid="Glitch9.ExEditor.ExGUIUtility.DragAndDropArea(UnityEngine.Rect,System.Action{System.String})">
+  DragAndDropArea(Rect, Action&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DragAndDropArea(Rect dropArea, Action&lt;string&gt; onDrop)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dropArea</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+    <dt><code>onDrop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_DrawBorders_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawBorders*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_DrawBorders_UnityEngine_Rect_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawBorders(UnityEngine.Rect)">
+  DrawBorders(Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawBorders(Rect rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_DrawCircle_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawCircle*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_DrawCircle_UnityEngine_Rect_UnityEngine_Texture2D_System_Single_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawCircle(UnityEngine.Rect,UnityEngine.Texture2D,System.Single)">
+  DrawCircle(Rect, Texture2D, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawCircle(Rect r, Texture2D image = null, float margin = 6)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+    <dt><code>image</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>margin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_DrawHorizontalBorder_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawHorizontalBorder*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_DrawHorizontalBorder_System_Single_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawHorizontalBorder(System.Single)">
+  DrawHorizontalBorder(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawHorizontalBorder(float yPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>yPos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_DrawHorizontalLine_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawHorizontalLine*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_DrawHorizontalLine_System_Single_System_Int32_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawHorizontalLine(System.Single,System.Int32)">
+  DrawHorizontalLine(float, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawHorizontalLine(float thickness = 1, int padding = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thickness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>padding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_DrawRoundedTextureAndroid_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawRoundedTextureAndroid*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_DrawRoundedTextureAndroid_System_Single_UnityEngine_Texture2D_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawRoundedTextureAndroid(System.Single,UnityEngine.Texture2D)">
+  DrawRoundedTextureAndroid(float, Texture2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect DrawRoundedTextureAndroid(float size, Texture2D tex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>tex</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_DrawRoundedTextureiOS_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawRoundedTextureiOS*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_DrawRoundedTextureiOS_System_Single_UnityEngine_Texture2D_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawRoundedTextureiOS(System.Single,UnityEngine.Texture2D)">
+  DrawRoundedTextureiOS(float, Texture2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect DrawRoundedTextureiOS(float size, Texture2D tex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>tex</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_DrawTitleLine_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawTitleLine*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_DrawTitleLine" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawTitleLine">
+  DrawTitleLine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawTitleLine()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_DrawTopAndBottomBorders_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawTopAndBottomBorders*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_DrawTopAndBottomBorders_UnityEngine_Rect_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawTopAndBottomBorders(UnityEngine.Rect)">
+  DrawTopAndBottomBorders(Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawTopAndBottomBorders(Rect rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_DrawTopBorder_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawTopBorder*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_DrawTopBorder_UnityEngine_Rect_" data-uid="Glitch9.ExEditor.ExGUIUtility.DrawTopBorder(UnityEngine.Rect)">
+  DrawTopBorder(Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawTopBorder(Rect rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_FindFolder_" data-uid="Glitch9.ExEditor.ExGUIUtility.FindFolder*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_FindFolder_System_String_" data-uid="Glitch9.ExEditor.ExGUIUtility.FindFolder(System.String)">
+  FindFolder(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FindFolder(string folderName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>folderName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_GetColorTexture_" data-uid="Glitch9.ExEditor.ExGUIUtility.GetColorTexture*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_GetColorTexture_Glitch9_UI_GUIColor_" data-uid="Glitch9.ExEditor.ExGUIUtility.GetColorTexture(Glitch9.UI.GUIColor)">
+  GetColorTexture(GUIColor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D GetColorTexture(GUIColor color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <a class="xref" href="Glitch9.UI.GUIColor.html">GUIColor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_GetTexturePath_" data-uid="Glitch9.ExEditor.ExGUIUtility.GetTexturePath*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_GetTexturePath_System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUIUtility.GetTexturePath(System.String,System.String)">
+  GetTexturePath(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTexturePath(string directory, string textureFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>directory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>textureFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_OverrideSprite_" data-uid="Glitch9.ExEditor.ExGUIUtility.OverrideSprite*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_OverrideSprite_UnityEditor_SerializedProperty_UnityEditor_SerializedProperty_" data-uid="Glitch9.ExEditor.ExGUIUtility.OverrideSprite(UnityEditor.SerializedProperty,UnityEditor.SerializedProperty)">
+  OverrideSprite(SerializedProperty, SerializedProperty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OverrideSprite(SerializedProperty _obj, SerializedProperty _spr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_obj</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>_spr</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_RecalculateColumnWidths_" data-uid="Glitch9.ExEditor.ExGUIUtility.RecalculateColumnWidths*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_RecalculateColumnWidths_UnityEngine_Rect_System_Int32_UnityEditor_IMGUI_Controls_MultiColumnHeader__" data-uid="Glitch9.ExEditor.ExGUIUtility.RecalculateColumnWidths(UnityEngine.Rect,System.Int32,UnityEditor.IMGUI.Controls.MultiColumnHeader@)">
+  RecalculateColumnWidths(Rect, int, ref MultiColumnHeader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RecalculateColumnWidths(Rect position, int horizontalPaddingsSum, ref MultiColumnHeader multiColumnHeader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+    <dt><code>horizontalPaddingsSum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>multiColumnHeader</code> <span class="xref">MultiColumnHeader</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUIUtility_XmlValueChange_" data-uid="Glitch9.ExEditor.ExGUIUtility.XmlValueChange*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUIUtility_XmlValueChange_System_String_System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUIUtility.XmlValueChange(System.String,System.String,System.String)">
+  XmlValueChange(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void XmlValueChange(string xmlPath, string index, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xmlPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

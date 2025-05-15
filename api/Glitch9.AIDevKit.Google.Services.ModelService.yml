@@ -1,0 +1,974 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.Services.ModelService
+  commentId: T:Glitch9.AIDevKit.Google.Services.ModelService
+  id: ModelService
+  parent: Glitch9.AIDevKit.Google.Services
+  children:
+  - Glitch9.AIDevKit.Google.Services.ModelService.#ctor(Glitch9.AIDevKit.Google.GenerativeAI)
+  - Glitch9.AIDevKit.Google.Services.ModelService.CountTokensAsync(Glitch9.AIDevKit.Google.CountTokensRequest)
+  - Glitch9.AIDevKit.Google.Services.ModelService.CreateBatchEmbedContentsAsync(Glitch9.AIDevKit.Google.BatchEmbedContentsRequest)
+  - Glitch9.AIDevKit.Google.Services.ModelService.CreateEmbedContentAsync(Glitch9.AIDevKit.Google.EmbedContentRequest)
+  - Glitch9.AIDevKit.Google.Services.ModelService.GenerateAnswerAsync(Glitch9.AIDevKit.Google.GenerateAnswerRequest)
+  - Glitch9.AIDevKit.Google.Services.ModelService.GenerateContentAsync(Glitch9.AIDevKit.Google.GenerateContentRequest)
+  - Glitch9.AIDevKit.Google.Services.ModelService.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  - Glitch9.AIDevKit.Google.Services.ModelService.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  - Glitch9.AIDevKit.Google.Services.ModelService.ListAsync(Glitch9.IO.Networking.RESTApi.TokenQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  - Glitch9.AIDevKit.Google.Services.ModelService.RetrieveAsync(System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  - Glitch9.AIDevKit.Google.Services.ModelService.StreamGenerateContentAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  langs:
+  - csharp
+  - vb
+  name: ModelService
+  nameWithType: ModelService
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService
+  type: Class
+  source:
+    id: ModelService
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: 'public class ModelService : CRUDServiceBase<GenerativeAI>'
+    content.vb: Public Class ModelService Inherits CRUDServiceBase(Of GenerativeAI)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Google.GenerativeAI}
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.#ctor(Glitch9.AIDevKit.Google.GenerativeAI)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.#ctor(Glitch9.AIDevKit.Google.GenerativeAI)
+  id: '#ctor(Glitch9.AIDevKit.Google.GenerativeAI)'
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: ModelService(GenerativeAI)
+  nameWithType: ModelService.ModelService(GenerativeAI)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.ModelService(Glitch9.AIDevKit.Google.GenerativeAI)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 12
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public ModelService(GenerativeAI client)
+    parameters:
+    - id: client
+      type: Glitch9.AIDevKit.Google.GenerativeAI
+    content.vb: Public Sub New(client As GenerativeAI)
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.#ctor*
+  nameWithType.vb: ModelService.New(GenerativeAI)
+  fullName.vb: Glitch9.AIDevKit.Google.Services.ModelService.New(Glitch9.AIDevKit.Google.GenerativeAI)
+  name.vb: New(GenerativeAI)
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.RetrieveAsync(System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.RetrieveAsync(System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  id: RetrieveAsync(System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: RetrieveAsync(string, RequestOptions)
+  nameWithType: ModelService.RetrieveAsync(string, RequestOptions)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.RetrieveAsync(string, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  type: Method
+  source:
+    id: RetrieveAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 13
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<GoogleModelData> RetrieveAsync(string modelId, RequestOptions options = null)
+    parameters:
+    - id: modelId
+      type: System.String
+    - id: options
+      type: Glitch9.IO.Networking.RESTApi.RequestOptions
+    return:
+      type: UniTask{Glitch9.AIDevKit.Google.GoogleModelData}
+    content.vb: Public Function RetrieveAsync(modelId As String, options As RequestOptions = Nothing) As UniTask(Of GoogleModelData)
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.RetrieveAsync*
+  nameWithType.vb: ModelService.RetrieveAsync(String, RequestOptions)
+  fullName.vb: Glitch9.AIDevKit.Google.Services.ModelService.RetrieveAsync(String, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  name.vb: RetrieveAsync(String, RequestOptions)
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.ListAsync(Glitch9.IO.Networking.RESTApi.TokenQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.ListAsync(Glitch9.IO.Networking.RESTApi.TokenQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  id: ListAsync(Glitch9.IO.Networking.RESTApi.TokenQuery,Glitch9.IO.Networking.RESTApi.RequestOptions)
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(TokenQuery, RequestOptions)
+  nameWithType: ModelService.ListAsync(TokenQuery, RequestOptions)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.ListAsync(Glitch9.IO.Networking.RESTApi.TokenQuery, Glitch9.IO.Networking.RESTApi.RequestOptions)
+  type: Method
+  source:
+    id: ListAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<QueryResponse<GoogleModelData>> ListAsync(TokenQuery query = null, RequestOptions options = null)
+    parameters:
+    - id: query
+      type: Glitch9.IO.Networking.RESTApi.TokenQuery
+    - id: options
+      type: Glitch9.IO.Networking.RESTApi.RequestOptions
+    return:
+      type: UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.Google.GoogleModelData}}
+    content.vb: Public Function ListAsync(query As TokenQuery = Nothing, options As RequestOptions = Nothing) As UniTask(Of QueryResponse(Of GoogleModelData))
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.ListAsync*
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.CountTokensAsync(Glitch9.AIDevKit.Google.CountTokensRequest)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.CountTokensAsync(Glitch9.AIDevKit.Google.CountTokensRequest)
+  id: CountTokensAsync(Glitch9.AIDevKit.Google.CountTokensRequest)
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: CountTokensAsync(CountTokensRequest)
+  nameWithType: ModelService.CountTokensAsync(CountTokensRequest)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.CountTokensAsync(Glitch9.AIDevKit.Google.CountTokensRequest)
+  type: Method
+  source:
+    id: CountTokensAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<CountTokensResponse> CountTokensAsync(CountTokensRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.Google.CountTokensRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.Google.CountTokensResponse}
+    content.vb: Public Function CountTokensAsync(req As CountTokensRequest) As UniTask(Of CountTokensResponse)
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.CountTokensAsync*
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.CreateEmbedContentAsync(Glitch9.AIDevKit.Google.EmbedContentRequest)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.CreateEmbedContentAsync(Glitch9.AIDevKit.Google.EmbedContentRequest)
+  id: CreateEmbedContentAsync(Glitch9.AIDevKit.Google.EmbedContentRequest)
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: CreateEmbedContentAsync(EmbedContentRequest)
+  nameWithType: ModelService.CreateEmbedContentAsync(EmbedContentRequest)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.CreateEmbedContentAsync(Glitch9.AIDevKit.Google.EmbedContentRequest)
+  type: Method
+  source:
+    id: CreateEmbedContentAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 21
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<EmbedContentResponse> CreateEmbedContentAsync(EmbedContentRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.Google.EmbedContentRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.Google.EmbedContentResponse}
+    content.vb: Public Function CreateEmbedContentAsync(req As EmbedContentRequest) As UniTask(Of EmbedContentResponse)
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.CreateEmbedContentAsync*
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.CreateBatchEmbedContentsAsync(Glitch9.AIDevKit.Google.BatchEmbedContentsRequest)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.CreateBatchEmbedContentsAsync(Glitch9.AIDevKit.Google.BatchEmbedContentsRequest)
+  id: CreateBatchEmbedContentsAsync(Glitch9.AIDevKit.Google.BatchEmbedContentsRequest)
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: CreateBatchEmbedContentsAsync(BatchEmbedContentsRequest)
+  nameWithType: ModelService.CreateBatchEmbedContentsAsync(BatchEmbedContentsRequest)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.CreateBatchEmbedContentsAsync(Glitch9.AIDevKit.Google.BatchEmbedContentsRequest)
+  type: Method
+  source:
+    id: CreateBatchEmbedContentsAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 26
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<BatchEmbedContentsResponse> CreateBatchEmbedContentsAsync(BatchEmbedContentsRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.Google.BatchEmbedContentsRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.Google.BatchEmbedContentsResponse}
+    content.vb: Public Function CreateBatchEmbedContentsAsync(req As BatchEmbedContentsRequest) As UniTask(Of BatchEmbedContentsResponse)
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.CreateBatchEmbedContentsAsync*
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.GenerateAnswerAsync(Glitch9.AIDevKit.Google.GenerateAnswerRequest)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.GenerateAnswerAsync(Glitch9.AIDevKit.Google.GenerateAnswerRequest)
+  id: GenerateAnswerAsync(Glitch9.AIDevKit.Google.GenerateAnswerRequest)
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: GenerateAnswerAsync(GenerateAnswerRequest)
+  nameWithType: ModelService.GenerateAnswerAsync(GenerateAnswerRequest)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.GenerateAnswerAsync(Glitch9.AIDevKit.Google.GenerateAnswerRequest)
+  type: Method
+  source:
+    id: GenerateAnswerAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 32
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<GenerateAnswerResponse> GenerateAnswerAsync(GenerateAnswerRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.Google.GenerateAnswerResponse}
+    content.vb: Public Function GenerateAnswerAsync(req As GenerateAnswerRequest) As UniTask(Of GenerateAnswerResponse)
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.GenerateAnswerAsync*
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.GenerateContentAsync(Glitch9.AIDevKit.Google.GenerateContentRequest)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.GenerateContentAsync(Glitch9.AIDevKit.Google.GenerateContentRequest)
+  id: GenerateContentAsync(Glitch9.AIDevKit.Google.GenerateContentRequest)
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: GenerateContentAsync(GenerateContentRequest)
+  nameWithType: ModelService.GenerateContentAsync(GenerateContentRequest)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.GenerateContentAsync(Glitch9.AIDevKit.Google.GenerateContentRequest)
+  type: Method
+  source:
+    id: GenerateContentAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 38
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<GenerateContentResponse> GenerateContentAsync(GenerateContentRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.Google.GenerateContentRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.Google.GenerateContentResponse}
+    content.vb: Public Function GenerateContentAsync(req As GenerateContentRequest) As UniTask(Of GenerateContentResponse)
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.GenerateContentAsync*
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.StreamGenerateContentAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.StreamGenerateContentAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  id: StreamGenerateContentAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: StreamGenerateContentAsync(GenerateContentRequest, ChatStreamHandler)
+  nameWithType: ModelService.StreamGenerateContentAsync(GenerateContentRequest, ChatStreamHandler)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.StreamGenerateContentAsync(Glitch9.AIDevKit.Google.GenerateContentRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  type: Method
+  source:
+    id: StreamGenerateContentAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 43
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask StreamGenerateContentAsync(GenerateContentRequest req, ChatStreamHandler streamhandler)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.Google.GenerateContentRequest
+    - id: streamhandler
+      type: Glitch9.AIDevKit.ChatStreamHandler
+    return:
+      type: UniTask
+    content.vb: Public Function StreamGenerateContentAsync(req As GenerateContentRequest, streamhandler As ChatStreamHandler) As UniTask
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.StreamGenerateContentAsync*
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  id: GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: GenerateImageAsync(GenerateMediaRequest)
+  nameWithType: ModelService.GenerateImageAsync(GenerateMediaRequest)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  type: Method
+  source:
+    id: GenerateImageAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 50
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<PredictionResponse> GenerateImageAsync(GenerateMediaRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.Google.GenerateMediaRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.Google.PredictionResponse}
+    content.vb: Public Function GenerateImageAsync(req As GenerateMediaRequest) As UniTask(Of PredictionResponse)
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.GenerateImageAsync*
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  commentId: M:Glitch9.AIDevKit.Google.Services.ModelService.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  id: GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  parent: Glitch9.AIDevKit.Google.Services.ModelService
+  langs:
+  - csharp
+  - vb
+  name: GenerateVideoAsync(GenerateMediaRequest)
+  nameWithType: ModelService.GenerateVideoAsync(GenerateMediaRequest)
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
+  type: Method
+  source:
+    id: GenerateVideoAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/ModelService.cs
+    startLine: 57
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<GeneratedVideo> GenerateVideoAsync(GenerateMediaRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.Google.GenerateMediaRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.GeneratedVideo}
+    content.vb: Public Function GenerateVideoAsync(req As GenerateMediaRequest) As UniTask(Of GeneratedVideo)
+  overload: Glitch9.AIDevKit.Google.Services.ModelService.GenerateVideoAsync*
+references:
+- uid: Glitch9.AIDevKit.Google.Services
+  commentId: N:Glitch9.AIDevKit.Google.Services
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google.Services
+  nameWithType: Glitch9.AIDevKit.Google.Services
+  fullName: Glitch9.AIDevKit.Google.Services
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google.Services
+    name: Services
+    href: Glitch9.AIDevKit.Google.Services.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google.Services
+    name: Services
+    href: Glitch9.AIDevKit.Google.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Google.GenerativeAI}
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Google.GenerativeAI}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  name: CRUDServiceBase<GenerativeAI>
+  nameWithType: CRUDServiceBase<GenerativeAI>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<Glitch9.AIDevKit.Google.GenerativeAI>
+  nameWithType.vb: CRUDServiceBase(Of GenerativeAI)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of Glitch9.AIDevKit.Google.GenerativeAI)
+  name.vb: CRUDServiceBase(Of GenerativeAI)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.GenerativeAI
+    name: GenerativeAI
+    href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.GenerativeAI
+    name: GenerativeAI
+    href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  name: CRUDServiceBase<TClient>
+  nameWithType: CRUDServiceBase<TClient>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<TClient>
+  nameWithType.vb: CRUDServiceBase(Of TClient)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of TClient)
+  name.vb: CRUDServiceBase(Of TClient)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - name: TClient
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TClient
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.#ctor
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService__ctor_Glitch9_AIDevKit_Google_GenerativeAI_
+  name: ModelService
+  nameWithType: ModelService.ModelService
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.ModelService
+  nameWithType.vb: ModelService.New
+  fullName.vb: Glitch9.AIDevKit.Google.Services.ModelService.New
+  name.vb: New
+- uid: Glitch9.AIDevKit.Google.GenerativeAI
+  commentId: T:Glitch9.AIDevKit.Google.GenerativeAI
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  name: GenerativeAI
+  nameWithType: GenerativeAI
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.RetrieveAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.RetrieveAsync
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService_RetrieveAsync_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_
+  name: RetrieveAsync
+  nameWithType: ModelService.RetrieveAsync
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.RetrieveAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.IO.Networking.RESTApi.RequestOptions
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestOptions
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RequestOptions
+  nameWithType: RequestOptions
+  fullName: Glitch9.IO.Networking.RESTApi.RequestOptions
+- uid: UniTask{Glitch9.AIDevKit.Google.GoogleModelData}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Google.GoogleModelData}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Google.GoogleModelData.html
+  name: UniTask<GoogleModelData>
+  nameWithType: UniTask<GoogleModelData>
+  fullName: UniTask<Glitch9.AIDevKit.Google.GoogleModelData>
+  nameWithType.vb: UniTask(Of GoogleModelData)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.GoogleModelData)
+  name.vb: UniTask(Of GoogleModelData)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.GoogleModelData
+    name: GoogleModelData
+    href: Glitch9.AIDevKit.Google.GoogleModelData.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.GoogleModelData
+    name: GoogleModelData
+    href: Glitch9.AIDevKit.Google.GoogleModelData.html
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.ListAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.ListAsync
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService_ListAsync_Glitch9_IO_Networking_RESTApi_TokenQuery_Glitch9_IO_Networking_RESTApi_RequestOptions_
+  name: ListAsync
+  nameWithType: ModelService.ListAsync
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.ListAsync
+- uid: Glitch9.IO.Networking.RESTApi.TokenQuery
+  commentId: T:Glitch9.IO.Networking.RESTApi.TokenQuery
+  parent: Glitch9.IO.Networking.RESTApi
+  name: TokenQuery
+  nameWithType: TokenQuery
+  fullName: Glitch9.IO.Networking.RESTApi.TokenQuery
+- uid: UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.Google.GoogleModelData}}
+  commentId: '!:UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.Google.GoogleModelData}}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Google.GoogleModelData.html
+  name: UniTask<QueryResponse<GoogleModelData>>
+  nameWithType: UniTask<QueryResponse<GoogleModelData>>
+  fullName: UniTask<Glitch9.IO.Networking.RESTApi.QueryResponse<Glitch9.AIDevKit.Google.GoogleModelData>>
+  nameWithType.vb: UniTask(Of QueryResponse(Of GoogleModelData))
+  fullName.vb: UniTask(Of Glitch9.IO.Networking.RESTApi.QueryResponse(Of Glitch9.AIDevKit.Google.GoogleModelData))
+  name.vb: UniTask(Of QueryResponse(Of GoogleModelData))
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.IO.Networking.RESTApi.QueryResponse`1
+    name: QueryResponse
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.GoogleModelData
+    name: GoogleModelData
+    href: Glitch9.AIDevKit.Google.GoogleModelData.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.IO.Networking.RESTApi.QueryResponse`1
+    name: QueryResponse
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.GoogleModelData
+    name: GoogleModelData
+    href: Glitch9.AIDevKit.Google.GoogleModelData.html
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.CountTokensAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.CountTokensAsync
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService_CountTokensAsync_Glitch9_AIDevKit_Google_CountTokensRequest_
+  name: CountTokensAsync
+  nameWithType: ModelService.CountTokensAsync
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.CountTokensAsync
+- uid: Glitch9.AIDevKit.Google.CountTokensRequest
+  commentId: T:Glitch9.AIDevKit.Google.CountTokensRequest
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.CountTokensRequest.html
+  name: CountTokensRequest
+  nameWithType: CountTokensRequest
+  fullName: Glitch9.AIDevKit.Google.CountTokensRequest
+- uid: UniTask{Glitch9.AIDevKit.Google.CountTokensResponse}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Google.CountTokensResponse}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Google.CountTokensResponse.html
+  name: UniTask<CountTokensResponse>
+  nameWithType: UniTask<CountTokensResponse>
+  fullName: UniTask<Glitch9.AIDevKit.Google.CountTokensResponse>
+  nameWithType.vb: UniTask(Of CountTokensResponse)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.CountTokensResponse)
+  name.vb: UniTask(Of CountTokensResponse)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.CountTokensResponse
+    name: CountTokensResponse
+    href: Glitch9.AIDevKit.Google.CountTokensResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.CountTokensResponse
+    name: CountTokensResponse
+    href: Glitch9.AIDevKit.Google.CountTokensResponse.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.CreateEmbedContentAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.CreateEmbedContentAsync
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService_CreateEmbedContentAsync_Glitch9_AIDevKit_Google_EmbedContentRequest_
+  name: CreateEmbedContentAsync
+  nameWithType: ModelService.CreateEmbedContentAsync
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.CreateEmbedContentAsync
+- uid: Glitch9.AIDevKit.Google.EmbedContentRequest
+  commentId: T:Glitch9.AIDevKit.Google.EmbedContentRequest
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.EmbedContentRequest.html
+  name: EmbedContentRequest
+  nameWithType: EmbedContentRequest
+  fullName: Glitch9.AIDevKit.Google.EmbedContentRequest
+- uid: UniTask{Glitch9.AIDevKit.Google.EmbedContentResponse}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Google.EmbedContentResponse}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Google.EmbedContentResponse.html
+  name: UniTask<EmbedContentResponse>
+  nameWithType: UniTask<EmbedContentResponse>
+  fullName: UniTask<Glitch9.AIDevKit.Google.EmbedContentResponse>
+  nameWithType.vb: UniTask(Of EmbedContentResponse)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.EmbedContentResponse)
+  name.vb: UniTask(Of EmbedContentResponse)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.EmbedContentResponse
+    name: EmbedContentResponse
+    href: Glitch9.AIDevKit.Google.EmbedContentResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.EmbedContentResponse
+    name: EmbedContentResponse
+    href: Glitch9.AIDevKit.Google.EmbedContentResponse.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.CreateBatchEmbedContentsAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.CreateBatchEmbedContentsAsync
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService_CreateBatchEmbedContentsAsync_Glitch9_AIDevKit_Google_BatchEmbedContentsRequest_
+  name: CreateBatchEmbedContentsAsync
+  nameWithType: ModelService.CreateBatchEmbedContentsAsync
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.CreateBatchEmbedContentsAsync
+- uid: Glitch9.AIDevKit.Google.BatchEmbedContentsRequest
+  commentId: T:Glitch9.AIDevKit.Google.BatchEmbedContentsRequest
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.BatchEmbedContentsRequest.html
+  name: BatchEmbedContentsRequest
+  nameWithType: BatchEmbedContentsRequest
+  fullName: Glitch9.AIDevKit.Google.BatchEmbedContentsRequest
+- uid: UniTask{Glitch9.AIDevKit.Google.BatchEmbedContentsResponse}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Google.BatchEmbedContentsResponse}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Google.BatchEmbedContentsResponse.html
+  name: UniTask<BatchEmbedContentsResponse>
+  nameWithType: UniTask<BatchEmbedContentsResponse>
+  fullName: UniTask<Glitch9.AIDevKit.Google.BatchEmbedContentsResponse>
+  nameWithType.vb: UniTask(Of BatchEmbedContentsResponse)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.BatchEmbedContentsResponse)
+  name.vb: UniTask(Of BatchEmbedContentsResponse)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.BatchEmbedContentsResponse
+    name: BatchEmbedContentsResponse
+    href: Glitch9.AIDevKit.Google.BatchEmbedContentsResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.BatchEmbedContentsResponse
+    name: BatchEmbedContentsResponse
+    href: Glitch9.AIDevKit.Google.BatchEmbedContentsResponse.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.GenerateAnswerAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.GenerateAnswerAsync
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService_GenerateAnswerAsync_Glitch9_AIDevKit_Google_GenerateAnswerRequest_
+  name: GenerateAnswerAsync
+  nameWithType: ModelService.GenerateAnswerAsync
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.GenerateAnswerAsync
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  commentId: T:Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GenerateAnswerRequest.html
+  name: GenerateAnswerRequest
+  nameWithType: GenerateAnswerRequest
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+- uid: UniTask{Glitch9.AIDevKit.Google.GenerateAnswerResponse}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Google.GenerateAnswerResponse}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Google.GenerateAnswerResponse.html
+  name: UniTask<GenerateAnswerResponse>
+  nameWithType: UniTask<GenerateAnswerResponse>
+  fullName: UniTask<Glitch9.AIDevKit.Google.GenerateAnswerResponse>
+  nameWithType.vb: UniTask(Of GenerateAnswerResponse)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.GenerateAnswerResponse)
+  name.vb: UniTask(Of GenerateAnswerResponse)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.GenerateAnswerResponse
+    name: GenerateAnswerResponse
+    href: Glitch9.AIDevKit.Google.GenerateAnswerResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.GenerateAnswerResponse
+    name: GenerateAnswerResponse
+    href: Glitch9.AIDevKit.Google.GenerateAnswerResponse.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.GenerateContentAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.GenerateContentAsync
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService_GenerateContentAsync_Glitch9_AIDevKit_Google_GenerateContentRequest_
+  name: GenerateContentAsync
+  nameWithType: ModelService.GenerateContentAsync
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.GenerateContentAsync
+- uid: Glitch9.AIDevKit.Google.GenerateContentRequest
+  commentId: T:Glitch9.AIDevKit.Google.GenerateContentRequest
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GenerateContentRequest.html
+  name: GenerateContentRequest
+  nameWithType: GenerateContentRequest
+  fullName: Glitch9.AIDevKit.Google.GenerateContentRequest
+- uid: UniTask{Glitch9.AIDevKit.Google.GenerateContentResponse}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Google.GenerateContentResponse}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Google.GenerateContentResponse.html
+  name: UniTask<GenerateContentResponse>
+  nameWithType: UniTask<GenerateContentResponse>
+  fullName: UniTask<Glitch9.AIDevKit.Google.GenerateContentResponse>
+  nameWithType.vb: UniTask(Of GenerateContentResponse)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.GenerateContentResponse)
+  name.vb: UniTask(Of GenerateContentResponse)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.GenerateContentResponse
+    name: GenerateContentResponse
+    href: Glitch9.AIDevKit.Google.GenerateContentResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.GenerateContentResponse
+    name: GenerateContentResponse
+    href: Glitch9.AIDevKit.Google.GenerateContentResponse.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.StreamGenerateContentAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.StreamGenerateContentAsync
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService_StreamGenerateContentAsync_Glitch9_AIDevKit_Google_GenerateContentRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  name: StreamGenerateContentAsync
+  nameWithType: ModelService.StreamGenerateContentAsync
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.StreamGenerateContentAsync
+- uid: Glitch9.AIDevKit.ChatStreamHandler
+  commentId: T:Glitch9.AIDevKit.ChatStreamHandler
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatStreamHandler.html
+  name: ChatStreamHandler
+  nameWithType: ChatStreamHandler
+  fullName: Glitch9.AIDevKit.ChatStreamHandler
+- uid: UniTask
+  isExternal: true
+  name: UniTask
+  nameWithType: UniTask
+  fullName: UniTask
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.GenerateImageAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.GenerateImageAsync
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService_GenerateImageAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  name: GenerateImageAsync
+  nameWithType: ModelService.GenerateImageAsync
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.GenerateImageAsync
+- uid: Glitch9.AIDevKit.Google.GenerateMediaRequest
+  commentId: T:Glitch9.AIDevKit.Google.GenerateMediaRequest
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GenerateMediaRequest.html
+  name: GenerateMediaRequest
+  nameWithType: GenerateMediaRequest
+  fullName: Glitch9.AIDevKit.Google.GenerateMediaRequest
+- uid: UniTask{Glitch9.AIDevKit.Google.PredictionResponse}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Google.PredictionResponse}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Google.PredictionResponse.html
+  name: UniTask<PredictionResponse>
+  nameWithType: UniTask<PredictionResponse>
+  fullName: UniTask<Glitch9.AIDevKit.Google.PredictionResponse>
+  nameWithType.vb: UniTask(Of PredictionResponse)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.PredictionResponse)
+  name.vb: UniTask(Of PredictionResponse)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.PredictionResponse
+    name: PredictionResponse
+    href: Glitch9.AIDevKit.Google.PredictionResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.PredictionResponse
+    name: PredictionResponse
+    href: Glitch9.AIDevKit.Google.PredictionResponse.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Services.ModelService.GenerateVideoAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.ModelService.GenerateVideoAsync
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html#Glitch9_AIDevKit_Google_Services_ModelService_GenerateVideoAsync_Glitch9_AIDevKit_Google_GenerateMediaRequest_
+  name: GenerateVideoAsync
+  nameWithType: ModelService.GenerateVideoAsync
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService.GenerateVideoAsync
+- uid: UniTask{Glitch9.AIDevKit.GeneratedVideo}
+  commentId: '!:UniTask{Glitch9.AIDevKit.GeneratedVideo}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.GeneratedVideo.html
+  name: UniTask<GeneratedVideo>
+  nameWithType: UniTask<GeneratedVideo>
+  fullName: UniTask<Glitch9.AIDevKit.GeneratedVideo>
+  nameWithType.vb: UniTask(Of GeneratedVideo)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.GeneratedVideo)
+  name.vb: UniTask(Of GeneratedVideo)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.GeneratedVideo
+    name: GeneratedVideo
+    href: Glitch9.AIDevKit.GeneratedVideo.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.GeneratedVideo
+    name: GeneratedVideo
+    href: Glitch9.AIDevKit.GeneratedVideo.html
+  - name: )

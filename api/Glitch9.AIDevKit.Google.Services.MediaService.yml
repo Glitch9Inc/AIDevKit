@@ -1,0 +1,368 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.Services.MediaService
+  commentId: T:Glitch9.AIDevKit.Google.Services.MediaService
+  id: MediaService
+  parent: Glitch9.AIDevKit.Google.Services
+  children:
+  - Glitch9.AIDevKit.Google.Services.MediaService.#ctor(Glitch9.AIDevKit.Google.GenerativeAI)
+  - Glitch9.AIDevKit.Google.Services.MediaService.Upload(Glitch9.AIDevKit.Google.UploadFileRequest)
+  - Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata(Glitch9.AIDevKit.Google.UploadFileRequest)
+  langs:
+  - csharp
+  - vb
+  name: MediaService
+  nameWithType: MediaService
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService
+  type: Class
+  source:
+    id: MediaService
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/MediaService.cs
+    startLine: 5
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: 'public class MediaService : CRUDServiceBase<GenerativeAI>'
+    content.vb: Public Class MediaService Inherits CRUDServiceBase(Of GenerativeAI)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Google.GenerativeAI}
+- uid: Glitch9.AIDevKit.Google.Services.MediaService.#ctor(Glitch9.AIDevKit.Google.GenerativeAI)
+  commentId: M:Glitch9.AIDevKit.Google.Services.MediaService.#ctor(Glitch9.AIDevKit.Google.GenerativeAI)
+  id: '#ctor(Glitch9.AIDevKit.Google.GenerativeAI)'
+  parent: Glitch9.AIDevKit.Google.Services.MediaService
+  langs:
+  - csharp
+  - vb
+  name: MediaService(GenerativeAI)
+  nameWithType: MediaService.MediaService(GenerativeAI)
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService.MediaService(Glitch9.AIDevKit.Google.GenerativeAI)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/MediaService.cs
+    startLine: 9
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public MediaService(GenerativeAI client)
+    parameters:
+    - id: client
+      type: Glitch9.AIDevKit.Google.GenerativeAI
+    content.vb: Public Sub New(client As GenerativeAI)
+  overload: Glitch9.AIDevKit.Google.Services.MediaService.#ctor*
+  nameWithType.vb: MediaService.New(GenerativeAI)
+  fullName.vb: Glitch9.AIDevKit.Google.Services.MediaService.New(Glitch9.AIDevKit.Google.GenerativeAI)
+  name.vb: New(GenerativeAI)
+- uid: Glitch9.AIDevKit.Google.Services.MediaService.Upload(Glitch9.AIDevKit.Google.UploadFileRequest)
+  commentId: M:Glitch9.AIDevKit.Google.Services.MediaService.Upload(Glitch9.AIDevKit.Google.UploadFileRequest)
+  id: Upload(Glitch9.AIDevKit.Google.UploadFileRequest)
+  parent: Glitch9.AIDevKit.Google.Services.MediaService
+  langs:
+  - csharp
+  - vb
+  name: Upload(UploadFileRequest)
+  nameWithType: MediaService.Upload(UploadFileRequest)
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService.Upload(Glitch9.AIDevKit.Google.UploadFileRequest)
+  type: Method
+  source:
+    id: Upload
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/MediaService.cs
+    startLine: 10
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<FileResponse> Upload(UploadFileRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.Google.UploadFileRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.Google.FileResponse}
+    content.vb: Public Function Upload(req As UploadFileRequest) As UniTask(Of FileResponse)
+  overload: Glitch9.AIDevKit.Google.Services.MediaService.Upload*
+- uid: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata(Glitch9.AIDevKit.Google.UploadFileRequest)
+  commentId: M:Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata(Glitch9.AIDevKit.Google.UploadFileRequest)
+  id: UploadMetadata(Glitch9.AIDevKit.Google.UploadFileRequest)
+  parent: Glitch9.AIDevKit.Google.Services.MediaService
+  langs:
+  - csharp
+  - vb
+  name: UploadMetadata(UploadFileRequest)
+  nameWithType: MediaService.UploadMetadata(UploadFileRequest)
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata(Glitch9.AIDevKit.Google.UploadFileRequest)
+  type: Method
+  source:
+    id: UploadMetadata
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/MediaService.cs
+    startLine: 12
+  namespace: Glitch9.AIDevKit.Google.Services
+  syntax:
+    content: public UniTask<FileResponse> UploadMetadata(UploadFileRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.Google.UploadFileRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.Google.FileResponse}
+    content.vb: Public Function UploadMetadata(req As UploadFileRequest) As UniTask(Of FileResponse)
+  overload: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata*
+references:
+- uid: Glitch9.AIDevKit.Google.Services
+  commentId: N:Glitch9.AIDevKit.Google.Services
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google.Services
+  nameWithType: Glitch9.AIDevKit.Google.Services
+  fullName: Glitch9.AIDevKit.Google.Services
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google.Services
+    name: Services
+    href: Glitch9.AIDevKit.Google.Services.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google.Services
+    name: Services
+    href: Glitch9.AIDevKit.Google.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Google.GenerativeAI}
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Google.GenerativeAI}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  name: CRUDServiceBase<GenerativeAI>
+  nameWithType: CRUDServiceBase<GenerativeAI>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<Glitch9.AIDevKit.Google.GenerativeAI>
+  nameWithType.vb: CRUDServiceBase(Of GenerativeAI)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of Glitch9.AIDevKit.Google.GenerativeAI)
+  name.vb: CRUDServiceBase(Of GenerativeAI)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.GenerativeAI
+    name: GenerativeAI
+    href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.GenerativeAI
+    name: GenerativeAI
+    href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  name: CRUDServiceBase<TClient>
+  nameWithType: CRUDServiceBase<TClient>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<TClient>
+  nameWithType.vb: CRUDServiceBase(Of TClient)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of TClient)
+  name.vb: CRUDServiceBase(Of TClient)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - name: TClient
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TClient
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.Google.Services.MediaService.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.MediaService.#ctor
+  href: Glitch9.AIDevKit.Google.Services.MediaService.html#Glitch9_AIDevKit_Google_Services_MediaService__ctor_Glitch9_AIDevKit_Google_GenerativeAI_
+  name: MediaService
+  nameWithType: MediaService.MediaService
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService.MediaService
+  nameWithType.vb: MediaService.New
+  fullName.vb: Glitch9.AIDevKit.Google.Services.MediaService.New
+  name.vb: New
+- uid: Glitch9.AIDevKit.Google.GenerativeAI
+  commentId: T:Glitch9.AIDevKit.Google.GenerativeAI
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  name: GenerativeAI
+  nameWithType: GenerativeAI
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: Glitch9.AIDevKit.Google.Services.MediaService.Upload*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.MediaService.Upload
+  href: Glitch9.AIDevKit.Google.Services.MediaService.html#Glitch9_AIDevKit_Google_Services_MediaService_Upload_Glitch9_AIDevKit_Google_UploadFileRequest_
+  name: Upload
+  nameWithType: MediaService.Upload
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService.Upload
+- uid: Glitch9.AIDevKit.Google.UploadFileRequest
+  commentId: T:Glitch9.AIDevKit.Google.UploadFileRequest
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.UploadFileRequest.html
+  name: UploadFileRequest
+  nameWithType: UploadFileRequest
+  fullName: Glitch9.AIDevKit.Google.UploadFileRequest
+- uid: UniTask{Glitch9.AIDevKit.Google.FileResponse}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Google.FileResponse}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Google.FileResponse.html
+  name: UniTask<FileResponse>
+  nameWithType: UniTask<FileResponse>
+  fullName: UniTask<Glitch9.AIDevKit.Google.FileResponse>
+  nameWithType.vb: UniTask(Of FileResponse)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.FileResponse)
+  name.vb: UniTask(Of FileResponse)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.FileResponse
+    name: FileResponse
+    href: Glitch9.AIDevKit.Google.FileResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.FileResponse
+    name: FileResponse
+    href: Glitch9.AIDevKit.Google.FileResponse.html
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata
+  href: Glitch9.AIDevKit.Google.Services.MediaService.html#Glitch9_AIDevKit_Google_Services_MediaService_UploadMetadata_Glitch9_AIDevKit_Google_UploadFileRequest_
+  name: UploadMetadata
+  nameWithType: MediaService.UploadMetadata
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata

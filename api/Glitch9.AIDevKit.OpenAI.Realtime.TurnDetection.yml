@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection
+  id: TurnDetection
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  children:
+  - Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.PrefixPaddingMs
+  - Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.SilenceDurationMs
+  - Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Threshold
+  - Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Type
+  langs:
+  - csharp
+  - vb
+  name: TurnDetection
+  nameWithType: TurnDetection
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection
+  type: Class
+  source:
+    id: TurnDetection
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/TurnDetection.cs
+    startLine: 7
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Configuration for turn detection. Can be set to null to turn off.
+  example: []
+  syntax:
+    content: public class TurnDetection
+    content.vb: Public Class TurnDetection
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Type
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Type
+  id: Type
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: TurnDetection.Type
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Type
+  type: Property
+  source:
+    id: Type
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/TurnDetection.cs
+    startLine: 12
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Type of turn detection, only "server_vad" is currently supported.
+  example: []
+  syntax:
+    content: public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Type As String
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Type*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Threshold
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Threshold
+  id: Threshold
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection
+  langs:
+  - csharp
+  - vb
+  name: Threshold
+  nameWithType: TurnDetection.Threshold
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Threshold
+  type: Property
+  source:
+    id: Threshold
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/TurnDetection.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Activation threshold for VAD (0.0 to 1.0).
+  example: []
+  syntax:
+    content: public float Threshold { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Threshold As Single
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Threshold*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.PrefixPaddingMs
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.PrefixPaddingMs
+  id: PrefixPaddingMs
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection
+  langs:
+  - csharp
+  - vb
+  name: PrefixPaddingMs
+  nameWithType: TurnDetection.PrefixPaddingMs
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.PrefixPaddingMs
+  type: Property
+  source:
+    id: PrefixPaddingMs
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/TurnDetection.cs
+    startLine: 22
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Amount of audio to include before speech starts (in milliseconds).
+  example: []
+  syntax:
+    content: public int PrefixPaddingMs { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PrefixPaddingMs As Integer
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.PrefixPaddingMs*
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.SilenceDurationMs
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.SilenceDurationMs
+  id: SilenceDurationMs
+  parent: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection
+  langs:
+  - csharp
+  - vb
+  name: SilenceDurationMs
+  nameWithType: TurnDetection.SilenceDurationMs
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.SilenceDurationMs
+  type: Property
+  source:
+    id: SilenceDurationMs
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/TurnDetection.cs
+    startLine: 27
+  namespace: Glitch9.AIDevKit.OpenAI.Realtime
+  summary: Duration of silence to detect speech stop (in milliseconds).
+  example: []
+  syntax:
+    content: public int SilenceDurationMs { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SilenceDurationMs As Integer
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.SilenceDurationMs*
+references:
+- uid: Glitch9.AIDevKit.OpenAI.Realtime
+  commentId: N:Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI.Realtime
+  nameWithType: Glitch9.AIDevKit.OpenAI.Realtime
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime
+    name: Realtime
+    href: Glitch9.AIDevKit.OpenAI.Realtime.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime
+    name: Realtime
+    href: Glitch9.AIDevKit.OpenAI.Realtime.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Type*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Type
+  href: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.html#Glitch9_AIDevKit_OpenAI_Realtime_TurnDetection_Type
+  name: Type
+  nameWithType: TurnDetection.Type
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Threshold*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Threshold
+  href: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.html#Glitch9_AIDevKit_OpenAI_Realtime_TurnDetection_Threshold
+  name: Threshold
+  nameWithType: TurnDetection.Threshold
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.Threshold
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.PrefixPaddingMs*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.PrefixPaddingMs
+  href: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.html#Glitch9_AIDevKit_OpenAI_Realtime_TurnDetection_PrefixPaddingMs
+  name: PrefixPaddingMs
+  nameWithType: TurnDetection.PrefixPaddingMs
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.PrefixPaddingMs
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.SilenceDurationMs*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.SilenceDurationMs
+  href: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.html#Glitch9_AIDevKit_OpenAI_Realtime_TurnDetection_SilenceDurationMs
+  name: SilenceDurationMs
+  nameWithType: TurnDetection.SilenceDurationMs
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.SilenceDurationMs

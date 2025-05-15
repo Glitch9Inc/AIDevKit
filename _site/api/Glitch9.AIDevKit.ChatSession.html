@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ChatSession | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ChatSession | AI DevKit ">
+    
+    <meta name="description" content="Represents a single chat session, including its metadata, settings, messages, and serialization logic. Provides support for saving, loading, summarizing, and auto-saving the session.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI DevKit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.ChatSession">
+
+
+
+  <h1 id="Glitch9_AIDevKit_ChatSession" data-uid="Glitch9.AIDevKit.ChatSession" class="text-break">Class ChatSession</h1>
+  <div class="markdown level0 summary"><p>Represents a single chat session, including its metadata, settings, messages, and serialization logic.
+Provides support for saving, loading, summarizing, and auto-saving the session.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">ChatSession</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_ChatSession_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ChatSession</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession__ctor_" data-uid="Glitch9.AIDevKit.ChatSession.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession__ctor" data-uid="Glitch9.AIDevKit.ChatSession.#ctor">ChatSession()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatSession()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_AutoSave_" data-uid="Glitch9.AIDevKit.ChatSession.AutoSave*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_AutoSave" data-uid="Glitch9.AIDevKit.ChatSession.AutoSave">AutoSave</h4>
+  <div class="markdown level1 summary"><p>Whether the session should automatically save on update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoSave { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_CreatedAt_" data-uid="Glitch9.AIDevKit.ChatSession.CreatedAt*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_CreatedAt" data-uid="Glitch9.AIDevKit.ChatSession.CreatedAt">CreatedAt</h4>
+  <div class="markdown level1 summary"><p>Creation timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnixTime CreatedAt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnixTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_Id_" data-uid="Glitch9.AIDevKit.ChatSession.Id*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_Id" data-uid="Glitch9.AIDevKit.ChatSession.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Unique identifier of the chat session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_Last_" data-uid="Glitch9.AIDevKit.ChatSession.Last*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_Last" data-uid="Glitch9.AIDevKit.ChatSession.Last">Last</h4>
+  <div class="markdown level1 summary"><p>The last message received from the assistant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatCompletion Last { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatCompletion.html">ChatCompletion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_LastException_" data-uid="Glitch9.AIDevKit.ChatSession.LastException*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_LastException" data-uid="Glitch9.AIDevKit.ChatSession.LastException">LastException</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception LastException { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_LastSummaryUpdate_" data-uid="Glitch9.AIDevKit.ChatSession.LastSummaryUpdate*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_LastSummaryUpdate" data-uid="Glitch9.AIDevKit.ChatSession.LastSummaryUpdate">LastSummaryUpdate</h4>
+  <div class="markdown level1 summary"><p>Time when the summary was last updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnixTime LastSummaryUpdate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnixTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_MaxContextMessages_" data-uid="Glitch9.AIDevKit.ChatSession.MaxContextMessages*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_MaxContextMessages" data-uid="Glitch9.AIDevKit.ChatSession.MaxContextMessages">MaxContextMessages</h4>
+  <div class="markdown level1 summary"><p>Maximum number of context messages to use before summarizing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxContextMessages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_Messages_" data-uid="Glitch9.AIDevKit.ChatSession.Messages*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_Messages" data-uid="Glitch9.AIDevKit.ChatSession.Messages">Messages</h4>
+  <div class="markdown level1 summary"><p>List of all chat messages in the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ChatMessage&gt; Messages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_Model_" data-uid="Glitch9.AIDevKit.ChatSession.Model*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_Model" data-uid="Glitch9.AIDevKit.ChatSession.Model">Model</h4>
+  <div class="markdown level1 summary"><p>The AI model used for the chat.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Model Model { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_ModelOptions_" data-uid="Glitch9.AIDevKit.ChatSession.ModelOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_ModelOptions" data-uid="Glitch9.AIDevKit.ChatSession.ModelOptions">ModelOptions</h4>
+  <div class="markdown level1 summary"><p>Optional parameters for model behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModelOptions ModelOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelOptions.html">ModelOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_ModerationOptions_" data-uid="Glitch9.AIDevKit.ChatSession.ModerationOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_ModerationOptions" data-uid="Glitch9.AIDevKit.ChatSession.ModerationOptions">ModerationOptions</h4>
+  <div class="markdown level1 summary"><p>Moderation settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModerationOptions ModerationOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModerationOptions.html">ModerationOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_Name_" data-uid="Glitch9.AIDevKit.ChatSession.Name*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_Name" data-uid="Glitch9.AIDevKit.ChatSession.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name of the chat session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_ReasoningOptions_" data-uid="Glitch9.AIDevKit.ChatSession.ReasoningOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_ReasoningOptions" data-uid="Glitch9.AIDevKit.ChatSession.ReasoningOptions">ReasoningOptions</h4>
+  <div class="markdown level1 summary"><p>Additional reasoning configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReasoningOptions ReasoningOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ReasoningOptions.html">ReasoningOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_RecentMessages_" data-uid="Glitch9.AIDevKit.ChatSession.RecentMessages*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_RecentMessages" data-uid="Glitch9.AIDevKit.ChatSession.RecentMessages">RecentMessages</h4>
+  <div class="markdown level1 summary"><p>List of recent chat messages used for summarization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ChatMessage&gt; RecentMessages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_SpeechOutputOptions_" data-uid="Glitch9.AIDevKit.ChatSession.SpeechOutputOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_SpeechOutputOptions" data-uid="Glitch9.AIDevKit.ChatSession.SpeechOutputOptions">SpeechOutputOptions</h4>
+  <div class="markdown level1 summary"><p>Settings for speech output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpeechOutputOptions SpeechOutputOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.SpeechOutputOptions.html">SpeechOutputOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_StartingMessage_" data-uid="Glitch9.AIDevKit.ChatSession.StartingMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_StartingMessage" data-uid="Glitch9.AIDevKit.ChatSession.StartingMessage">StartingMessage</h4>
+  <div class="markdown level1 summary"><p>The message shown to the user at the start of the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StartingMessage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_Stream_" data-uid="Glitch9.AIDevKit.ChatSession.Stream*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_Stream" data-uid="Glitch9.AIDevKit.ChatSession.Stream">Stream</h4>
+  <div class="markdown level1 summary"><p>Whether streaming responses are enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Stream { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_Summary_" data-uid="Glitch9.AIDevKit.ChatSession.Summary*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_Summary" data-uid="Glitch9.AIDevKit.ChatSession.Summary">Summary</h4>
+  <div class="markdown level1 summary"><p>The current summary of the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Summary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_SummaryModel_" data-uid="Glitch9.AIDevKit.ChatSession.SummaryModel*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_SummaryModel" data-uid="Glitch9.AIDevKit.ChatSession.SummaryModel">SummaryModel</h4>
+  <div class="markdown level1 summary"><p>Model used to generate conversation summaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Model SummaryModel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_SystemInstruction_" data-uid="Glitch9.AIDevKit.ChatSession.SystemInstruction*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_SystemInstruction" data-uid="Glitch9.AIDevKit.ChatSession.SystemInstruction">SystemInstruction</h4>
+  <div class="markdown level1 summary"><p>System instruction for the assistant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SystemInstruction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_UpdatedAt_" data-uid="Glitch9.AIDevKit.ChatSession.UpdatedAt*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_UpdatedAt" data-uid="Glitch9.AIDevKit.ChatSession.UpdatedAt">UpdatedAt</h4>
+  <div class="markdown level1 summary"><p>Last update timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnixTime UpdatedAt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnixTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_WebSearchOptions_" data-uid="Glitch9.AIDevKit.ChatSession.WebSearchOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_WebSearchOptions" data-uid="Glitch9.AIDevKit.ChatSession.WebSearchOptions">WebSearchOptions</h4>
+  <div class="markdown level1 summary"><p>Settings for web search integration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebSearchOptions WebSearchOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.WebSearchOptions.html">WebSearchOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_ClearMessages_" data-uid="Glitch9.AIDevKit.ChatSession.ClearMessages*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_ClearMessages" data-uid="Glitch9.AIDevKit.ChatSession.ClearMessages">ClearMessages()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMessages()</code></pre>
+  </div>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_CreateFile_" data-uid="Glitch9.AIDevKit.ChatSession.CreateFile*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_CreateFile_System_String_System_String_System_String_" data-uid="Glitch9.AIDevKit.ChatSession.CreateFile(System.String,System.String,System.String)">CreateFile(string, string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ChatSession CreateFile(string id = null, string name = null, string startingMessage = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">startingMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatSession.html">ChatSession</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_DeleteFile_" data-uid="Glitch9.AIDevKit.ChatSession.DeleteFile*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_DeleteFile" data-uid="Glitch9.AIDevKit.ChatSession.DeleteFile">DeleteFile()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteFile()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_DeleteFile_" data-uid="Glitch9.AIDevKit.ChatSession.DeleteFile*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_DeleteFile_System_String_" data-uid="Glitch9.AIDevKit.ChatSession.DeleteFile(System.String)">DeleteFile(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DeleteFile(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_EnterMessageAsync_" data-uid="Glitch9.AIDevKit.ChatSession.EnterMessageAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_EnterMessageAsync_Glitch9_AIDevKit_ChatMessage_Glitch9_AIDevKit_ChatStreamHandler_" data-uid="Glitch9.AIDevKit.ChatSession.EnterMessageAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)">EnterMessageAsync(ChatMessage, ChatStreamHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;AssistantMessage&gt; EnterMessageAsync(ChatMessage inputMessage, ChatStreamHandler streamHandler = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a></td>
+        <td><span class="parametername">inputMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatStreamHandler.html">ChatStreamHandler</a></td>
+        <td><span class="parametername">streamHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.AssistantMessage.html">AssistantMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_Equals_" data-uid="Glitch9.AIDevKit.ChatSession.Equals*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_Equals_Glitch9_AIDevKit_ChatSession_" data-uid="Glitch9.AIDevKit.ChatSession.Equals(Glitch9.AIDevKit.ChatSession)">Equals(ChatSession)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(ChatSession other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatSession.html">ChatSession</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_GetHashCode_" data-uid="Glitch9.AIDevKit.ChatSession.GetHashCode*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_GetHashCode" data-uid="Glitch9.AIDevKit.ChatSession.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>A hash code for the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">object.GetHashCode()</span></div>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_LoadFile_" data-uid="Glitch9.AIDevKit.ChatSession.LoadFile*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_LoadFile_System_String_" data-uid="Glitch9.AIDevKit.ChatSession.LoadFile(System.String)">LoadFile(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ChatSession LoadFile(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatSession.html">ChatSession</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_Rewind_" data-uid="Glitch9.AIDevKit.ChatSession.Rewind*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_Rewind" data-uid="Glitch9.AIDevKit.ChatSession.Rewind">Rewind()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (ChatMessage lastSent, ChatMessage lastReceived) Rewind()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-glitch9.aidevkit.chatmessage,glitch9.aidevkit.chatmessage-.lastsent">lastSent</a>, <a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-glitch9.aidevkit.chatmessage,glitch9.aidevkit.chatmessage-.lastreceived">lastReceived</a>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_SaveFile_" data-uid="Glitch9.AIDevKit.ChatSession.SaveFile*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_SaveFile_System_String_" data-uid="Glitch9.AIDevKit.ChatSession.SaveFile(System.String)">SaveFile(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveFile(string customPath = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">customPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_SaveFileAsync_" data-uid="Glitch9.AIDevKit.ChatSession.SaveFileAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_SaveFileAsync_System_String_" data-uid="Glitch9.AIDevKit.ChatSession.SaveFileAsync(System.String)">SaveFileAsync(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask SaveFileAsync(string customPath = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">customPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_ChatSession_ToString_" data-uid="Glitch9.AIDevKit.ChatSession.ToString*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatSession_ToString" data-uid="Glitch9.AIDevKit.ChatSession.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">object.ToString()</span></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENChat_Glitch9_AIDevKit_ChatSession_Glitch9_AIDevKit_ChatMessage_">GENTaskExtensions.GENChat(ChatSession, ChatMessage)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,453 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.Chunk
+  commentId: T:Glitch9.AIDevKit.Google.Chunk
+  id: Chunk
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.Chunk.CreateTime
+  - Glitch9.AIDevKit.Google.Chunk.CustomMetadata
+  - Glitch9.AIDevKit.Google.Chunk.Data
+  - Glitch9.AIDevKit.Google.Chunk.Name
+  - Glitch9.AIDevKit.Google.Chunk.State
+  - Glitch9.AIDevKit.Google.Chunk.UpdateTime
+  langs:
+  - csharp
+  - vb
+  name: Chunk
+  nameWithType: Chunk
+  fullName: Glitch9.AIDevKit.Google.Chunk
+  type: Class
+  source:
+    id: Chunk
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 10
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    A Chunk is a subpart of a Document that is treated as an independent unit for the purposes of vector representation and storage. A Corpus can have a maximum of 1 million Chunks.
+
+    Patch request has 'updateMask' query parameter: the list of fields to update. Currently, this only supports updating customMetadata and data.
+  example: []
+  syntax:
+    content: public class Chunk
+    content.vb: Public Class Chunk
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.Google.Chunk.Name
+  commentId: P:Glitch9.AIDevKit.Google.Chunk.Name
+  id: Name
+  parent: Glitch9.AIDevKit.Google.Chunk
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Chunk.Name
+  fullName: Glitch9.AIDevKit.Google.Chunk.Name
+  type: Property
+  source:
+    id: Name
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit.Google
+  summary: 'Immutable. Identifier. The Chunk resource name. The ID (name excluding the "corpora/*/documents/*/chunks/" prefix) can contain up to 40 characters that are lowercase alphanumeric or dashes (-). The ID cannot start or end with a dash. If the name is empty on create, a random 12-character unique ID will be generated. Example: corpora/{corpus_id}/documents/{document_id}/chunks/123a456b789c'
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Glitch9.AIDevKit.Google.Chunk.Name*
+- uid: Glitch9.AIDevKit.Google.Chunk.Data
+  commentId: P:Glitch9.AIDevKit.Google.Chunk.Data
+  id: Data
+  parent: Glitch9.AIDevKit.Google.Chunk
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: Chunk.Data
+  fullName: Glitch9.AIDevKit.Google.Chunk.Data
+  type: Property
+  source:
+    id: Data
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 20
+  namespace: Glitch9.AIDevKit.Google
+  summary: Required. The content for the Chunk, such as the text string. The maximum number of tokens per chunk is 2043.
+  example: []
+  syntax:
+    content: public ChunkData Data { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.ChunkData
+    content.vb: Public Property Data As ChunkData
+  overload: Glitch9.AIDevKit.Google.Chunk.Data*
+- uid: Glitch9.AIDevKit.Google.Chunk.CustomMetadata
+  commentId: P:Glitch9.AIDevKit.Google.Chunk.CustomMetadata
+  id: CustomMetadata
+  parent: Glitch9.AIDevKit.Google.Chunk
+  langs:
+  - csharp
+  - vb
+  name: CustomMetadata
+  nameWithType: Chunk.CustomMetadata
+  fullName: Glitch9.AIDevKit.Google.Chunk.CustomMetadata
+  type: Property
+  source:
+    id: CustomMetadata
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 25
+  namespace: Glitch9.AIDevKit.Google
+  summary: Optional. User provided custom metadata stored as key-value pairs. The maximum number of CustomMetadata per chunk is 20.
+  example: []
+  syntax:
+    content: public Dictionary<string, CustomMetadataValue> CustomMetadata { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,Glitch9.AIDevKit.Google.CustomMetadataValue}
+    content.vb: Public Property CustomMetadata As Dictionary(Of String, CustomMetadataValue)
+  overload: Glitch9.AIDevKit.Google.Chunk.CustomMetadata*
+- uid: Glitch9.AIDevKit.Google.Chunk.CreateTime
+  commentId: P:Glitch9.AIDevKit.Google.Chunk.CreateTime
+  id: CreateTime
+  parent: Glitch9.AIDevKit.Google.Chunk
+  langs:
+  - csharp
+  - vb
+  name: CreateTime
+  nameWithType: Chunk.CreateTime
+  fullName: Glitch9.AIDevKit.Google.Chunk.CreateTime
+  type: Property
+  source:
+    id: CreateTime
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 31
+  namespace: Glitch9.AIDevKit.Google
+  summary: Output only. The Timestamp of when the Chunk was created.
+  example: []
+  syntax:
+    content: public ZuluTime? CreateTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.ZuluTime}
+    content.vb: Public Property CreateTime As ZuluTime?
+  overload: Glitch9.AIDevKit.Google.Chunk.CreateTime*
+- uid: Glitch9.AIDevKit.Google.Chunk.UpdateTime
+  commentId: P:Glitch9.AIDevKit.Google.Chunk.UpdateTime
+  id: UpdateTime
+  parent: Glitch9.AIDevKit.Google.Chunk
+  langs:
+  - csharp
+  - vb
+  name: UpdateTime
+  nameWithType: Chunk.UpdateTime
+  fullName: Glitch9.AIDevKit.Google.Chunk.UpdateTime
+  type: Property
+  source:
+    id: UpdateTime
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 36
+  namespace: Glitch9.AIDevKit.Google
+  summary: Output only. The Timestamp of when the Chunk was last updated.
+  example: []
+  syntax:
+    content: public ZuluTime? UpdateTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.ZuluTime}
+    content.vb: Public Property UpdateTime As ZuluTime?
+  overload: Glitch9.AIDevKit.Google.Chunk.UpdateTime*
+- uid: Glitch9.AIDevKit.Google.Chunk.State
+  commentId: P:Glitch9.AIDevKit.Google.Chunk.State
+  id: State
+  parent: Glitch9.AIDevKit.Google.Chunk
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: Chunk.State
+  fullName: Glitch9.AIDevKit.Google.Chunk.State
+  type: Property
+  source:
+    id: State
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Corpora/Chunks/Chunk.cs
+    startLine: 41
+  namespace: Glitch9.AIDevKit.Google
+  summary: Output only. Current state of the Chunk.
+  example: []
+  syntax:
+    content: public State? State { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.AIDevKit.Google.State}
+    content.vb: Public Property State As State?
+  overload: Glitch9.AIDevKit.Google.Chunk.State*
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.Google.Chunk.Name*
+  commentId: Overload:Glitch9.AIDevKit.Google.Chunk.Name
+  href: Glitch9.AIDevKit.Google.Chunk.html#Glitch9_AIDevKit_Google_Chunk_Name
+  name: Name
+  nameWithType: Chunk.Name
+  fullName: Glitch9.AIDevKit.Google.Chunk.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.Google.Chunk.Data*
+  commentId: Overload:Glitch9.AIDevKit.Google.Chunk.Data
+  href: Glitch9.AIDevKit.Google.Chunk.html#Glitch9_AIDevKit_Google_Chunk_Data
+  name: Data
+  nameWithType: Chunk.Data
+  fullName: Glitch9.AIDevKit.Google.Chunk.Data
+- uid: Glitch9.AIDevKit.Google.ChunkData
+  commentId: T:Glitch9.AIDevKit.Google.ChunkData
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.ChunkData.html
+  name: ChunkData
+  nameWithType: ChunkData
+  fullName: Glitch9.AIDevKit.Google.ChunkData
+- uid: Glitch9.AIDevKit.Google.Chunk.CustomMetadata*
+  commentId: Overload:Glitch9.AIDevKit.Google.Chunk.CustomMetadata
+  href: Glitch9.AIDevKit.Google.Chunk.html#Glitch9_AIDevKit_Google_Chunk_CustomMetadata
+  name: CustomMetadata
+  nameWithType: Chunk.CustomMetadata
+  fullName: Glitch9.AIDevKit.Google.Chunk.CustomMetadata
+- uid: System.Collections.Generic.Dictionary{System.String,Glitch9.AIDevKit.Google.CustomMetadataValue}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Glitch9.AIDevKit.Google.CustomMetadataValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: Glitch9.AIDevKit.Google.CustomMetadataValue.html
+  name: Dictionary<string, CustomMetadataValue>
+  nameWithType: Dictionary<string, CustomMetadataValue>
+  fullName: System.Collections.Generic.Dictionary<string, Glitch9.AIDevKit.Google.CustomMetadataValue>
+  nameWithType.vb: Dictionary(Of String, CustomMetadataValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Glitch9.AIDevKit.Google.CustomMetadataValue)
+  name.vb: Dictionary(Of String, CustomMetadataValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.CustomMetadataValue
+    name: CustomMetadataValue
+    href: Glitch9.AIDevKit.Google.CustomMetadataValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.CustomMetadataValue
+    name: CustomMetadataValue
+    href: Glitch9.AIDevKit.Google.CustomMetadataValue.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Glitch9.AIDevKit.Google.Chunk.CreateTime*
+  commentId: Overload:Glitch9.AIDevKit.Google.Chunk.CreateTime
+  href: Glitch9.AIDevKit.Google.Chunk.html#Glitch9_AIDevKit_Google_Chunk_CreateTime
+  name: CreateTime
+  nameWithType: Chunk.CreateTime
+  fullName: Glitch9.AIDevKit.Google.Chunk.CreateTime
+- uid: System.Nullable{Glitch9.ZuluTime}
+  commentId: T:System.Nullable{Glitch9.ZuluTime}
+  parent: System
+  definition: System.Nullable`1
+  name: ZuluTime?
+  nameWithType: ZuluTime?
+  fullName: Glitch9.ZuluTime?
+  spec.csharp:
+  - uid: Glitch9.ZuluTime
+    name: ZuluTime
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.ZuluTime
+    name: ZuluTime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Chunk.UpdateTime*
+  commentId: Overload:Glitch9.AIDevKit.Google.Chunk.UpdateTime
+  href: Glitch9.AIDevKit.Google.Chunk.html#Glitch9_AIDevKit_Google_Chunk_UpdateTime
+  name: UpdateTime
+  nameWithType: Chunk.UpdateTime
+  fullName: Glitch9.AIDevKit.Google.Chunk.UpdateTime
+- uid: Glitch9.AIDevKit.Google.Chunk.State*
+  commentId: Overload:Glitch9.AIDevKit.Google.Chunk.State
+  href: Glitch9.AIDevKit.Google.Chunk.html#Glitch9_AIDevKit_Google_Chunk_State
+  name: State
+  nameWithType: Chunk.State
+  fullName: Glitch9.AIDevKit.Google.Chunk.State
+- uid: System.Nullable{Glitch9.AIDevKit.Google.State}
+  commentId: T:System.Nullable{Glitch9.AIDevKit.Google.State}
+  parent: System
+  definition: System.Nullable`1
+  href: Glitch9.AIDevKit.Google.State.html
+  name: State?
+  nameWithType: State?
+  fullName: Glitch9.AIDevKit.Google.State?
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.State
+    name: State
+    href: Glitch9.AIDevKit.Google.State.html
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.State
+    name: State
+    href: Glitch9.AIDevKit.Google.State.html
+  - name: '?'

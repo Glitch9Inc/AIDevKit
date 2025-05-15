@@ -1,0 +1,3034 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ExGUILayout | AI DevKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ExGUILayout | AI DevKit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AI DevKit">
+            AI DevKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Glitch9.ExEditor.ExGUILayout">
+
+
+
+  <h1 id="Glitch9_ExEditor_ExGUILayout" data-uid="Glitch9.ExEditor.ExGUILayout" class="text-break">
+Class ExGUILayout  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.ExEditor.html">ExEditor</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Glitch9.CoreLib.Editor.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ExGUILayout</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ExGUILayout</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNotSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfNotSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNull__1___0_System_String_System_String_">LogExtensions.LogIfNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_ToSenderName_System_Object_">SystemExtensions.ToSenderName(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.TypeExtensions.html#Glitch9_TypeExtensions_IsInteger_System_Object_">TypeExtensions.IsInteger(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout__ctor_" data-uid="Glitch9.ExEditor.ExGUILayout.#ctor*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout__ctor" data-uid="Glitch9.ExEditor.ExGUILayout.#ctor">
+  ExGUILayout()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExGUILayout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_AssetPathField_" data-uid="Glitch9.ExEditor.ExGUILayout.AssetPathField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_AssetPathField_System_String_System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.AssetPathField(System.String,System.String,System.String)">
+  AssetPathField(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AssetPathField(string label, string value, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_AssetPathField_" data-uid="Glitch9.ExEditor.ExGUILayout.AssetPathField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_AssetPathField_UnityEngine_GUIContent_System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.AssetPathField(UnityEngine.GUIContent,System.String,System.String)">
+  AssetPathField(GUIContent, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AssetPathField(GUIContent label, string value, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_BoolMultiButton_" data-uid="Glitch9.ExEditor.ExGUILayout.BoolMultiButton*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_BoolMultiButton_System_String_System_Action_System_Boolean__System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.BoolMultiButton(System.String,System.Action{System.Boolean},System.String,System.String)">
+  BoolMultiButton(string, Action&lt;bool&gt;, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BoolMultiButton(string label, Action&lt;bool&gt; action, string yes, string no)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>yes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>no</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_BoxedLabel_" data-uid="Glitch9.ExEditor.ExGUILayout.BoxedLabel*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_BoxedLabel_System_String_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.BoxedLabel(System.String,UnityEngine.GUILayoutOption[])">
+  BoxedLabel(string, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BoxedLabel(string label, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_BoxedLabel_" data-uid="Glitch9.ExEditor.ExGUILayout.BoxedLabel*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_BoxedLabel_UnityEngine_GUIContent_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.BoxedLabel(UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
+  BoxedLabel(GUIContent, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BoxedLabel(GUIContent label, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_BoxedLayout_" data-uid="Glitch9.ExEditor.ExGUILayout.BoxedLayout*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_BoxedLayout_System_String_System_Action_UnityEngine_Texture_" data-uid="Glitch9.ExEditor.ExGUILayout.BoxedLayout(System.String,System.Action,UnityEngine.Texture)">
+  BoxedLayout(string, Action, Texture)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BoxedLayout(string label, Action callback, Texture texture = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>texture</code> <span class="xref">Texture</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_DateTimeField_" data-uid="Glitch9.ExEditor.ExGUILayout.DateTimeField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_DateTimeField_System_DateTime_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.DateTimeField(System.DateTime,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,UnityEngine.GUILayoutOption[])">
+  DateTimeField(DateTime, bool, bool, bool, bool, bool, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime DateTimeField(DateTime dateTime, bool year, bool month, bool day, bool hour = false, bool minute = false, bool second = false, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>year</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>month</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>day</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>hour</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>minute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>second</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_DateTimeField_" data-uid="Glitch9.ExEditor.ExGUILayout.DateTimeField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_DateTimeField_System_String_System_DateTime_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.DateTimeField(System.String,System.DateTime,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,UnityEngine.GUILayoutOption[])">
+  DateTimeField(string, DateTime, bool, bool, bool, bool, bool, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime DateTimeField(string label, DateTime dateTime, bool year, bool month, bool day, bool hour = false, bool minute = false, bool second = false, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>year</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>month</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>day</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>hour</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>minute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>second</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_DateTimeField_" data-uid="Glitch9.ExEditor.ExGUILayout.DateTimeField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_DateTimeField_UnityEngine_GUIContent_System_DateTime_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.DateTimeField(UnityEngine.GUIContent,System.DateTime,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,UnityEngine.GUILayoutOption[])">
+  DateTimeField(GUIContent, DateTime, bool, bool, bool, bool, bool, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime DateTimeField(GUIContent label, DateTime dateTime, bool year, bool month, bool day, bool hour = false, bool minute = false, bool second = false, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>year</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>month</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>day</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>hour</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>minute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>second</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_DescriptionField_" data-uid="Glitch9.ExEditor.ExGUILayout.DescriptionField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_DescriptionField_System_String_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.DescriptionField(System.String,UnityEngine.GUILayoutOption[])">
+  DescriptionField(string, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string DescriptionField(string text, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_DescriptionField_" data-uid="Glitch9.ExEditor.ExGUILayout.DescriptionField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_DescriptionField_UnityEditor_SerializedProperty_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.DescriptionField(UnityEditor.SerializedProperty,UnityEngine.GUILayoutOption[])">
+  DescriptionField(SerializedProperty, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string DescriptionField(SerializedProperty property, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_EnumListToolbar_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumListToolbar*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_EnumListToolbar__1_System_Collections_Generic_List___0__System_Collections_Generic_List___0___UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.EnumListToolbar``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{``0}@,UnityEngine.GUILayoutOption[])">
+  EnumListToolbar&lt;T&gt;(List&lt;T&gt;, out List&lt;T&gt;, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EnumListToolbar&lt;T&gt;(List&lt;T&gt; selected, out List&lt;T&gt; updated, params GUILayoutOption[] options) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>updated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_EnumPopupWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopupWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_EnumPopupWithDefault__1_System_String_UnityEditor_SerializedProperty___0_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopupWithDefault``1(System.String,UnityEditor.SerializedProperty,``0)">
+  EnumPopupWithDefault&lt;T&gt;(string, SerializedProperty, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EnumPopupWithDefault&lt;T&gt;(string label, SerializedProperty property, T defaultValue) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>property</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_EnumPopupWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopupWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_EnumPopupWithDefault__1_System_String___0___0_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopupWithDefault``1(System.String,``0,``0)">
+  EnumPopupWithDefault&lt;T&gt;(string, T, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T EnumPopupWithDefault&lt;T&gt;(string label, T value, T defaultValue) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_EnumPopupWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopupWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_EnumPopupWithDefault__1_UnityEngine_GUIContent_UnityEditor_SerializedProperty___0_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopupWithDefault``1(UnityEngine.GUIContent,UnityEditor.SerializedProperty,``0)">
+  EnumPopupWithDefault&lt;T&gt;(GUIContent, SerializedProperty, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EnumPopupWithDefault&lt;T&gt;(GUIContent label, SerializedProperty property, T defaultValue) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>property</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_EnumPopupWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopupWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_EnumPopupWithDefault__1_UnityEngine_GUIContent___0___0_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopupWithDefault``1(UnityEngine.GUIContent,``0,``0)">
+  EnumPopupWithDefault&lt;T&gt;(GUIContent, T, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T EnumPopupWithDefault&lt;T&gt;(GUIContent label, T value, T defaultValue) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_EnumPopup_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopup*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_EnumPopup__1_System_String___0_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopup``1(System.String,``0,UnityEngine.GUILayoutOption[])">
+  EnumPopup&lt;T&gt;(string, T, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T EnumPopup&lt;T&gt;(string label, T value, params GUILayoutOption[] options) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_EnumPopup_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopup*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_EnumPopup__1_UnityEngine_GUIContent___0_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopup``1(UnityEngine.GUIContent,``0,UnityEngine.GUILayoutOption[])">
+  EnumPopup&lt;T&gt;(GUIContent, T, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T EnumPopup&lt;T&gt;(GUIContent label, T value, params GUILayoutOption[] options) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_EnumPopup_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopup*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_EnumPopup__1___0_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.EnumPopup``1(``0,UnityEngine.GUILayoutOption[])">
+  EnumPopup&lt;T&gt;(T, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T EnumPopup&lt;T&gt;(T value, params GUILayoutOption[] options) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_EnumToolbar_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumToolbar*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_EnumToolbar__1___0___0__UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.EnumToolbar``1(``0,``0@,UnityEngine.GUILayoutOption[])">
+  EnumToolbar&lt;T&gt;(T, out T, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EnumToolbar&lt;T&gt;(T enumValue, out T newEnum, params GUILayoutOption[] options) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumValue</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>newEnum</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_EnumToolbar_" data-uid="Glitch9.ExEditor.ExGUILayout.EnumToolbar*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_EnumToolbar__1___0___0__UnityEngine_GUIStyle_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.EnumToolbar``1(``0,``0@,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+  EnumToolbar&lt;T&gt;(T, out T, GUIStyle, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EnumToolbar&lt;T&gt;(T enumValue, out T newEnum, GUIStyle toolbarStyle, params GUILayoutOption[] options) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumValue</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>newEnum</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>toolbarStyle</code> <span class="xref">GUIStyle</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ExColorPicker_" data-uid="Glitch9.ExEditor.ExGUILayout.ExColorPicker*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ExColorPicker_System_String_UnityEngine_Color_" data-uid="Glitch9.ExEditor.ExGUILayout.ExColorPicker(System.String,UnityEngine.Color)">
+  ExColorPicker(string, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color ExColorPicker(string label, Color selectedColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectedColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ExColorPicker_" data-uid="Glitch9.ExEditor.ExGUILayout.ExColorPicker*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ExColorPicker_UnityEngine_GUIContent_UnityEngine_Color_" data-uid="Glitch9.ExEditor.ExGUILayout.ExColorPicker(UnityEngine.GUIContent,UnityEngine.Color)">
+  ExColorPicker(GUIContent, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color ExColorPicker(GUIContent label, Color selectedColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>selectedColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_FilePathField_" data-uid="Glitch9.ExEditor.ExGUILayout.FilePathField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_FilePathField_System_String_System_String_System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.FilePathField(System.String,System.String,System.String,System.String)">
+  FilePathField(string, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FilePathField(string label, string path, string extension, string defaultPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>extension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_FilePathField_" data-uid="Glitch9.ExEditor.ExGUILayout.FilePathField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_FilePathField_UnityEngine_GUIContent_System_String_System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.FilePathField(UnityEngine.GUIContent,System.String,System.String,System.String)">
+  FilePathField(GUIContent, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FilePathField(GUIContent label, string path, string extension, string defaultPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>extension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_FlagToolbar_" data-uid="Glitch9.ExEditor.ExGUILayout.FlagToolbar*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_FlagToolbar__1___0_System_Int32_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.FlagToolbar``1(``0,System.Int32,UnityEngine.GUILayoutOption[])">
+  FlagToolbar&lt;T&gt;(T, int, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T FlagToolbar&lt;T&gt;(T enumValue, int startIndex = 1, params GUILayoutOption[] options) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumValue</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_FloatFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.FloatFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_FloatFieldWithDefault_System_String_System_Single_System_Single_" data-uid="Glitch9.ExEditor.ExGUILayout.FloatFieldWithDefault(System.String,System.Single,System.Single)">
+  FloatFieldWithDefault(string, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FloatFieldWithDefault(string label, float value, float defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_FloatFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.FloatFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_FloatFieldWithDefault_System_String_UnityEditor_SerializedProperty_System_Single_" data-uid="Glitch9.ExEditor.ExGUILayout.FloatFieldWithDefault(System.String,UnityEditor.SerializedProperty,System.Single)">
+  FloatFieldWithDefault(string, SerializedProperty, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FloatFieldWithDefault(string label, SerializedProperty property, float defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>property</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_FloatFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.FloatFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_FloatFieldWithDefault_UnityEngine_GUIContent_System_Single_System_Single_" data-uid="Glitch9.ExEditor.ExGUILayout.FloatFieldWithDefault(UnityEngine.GUIContent,System.Single,System.Single)">
+  FloatFieldWithDefault(GUIContent, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FloatFieldWithDefault(GUIContent label, float value, float defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_FloatFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.FloatFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_FloatFieldWithDefault_UnityEngine_GUIContent_UnityEditor_SerializedProperty_System_Single_" data-uid="Glitch9.ExEditor.ExGUILayout.FloatFieldWithDefault(UnityEngine.GUIContent,UnityEditor.SerializedProperty,System.Single)">
+  FloatFieldWithDefault(GUIContent, SerializedProperty, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FloatFieldWithDefault(GUIContent label, SerializedProperty property, float defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>property</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_Foldout_" data-uid="Glitch9.ExEditor.ExGUILayout.Foldout*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_Foldout_System_String_System_Action_" data-uid="Glitch9.ExEditor.ExGUILayout.Foldout(System.String,System.Action)">
+  Foldout(string, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Foldout(string label, Action callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_HelpBox_" data-uid="Glitch9.ExEditor.ExGUILayout.HelpBox*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_HelpBox_System_String_Glitch9_ExEditor_ExMessageType_" data-uid="Glitch9.ExEditor.ExGUILayout.HelpBox(System.String,Glitch9.ExEditor.ExMessageType)">
+  HelpBox(string, ExMessageType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HelpBox(string message, ExMessageType messageType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>messageType</code> <a class="xref" href="Glitch9.ExEditor.ExMessageType.html">ExMessageType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_InfoField_" data-uid="Glitch9.ExEditor.ExGUILayout.InfoField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_InfoField_System_String_System_String_System_Single_System_Int32_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.InfoField(System.String,System.String,System.Single,System.Int32,System.Boolean,UnityEngine.GUILayoutOption[])">
+  InfoField(string, string, float, int, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InfoField(string label, string content, float labelWidth = -1, int fontSize = 12, bool boldLabel = false, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>labelWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>fontSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>boldLabel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_InfoField_" data-uid="Glitch9.ExEditor.ExGUILayout.InfoField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_InfoField_System_String_UnityEngine_GUIContent_System_Single_System_Int32_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.InfoField(System.String,UnityEngine.GUIContent,System.Single,System.Int32,System.Boolean,UnityEngine.GUILayoutOption[])">
+  InfoField(string, GUIContent, float, int, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InfoField(string label, GUIContent content, float labelWidth = -1, int fontSize = 12, bool boldLabel = false, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>content</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>labelWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>fontSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>boldLabel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_IntFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.IntFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_IntFieldWithDefault_System_String_System_Int32_System_Int32_" data-uid="Glitch9.ExEditor.ExGUILayout.IntFieldWithDefault(System.String,System.Int32,System.Int32)">
+  IntFieldWithDefault(string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IntFieldWithDefault(string label, int value, int defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_IntFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.IntFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_IntFieldWithDefault_System_String_UnityEditor_SerializedProperty_System_Int32_" data-uid="Glitch9.ExEditor.ExGUILayout.IntFieldWithDefault(System.String,UnityEditor.SerializedProperty,System.Int32)">
+  IntFieldWithDefault(string, SerializedProperty, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IntFieldWithDefault(string label, SerializedProperty property, int defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>property</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_IntFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.IntFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_IntFieldWithDefault_UnityEngine_GUIContent_System_Int32_System_Int32_" data-uid="Glitch9.ExEditor.ExGUILayout.IntFieldWithDefault(UnityEngine.GUIContent,System.Int32,System.Int32)">
+  IntFieldWithDefault(GUIContent, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IntFieldWithDefault(GUIContent label, int value, int defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_IntFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.IntFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_IntFieldWithDefault_UnityEngine_GUIContent_UnityEditor_SerializedProperty_System_Int32_" data-uid="Glitch9.ExEditor.ExGUILayout.IntFieldWithDefault(UnityEngine.GUIContent,UnityEditor.SerializedProperty,System.Int32)">
+  IntFieldWithDefault(GUIContent, SerializedProperty, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IntFieldWithDefault(GUIContent label, SerializedProperty property, int defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>property</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_MultiButton_" data-uid="Glitch9.ExEditor.ExGUILayout.MultiButton*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_MultiButton_System_String_Glitch9_ExEditor_GUIButtonEntry___" data-uid="Glitch9.ExEditor.ExGUILayout.MultiButton(System.String,Glitch9.ExEditor.GUIButtonEntry[])">
+  MultiButton(string, params GUIButtonEntry[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MultiButton(string label, params GUIButtonEntry[] buttonEntries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>buttonEntries</code> <a class="xref" href="Glitch9.ExEditor.GUIButtonEntry.html">GUIButtonEntry</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_PersistentDataPathField_" data-uid="Glitch9.ExEditor.ExGUILayout.PersistentDataPathField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_PersistentDataPathField_System_String_System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.PersistentDataPathField(System.String,System.String,System.String)">
+  PersistentDataPathField(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PersistentDataPathField(string label, string value, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_PersistentDataPathField_" data-uid="Glitch9.ExEditor.ExGUILayout.PersistentDataPathField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_PersistentDataPathField_UnityEngine_GUIContent_System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.PersistentDataPathField(UnityEngine.GUIContent,System.String,System.String)">
+  PersistentDataPathField(GUIContent, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PersistentDataPathField(GUIContent label, string value, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ResizableEnumPopup_" data-uid="Glitch9.ExEditor.ExGUILayout.ResizableEnumPopup*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ResizableEnumPopup__1___0_UnityEngine_GUIContent_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.ResizableEnumPopup``1(``0,UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
+  ResizableEnumPopup&lt;TEnum&gt;(TEnum, GUIContent, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TEnum ResizableEnumPopup&lt;TEnum&gt;(TEnum selected, GUIContent label, params GUILayoutOption[] options) where TEnum : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selected</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnum</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_SetOrUnsetButton_" data-uid="Glitch9.ExEditor.ExGUILayout.SetOrUnsetButton*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_SetOrUnsetButton_System_String_System_Action_System_Boolean__" data-uid="Glitch9.ExEditor.ExGUILayout.SetOrUnsetButton(System.String,System.Action{System.Boolean})">
+  SetOrUnsetButton(string, Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetOrUnsetButton(string label, Action&lt;bool&gt; action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_SpriteField_" data-uid="Glitch9.ExEditor.ExGUILayout.SpriteField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_SpriteField_UnityEditor_SerializedProperty_System_Int32_System_Int32_" data-uid="Glitch9.ExEditor.ExGUILayout.SpriteField(UnityEditor.SerializedProperty,System.Int32,System.Int32)">
+  SpriteField(SerializedProperty, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpriteField(SerializedProperty p, int size, int topMargin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>topMargin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_StringFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.StringFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_StringFieldWithDefault_System_String_System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.StringFieldWithDefault(System.String,System.String,System.String)">
+  StringFieldWithDefault(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StringFieldWithDefault(string label, string value, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_StringFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.StringFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_StringFieldWithDefault_System_String_UnityEditor_SerializedProperty_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.StringFieldWithDefault(System.String,UnityEditor.SerializedProperty,System.String)">
+  StringFieldWithDefault(string, SerializedProperty, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StringFieldWithDefault(string label, SerializedProperty property, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>property</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_StringFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.StringFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_StringFieldWithDefault_UnityEngine_GUIContent_System_String_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.StringFieldWithDefault(UnityEngine.GUIContent,System.String,System.String)">
+  StringFieldWithDefault(GUIContent, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StringFieldWithDefault(GUIContent label, string value, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_StringFieldWithDefault_" data-uid="Glitch9.ExEditor.ExGUILayout.StringFieldWithDefault*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_StringFieldWithDefault_UnityEngine_GUIContent_UnityEditor_SerializedProperty_System_String_" data-uid="Glitch9.ExEditor.ExGUILayout.StringFieldWithDefault(UnityEngine.GUIContent,UnityEditor.SerializedProperty,System.String)">
+  StringFieldWithDefault(GUIContent, SerializedProperty, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StringFieldWithDefault(GUIContent label, SerializedProperty property, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>property</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_StringListDropdown_" data-uid="Glitch9.ExEditor.ExGUILayout.StringListDropdown*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_StringListDropdown_System_String_System_Collections_Generic_List_System_String__UnityEngine_GUIContent_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.StringListDropdown(System.String,System.Collections.Generic.List{System.String},UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
+  StringListDropdown(string, List&lt;string&gt;, GUIContent, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StringListDropdown(string currentValue, List&lt;string&gt; list, GUIContent label = null, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_StringListDropdown_" data-uid="Glitch9.ExEditor.ExGUILayout.StringListDropdown*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_StringListDropdown_System_String_System_String___UnityEngine_GUIContent_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.StringListDropdown(System.String,System.String[],UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
+  StringListDropdown(string, string[], GUIContent, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StringListDropdown(string currentValue, string[] array, GUIContent label = null, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_StringListToolbar_" data-uid="Glitch9.ExEditor.ExGUILayout.StringListToolbar*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_StringListToolbar_System_Int32_System_Collections_Generic_List_System_String__UnityEngine_GUIContent_System_Int32_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.StringListToolbar(System.Int32,System.Collections.Generic.List{System.String},UnityEngine.GUIContent,System.Int32,UnityEngine.GUILayoutOption[])">
+  StringListToolbar(int, List&lt;string&gt;, GUIContent, int, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int StringListToolbar(int currentId, List&lt;string&gt; list, GUIContent label = null, int maxColumns = 3, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>maxColumns</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_TextureField_" data-uid="Glitch9.ExEditor.ExGUILayout.TextureField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_TextureField_UnityEngine_GUIContent_System_Nullable_UnityEngine_Vector2__" data-uid="Glitch9.ExEditor.ExGUILayout.TextureField(UnityEngine.GUIContent,System.Nullable{UnityEngine.Vector2})">
+  TextureField(GUIContent, Vector2?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TextureField(GUIContent content, Vector2? size = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>size</code> <span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_TextureField_" data-uid="Glitch9.ExEditor.ExGUILayout.TextureField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_TextureField_UnityEngine_Object_System_Nullable_UnityEngine_Vector2__" data-uid="Glitch9.ExEditor.ExGUILayout.TextureField(UnityEngine.Object,System.Nullable{UnityEngine.Vector2})">
+  TextureField(Object, Vector2?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TextureField(Object asset, Vector2? size = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>asset</code> <span class="xref">Object</span></dt>
+    <dd></dd>
+    <dt><code>size</code> <span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_TextureField_" data-uid="Glitch9.ExEditor.ExGUILayout.TextureField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_TextureField_UnityEngine_Texture_System_Nullable_UnityEngine_Vector2__System_Single_" data-uid="Glitch9.ExEditor.ExGUILayout.TextureField(UnityEngine.Texture,System.Nullable{UnityEngine.Vector2},System.Single)">
+  TextureField(Texture, Vector2?, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TextureField(Texture texture, Vector2? size = null, float yOffset = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>texture</code> <span class="xref">Texture</span></dt>
+    <dd></dd>
+    <dt><code>size</code> <span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+    <dt><code>yOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_Toggle_" data-uid="Glitch9.ExEditor.ExGUILayout.Toggle*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_Toggle_System_String_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.Toggle(System.String,System.Boolean,UnityEngine.GUILayoutOption[])">
+  Toggle(string, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Toggle(string label, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_Toggle_" data-uid="Glitch9.ExEditor.ExGUILayout.Toggle*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_Toggle_UnityEngine_GUIContent_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.Toggle(UnityEngine.GUIContent,System.Boolean,UnityEngine.GUILayoutOption[])">
+  Toggle(GUIContent, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Toggle(GUIContent content, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_Toggle_" data-uid="Glitch9.ExEditor.ExGUILayout.Toggle*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_Toggle_UnityEngine_Texture2D_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.Toggle(UnityEngine.Texture2D,System.Boolean,UnityEngine.GUILayoutOption[])">
+  Toggle(Texture2D, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Toggle(Texture2D tex, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tex</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ToggleableField_" data-uid="Glitch9.ExEditor.ExGUILayout.ToggleableField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ToggleableField__1_System_Func___0__System_Boolean_" data-uid="Glitch9.ExEditor.ExGUILayout.ToggleableField``1(System.Func{``0},System.Boolean)">
+  ToggleableField&lt;T&gt;(Func&lt;T&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (T, bool) ToggleableField&lt;T&gt;(Func&lt;T&gt; field, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>)</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ToolbarLeft_" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarLeft*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ToolbarLeft_System_String_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarLeft(System.String,System.Boolean,UnityEngine.GUILayoutOption[])">
+  ToolbarLeft(string, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ToolbarLeft(string label, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ToolbarLeft_" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarLeft*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ToolbarLeft_UnityEngine_GUIContent_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarLeft(UnityEngine.GUIContent,System.Boolean,UnityEngine.GUILayoutOption[])">
+  ToolbarLeft(GUIContent, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ToolbarLeft(GUIContent content, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ToolbarLeft_" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarLeft*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ToolbarLeft_UnityEngine_Texture2D_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarLeft(UnityEngine.Texture2D,System.Boolean,UnityEngine.GUILayoutOption[])">
+  ToolbarLeft(Texture2D, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ToolbarLeft(Texture2D tex, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tex</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ToolbarMid_" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarMid*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ToolbarMid_System_String_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarMid(System.String,System.Boolean,UnityEngine.GUILayoutOption[])">
+  ToolbarMid(string, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ToolbarMid(string label, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ToolbarMid_" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarMid*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ToolbarMid_UnityEngine_GUIContent_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarMid(UnityEngine.GUIContent,System.Boolean,UnityEngine.GUILayoutOption[])">
+  ToolbarMid(GUIContent, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ToolbarMid(GUIContent content, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ToolbarMid_" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarMid*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ToolbarMid_UnityEngine_Texture2D_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarMid(UnityEngine.Texture2D,System.Boolean,UnityEngine.GUILayoutOption[])">
+  ToolbarMid(Texture2D, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ToolbarMid(Texture2D tex, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tex</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ToolbarRight_" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarRight*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ToolbarRight_System_String_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarRight(System.String,System.Boolean,UnityEngine.GUILayoutOption[])">
+  ToolbarRight(string, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ToolbarRight(string label, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ToolbarRight_" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarRight*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ToolbarRight_UnityEngine_GUIContent_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarRight(UnityEngine.GUIContent,System.Boolean,UnityEngine.GUILayoutOption[])">
+  ToolbarRight(GUIContent, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ToolbarRight(GUIContent content, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_ToolbarRight_" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarRight*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_ToolbarRight_UnityEngine_Texture2D_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.ToolbarRight(UnityEngine.Texture2D,System.Boolean,UnityEngine.GUILayoutOption[])">
+  ToolbarRight(Texture2D, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ToolbarRight(Texture2D tex, bool isOn, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tex</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_TrueOrFalseButton_" data-uid="Glitch9.ExEditor.ExGUILayout.TrueOrFalseButton*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_TrueOrFalseButton_System_String_System_Action_System_Boolean__" data-uid="Glitch9.ExEditor.ExGUILayout.TrueOrFalseButton(System.String,System.Action{System.Boolean})">
+  TrueOrFalseButton(string, Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TrueOrFalseButton(string label, Action&lt;bool&gt; action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_UnixTimeField_" data-uid="Glitch9.ExEditor.ExGUILayout.UnixTimeField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_UnixTimeField_System_String_Glitch9_UnixTime_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.UnixTimeField(System.String,Glitch9.UnixTime,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,UnityEngine.GUILayoutOption[])">
+  UnixTimeField(string, UnixTime, bool, bool, bool, bool, bool, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnixTime UnixTimeField(string label, UnixTime unixTime, bool year, bool month, bool day, bool hour = false, bool minute = false, bool second = false, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>unixTime</code> <a class="xref" href="Glitch9.UnixTime.html">UnixTime</a></dt>
+    <dd></dd>
+    <dt><code>year</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>month</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>day</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>hour</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>minute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>second</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.UnixTime.html">UnixTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_ExEditor_ExGUILayout_UnixTimeField_" data-uid="Glitch9.ExEditor.ExGUILayout.UnixTimeField*"></a>
+
+  <h3 id="Glitch9_ExEditor_ExGUILayout_UnixTimeField_UnityEngine_GUIContent_Glitch9_UnixTime_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Glitch9.ExEditor.ExGUILayout.UnixTimeField(UnityEngine.GUIContent,Glitch9.UnixTime,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,UnityEngine.GUILayoutOption[])">
+  UnixTimeField(GUIContent, UnixTime, bool, bool, bool, bool, bool, bool, params GUILayoutOption[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnixTime UnixTimeField(GUIContent label, UnixTime unixTime, bool year, bool month, bool day, bool hour = false, bool minute = false, bool second = false, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>unixTime</code> <a class="xref" href="Glitch9.UnixTime.html">UnixTime</a></dt>
+    <dd></dd>
+    <dt><code>year</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>month</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>day</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>hour</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>minute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>second</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.UnixTime.html">UnixTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

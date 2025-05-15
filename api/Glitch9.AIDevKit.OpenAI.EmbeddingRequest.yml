@@ -1,0 +1,452 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest
+  commentId: T:Glitch9.AIDevKit.OpenAI.EmbeddingRequest
+  id: EmbeddingRequest
+  parent: Glitch9.AIDevKit.OpenAI
+  children:
+  - Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Dimensions
+  - Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat
+  - Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Input
+  langs:
+  - csharp
+  - vb
+  name: EmbeddingRequest
+  nameWithType: EmbeddingRequest
+  fullName: Glitch9.AIDevKit.OpenAI.EmbeddingRequest
+  type: Class
+  source:
+    id: EmbeddingRequest
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Embeddings/EmbeddingRequest.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Returns a list of embedding objects.
+  example: []
+  syntax:
+    content: 'public class EmbeddingRequest : ModelRequest'
+    content.vb: Public Class EmbeddingRequest Inherits ModelRequest
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RequestBody
+  - Glitch9.AIDevKit.ModelRequest
+  inheritedMembers:
+  - Glitch9.AIDevKit.ModelRequest.Model
+  - Glitch9.AIDevKit.ModelRequest.N
+  - Glitch9.AIDevKit.ModelRequest.Metadata
+  - Glitch9.AIDevKit.ModelRequest.User
+  extensionMethods:
+  - Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync
+- uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Input
+  commentId: P:Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Input
+  id: Input
+  parent: Glitch9.AIDevKit.OpenAI.EmbeddingRequest
+  langs:
+  - csharp
+  - vb
+  name: Input
+  nameWithType: EmbeddingRequest.Input
+  fullName: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Input
+  type: Property
+  source:
+    id: Input
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Embeddings/EmbeddingRequest.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: >-
+    [Required] Input Text to embed, encoded as a string or array of tokens.
+
+    To embed multiple inputs in a single request, pass an array of strings or array of token arrays.
+
+    The input must not exceed the max input tokens for the model (8192 tokens for Text-embedding-ada-002),
+
+    cannot be an empty string, and any array must be 2048 dimensions or less.
+
+    Example Python code for counting tokens.
+  example: []
+  syntax:
+    content: public StringOr<string> Input { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.IO.Networking.RESTApi.StringOr{System.String}
+    content.vb: Public Property Input As StringOr(Of String)
+  overload: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Input*
+- uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat
+  commentId: P:Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat
+  id: EncodingFormat
+  parent: Glitch9.AIDevKit.OpenAI.EmbeddingRequest
+  langs:
+  - csharp
+  - vb
+  name: EncodingFormat
+  nameWithType: EmbeddingRequest.EncodingFormat
+  fullName: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat
+  type: Property
+  source:
+    id: EncodingFormat
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Embeddings/EmbeddingRequest.cs
+    startLine: 22
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The format to return the embeddings in. Can be either float or base64.
+  example: []
+  syntax:
+    content: public EncodingFormat? EncodingFormat { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.AIDevKit.OpenAI.EncodingFormat}
+    content.vb: Public Property EncodingFormat As EncodingFormat?
+  overload: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat*
+- uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Dimensions
+  commentId: P:Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Dimensions
+  id: Dimensions
+  parent: Glitch9.AIDevKit.OpenAI.EmbeddingRequest
+  langs:
+  - csharp
+  - vb
+  name: Dimensions
+  nameWithType: EmbeddingRequest.Dimensions
+  fullName: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Dimensions
+  type: Property
+  source:
+    id: Dimensions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Embeddings/EmbeddingRequest.cs
+    startLine: 28
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: >-
+    The number of dimensions the resulting Output embeddings should have.
+
+    Only supported in Text-embedding-3 and later models.
+  example: []
+  syntax:
+    content: public int Dimensions { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Dimensions As Integer
+  overload: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Dimensions*
+references:
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RequestBody
+  nameWithType: RequestBody
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
+- uid: Glitch9.AIDevKit.ModelRequest
+  commentId: T:Glitch9.AIDevKit.ModelRequest
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelRequest.html
+  name: ModelRequest
+  nameWithType: ModelRequest
+  fullName: Glitch9.AIDevKit.ModelRequest
+- uid: Glitch9.AIDevKit.ModelRequest.Model
+  commentId: P:Glitch9.AIDevKit.ModelRequest.Model
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model
+  name: Model
+  nameWithType: ModelRequest.Model
+  fullName: Glitch9.AIDevKit.ModelRequest.Model
+- uid: Glitch9.AIDevKit.ModelRequest.N
+  commentId: P:Glitch9.AIDevKit.ModelRequest.N
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N
+  name: N
+  nameWithType: ModelRequest.N
+  fullName: Glitch9.AIDevKit.ModelRequest.N
+- uid: Glitch9.AIDevKit.ModelRequest.Metadata
+  commentId: P:Glitch9.AIDevKit.ModelRequest.Metadata
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata
+  name: Metadata
+  nameWithType: ModelRequest.Metadata
+  fullName: Glitch9.AIDevKit.ModelRequest.Metadata
+- uid: Glitch9.AIDevKit.ModelRequest.User
+  commentId: P:Glitch9.AIDevKit.ModelRequest.User
+  parent: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User
+  name: User
+  nameWithType: ModelRequest.User
+  fullName: Glitch9.AIDevKit.ModelRequest.User
+- uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync
+  commentId: M:Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.EmbeddingRequest)
+  parent: Glitch9.AIDevKit.OpenAI.RequestExtensions
+  definition: Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.EmbeddingRequest)
+  href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_OpenAI_EmbeddingRequest_
+  name: ExecuteAsync(EmbeddingRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(EmbeddingRequest)
+  fullName: Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.EmbeddingRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.EmbeddingRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_OpenAI_EmbeddingRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest
+    name: EmbeddingRequest
+    href: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.EmbeddingRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_OpenAI_EmbeddingRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest
+    name: EmbeddingRequest
+    href: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.EmbeddingRequest)
+  commentId: M:Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.EmbeddingRequest)
+  href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_OpenAI_EmbeddingRequest_
+  name: ExecuteAsync(EmbeddingRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(EmbeddingRequest)
+  fullName: Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.EmbeddingRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.EmbeddingRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_OpenAI_EmbeddingRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest
+    name: EmbeddingRequest
+    href: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.EmbeddingRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_OpenAI_EmbeddingRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest
+    name: EmbeddingRequest
+    href: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.RequestExtensions
+  commentId: T:Glitch9.AIDevKit.OpenAI.RequestExtensions
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html
+  name: RequestExtensions
+  nameWithType: RequestExtensions
+  fullName: Glitch9.AIDevKit.OpenAI.RequestExtensions
+- uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Input*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Input
+  href: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.html#Glitch9_AIDevKit_OpenAI_EmbeddingRequest_Input
+  name: Input
+  nameWithType: EmbeddingRequest.Input
+  fullName: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Input
+- uid: Glitch9.IO.Networking.RESTApi.StringOr{System.String}
+  commentId: T:Glitch9.IO.Networking.RESTApi.StringOr{System.String}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.StringOr`1
+  name: StringOr<string>
+  nameWithType: StringOr<string>
+  fullName: Glitch9.IO.Networking.RESTApi.StringOr<string>
+  nameWithType.vb: StringOr(Of String)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.StringOr(Of String)
+  name.vb: StringOr(Of String)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.StringOr`1
+    name: StringOr
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.StringOr`1
+    name: StringOr
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.StringOr`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.StringOr`1
+  name: StringOr<T>
+  nameWithType: StringOr<T>
+  fullName: Glitch9.IO.Networking.RESTApi.StringOr<T>
+  nameWithType.vb: StringOr(Of T)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.StringOr(Of T)
+  name.vb: StringOr(Of T)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.StringOr`1
+    name: StringOr
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.StringOr`1
+    name: StringOr
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat
+  href: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.html#Glitch9_AIDevKit_OpenAI_EmbeddingRequest_EncodingFormat
+  name: EncodingFormat
+  nameWithType: EmbeddingRequest.EncodingFormat
+  fullName: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat
+- uid: System.Nullable{Glitch9.AIDevKit.OpenAI.EncodingFormat}
+  commentId: T:System.Nullable{Glitch9.AIDevKit.OpenAI.EncodingFormat}
+  parent: System
+  definition: System.Nullable`1
+  href: Glitch9.AIDevKit.OpenAI.EncodingFormat.html
+  name: EncodingFormat?
+  nameWithType: EncodingFormat?
+  fullName: Glitch9.AIDevKit.OpenAI.EncodingFormat?
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.EncodingFormat
+    name: EncodingFormat
+    href: Glitch9.AIDevKit.OpenAI.EncodingFormat.html
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.EncodingFormat
+    name: EncodingFormat
+    href: Glitch9.AIDevKit.OpenAI.EncodingFormat.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Dimensions*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Dimensions
+  href: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.html#Glitch9_AIDevKit_OpenAI_EmbeddingRequest_Dimensions
+  name: Dimensions
+  nameWithType: EmbeddingRequest.Dimensions
+  fullName: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Dimensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

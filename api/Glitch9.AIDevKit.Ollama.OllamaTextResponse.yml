@@ -1,0 +1,488 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse
+  commentId: T:Glitch9.AIDevKit.Ollama.OllamaTextResponse
+  id: OllamaTextResponse
+  parent: Glitch9.AIDevKit.Ollama
+  children:
+  - Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context
+  - Glitch9.AIDevKit.Ollama.OllamaTextResponse.CreatedAt
+  - Glitch9.AIDevKit.Ollama.OllamaTextResponse.EvalDuration
+  - Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason
+  - Glitch9.AIDevKit.Ollama.OllamaTextResponse.OutputTokenCount
+  - Glitch9.AIDevKit.Ollama.OllamaTextResponse.PromptEvalDuration
+  langs:
+  - csharp
+  - vb
+  name: OllamaTextResponse
+  nameWithType: OllamaTextResponse
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse
+  type: Class
+  source:
+    id: OllamaTextResponse
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Common/OllamaResponse.cs
+    startLine: 28
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: 'public class OllamaTextResponse : OllamaResponse'
+    content.vb: Public Class OllamaTextResponse Inherits OllamaResponse
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.Ollama.OllamaResponse
+  derivedClasses:
+  - Glitch9.AIDevKit.Ollama.ChatDeltaResponse
+  - Glitch9.AIDevKit.Ollama.ChatResponse
+  - Glitch9.AIDevKit.Ollama.GenerateResponse
+  inheritedMembers:
+  - Glitch9.AIDevKit.Ollama.OllamaResponse.Model
+  - Glitch9.AIDevKit.Ollama.OllamaResponse.TotalDuration
+  - Glitch9.AIDevKit.Ollama.OllamaResponse.LoadDuration
+  - Glitch9.AIDevKit.Ollama.OllamaResponse.InputTokenCount
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.CreatedAt
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaTextResponse.CreatedAt
+  id: CreatedAt
+  parent: Glitch9.AIDevKit.Ollama.OllamaTextResponse
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: OllamaTextResponse.CreatedAt
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.CreatedAt
+  type: Property
+  source:
+    id: CreatedAt
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Common/OllamaResponse.cs
+    startLine: 33
+  namespace: Glitch9.AIDevKit.Ollama
+  summary: Required. The timestamp when the response was created.
+  example: []
+  syntax:
+    content: public ZuluTime CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.ZuluTime
+    content.vb: Public Property CreatedAt As ZuluTime
+  overload: Glitch9.AIDevKit.Ollama.OllamaTextResponse.CreatedAt*
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason
+  id: FinishReason
+  parent: Glitch9.AIDevKit.Ollama.OllamaTextResponse
+  langs:
+  - csharp
+  - vb
+  name: FinishReason
+  nameWithType: OllamaTextResponse.FinishReason
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason
+  type: Property
+  source:
+    id: FinishReason
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Common/OllamaResponse.cs
+    startLine: 38
+  namespace: Glitch9.AIDevKit.Ollama
+  summary: Optional. The reason the response generation was stopped.
+  example: []
+  syntax:
+    content: public string FinishReason { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FinishReason As String
+  overload: Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason*
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context
+  id: Context
+  parent: Glitch9.AIDevKit.Ollama.OllamaTextResponse
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: OllamaTextResponse.Context
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context
+  type: Property
+  source:
+    id: Context
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Common/OllamaResponse.cs
+    startLine: 43
+  namespace: Glitch9.AIDevKit.Ollama
+  summary: Optional. Encoding of the conversation used in this response.
+  example: []
+  syntax:
+    content: public List<int> Context { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Property Context As List(Of Integer)
+  overload: Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context*
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.PromptEvalDuration
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaTextResponse.PromptEvalDuration
+  id: PromptEvalDuration
+  parent: Glitch9.AIDevKit.Ollama.OllamaTextResponse
+  langs:
+  - csharp
+  - vb
+  name: PromptEvalDuration
+  nameWithType: OllamaTextResponse.PromptEvalDuration
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.PromptEvalDuration
+  type: Property
+  source:
+    id: PromptEvalDuration
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Common/OllamaResponse.cs
+    startLine: 48
+  namespace: Glitch9.AIDevKit.Ollama
+  summary: Optional. Time spent evaluating the prompt (in nanoseconds).
+  example: []
+  syntax:
+    content: public long? PromptEvalDuration { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property PromptEvalDuration As Long?
+  overload: Glitch9.AIDevKit.Ollama.OllamaTextResponse.PromptEvalDuration*
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.OutputTokenCount
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaTextResponse.OutputTokenCount
+  id: OutputTokenCount
+  parent: Glitch9.AIDevKit.Ollama.OllamaTextResponse
+  langs:
+  - csharp
+  - vb
+  name: OutputTokenCount
+  nameWithType: OllamaTextResponse.OutputTokenCount
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.OutputTokenCount
+  type: Property
+  source:
+    id: OutputTokenCount
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Common/OllamaResponse.cs
+    startLine: 53
+  namespace: Glitch9.AIDevKit.Ollama
+  summary: Optional. Number of tokens in the response.
+  example: []
+  syntax:
+    content: public int? OutputTokenCount { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property OutputTokenCount As Integer?
+  overload: Glitch9.AIDevKit.Ollama.OllamaTextResponse.OutputTokenCount*
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.EvalDuration
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaTextResponse.EvalDuration
+  id: EvalDuration
+  parent: Glitch9.AIDevKit.Ollama.OllamaTextResponse
+  langs:
+  - csharp
+  - vb
+  name: EvalDuration
+  nameWithType: OllamaTextResponse.EvalDuration
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.EvalDuration
+  type: Property
+  source:
+    id: EvalDuration
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Common/OllamaResponse.cs
+    startLine: 58
+  namespace: Glitch9.AIDevKit.Ollama
+  summary: Optional. Time in nanoseconds spent generating the response.
+  example: []
+  syntax:
+    content: public long? EvalDuration { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property EvalDuration As Long?
+  overload: Glitch9.AIDevKit.Ollama.OllamaTextResponse.EvalDuration*
+references:
+- uid: Glitch9.AIDevKit.Ollama
+  commentId: N:Glitch9.AIDevKit.Ollama
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Ollama
+  nameWithType: Glitch9.AIDevKit.Ollama
+  fullName: Glitch9.AIDevKit.Ollama
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.Ollama.OllamaResponse
+  commentId: T:Glitch9.AIDevKit.Ollama.OllamaResponse
+  parent: Glitch9.AIDevKit.Ollama
+  href: Glitch9.AIDevKit.Ollama.OllamaResponse.html
+  name: OllamaResponse
+  nameWithType: OllamaResponse
+  fullName: Glitch9.AIDevKit.Ollama.OllamaResponse
+- uid: Glitch9.AIDevKit.Ollama.OllamaResponse.Model
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaResponse.Model
+  parent: Glitch9.AIDevKit.Ollama.OllamaResponse
+  href: Glitch9.AIDevKit.Ollama.OllamaResponse.html#Glitch9_AIDevKit_Ollama_OllamaResponse_Model
+  name: Model
+  nameWithType: OllamaResponse.Model
+  fullName: Glitch9.AIDevKit.Ollama.OllamaResponse.Model
+- uid: Glitch9.AIDevKit.Ollama.OllamaResponse.TotalDuration
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaResponse.TotalDuration
+  parent: Glitch9.AIDevKit.Ollama.OllamaResponse
+  href: Glitch9.AIDevKit.Ollama.OllamaResponse.html#Glitch9_AIDevKit_Ollama_OllamaResponse_TotalDuration
+  name: TotalDuration
+  nameWithType: OllamaResponse.TotalDuration
+  fullName: Glitch9.AIDevKit.Ollama.OllamaResponse.TotalDuration
+- uid: Glitch9.AIDevKit.Ollama.OllamaResponse.LoadDuration
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaResponse.LoadDuration
+  parent: Glitch9.AIDevKit.Ollama.OllamaResponse
+  href: Glitch9.AIDevKit.Ollama.OllamaResponse.html#Glitch9_AIDevKit_Ollama_OllamaResponse_LoadDuration
+  name: LoadDuration
+  nameWithType: OllamaResponse.LoadDuration
+  fullName: Glitch9.AIDevKit.Ollama.OllamaResponse.LoadDuration
+- uid: Glitch9.AIDevKit.Ollama.OllamaResponse.InputTokenCount
+  commentId: P:Glitch9.AIDevKit.Ollama.OllamaResponse.InputTokenCount
+  parent: Glitch9.AIDevKit.Ollama.OllamaResponse
+  href: Glitch9.AIDevKit.Ollama.OllamaResponse.html#Glitch9_AIDevKit_Ollama_OllamaResponse_InputTokenCount
+  name: InputTokenCount
+  nameWithType: OllamaResponse.InputTokenCount
+  fullName: Glitch9.AIDevKit.Ollama.OllamaResponse.InputTokenCount
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.CreatedAt*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaTextResponse.CreatedAt
+  href: Glitch9.AIDevKit.Ollama.OllamaTextResponse.html#Glitch9_AIDevKit_Ollama_OllamaTextResponse_CreatedAt
+  name: CreatedAt
+  nameWithType: OllamaTextResponse.CreatedAt
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.CreatedAt
+- uid: Glitch9.ZuluTime
+  commentId: T:Glitch9.ZuluTime
+  parent: Glitch9
+  name: ZuluTime
+  nameWithType: ZuluTime
+  fullName: Glitch9.ZuluTime
+- uid: Glitch9
+  commentId: N:Glitch9
+  href: Glitch9.html
+  name: Glitch9
+  nameWithType: Glitch9
+  fullName: Glitch9
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason
+  href: Glitch9.AIDevKit.Ollama.OllamaTextResponse.html#Glitch9_AIDevKit_Ollama_OllamaTextResponse_FinishReason
+  name: FinishReason
+  nameWithType: OllamaTextResponse.FinishReason
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context
+  href: Glitch9.AIDevKit.Ollama.OllamaTextResponse.html#Glitch9_AIDevKit_Ollama_OllamaTextResponse_Context
+  name: Context
+  nameWithType: OllamaTextResponse.Context
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.PromptEvalDuration*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaTextResponse.PromptEvalDuration
+  href: Glitch9.AIDevKit.Ollama.OllamaTextResponse.html#Glitch9_AIDevKit_Ollama_OllamaTextResponse_PromptEvalDuration
+  name: PromptEvalDuration
+  nameWithType: OllamaTextResponse.PromptEvalDuration
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.PromptEvalDuration
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  name: long?
+  nameWithType: long?
+  fullName: long?
+  nameWithType.vb: Long?
+  fullName.vb: Long?
+  name.vb: Long?
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.OutputTokenCount*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaTextResponse.OutputTokenCount
+  href: Glitch9.AIDevKit.Ollama.OllamaTextResponse.html#Glitch9_AIDevKit_Ollama_OllamaTextResponse_OutputTokenCount
+  name: OutputTokenCount
+  nameWithType: OllamaTextResponse.OutputTokenCount
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.OutputTokenCount
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: '?'
+- uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.EvalDuration*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaTextResponse.EvalDuration
+  href: Glitch9.AIDevKit.Ollama.OllamaTextResponse.html#Glitch9_AIDevKit_Ollama_OllamaTextResponse_EvalDuration
+  name: EvalDuration
+  nameWithType: OllamaTextResponse.EvalDuration
+  fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.EvalDuration

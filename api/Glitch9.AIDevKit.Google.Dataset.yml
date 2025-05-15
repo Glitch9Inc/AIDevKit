@@ -1,0 +1,1189 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.Dataset
+  commentId: T:Glitch9.AIDevKit.Google.Dataset
+  id: Dataset
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.Dataset.Add(Glitch9.AIDevKit.Google.TuningExample)
+  - Glitch9.AIDevKit.Google.Dataset.AddRange(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample})
+  - Glitch9.AIDevKit.Google.Dataset.Clear
+  - Glitch9.AIDevKit.Google.Dataset.Contains(Glitch9.AIDevKit.Google.TuningExample)
+  - Glitch9.AIDevKit.Google.Dataset.CopyTo(Glitch9.AIDevKit.Google.TuningExample[],System.Int32)
+  - Glitch9.AIDevKit.Google.Dataset.Count
+  - Glitch9.AIDevKit.Google.Dataset.Examples
+  - Glitch9.AIDevKit.Google.Dataset.GetEnumerator
+  - Glitch9.AIDevKit.Google.Dataset.IsReadOnly
+  - Glitch9.AIDevKit.Google.Dataset.Remove(Glitch9.AIDevKit.Google.TuningExample)
+  langs:
+  - csharp
+  - vb
+  name: Dataset
+  nameWithType: Dataset
+  fullName: Glitch9.AIDevKit.Google.Dataset
+  type: Class
+  source:
+    id: Dataset
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit.Google
+  summary: Dataset for training or validation.
+  example: []
+  syntax:
+    content: 'public class Dataset : ICollection<TuningExample>, IEnumerable<TuningExample>'
+    content.vb: Public Class Dataset Implements ICollection(Of TuningExample), IEnumerable(Of TuningExample)
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}
+  - System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample}
+  extensionMethods:
+  - Glitch9.AIDevKit.Google.Dataset.Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.TuningExample[])
+- uid: Glitch9.AIDevKit.Google.Dataset.Examples
+  commentId: P:Glitch9.AIDevKit.Google.Dataset.Examples
+  id: Examples
+  parent: Glitch9.AIDevKit.Google.Dataset
+  langs:
+  - csharp
+  - vb
+  name: Examples
+  nameWithType: Dataset.Examples
+  fullName: Glitch9.AIDevKit.Google.Dataset.Examples
+  type: Property
+  source:
+    id: Examples
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 34
+  namespace: Glitch9.AIDevKit.Google
+  summary: Optional. Inline examples.
+  example: []
+  syntax:
+    content: public TuningExamples Examples { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.TuningExamples
+    content.vb: Public Property Examples As TuningExamples
+  overload: Glitch9.AIDevKit.Google.Dataset.Examples*
+- uid: Glitch9.AIDevKit.Google.Dataset.Count
+  commentId: P:Glitch9.AIDevKit.Google.Dataset.Count
+  id: Count
+  parent: Glitch9.AIDevKit.Google.Dataset
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: Dataset.Count
+  fullName: Glitch9.AIDevKit.Google.Dataset.Count
+  type: Property
+  source:
+    id: Count
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 37
+  namespace: Glitch9.AIDevKit.Google
+  summary: Gets the number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Glitch9.AIDevKit.Google.Dataset.Count*
+  implements:
+  - System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Count
+- uid: Glitch9.AIDevKit.Google.Dataset.IsReadOnly
+  commentId: P:Glitch9.AIDevKit.Google.Dataset.IsReadOnly
+  id: IsReadOnly
+  parent: Glitch9.AIDevKit.Google.Dataset
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: Dataset.IsReadOnly
+  fullName: Glitch9.AIDevKit.Google.Dataset.IsReadOnly
+  type: Property
+  source:
+    id: IsReadOnly
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 38
+  namespace: Glitch9.AIDevKit.Google
+  summary: Gets a value indicating whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: Glitch9.AIDevKit.Google.Dataset.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.IsReadOnly
+- uid: Glitch9.AIDevKit.Google.Dataset.Add(Glitch9.AIDevKit.Google.TuningExample)
+  commentId: M:Glitch9.AIDevKit.Google.Dataset.Add(Glitch9.AIDevKit.Google.TuningExample)
+  id: Add(Glitch9.AIDevKit.Google.TuningExample)
+  parent: Glitch9.AIDevKit.Google.Dataset
+  langs:
+  - csharp
+  - vb
+  name: Add(TuningExample)
+  nameWithType: Dataset.Add(TuningExample)
+  fullName: Glitch9.AIDevKit.Google.Dataset.Add(Glitch9.AIDevKit.Google.TuningExample)
+  type: Method
+  source:
+    id: Add
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 46
+  namespace: Glitch9.AIDevKit.Google
+  summary: Adds an item to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Add(TuningExample item)
+    parameters:
+    - id: item
+      type: Glitch9.AIDevKit.Google.TuningExample
+      description: The object to add to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Add(item As TuningExample)
+  overload: Glitch9.AIDevKit.Google.Dataset.Add*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Add(Glitch9.AIDevKit.Google.TuningExample)
+- uid: Glitch9.AIDevKit.Google.Dataset.AddRange(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample})
+  commentId: M:Glitch9.AIDevKit.Google.Dataset.AddRange(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample})
+  id: AddRange(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample})
+  parent: Glitch9.AIDevKit.Google.Dataset
+  langs:
+  - csharp
+  - vb
+  name: AddRange(IEnumerable<TuningExample>)
+  nameWithType: Dataset.AddRange(IEnumerable<TuningExample>)
+  fullName: Glitch9.AIDevKit.Google.Dataset.AddRange(System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.Google.TuningExample>)
+  type: Method
+  source:
+    id: AddRange
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 52
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public void AddRange(IEnumerable<TuningExample> items)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample}
+    content.vb: Public Sub AddRange(items As IEnumerable(Of TuningExample))
+  overload: Glitch9.AIDevKit.Google.Dataset.AddRange*
+  nameWithType.vb: Dataset.AddRange(IEnumerable(Of TuningExample))
+  fullName.vb: Glitch9.AIDevKit.Google.Dataset.AddRange(System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.Google.TuningExample))
+  name.vb: AddRange(IEnumerable(Of TuningExample))
+- uid: Glitch9.AIDevKit.Google.Dataset.Clear
+  commentId: M:Glitch9.AIDevKit.Google.Dataset.Clear
+  id: Clear
+  parent: Glitch9.AIDevKit.Google.Dataset
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: Dataset.Clear()
+  fullName: Glitch9.AIDevKit.Google.Dataset.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 58
+  namespace: Glitch9.AIDevKit.Google
+  summary: Removes all items from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Glitch9.AIDevKit.Google.Dataset.Clear*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Clear
+- uid: Glitch9.AIDevKit.Google.Dataset.Contains(Glitch9.AIDevKit.Google.TuningExample)
+  commentId: M:Glitch9.AIDevKit.Google.Dataset.Contains(Glitch9.AIDevKit.Google.TuningExample)
+  id: Contains(Glitch9.AIDevKit.Google.TuningExample)
+  parent: Glitch9.AIDevKit.Google.Dataset
+  langs:
+  - csharp
+  - vb
+  name: Contains(TuningExample)
+  nameWithType: Dataset.Contains(TuningExample)
+  fullName: Glitch9.AIDevKit.Google.Dataset.Contains(Glitch9.AIDevKit.Google.TuningExample)
+  type: Method
+  source:
+    id: Contains
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 63
+  namespace: Glitch9.AIDevKit.Google
+  summary: Determines whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> contains a specific value.
+  example: []
+  syntax:
+    content: public bool Contains(TuningExample item)
+    parameters:
+    - id: item
+      type: Glitch9.AIDevKit.Google.TuningExample
+      description: The object to locate in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> is found in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Contains(item As TuningExample) As Boolean
+  overload: Glitch9.AIDevKit.Google.Dataset.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Contains(Glitch9.AIDevKit.Google.TuningExample)
+- uid: Glitch9.AIDevKit.Google.Dataset.CopyTo(Glitch9.AIDevKit.Google.TuningExample[],System.Int32)
+  commentId: M:Glitch9.AIDevKit.Google.Dataset.CopyTo(Glitch9.AIDevKit.Google.TuningExample[],System.Int32)
+  id: CopyTo(Glitch9.AIDevKit.Google.TuningExample[],System.Int32)
+  parent: Glitch9.AIDevKit.Google.Dataset
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(TuningExample[], int)
+  nameWithType: Dataset.CopyTo(TuningExample[], int)
+  fullName: Glitch9.AIDevKit.Google.Dataset.CopyTo(Glitch9.AIDevKit.Google.TuningExample[], int)
+  type: Method
+  source:
+    id: CopyTo
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 68
+  namespace: Glitch9.AIDevKit.Google
+  summary: Copies the elements of the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> to an <xref href="System.Array" data-throw-if-not-resolved="false"></xref>, starting at a particular <xref href="System.Array" data-throw-if-not-resolved="false"></xref> index.
+  example: []
+  syntax:
+    content: public void CopyTo(TuningExample[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: Glitch9.AIDevKit.Google.TuningExample[]
+      description: The one-dimensional <xref href="System.Array" data-throw-if-not-resolved="false"></xref> that is the destination of the elements copied from <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>. The <xref href="System.Array" data-throw-if-not-resolved="false"></xref> must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in <code class="paramref">array</code> at which copying begins.
+    content.vb: Public Sub CopyTo(array As TuningExample(), arrayIndex As Integer)
+  overload: Glitch9.AIDevKit.Google.Dataset.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">array</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">arrayIndex</code> is less than 0.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The number of elements in the source <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is greater than the available space from <code class="paramref">arrayIndex</code> to the end of the destination <code class="paramref">array</code>.
+  implements:
+  - System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.CopyTo(Glitch9.AIDevKit.Google.TuningExample[],System.Int32)
+  nameWithType.vb: Dataset.CopyTo(TuningExample(), Integer)
+  fullName.vb: Glitch9.AIDevKit.Google.Dataset.CopyTo(Glitch9.AIDevKit.Google.TuningExample(), Integer)
+  name.vb: CopyTo(TuningExample(), Integer)
+- uid: Glitch9.AIDevKit.Google.Dataset.Remove(Glitch9.AIDevKit.Google.TuningExample)
+  commentId: M:Glitch9.AIDevKit.Google.Dataset.Remove(Glitch9.AIDevKit.Google.TuningExample)
+  id: Remove(Glitch9.AIDevKit.Google.TuningExample)
+  parent: Glitch9.AIDevKit.Google.Dataset
+  langs:
+  - csharp
+  - vb
+  name: Remove(TuningExample)
+  nameWithType: Dataset.Remove(TuningExample)
+  fullName: Glitch9.AIDevKit.Google.Dataset.Remove(Glitch9.AIDevKit.Google.TuningExample)
+  type: Method
+  source:
+    id: Remove
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 73
+  namespace: Glitch9.AIDevKit.Google
+  summary: Removes the first occurrence of a specific object from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool Remove(TuningExample item)
+    parameters:
+    - id: item
+      type: Glitch9.AIDevKit.Google.TuningExample
+      description: The object to remove from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> was successfully removed from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. This method also returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if <code class="paramref">item</code> is not found in the original <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Remove(item As TuningExample) As Boolean
+  overload: Glitch9.AIDevKit.Google.Dataset.Remove*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Remove(Glitch9.AIDevKit.Google.TuningExample)
+- uid: Glitch9.AIDevKit.Google.Dataset.GetEnumerator
+  commentId: M:Glitch9.AIDevKit.Google.Dataset.GetEnumerator
+  id: GetEnumerator
+  parent: Glitch9.AIDevKit.Google.Dataset
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: Dataset.GetEnumerator()
+  fullName: Glitch9.AIDevKit.Google.Dataset.GetEnumerator()
+  type: Method
+  source:
+    id: GetEnumerator
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/TunedModels/TuningTask.cs
+    startLine: 78
+  namespace: Glitch9.AIDevKit.Google
+  summary: Returns an enumerator that iterates through the collection.
+  example: []
+  syntax:
+    content: public IEnumerator<TuningExample> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Glitch9.AIDevKit.Google.TuningExample}
+      description: An enumerator that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of TuningExample)
+  overload: Glitch9.AIDevKit.Google.Dataset.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample}.GetEnumerator
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}
+  commentId: T:System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: Glitch9.AIDevKit.Google.TuningExample.html
+  name: ICollection<TuningExample>
+  nameWithType: ICollection<TuningExample>
+  fullName: System.Collections.Generic.ICollection<Glitch9.AIDevKit.Google.TuningExample>
+  nameWithType.vb: ICollection(Of TuningExample)
+  fullName.vb: System.Collections.Generic.ICollection(Of Glitch9.AIDevKit.Google.TuningExample)
+  name.vb: ICollection(Of TuningExample)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample}
+  commentId: T:System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: Glitch9.AIDevKit.Google.TuningExample.html
+  name: IEnumerable<TuningExample>
+  nameWithType: IEnumerable<TuningExample>
+  fullName: System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.Google.TuningExample>
+  nameWithType.vb: IEnumerable(Of TuningExample)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.Google.TuningExample)
+  name.vb: IEnumerable(Of TuningExample)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Dataset.Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.TuningExample[])
+  commentId: M:Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset,Glitch9.AIDevKit.Google.TuningExample[])
+  parent: Glitch9.AIDevKit.Google.RequestExtensions
+  definition: Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset,Glitch9.AIDevKit.Google.TuningExample[])
+  href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_AddTrainingData_Glitch9_AIDevKit_Google_Dataset_Glitch9_AIDevKit_Google_TuningExample___
+  name: AddTrainingData(Dataset, params TuningExample[])
+  nameWithType: RequestExtensions.AddTrainingData(Dataset, params TuningExample[])
+  fullName: Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset, params Glitch9.AIDevKit.Google.TuningExample[])
+  nameWithType.vb: RequestExtensions.AddTrainingData(Dataset, ParamArray TuningExample())
+  fullName.vb: Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset, ParamArray Glitch9.AIDevKit.Google.TuningExample())
+  name.vb: AddTrainingData(Dataset, ParamArray TuningExample())
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset,Glitch9.AIDevKit.Google.TuningExample[])
+    name: AddTrainingData
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_AddTrainingData_Glitch9_AIDevKit_Google_Dataset_Glitch9_AIDevKit_Google_TuningExample___
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.Dataset
+    name: Dataset
+    href: Glitch9.AIDevKit.Google.Dataset.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset,Glitch9.AIDevKit.Google.TuningExample[])
+    name: AddTrainingData
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_AddTrainingData_Glitch9_AIDevKit_Google_Dataset_Glitch9_AIDevKit_Google_TuningExample___
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.Dataset
+    name: Dataset
+    href: Glitch9.AIDevKit.Google.Dataset.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: (
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset,Glitch9.AIDevKit.Google.TuningExample[])
+  commentId: M:Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset,Glitch9.AIDevKit.Google.TuningExample[])
+  href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_AddTrainingData_Glitch9_AIDevKit_Google_Dataset_Glitch9_AIDevKit_Google_TuningExample___
+  name: AddTrainingData(Dataset, params TuningExample[])
+  nameWithType: RequestExtensions.AddTrainingData(Dataset, params TuningExample[])
+  fullName: Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset, params Glitch9.AIDevKit.Google.TuningExample[])
+  nameWithType.vb: RequestExtensions.AddTrainingData(Dataset, ParamArray TuningExample())
+  fullName.vb: Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset, ParamArray Glitch9.AIDevKit.Google.TuningExample())
+  name.vb: AddTrainingData(Dataset, ParamArray TuningExample())
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset,Glitch9.AIDevKit.Google.TuningExample[])
+    name: AddTrainingData
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_AddTrainingData_Glitch9_AIDevKit_Google_Dataset_Glitch9_AIDevKit_Google_TuningExample___
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.Dataset
+    name: Dataset
+    href: Glitch9.AIDevKit.Google.Dataset.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.RequestExtensions.AddTrainingData(Glitch9.AIDevKit.Google.Dataset,Glitch9.AIDevKit.Google.TuningExample[])
+    name: AddTrainingData
+    href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_AddTrainingData_Glitch9_AIDevKit_Google_Dataset_Glitch9_AIDevKit_Google_TuningExample___
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.Dataset
+    name: Dataset
+    href: Glitch9.AIDevKit.Google.Dataset.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.Google.RequestExtensions
+  commentId: T:Glitch9.AIDevKit.Google.RequestExtensions
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.RequestExtensions.html
+  name: RequestExtensions
+  nameWithType: RequestExtensions
+  fullName: Glitch9.AIDevKit.Google.RequestExtensions
+- uid: Glitch9.AIDevKit.Google.Dataset.Examples*
+  commentId: Overload:Glitch9.AIDevKit.Google.Dataset.Examples
+  href: Glitch9.AIDevKit.Google.Dataset.html#Glitch9_AIDevKit_Google_Dataset_Examples
+  name: Examples
+  nameWithType: Dataset.Examples
+  fullName: Glitch9.AIDevKit.Google.Dataset.Examples
+- uid: Glitch9.AIDevKit.Google.TuningExamples
+  commentId: T:Glitch9.AIDevKit.Google.TuningExamples
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.TuningExamples.html
+  name: TuningExamples
+  nameWithType: TuningExamples
+  fullName: Glitch9.AIDevKit.Google.TuningExamples
+- uid: Glitch9.AIDevKit.Google.Dataset.Count*
+  commentId: Overload:Glitch9.AIDevKit.Google.Dataset.Count
+  href: Glitch9.AIDevKit.Google.Dataset.html#Glitch9_AIDevKit_Google_Dataset_Count
+  name: Count
+  nameWithType: Dataset.Count
+  fullName: Glitch9.AIDevKit.Google.Dataset.Count
+- uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Count
+  commentId: P:System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Count
+  parent: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<TuningExample>.Count
+  fullName: System.Collections.Generic.ICollection<Glitch9.AIDevKit.Google.TuningExample>.Count
+  nameWithType.vb: ICollection(Of TuningExample).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of Glitch9.AIDevKit.Google.TuningExample).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: Glitch9.AIDevKit.Google.Dataset.IsReadOnly*
+  commentId: Overload:Glitch9.AIDevKit.Google.Dataset.IsReadOnly
+  href: Glitch9.AIDevKit.Google.Dataset.html#Glitch9_AIDevKit_Google_Dataset_IsReadOnly
+  name: IsReadOnly
+  nameWithType: Dataset.IsReadOnly
+  fullName: Glitch9.AIDevKit.Google.Dataset.IsReadOnly
+- uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<TuningExample>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<Glitch9.AIDevKit.Google.TuningExample>.IsReadOnly
+  nameWithType.vb: ICollection(Of TuningExample).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of Glitch9.AIDevKit.Google.TuningExample).IsReadOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  parent: System
+  isExternal: true
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: Glitch9.AIDevKit.Google.Dataset.Add*
+  commentId: Overload:Glitch9.AIDevKit.Google.Dataset.Add
+  href: Glitch9.AIDevKit.Google.Dataset.html#Glitch9_AIDevKit_Google_Dataset_Add_Glitch9_AIDevKit_Google_TuningExample_
+  name: Add
+  nameWithType: Dataset.Add
+  fullName: Glitch9.AIDevKit.Google.Dataset.Add
+- uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Add(Glitch9.AIDevKit.Google.TuningExample)
+  commentId: M:System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Add(Glitch9.AIDevKit.Google.TuningExample)
+  parent: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  href: Glitch9.AIDevKit.Google.TuningExample.html
+  name: Add(TuningExample)
+  nameWithType: ICollection<TuningExample>.Add(TuningExample)
+  fullName: System.Collections.Generic.ICollection<Glitch9.AIDevKit.Google.TuningExample>.Add(Glitch9.AIDevKit.Google.TuningExample)
+  nameWithType.vb: ICollection(Of TuningExample).Add(TuningExample)
+  fullName.vb: System.Collections.Generic.ICollection(Of Glitch9.AIDevKit.Google.TuningExample).Add(Glitch9.AIDevKit.Google.TuningExample)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Add(Glitch9.AIDevKit.Google.TuningExample)
+    name: Add
+    isExternal: true
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Add(Glitch9.AIDevKit.Google.TuningExample)
+    name: Add
+    isExternal: true
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.TuningExample
+  commentId: T:Glitch9.AIDevKit.Google.TuningExample
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.TuningExample.html
+  name: TuningExample
+  nameWithType: TuningExample
+  fullName: Glitch9.AIDevKit.Google.TuningExample
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Dataset.AddRange*
+  commentId: Overload:Glitch9.AIDevKit.Google.Dataset.AddRange
+  href: Glitch9.AIDevKit.Google.Dataset.html#Glitch9_AIDevKit_Google_Dataset_AddRange_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Google_TuningExample__
+  name: AddRange
+  nameWithType: Dataset.AddRange
+  fullName: Glitch9.AIDevKit.Google.Dataset.AddRange
+- uid: Glitch9.AIDevKit.Google.Dataset.Clear*
+  commentId: Overload:Glitch9.AIDevKit.Google.Dataset.Clear
+  href: Glitch9.AIDevKit.Google.Dataset.html#Glitch9_AIDevKit_Google_Dataset_Clear
+  name: Clear
+  nameWithType: Dataset.Clear
+  fullName: Glitch9.AIDevKit.Google.Dataset.Clear
+- uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Clear
+  commentId: M:System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Clear
+  parent: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<TuningExample>.Clear()
+  fullName: System.Collections.Generic.ICollection<Glitch9.AIDevKit.Google.TuningExample>.Clear()
+  nameWithType.vb: ICollection(Of TuningExample).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of Glitch9.AIDevKit.Google.TuningExample).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Clear
+    name: Clear
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Clear
+    name: Clear
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Dataset.Contains*
+  commentId: Overload:Glitch9.AIDevKit.Google.Dataset.Contains
+  href: Glitch9.AIDevKit.Google.Dataset.html#Glitch9_AIDevKit_Google_Dataset_Contains_Glitch9_AIDevKit_Google_TuningExample_
+  name: Contains
+  nameWithType: Dataset.Contains
+  fullName: Glitch9.AIDevKit.Google.Dataset.Contains
+- uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Contains(Glitch9.AIDevKit.Google.TuningExample)
+  commentId: M:System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Contains(Glitch9.AIDevKit.Google.TuningExample)
+  parent: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  href: Glitch9.AIDevKit.Google.TuningExample.html
+  name: Contains(TuningExample)
+  nameWithType: ICollection<TuningExample>.Contains(TuningExample)
+  fullName: System.Collections.Generic.ICollection<Glitch9.AIDevKit.Google.TuningExample>.Contains(Glitch9.AIDevKit.Google.TuningExample)
+  nameWithType.vb: ICollection(Of TuningExample).Contains(TuningExample)
+  fullName.vb: System.Collections.Generic.ICollection(Of Glitch9.AIDevKit.Google.TuningExample).Contains(Glitch9.AIDevKit.Google.TuningExample)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Contains(Glitch9.AIDevKit.Google.TuningExample)
+    name: Contains
+    isExternal: true
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Contains(Glitch9.AIDevKit.Google.TuningExample)
+    name: Contains
+    isExternal: true
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Array
+  commentId: T:System.Array
+  isExternal: true
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Glitch9.AIDevKit.Google.Dataset.CopyTo*
+  commentId: Overload:Glitch9.AIDevKit.Google.Dataset.CopyTo
+  href: Glitch9.AIDevKit.Google.Dataset.html#Glitch9_AIDevKit_Google_Dataset_CopyTo_Glitch9_AIDevKit_Google_TuningExample___System_Int32_
+  name: CopyTo
+  nameWithType: Dataset.CopyTo
+  fullName: Glitch9.AIDevKit.Google.Dataset.CopyTo
+- uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.CopyTo(Glitch9.AIDevKit.Google.TuningExample[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.CopyTo(Glitch9.AIDevKit.Google.TuningExample[],System.Int32)
+  parent: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  href: Glitch9.AIDevKit.Google.TuningExample.html
+  name: CopyTo(TuningExample[], int)
+  nameWithType: ICollection<TuningExample>.CopyTo(TuningExample[], int)
+  fullName: System.Collections.Generic.ICollection<Glitch9.AIDevKit.Google.TuningExample>.CopyTo(Glitch9.AIDevKit.Google.TuningExample[], int)
+  nameWithType.vb: ICollection(Of TuningExample).CopyTo(TuningExample(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of Glitch9.AIDevKit.Google.TuningExample).CopyTo(Glitch9.AIDevKit.Google.TuningExample(), Integer)
+  name.vb: CopyTo(TuningExample(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.CopyTo(Glitch9.AIDevKit.Google.TuningExample[],System.Int32)
+    name: CopyTo
+    isExternal: true
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.CopyTo(Glitch9.AIDevKit.Google.TuningExample[],System.Int32)
+    name: CopyTo
+    isExternal: true
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Google.TuningExample[]
+  isExternal: true
+  href: Glitch9.AIDevKit.Google.TuningExample.html
+  name: TuningExample[]
+  nameWithType: TuningExample[]
+  fullName: Glitch9.AIDevKit.Google.TuningExample[]
+  nameWithType.vb: TuningExample()
+  fullName.vb: Glitch9.AIDevKit.Google.TuningExample()
+  name.vb: TuningExample()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], int)
+  nameWithType: ICollection<T>.CopyTo(T[], int)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], int)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Dataset.Remove*
+  commentId: Overload:Glitch9.AIDevKit.Google.Dataset.Remove
+  href: Glitch9.AIDevKit.Google.Dataset.html#Glitch9_AIDevKit_Google_Dataset_Remove_Glitch9_AIDevKit_Google_TuningExample_
+  name: Remove
+  nameWithType: Dataset.Remove
+  fullName: Glitch9.AIDevKit.Google.Dataset.Remove
+- uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Remove(Glitch9.AIDevKit.Google.TuningExample)
+  commentId: M:System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Remove(Glitch9.AIDevKit.Google.TuningExample)
+  parent: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  href: Glitch9.AIDevKit.Google.TuningExample.html
+  name: Remove(TuningExample)
+  nameWithType: ICollection<TuningExample>.Remove(TuningExample)
+  fullName: System.Collections.Generic.ICollection<Glitch9.AIDevKit.Google.TuningExample>.Remove(Glitch9.AIDevKit.Google.TuningExample)
+  nameWithType.vb: ICollection(Of TuningExample).Remove(TuningExample)
+  fullName.vb: System.Collections.Generic.ICollection(Of Glitch9.AIDevKit.Google.TuningExample).Remove(Glitch9.AIDevKit.Google.TuningExample)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Remove(Glitch9.AIDevKit.Google.TuningExample)
+    name: Remove
+    isExternal: true
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Glitch9.AIDevKit.Google.TuningExample}.Remove(Glitch9.AIDevKit.Google.TuningExample)
+    name: Remove
+    isExternal: true
+  - name: (
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Dataset.GetEnumerator*
+  commentId: Overload:Glitch9.AIDevKit.Google.Dataset.GetEnumerator
+  href: Glitch9.AIDevKit.Google.Dataset.html#Glitch9_AIDevKit_Google_Dataset_GetEnumerator
+  name: GetEnumerator
+  nameWithType: Dataset.GetEnumerator
+  fullName: Glitch9.AIDevKit.Google.Dataset.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<TuningExample>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.Google.TuningExample>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of TuningExample).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.Google.TuningExample).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.TuningExample}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{Glitch9.AIDevKit.Google.TuningExample}
+  commentId: T:System.Collections.Generic.IEnumerator{Glitch9.AIDevKit.Google.TuningExample}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: Glitch9.AIDevKit.Google.TuningExample.html
+  name: IEnumerator<TuningExample>
+  nameWithType: IEnumerator<TuningExample>
+  fullName: System.Collections.Generic.IEnumerator<Glitch9.AIDevKit.Google.TuningExample>
+  nameWithType.vb: IEnumerator(Of TuningExample)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Glitch9.AIDevKit.Google.TuningExample)
+  name.vb: IEnumerator(Of TuningExample)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.TuningExample
+    name: TuningExample
+    href: Glitch9.AIDevKit.Google.TuningExample.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

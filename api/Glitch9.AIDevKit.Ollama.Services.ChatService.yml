@@ -1,0 +1,404 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Ollama.Services.ChatService
+  commentId: T:Glitch9.AIDevKit.Ollama.Services.ChatService
+  id: ChatService
+  parent: Glitch9.AIDevKit.Ollama.Services
+  children:
+  - Glitch9.AIDevKit.Ollama.Services.ChatService.#ctor(Glitch9.AIDevKit.Ollama.Ollama)
+  - Glitch9.AIDevKit.Ollama.Services.ChatService.CreateAsync(Glitch9.AIDevKit.ChatCompletionRequest)
+  - Glitch9.AIDevKit.Ollama.Services.ChatService.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  langs:
+  - csharp
+  - vb
+  name: ChatService
+  nameWithType: ChatService
+  fullName: Glitch9.AIDevKit.Ollama.Services.ChatService
+  type: Class
+  source:
+    id: ChatService
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Services/ChatService.cs
+    startLine: 5
+  namespace: Glitch9.AIDevKit.Ollama.Services
+  syntax:
+    content: 'public class ChatService : CRUDServiceBase<Ollama>'
+    content.vb: Public Class ChatService Inherits CRUDServiceBase(Of Ollama)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Ollama.Ollama}
+- uid: Glitch9.AIDevKit.Ollama.Services.ChatService.#ctor(Glitch9.AIDevKit.Ollama.Ollama)
+  commentId: M:Glitch9.AIDevKit.Ollama.Services.ChatService.#ctor(Glitch9.AIDevKit.Ollama.Ollama)
+  id: '#ctor(Glitch9.AIDevKit.Ollama.Ollama)'
+  parent: Glitch9.AIDevKit.Ollama.Services.ChatService
+  langs:
+  - csharp
+  - vb
+  name: ChatService(Ollama)
+  nameWithType: ChatService.ChatService(Ollama)
+  fullName: Glitch9.AIDevKit.Ollama.Services.ChatService.ChatService(Glitch9.AIDevKit.Ollama.Ollama)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Services/ChatService.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit.Ollama.Services
+  syntax:
+    content: public ChatService(Ollama client)
+    parameters:
+    - id: client
+      type: Glitch9.AIDevKit.Ollama.Ollama
+    content.vb: Public Sub New(client As Ollama)
+  overload: Glitch9.AIDevKit.Ollama.Services.ChatService.#ctor*
+  nameWithType.vb: ChatService.New(Ollama)
+  fullName.vb: Glitch9.AIDevKit.Ollama.Services.ChatService.New(Glitch9.AIDevKit.Ollama.Ollama)
+  name.vb: New(Ollama)
+- uid: Glitch9.AIDevKit.Ollama.Services.ChatService.CreateAsync(Glitch9.AIDevKit.ChatCompletionRequest)
+  commentId: M:Glitch9.AIDevKit.Ollama.Services.ChatService.CreateAsync(Glitch9.AIDevKit.ChatCompletionRequest)
+  id: CreateAsync(Glitch9.AIDevKit.ChatCompletionRequest)
+  parent: Glitch9.AIDevKit.Ollama.Services.ChatService
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(ChatCompletionRequest)
+  nameWithType: ChatService.CreateAsync(ChatCompletionRequest)
+  fullName: Glitch9.AIDevKit.Ollama.Services.ChatService.CreateAsync(Glitch9.AIDevKit.ChatCompletionRequest)
+  type: Method
+  source:
+    id: CreateAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Services/ChatService.cs
+    startLine: 10
+  namespace: Glitch9.AIDevKit.Ollama.Services
+  syntax:
+    content: public UniTask<ChatResponse> CreateAsync(ChatCompletionRequest req)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.ChatCompletionRequest
+    return:
+      type: UniTask{Glitch9.AIDevKit.Ollama.ChatResponse}
+    content.vb: Public Function CreateAsync(req As ChatCompletionRequest) As UniTask(Of ChatResponse)
+  overload: Glitch9.AIDevKit.Ollama.Services.ChatService.CreateAsync*
+- uid: Glitch9.AIDevKit.Ollama.Services.ChatService.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Ollama.Services.ChatService.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  id: StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  parent: Glitch9.AIDevKit.Ollama.Services.ChatService
+  langs:
+  - csharp
+  - vb
+  name: StreamAsync(ChatCompletionRequest, ChatStreamHandler)
+  nameWithType: ChatService.StreamAsync(ChatCompletionRequest, ChatStreamHandler)
+  fullName: Glitch9.AIDevKit.Ollama.Services.ChatService.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  type: Method
+  source:
+    id: StreamAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Services/ChatService.cs
+    startLine: 16
+  namespace: Glitch9.AIDevKit.Ollama.Services
+  syntax:
+    content: public UniTask StreamAsync(ChatCompletionRequest req, ChatStreamHandler streamHandler)
+    parameters:
+    - id: req
+      type: Glitch9.AIDevKit.ChatCompletionRequest
+    - id: streamHandler
+      type: Glitch9.AIDevKit.ChatStreamHandler
+    return:
+      type: UniTask
+    content.vb: Public Function StreamAsync(req As ChatCompletionRequest, streamHandler As ChatStreamHandler) As UniTask
+  overload: Glitch9.AIDevKit.Ollama.Services.ChatService.StreamAsync*
+references:
+- uid: Glitch9.AIDevKit.Ollama.Services
+  commentId: N:Glitch9.AIDevKit.Ollama.Services
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Ollama.Services
+  nameWithType: Glitch9.AIDevKit.Ollama.Services
+  fullName: Glitch9.AIDevKit.Ollama.Services
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama.Services
+    name: Services
+    href: Glitch9.AIDevKit.Ollama.Services.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama.Services
+    name: Services
+    href: Glitch9.AIDevKit.Ollama.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Ollama.Ollama}
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.Ollama.Ollama}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  href: Glitch9.AIDevKit.Ollama.Ollama.html
+  name: CRUDServiceBase<Ollama>
+  nameWithType: CRUDServiceBase<Ollama>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<Glitch9.AIDevKit.Ollama.Ollama>
+  nameWithType.vb: CRUDServiceBase(Of Ollama)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of Glitch9.AIDevKit.Ollama.Ollama)
+  name.vb: CRUDServiceBase(Of Ollama)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - uid: Glitch9.AIDevKit.Ollama.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.Ollama.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Ollama.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.Ollama.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+  name: CRUDServiceBase<TClient>
+  nameWithType: CRUDServiceBase<TClient>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<TClient>
+  nameWithType.vb: CRUDServiceBase(Of TClient)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of TClient)
+  name.vb: CRUDServiceBase(Of TClient)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: <
+  - name: TClient
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
+    name: CRUDServiceBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TClient
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.Ollama.Services.ChatService.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Services.ChatService.#ctor
+  href: Glitch9.AIDevKit.Ollama.Services.ChatService.html#Glitch9_AIDevKit_Ollama_Services_ChatService__ctor_Glitch9_AIDevKit_Ollama_Ollama_
+  name: ChatService
+  nameWithType: ChatService.ChatService
+  fullName: Glitch9.AIDevKit.Ollama.Services.ChatService.ChatService
+  nameWithType.vb: ChatService.New
+  fullName.vb: Glitch9.AIDevKit.Ollama.Services.ChatService.New
+  name.vb: New
+- uid: Glitch9.AIDevKit.Ollama.Ollama
+  commentId: T:Glitch9.AIDevKit.Ollama.Ollama
+  parent: Glitch9.AIDevKit.Ollama
+  href: Glitch9.AIDevKit.Ollama.Ollama.html
+  name: Ollama
+  nameWithType: Ollama
+  fullName: Glitch9.AIDevKit.Ollama.Ollama
+- uid: Glitch9.AIDevKit.Ollama
+  commentId: N:Glitch9.AIDevKit.Ollama
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Ollama
+  nameWithType: Glitch9.AIDevKit.Ollama
+  fullName: Glitch9.AIDevKit.Ollama
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+- uid: Glitch9.AIDevKit.Ollama.Services.ChatService.CreateAsync*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Services.ChatService.CreateAsync
+  href: Glitch9.AIDevKit.Ollama.Services.ChatService.html#Glitch9_AIDevKit_Ollama_Services_ChatService_CreateAsync_Glitch9_AIDevKit_ChatCompletionRequest_
+  name: CreateAsync
+  nameWithType: ChatService.CreateAsync
+  fullName: Glitch9.AIDevKit.Ollama.Services.ChatService.CreateAsync
+- uid: Glitch9.AIDevKit.ChatCompletionRequest
+  commentId: T:Glitch9.AIDevKit.ChatCompletionRequest
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatCompletionRequest.html
+  name: ChatCompletionRequest
+  nameWithType: ChatCompletionRequest
+  fullName: Glitch9.AIDevKit.ChatCompletionRequest
+- uid: UniTask{Glitch9.AIDevKit.Ollama.ChatResponse}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Ollama.ChatResponse}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Ollama.ChatResponse.html
+  name: UniTask<ChatResponse>
+  nameWithType: UniTask<ChatResponse>
+  fullName: UniTask<Glitch9.AIDevKit.Ollama.ChatResponse>
+  nameWithType.vb: UniTask(Of ChatResponse)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Ollama.ChatResponse)
+  name.vb: UniTask(Of ChatResponse)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Ollama.ChatResponse
+    name: ChatResponse
+    href: Glitch9.AIDevKit.Ollama.ChatResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Ollama.ChatResponse
+    name: ChatResponse
+    href: Glitch9.AIDevKit.Ollama.ChatResponse.html
+  - name: )
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.Ollama.Services.ChatService.StreamAsync*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Services.ChatService.StreamAsync
+  href: Glitch9.AIDevKit.Ollama.Services.ChatService.html#Glitch9_AIDevKit_Ollama_Services_ChatService_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  name: StreamAsync
+  nameWithType: ChatService.StreamAsync
+  fullName: Glitch9.AIDevKit.Ollama.Services.ChatService.StreamAsync
+- uid: Glitch9.AIDevKit.ChatStreamHandler
+  commentId: T:Glitch9.AIDevKit.ChatStreamHandler
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatStreamHandler.html
+  name: ChatStreamHandler
+  nameWithType: ChatStreamHandler
+  fullName: Glitch9.AIDevKit.ChatStreamHandler
+- uid: UniTask
+  isExternal: true
+  name: UniTask
+  nameWithType: UniTask
+  fullName: UniTask

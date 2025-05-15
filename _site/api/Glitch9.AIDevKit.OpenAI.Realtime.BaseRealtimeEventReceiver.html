@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BaseRealtimeEventReceiver | AI DevKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BaseRealtimeEventReceiver | AI DevKit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AI DevKit">
+            AI DevKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver">
+
+
+
+  <h1 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver" class="text-break">
+Class BaseRealtimeEventReceiver  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.html">Realtime</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Glitch9.AIDevKit.OpenAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseRealtimeEventReceiver</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BaseRealtimeEventReceiver</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiver.html">RealtimeEventReceiver</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNotSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfNotSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNull__1___0_System_String_System_String_">LogExtensions.LogIfNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_ToSenderName_System_Object_">SystemExtensions.ToSenderName(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.TypeExtensions.html#Glitch9_TypeExtensions_IsInteger_System_Object_">TypeExtensions.IsInteger(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver__ctor_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.#ctor*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver__ctor_Glitch9_IO_Networking_HttpLogger_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.#ctor(Glitch9.IO.Networking.HttpLogger)">
+  BaseRealtimeEventReceiver(HttpLogger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseRealtimeEventReceiver(HttpLogger logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logger</code> <a class="xref" href="Glitch9.IO.Networking.HttpLogger.html">HttpLogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnSessionStateChanged" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnSessionStateChanged">
+  OnSessionStateChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Action&lt;RealtimeEventType&gt; OnSessionStateChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventType.html">RealtimeEventType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_logger" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.logger">
+  logger
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HttpLogger logger</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.IO.Networking.HttpLogger.html">HttpLogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationCreated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_Conversation_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.Conversation)">
+  OnConversationCreated(string, Conversation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnConversationCreated(string eventId, Conversation conversation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>conversation</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.Conversation.html">Conversation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationItemCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationItemCreated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationItemCreated_System_String_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationItemCreated(System.String,System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">
+  OnConversationItemCreated(string, string, RealtimeItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnConversationItemCreated(string eventId, string previousItemId, RealtimeItem item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>previousItemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationItemDeleted_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationItemDeleted*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationItemDeleted_System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationItemDeleted(System.String,System.String)">
+  OnConversationItemDeleted(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnConversationItemDeleted(string eventId, string itemId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationItemInputAudioTranscriptionCompleted_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationItemInputAudioTranscriptionCompleted*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationItemInputAudioTranscriptionCompleted_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationItemInputAudioTranscriptionCompleted(System.String,System.Nullable{System.Int32},System.String)">
+  OnConversationItemInputAudioTranscriptionCompleted(string, int?, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnConversationItemInputAudioTranscriptionCompleted(string eventId, int? contentIndex, string transcription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>transcription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationItemInputAudioTranscriptionFailed_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationItemInputAudioTranscriptionFailed*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationItemInputAudioTranscriptionFailed_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_GenericError_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationItemInputAudioTranscriptionFailed(System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.GenericError)">
+  OnConversationItemInputAudioTranscriptionFailed(string, int?, GenericError)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnConversationItemInputAudioTranscriptionFailed(string eventId, int? contentIndex, GenericError error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>error</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.GenericError.html">GenericError</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationItemTruncated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationItemTruncated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnConversationItemTruncated_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnConversationItemTruncated(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+  OnConversationItemTruncated(string, string, int?, int?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnConversationItemTruncated(string eventId, string itemId, int? contentIndex, int? audioEndMs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>audioEndMs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnError_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnError*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnError_System_String_Glitch9_AIDevKit_OpenAI_GenericError_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnError(System.String,Glitch9.AIDevKit.OpenAI.GenericError)">
+  OnError(string, GenericError)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnError(string eventId, GenericError error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>error</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.GenericError.html">GenericError</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnInputAudioBufferCleared_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnInputAudioBufferCleared*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnInputAudioBufferCleared_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnInputAudioBufferCleared(System.String)">
+  OnInputAudioBufferCleared(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnInputAudioBufferCleared(string eventId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnInputAudioBufferCommitted_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnInputAudioBufferCommitted*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnInputAudioBufferCommitted_System_String_System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnInputAudioBufferCommitted(System.String,System.String,System.String)">
+  OnInputAudioBufferCommitted(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnInputAudioBufferCommitted(string eventId, string previousItemId, string itemId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>previousItemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnInputAudioBufferSpeechStarted_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnInputAudioBufferSpeechStarted*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnInputAudioBufferSpeechStarted_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnInputAudioBufferSpeechStarted(System.String,System.Nullable{System.Int32},System.String)">
+  OnInputAudioBufferSpeechStarted(string, int?, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnInputAudioBufferSpeechStarted(string eventId, int? audioStartMs, string itemId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>audioStartMs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnInputAudioBufferSpeechStopped_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnInputAudioBufferSpeechStopped*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnInputAudioBufferSpeechStopped_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnInputAudioBufferSpeechStopped(System.String,System.Nullable{System.Int32},System.String)">
+  OnInputAudioBufferSpeechStopped(string, int?, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnInputAudioBufferSpeechStopped(string eventId, int? audioEndMs, string itemId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>audioEndMs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnRateLimitsUpdated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnRateLimitsUpdated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnRateLimitsUpdated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RateLimit___" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnRateLimitsUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[])">
+  OnRateLimitsUpdated(string, RateLimit[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnRateLimitsUpdated(string eventId, RateLimit[] rateLimits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>rateLimits</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RateLimit.html">RateLimit</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnRealtimeEventReceived_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnRealtimeEventReceived*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnRealtimeEventReceived_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnRealtimeEventReceived(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent)">
+  OnRealtimeEventReceived(RealtimeEvent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRealtimeEventReceived(RealtimeEvent realtimeEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>realtimeEvent</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html">RealtimeEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseAudioDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseAudioDelta*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseAudioDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseAudioDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+  OnResponseAudioDelta(string, string, string, int?, int?, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseAudioDelta(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseAudioDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseAudioDone*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseAudioDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseAudioDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+  OnResponseAudioDone(string, string, string, int?, int?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseAudioDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseAudioTranscriptDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseAudioTranscriptDelta*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseAudioTranscriptDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseAudioTranscriptDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+  OnResponseAudioTranscriptDelta(string, string, string, int?, int?, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseAudioTranscriptDelta(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseAudioTranscriptDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseAudioTranscriptDone*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseAudioTranscriptDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseAudioTranscriptDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+  OnResponseAudioTranscriptDone(string, string, string, int?, int?, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseAudioTranscriptDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string transcript)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>transcript</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseContentPartAdded_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseContentPartAdded*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseContentPartAdded_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemContent_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseContentPartAdded(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)">
+  OnResponseContentPartAdded(string, string, string, int?, int?, RealtimeItemContent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseContentPartAdded(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, RealtimeItemContent part)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>part</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html">RealtimeItemContent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseContentPartDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseContentPartDone*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseContentPartDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemContent_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseContentPartDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)">
+  OnResponseContentPartDone(string, string, string, int?, int?, RealtimeItemContent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseContentPartDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, RealtimeItemContent part)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>part</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html">RealtimeItemContent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseCreated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">
+  OnResponseCreated(string, RealtimeItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseCreated(string eventId, RealtimeItem response)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>response</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseDone*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseDone_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseDone(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">
+  OnResponseDone(string, RealtimeItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseDone(string eventId, RealtimeItem response)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>response</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseFunctionCallArgumentsDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseFunctionCallArgumentsDelta*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseFunctionCallArgumentsDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseFunctionCallArgumentsDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)">
+  OnResponseFunctionCallArgumentsDelta(string, string, string, int?, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseFunctionCallArgumentsDelta(string eventId, string responseId, string itemId, int? itemIndex, string callId, string delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>callId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseFunctionCallArgumentsDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseFunctionCallArgumentsDone*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseFunctionCallArgumentsDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseFunctionCallArgumentsDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)">
+  OnResponseFunctionCallArgumentsDone(string, string, string, int?, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseFunctionCallArgumentsDone(string eventId, string responseId, string itemId, int? itemIndex, string callId, string arguments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>callId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseOutputItemAdded_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseOutputItemAdded*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseOutputItemAdded_System_String_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseOutputItemAdded(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">
+  OnResponseOutputItemAdded(string, string, int?, RealtimeItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseOutputItemAdded(string eventId, string responseId, int? itemIndex, RealtimeItem item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseOutputItemDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseOutputItemDone*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseOutputItemDone_System_String_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseOutputItemDone(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">
+  OnResponseOutputItemDone(string, string, int?, RealtimeItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseOutputItemDone(string eventId, string responseId, int? itemIndex, RealtimeItem item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseTextDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseTextDelta*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseTextDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseTextDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+  OnResponseTextDelta(string, string, string, int?, int?, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseTextDelta(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseTextDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseTextDone*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnResponseTextDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnResponseTextDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+  OnResponseTextDone(string, string, string, int?, int?, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnResponseTextDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>contentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnSessionCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnSessionCreated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnSessionCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_Session_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnSessionCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.Session)">
+  OnSessionCreated(string, Session)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSessionCreated(string eventId, Session session)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>session</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.Session.html">Session</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnSessionUpdated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnSessionUpdated*"></a>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_BaseRealtimeEventReceiver_OnSessionUpdated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_Session_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.BaseRealtimeEventReceiver.OnSessionUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.Session)">
+  OnSessionUpdated(string, Session)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSessionUpdated(string eventId, Session session)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>session</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.Session.html">Session</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

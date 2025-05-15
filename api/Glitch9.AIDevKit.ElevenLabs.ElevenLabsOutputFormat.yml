@@ -1,0 +1,702 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  id: ElevenLabsOutputFormat
+  parent: Glitch9.AIDevKit.ElevenLabs
+  children:
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.ALaw_8000
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_22050_32
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_128
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_192
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_32
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_64
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_96
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_16000
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_22050
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_24000
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_44100
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_8000
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.ULaw_8000
+  langs:
+  - csharp
+  - vb
+  name: ElevenLabsOutputFormat
+  nameWithType: ElevenLabsOutputFormat
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  type: Enum
+  source:
+    id: ElevenLabsOutputFormat
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 28
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Output format of the generated audio. 
+
+    Formatted as codec_sample_rate_bitrate. 
+
+    So an mp3 with 22.05kHz sample rate at 32kbs is represented as mp3_22050_32. 
+
+    MP3 with 192kbps bitrate requires you to be subscribed to Creator tier or above. 
+
+    PCM with 44.1kHz sample rate requires you to be subscribed to Pro tier or above. 
+
+    Note that the μ-law format (sometimes written mu-law, often approximated as u-law) is commonly used for Twilio audio inputs.
+
+    Default is mp3_44100_128.
+  example: []
+  syntax:
+    content: public enum ElevenLabsOutputFormat
+    content.vb: Public Enum ElevenLabsOutputFormat
+  extensionMethods:
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate
+  - Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_22050_32
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_22050_32
+  id: MP3_22050_32
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: MP3_22050_32
+  nameWithType: ElevenLabsOutputFormat.MP3_22050_32
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_22050_32
+  type: Field
+  source:
+    id: MP3_22050_32
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 31
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      MP3_22050_32 = 0
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      MP3_22050_32 = 0
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_32
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_32
+  id: MP3_44100_32
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: MP3_44100_32
+  nameWithType: ElevenLabsOutputFormat.MP3_44100_32
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_32
+  type: Field
+  source:
+    id: MP3_44100_32
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 32
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      MP3_44100_32 = 1
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      MP3_44100_32 = 1
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_64
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_64
+  id: MP3_44100_64
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: MP3_44100_64
+  nameWithType: ElevenLabsOutputFormat.MP3_44100_64
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_64
+  type: Field
+  source:
+    id: MP3_44100_64
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 33
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      MP3_44100_64 = 2
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      MP3_44100_64 = 2
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_96
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_96
+  id: MP3_44100_96
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: MP3_44100_96
+  nameWithType: ElevenLabsOutputFormat.MP3_44100_96
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_96
+  type: Field
+  source:
+    id: MP3_44100_96
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 34
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      MP3_44100_96 = 3
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      MP3_44100_96 = 3
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_128
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_128
+  id: MP3_44100_128
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: MP3_44100_128
+  nameWithType: ElevenLabsOutputFormat.MP3_44100_128
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_128
+  type: Field
+  source:
+    id: MP3_44100_128
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 35
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      MP3_44100_128 = 4
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      MP3_44100_128 = 4
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_192
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_192
+  id: MP3_44100_192
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: MP3_44100_192
+  nameWithType: ElevenLabsOutputFormat.MP3_44100_192
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.MP3_44100_192
+  type: Field
+  source:
+    id: MP3_44100_192
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 36
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      MP3_44100_192 = 5
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      MP3_44100_192 = 5
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_8000
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_8000
+  id: PCM_8000
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: PCM_8000
+  nameWithType: ElevenLabsOutputFormat.PCM_8000
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_8000
+  type: Field
+  source:
+    id: PCM_8000
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 37
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      PCM_8000 = 6
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      PCM_8000 = 6
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_16000
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_16000
+  id: PCM_16000
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: PCM_16000
+  nameWithType: ElevenLabsOutputFormat.PCM_16000
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_16000
+  type: Field
+  source:
+    id: PCM_16000
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 38
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      PCM_16000 = 7
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      PCM_16000 = 7
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_22050
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_22050
+  id: PCM_22050
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: PCM_22050
+  nameWithType: ElevenLabsOutputFormat.PCM_22050
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_22050
+  type: Field
+  source:
+    id: PCM_22050
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 39
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      PCM_22050 = 8
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      PCM_22050 = 8
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_24000
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_24000
+  id: PCM_24000
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: PCM_24000
+  nameWithType: ElevenLabsOutputFormat.PCM_24000
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_24000
+  type: Field
+  source:
+    id: PCM_24000
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 40
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      PCM_24000 = 9
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      PCM_24000 = 9
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_44100
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_44100
+  id: PCM_44100
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: PCM_44100
+  nameWithType: ElevenLabsOutputFormat.PCM_44100
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.PCM_44100
+  type: Field
+  source:
+    id: PCM_44100
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 41
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      PCM_44100 = 10
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      PCM_44100 = 10
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.ULaw_8000
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.ULaw_8000
+  id: ULaw_8000
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: ULaw_8000
+  nameWithType: ElevenLabsOutputFormat.ULaw_8000
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.ULaw_8000
+  type: Field
+  source:
+    id: ULaw_8000
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 43
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      ULaw_8000 = 11
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      ULaw_8000 = 11
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.ALaw_8000
+  commentId: F:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.ALaw_8000
+  id: ALaw_8000
+  parent: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  langs:
+  - csharp
+  - vb
+  name: ALaw_8000
+  nameWithType: ElevenLabsOutputFormat.ALaw_8000
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.ALaw_8000
+  type: Field
+  source:
+    id: ALaw_8000
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Common/ElevenLabsIOFormats.cs
+    startLine: 44
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      ALaw_8000 = 12
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      ALaw_8000 = 12
+references:
+- uid: Glitch9.AIDevKit.ElevenLabs
+  commentId: N:Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.ElevenLabs
+  nameWithType: Glitch9.AIDevKit.ElevenLabs
+  fullName: Glitch9.AIDevKit.ElevenLabs
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ElevenLabs
+    name: ElevenLabs
+    href: Glitch9.AIDevKit.ElevenLabs.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ElevenLabs
+    name: ElevenLabs
+    href: Glitch9.AIDevKit.ElevenLabs.html
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  parent: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions
+  definition: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetAudioEncoding_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  name: GetAudioEncoding(ElevenLabsOutputFormat)
+  nameWithType: OutputFormatExtensions.GetAudioEncoding(ElevenLabsOutputFormat)
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetAudioEncoding
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetAudioEncoding_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetAudioEncoding
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetAudioEncoding_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  parent: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions
+  definition: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetBitrate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  name: GetBitrate(ElevenLabsOutputFormat)
+  nameWithType: OutputFormatExtensions.GetBitrate(ElevenLabsOutputFormat)
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetBitrate
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetBitrate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetBitrate
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetBitrate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  parent: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions
+  definition: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetFileExtension_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  name: GetFileExtension(ElevenLabsOutputFormat)
+  nameWithType: OutputFormatExtensions.GetFileExtension(ElevenLabsOutputFormat)
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetFileExtension
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetFileExtension_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetFileExtension
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetFileExtension_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  parent: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions
+  definition: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetSamplingRate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  name: GetSamplingRate(ElevenLabsOutputFormat)
+  nameWithType: OutputFormatExtensions.GetSamplingRate(ElevenLabsOutputFormat)
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetSamplingRate
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetSamplingRate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetSamplingRate
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetSamplingRate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  parent: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions
+  definition: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_ToAudioFormat_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  name: ToAudioFormat(ElevenLabsOutputFormat)
+  nameWithType: OutputFormatExtensions.ToAudioFormat(ElevenLabsOutputFormat)
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: ToAudioFormat
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_ToAudioFormat_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: ToAudioFormat
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_ToAudioFormat_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetAudioEncoding_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  name: GetAudioEncoding(ElevenLabsOutputFormat)
+  nameWithType: OutputFormatExtensions.GetAudioEncoding(ElevenLabsOutputFormat)
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetAudioEncoding
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetAudioEncoding_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetAudioEncoding
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetAudioEncoding_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html
+  name: OutputFormatExtensions
+  nameWithType: OutputFormatExtensions
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions
+- uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetBitrate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  name: GetBitrate(ElevenLabsOutputFormat)
+  nameWithType: OutputFormatExtensions.GetBitrate(ElevenLabsOutputFormat)
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetBitrate
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetBitrate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetBitrate
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetBitrate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetFileExtension_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  name: GetFileExtension(ElevenLabsOutputFormat)
+  nameWithType: OutputFormatExtensions.GetFileExtension(ElevenLabsOutputFormat)
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetFileExtension
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetFileExtension_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetFileExtension
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetFileExtension_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetSamplingRate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  name: GetSamplingRate(ElevenLabsOutputFormat)
+  nameWithType: OutputFormatExtensions.GetSamplingRate(ElevenLabsOutputFormat)
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetSamplingRate
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetSamplingRate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: GetSamplingRate
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetSamplingRate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_ToAudioFormat_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  name: ToAudioFormat(ElevenLabsOutputFormat)
+  nameWithType: OutputFormatExtensions.ToAudioFormat(ElevenLabsOutputFormat)
+  fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: ToAudioFormat
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_ToAudioFormat_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
+    name: ToAudioFormat
+    href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_ToAudioFormat_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+    name: ElevenLabsOutputFormat
+    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat.html
+  name: ElevenLabsOutputFormat
+  nameWithType: ElevenLabsOutputFormat
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat

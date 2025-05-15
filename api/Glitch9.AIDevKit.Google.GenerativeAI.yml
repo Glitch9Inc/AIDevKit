@@ -1,0 +1,981 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.GenerativeAI
+  commentId: T:Glitch9.AIDevKit.Google.GenerativeAI
+  id: GenerativeAI
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.GenerativeAI.#ctor
+  - Glitch9.AIDevKit.Google.GenerativeAI.CachedContents
+  - Glitch9.AIDevKit.Google.GenerativeAI.Corpora
+  - Glitch9.AIDevKit.Google.GenerativeAI.DefaultInstance
+  - Glitch9.AIDevKit.Google.GenerativeAI.Files
+  - Glitch9.AIDevKit.Google.GenerativeAI.Media
+  - Glitch9.AIDevKit.Google.GenerativeAI.Models
+  - Glitch9.AIDevKit.Google.GenerativeAI.TunedModels
+  langs:
+  - csharp
+  - vb
+  name: GenerativeAI
+  nameWithType: GenerativeAI
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI
+  type: Class
+  source:
+    id: GenerativeAI
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Client/GenerativeAI.cs
+    startLine: 44
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: 'public class GenerativeAI : AIClient<GenerativeAI>'
+    content.vb: Public Class GenerativeAI Inherits AIClient(Of GenerativeAI)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RESTClient
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  inheritedMembers:
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.OnTokensConsumed
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.FormatErrorMessage(System.String)
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.Name
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.Version
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.BetaVersion
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.OnException
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.CRUDLogger
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.BaseUrl
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.GetApiKey
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.HandleException(System.Exception)
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.CachedContents
+  commentId: P:Glitch9.AIDevKit.Google.GenerativeAI.CachedContents
+  id: CachedContents
+  parent: Glitch9.AIDevKit.Google.GenerativeAI
+  langs:
+  - csharp
+  - vb
+  name: CachedContents
+  nameWithType: GenerativeAI.CachedContents
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.CachedContents
+  type: Property
+  source:
+    id: CachedContents
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Client/GenerativeAI.cs
+    startLine: 47
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public CachedContentService CachedContents { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.Services.CachedContentService
+    content.vb: Public ReadOnly Property CachedContents As CachedContentService
+  overload: Glitch9.AIDevKit.Google.GenerativeAI.CachedContents*
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.Corpora
+  commentId: P:Glitch9.AIDevKit.Google.GenerativeAI.Corpora
+  id: Corpora
+  parent: Glitch9.AIDevKit.Google.GenerativeAI
+  langs:
+  - csharp
+  - vb
+  name: Corpora
+  nameWithType: GenerativeAI.Corpora
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.Corpora
+  type: Property
+  source:
+    id: Corpora
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Client/GenerativeAI.cs
+    startLine: 48
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public CorporaService Corpora { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.Services.CorporaService
+    content.vb: Public ReadOnly Property Corpora As CorporaService
+  overload: Glitch9.AIDevKit.Google.GenerativeAI.Corpora*
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.Files
+  commentId: P:Glitch9.AIDevKit.Google.GenerativeAI.Files
+  id: Files
+  parent: Glitch9.AIDevKit.Google.GenerativeAI
+  langs:
+  - csharp
+  - vb
+  name: Files
+  nameWithType: GenerativeAI.Files
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.Files
+  type: Property
+  source:
+    id: Files
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Client/GenerativeAI.cs
+    startLine: 49
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public FileService Files { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.Services.FileService
+    content.vb: Public ReadOnly Property Files As FileService
+  overload: Glitch9.AIDevKit.Google.GenerativeAI.Files*
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.Media
+  commentId: P:Glitch9.AIDevKit.Google.GenerativeAI.Media
+  id: Media
+  parent: Glitch9.AIDevKit.Google.GenerativeAI
+  langs:
+  - csharp
+  - vb
+  name: Media
+  nameWithType: GenerativeAI.Media
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.Media
+  type: Property
+  source:
+    id: Media
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Client/GenerativeAI.cs
+    startLine: 50
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public MediaService Media { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.Services.MediaService
+    content.vb: Public ReadOnly Property Media As MediaService
+  overload: Glitch9.AIDevKit.Google.GenerativeAI.Media*
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.Models
+  commentId: P:Glitch9.AIDevKit.Google.GenerativeAI.Models
+  id: Models
+  parent: Glitch9.AIDevKit.Google.GenerativeAI
+  langs:
+  - csharp
+  - vb
+  name: Models
+  nameWithType: GenerativeAI.Models
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.Models
+  type: Property
+  source:
+    id: Models
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Client/GenerativeAI.cs
+    startLine: 51
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public ModelService Models { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.Services.ModelService
+    content.vb: Public ReadOnly Property Models As ModelService
+  overload: Glitch9.AIDevKit.Google.GenerativeAI.Models*
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.TunedModels
+  commentId: P:Glitch9.AIDevKit.Google.GenerativeAI.TunedModels
+  id: TunedModels
+  parent: Glitch9.AIDevKit.Google.GenerativeAI
+  langs:
+  - csharp
+  - vb
+  name: TunedModels
+  nameWithType: GenerativeAI.TunedModels
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.TunedModels
+  type: Property
+  source:
+    id: TunedModels
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Client/GenerativeAI.cs
+    startLine: 52
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public TunedModelService TunedModels { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.Services.TunedModelService
+    content.vb: Public ReadOnly Property TunedModels As TunedModelService
+  overload: Glitch9.AIDevKit.Google.GenerativeAI.TunedModels*
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.DefaultInstance
+  commentId: P:Glitch9.AIDevKit.Google.GenerativeAI.DefaultInstance
+  id: DefaultInstance
+  parent: Glitch9.AIDevKit.Google.GenerativeAI
+  langs:
+  - csharp
+  - vb
+  name: DefaultInstance
+  nameWithType: GenerativeAI.DefaultInstance
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.DefaultInstance
+  type: Property
+  source:
+    id: DefaultInstance
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Client/GenerativeAI.cs
+    startLine: 57
+  namespace: Glitch9.AIDevKit.Google
+  summary: The default instance of the GenerativeAI client.
+  example: []
+  syntax:
+    content: public static GenerativeAI DefaultInstance { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.GenerativeAI
+    content.vb: Public Shared ReadOnly Property DefaultInstance As GenerativeAI
+  overload: Glitch9.AIDevKit.Google.GenerativeAI.DefaultInstance*
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.#ctor
+  commentId: M:Glitch9.AIDevKit.Google.GenerativeAI.#ctor
+  id: '#ctor'
+  parent: Glitch9.AIDevKit.Google.GenerativeAI
+  langs:
+  - csharp
+  - vb
+  name: GenerativeAI()
+  nameWithType: GenerativeAI.GenerativeAI()
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.GenerativeAI()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Client/GenerativeAI.cs
+    startLine: 73
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public GenerativeAI()
+    content.vb: Public Sub New()
+  overload: Glitch9.AIDevKit.Google.GenerativeAI.#ctor*
+  nameWithType.vb: GenerativeAI.New()
+  fullName.vb: Glitch9.AIDevKit.Google.GenerativeAI.New()
+  name.vb: New()
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RESTClient
+  commentId: T:Glitch9.IO.Networking.RESTApi.RESTClient
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RESTClient
+  nameWithType: RESTClient
+  fullName: Glitch9.IO.Networking.RESTApi.RESTClient
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  name: CRUDClient<GenerativeAI>
+  nameWithType: CRUDClient<GenerativeAI>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Google.GenerativeAI>
+  nameWithType.vb: CRUDClient(Of GenerativeAI)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Google.GenerativeAI)
+  name.vb: CRUDClient(Of GenerativeAI)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.GenerativeAI
+    name: GenerativeAI
+    href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.GenerativeAI
+    name: GenerativeAI
+    href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  commentId: T:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  parent: Glitch9.AIDevKit.Client
+  definition: Glitch9.AIDevKit.Client.AIClient`1
+  href: Glitch9.AIDevKit.Client.AIClient-1.html
+  name: AIClient<GenerativeAI>
+  nameWithType: AIClient<GenerativeAI>
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Google.GenerativeAI>
+  nameWithType.vb: AIClient(Of GenerativeAI)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Google.GenerativeAI)
+  name.vb: AIClient(Of GenerativeAI)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.GenerativeAI
+    name: GenerativeAI
+    href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.GenerativeAI
+    name: GenerativeAI
+    href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.OnTokensConsumed
+  commentId: P:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.OnTokensConsumed
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed
+  name: OnTokensConsumed
+  nameWithType: AIClient<GenerativeAI>.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Google.GenerativeAI>.OnTokensConsumed
+  nameWithType.vb: AIClient(Of GenerativeAI).OnTokensConsumed
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Google.GenerativeAI).OnTokensConsumed
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  name: HandleTokenUsage(Model, Usage)
+  nameWithType: AIClient<GenerativeAI>.HandleTokenUsage(Model, Usage)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Google.GenerativeAI>.HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  nameWithType.vb: AIClient(Of GenerativeAI).HandleTokenUsage(Model, Usage)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Google.GenerativeAI).HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.FormatErrorMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.FormatErrorMessage(System.String)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  name: FormatErrorMessage(string)
+  nameWithType: AIClient<GenerativeAI>.FormatErrorMessage(string)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Google.GenerativeAI>.FormatErrorMessage(string)
+  nameWithType.vb: AIClient(Of GenerativeAI).FormatErrorMessage(String)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Google.GenerativeAI).FormatErrorMessage(String)
+  name.vb: FormatErrorMessage(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  name: IsDeletedPredicate(RESTResponse)
+  nameWithType: AIClient<GenerativeAI>.IsDeletedPredicate(RESTResponse)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Google.GenerativeAI>.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  nameWithType.vb: AIClient(Of GenerativeAI).IsDeletedPredicate(RESTResponse)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Google.GenerativeAI).IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Google.GenerativeAI}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.Name
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.Name
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  name: Name
+  nameWithType: CRUDClient<GenerativeAI>.Name
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Google.GenerativeAI>.Name
+  nameWithType.vb: CRUDClient(Of GenerativeAI).Name
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Google.GenerativeAI).Name
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.Version
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.Version
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  name: Version
+  nameWithType: CRUDClient<GenerativeAI>.Version
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Google.GenerativeAI>.Version
+  nameWithType.vb: CRUDClient(Of GenerativeAI).Version
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Google.GenerativeAI).Version
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.BetaVersion
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.BetaVersion
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  name: BetaVersion
+  nameWithType: CRUDClient<GenerativeAI>.BetaVersion
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Google.GenerativeAI>.BetaVersion
+  nameWithType.vb: CRUDClient(Of GenerativeAI).BetaVersion
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Google.GenerativeAI).BetaVersion
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.OnException
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.OnException
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  name: OnException
+  nameWithType: CRUDClient<GenerativeAI>.OnException
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Google.GenerativeAI>.OnException
+  nameWithType.vb: CRUDClient(Of GenerativeAI).OnException
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Google.GenerativeAI).OnException
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.CRUDLogger
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.CRUDLogger
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  name: CRUDLogger
+  nameWithType: CRUDClient<GenerativeAI>.CRUDLogger
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Google.GenerativeAI>.CRUDLogger
+  nameWithType.vb: CRUDClient(Of GenerativeAI).CRUDLogger
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Google.GenerativeAI).CRUDLogger
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.BaseUrl
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.BaseUrl
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  name: BaseUrl
+  nameWithType: CRUDClient<GenerativeAI>.BaseUrl
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Google.GenerativeAI>.BaseUrl
+  nameWithType.vb: CRUDClient(Of GenerativeAI).BaseUrl
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Google.GenerativeAI).BaseUrl
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.GetApiKey
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.GetApiKey
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  name: GetApiKey()
+  nameWithType: CRUDClient<GenerativeAI>.GetApiKey()
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Google.GenerativeAI>.GetApiKey()
+  nameWithType.vb: CRUDClient(Of GenerativeAI).GetApiKey()
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Google.GenerativeAI).GetApiKey()
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.HandleException(System.Exception)
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.HandleException(System.Exception)
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  name: HandleException(Exception)
+  nameWithType: CRUDClient<GenerativeAI>.HandleException(Exception)
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Google.GenerativeAI>.HandleException(System.Exception)
+  nameWithType.vb: CRUDClient(Of GenerativeAI).HandleException(Exception)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Google.GenerativeAI).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Google.GenerativeAI}.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  name: CRUDClient<TSelf>
+  nameWithType: CRUDClient<TSelf>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>
+  nameWithType.vb: CRUDClient(Of TSelf)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf)
+  name.vb: CRUDClient(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1
+  commentId: T:Glitch9.AIDevKit.Client.AIClient`1
+  href: Glitch9.AIDevKit.Client.AIClient-1.html
+  name: AIClient<TSelf>
+  nameWithType: AIClient<TSelf>
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>
+  nameWithType.vb: AIClient(Of TSelf)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf)
+  name.vb: AIClient(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.AIDevKit.Client
+  commentId: N:Glitch9.AIDevKit.Client
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Client
+  nameWithType: Glitch9.AIDevKit.Client
+  fullName: Glitch9.AIDevKit.Client
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+- uid: Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  commentId: P:Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed
+  name: OnTokensConsumed
+  nameWithType: AIClient<TSelf>.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.OnTokensConsumed
+  nameWithType.vb: AIClient(Of TSelf).OnTokensConsumed
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).OnTokensConsumed
+- uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  name: HandleTokenUsage(Model, Usage)
+  nameWithType: AIClient<TSelf>.HandleTokenUsage(Model, Usage)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  nameWithType.vb: AIClient(Of TSelf).HandleTokenUsage(Model, Usage)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  isExternal: true
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  name: FormatErrorMessage(string)
+  nameWithType: AIClient<TSelf>.FormatErrorMessage(string)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.FormatErrorMessage(string)
+  nameWithType.vb: AIClient(Of TSelf).FormatErrorMessage(String)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).FormatErrorMessage(String)
+  name.vb: FormatErrorMessage(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  name: IsDeletedPredicate(RESTResponse)
+  nameWithType: AIClient<TSelf>.IsDeletedPredicate(RESTResponse)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  nameWithType.vb: AIClient(Of TSelf).IsDeletedPredicate(RESTResponse)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  name: Name
+  nameWithType: CRUDClient<TSelf>.Name
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.Name
+  nameWithType.vb: CRUDClient(Of TSelf).Name
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).Name
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  name: Version
+  nameWithType: CRUDClient<TSelf>.Version
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.Version
+  nameWithType.vb: CRUDClient(Of TSelf).Version
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).Version
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  name: BetaVersion
+  nameWithType: CRUDClient<TSelf>.BetaVersion
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.BetaVersion
+  nameWithType.vb: CRUDClient(Of TSelf).BetaVersion
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).BetaVersion
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  name: OnException
+  nameWithType: CRUDClient<TSelf>.OnException
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.OnException
+  nameWithType.vb: CRUDClient(Of TSelf).OnException
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).OnException
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  name: CRUDLogger
+  nameWithType: CRUDClient<TSelf>.CRUDLogger
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.CRUDLogger
+  nameWithType.vb: CRUDClient(Of TSelf).CRUDLogger
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).CRUDLogger
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  name: BaseUrl
+  nameWithType: CRUDClient<TSelf>.BaseUrl
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.BaseUrl
+  nameWithType.vb: CRUDClient(Of TSelf).BaseUrl
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).BaseUrl
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  name: GetApiKey()
+  nameWithType: CRUDClient<TSelf>.GetApiKey()
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.GetApiKey()
+  nameWithType.vb: CRUDClient(Of TSelf).GetApiKey()
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).GetApiKey()
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  isExternal: true
+  name: HandleException(Exception)
+  nameWithType: CRUDClient<TSelf>.HandleException(Exception)
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.HandleException(System.Exception)
+  nameWithType.vb: CRUDClient(Of TSelf).HandleException(Exception)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.CachedContents*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerativeAI.CachedContents
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html#Glitch9_AIDevKit_Google_GenerativeAI_CachedContents
+  name: CachedContents
+  nameWithType: GenerativeAI.CachedContents
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.CachedContents
+- uid: Glitch9.AIDevKit.Google.Services.CachedContentService
+  commentId: T:Glitch9.AIDevKit.Google.Services.CachedContentService
+  parent: Glitch9.AIDevKit.Google.Services
+  href: Glitch9.AIDevKit.Google.Services.CachedContentService.html
+  name: CachedContentService
+  nameWithType: CachedContentService
+  fullName: Glitch9.AIDevKit.Google.Services.CachedContentService
+- uid: Glitch9.AIDevKit.Google.Services
+  commentId: N:Glitch9.AIDevKit.Google.Services
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google.Services
+  nameWithType: Glitch9.AIDevKit.Google.Services
+  fullName: Glitch9.AIDevKit.Google.Services
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google.Services
+    name: Services
+    href: Glitch9.AIDevKit.Google.Services.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google.Services
+    name: Services
+    href: Glitch9.AIDevKit.Google.Services.html
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.Corpora*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerativeAI.Corpora
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html#Glitch9_AIDevKit_Google_GenerativeAI_Corpora
+  name: Corpora
+  nameWithType: GenerativeAI.Corpora
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.Corpora
+- uid: Glitch9.AIDevKit.Google.Services.CorporaService
+  commentId: T:Glitch9.AIDevKit.Google.Services.CorporaService
+  parent: Glitch9.AIDevKit.Google.Services
+  href: Glitch9.AIDevKit.Google.Services.CorporaService.html
+  name: CorporaService
+  nameWithType: CorporaService
+  fullName: Glitch9.AIDevKit.Google.Services.CorporaService
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.Files*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerativeAI.Files
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html#Glitch9_AIDevKit_Google_GenerativeAI_Files
+  name: Files
+  nameWithType: GenerativeAI.Files
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.Files
+- uid: Glitch9.AIDevKit.Google.Services.FileService
+  commentId: T:Glitch9.AIDevKit.Google.Services.FileService
+  parent: Glitch9.AIDevKit.Google.Services
+  href: Glitch9.AIDevKit.Google.Services.FileService.html
+  name: FileService
+  nameWithType: FileService
+  fullName: Glitch9.AIDevKit.Google.Services.FileService
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.Media*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerativeAI.Media
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html#Glitch9_AIDevKit_Google_GenerativeAI_Media
+  name: Media
+  nameWithType: GenerativeAI.Media
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.Media
+- uid: Glitch9.AIDevKit.Google.Services.MediaService
+  commentId: T:Glitch9.AIDevKit.Google.Services.MediaService
+  parent: Glitch9.AIDevKit.Google.Services
+  href: Glitch9.AIDevKit.Google.Services.MediaService.html
+  name: MediaService
+  nameWithType: MediaService
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.Models*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerativeAI.Models
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html#Glitch9_AIDevKit_Google_GenerativeAI_Models
+  name: Models
+  nameWithType: GenerativeAI.Models
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.Models
+- uid: Glitch9.AIDevKit.Google.Services.ModelService
+  commentId: T:Glitch9.AIDevKit.Google.Services.ModelService
+  parent: Glitch9.AIDevKit.Google.Services
+  href: Glitch9.AIDevKit.Google.Services.ModelService.html
+  name: ModelService
+  nameWithType: ModelService
+  fullName: Glitch9.AIDevKit.Google.Services.ModelService
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.TunedModels*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerativeAI.TunedModels
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html#Glitch9_AIDevKit_Google_GenerativeAI_TunedModels
+  name: TunedModels
+  nameWithType: GenerativeAI.TunedModels
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.TunedModels
+- uid: Glitch9.AIDevKit.Google.Services.TunedModelService
+  commentId: T:Glitch9.AIDevKit.Google.Services.TunedModelService
+  parent: Glitch9.AIDevKit.Google.Services
+  href: Glitch9.AIDevKit.Google.Services.TunedModelService.html
+  name: TunedModelService
+  nameWithType: TunedModelService
+  fullName: Glitch9.AIDevKit.Google.Services.TunedModelService
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.DefaultInstance*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerativeAI.DefaultInstance
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html#Glitch9_AIDevKit_Google_GenerativeAI_DefaultInstance
+  name: DefaultInstance
+  nameWithType: GenerativeAI.DefaultInstance
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.DefaultInstance
+- uid: Glitch9.AIDevKit.Google.GenerativeAI
+  commentId: T:Glitch9.AIDevKit.Google.GenerativeAI
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html
+  name: GenerativeAI
+  nameWithType: GenerativeAI
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI
+- uid: Glitch9.AIDevKit.Google.GenerativeAI.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerativeAI.#ctor
+  href: Glitch9.AIDevKit.Google.GenerativeAI.html#Glitch9_AIDevKit_Google_GenerativeAI__ctor
+  name: GenerativeAI
+  nameWithType: GenerativeAI.GenerativeAI
+  fullName: Glitch9.AIDevKit.Google.GenerativeAI.GenerativeAI
+  nameWithType.vb: GenerativeAI.New
+  fullName.vb: Glitch9.AIDevKit.Google.GenerativeAI.New
+  name.vb: New

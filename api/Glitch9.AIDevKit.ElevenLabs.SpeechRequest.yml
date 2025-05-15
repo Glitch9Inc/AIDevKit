@@ -1,0 +1,932 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  id: SpeechRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  children:
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyLanguageTextNormalization
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyTextNormalization
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.LanguageCode
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextRequestIds
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextText
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousRequestIds
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousText
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PronunciationDictionaryLocators
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Seed
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.VoiceSettings
+  langs:
+  - csharp
+  - vb
+  name: SpeechRequest
+  nameWithType: SpeechRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  type: Class
+  source:
+    id: SpeechRequest
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 5
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: 'public class SpeechRequest : VoiceRequest'
+    content.vb: Public Class SpeechRequest Inherits VoiceRequest
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RequestBody
+  - Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  - Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  inheritedMembers:
+  - Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId
+  - Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Voice
+  - Glitch9.AIDevKit.ElevenLabs.VoiceRequest.EnableLogging
+  - Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Model
+  - Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+  extensionMethods:
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text
+  id: Text
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: SpeechRequest.Text
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text
+  type: Property
+  source:
+    id: Text
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 13
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Required. 
+
+    The text that will get converted into speech.
+  example: []
+  syntax:
+    content: public string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Text As String
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text*
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.LanguageCode
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.LanguageCode
+  id: LanguageCode
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: LanguageCode
+  nameWithType: SpeechRequest.LanguageCode
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.LanguageCode
+  type: Property
+  source:
+    id: LanguageCode
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 21
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. 
+
+    Language code (ISO 639-1) used to enforce a language for the model. 
+
+    Currently only Turbo v2.5 and Flash v2.5 support language enforcement. 
+
+    For other models, an error will be returned if language code is provided.
+  example: []
+  syntax:
+    content: public string LanguageCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LanguageCode As String
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.LanguageCode*
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.VoiceSettings
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.VoiceSettings
+  id: VoiceSettings
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: VoiceSettings
+  nameWithType: SpeechRequest.VoiceSettings
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.VoiceSettings
+  type: Property
+  source:
+    id: VoiceSettings
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 28
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. 
+
+    Voice settings overriding stored settings for the given voice. 
+
+    They are applied only on the given request.
+  example: []
+  syntax:
+    content: public VoiceSettings VoiceSettings { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.VoiceSettings
+    content.vb: Public Property VoiceSettings As VoiceSettings
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.VoiceSettings*
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PronunciationDictionaryLocators
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PronunciationDictionaryLocators
+  id: PronunciationDictionaryLocators
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: PronunciationDictionaryLocators
+  nameWithType: SpeechRequest.PronunciationDictionaryLocators
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PronunciationDictionaryLocators
+  type: Property
+  source:
+    id: PronunciationDictionaryLocators
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 36
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. 
+
+    A list of pronunciation dictionary locators (id, version_id) to be applied to the text. 
+
+    They will be applied in order. 
+
+    You may have up to 3 locators per request.
+  example: []
+  syntax:
+    content: public List<PronunciationDictionaryLocator> PronunciationDictionaryLocators { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Glitch9.AIDevKit.ElevenLabs.PronunciationDictionaryLocator}
+    content.vb: Public Property PronunciationDictionaryLocators As List(Of PronunciationDictionaryLocator)
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PronunciationDictionaryLocators*
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Seed
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Seed
+  id: Seed
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: SpeechRequest.Seed
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Seed
+  type: Property
+  source:
+    id: Seed
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 44
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. 
+
+    If specified, our system will make a best effort to sample deterministically, 
+
+    such that repeated requests with the same seed and parameters should return the same result. 
+
+    Determinism is not guaranteed. Must be integer between 0 and 4294967295.
+  example: []
+  syntax:
+    content: public uint? Seed { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.UInt32}
+    content.vb: Public Property Seed As UInteger?
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Seed*
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousText
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousText
+  id: PreviousText
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: PreviousText
+  nameWithType: SpeechRequest.PreviousText
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousText
+  type: Property
+  source:
+    id: PreviousText
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 51
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. 
+
+    The text that came before the text of the current request. 
+
+    Can be used to improve the speech’s continuity when concatenating together multiple generations or to influence the speech’s continuity in the current generation.
+  example: []
+  syntax:
+    content: public string PreviousText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PreviousText As String
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousText*
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextText
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextText
+  id: NextText
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: NextText
+  nameWithType: SpeechRequest.NextText
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextText
+  type: Property
+  source:
+    id: NextText
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 57
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. The text that comes after the text of the current request. 
+
+    Can be used to improve the speech’s continuity when concatenating together multiple generations or to influence the speech’s continuity in the current generation.
+  example: []
+  syntax:
+    content: public string NextText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NextText As String
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextText*
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousRequestIds
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousRequestIds
+  id: PreviousRequestIds
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: PreviousRequestIds
+  nameWithType: SpeechRequest.PreviousRequestIds
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousRequestIds
+  type: Property
+  source:
+    id: PreviousRequestIds
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 66
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. A list of request_id of the samples that were generated before this generation. 
+
+    Can be used to improve the speech’s continuity when splitting up a large task into multiple requests. 
+
+    The results will be best when the same model is used across the generations. 
+
+    In case both previous_text and previous_request_ids is send, previous_text will be ignored. 
+
+    A maximum of 3 request_ids can be send.
+  example: []
+  syntax:
+    content: public List<string> PreviousRequestIds { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property PreviousRequestIds As List(Of String)
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousRequestIds*
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextRequestIds
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextRequestIds
+  id: NextRequestIds
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: NextRequestIds
+  nameWithType: SpeechRequest.NextRequestIds
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextRequestIds
+  type: Property
+  source:
+    id: NextRequestIds
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 76
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. A list of request_id of the samples that come after this generation. 
+
+    next_request_ids is especially useful for maintaining the speech’s continuity when regenerating a sample that has had some audio quality issues. 
+
+    For example, if you have generated 3 speech clips, and you want to improve clip 2, 
+
+    passing the request id of clip 3 as a next_request_id (and that of clip 1 as a previous_request_id) will help maintain natural flow in the combined speech. 
+
+    The results will be best when the same model is used across the generations. In case both next_text and next_request_ids is send, next_text will be ignored. 
+
+    A maximum of 3 request_ids can be send.
+  example: []
+  syntax:
+    content: public List<string> NextRequestIds { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property NextRequestIds As List(Of String)
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextRequestIds*
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyTextNormalization
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyTextNormalization
+  id: ApplyTextNormalization
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: ApplyTextNormalization
+  nameWithType: SpeechRequest.ApplyTextNormalization
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyTextNormalization
+  type: Property
+  source:
+    id: ApplyTextNormalization
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 86
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. This parameter controls text normalization with three modes: ‘auto’, ‘on’, and ‘off’. 
+
+    When set to ‘auto’, the system will automatically decide whether to apply text normalization (e.g., spelling out numbers). 
+
+    With ‘on’, text normalization will always be applied, while with ‘off’, it will be skipped. 
+
+    Cannot be turned on for ‘eleven_turbo_v2_5’ or ‘eleven_flash_v2_5’ models.
+
+    Allowed values: auto, on, off.
+
+    Defaults to 'auto'.
+  example: []
+  syntax:
+    content: public string ApplyTextNormalization { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ApplyTextNormalization As String
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyTextNormalization*
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyLanguageTextNormalization
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyLanguageTextNormalization
+  id: ApplyLanguageTextNormalization
+  parent: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+  langs:
+  - csharp
+  - vb
+  name: ApplyLanguageTextNormalization
+  nameWithType: SpeechRequest.ApplyLanguageTextNormalization
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyLanguageTextNormalization
+  type: Property
+  source:
+    id: ApplyLanguageTextNormalization
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/Speech/SpeechRequest.cs
+    startLine: 94
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. This parameter controls language text normalization. 
+
+    This helps with proper pronunciation of text in some supported languages. 
+
+    WARNING: This parameter can heavily increase the latency of the request. Currently only supported for Japanese.
+
+    Defaults to false.
+  example: []
+  syntax:
+    content: public bool? ApplyLanguageTextNormalization { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property ApplyLanguageTextNormalization As Boolean?
+  overload: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyLanguageTextNormalization*
+references:
+- uid: Glitch9.AIDevKit.ElevenLabs
+  commentId: N:Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.ElevenLabs
+  nameWithType: Glitch9.AIDevKit.ElevenLabs
+  fullName: Glitch9.AIDevKit.ElevenLabs
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ElevenLabs
+    name: ElevenLabs
+    href: Glitch9.AIDevKit.ElevenLabs.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ElevenLabs
+    name: ElevenLabs
+    href: Glitch9.AIDevKit.ElevenLabs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RequestBody
+  nameWithType: RequestBody
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
+- uid: Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.AudioRequest.html
+  name: AudioRequest
+  nameWithType: AudioRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.AudioRequest
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html
+  name: VoiceRequest
+  nameWithType: VoiceRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceRequest_VoiceId
+  name: VoiceId
+  nameWithType: VoiceRequest.VoiceId
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Voice
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Voice
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceRequest_Voice
+  name: Voice
+  nameWithType: VoiceRequest.Voice
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Voice
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.EnableLogging
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.EnableLogging
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceRequest_EnableLogging
+  name: EnableLogging
+  nameWithType: VoiceRequest.EnableLogging
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.EnableLogging
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Model
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Model
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceRequest_Model
+  name: Model
+  nameWithType: VoiceRequest.Model
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Model
+- uid: Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+  parent: Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  href: Glitch9.AIDevKit.ElevenLabs.AudioRequest.html#Glitch9_AIDevKit_ElevenLabs_AudioRequest_OutputFormat
+  name: OutputFormat
+  nameWithType: AudioRequest.OutputFormat
+  fullName: Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  definition: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_
+  name: ExecuteAsync(SpeechRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(SpeechRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+    name: SpeechRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+    name: SpeechRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  definition: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+  name: StreamAsync(SpeechRequest, StreamAudioPlayer)
+  nameWithType: RequestExtensions.StreamAsync(SpeechRequest, StreamAudioPlayer)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest, Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+    name: SpeechRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+    name: StreamAudioPlayer
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+    name: SpeechRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+    name: StreamAudioPlayer
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_
+  name: ExecuteAsync(SpeechRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(SpeechRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+    name: SpeechRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+    name: SpeechRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html
+  name: RequestExtensions
+  nameWithType: RequestExtensions
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+  name: StreamAsync(SpeechRequest, StreamAudioPlayer)
+  nameWithType: RequestExtensions.StreamAsync(SpeechRequest, StreamAudioPlayer)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest, Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+    name: SpeechRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+    name: StreamAudioPlayer
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+    name: StreamAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
+    name: SpeechRequest
+    href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+    name: StreamAudioPlayer
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Text
+  name: Text
+  nameWithType: SpeechRequest.Text
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.LanguageCode*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.LanguageCode
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_LanguageCode
+  name: LanguageCode
+  nameWithType: SpeechRequest.LanguageCode
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.LanguageCode
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.VoiceSettings*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.VoiceSettings
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_VoiceSettings
+  name: VoiceSettings
+  nameWithType: SpeechRequest.VoiceSettings
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.VoiceSettings
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceSettings
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.VoiceSettings
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceSettings.html
+  name: VoiceSettings
+  nameWithType: VoiceSettings
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceSettings
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PronunciationDictionaryLocators*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PronunciationDictionaryLocators
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_PronunciationDictionaryLocators
+  name: PronunciationDictionaryLocators
+  nameWithType: SpeechRequest.PronunciationDictionaryLocators
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PronunciationDictionaryLocators
+- uid: System.Collections.Generic.List{Glitch9.AIDevKit.ElevenLabs.PronunciationDictionaryLocator}
+  commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.ElevenLabs.PronunciationDictionaryLocator}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: Glitch9.AIDevKit.ElevenLabs.PronunciationDictionaryLocator.html
+  name: List<PronunciationDictionaryLocator>
+  nameWithType: List<PronunciationDictionaryLocator>
+  fullName: System.Collections.Generic.List<Glitch9.AIDevKit.ElevenLabs.PronunciationDictionaryLocator>
+  nameWithType.vb: List(Of PronunciationDictionaryLocator)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.AIDevKit.ElevenLabs.PronunciationDictionaryLocator)
+  name.vb: List(Of PronunciationDictionaryLocator)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ElevenLabs.PronunciationDictionaryLocator
+    name: PronunciationDictionaryLocator
+    href: Glitch9.AIDevKit.ElevenLabs.PronunciationDictionaryLocator.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ElevenLabs.PronunciationDictionaryLocator
+    name: PronunciationDictionaryLocator
+    href: Glitch9.AIDevKit.ElevenLabs.PronunciationDictionaryLocator.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Seed*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Seed
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Seed
+  name: Seed
+  nameWithType: SpeechRequest.Seed
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Seed
+- uid: System.Nullable{System.UInt32}
+  commentId: T:System.Nullable{System.UInt32}
+  parent: System
+  definition: System.Nullable`1
+  name: uint?
+  nameWithType: uint?
+  fullName: uint?
+  nameWithType.vb: UInteger?
+  fullName.vb: UInteger?
+  name.vb: UInteger?
+  spec.csharp:
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousText*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousText
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_PreviousText
+  name: PreviousText
+  nameWithType: SpeechRequest.PreviousText
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousText
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextText*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextText
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_NextText
+  name: NextText
+  nameWithType: SpeechRequest.NextText
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextText
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousRequestIds*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousRequestIds
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_PreviousRequestIds
+  name: PreviousRequestIds
+  nameWithType: SpeechRequest.PreviousRequestIds
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.PreviousRequestIds
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextRequestIds*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextRequestIds
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_NextRequestIds
+  name: NextRequestIds
+  nameWithType: SpeechRequest.NextRequestIds
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.NextRequestIds
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyTextNormalization*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyTextNormalization
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_ApplyTextNormalization
+  name: ApplyTextNormalization
+  nameWithType: SpeechRequest.ApplyTextNormalization
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyTextNormalization
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyLanguageTextNormalization*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyLanguageTextNormalization
+  href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html#Glitch9_AIDevKit_ElevenLabs_SpeechRequest_ApplyLanguageTextNormalization
+  name: ApplyLanguageTextNormalization
+  nameWithType: SpeechRequest.ApplyLanguageTextNormalization
+  fullName: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.ApplyLanguageTextNormalization
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: '?'

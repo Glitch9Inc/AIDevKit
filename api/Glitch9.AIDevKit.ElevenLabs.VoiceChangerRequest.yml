@@ -1,0 +1,510 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+  id: VoiceChangerRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  children:
+  - Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Audio
+  - Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.InputFormat
+  - Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.RemoveBackgroundNoise
+  - Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Seed
+  - Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.VoiceSettings
+  langs:
+  - csharp
+  - vb
+  name: VoiceChangerRequest
+  nameWithType: VoiceChangerRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+  type: Class
+  source:
+    id: VoiceChangerRequest
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/VoiceChange/VoiceChangerRequest.cs
+    startLine: 4
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  syntax:
+    content: 'public class VoiceChangerRequest : VoiceRequest'
+    content.vb: Public Class VoiceChangerRequest Inherits VoiceRequest
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RequestBody
+  - Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  - Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  inheritedMembers:
+  - Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId
+  - Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Voice
+  - Glitch9.AIDevKit.ElevenLabs.VoiceRequest.EnableLogging
+  - Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Model
+  - Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+  extensionMethods:
+  - Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Audio
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Audio
+  id: Audio
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+  langs:
+  - csharp
+  - vb
+  name: Audio
+  nameWithType: VoiceChangerRequest.Audio
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Audio
+  type: Property
+  source:
+    id: Audio
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/VoiceChange/VoiceChangerRequest.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: Required. The audio file which holds the content and emotion that will control the generated speech.
+  example: []
+  syntax:
+    content: public byte[] Audio { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property Audio As Byte()
+  overload: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Audio*
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.VoiceSettings
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.VoiceSettings
+  id: VoiceSettings
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+  langs:
+  - csharp
+  - vb
+  name: VoiceSettings
+  nameWithType: VoiceChangerRequest.VoiceSettings
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.VoiceSettings
+  type: Property
+  source:
+    id: VoiceSettings
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/VoiceChange/VoiceChangerRequest.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. Voice settings overriding stored settings for the given voice.
+
+    They are applied only on the given request. Needs to be send as a JSON encoded string.
+  example: []
+  syntax:
+    content: public VoiceSettings VoiceSettings { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.VoiceSettings
+    content.vb: Public Property VoiceSettings As VoiceSettings
+  overload: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.VoiceSettings*
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Seed
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Seed
+  id: Seed
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: VoiceChangerRequest.Seed
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Seed
+  type: Property
+  source:
+    id: Seed
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/VoiceChange/VoiceChangerRequest.cs
+    startLine: 24
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. If specified, our system will make a best effort to sample deterministically,
+
+    such that repeated requests with the same seed and parameters should return the same result.
+
+    Determinism is not guaranteed. Must be integer between 0 and 4294967295.
+  example: []
+  syntax:
+    content: public uint? Seed { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.UInt32}
+    content.vb: Public Property Seed As UInteger?
+  overload: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Seed*
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.RemoveBackgroundNoise
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.RemoveBackgroundNoise
+  id: RemoveBackgroundNoise
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+  langs:
+  - csharp
+  - vb
+  name: RemoveBackgroundNoise
+  nameWithType: VoiceChangerRequest.RemoveBackgroundNoise
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.RemoveBackgroundNoise
+  type: Property
+  source:
+    id: RemoveBackgroundNoise
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/VoiceChange/VoiceChangerRequest.cs
+    startLine: 31
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. If set, will remove the background noise from your audio input using our audio isolation model.
+
+    Only applies to Voice Changer.
+
+    Defaults to false
+  example: []
+  syntax:
+    content: public bool? RemoveBackgroundNoise { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property RemoveBackgroundNoise As Boolean?
+  overload: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.RemoveBackgroundNoise*
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.InputFormat
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.InputFormat
+  id: InputFormat
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+  langs:
+  - csharp
+  - vb
+  name: InputFormat
+  nameWithType: VoiceChangerRequest.InputFormat
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.InputFormat
+  type: Property
+  source:
+    id: InputFormat
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/ElevenLabs/Models/VoiceChange/VoiceChangerRequest.cs
+    startLine: 38
+  namespace: Glitch9.AIDevKit.ElevenLabs
+  summary: >-
+    Optional. The format of input audio. Options are ‘pcm_s16le_16’ or ‘other’
+
+    For pcm_s16le_16, the input audio must be 16-bit PCM at a 16kHz sample rate, single channel (mono),
+
+    and little-endian byte order. Latency will be lower than with passing an encoded waveform.
+  example: []
+  syntax:
+    content: public ElevenLabsInputFormat InputFormat { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsInputFormat
+    content.vb: Public Property InputFormat As ElevenLabsInputFormat
+  overload: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.InputFormat*
+references:
+- uid: Glitch9.AIDevKit.ElevenLabs
+  commentId: N:Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.ElevenLabs
+  nameWithType: Glitch9.AIDevKit.ElevenLabs
+  fullName: Glitch9.AIDevKit.ElevenLabs
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ElevenLabs
+    name: ElevenLabs
+    href: Glitch9.AIDevKit.ElevenLabs.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.ElevenLabs
+    name: ElevenLabs
+    href: Glitch9.AIDevKit.ElevenLabs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RequestBody
+  nameWithType: RequestBody
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
+- uid: Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.AudioRequest.html
+  name: AudioRequest
+  nameWithType: AudioRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.AudioRequest
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html
+  name: VoiceRequest
+  nameWithType: VoiceRequest
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceRequest_VoiceId
+  name: VoiceId
+  nameWithType: VoiceRequest.VoiceId
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Voice
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Voice
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceRequest_Voice
+  name: Voice
+  nameWithType: VoiceRequest.Voice
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Voice
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.EnableLogging
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.EnableLogging
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceRequest_EnableLogging
+  name: EnableLogging
+  nameWithType: VoiceRequest.EnableLogging
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.EnableLogging
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Model
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Model
+  parent: Glitch9.AIDevKit.ElevenLabs.VoiceRequest
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceRequest_Model
+  name: Model
+  nameWithType: VoiceRequest.Model
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Model
+- uid: Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+  commentId: P:Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+  parent: Glitch9.AIDevKit.ElevenLabs.AudioRequest
+  href: Glitch9.AIDevKit.ElevenLabs.AudioRequest.html#Glitch9_AIDevKit_ElevenLabs_AudioRequest_OutputFormat
+  name: OutputFormat
+  nameWithType: AudioRequest.OutputFormat
+  fullName: Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  definition: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_
+  name: ExecuteAsync(VoiceChangerRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(VoiceChangerRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+    name: VoiceChangerRequest
+    href: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+    name: VoiceChangerRequest
+    href: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_
+  name: ExecuteAsync(VoiceChangerRequest)
+  nameWithType: RequestExtensions.ExecuteAsync(VoiceChangerRequest)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+    name: VoiceChangerRequest
+    href: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_
+  - name: (
+  - uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest
+    name: VoiceChangerRequest
+    href: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.html
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html
+  name: RequestExtensions
+  nameWithType: RequestExtensions
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Audio*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Audio
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_Audio
+  name: Audio
+  nameWithType: VoiceChangerRequest.Audio
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Audio
+- uid: System.Byte[]
+  isExternal: true
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.VoiceSettings*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.VoiceSettings
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_VoiceSettings
+  name: VoiceSettings
+  nameWithType: VoiceChangerRequest.VoiceSettings
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.VoiceSettings
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceSettings
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.VoiceSettings
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceSettings.html
+  name: VoiceSettings
+  nameWithType: VoiceSettings
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceSettings
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Seed*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Seed
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_Seed
+  name: Seed
+  nameWithType: VoiceChangerRequest.Seed
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.Seed
+- uid: System.Nullable{System.UInt32}
+  commentId: T:System.Nullable{System.UInt32}
+  parent: System
+  definition: System.Nullable`1
+  name: uint?
+  nameWithType: uint?
+  fullName: uint?
+  nameWithType.vb: UInteger?
+  fullName.vb: UInteger?
+  name.vb: UInteger?
+  spec.csharp:
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.RemoveBackgroundNoise*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.RemoveBackgroundNoise
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_RemoveBackgroundNoise
+  name: RemoveBackgroundNoise
+  nameWithType: VoiceChangerRequest.RemoveBackgroundNoise
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.RemoveBackgroundNoise
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: '?'
+- uid: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.InputFormat*
+  commentId: Overload:Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.InputFormat
+  href: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceChangerRequest_InputFormat
+  name: InputFormat
+  nameWithType: VoiceChangerRequest.InputFormat
+  fullName: Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest.InputFormat
+- uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsInputFormat
+  commentId: T:Glitch9.AIDevKit.ElevenLabs.ElevenLabsInputFormat
+  parent: Glitch9.AIDevKit.ElevenLabs
+  href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsInputFormat.html
+  name: ElevenLabsInputFormat
+  nameWithType: ElevenLabsInputFormat
+  fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsInputFormat

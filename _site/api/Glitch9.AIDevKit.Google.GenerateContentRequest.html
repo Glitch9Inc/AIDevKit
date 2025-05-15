@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GenerateContentRequest | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GenerateContentRequest | AI DevKit ">
+    
+    <meta name="description" content="Generates a response from the model given an input . Input capabilities differ between models, including tuned models.See the model guide and tuning guide for details.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI DevKit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Google_GenerateContentRequest" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest" class="text-break">Class GenerateContentRequest</h1>
+  <div class="markdown level0 summary"><p>Generates a response from the model given an input <a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.
+Input capabilities differ between models, including tuned models.See the model guide and tuning guide for details.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">RequestBody</span></div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.html">GenerativeAIRequest</a></div>
+    <div class="level3"><span class="xref">GenerateContentRequest</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.html#Glitch9_AIDevKit_Google_GenerativeAIRequest_Model">GenerativeAIRequest.Model</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Google.html">Google</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_Google_GenerateContentRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GenerateContentRequest : GenerativeAIRequest</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_CachedContent_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.CachedContent*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_CachedContent" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.CachedContent">CachedContent</h4>
+  <div class="markdown level1 summary"><p>Optional.
+The name of the cached content used as context to serve the prediction.</p>
+<p>Note: only used in explicit caching, where users can have control over caching (e.g. what content to cache) and enjoy guaranteed cost savings.</p>       
+<p>Format: cachedContents/{cachedContent}</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CachedContent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Config_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Config*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Config" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Config">Config</h4>
+  <div class="markdown level1 summary"><p>Optional.
+Configuration options for model generation and outputs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerationConfig Config { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerationConfig.html">GenerationConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Contents_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Contents*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Contents" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Contents">Contents</h4>
+  <div class="markdown level1 summary"><p>Required.
+The content of the current conversation with the model.
+For single-turn queries, this is a single instance.For multi-turn queries,
+this is a repeated field that contains conversation history + latest request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Content&gt; Contents { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Google.Content.html">Content</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_SafetySettings_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.SafetySettings*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_SafetySettings" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.SafetySettings">SafetySettings</h4>
+  <div class="markdown level1 summary"><p>Optional.</p>
+<p>
+A list of unique <a class="xref" href="Glitch9.AIDevKit.SafetySetting.html">SafetySetting</a> instances for blocking unsafe content.
+</p>
+This will be enforced on the <a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html#Glitch9_AIDevKit_Google_GenerateContentRequest_Contents">Contents</a> and  <a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentResponse.html#Glitch9_AIDevKit_Google_GenerateContentResponse_Candidates">Candidates</a>.
+There should not be more than one setting for each SafetyCategory type.
+The API will block any contents and responses that fail to meet the thresholds set by these settings.
+This list overrides the default settings for each SafetyCategory specified in the safetySettings.
+If there is no SafetySetting for a given SafetyCategory provided in the list, the API will use the default safety setting for that category.
+Harm categories <a class="xref" href="Glitch9.AIDevKit.HarmCategory.html#Glitch9_AIDevKit_HarmCategory_HateSpeech">HateSpeech</a>, <a class="xref" href="Glitch9.AIDevKit.HarmCategory.html#Glitch9_AIDevKit_HarmCategory_SexuallyExplicit">SexuallyExplicit</a>, <a class="xref" href="Glitch9.AIDevKit.HarmCategory.html#Glitch9_AIDevKit_HarmCategory_DangerousContent">DangerousContent</a>, <a class="xref" href="Glitch9.AIDevKit.HarmCategory.html#Glitch9_AIDevKit_HarmCategory_Harassment">Harassment</a> are supported.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SafetySetting&gt; SafetySettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.SafetySetting.html">SafetySetting</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_SystemInstruction_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.SystemInstruction*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_SystemInstruction" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.SystemInstruction">SystemInstruction</h4>
+  <div class="markdown level1 summary"><p>Optional. (Beta)
+Developer set system instruction. Currently, text only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Content SystemInstruction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.Content.html">Content</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_ToolConfig_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.ToolConfig*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_ToolConfig" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.ToolConfig">ToolConfig</h4>
+  <div class="markdown level1 summary"><p>Optional.
+Tool configuration for any Tool (<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html#Glitch9_AIDevKit_Google_GenerateContentRequest_Tools">Tools</a>) specified in the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolConfig ToolConfig { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.ToolConfig.html">ToolConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Tools_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Tools*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Tools" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Tools">Tools</h4>
+  <div class="markdown level1 summary"><p>Optional. (Beta)
+A list of <a class="xref" href="Glitch9.AIDevKit.Google.Tool.html">Tool</a> the model may use to generate the next response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Tool&gt; Tools { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Google.Tool.html">Tool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_ValidateBody_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.ValidateBody*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_ValidateBody" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.ValidateBody">ValidateBody()</h4>
+  <div class="markdown level1 summary"><p>Validate the request.
+This is used to check if all required properties are set.
+Fix the request if needed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ValidateBody()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Glitch9.IO.Networking.RESTApi.RequestBody.ValidateBody()</span></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_Google_GenerateContentRequest_">RequestExtensions.ExecuteAsync(GenerateContentRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_StreamAsync_Glitch9_AIDevKit_Google_GenerateContentRequest_Glitch9_AIDevKit_ChatStreamHandler_">RequestExtensions.StreamAsync(GenerateContentRequest, ChatStreamHandler)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.Google.ResponseExtensions.html#Glitch9_AIDevKit_Google_ResponseExtensions_AddContent_Glitch9_AIDevKit_Google_GenerateContentRequest_Glitch9_AIDevKit_Google_Content___">ResponseExtensions.AddContent(GenerateContentRequest, params Content[])</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

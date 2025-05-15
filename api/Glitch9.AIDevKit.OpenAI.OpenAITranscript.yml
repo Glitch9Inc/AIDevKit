@@ -1,0 +1,368 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript
+  commentId: T:Glitch9.AIDevKit.OpenAI.OpenAITranscript
+  id: OpenAITranscript
+  parent: Glitch9.AIDevKit.OpenAI
+  children:
+  - Glitch9.AIDevKit.OpenAI.OpenAITranscript.Duration
+  - Glitch9.AIDevKit.OpenAI.OpenAITranscript.Language
+  - Glitch9.AIDevKit.OpenAI.OpenAITranscript.Segments
+  - Glitch9.AIDevKit.OpenAI.OpenAITranscript.Text
+  - Glitch9.AIDevKit.OpenAI.OpenAITranscript.Words
+  langs:
+  - csharp
+  - vb
+  name: OpenAITranscript
+  nameWithType: OpenAITranscript
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript
+  type: Class
+  source:
+    id: OpenAITranscript
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Audio/OpenAITranscript.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Represents a verbose json transcription response returned by model, based on the provided input.
+  example: []
+  syntax:
+    content: 'public class OpenAITranscript : Transcript'
+    content.vb: Public Class OpenAITranscript Inherits Transcript
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.Transcript
+  inheritedMembers:
+  - Glitch9.AIDevKit.Transcript.CalculateUsage
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Language
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAITranscript.Language
+  id: Language
+  parent: Glitch9.AIDevKit.OpenAI.OpenAITranscript
+  langs:
+  - csharp
+  - vb
+  name: Language
+  nameWithType: OpenAITranscript.Language
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Language
+  type: Property
+  source:
+    id: Language
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Audio/OpenAITranscript.cs
+    startLine: 13
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The language of the input audio.
+  example: []
+  syntax:
+    content: public override SystemLanguage Language { get; set; }
+    parameters: []
+    return:
+      type: SystemLanguage
+    content.vb: Public Overrides Property Language As SystemLanguage
+  overridden: Glitch9.AIDevKit.Transcript.Language
+  overload: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Language*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Text
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAITranscript.Text
+  id: Text
+  parent: Glitch9.AIDevKit.OpenAI.OpenAITranscript
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: OpenAITranscript.Text
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Text
+  type: Property
+  source:
+    id: Text
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Audio/OpenAITranscript.cs
+    startLine: 18
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The transcribed text.
+  example: []
+  syntax:
+    content: public override string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides Property Text As String
+  overridden: Glitch9.AIDevKit.Transcript.Text
+  overload: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Text*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Duration
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAITranscript.Duration
+  id: Duration
+  parent: Glitch9.AIDevKit.OpenAI.OpenAITranscript
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: OpenAITranscript.Duration
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Duration
+  type: Property
+  source:
+    id: Duration
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Audio/OpenAITranscript.cs
+    startLine: 23
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The duration of the input audio.
+  example: []
+  syntax:
+    content: public long Duration { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Duration As Long
+  overload: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Duration*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Words
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAITranscript.Words
+  id: Words
+  parent: Glitch9.AIDevKit.OpenAI.OpenAITranscript
+  langs:
+  - csharp
+  - vb
+  name: Words
+  nameWithType: OpenAITranscript.Words
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Words
+  type: Property
+  source:
+    id: Words
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Audio/OpenAITranscript.cs
+    startLine: 28
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Extracted words and their corresponding timestamps.
+  example: []
+  syntax:
+    content: public WordObject[] Words { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.WordObject[]
+    content.vb: Public Property Words As WordObject()
+  overload: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Words*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Segments
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAITranscript.Segments
+  id: Segments
+  parent: Glitch9.AIDevKit.OpenAI.OpenAITranscript
+  langs:
+  - csharp
+  - vb
+  name: Segments
+  nameWithType: OpenAITranscript.Segments
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Segments
+  type: Property
+  source:
+    id: Segments
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Audio/OpenAITranscript.cs
+    startLine: 33
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Segments of the transcribed text and their corresponding details.
+  example: []
+  syntax:
+    content: public SegmentObject[] Segments { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.OpenAI.SegmentObject[]
+    content.vb: Public Property Segments As SegmentObject()
+  overload: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Segments*
+references:
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.Transcript
+  commentId: T:Glitch9.AIDevKit.Transcript
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Transcript.html
+  name: Transcript
+  nameWithType: Transcript
+  fullName: Glitch9.AIDevKit.Transcript
+- uid: Glitch9.AIDevKit.Transcript.CalculateUsage
+  commentId: M:Glitch9.AIDevKit.Transcript.CalculateUsage
+  parent: Glitch9.AIDevKit.Transcript
+  href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_CalculateUsage
+  name: CalculateUsage()
+  nameWithType: Transcript.CalculateUsage()
+  fullName: Glitch9.AIDevKit.Transcript.CalculateUsage()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Transcript.CalculateUsage
+    name: CalculateUsage
+    href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_CalculateUsage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Transcript.CalculateUsage
+    name: CalculateUsage
+    href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_CalculateUsage
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.Transcript.Language
+  commentId: P:Glitch9.AIDevKit.Transcript.Language
+  parent: Glitch9.AIDevKit.Transcript
+  href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_Language
+  name: Language
+  nameWithType: Transcript.Language
+  fullName: Glitch9.AIDevKit.Transcript.Language
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Language*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAITranscript.Language
+  href: Glitch9.AIDevKit.OpenAI.OpenAITranscript.html#Glitch9_AIDevKit_OpenAI_OpenAITranscript_Language
+  name: Language
+  nameWithType: OpenAITranscript.Language
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Language
+- uid: SystemLanguage
+  isExternal: true
+  name: SystemLanguage
+  nameWithType: SystemLanguage
+  fullName: SystemLanguage
+- uid: Glitch9.AIDevKit.Transcript.Text
+  commentId: P:Glitch9.AIDevKit.Transcript.Text
+  parent: Glitch9.AIDevKit.Transcript
+  href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_Text
+  name: Text
+  nameWithType: Transcript.Text
+  fullName: Glitch9.AIDevKit.Transcript.Text
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Text*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAITranscript.Text
+  href: Glitch9.AIDevKit.OpenAI.OpenAITranscript.html#Glitch9_AIDevKit_OpenAI_OpenAITranscript_Text
+  name: Text
+  nameWithType: OpenAITranscript.Text
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Text
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Duration*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAITranscript.Duration
+  href: Glitch9.AIDevKit.OpenAI.OpenAITranscript.html#Glitch9_AIDevKit_OpenAI_OpenAITranscript_Duration
+  name: Duration
+  nameWithType: OpenAITranscript.Duration
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Duration
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Words*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAITranscript.Words
+  href: Glitch9.AIDevKit.OpenAI.OpenAITranscript.html#Glitch9_AIDevKit_OpenAI_OpenAITranscript_Words
+  name: Words
+  nameWithType: OpenAITranscript.Words
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Words
+- uid: Glitch9.AIDevKit.OpenAI.WordObject[]
+  isExternal: true
+  href: Glitch9.AIDevKit.OpenAI.WordObject.html
+  name: WordObject[]
+  nameWithType: WordObject[]
+  fullName: Glitch9.AIDevKit.OpenAI.WordObject[]
+  nameWithType.vb: WordObject()
+  fullName.vb: Glitch9.AIDevKit.OpenAI.WordObject()
+  name.vb: WordObject()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.WordObject
+    name: WordObject
+    href: Glitch9.AIDevKit.OpenAI.WordObject.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.WordObject
+    name: WordObject
+    href: Glitch9.AIDevKit.OpenAI.WordObject.html
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Segments*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAITranscript.Segments
+  href: Glitch9.AIDevKit.OpenAI.OpenAITranscript.html#Glitch9_AIDevKit_OpenAI_OpenAITranscript_Segments
+  name: Segments
+  nameWithType: OpenAITranscript.Segments
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAITranscript.Segments
+- uid: Glitch9.AIDevKit.OpenAI.SegmentObject[]
+  isExternal: true
+  href: Glitch9.AIDevKit.OpenAI.SegmentObject.html
+  name: SegmentObject[]
+  nameWithType: SegmentObject[]
+  fullName: Glitch9.AIDevKit.OpenAI.SegmentObject[]
+  nameWithType.vb: SegmentObject()
+  fullName.vb: Glitch9.AIDevKit.OpenAI.SegmentObject()
+  name.vb: SegmentObject()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.SegmentObject
+    name: SegmentObject
+    href: Glitch9.AIDevKit.OpenAI.SegmentObject.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.SegmentObject
+    name: SegmentObject
+    href: Glitch9.AIDevKit.OpenAI.SegmentObject.html
+  - name: (
+  - name: )

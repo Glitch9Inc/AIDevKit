@@ -1,0 +1,189 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.Mode
+  commentId: T:Glitch9.AIDevKit.Google.Mode
+  id: Mode
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.Mode.Any
+  - Glitch9.AIDevKit.Google.Mode.Auto
+  - Glitch9.AIDevKit.Google.Mode.None
+  - Glitch9.AIDevKit.Google.Mode.Unspecified
+  langs:
+  - csharp
+  - vb
+  name: Mode
+  nameWithType: Mode
+  fullName: Glitch9.AIDevKit.Google.Mode
+  type: Enum
+  source:
+    id: Mode
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentRequest.cs
+    startLine: 396
+  namespace: Glitch9.AIDevKit.Google
+  summary: Defines the execution behavior for function calling by defining the execution mode.
+  example: []
+  syntax:
+    content: public enum Mode
+    content.vb: Public Enum Mode
+- uid: Glitch9.AIDevKit.Google.Mode.Unspecified
+  commentId: F:Glitch9.AIDevKit.Google.Mode.Unspecified
+  id: Unspecified
+  parent: Glitch9.AIDevKit.Google.Mode
+  langs:
+  - csharp
+  - vb
+  name: Unspecified
+  nameWithType: Mode.Unspecified
+  fullName: Glitch9.AIDevKit.Google.Mode.Unspecified
+  type: Field
+  source:
+    id: Unspecified
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentRequest.cs
+    startLine: 401
+  namespace: Glitch9.AIDevKit.Google
+  summary: Unspecified function calling mode. This value should not be used.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Unspecified = 0
+    return:
+      type: Glitch9.AIDevKit.Google.Mode
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Unspecified = 0
+- uid: Glitch9.AIDevKit.Google.Mode.Auto
+  commentId: F:Glitch9.AIDevKit.Google.Mode.Auto
+  id: Auto
+  parent: Glitch9.AIDevKit.Google.Mode
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: Mode.Auto
+  fullName: Glitch9.AIDevKit.Google.Mode.Auto
+  type: Field
+  source:
+    id: Auto
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentRequest.cs
+    startLine: 406
+  namespace: Glitch9.AIDevKit.Google
+  summary: Default model behavior, model decides to predict either a function call or a natural language response.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Auto = 1
+    return:
+      type: Glitch9.AIDevKit.Google.Mode
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Auto = 1
+- uid: Glitch9.AIDevKit.Google.Mode.Any
+  commentId: F:Glitch9.AIDevKit.Google.Mode.Any
+  id: Any
+  parent: Glitch9.AIDevKit.Google.Mode
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: Mode.Any
+  fullName: Glitch9.AIDevKit.Google.Mode.Any
+  type: Field
+  source:
+    id: Any
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentRequest.cs
+    startLine: 414
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Model is constrained to always predicting a function call only.
+
+    If "allowedFunctionNames" are set,
+
+    the predicted function call will be limited to any one of "allowedFunctionNames",
+
+    else the predicted function call will be any one of the provided "functionDeclarations".
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      Any = 2
+    return:
+      type: Glitch9.AIDevKit.Google.Mode
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      Any = 2
+- uid: Glitch9.AIDevKit.Google.Mode.None
+  commentId: F:Glitch9.AIDevKit.Google.Mode.None
+  id: None
+  parent: Glitch9.AIDevKit.Google.Mode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Mode.None
+  fullName: Glitch9.AIDevKit.Google.Mode.None
+  type: Field
+  source:
+    id: None
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentRequest.cs
+    startLine: 419
+  namespace: Glitch9.AIDevKit.Google
+  summary: Model will not predict any function call.
+  example: []
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      None = 3
+    return:
+      type: Glitch9.AIDevKit.Google.Mode
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      None = 3
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: Glitch9.AIDevKit.Google.Mode
+  commentId: T:Glitch9.AIDevKit.Google.Mode
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.Mode.html
+  name: Mode
+  nameWithType: Mode
+  fullName: Glitch9.AIDevKit.Google.Mode

@@ -1,0 +1,989 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Ollama.Ollama
+  commentId: T:Glitch9.AIDevKit.Ollama.Ollama
+  id: Ollama
+  parent: Glitch9.AIDevKit.Ollama
+  children:
+  - Glitch9.AIDevKit.Ollama.Ollama.#ctor
+  - Glitch9.AIDevKit.Ollama.Ollama.Chat
+  - Glitch9.AIDevKit.Ollama.Ollama.DefaultInstance
+  - Glitch9.AIDevKit.Ollama.Ollama.Embeddings
+  - Glitch9.AIDevKit.Ollama.Ollama.Generate
+  - Glitch9.AIDevKit.Ollama.Ollama.GetVersionAsync
+  - Glitch9.AIDevKit.Ollama.Ollama.Models
+  langs:
+  - csharp
+  - vb
+  name: Ollama
+  nameWithType: Ollama
+  fullName: Glitch9.AIDevKit.Ollama.Ollama
+  type: Class
+  source:
+    id: Ollama
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
+    startLine: 40
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: 'public class Ollama : AIClient<Ollama>'
+    content.vb: Public Class Ollama Inherits AIClient(Of Ollama)
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RESTClient
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}
+  inheritedMembers:
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.OnTokensConsumed
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.FormatErrorMessage(System.String)
+  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.Name
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.Version
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.BetaVersion
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.OnException
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.CRUDLogger
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.BaseUrl
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.GetApiKey
+  - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleException(System.Exception)
+- uid: Glitch9.AIDevKit.Ollama.Ollama.DefaultInstance
+  commentId: P:Glitch9.AIDevKit.Ollama.Ollama.DefaultInstance
+  id: DefaultInstance
+  parent: Glitch9.AIDevKit.Ollama.Ollama
+  langs:
+  - csharp
+  - vb
+  name: DefaultInstance
+  nameWithType: Ollama.DefaultInstance
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.DefaultInstance
+  type: Property
+  source:
+    id: DefaultInstance
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
+    startLine: 45
+  namespace: Glitch9.AIDevKit.Ollama
+  summary: The default instance of the Ollama client.
+  example: []
+  syntax:
+    content: public static Ollama DefaultInstance { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Ollama.Ollama
+    content.vb: Public Shared ReadOnly Property DefaultInstance As Ollama
+  overload: Glitch9.AIDevKit.Ollama.Ollama.DefaultInstance*
+- uid: Glitch9.AIDevKit.Ollama.Ollama.Chat
+  commentId: P:Glitch9.AIDevKit.Ollama.Ollama.Chat
+  id: Chat
+  parent: Glitch9.AIDevKit.Ollama.Ollama
+  langs:
+  - csharp
+  - vb
+  name: Chat
+  nameWithType: Ollama.Chat
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.Chat
+  type: Property
+  source:
+    id: Chat
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
+    startLine: 49
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: public ChatService Chat { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Ollama.Services.ChatService
+    content.vb: Public Property Chat As ChatService
+  overload: Glitch9.AIDevKit.Ollama.Ollama.Chat*
+- uid: Glitch9.AIDevKit.Ollama.Ollama.Generate
+  commentId: P:Glitch9.AIDevKit.Ollama.Ollama.Generate
+  id: Generate
+  parent: Glitch9.AIDevKit.Ollama.Ollama
+  langs:
+  - csharp
+  - vb
+  name: Generate
+  nameWithType: Ollama.Generate
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.Generate
+  type: Property
+  source:
+    id: Generate
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
+    startLine: 50
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: public GenerateService Generate { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Ollama.Services.GenerateService
+    content.vb: Public Property Generate As GenerateService
+  overload: Glitch9.AIDevKit.Ollama.Ollama.Generate*
+- uid: Glitch9.AIDevKit.Ollama.Ollama.Models
+  commentId: P:Glitch9.AIDevKit.Ollama.Ollama.Models
+  id: Models
+  parent: Glitch9.AIDevKit.Ollama.Ollama
+  langs:
+  - csharp
+  - vb
+  name: Models
+  nameWithType: Ollama.Models
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.Models
+  type: Property
+  source:
+    id: Models
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
+    startLine: 51
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: public ModelService Models { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Ollama.Services.ModelService
+    content.vb: Public Property Models As ModelService
+  overload: Glitch9.AIDevKit.Ollama.Ollama.Models*
+- uid: Glitch9.AIDevKit.Ollama.Ollama.Embeddings
+  commentId: P:Glitch9.AIDevKit.Ollama.Ollama.Embeddings
+  id: Embeddings
+  parent: Glitch9.AIDevKit.Ollama.Ollama
+  langs:
+  - csharp
+  - vb
+  name: Embeddings
+  nameWithType: Ollama.Embeddings
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.Embeddings
+  type: Property
+  source:
+    id: Embeddings
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
+    startLine: 52
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: public EmbeddingsService Embeddings { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService
+    content.vb: Public Property Embeddings As EmbeddingsService
+  overload: Glitch9.AIDevKit.Ollama.Ollama.Embeddings*
+- uid: Glitch9.AIDevKit.Ollama.Ollama.#ctor
+  commentId: M:Glitch9.AIDevKit.Ollama.Ollama.#ctor
+  id: '#ctor'
+  parent: Glitch9.AIDevKit.Ollama.Ollama
+  langs:
+  - csharp
+  - vb
+  name: Ollama()
+  nameWithType: Ollama.Ollama()
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.Ollama()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
+    startLine: 68
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: public Ollama()
+    content.vb: Public Sub New()
+  overload: Glitch9.AIDevKit.Ollama.Ollama.#ctor*
+  nameWithType.vb: Ollama.New()
+  fullName.vb: Glitch9.AIDevKit.Ollama.Ollama.New()
+  name.vb: New()
+- uid: Glitch9.AIDevKit.Ollama.Ollama.GetVersionAsync
+  commentId: M:Glitch9.AIDevKit.Ollama.Ollama.GetVersionAsync
+  id: GetVersionAsync
+  parent: Glitch9.AIDevKit.Ollama.Ollama
+  langs:
+  - csharp
+  - vb
+  name: GetVersionAsync()
+  nameWithType: Ollama.GetVersionAsync()
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.GetVersionAsync()
+  type: Method
+  source:
+    id: GetVersionAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
+    startLine: 77
+  namespace: Glitch9.AIDevKit.Ollama
+  syntax:
+    content: public UniTask<string> GetVersionAsync()
+    return:
+      type: UniTask{System.String}
+    content.vb: Public Function GetVersionAsync() As UniTask(Of String)
+  overload: Glitch9.AIDevKit.Ollama.Ollama.GetVersionAsync*
+references:
+- uid: Glitch9.AIDevKit.Ollama
+  commentId: N:Glitch9.AIDevKit.Ollama
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Ollama
+  nameWithType: Glitch9.AIDevKit.Ollama
+  fullName: Glitch9.AIDevKit.Ollama
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RESTClient
+  commentId: T:Glitch9.IO.Networking.RESTApi.RESTClient
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RESTClient
+  nameWithType: RESTClient
+  fullName: Glitch9.IO.Networking.RESTApi.RESTClient
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  parent: Glitch9.IO.Networking.RESTApi
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  href: Glitch9.AIDevKit.Ollama.Ollama.html
+  name: CRUDClient<Ollama>
+  nameWithType: CRUDClient<Ollama>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Ollama.Ollama>
+  nameWithType.vb: CRUDClient(Of Ollama)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Ollama.Ollama)
+  name.vb: CRUDClient(Of Ollama)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: <
+  - uid: Glitch9.AIDevKit.Ollama.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.Ollama.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Ollama.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.Ollama.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}
+  commentId: T:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}
+  parent: Glitch9.AIDevKit.Client
+  definition: Glitch9.AIDevKit.Client.AIClient`1
+  href: Glitch9.AIDevKit.Client.AIClient-1.html
+  name: AIClient<Ollama>
+  nameWithType: AIClient<Ollama>
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Ollama.Ollama>
+  nameWithType.vb: AIClient(Of Ollama)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Ollama.Ollama)
+  name.vb: AIClient(Of Ollama)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: <
+  - uid: Glitch9.AIDevKit.Ollama.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.Ollama.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Ollama.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.Ollama.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.OnTokensConsumed
+  commentId: P:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.OnTokensConsumed
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed
+  name: OnTokensConsumed
+  nameWithType: AIClient<Ollama>.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Ollama.Ollama>.OnTokensConsumed
+  nameWithType.vb: AIClient(Of Ollama).OnTokensConsumed
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Ollama.Ollama).OnTokensConsumed
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  name: HandleTokenUsage(Model, Usage)
+  nameWithType: AIClient<Ollama>.HandleTokenUsage(Model, Usage)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Ollama.Ollama>.HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  nameWithType.vb: AIClient(Of Ollama).HandleTokenUsage(Model, Usage)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Ollama.Ollama).HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.FormatErrorMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.FormatErrorMessage(System.String)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  name: FormatErrorMessage(string)
+  nameWithType: AIClient<Ollama>.FormatErrorMessage(string)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Ollama.Ollama>.FormatErrorMessage(string)
+  nameWithType.vb: AIClient(Of Ollama).FormatErrorMessage(String)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Ollama.Ollama).FormatErrorMessage(String)
+  name.vb: FormatErrorMessage(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  name: IsDeletedPredicate(RESTResponse)
+  nameWithType: AIClient<Ollama>.IsDeletedPredicate(RESTResponse)
+  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Ollama.Ollama>.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  nameWithType.vb: AIClient(Of Ollama).IsDeletedPredicate(RESTResponse)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Ollama.Ollama).IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.Name
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.Name
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  name: Name
+  nameWithType: CRUDClient<Ollama>.Name
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Ollama.Ollama>.Name
+  nameWithType.vb: CRUDClient(Of Ollama).Name
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Ollama.Ollama).Name
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.Version
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.Version
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  name: Version
+  nameWithType: CRUDClient<Ollama>.Version
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Ollama.Ollama>.Version
+  nameWithType.vb: CRUDClient(Of Ollama).Version
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Ollama.Ollama).Version
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.BetaVersion
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.BetaVersion
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  name: BetaVersion
+  nameWithType: CRUDClient<Ollama>.BetaVersion
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Ollama.Ollama>.BetaVersion
+  nameWithType.vb: CRUDClient(Of Ollama).BetaVersion
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Ollama.Ollama).BetaVersion
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.OnException
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.OnException
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  name: OnException
+  nameWithType: CRUDClient<Ollama>.OnException
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Ollama.Ollama>.OnException
+  nameWithType.vb: CRUDClient(Of Ollama).OnException
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Ollama.Ollama).OnException
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.CRUDLogger
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.CRUDLogger
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  name: CRUDLogger
+  nameWithType: CRUDClient<Ollama>.CRUDLogger
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Ollama.Ollama>.CRUDLogger
+  nameWithType.vb: CRUDClient(Of Ollama).CRUDLogger
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Ollama.Ollama).CRUDLogger
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.BaseUrl
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.BaseUrl
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  name: BaseUrl
+  nameWithType: CRUDClient<Ollama>.BaseUrl
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Ollama.Ollama>.BaseUrl
+  nameWithType.vb: CRUDClient(Of Ollama).BaseUrl
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Ollama.Ollama).BaseUrl
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.GetApiKey
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.GetApiKey
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  name: GetApiKey()
+  nameWithType: CRUDClient<Ollama>.GetApiKey()
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Ollama.Ollama>.GetApiKey()
+  nameWithType.vb: CRUDClient(Of Ollama).GetApiKey()
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Ollama.Ollama).GetApiKey()
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleException(System.Exception)
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleException(System.Exception)
+  parent: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
+  definition: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  name: HandleException(Exception)
+  nameWithType: CRUDClient<Ollama>.HandleException(Exception)
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<Glitch9.AIDevKit.Ollama.Ollama>.HandleException(System.Exception)
+  nameWithType.vb: CRUDClient(Of Ollama).HandleException(Exception)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of Glitch9.AIDevKit.Ollama.Ollama).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDClient`1
+  name: CRUDClient<TSelf>
+  nameWithType: CRUDClient<TSelf>
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>
+  nameWithType.vb: CRUDClient(Of TSelf)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf)
+  name.vb: CRUDClient(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1
+    name: CRUDClient
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1
+  commentId: T:Glitch9.AIDevKit.Client.AIClient`1
+  href: Glitch9.AIDevKit.Client.AIClient-1.html
+  name: AIClient<TSelf>
+  nameWithType: AIClient<TSelf>
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>
+  nameWithType.vb: AIClient(Of TSelf)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf)
+  name.vb: AIClient(Of TSelf)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1
+    name: AIClient
+    href: Glitch9.AIDevKit.Client.AIClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Glitch9.AIDevKit.Client
+  commentId: N:Glitch9.AIDevKit.Client
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Client
+  nameWithType: Glitch9.AIDevKit.Client
+  fullName: Glitch9.AIDevKit.Client
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Client
+    name: Client
+    href: Glitch9.AIDevKit.Client.html
+- uid: Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  commentId: P:Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed
+  name: OnTokensConsumed
+  nameWithType: AIClient<TSelf>.OnTokensConsumed
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.OnTokensConsumed
+  nameWithType.vb: AIClient(Of TSelf).OnTokensConsumed
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).OnTokensConsumed
+- uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  name: HandleTokenUsage(Model, Usage)
+  nameWithType: AIClient<TSelf>.HandleTokenUsage(Model, Usage)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  nameWithType.vb: AIClient(Of TSelf).HandleTokenUsage(Model, Usage)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
+    name: HandleTokenUsage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Usage
+    name: Usage
+    href: Glitch9.AIDevKit.Usage.html
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+  isExternal: true
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  name: FormatErrorMessage(string)
+  nameWithType: AIClient<TSelf>.FormatErrorMessage(string)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.FormatErrorMessage(string)
+  nameWithType.vb: AIClient(Of TSelf).FormatErrorMessage(String)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).FormatErrorMessage(String)
+  name.vb: FormatErrorMessage(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
+    name: FormatErrorMessage
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_FormatErrorMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  name: IsDeletedPredicate(RESTResponse)
+  nameWithType: AIClient<TSelf>.IsDeletedPredicate(RESTResponse)
+  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  nameWithType.vb: AIClient(Of TSelf).IsDeletedPredicate(RESTResponse)
+  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Client.AIClient`1.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
+    name: IsDeletedPredicate
+    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_
+  - name: (
+  - uid: Glitch9.IO.Networking.RESTApi.RESTResponse
+    name: RESTResponse
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.Name
+  name: Name
+  nameWithType: CRUDClient<TSelf>.Name
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.Name
+  nameWithType.vb: CRUDClient(Of TSelf).Name
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).Name
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.Version
+  name: Version
+  nameWithType: CRUDClient<TSelf>.Version
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.Version
+  nameWithType.vb: CRUDClient(Of TSelf).Version
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).Version
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.BetaVersion
+  name: BetaVersion
+  nameWithType: CRUDClient<TSelf>.BetaVersion
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.BetaVersion
+  nameWithType.vb: CRUDClient(Of TSelf).BetaVersion
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).BetaVersion
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.OnException
+  name: OnException
+  nameWithType: CRUDClient<TSelf>.OnException
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.OnException
+  nameWithType.vb: CRUDClient(Of TSelf).OnException
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).OnException
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.CRUDLogger
+  name: CRUDLogger
+  nameWithType: CRUDClient<TSelf>.CRUDLogger
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.CRUDLogger
+  nameWithType.vb: CRUDClient(Of TSelf).CRUDLogger
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).CRUDLogger
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  commentId: P:Glitch9.IO.Networking.RESTApi.CRUDClient`1.BaseUrl
+  name: BaseUrl
+  nameWithType: CRUDClient<TSelf>.BaseUrl
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.BaseUrl
+  nameWithType.vb: CRUDClient(Of TSelf).BaseUrl
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).BaseUrl
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+  name: GetApiKey()
+  nameWithType: CRUDClient<TSelf>.GetApiKey()
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.GetApiKey()
+  nameWithType.vb: CRUDClient(Of TSelf).GetApiKey()
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).GetApiKey()
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.GetApiKey
+    name: GetApiKey
+  - name: (
+  - name: )
+- uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  commentId: M:Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+  isExternal: true
+  name: HandleException(Exception)
+  nameWithType: CRUDClient<TSelf>.HandleException(Exception)
+  fullName: Glitch9.IO.Networking.RESTApi.CRUDClient<TSelf>.HandleException(System.Exception)
+  nameWithType.vb: CRUDClient(Of TSelf).HandleException(Exception)
+  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDClient(Of TSelf).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.IO.Networking.RESTApi.CRUDClient`1.HandleException(System.Exception)
+    name: HandleException
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Ollama.Ollama.DefaultInstance*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Ollama.DefaultInstance
+  href: Glitch9.AIDevKit.Ollama.Ollama.html#Glitch9_AIDevKit_Ollama_Ollama_DefaultInstance
+  name: DefaultInstance
+  nameWithType: Ollama.DefaultInstance
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.DefaultInstance
+- uid: Glitch9.AIDevKit.Ollama.Ollama
+  commentId: T:Glitch9.AIDevKit.Ollama.Ollama
+  parent: Glitch9.AIDevKit.Ollama
+  href: Glitch9.AIDevKit.Ollama.Ollama.html
+  name: Ollama
+  nameWithType: Ollama
+  fullName: Glitch9.AIDevKit.Ollama.Ollama
+- uid: Glitch9.AIDevKit.Ollama.Ollama.Chat*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Ollama.Chat
+  href: Glitch9.AIDevKit.Ollama.Ollama.html#Glitch9_AIDevKit_Ollama_Ollama_Chat
+  name: Chat
+  nameWithType: Ollama.Chat
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.Chat
+- uid: Glitch9.AIDevKit.Ollama.Services.ChatService
+  commentId: T:Glitch9.AIDevKit.Ollama.Services.ChatService
+  parent: Glitch9.AIDevKit.Ollama.Services
+  href: Glitch9.AIDevKit.Ollama.Services.ChatService.html
+  name: ChatService
+  nameWithType: ChatService
+  fullName: Glitch9.AIDevKit.Ollama.Services.ChatService
+- uid: Glitch9.AIDevKit.Ollama.Services
+  commentId: N:Glitch9.AIDevKit.Ollama.Services
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Ollama.Services
+  nameWithType: Glitch9.AIDevKit.Ollama.Services
+  fullName: Glitch9.AIDevKit.Ollama.Services
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama.Services
+    name: Services
+    href: Glitch9.AIDevKit.Ollama.Services.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama
+    name: Ollama
+    href: Glitch9.AIDevKit.Ollama.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Ollama.Services
+    name: Services
+    href: Glitch9.AIDevKit.Ollama.Services.html
+- uid: Glitch9.AIDevKit.Ollama.Ollama.Generate*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Ollama.Generate
+  href: Glitch9.AIDevKit.Ollama.Ollama.html#Glitch9_AIDevKit_Ollama_Ollama_Generate
+  name: Generate
+  nameWithType: Ollama.Generate
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.Generate
+- uid: Glitch9.AIDevKit.Ollama.Services.GenerateService
+  commentId: T:Glitch9.AIDevKit.Ollama.Services.GenerateService
+  parent: Glitch9.AIDevKit.Ollama.Services
+  href: Glitch9.AIDevKit.Ollama.Services.GenerateService.html
+  name: GenerateService
+  nameWithType: GenerateService
+  fullName: Glitch9.AIDevKit.Ollama.Services.GenerateService
+- uid: Glitch9.AIDevKit.Ollama.Ollama.Models*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Ollama.Models
+  href: Glitch9.AIDevKit.Ollama.Ollama.html#Glitch9_AIDevKit_Ollama_Ollama_Models
+  name: Models
+  nameWithType: Ollama.Models
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.Models
+- uid: Glitch9.AIDevKit.Ollama.Services.ModelService
+  commentId: T:Glitch9.AIDevKit.Ollama.Services.ModelService
+  parent: Glitch9.AIDevKit.Ollama.Services
+  href: Glitch9.AIDevKit.Ollama.Services.ModelService.html
+  name: ModelService
+  nameWithType: ModelService
+  fullName: Glitch9.AIDevKit.Ollama.Services.ModelService
+- uid: Glitch9.AIDevKit.Ollama.Ollama.Embeddings*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Ollama.Embeddings
+  href: Glitch9.AIDevKit.Ollama.Ollama.html#Glitch9_AIDevKit_Ollama_Ollama_Embeddings
+  name: Embeddings
+  nameWithType: Ollama.Embeddings
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.Embeddings
+- uid: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService
+  commentId: T:Glitch9.AIDevKit.Ollama.Services.EmbeddingsService
+  parent: Glitch9.AIDevKit.Ollama.Services
+  href: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService.html
+  name: EmbeddingsService
+  nameWithType: EmbeddingsService
+  fullName: Glitch9.AIDevKit.Ollama.Services.EmbeddingsService
+- uid: Glitch9.AIDevKit.Ollama.Ollama.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Ollama.#ctor
+  href: Glitch9.AIDevKit.Ollama.Ollama.html#Glitch9_AIDevKit_Ollama_Ollama__ctor
+  name: Ollama
+  nameWithType: Ollama.Ollama
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.Ollama
+  nameWithType.vb: Ollama.New
+  fullName.vb: Glitch9.AIDevKit.Ollama.Ollama.New
+  name.vb: New
+- uid: Glitch9.AIDevKit.Ollama.Ollama.GetVersionAsync*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.Ollama.GetVersionAsync
+  href: Glitch9.AIDevKit.Ollama.Ollama.html#Glitch9_AIDevKit_Ollama_Ollama_GetVersionAsync
+  name: GetVersionAsync
+  nameWithType: Ollama.GetVersionAsync
+  fullName: Glitch9.AIDevKit.Ollama.Ollama.GetVersionAsync
+- uid: UniTask{System.String}
+  commentId: '!:UniTask{System.String}'
+  definition: UniTask`1
+  name: UniTask<string>
+  nameWithType: UniTask<string>
+  fullName: UniTask<string>
+  nameWithType.vb: UniTask(Of String)
+  fullName.vb: UniTask(Of String)
+  name.vb: UniTask(Of String)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )

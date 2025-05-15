@@ -1,0 +1,1612 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.GENTranscriptTask
+  commentId: T:Glitch9.AIDevKit.GENTranscriptTask
+  id: GENTranscriptTask
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.GENTranscriptTask.#ctor(AudioClip,UnityEngine.Object)
+  - Glitch9.AIDevKit.GENTranscriptTask.ExecuteAsync
+  - Glitch9.AIDevKit.GENTranscriptTask.SetLanguage(SystemLanguage)
+  langs:
+  - csharp
+  - vb
+  name: GENTranscriptTask
+  nameWithType: GENTranscriptTask
+  fullName: Glitch9.AIDevKit.GENTranscriptTask
+  type: Class
+  source:
+    id: GENTranscriptTask
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 585
+  namespace: Glitch9.AIDevKit
+  summary: Task for converting speech audio into text (speech-to-text).
+  example: []
+  syntax:
+    content: 'public class GENTranscriptTask : GENAudioInputTask<GENTranscriptTask, Transcript>, IGENTask'
+    content.vb: Public Class GENTranscriptTask Inherits GENAudioInputTask(Of GENTranscriptTask, Transcript) Implements IGENTask
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  - Glitch9.AIDevKit.GENAudioInputTask{Glitch9.AIDevKit.GENTranscriptTask,Glitch9.AIDevKit.Transcript}
+  implements:
+  - Glitch9.AIDevKit.IGENTask
+  inheritedMembers:
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.token
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.enableHistory
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.isCanceled
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.outputMimeType
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.Cancel
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetOption(System.String,System.Object)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.TryGetOption``1(System.String,{T}@)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetModel(Glitch9.AIDevKit.Model)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetCount(System.Int32)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetOutputPath(System.String)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetSender(System.String)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetIgnoreLogs(System.Boolean)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.EnablePromptHistory(System.Boolean)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.ExecuteAsync
+  extensionMethods:
+  - Glitch9.AIDevKit.GENTranscriptTask.Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(Glitch9.AIDevKit.Google.AspectRatio)
+  - Glitch9.AIDevKit.GENTranscriptTask.Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(Glitch9.AIDevKit.Google.PersonGeneration)
+  - Glitch9.AIDevKit.GENTranscriptTask.Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(Glitch9.AIDevKit.ImageSize)
+- uid: Glitch9.AIDevKit.GENTranscriptTask.#ctor(AudioClip,UnityEngine.Object)
+  commentId: M:Glitch9.AIDevKit.GENTranscriptTask.#ctor(AudioClip,UnityEngine.Object)
+  id: '#ctor(AudioClip,UnityEngine.Object)'
+  parent: Glitch9.AIDevKit.GENTranscriptTask
+  langs:
+  - csharp
+  - vb
+  name: GENTranscriptTask(AudioClip, Object)
+  nameWithType: GENTranscriptTask.GENTranscriptTask(AudioClip, UnityEngine.Object)
+  fullName: Glitch9.AIDevKit.GENTranscriptTask.GENTranscriptTask(AudioClip, UnityEngine.Object)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 589
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENTranscriptTask(AudioClip prompt, UnityEngine.Object target = null)
+    parameters:
+    - id: prompt
+      type: AudioClip
+    - id: target
+      type: UnityEngine.Object
+    content.vb: Public Sub New(prompt As AudioClip, target As UnityEngine.Object = Nothing)
+  overload: Glitch9.AIDevKit.GENTranscriptTask.#ctor*
+  nameWithType.vb: GENTranscriptTask.New(AudioClip, UnityEngine.Object)
+  fullName.vb: Glitch9.AIDevKit.GENTranscriptTask.New(AudioClip, UnityEngine.Object)
+  name.vb: New(AudioClip, Object)
+- uid: Glitch9.AIDevKit.GENTranscriptTask.SetLanguage(SystemLanguage)
+  commentId: M:Glitch9.AIDevKit.GENTranscriptTask.SetLanguage(SystemLanguage)
+  id: SetLanguage(SystemLanguage)
+  parent: Glitch9.AIDevKit.GENTranscriptTask
+  langs:
+  - csharp
+  - vb
+  name: SetLanguage(SystemLanguage)
+  nameWithType: GENTranscriptTask.SetLanguage(SystemLanguage)
+  fullName: Glitch9.AIDevKit.GENTranscriptTask.SetLanguage(SystemLanguage)
+  type: Method
+  source:
+    id: SetLanguage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 596
+  namespace: Glitch9.AIDevKit
+  summary: Optionally sets the language hint to improve transcription accuracy.
+  example: []
+  syntax:
+    content: public GENTranscriptTask SetLanguage(SystemLanguage language)
+    parameters:
+    - id: language
+      type: SystemLanguage
+    return:
+      type: Glitch9.AIDevKit.GENTranscriptTask
+    content.vb: Public Function SetLanguage(language As SystemLanguage) As GENTranscriptTask
+  overload: Glitch9.AIDevKit.GENTranscriptTask.SetLanguage*
+- uid: Glitch9.AIDevKit.GENTranscriptTask.ExecuteAsync
+  commentId: M:Glitch9.AIDevKit.GENTranscriptTask.ExecuteAsync
+  id: ExecuteAsync
+  parent: Glitch9.AIDevKit.GENTranscriptTask
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync()
+  nameWithType: GENTranscriptTask.ExecuteAsync()
+  fullName: Glitch9.AIDevKit.GENTranscriptTask.ExecuteAsync()
+  type: Method
+  source:
+    id: ExecuteAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 603
+  namespace: Glitch9.AIDevKit
+  summary: Executes the task and returns the generated result.
+  example: []
+  syntax:
+    content: public override UniTask<Transcript> ExecuteAsync()
+    return:
+      type: UniTask{Glitch9.AIDevKit.Transcript}
+    content.vb: Public Overrides Function ExecuteAsync() As UniTask(Of Transcript)
+  overridden: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.ExecuteAsync
+  overload: Glitch9.AIDevKit.GENTranscriptTask.ExecuteAsync*
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  commentId: T:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  parent: Glitch9.AIDevKit
+  definition: Glitch9.AIDevKit.GENTask`3
+  href: Glitch9.AIDevKit.GENTask-3.html
+  name: GENTask<GENTranscriptTask, AudioClip, Transcript>
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript)
+  name.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3
+    name: GENTask
+    href: Glitch9.AIDevKit.GENTask-3.html
+  - name: <
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: ','
+  - name: " "
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Transcript
+    name: Transcript
+    href: Glitch9.AIDevKit.Transcript.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3
+    name: GENTask
+    href: Glitch9.AIDevKit.GENTask-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: ','
+  - name: " "
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Transcript
+    name: Transcript
+    href: Glitch9.AIDevKit.Transcript.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENAudioInputTask{Glitch9.AIDevKit.GENTranscriptTask,Glitch9.AIDevKit.Transcript}
+  commentId: T:Glitch9.AIDevKit.GENAudioInputTask{Glitch9.AIDevKit.GENTranscriptTask,Glitch9.AIDevKit.Transcript}
+  parent: Glitch9.AIDevKit
+  definition: Glitch9.AIDevKit.GENAudioInputTask`2
+  href: Glitch9.AIDevKit.GENAudioInputTask-2.html
+  name: GENAudioInputTask<GENTranscriptTask, Transcript>
+  nameWithType: GENAudioInputTask<GENTranscriptTask, Transcript>
+  fullName: Glitch9.AIDevKit.GENAudioInputTask<Glitch9.AIDevKit.GENTranscriptTask, Glitch9.AIDevKit.Transcript>
+  nameWithType.vb: GENAudioInputTask(Of GENTranscriptTask, Transcript)
+  fullName.vb: Glitch9.AIDevKit.GENAudioInputTask(Of Glitch9.AIDevKit.GENTranscriptTask, Glitch9.AIDevKit.Transcript)
+  name.vb: GENAudioInputTask(Of GENTranscriptTask, Transcript)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENAudioInputTask`2
+    name: GENAudioInputTask
+    href: Glitch9.AIDevKit.GENAudioInputTask-2.html
+  - name: <
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Transcript
+    name: Transcript
+    href: Glitch9.AIDevKit.Transcript.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENAudioInputTask`2
+    name: GENAudioInputTask
+    href: Glitch9.AIDevKit.GENAudioInputTask-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Transcript
+    name: Transcript
+    href: Glitch9.AIDevKit.Transcript.html
+  - name: )
+- uid: Glitch9.AIDevKit.IGENTask
+  commentId: T:Glitch9.AIDevKit.IGENTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IGENTask.html
+  name: IGENTask
+  nameWithType: IGENTask
+  fullName: Glitch9.AIDevKit.IGENTask
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.token
+  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.token
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.token
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_token
+  name: token
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.token
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.token
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).token
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).token
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.enableHistory
+  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.enableHistory
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.enableHistory
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_enableHistory
+  name: enableHistory
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.enableHistory
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.enableHistory
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).enableHistory
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).enableHistory
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.isCanceled
+  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.isCanceled
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.isCanceled
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_isCanceled
+  name: isCanceled
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.isCanceled
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.isCanceled
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).isCanceled
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).isCanceled
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.outputMimeType
+  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.outputMimeType
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.outputMimeType
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_outputMimeType
+  name: outputMimeType
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.outputMimeType
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.outputMimeType
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).outputMimeType
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).outputMimeType
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.Cancel
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.Cancel
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.Cancel
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel
+  name: Cancel()
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.Cancel()
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.Cancel()
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).Cancel()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).Cancel()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.Cancel
+    name: Cancel
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.Cancel
+    name: Cancel
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetOption(System.String,System.Object)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetOption(System.String,System.Object)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.SetOption(System.String,System.Object)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_
+  name: SetOption(string, object)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.SetOption(string, object)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.SetOption(string, object)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).SetOption(String, Object)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).SetOption(String, Object)
+  name.vb: SetOption(String, Object)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetOption(System.String,System.Object)
+    name: SetOption
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetOption(System.String,System.Object)
+    name: SetOption
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.TryGetOption``1(System.String,{T}@)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.TryGetOption``1(System.String,``0@)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.TryGetOption``1(System.String,``0@)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__
+  name: TryGetOption<T>(string, out T)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.TryGetOption<T>(string, out T)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.TryGetOption<T>(string, out T)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).TryGetOption(Of T)(String, T)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).TryGetOption(Of T)(String, T)
+  name.vb: TryGetOption(Of T)(String, T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.TryGetOption``1(System.String,``0@)
+    name: TryGetOption
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.TryGetOption``1(System.String,``0@)
+    name: TryGetOption
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetModel(Glitch9.AIDevKit.Model)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetModel(Glitch9.AIDevKit.Model)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.SetModel(Glitch9.AIDevKit.Model)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_
+  name: SetModel(Model)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.SetModel(Model)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.SetModel(Glitch9.AIDevKit.Model)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).SetModel(Model)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).SetModel(Glitch9.AIDevKit.Model)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetModel(Glitch9.AIDevKit.Model)
+    name: SetModel
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetModel(Glitch9.AIDevKit.Model)
+    name: SetModel
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetCount(System.Int32)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetCount(System.Int32)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.SetCount(System.Int32)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_
+  name: SetCount(int)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.SetCount(int)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.SetCount(int)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).SetCount(Integer)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).SetCount(Integer)
+  name.vb: SetCount(Integer)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetCount(System.Int32)
+    name: SetCount
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetCount(System.Int32)
+    name: SetCount
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetOutputPath(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetOutputPath(System.String)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.SetOutputPath(System.String)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_
+  name: SetOutputPath(string)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.SetOutputPath(string)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.SetOutputPath(string)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).SetOutputPath(String)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).SetOutputPath(String)
+  name.vb: SetOutputPath(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetOutputPath(System.String)
+    name: SetOutputPath
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetOutputPath(System.String)
+    name: SetOutputPath
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetSender(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetSender(System.String)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.SetSender(System.String)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_
+  name: SetSender(string)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.SetSender(string)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.SetSender(string)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).SetSender(String)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).SetSender(String)
+  name.vb: SetSender(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetSender(System.String)
+    name: SetSender
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetSender(System.String)
+    name: SetSender
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetIgnoreLogs(System.Boolean)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetIgnoreLogs(System.Boolean)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.SetIgnoreLogs(System.Boolean)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_
+  name: SetIgnoreLogs(bool)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.SetIgnoreLogs(bool)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.SetIgnoreLogs(bool)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).SetIgnoreLogs(Boolean)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).SetIgnoreLogs(Boolean)
+  name.vb: SetIgnoreLogs(Boolean)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetIgnoreLogs(System.Boolean)
+    name: SetIgnoreLogs
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetIgnoreLogs(System.Boolean)
+    name: SetIgnoreLogs
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.EnablePromptHistory(System.Boolean)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.EnablePromptHistory(System.Boolean)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.EnablePromptHistory(System.Boolean)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_
+  name: EnablePromptHistory(bool)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.EnablePromptHistory(bool)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.EnablePromptHistory(bool)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).EnablePromptHistory(Boolean)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).EnablePromptHistory(Boolean)
+  name.vb: EnablePromptHistory(Boolean)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.EnablePromptHistory(System.Boolean)
+    name: EnablePromptHistory
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.EnablePromptHistory(System.Boolean)
+    name: EnablePromptHistory
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  name: SetTextToTarget(GeneratedText)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.SetTextToTarget(GeneratedText)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).SetTextToTarget(GeneratedText)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+    name: SetTextToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedText
+    name: GeneratedText
+    href: Glitch9.AIDevKit.GeneratedText.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+    name: SetTextToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedText
+    name: GeneratedText
+    href: Glitch9.AIDevKit.GeneratedText.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  name: SetImageToTarget(GeneratedImage)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.SetImageToTarget(GeneratedImage)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).SetImageToTarget(GeneratedImage)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+    name: SetImageToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedImage
+    name: GeneratedImage
+    href: Glitch9.AIDevKit.GeneratedImage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+    name: SetImageToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedImage
+    name: GeneratedImage
+    href: Glitch9.AIDevKit.GeneratedImage.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
+  name: SetAudioToTarget(GeneratedAudio)
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.SetAudioToTarget(GeneratedAudio)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).SetAudioToTarget(GeneratedAudio)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+    name: SetAudioToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedAudio
+    name: GeneratedAudio
+    href: Glitch9.AIDevKit.GeneratedAudio.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+    name: SetAudioToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedAudio
+    name: GeneratedAudio
+    href: Glitch9.AIDevKit.GeneratedAudio.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.ExecuteAsync
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.ExecuteAsync
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.GENTask`3.ExecuteAsync
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
+  name: ExecuteAsync()
+  nameWithType: GENTask<GENTranscriptTask, AudioClip, Transcript>.ExecuteAsync()
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript>.ExecuteAsync()
+  nameWithType.vb: GENTask(Of GENTranscriptTask, AudioClip, Transcript).ExecuteAsync()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENTranscriptTask, AudioClip, Glitch9.AIDevKit.Transcript).ExecuteAsync()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.ExecuteAsync
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTranscriptTask,AudioClip,Glitch9.AIDevKit.Transcript}.ExecuteAsync
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.GENTranscriptTask.Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(Glitch9.AIDevKit.Google.AspectRatio)
+  commentId: M:Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(``0,Glitch9.AIDevKit.Google.AspectRatio)
+  parent: Glitch9.AIDevKit.Google.FluentAPIExtensions
+  definition: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(``0,Glitch9.AIDevKit.Google.AspectRatio)
+  href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetAspectRatio__1___0_Glitch9_AIDevKit_Google_AspectRatio_
+  name: SetAspectRatio<GENTranscriptTask>(GENTranscriptTask, AspectRatio)
+  nameWithType: FluentAPIExtensions.SetAspectRatio<GENTranscriptTask>(GENTranscriptTask, AspectRatio)
+  fullName: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio<Glitch9.AIDevKit.GENTranscriptTask>(Glitch9.AIDevKit.GENTranscriptTask, Glitch9.AIDevKit.Google.AspectRatio)
+  nameWithType.vb: FluentAPIExtensions.SetAspectRatio(Of GENTranscriptTask)(GENTranscriptTask, AspectRatio)
+  fullName.vb: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio(Of Glitch9.AIDevKit.GENTranscriptTask)(Glitch9.AIDevKit.GENTranscriptTask, Glitch9.AIDevKit.Google.AspectRatio)
+  name.vb: SetAspectRatio(Of GENTranscriptTask)(GENTranscriptTask, AspectRatio)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(Glitch9.AIDevKit.GENTranscriptTask,Glitch9.AIDevKit.Google.AspectRatio)
+    name: SetAspectRatio
+    href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetAspectRatio__1___0_Glitch9_AIDevKit_Google_AspectRatio_
+  - name: <
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: '>'
+  - name: (
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.AspectRatio
+    name: AspectRatio
+    href: Glitch9.AIDevKit.Google.AspectRatio.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(Glitch9.AIDevKit.GENTranscriptTask,Glitch9.AIDevKit.Google.AspectRatio)
+    name: SetAspectRatio
+    href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetAspectRatio__1___0_Glitch9_AIDevKit_Google_AspectRatio_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: )
+  - name: (
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.AspectRatio
+    name: AspectRatio
+    href: Glitch9.AIDevKit.Google.AspectRatio.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTranscriptTask.Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(Glitch9.AIDevKit.Google.PersonGeneration)
+  commentId: M:Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(``0,Glitch9.AIDevKit.Google.PersonGeneration)
+  parent: Glitch9.AIDevKit.Google.FluentAPIExtensions
+  definition: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(``0,Glitch9.AIDevKit.Google.PersonGeneration)
+  href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetPersonGeneration__1___0_Glitch9_AIDevKit_Google_PersonGeneration_
+  name: SetPersonGeneration<GENTranscriptTask>(GENTranscriptTask, PersonGeneration)
+  nameWithType: FluentAPIExtensions.SetPersonGeneration<GENTranscriptTask>(GENTranscriptTask, PersonGeneration)
+  fullName: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration<Glitch9.AIDevKit.GENTranscriptTask>(Glitch9.AIDevKit.GENTranscriptTask, Glitch9.AIDevKit.Google.PersonGeneration)
+  nameWithType.vb: FluentAPIExtensions.SetPersonGeneration(Of GENTranscriptTask)(GENTranscriptTask, PersonGeneration)
+  fullName.vb: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration(Of Glitch9.AIDevKit.GENTranscriptTask)(Glitch9.AIDevKit.GENTranscriptTask, Glitch9.AIDevKit.Google.PersonGeneration)
+  name.vb: SetPersonGeneration(Of GENTranscriptTask)(GENTranscriptTask, PersonGeneration)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(Glitch9.AIDevKit.GENTranscriptTask,Glitch9.AIDevKit.Google.PersonGeneration)
+    name: SetPersonGeneration
+    href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetPersonGeneration__1___0_Glitch9_AIDevKit_Google_PersonGeneration_
+  - name: <
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: '>'
+  - name: (
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.PersonGeneration
+    name: PersonGeneration
+    href: Glitch9.AIDevKit.Google.PersonGeneration.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(Glitch9.AIDevKit.GENTranscriptTask,Glitch9.AIDevKit.Google.PersonGeneration)
+    name: SetPersonGeneration
+    href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetPersonGeneration__1___0_Glitch9_AIDevKit_Google_PersonGeneration_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: )
+  - name: (
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.PersonGeneration
+    name: PersonGeneration
+    href: Glitch9.AIDevKit.Google.PersonGeneration.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTranscriptTask.Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(Glitch9.AIDevKit.ImageSize)
+  commentId: M:Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(``0,Glitch9.AIDevKit.ImageSize)
+  parent: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions
+  definition: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(``0,Glitch9.AIDevKit.ImageSize)
+  href: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.html#Glitch9_AIDevKit_OpenAI_FluentAPIExtensions_SetSize__1___0_Glitch9_AIDevKit_ImageSize_
+  name: SetSize<GENTranscriptTask>(GENTranscriptTask, ImageSize)
+  nameWithType: FluentAPIExtensions.SetSize<GENTranscriptTask>(GENTranscriptTask, ImageSize)
+  fullName: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize<Glitch9.AIDevKit.GENTranscriptTask>(Glitch9.AIDevKit.GENTranscriptTask, Glitch9.AIDevKit.ImageSize)
+  nameWithType.vb: FluentAPIExtensions.SetSize(Of GENTranscriptTask)(GENTranscriptTask, ImageSize)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize(Of Glitch9.AIDevKit.GENTranscriptTask)(Glitch9.AIDevKit.GENTranscriptTask, Glitch9.AIDevKit.ImageSize)
+  name.vb: SetSize(Of GENTranscriptTask)(GENTranscriptTask, ImageSize)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(Glitch9.AIDevKit.GENTranscriptTask,Glitch9.AIDevKit.ImageSize)
+    name: SetSize
+    href: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.html#Glitch9_AIDevKit_OpenAI_FluentAPIExtensions_SetSize__1___0_Glitch9_AIDevKit_ImageSize_
+  - name: <
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: '>'
+  - name: (
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ImageSize
+    name: ImageSize
+    href: Glitch9.AIDevKit.ImageSize.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(Glitch9.AIDevKit.GENTranscriptTask,Glitch9.AIDevKit.ImageSize)
+    name: SetSize
+    href: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.html#Glitch9_AIDevKit_OpenAI_FluentAPIExtensions_SetSize__1___0_Glitch9_AIDevKit_ImageSize_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: )
+  - name: (
+  - uid: Glitch9.AIDevKit.GENTranscriptTask
+    name: GENTranscriptTask
+    href: Glitch9.AIDevKit.GENTranscriptTask.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ImageSize
+    name: ImageSize
+    href: Glitch9.AIDevKit.ImageSize.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.GENTask`3
+  commentId: T:Glitch9.AIDevKit.GENTask`3
+  href: Glitch9.AIDevKit.GENTask-3.html
+  name: GENTask<TSelf, TPrompt, TOutput>
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput)
+  name.vb: GENTask(Of TSelf, TPrompt, TOutput)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3
+    name: GENTask
+    href: Glitch9.AIDevKit.GENTask-3.html
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TPrompt
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3
+    name: GENTask
+    href: Glitch9.AIDevKit.GENTask-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TPrompt
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: )
+- uid: Glitch9.AIDevKit.GENAudioInputTask`2
+  commentId: T:Glitch9.AIDevKit.GENAudioInputTask`2
+  href: Glitch9.AIDevKit.GENAudioInputTask-2.html
+  name: GENAudioInputTask<TSelf, TOuput>
+  nameWithType: GENAudioInputTask<TSelf, TOuput>
+  fullName: Glitch9.AIDevKit.GENAudioInputTask<TSelf, TOuput>
+  nameWithType.vb: GENAudioInputTask(Of TSelf, TOuput)
+  fullName.vb: Glitch9.AIDevKit.GENAudioInputTask(Of TSelf, TOuput)
+  name.vb: GENAudioInputTask(Of TSelf, TOuput)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENAudioInputTask`2
+    name: GENAudioInputTask
+    href: Glitch9.AIDevKit.GENAudioInputTask-2.html
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOuput
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENAudioInputTask`2
+    name: GENAudioInputTask
+    href: Glitch9.AIDevKit.GENAudioInputTask-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOuput
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.token
+  commentId: P:Glitch9.AIDevKit.GENTask`3.token
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_token
+  name: token
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.token
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.token
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).token
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).token
+- uid: Glitch9.AIDevKit.GENTask`3.enableHistory
+  commentId: P:Glitch9.AIDevKit.GENTask`3.enableHistory
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_enableHistory
+  name: enableHistory
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.enableHistory
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.enableHistory
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).enableHistory
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).enableHistory
+- uid: Glitch9.AIDevKit.GENTask`3.isCanceled
+  commentId: P:Glitch9.AIDevKit.GENTask`3.isCanceled
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_isCanceled
+  name: isCanceled
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.isCanceled
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.isCanceled
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).isCanceled
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).isCanceled
+- uid: Glitch9.AIDevKit.GENTask`3.outputMimeType
+  commentId: P:Glitch9.AIDevKit.GENTask`3.outputMimeType
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_outputMimeType
+  name: outputMimeType
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.outputMimeType
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.outputMimeType
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).outputMimeType
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).outputMimeType
+- uid: Glitch9.AIDevKit.GENTask`3.Cancel
+  commentId: M:Glitch9.AIDevKit.GENTask`3.Cancel
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel
+  name: Cancel()
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.Cancel()
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.Cancel()
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).Cancel()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).Cancel()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.Cancel
+    name: Cancel
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.Cancel
+    name: Cancel
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.SetOption(System.String,System.Object)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetOption(System.String,System.Object)
+  isExternal: true
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_
+  name: SetOption(string, object)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetOption(string, object)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetOption(string, object)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetOption(String, Object)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetOption(String, Object)
+  name.vb: SetOption(String, Object)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetOption(System.String,System.Object)
+    name: SetOption
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetOption(System.String,System.Object)
+    name: SetOption
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.TryGetOption``1(System.String,``0@)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.TryGetOption``1(System.String,``0@)
+  isExternal: true
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__
+  name: TryGetOption<T>(string, out T)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.TryGetOption<T>(string, out T)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.TryGetOption<T>(string, out T)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).TryGetOption(Of T)(String, T)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).TryGetOption(Of T)(String, T)
+  name.vb: TryGetOption(Of T)(String, T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.TryGetOption``1(System.String,``0@)
+    name: TryGetOption
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.TryGetOption``1(System.String,``0@)
+    name: TryGetOption
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.SetModel(Glitch9.AIDevKit.Model)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetModel(Glitch9.AIDevKit.Model)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_
+  name: SetModel(Model)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetModel(Model)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetModel(Glitch9.AIDevKit.Model)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetModel(Model)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetModel(Glitch9.AIDevKit.Model)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetModel(Glitch9.AIDevKit.Model)
+    name: SetModel
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetModel(Glitch9.AIDevKit.Model)
+    name: SetModel
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_
+  - name: (
+  - uid: Glitch9.AIDevKit.Model
+    name: Model
+    href: Glitch9.AIDevKit.Model.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.SetCount(System.Int32)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetCount(System.Int32)
+  isExternal: true
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_
+  name: SetCount(int)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetCount(int)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetCount(int)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetCount(Integer)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetCount(Integer)
+  name.vb: SetCount(Integer)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetCount(System.Int32)
+    name: SetCount
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetCount(System.Int32)
+    name: SetCount
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.SetOutputPath(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetOutputPath(System.String)
+  isExternal: true
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_
+  name: SetOutputPath(string)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetOutputPath(string)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetOutputPath(string)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetOutputPath(String)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetOutputPath(String)
+  name.vb: SetOutputPath(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetOutputPath(System.String)
+    name: SetOutputPath
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetOutputPath(System.String)
+    name: SetOutputPath
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.SetSender(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetSender(System.String)
+  isExternal: true
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_
+  name: SetSender(string)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetSender(string)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetSender(string)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetSender(String)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetSender(String)
+  name.vb: SetSender(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetSender(System.String)
+    name: SetSender
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetSender(System.String)
+    name: SetSender
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.SetIgnoreLogs(System.Boolean)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetIgnoreLogs(System.Boolean)
+  isExternal: true
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_
+  name: SetIgnoreLogs(bool)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetIgnoreLogs(bool)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetIgnoreLogs(bool)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetIgnoreLogs(Boolean)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetIgnoreLogs(Boolean)
+  name.vb: SetIgnoreLogs(Boolean)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetIgnoreLogs(System.Boolean)
+    name: SetIgnoreLogs
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetIgnoreLogs(System.Boolean)
+    name: SetIgnoreLogs
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.EnablePromptHistory(System.Boolean)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.EnablePromptHistory(System.Boolean)
+  isExternal: true
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_
+  name: EnablePromptHistory(bool)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.EnablePromptHistory(bool)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.EnablePromptHistory(bool)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).EnablePromptHistory(Boolean)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).EnablePromptHistory(Boolean)
+  name.vb: EnablePromptHistory(Boolean)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.EnablePromptHistory(System.Boolean)
+    name: EnablePromptHistory
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.EnablePromptHistory(System.Boolean)
+    name: EnablePromptHistory
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  name: SetTextToTarget(GeneratedText)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetTextToTarget(GeneratedText)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetTextToTarget(GeneratedText)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+    name: SetTextToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedText
+    name: GeneratedText
+    href: Glitch9.AIDevKit.GeneratedText.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+    name: SetTextToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedText
+    name: GeneratedText
+    href: Glitch9.AIDevKit.GeneratedText.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  name: SetImageToTarget(GeneratedImage)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetImageToTarget(GeneratedImage)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetImageToTarget(GeneratedImage)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+    name: SetImageToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedImage
+    name: GeneratedImage
+    href: Glitch9.AIDevKit.GeneratedImage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+    name: SetImageToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedImage
+    name: GeneratedImage
+    href: Glitch9.AIDevKit.GeneratedImage.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
+  name: SetAudioToTarget(GeneratedAudio)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetAudioToTarget(GeneratedAudio)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetAudioToTarget(GeneratedAudio)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+    name: SetAudioToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedAudio
+    name: GeneratedAudio
+    href: Glitch9.AIDevKit.GeneratedAudio.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+    name: SetAudioToTarget
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
+  - name: (
+  - uid: Glitch9.AIDevKit.GeneratedAudio
+    name: GeneratedAudio
+    href: Glitch9.AIDevKit.GeneratedAudio.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync
+  commentId: M:Glitch9.AIDevKit.GENTask`3.ExecuteAsync
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
+  name: ExecuteAsync()
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.ExecuteAsync()
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.ExecuteAsync()
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).ExecuteAsync()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).ExecuteAsync()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(``0,Glitch9.AIDevKit.Google.AspectRatio)
+  commentId: M:Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(``0,Glitch9.AIDevKit.Google.AspectRatio)
+  href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetAspectRatio__1___0_Glitch9_AIDevKit_Google_AspectRatio_
+  name: SetAspectRatio<TTask>(TTask, AspectRatio)
+  nameWithType: FluentAPIExtensions.SetAspectRatio<TTask>(TTask, AspectRatio)
+  fullName: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio<TTask>(TTask, Glitch9.AIDevKit.Google.AspectRatio)
+  nameWithType.vb: FluentAPIExtensions.SetAspectRatio(Of TTask)(TTask, AspectRatio)
+  fullName.vb: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio(Of TTask)(TTask, Glitch9.AIDevKit.Google.AspectRatio)
+  name.vb: SetAspectRatio(Of TTask)(TTask, AspectRatio)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(``0,Glitch9.AIDevKit.Google.AspectRatio)
+    name: SetAspectRatio
+    href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetAspectRatio__1___0_Glitch9_AIDevKit_Google_AspectRatio_
+  - name: <
+  - name: TTask
+  - name: '>'
+  - name: (
+  - name: TTask
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.AspectRatio
+    name: AspectRatio
+    href: Glitch9.AIDevKit.Google.AspectRatio.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(``0,Glitch9.AIDevKit.Google.AspectRatio)
+    name: SetAspectRatio
+    href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetAspectRatio__1___0_Glitch9_AIDevKit_Google_AspectRatio_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTask
+  - name: )
+  - name: (
+  - name: TTask
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.AspectRatio
+    name: AspectRatio
+    href: Glitch9.AIDevKit.Google.AspectRatio.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.FluentAPIExtensions
+  commentId: T:Glitch9.AIDevKit.Google.FluentAPIExtensions
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html
+  name: FluentAPIExtensions
+  nameWithType: FluentAPIExtensions
+  fullName: Glitch9.AIDevKit.Google.FluentAPIExtensions
+- uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(``0,Glitch9.AIDevKit.Google.PersonGeneration)
+  commentId: M:Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(``0,Glitch9.AIDevKit.Google.PersonGeneration)
+  href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetPersonGeneration__1___0_Glitch9_AIDevKit_Google_PersonGeneration_
+  name: SetPersonGeneration<TTask>(TTask, PersonGeneration)
+  nameWithType: FluentAPIExtensions.SetPersonGeneration<TTask>(TTask, PersonGeneration)
+  fullName: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration<TTask>(TTask, Glitch9.AIDevKit.Google.PersonGeneration)
+  nameWithType.vb: FluentAPIExtensions.SetPersonGeneration(Of TTask)(TTask, PersonGeneration)
+  fullName.vb: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration(Of TTask)(TTask, Glitch9.AIDevKit.Google.PersonGeneration)
+  name.vb: SetPersonGeneration(Of TTask)(TTask, PersonGeneration)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(``0,Glitch9.AIDevKit.Google.PersonGeneration)
+    name: SetPersonGeneration
+    href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetPersonGeneration__1___0_Glitch9_AIDevKit_Google_PersonGeneration_
+  - name: <
+  - name: TTask
+  - name: '>'
+  - name: (
+  - name: TTask
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.PersonGeneration
+    name: PersonGeneration
+    href: Glitch9.AIDevKit.Google.PersonGeneration.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(``0,Glitch9.AIDevKit.Google.PersonGeneration)
+    name: SetPersonGeneration
+    href: Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetPersonGeneration__1___0_Glitch9_AIDevKit_Google_PersonGeneration_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTask
+  - name: )
+  - name: (
+  - name: TTask
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.PersonGeneration
+    name: PersonGeneration
+    href: Glitch9.AIDevKit.Google.PersonGeneration.html
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(``0,Glitch9.AIDevKit.ImageSize)
+  commentId: M:Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(``0,Glitch9.AIDevKit.ImageSize)
+  href: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.html#Glitch9_AIDevKit_OpenAI_FluentAPIExtensions_SetSize__1___0_Glitch9_AIDevKit_ImageSize_
+  name: SetSize<T>(T, ImageSize)
+  nameWithType: FluentAPIExtensions.SetSize<T>(T, ImageSize)
+  fullName: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize<T>(T, Glitch9.AIDevKit.ImageSize)
+  nameWithType.vb: FluentAPIExtensions.SetSize(Of T)(T, ImageSize)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize(Of T)(T, Glitch9.AIDevKit.ImageSize)
+  name.vb: SetSize(Of T)(T, ImageSize)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(``0,Glitch9.AIDevKit.ImageSize)
+    name: SetSize
+    href: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.html#Glitch9_AIDevKit_OpenAI_FluentAPIExtensions_SetSize__1___0_Glitch9_AIDevKit_ImageSize_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ImageSize
+    name: ImageSize
+    href: Glitch9.AIDevKit.ImageSize.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(``0,Glitch9.AIDevKit.ImageSize)
+    name: SetSize
+    href: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.html#Glitch9_AIDevKit_OpenAI_FluentAPIExtensions_SetSize__1___0_Glitch9_AIDevKit_ImageSize_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ImageSize
+    name: ImageSize
+    href: Glitch9.AIDevKit.ImageSize.html
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions
+  commentId: T:Glitch9.AIDevKit.OpenAI.FluentAPIExtensions
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.html
+  name: FluentAPIExtensions
+  nameWithType: FluentAPIExtensions
+  fullName: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: Glitch9.AIDevKit.GENTranscriptTask.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.GENTranscriptTask.#ctor
+  href: Glitch9.AIDevKit.GENTranscriptTask.html#Glitch9_AIDevKit_GENTranscriptTask__ctor_AudioClip_UnityEngine_Object_
+  name: GENTranscriptTask
+  nameWithType: GENTranscriptTask.GENTranscriptTask
+  fullName: Glitch9.AIDevKit.GENTranscriptTask.GENTranscriptTask
+  nameWithType.vb: GENTranscriptTask.New
+  fullName.vb: Glitch9.AIDevKit.GENTranscriptTask.New
+  name.vb: New
+- uid: AudioClip
+  isExternal: true
+  name: AudioClip
+  nameWithType: AudioClip
+  fullName: AudioClip
+- uid: UnityEngine.Object
+  isExternal: true
+  name: Object
+  nameWithType: UnityEngine.Object
+  fullName: UnityEngine.Object
+- uid: Glitch9.AIDevKit.GENTranscriptTask.SetLanguage*
+  commentId: Overload:Glitch9.AIDevKit.GENTranscriptTask.SetLanguage
+  href: Glitch9.AIDevKit.GENTranscriptTask.html#Glitch9_AIDevKit_GENTranscriptTask_SetLanguage_SystemLanguage_
+  name: SetLanguage
+  nameWithType: GENTranscriptTask.SetLanguage
+  fullName: Glitch9.AIDevKit.GENTranscriptTask.SetLanguage
+- uid: SystemLanguage
+  isExternal: true
+  name: SystemLanguage
+  nameWithType: SystemLanguage
+  fullName: SystemLanguage
+- uid: Glitch9.AIDevKit.GENTranscriptTask
+  commentId: T:Glitch9.AIDevKit.GENTranscriptTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENTranscriptTask.html
+  name: GENTranscriptTask
+  nameWithType: GENTranscriptTask
+  fullName: Glitch9.AIDevKit.GENTranscriptTask
+- uid: Glitch9.AIDevKit.GENTranscriptTask.ExecuteAsync*
+  commentId: Overload:Glitch9.AIDevKit.GENTranscriptTask.ExecuteAsync
+  href: Glitch9.AIDevKit.GENTranscriptTask.html#Glitch9_AIDevKit_GENTranscriptTask_ExecuteAsync
+  name: ExecuteAsync
+  nameWithType: GENTranscriptTask.ExecuteAsync
+  fullName: Glitch9.AIDevKit.GENTranscriptTask.ExecuteAsync
+- uid: UniTask{Glitch9.AIDevKit.Transcript}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Transcript}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Transcript.html
+  name: UniTask<Transcript>
+  nameWithType: UniTask<Transcript>
+  fullName: UniTask<Glitch9.AIDevKit.Transcript>
+  nameWithType.vb: UniTask(Of Transcript)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Transcript)
+  name.vb: UniTask(Of Transcript)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Transcript
+    name: Transcript
+    href: Glitch9.AIDevKit.Transcript.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Transcript
+    name: Transcript
+    href: Glitch9.AIDevKit.Transcript.html
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )

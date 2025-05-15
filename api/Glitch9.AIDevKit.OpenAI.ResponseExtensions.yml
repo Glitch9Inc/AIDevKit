@@ -1,0 +1,324 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.ResponseExtensions
+  commentId: T:Glitch9.AIDevKit.OpenAI.ResponseExtensions
+  id: ResponseExtensions
+  parent: Glitch9.AIDevKit.OpenAI
+  children:
+  - Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetImageFiles(Glitch9.AIDevKit.ContentPartWrapper[])
+  - Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetTexts(System.Collections.Generic.List{Glitch9.AIDevKit.ContentPartWrapper})
+  langs:
+  - csharp
+  - vb
+  name: ResponseExtensions
+  nameWithType: ResponseExtensions
+  fullName: Glitch9.AIDevKit.OpenAI.ResponseExtensions
+  type: Class
+  source:
+    id: ResponseExtensions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Extensions/ResponseExtensions.cs
+    startLine: 7
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public static class ResponseExtensions
+    content.vb: Public Module ResponseExtensions
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetTexts(System.Collections.Generic.List{Glitch9.AIDevKit.ContentPartWrapper})
+  commentId: M:Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetTexts(System.Collections.Generic.List{Glitch9.AIDevKit.ContentPartWrapper})
+  id: GetTexts(System.Collections.Generic.List{Glitch9.AIDevKit.ContentPartWrapper})
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.OpenAI.ResponseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetTexts(List<ContentPartWrapper>)
+  nameWithType: ResponseExtensions.GetTexts(List<ContentPartWrapper>)
+  fullName: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetTexts(System.Collections.Generic.List<Glitch9.AIDevKit.ContentPartWrapper>)
+  type: Method
+  source:
+    id: GetTexts
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Extensions/ResponseExtensions.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Extracts all text values from the given array of MessageContent.
+  example: []
+  syntax:
+    content: public static List<string> GetTexts(this List<ContentPartWrapper> content)
+    parameters:
+    - id: content
+      type: System.Collections.Generic.List{Glitch9.AIDevKit.ContentPartWrapper}
+      description: Array of MessageContent
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: List of extracted text values
+    content.vb: Public Shared Function GetTexts(content As List(Of ContentPartWrapper)) As List(Of String)
+  overload: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetTexts*
+  nameWithType.vb: ResponseExtensions.GetTexts(List(Of ContentPartWrapper))
+  fullName.vb: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetTexts(System.Collections.Generic.List(Of Glitch9.AIDevKit.ContentPartWrapper))
+  name.vb: GetTexts(List(Of ContentPartWrapper))
+- uid: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetImageFiles(Glitch9.AIDevKit.ContentPartWrapper[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetImageFiles(Glitch9.AIDevKit.ContentPartWrapper[])
+  id: GetImageFiles(Glitch9.AIDevKit.ContentPartWrapper[])
+  isExtensionMethod: true
+  parent: Glitch9.AIDevKit.OpenAI.ResponseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetImageFiles(ContentPartWrapper[])
+  nameWithType: ResponseExtensions.GetImageFiles(ContentPartWrapper[])
+  fullName: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetImageFiles(Glitch9.AIDevKit.ContentPartWrapper[])
+  type: Method
+  source:
+    id: GetImageFiles
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Extensions/ResponseExtensions.cs
+    startLine: 38
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Extracts all image files from the given array of MessageContent.
+  example: []
+  syntax:
+    content: public static List<UniImageFile> GetImageFiles(this ContentPartWrapper[] content)
+    parameters:
+    - id: content
+      type: Glitch9.AIDevKit.ContentPartWrapper[]
+      description: Array of MessageContent
+    return:
+      type: System.Collections.Generic.List{Glitch9.IO.Files.UniImageFile}
+      description: List of extracted UnityImageFile objects
+    content.vb: Public Shared Function GetImageFiles(content As ContentPartWrapper()) As List(Of UniImageFile)
+  overload: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetImageFiles*
+  nameWithType.vb: ResponseExtensions.GetImageFiles(ContentPartWrapper())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetImageFiles(Glitch9.AIDevKit.ContentPartWrapper())
+  name.vb: GetImageFiles(ContentPartWrapper())
+references:
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetTexts*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetTexts
+  href: Glitch9.AIDevKit.OpenAI.ResponseExtensions.html#Glitch9_AIDevKit_OpenAI_ResponseExtensions_GetTexts_System_Collections_Generic_List_Glitch9_AIDevKit_ContentPartWrapper__
+  name: GetTexts
+  nameWithType: ResponseExtensions.GetTexts
+  fullName: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetTexts
+- uid: System.Collections.Generic.List{Glitch9.AIDevKit.ContentPartWrapper}
+  commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.ContentPartWrapper}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: Glitch9.AIDevKit.ContentPartWrapper.html
+  name: List<ContentPartWrapper>
+  nameWithType: List<ContentPartWrapper>
+  fullName: System.Collections.Generic.List<Glitch9.AIDevKit.ContentPartWrapper>
+  nameWithType.vb: List(Of ContentPartWrapper)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.AIDevKit.ContentPartWrapper)
+  name.vb: List(Of ContentPartWrapper)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ContentPartWrapper
+    name: ContentPartWrapper
+    href: Glitch9.AIDevKit.ContentPartWrapper.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ContentPartWrapper
+    name: ContentPartWrapper
+    href: Glitch9.AIDevKit.ContentPartWrapper.html
+  - name: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetImageFiles*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetImageFiles
+  href: Glitch9.AIDevKit.OpenAI.ResponseExtensions.html#Glitch9_AIDevKit_OpenAI_ResponseExtensions_GetImageFiles_Glitch9_AIDevKit_ContentPartWrapper___
+  name: GetImageFiles
+  nameWithType: ResponseExtensions.GetImageFiles
+  fullName: Glitch9.AIDevKit.OpenAI.ResponseExtensions.GetImageFiles
+- uid: Glitch9.AIDevKit.ContentPartWrapper[]
+  isExternal: true
+  href: Glitch9.AIDevKit.ContentPartWrapper.html
+  name: ContentPartWrapper[]
+  nameWithType: ContentPartWrapper[]
+  fullName: Glitch9.AIDevKit.ContentPartWrapper[]
+  nameWithType.vb: ContentPartWrapper()
+  fullName.vb: Glitch9.AIDevKit.ContentPartWrapper()
+  name.vb: ContentPartWrapper()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ContentPartWrapper
+    name: ContentPartWrapper
+    href: Glitch9.AIDevKit.ContentPartWrapper.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ContentPartWrapper
+    name: ContentPartWrapper
+    href: Glitch9.AIDevKit.ContentPartWrapper.html
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{Glitch9.IO.Files.UniImageFile}
+  commentId: T:System.Collections.Generic.List{Glitch9.IO.Files.UniImageFile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<UniImageFile>
+  nameWithType: List<UniImageFile>
+  fullName: System.Collections.Generic.List<Glitch9.IO.Files.UniImageFile>
+  nameWithType.vb: List(Of UniImageFile)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.IO.Files.UniImageFile)
+  name.vb: List(Of UniImageFile)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Glitch9.IO.Files.UniImageFile
+    name: UniImageFile
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.IO.Files.UniImageFile
+    name: UniImageFile
+  - name: )

@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.StopReason
+  commentId: T:Glitch9.AIDevKit.StopReason
+  id: StopReason
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.StopReason.MaxTokens
+  - Glitch9.AIDevKit.StopReason.None
+  - Glitch9.AIDevKit.StopReason.Other
+  - Glitch9.AIDevKit.StopReason.Recitation
+  - Glitch9.AIDevKit.StopReason.Safety
+  - Glitch9.AIDevKit.StopReason.Stop
+  - Glitch9.AIDevKit.StopReason.ToolCalls
+  langs:
+  - csharp
+  - vb
+  name: StopReason
+  nameWithType: StopReason
+  fullName: Glitch9.AIDevKit.StopReason
+  type: Enum
+  source:
+    id: StopReason
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/StopReason.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit
+  summary: Reason that a <xref href="Glitch9.AIDevKit.ChatCompletion" data-throw-if-not-resolved="false"></xref> request stopped generating tokens.
+  example: []
+  syntax:
+    content: public enum StopReason
+    content.vb: Public Enum StopReason
+- uid: Glitch9.AIDevKit.StopReason.None
+  commentId: F:Glitch9.AIDevKit.StopReason.None
+  id: None
+  parent: Glitch9.AIDevKit.StopReason
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: StopReason.None
+  fullName: Glitch9.AIDevKit.StopReason.None
+  type: Field
+  source:
+    id: None
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/StopReason.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit
+  summary: Default value (Unused).
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Glitch9.AIDevKit.StopReason
+- uid: Glitch9.AIDevKit.StopReason.Stop
+  commentId: F:Glitch9.AIDevKit.StopReason.Stop
+  id: Stop
+  parent: Glitch9.AIDevKit.StopReason
+  langs:
+  - csharp
+  - vb
+  name: Stop
+  nameWithType: StopReason.Stop
+  fullName: Glitch9.AIDevKit.StopReason.Stop
+  type: Field
+  source:
+    id: Stop
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/StopReason.cs
+    startLine: 19
+  namespace: Glitch9.AIDevKit
+  summary: Natural stop point of the model or provided stop sequence.
+  example: []
+  syntax:
+    content: Stop = 1
+    return:
+      type: Glitch9.AIDevKit.StopReason
+- uid: Glitch9.AIDevKit.StopReason.MaxTokens
+  commentId: F:Glitch9.AIDevKit.StopReason.MaxTokens
+  id: MaxTokens
+  parent: Glitch9.AIDevKit.StopReason
+  langs:
+  - csharp
+  - vb
+  name: MaxTokens
+  nameWithType: StopReason.MaxTokens
+  fullName: Glitch9.AIDevKit.StopReason.MaxTokens
+  type: Field
+  source:
+    id: MaxTokens
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/StopReason.cs
+    startLine: 24
+  namespace: Glitch9.AIDevKit
+  summary: The maximum number of tokens as specified in the request was reached.
+  example: []
+  syntax:
+    content: MaxTokens = 2
+    return:
+      type: Glitch9.AIDevKit.StopReason
+- uid: Glitch9.AIDevKit.StopReason.Safety
+  commentId: F:Glitch9.AIDevKit.StopReason.Safety
+  id: Safety
+  parent: Glitch9.AIDevKit.StopReason
+  langs:
+  - csharp
+  - vb
+  name: Safety
+  nameWithType: StopReason.Safety
+  fullName: Glitch9.AIDevKit.StopReason.Safety
+  type: Field
+  source:
+    id: Safety
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/StopReason.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit
+  summary: The content was flagged for safety reasons.
+  example: []
+  syntax:
+    content: Safety = 3
+    return:
+      type: Glitch9.AIDevKit.StopReason
+- uid: Glitch9.AIDevKit.StopReason.Recitation
+  commentId: F:Glitch9.AIDevKit.StopReason.Recitation
+  id: Recitation
+  parent: Glitch9.AIDevKit.StopReason
+  langs:
+  - csharp
+  - vb
+  name: Recitation
+  nameWithType: StopReason.Recitation
+  fullName: Glitch9.AIDevKit.StopReason.Recitation
+  type: Field
+  source:
+    id: Recitation
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/StopReason.cs
+    startLine: 34
+  namespace: Glitch9.AIDevKit
+  summary: The content was flagged for recitation reasons.
+  example: []
+  syntax:
+    content: Recitation = 4
+    return:
+      type: Glitch9.AIDevKit.StopReason
+- uid: Glitch9.AIDevKit.StopReason.ToolCalls
+  commentId: F:Glitch9.AIDevKit.StopReason.ToolCalls
+  id: ToolCalls
+  parent: Glitch9.AIDevKit.StopReason
+  langs:
+  - csharp
+  - vb
+  name: ToolCalls
+  nameWithType: StopReason.ToolCalls
+  fullName: Glitch9.AIDevKit.StopReason.ToolCalls
+  type: Field
+  source:
+    id: ToolCalls
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/StopReason.cs
+    startLine: 39
+  namespace: Glitch9.AIDevKit
+  summary: The model called a tool, or function_call.
+  example: []
+  syntax:
+    content: ToolCalls = 5
+    return:
+      type: Glitch9.AIDevKit.StopReason
+- uid: Glitch9.AIDevKit.StopReason.Other
+  commentId: F:Glitch9.AIDevKit.StopReason.Other
+  id: Other
+  parent: Glitch9.AIDevKit.StopReason
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: StopReason.Other
+  fullName: Glitch9.AIDevKit.StopReason.Other
+  type: Field
+  source:
+    id: Other
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/StopReason.cs
+    startLine: 44
+  namespace: Glitch9.AIDevKit
+  summary: Unknown reason.
+  example: []
+  syntax:
+    content: Other = 6
+    return:
+      type: Glitch9.AIDevKit.StopReason
+references:
+- uid: Glitch9.AIDevKit.ChatCompletion
+  commentId: T:Glitch9.AIDevKit.ChatCompletion
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: ChatCompletion
+  nameWithType: ChatCompletion
+  fullName: Glitch9.AIDevKit.ChatCompletion
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.StopReason
+  commentId: T:Glitch9.AIDevKit.StopReason
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.StopReason.html
+  name: StopReason
+  nameWithType: StopReason
+  fullName: Glitch9.AIDevKit.StopReason

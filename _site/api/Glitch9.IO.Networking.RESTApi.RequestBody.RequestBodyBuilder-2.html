@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RequestBody.RequestBodyBuilder&lt;TBuilder, TReqBody&gt; | AI DevKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RequestBody.RequestBodyBuilder&lt;TBuilder, TReqBody&gt; | AI DevKit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AI DevKit">
+            AI DevKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2">
+
+
+
+  <h1 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2" class="text-break">
+Class RequestBody.RequestBodyBuilder&lt;TBuilder, TReqBody&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.IO.html">IO</a>.<a class="xref" href="Glitch9.IO.Networking.html">Networking</a>.<a class="xref" href="Glitch9.IO.Networking.RESTApi.html">RESTApi</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class RequestBody.RequestBodyBuilder&lt;TBuilder, TReqBody&gt; where TBuilder : RequestBody.RequestBodyBuilder&lt;TBuilder, TReqBody&gt; where TReqBody : RequestBody</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TBuilder</code></dt>
+    <dd></dd>
+    <dt><code>TReqBody</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RequestBody.RequestBodyBuilder&lt;TBuilder, TReqBody&gt;</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.GenerativeAIRequestBuilder-2.html">GenerativeAIRequest.GenerativeAIRequestBuilder&lt;TBuilder, TRequest&gt;</a></div>
+      <div><a class="xref" href="Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html">ModelRequest.ModelRequestBuilder&lt;TBuilder, TRequest&gt;</a></div>
+      <div><a class="xref" href="Glitch9.AIDevKit.Ollama.OllamaTextRequest.OllamaTextRequestBuilder-2.html">OllamaTextRequest.OllamaTextRequestBuilder&lt;TBuilder, TRequest&gt;</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNotSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfNotSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfNull__1___0_System_String_System_String_">LogExtensions.LogIfNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.LogExtensions.html#Glitch9_LogExtensions_LogIfSetInInspector__1___0_System_String_System_String_">LogExtensions.LogIfSetInInspector&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_ToSenderName_System_Object_">SystemExtensions.ToSenderName(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.TypeExtensions.html#Glitch9_TypeExtensions_IsInteger_System_Object_">TypeExtensions.IsInteger(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2__ctor_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.#ctor*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2__ctor" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.#ctor">
+  RequestBodyBuilder()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestBodyBuilder()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_Build_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.Build*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_Build_Glitch9_IO_Files_MIMEType_System_String_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.Build(Glitch9.IO.Files.MIMEType,System.String)">
+  Build(MIMEType, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TReqBody Build(MIMEType mimeType, string sender = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mimeType</code> <a class="xref" href="Glitch9.IO.Files.MIMEType.html">MIMEType</a></dt>
+    <dd></dd>
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TReqBody</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_Build_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.Build*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_Build_System_String_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.Build(System.String)">
+  Build(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TReqBody Build(string sender = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TReqBody</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetCancellationToken_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetCancellationToken*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetCancellationToken_System_Threading_CancellationToken_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetCancellationToken(System.Threading.CancellationToken)">
+  SetCancellationToken(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TBuilder SetCancellationToken(CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetIgnoreLogs_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetIgnoreLogs*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetIgnoreLogs_System_Boolean_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetIgnoreLogs(System.Boolean)">
+  SetIgnoreLogs(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TBuilder SetIgnoreLogs(bool ignoreLogs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ignoreLogs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetMaxRetry_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetMaxRetry*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetMaxRetry_System_Int32_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetMaxRetry(System.Int32)">
+  SetMaxRetry(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the number of retries of the request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TBuilder SetMaxRetry(int maxRetry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxRetry</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetOutputPath_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetOutputPath*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetOutputPath_System_String_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetOutputPath(System.String)">
+  SetOutputPath(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TBuilder SetOutputPath(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetRequestId_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetRequestId*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetRequestId_System_String_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetRequestId(System.String)">
+  SetRequestId(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set unique id for the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TBuilder SetRequestId(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetRetryDelay_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetRetryDelay*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetRetryDelay_System_Single_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetRetryDelay(System.Single)">
+  SetRetryDelay(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the delay of the retry in seconds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TBuilder SetRetryDelay(float retryDelayInSec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>retryDelayInSec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetSender_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetSender*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetSender_System_String_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetSender(System.String)">
+  SetSender(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the sender name of the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TBuilder SetSender(string sender)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetStreamHandler_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetStreamHandler*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetStreamHandler_Glitch9_IO_Networking_RESTApi_IStreamHandler_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetStreamHandler(Glitch9.IO.Networking.RESTApi.IStreamHandler)">
+  SetStreamHandler(IStreamHandler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the stream handler for the request. This is used to handle the stream data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TBuilder SetStreamHandler(IStreamHandler streamHandler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>streamHandler</code> <a class="xref" href="Glitch9.IO.Networking.RESTApi.IStreamHandler.html">IStreamHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetTimeout_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetTimeout*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetTimeout_System_Int32_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetTimeout(System.Int32)">
+  SetTimeout(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set custom timeout for the request in seconds.
+If not set, the RESTClient will use its default timeout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TBuilder SetTimeout(int timeoutInSec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeoutInSec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetTimeout_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetTimeout*"></a>
+
+  <h3 id="Glitch9_IO_Networking_RESTApi_RequestBody_RequestBodyBuilder_2_SetTimeout_System_TimeSpan_" data-uid="Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2.SetTimeout(System.TimeSpan)">
+  SetTimeout(TimeSpan)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set custom timeout for the request.
+If not set, the RESTClient will use its default timeout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TBuilder SetTimeout(TimeSpan timeout)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/IO/Networking/RESTApi/Models/RequestBody.cs/#L33" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

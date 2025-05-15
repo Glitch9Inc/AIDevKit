@@ -1,0 +1,533 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.OpenAI.RunBase
+  commentId: T:Glitch9.AIDevKit.OpenAI.RunBase
+  id: RunBase
+  parent: Glitch9.AIDevKit.OpenAI
+  children:
+  - Glitch9.AIDevKit.OpenAI.RunBase.AssistantId
+  - Glitch9.AIDevKit.OpenAI.RunBase.CancelledAt
+  - Glitch9.AIDevKit.OpenAI.RunBase.CompletedAt
+  - Glitch9.AIDevKit.OpenAI.RunBase.ExpiresAt
+  - Glitch9.AIDevKit.OpenAI.RunBase.FailedAt
+  - Glitch9.AIDevKit.OpenAI.RunBase.LastError
+  - Glitch9.AIDevKit.OpenAI.RunBase.StartedAt
+  - Glitch9.AIDevKit.OpenAI.RunBase.Status
+  - Glitch9.AIDevKit.OpenAI.RunBase.ThreadId
+  langs:
+  - csharp
+  - vb
+  name: RunBase
+  nameWithType: RunBase
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase
+  type: Class
+  source:
+    id: RunBase
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/RunBase.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Base class for <xref href="Glitch9.AIDevKit.OpenAI.Run" data-throw-if-not-resolved="false"></xref> and <xref href="Glitch9.AIDevKit.OpenAI.RunStep" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class RunBase : ModelResponse'
+    content.vb: Public Class RunBase Inherits ModelResponse
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.ModelResponse
+  derivedClasses:
+  - Glitch9.AIDevKit.OpenAI.Run
+  - Glitch9.AIDevKit.OpenAI.RunStep
+  inheritedMembers:
+  - Glitch9.AIDevKit.ModelResponse.Id
+  - Glitch9.AIDevKit.ModelResponse.Object
+  - Glitch9.AIDevKit.ModelResponse.Model
+  - Glitch9.AIDevKit.ModelResponse.CreatedAt
+  - Glitch9.AIDevKit.ModelResponse.Metadata
+  - Glitch9.AIDevKit.ModelResponse.Usage
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.AssistantId
+  commentId: P:Glitch9.AIDevKit.OpenAI.RunBase.AssistantId
+  id: AssistantId
+  parent: Glitch9.AIDevKit.OpenAI.RunBase
+  langs:
+  - csharp
+  - vb
+  name: AssistantId
+  nameWithType: RunBase.AssistantId
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.AssistantId
+  type: Property
+  source:
+    id: AssistantId
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/RunBase.cs
+    startLine: 13
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The ID of the AssistantObject used for execution of this run.
+  example: []
+  syntax:
+    content: public string AssistantId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AssistantId As String
+  overload: Glitch9.AIDevKit.OpenAI.RunBase.AssistantId*
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.ThreadId
+  commentId: P:Glitch9.AIDevKit.OpenAI.RunBase.ThreadId
+  id: ThreadId
+  parent: Glitch9.AIDevKit.OpenAI.RunBase
+  langs:
+  - csharp
+  - vb
+  name: ThreadId
+  nameWithType: RunBase.ThreadId
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.ThreadId
+  type: Property
+  source:
+    id: ThreadId
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/RunBase.cs
+    startLine: 18
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The ID of the thread that was executed on as a part of this run.
+  example: []
+  syntax:
+    content: public string ThreadId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ThreadId As String
+  overload: Glitch9.AIDevKit.OpenAI.RunBase.ThreadId*
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.Status
+  commentId: P:Glitch9.AIDevKit.OpenAI.RunBase.Status
+  id: Status
+  parent: Glitch9.AIDevKit.OpenAI.RunBase
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: RunBase.Status
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.Status
+  type: Property
+  source:
+    id: Status
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/RunBase.cs
+    startLine: 23
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The status of the run, which can be either Queued, In_Progress, Requires_Action, Cancelling, Cancelled, Failed, Completed, or Expired.
+  example: []
+  syntax:
+    content: public RunStatus? Status { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.AIDevKit.OpenAI.RunStatus}
+    content.vb: Public Property Status As RunStatus?
+  overload: Glitch9.AIDevKit.OpenAI.RunBase.Status*
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.ExpiresAt
+  commentId: P:Glitch9.AIDevKit.OpenAI.RunBase.ExpiresAt
+  id: ExpiresAt
+  parent: Glitch9.AIDevKit.OpenAI.RunBase
+  langs:
+  - csharp
+  - vb
+  name: ExpiresAt
+  nameWithType: RunBase.ExpiresAt
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.ExpiresAt
+  type: Property
+  source:
+    id: ExpiresAt
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/RunBase.cs
+    startLine: 28
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The Unix timestamp (in seconds) for when the run will expire.
+  example: []
+  syntax:
+    content: public UnixTime? ExpiresAt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.UnixTime}
+    content.vb: Public Property ExpiresAt As UnixTime?
+  overload: Glitch9.AIDevKit.OpenAI.RunBase.ExpiresAt*
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.StartedAt
+  commentId: P:Glitch9.AIDevKit.OpenAI.RunBase.StartedAt
+  id: StartedAt
+  parent: Glitch9.AIDevKit.OpenAI.RunBase
+  langs:
+  - csharp
+  - vb
+  name: StartedAt
+  nameWithType: RunBase.StartedAt
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.StartedAt
+  type: Property
+  source:
+    id: StartedAt
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/RunBase.cs
+    startLine: 33
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The Unix timestamp (in seconds) for when the run was started.
+  example: []
+  syntax:
+    content: public UnixTime? StartedAt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.UnixTime}
+    content.vb: Public Property StartedAt As UnixTime?
+  overload: Glitch9.AIDevKit.OpenAI.RunBase.StartedAt*
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.CancelledAt
+  commentId: P:Glitch9.AIDevKit.OpenAI.RunBase.CancelledAt
+  id: CancelledAt
+  parent: Glitch9.AIDevKit.OpenAI.RunBase
+  langs:
+  - csharp
+  - vb
+  name: CancelledAt
+  nameWithType: RunBase.CancelledAt
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.CancelledAt
+  type: Property
+  source:
+    id: CancelledAt
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/RunBase.cs
+    startLine: 38
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The Unix timestamp (in seconds) for when the run was cancelled.
+  example: []
+  syntax:
+    content: public UnixTime? CancelledAt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.UnixTime}
+    content.vb: Public Property CancelledAt As UnixTime?
+  overload: Glitch9.AIDevKit.OpenAI.RunBase.CancelledAt*
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.CompletedAt
+  commentId: P:Glitch9.AIDevKit.OpenAI.RunBase.CompletedAt
+  id: CompletedAt
+  parent: Glitch9.AIDevKit.OpenAI.RunBase
+  langs:
+  - csharp
+  - vb
+  name: CompletedAt
+  nameWithType: RunBase.CompletedAt
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.CompletedAt
+  type: Property
+  source:
+    id: CompletedAt
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/RunBase.cs
+    startLine: 43
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The Unix timestamp (in seconds) for when the run was Completed.
+  example: []
+  syntax:
+    content: public UnixTime? CompletedAt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.UnixTime}
+    content.vb: Public Property CompletedAt As UnixTime?
+  overload: Glitch9.AIDevKit.OpenAI.RunBase.CompletedAt*
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.FailedAt
+  commentId: P:Glitch9.AIDevKit.OpenAI.RunBase.FailedAt
+  id: FailedAt
+  parent: Glitch9.AIDevKit.OpenAI.RunBase
+  langs:
+  - csharp
+  - vb
+  name: FailedAt
+  nameWithType: RunBase.FailedAt
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.FailedAt
+  type: Property
+  source:
+    id: FailedAt
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/RunBase.cs
+    startLine: 48
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The Unix timestamp (in seconds) for when the run Failed.
+  example: []
+  syntax:
+    content: public UnixTime? FailedAt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Glitch9.UnixTime}
+    content.vb: Public Property FailedAt As UnixTime?
+  overload: Glitch9.AIDevKit.OpenAI.RunBase.FailedAt*
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.LastError
+  commentId: P:Glitch9.AIDevKit.OpenAI.RunBase.LastError
+  id: LastError
+  parent: Glitch9.AIDevKit.OpenAI.RunBase
+  langs:
+  - csharp
+  - vb
+  name: LastError
+  nameWithType: RunBase.LastError
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.LastError
+  type: Property
+  source:
+    id: LastError
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/RunBase.cs
+    startLine: 53
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The last error associated with this run. Will be null if there are no errors.
+  example: []
+  syntax:
+    content: public ErrorResponse LastError { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ErrorResponse
+    content.vb: Public Property LastError As ErrorResponse
+  overload: Glitch9.AIDevKit.OpenAI.RunBase.LastError*
+references:
+- uid: Glitch9.AIDevKit.OpenAI.Run
+  commentId: T:Glitch9.AIDevKit.OpenAI.Run
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.Run.html
+  name: Run
+  nameWithType: Run
+  fullName: Glitch9.AIDevKit.OpenAI.Run
+- uid: Glitch9.AIDevKit.OpenAI.RunStep
+  commentId: T:Glitch9.AIDevKit.OpenAI.RunStep
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.RunStep.html
+  name: RunStep
+  nameWithType: RunStep
+  fullName: Glitch9.AIDevKit.OpenAI.RunStep
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.ModelResponse
+  commentId: T:Glitch9.AIDevKit.ModelResponse
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelResponse.html
+  name: ModelResponse
+  nameWithType: ModelResponse
+  fullName: Glitch9.AIDevKit.ModelResponse
+- uid: Glitch9.AIDevKit.ModelResponse.Id
+  commentId: P:Glitch9.AIDevKit.ModelResponse.Id
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Id
+  name: Id
+  nameWithType: ModelResponse.Id
+  fullName: Glitch9.AIDevKit.ModelResponse.Id
+- uid: Glitch9.AIDevKit.ModelResponse.Object
+  commentId: P:Glitch9.AIDevKit.ModelResponse.Object
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Object
+  name: Object
+  nameWithType: ModelResponse.Object
+  fullName: Glitch9.AIDevKit.ModelResponse.Object
+- uid: Glitch9.AIDevKit.ModelResponse.Model
+  commentId: P:Glitch9.AIDevKit.ModelResponse.Model
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Model
+  name: Model
+  nameWithType: ModelResponse.Model
+  fullName: Glitch9.AIDevKit.ModelResponse.Model
+- uid: Glitch9.AIDevKit.ModelResponse.CreatedAt
+  commentId: P:Glitch9.AIDevKit.ModelResponse.CreatedAt
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_CreatedAt
+  name: CreatedAt
+  nameWithType: ModelResponse.CreatedAt
+  fullName: Glitch9.AIDevKit.ModelResponse.CreatedAt
+- uid: Glitch9.AIDevKit.ModelResponse.Metadata
+  commentId: P:Glitch9.AIDevKit.ModelResponse.Metadata
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Metadata
+  name: Metadata
+  nameWithType: ModelResponse.Metadata
+  fullName: Glitch9.AIDevKit.ModelResponse.Metadata
+- uid: Glitch9.AIDevKit.ModelResponse.Usage
+  commentId: P:Glitch9.AIDevKit.ModelResponse.Usage
+  parent: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Usage
+  name: Usage
+  nameWithType: ModelResponse.Usage
+  fullName: Glitch9.AIDevKit.ModelResponse.Usage
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.AssistantId*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.RunBase.AssistantId
+  href: Glitch9.AIDevKit.OpenAI.RunBase.html#Glitch9_AIDevKit_OpenAI_RunBase_AssistantId
+  name: AssistantId
+  nameWithType: RunBase.AssistantId
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.AssistantId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.ThreadId*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.RunBase.ThreadId
+  href: Glitch9.AIDevKit.OpenAI.RunBase.html#Glitch9_AIDevKit_OpenAI_RunBase_ThreadId
+  name: ThreadId
+  nameWithType: RunBase.ThreadId
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.ThreadId
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.Status*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.RunBase.Status
+  href: Glitch9.AIDevKit.OpenAI.RunBase.html#Glitch9_AIDevKit_OpenAI_RunBase_Status
+  name: Status
+  nameWithType: RunBase.Status
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.Status
+- uid: System.Nullable{Glitch9.AIDevKit.OpenAI.RunStatus}
+  commentId: T:System.Nullable{Glitch9.AIDevKit.OpenAI.RunStatus}
+  parent: System
+  definition: System.Nullable`1
+  href: Glitch9.AIDevKit.OpenAI.RunStatus.html
+  name: RunStatus?
+  nameWithType: RunStatus?
+  fullName: Glitch9.AIDevKit.OpenAI.RunStatus?
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.RunStatus
+    name: RunStatus
+    href: Glitch9.AIDevKit.OpenAI.RunStatus.html
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.RunStatus
+    name: RunStatus
+    href: Glitch9.AIDevKit.OpenAI.RunStatus.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.ExpiresAt*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.RunBase.ExpiresAt
+  href: Glitch9.AIDevKit.OpenAI.RunBase.html#Glitch9_AIDevKit_OpenAI_RunBase_ExpiresAt
+  name: ExpiresAt
+  nameWithType: RunBase.ExpiresAt
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.ExpiresAt
+- uid: System.Nullable{Glitch9.UnixTime}
+  commentId: T:System.Nullable{Glitch9.UnixTime}
+  parent: System
+  definition: System.Nullable`1
+  name: UnixTime?
+  nameWithType: UnixTime?
+  fullName: Glitch9.UnixTime?
+  spec.csharp:
+  - uid: Glitch9.UnixTime
+    name: UnixTime
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.UnixTime
+    name: UnixTime
+  - name: '?'
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.StartedAt*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.RunBase.StartedAt
+  href: Glitch9.AIDevKit.OpenAI.RunBase.html#Glitch9_AIDevKit_OpenAI_RunBase_StartedAt
+  name: StartedAt
+  nameWithType: RunBase.StartedAt
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.StartedAt
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.CancelledAt*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.RunBase.CancelledAt
+  href: Glitch9.AIDevKit.OpenAI.RunBase.html#Glitch9_AIDevKit_OpenAI_RunBase_CancelledAt
+  name: CancelledAt
+  nameWithType: RunBase.CancelledAt
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.CancelledAt
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.CompletedAt*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.RunBase.CompletedAt
+  href: Glitch9.AIDevKit.OpenAI.RunBase.html#Glitch9_AIDevKit_OpenAI_RunBase_CompletedAt
+  name: CompletedAt
+  nameWithType: RunBase.CompletedAt
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.CompletedAt
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.FailedAt*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.RunBase.FailedAt
+  href: Glitch9.AIDevKit.OpenAI.RunBase.html#Glitch9_AIDevKit_OpenAI_RunBase_FailedAt
+  name: FailedAt
+  nameWithType: RunBase.FailedAt
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.FailedAt
+- uid: Glitch9.AIDevKit.OpenAI.RunBase.LastError*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.RunBase.LastError
+  href: Glitch9.AIDevKit.OpenAI.RunBase.html#Glitch9_AIDevKit_OpenAI_RunBase_LastError
+  name: LastError
+  nameWithType: RunBase.LastError
+  fullName: Glitch9.AIDevKit.OpenAI.RunBase.LastError
+- uid: Glitch9.AIDevKit.ErrorResponse
+  commentId: T:Glitch9.AIDevKit.ErrorResponse
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ErrorResponse.html
+  name: ErrorResponse
+  nameWithType: ErrorResponse
+  fullName: Glitch9.AIDevKit.ErrorResponse

@@ -1,0 +1,1656 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ChatSession
+  commentId: T:Glitch9.AIDevKit.ChatSession
+  id: ChatSession
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.ChatSession.#ctor
+  - Glitch9.AIDevKit.ChatSession.AutoSave
+  - Glitch9.AIDevKit.ChatSession.ClearMessages
+  - Glitch9.AIDevKit.ChatSession.CreateFile(System.String,System.String,System.String)
+  - Glitch9.AIDevKit.ChatSession.CreatedAt
+  - Glitch9.AIDevKit.ChatSession.DeleteFile
+  - Glitch9.AIDevKit.ChatSession.DeleteFile(System.String)
+  - Glitch9.AIDevKit.ChatSession.EnterMessageAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)
+  - Glitch9.AIDevKit.ChatSession.Equals(Glitch9.AIDevKit.ChatSession)
+  - Glitch9.AIDevKit.ChatSession.GetHashCode
+  - Glitch9.AIDevKit.ChatSession.Id
+  - Glitch9.AIDevKit.ChatSession.Last
+  - Glitch9.AIDevKit.ChatSession.LastException
+  - Glitch9.AIDevKit.ChatSession.LastSummaryUpdate
+  - Glitch9.AIDevKit.ChatSession.LoadFile(System.String)
+  - Glitch9.AIDevKit.ChatSession.MaxContextMessages
+  - Glitch9.AIDevKit.ChatSession.Messages
+  - Glitch9.AIDevKit.ChatSession.Model
+  - Glitch9.AIDevKit.ChatSession.ModelOptions
+  - Glitch9.AIDevKit.ChatSession.ModerationOptions
+  - Glitch9.AIDevKit.ChatSession.Name
+  - Glitch9.AIDevKit.ChatSession.ReasoningOptions
+  - Glitch9.AIDevKit.ChatSession.RecentMessages
+  - Glitch9.AIDevKit.ChatSession.Rewind
+  - Glitch9.AIDevKit.ChatSession.SaveFile(System.String)
+  - Glitch9.AIDevKit.ChatSession.SaveFileAsync(System.String)
+  - Glitch9.AIDevKit.ChatSession.SpeechOutputOptions
+  - Glitch9.AIDevKit.ChatSession.StartingMessage
+  - Glitch9.AIDevKit.ChatSession.Stream
+  - Glitch9.AIDevKit.ChatSession.Summary
+  - Glitch9.AIDevKit.ChatSession.SummaryModel
+  - Glitch9.AIDevKit.ChatSession.SystemInstruction
+  - Glitch9.AIDevKit.ChatSession.ToString
+  - Glitch9.AIDevKit.ChatSession.UpdatedAt
+  - Glitch9.AIDevKit.ChatSession.WebSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: ChatSession
+  nameWithType: ChatSession
+  fullName: Glitch9.AIDevKit.ChatSession
+  type: Class
+  source:
+    id: ChatSession
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 23
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Represents a single chat session, including its metadata, settings, messages, and serialization logic.
+
+    Provides support for saving, loading, summarizing, and auto-saving the session.
+  example: []
+  syntax:
+    content: public class ChatSession
+    content.vb: Public Class ChatSession
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Glitch9.AIDevKit.ChatSession.Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatMessage)
+- uid: Glitch9.AIDevKit.ChatSession.CreateFile(System.String,System.String,System.String)
+  commentId: M:Glitch9.AIDevKit.ChatSession.CreateFile(System.String,System.String,System.String)
+  id: CreateFile(System.String,System.String,System.String)
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: CreateFile(string, string, string)
+  nameWithType: ChatSession.CreateFile(string, string, string)
+  fullName: Glitch9.AIDevKit.ChatSession.CreateFile(string, string, string)
+  type: Method
+  source:
+    id: CreateFile
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 26
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ChatSession CreateFile(string id = null, string name = null, string startingMessage = null)
+    parameters:
+    - id: id
+      type: System.String
+    - id: name
+      type: System.String
+    - id: startingMessage
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.ChatSession
+    content.vb: Public Shared Function CreateFile(id As String = Nothing, name As String = Nothing, startingMessage As String = Nothing) As ChatSession
+  overload: Glitch9.AIDevKit.ChatSession.CreateFile*
+  nameWithType.vb: ChatSession.CreateFile(String, String, String)
+  fullName.vb: Glitch9.AIDevKit.ChatSession.CreateFile(String, String, String)
+  name.vb: CreateFile(String, String, String)
+- uid: Glitch9.AIDevKit.ChatSession.LoadFile(System.String)
+  commentId: M:Glitch9.AIDevKit.ChatSession.LoadFile(System.String)
+  id: LoadFile(System.String)
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: LoadFile(string)
+  nameWithType: ChatSession.LoadFile(string)
+  fullName: Glitch9.AIDevKit.ChatSession.LoadFile(string)
+  type: Method
+  source:
+    id: LoadFile
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static ChatSession LoadFile(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.ChatSession
+    content.vb: Public Shared Function LoadFile(id As String) As ChatSession
+  overload: Glitch9.AIDevKit.ChatSession.LoadFile*
+  nameWithType.vb: ChatSession.LoadFile(String)
+  fullName.vb: Glitch9.AIDevKit.ChatSession.LoadFile(String)
+  name.vb: LoadFile(String)
+- uid: Glitch9.AIDevKit.ChatSession.DeleteFile(System.String)
+  commentId: M:Glitch9.AIDevKit.ChatSession.DeleteFile(System.String)
+  id: DeleteFile(System.String)
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: DeleteFile(string)
+  nameWithType: ChatSession.DeleteFile(string)
+  fullName: Glitch9.AIDevKit.ChatSession.DeleteFile(string)
+  type: Method
+  source:
+    id: DeleteFile
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 32
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static bool DeleteFile(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function DeleteFile(id As String) As Boolean
+  overload: Glitch9.AIDevKit.ChatSession.DeleteFile*
+  nameWithType.vb: ChatSession.DeleteFile(String)
+  fullName.vb: Glitch9.AIDevKit.ChatSession.DeleteFile(String)
+  name.vb: DeleteFile(String)
+- uid: Glitch9.AIDevKit.ChatSession.Id
+  commentId: P:Glitch9.AIDevKit.ChatSession.Id
+  id: Id
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ChatSession.Id
+  fullName: Glitch9.AIDevKit.ChatSession.Id
+  type: Property
+  source:
+    id: Id
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 40
+  namespace: Glitch9.AIDevKit
+  summary: Unique identifier of the chat session.
+  example: []
+  syntax:
+    content: public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Glitch9.AIDevKit.ChatSession.Id*
+- uid: Glitch9.AIDevKit.ChatSession.Name
+  commentId: P:Glitch9.AIDevKit.ChatSession.Name
+  id: Name
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ChatSession.Name
+  fullName: Glitch9.AIDevKit.ChatSession.Name
+  type: Property
+  source:
+    id: Name
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 45
+  namespace: Glitch9.AIDevKit
+  summary: Name of the chat session.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Glitch9.AIDevKit.ChatSession.Name*
+- uid: Glitch9.AIDevKit.ChatSession.CreatedAt
+  commentId: P:Glitch9.AIDevKit.ChatSession.CreatedAt
+  id: CreatedAt
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: ChatSession.CreatedAt
+  fullName: Glitch9.AIDevKit.ChatSession.CreatedAt
+  type: Property
+  source:
+    id: CreatedAt
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 50
+  namespace: Glitch9.AIDevKit
+  summary: Creation timestamp.
+  example: []
+  syntax:
+    content: public UnixTime CreatedAt { get; }
+    parameters: []
+    return:
+      type: Glitch9.UnixTime
+    content.vb: Public Property CreatedAt As UnixTime
+  overload: Glitch9.AIDevKit.ChatSession.CreatedAt*
+- uid: Glitch9.AIDevKit.ChatSession.UpdatedAt
+  commentId: P:Glitch9.AIDevKit.ChatSession.UpdatedAt
+  id: UpdatedAt
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: UpdatedAt
+  nameWithType: ChatSession.UpdatedAt
+  fullName: Glitch9.AIDevKit.ChatSession.UpdatedAt
+  type: Property
+  source:
+    id: UpdatedAt
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 55
+  namespace: Glitch9.AIDevKit
+  summary: Last update timestamp.
+  example: []
+  syntax:
+    content: public UnixTime UpdatedAt { get; }
+    parameters: []
+    return:
+      type: Glitch9.UnixTime
+    content.vb: Public Property UpdatedAt As UnixTime
+  overload: Glitch9.AIDevKit.ChatSession.UpdatedAt*
+- uid: Glitch9.AIDevKit.ChatSession.AutoSave
+  commentId: P:Glitch9.AIDevKit.ChatSession.AutoSave
+  id: AutoSave
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: AutoSave
+  nameWithType: ChatSession.AutoSave
+  fullName: Glitch9.AIDevKit.ChatSession.AutoSave
+  type: Property
+  source:
+    id: AutoSave
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 62
+  namespace: Glitch9.AIDevKit
+  summary: Whether the session should automatically save on update.
+  example: []
+  syntax:
+    content: public bool AutoSave { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AutoSave As Boolean
+  overload: Glitch9.AIDevKit.ChatSession.AutoSave*
+- uid: Glitch9.AIDevKit.ChatSession.Stream
+  commentId: P:Glitch9.AIDevKit.ChatSession.Stream
+  id: Stream
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: ChatSession.Stream
+  fullName: Glitch9.AIDevKit.ChatSession.Stream
+  type: Property
+  source:
+    id: Stream
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 67
+  namespace: Glitch9.AIDevKit
+  summary: Whether streaming responses are enabled.
+  example: []
+  syntax:
+    content: public bool Stream { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Stream As Boolean
+  overload: Glitch9.AIDevKit.ChatSession.Stream*
+- uid: Glitch9.AIDevKit.ChatSession.MaxContextMessages
+  commentId: P:Glitch9.AIDevKit.ChatSession.MaxContextMessages
+  id: MaxContextMessages
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: MaxContextMessages
+  nameWithType: ChatSession.MaxContextMessages
+  fullName: Glitch9.AIDevKit.ChatSession.MaxContextMessages
+  type: Property
+  source:
+    id: MaxContextMessages
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 72
+  namespace: Glitch9.AIDevKit
+  summary: Maximum number of context messages to use before summarizing.
+  example: []
+  syntax:
+    content: public int MaxContextMessages { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxContextMessages As Integer
+  overload: Glitch9.AIDevKit.ChatSession.MaxContextMessages*
+- uid: Glitch9.AIDevKit.ChatSession.Model
+  commentId: P:Glitch9.AIDevKit.ChatSession.Model
+  id: Model
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: ChatSession.Model
+  fullName: Glitch9.AIDevKit.ChatSession.Model
+  type: Property
+  source:
+    id: Model
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 77
+  namespace: Glitch9.AIDevKit
+  summary: The AI model used for the chat.
+  example: []
+  syntax:
+    content: public Model Model { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Model
+    content.vb: Public Property Model As Model
+  overload: Glitch9.AIDevKit.ChatSession.Model*
+- uid: Glitch9.AIDevKit.ChatSession.ModelOptions
+  commentId: P:Glitch9.AIDevKit.ChatSession.ModelOptions
+  id: ModelOptions
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: ModelOptions
+  nameWithType: ChatSession.ModelOptions
+  fullName: Glitch9.AIDevKit.ChatSession.ModelOptions
+  type: Property
+  source:
+    id: ModelOptions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 82
+  namespace: Glitch9.AIDevKit
+  summary: Optional parameters for model behavior.
+  example: []
+  syntax:
+    content: public ModelOptions ModelOptions { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ModelOptions
+    content.vb: Public Property ModelOptions As ModelOptions
+  overload: Glitch9.AIDevKit.ChatSession.ModelOptions*
+- uid: Glitch9.AIDevKit.ChatSession.ReasoningOptions
+  commentId: P:Glitch9.AIDevKit.ChatSession.ReasoningOptions
+  id: ReasoningOptions
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: ReasoningOptions
+  nameWithType: ChatSession.ReasoningOptions
+  fullName: Glitch9.AIDevKit.ChatSession.ReasoningOptions
+  type: Property
+  source:
+    id: ReasoningOptions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 87
+  namespace: Glitch9.AIDevKit
+  summary: Additional reasoning configuration.
+  example: []
+  syntax:
+    content: public ReasoningOptions ReasoningOptions { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ReasoningOptions
+    content.vb: Public Property ReasoningOptions As ReasoningOptions
+  overload: Glitch9.AIDevKit.ChatSession.ReasoningOptions*
+- uid: Glitch9.AIDevKit.ChatSession.WebSearchOptions
+  commentId: P:Glitch9.AIDevKit.ChatSession.WebSearchOptions
+  id: WebSearchOptions
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: WebSearchOptions
+  nameWithType: ChatSession.WebSearchOptions
+  fullName: Glitch9.AIDevKit.ChatSession.WebSearchOptions
+  type: Property
+  source:
+    id: WebSearchOptions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 92
+  namespace: Glitch9.AIDevKit
+  summary: Settings for web search integration.
+  example: []
+  syntax:
+    content: public WebSearchOptions WebSearchOptions { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.WebSearchOptions
+    content.vb: Public Property WebSearchOptions As WebSearchOptions
+  overload: Glitch9.AIDevKit.ChatSession.WebSearchOptions*
+- uid: Glitch9.AIDevKit.ChatSession.SpeechOutputOptions
+  commentId: P:Glitch9.AIDevKit.ChatSession.SpeechOutputOptions
+  id: SpeechOutputOptions
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: SpeechOutputOptions
+  nameWithType: ChatSession.SpeechOutputOptions
+  fullName: Glitch9.AIDevKit.ChatSession.SpeechOutputOptions
+  type: Property
+  source:
+    id: SpeechOutputOptions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 97
+  namespace: Glitch9.AIDevKit
+  summary: Settings for speech output.
+  example: []
+  syntax:
+    content: public SpeechOutputOptions SpeechOutputOptions { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.SpeechOutputOptions
+    content.vb: Public Property SpeechOutputOptions As SpeechOutputOptions
+  overload: Glitch9.AIDevKit.ChatSession.SpeechOutputOptions*
+- uid: Glitch9.AIDevKit.ChatSession.ModerationOptions
+  commentId: P:Glitch9.AIDevKit.ChatSession.ModerationOptions
+  id: ModerationOptions
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: ModerationOptions
+  nameWithType: ChatSession.ModerationOptions
+  fullName: Glitch9.AIDevKit.ChatSession.ModerationOptions
+  type: Property
+  source:
+    id: ModerationOptions
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 102
+  namespace: Glitch9.AIDevKit
+  summary: Moderation settings.
+  example: []
+  syntax:
+    content: public ModerationOptions ModerationOptions { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ModerationOptions
+    content.vb: Public Property ModerationOptions As ModerationOptions
+  overload: Glitch9.AIDevKit.ChatSession.ModerationOptions*
+- uid: Glitch9.AIDevKit.ChatSession.SystemInstruction
+  commentId: P:Glitch9.AIDevKit.ChatSession.SystemInstruction
+  id: SystemInstruction
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: SystemInstruction
+  nameWithType: ChatSession.SystemInstruction
+  fullName: Glitch9.AIDevKit.ChatSession.SystemInstruction
+  type: Property
+  source:
+    id: SystemInstruction
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 107
+  namespace: Glitch9.AIDevKit
+  summary: System instruction for the assistant.
+  example: []
+  syntax:
+    content: public string SystemInstruction { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SystemInstruction As String
+  overload: Glitch9.AIDevKit.ChatSession.SystemInstruction*
+- uid: Glitch9.AIDevKit.ChatSession.StartingMessage
+  commentId: P:Glitch9.AIDevKit.ChatSession.StartingMessage
+  id: StartingMessage
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: StartingMessage
+  nameWithType: ChatSession.StartingMessage
+  fullName: Glitch9.AIDevKit.ChatSession.StartingMessage
+  type: Property
+  source:
+    id: StartingMessage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 112
+  namespace: Glitch9.AIDevKit
+  summary: The message shown to the user at the start of the session.
+  example: []
+  syntax:
+    content: public string StartingMessage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StartingMessage As String
+  overload: Glitch9.AIDevKit.ChatSession.StartingMessage*
+- uid: Glitch9.AIDevKit.ChatSession.SummaryModel
+  commentId: P:Glitch9.AIDevKit.ChatSession.SummaryModel
+  id: SummaryModel
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: SummaryModel
+  nameWithType: ChatSession.SummaryModel
+  fullName: Glitch9.AIDevKit.ChatSession.SummaryModel
+  type: Property
+  source:
+    id: SummaryModel
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 119
+  namespace: Glitch9.AIDevKit
+  summary: Model used to generate conversation summaries.
+  example: []
+  syntax:
+    content: public Model SummaryModel { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Model
+    content.vb: Public Property SummaryModel As Model
+  overload: Glitch9.AIDevKit.ChatSession.SummaryModel*
+- uid: Glitch9.AIDevKit.ChatSession.Summary
+  commentId: P:Glitch9.AIDevKit.ChatSession.Summary
+  id: Summary
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: Summary
+  nameWithType: ChatSession.Summary
+  fullName: Glitch9.AIDevKit.ChatSession.Summary
+  type: Property
+  source:
+    id: Summary
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 124
+  namespace: Glitch9.AIDevKit
+  summary: The current summary of the session.
+  example: []
+  syntax:
+    content: public string Summary { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Summary As String
+  overload: Glitch9.AIDevKit.ChatSession.Summary*
+- uid: Glitch9.AIDevKit.ChatSession.LastSummaryUpdate
+  commentId: P:Glitch9.AIDevKit.ChatSession.LastSummaryUpdate
+  id: LastSummaryUpdate
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: LastSummaryUpdate
+  nameWithType: ChatSession.LastSummaryUpdate
+  fullName: Glitch9.AIDevKit.ChatSession.LastSummaryUpdate
+  type: Property
+  source:
+    id: LastSummaryUpdate
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 129
+  namespace: Glitch9.AIDevKit
+  summary: Time when the summary was last updated.
+  example: []
+  syntax:
+    content: public UnixTime LastSummaryUpdate { get; }
+    parameters: []
+    return:
+      type: Glitch9.UnixTime
+    content.vb: Public Property LastSummaryUpdate As UnixTime
+  overload: Glitch9.AIDevKit.ChatSession.LastSummaryUpdate*
+- uid: Glitch9.AIDevKit.ChatSession.Messages
+  commentId: P:Glitch9.AIDevKit.ChatSession.Messages
+  id: Messages
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: Messages
+  nameWithType: ChatSession.Messages
+  fullName: Glitch9.AIDevKit.ChatSession.Messages
+  type: Property
+  source:
+    id: Messages
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 139
+  namespace: Glitch9.AIDevKit
+  summary: List of all chat messages in the session.
+  example: []
+  syntax:
+    content: public List<ChatMessage> Messages { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Glitch9.AIDevKit.ChatMessage}
+    content.vb: Public Property Messages As List(Of ChatMessage)
+  overload: Glitch9.AIDevKit.ChatSession.Messages*
+- uid: Glitch9.AIDevKit.ChatSession.RecentMessages
+  commentId: P:Glitch9.AIDevKit.ChatSession.RecentMessages
+  id: RecentMessages
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: RecentMessages
+  nameWithType: ChatSession.RecentMessages
+  fullName: Glitch9.AIDevKit.ChatSession.RecentMessages
+  type: Property
+  source:
+    id: RecentMessages
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 179
+  namespace: Glitch9.AIDevKit
+  summary: List of recent chat messages used for summarization.
+  example: []
+  syntax:
+    content: public List<ChatMessage> RecentMessages { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Glitch9.AIDevKit.ChatMessage}
+    content.vb: Public ReadOnly Property RecentMessages As List(Of ChatMessage)
+  overload: Glitch9.AIDevKit.ChatSession.RecentMessages*
+- uid: Glitch9.AIDevKit.ChatSession.Last
+  commentId: P:Glitch9.AIDevKit.ChatSession.Last
+  id: Last
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: Last
+  nameWithType: ChatSession.Last
+  fullName: Glitch9.AIDevKit.ChatSession.Last
+  type: Property
+  source:
+    id: Last
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 184
+  namespace: Glitch9.AIDevKit
+  summary: The last message received from the assistant.
+  example: []
+  syntax:
+    content: public ChatCompletion Last { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ChatCompletion
+    content.vb: Public ReadOnly Property Last As ChatCompletion
+  overload: Glitch9.AIDevKit.ChatSession.Last*
+- uid: Glitch9.AIDevKit.ChatSession.LastException
+  commentId: P:Glitch9.AIDevKit.ChatSession.LastException
+  id: LastException
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: LastException
+  nameWithType: ChatSession.LastException
+  fullName: Glitch9.AIDevKit.ChatSession.LastException
+  type: Property
+  source:
+    id: LastException
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 185
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public Exception LastException { get; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public Property LastException As Exception
+  overload: Glitch9.AIDevKit.ChatSession.LastException*
+- uid: Glitch9.AIDevKit.ChatSession.#ctor
+  commentId: M:Glitch9.AIDevKit.ChatSession.#ctor
+  id: '#ctor'
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: ChatSession()
+  nameWithType: ChatSession.ChatSession()
+  fullName: Glitch9.AIDevKit.ChatSession.ChatSession()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 197
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public ChatSession()
+    content.vb: Public Sub New()
+  overload: Glitch9.AIDevKit.ChatSession.#ctor*
+  nameWithType.vb: ChatSession.New()
+  fullName.vb: Glitch9.AIDevKit.ChatSession.New()
+  name.vb: New()
+- uid: Glitch9.AIDevKit.ChatSession.EnterMessageAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)
+  commentId: M:Glitch9.AIDevKit.ChatSession.EnterMessageAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)
+  id: EnterMessageAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: EnterMessageAsync(ChatMessage, ChatStreamHandler)
+  nameWithType: ChatSession.EnterMessageAsync(ChatMessage, ChatStreamHandler)
+  fullName: Glitch9.AIDevKit.ChatSession.EnterMessageAsync(Glitch9.AIDevKit.ChatMessage, Glitch9.AIDevKit.ChatStreamHandler)
+  type: Method
+  source:
+    id: EnterMessageAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 219
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public UniTask<AssistantMessage> EnterMessageAsync(ChatMessage inputMessage, ChatStreamHandler streamHandler = null)
+    parameters:
+    - id: inputMessage
+      type: Glitch9.AIDevKit.ChatMessage
+    - id: streamHandler
+      type: Glitch9.AIDevKit.ChatStreamHandler
+    return:
+      type: UniTask{Glitch9.AIDevKit.AssistantMessage}
+    content.vb: Public Function EnterMessageAsync(inputMessage As ChatMessage, streamHandler As ChatStreamHandler = Nothing) As UniTask(Of AssistantMessage)
+  overload: Glitch9.AIDevKit.ChatSession.EnterMessageAsync*
+- uid: Glitch9.AIDevKit.ChatSession.ClearMessages
+  commentId: M:Glitch9.AIDevKit.ChatSession.ClearMessages
+  id: ClearMessages
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: ClearMessages()
+  nameWithType: ChatSession.ClearMessages()
+  fullName: Glitch9.AIDevKit.ChatSession.ClearMessages()
+  type: Method
+  source:
+    id: ClearMessages
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 276
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public void ClearMessages()
+    content.vb: Public Sub ClearMessages()
+  overload: Glitch9.AIDevKit.ChatSession.ClearMessages*
+- uid: Glitch9.AIDevKit.ChatSession.SaveFile(System.String)
+  commentId: M:Glitch9.AIDevKit.ChatSession.SaveFile(System.String)
+  id: SaveFile(System.String)
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: SaveFile(string)
+  nameWithType: ChatSession.SaveFile(string)
+  fullName: Glitch9.AIDevKit.ChatSession.SaveFile(string)
+  type: Method
+  source:
+    id: SaveFile
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 283
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public void SaveFile(string customPath = null)
+    parameters:
+    - id: customPath
+      type: System.String
+    content.vb: Public Sub SaveFile(customPath As String = Nothing)
+  overload: Glitch9.AIDevKit.ChatSession.SaveFile*
+  nameWithType.vb: ChatSession.SaveFile(String)
+  fullName.vb: Glitch9.AIDevKit.ChatSession.SaveFile(String)
+  name.vb: SaveFile(String)
+- uid: Glitch9.AIDevKit.ChatSession.SaveFileAsync(System.String)
+  commentId: M:Glitch9.AIDevKit.ChatSession.SaveFileAsync(System.String)
+  id: SaveFileAsync(System.String)
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: SaveFileAsync(string)
+  nameWithType: ChatSession.SaveFileAsync(string)
+  fullName: Glitch9.AIDevKit.ChatSession.SaveFileAsync(string)
+  type: Method
+  source:
+    id: SaveFileAsync
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 286
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public UniTask SaveFileAsync(string customPath = null)
+    parameters:
+    - id: customPath
+      type: System.String
+    return:
+      type: UniTask
+    content.vb: Public Function SaveFileAsync(customPath As String = Nothing) As UniTask
+  overload: Glitch9.AIDevKit.ChatSession.SaveFileAsync*
+  nameWithType.vb: ChatSession.SaveFileAsync(String)
+  fullName.vb: Glitch9.AIDevKit.ChatSession.SaveFileAsync(String)
+  name.vb: SaveFileAsync(String)
+- uid: Glitch9.AIDevKit.ChatSession.DeleteFile
+  commentId: M:Glitch9.AIDevKit.ChatSession.DeleteFile
+  id: DeleteFile
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: DeleteFile()
+  nameWithType: ChatSession.DeleteFile()
+  fullName: Glitch9.AIDevKit.ChatSession.DeleteFile()
+  type: Method
+  source:
+    id: DeleteFile
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 289
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public bool DeleteFile()
+    return:
+      type: System.Boolean
+    content.vb: Public Function DeleteFile() As Boolean
+  overload: Glitch9.AIDevKit.ChatSession.DeleteFile*
+- uid: Glitch9.AIDevKit.ChatSession.Rewind
+  commentId: M:Glitch9.AIDevKit.ChatSession.Rewind
+  id: Rewind
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: Rewind()
+  nameWithType: ChatSession.Rewind()
+  fullName: Glitch9.AIDevKit.ChatSession.Rewind()
+  type: Method
+  source:
+    id: Rewind
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 292
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public (ChatMessage lastSent, ChatMessage lastReceived) Rewind()
+    return:
+      type: System.ValueTuple{Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatMessage}
+    content.vb: Public Function Rewind() As (lastSent As ChatMessage, lastReceived As ChatMessage)
+  overload: Glitch9.AIDevKit.ChatSession.Rewind*
+- uid: Glitch9.AIDevKit.ChatSession.ToString
+  commentId: M:Glitch9.AIDevKit.ChatSession.ToString
+  id: ToString
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ChatSession.ToString()
+  fullName: Glitch9.AIDevKit.ChatSession.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 311
+  namespace: Glitch9.AIDevKit
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Glitch9.AIDevKit.ChatSession.ToString*
+- uid: Glitch9.AIDevKit.ChatSession.Equals(Glitch9.AIDevKit.ChatSession)
+  commentId: M:Glitch9.AIDevKit.ChatSession.Equals(Glitch9.AIDevKit.ChatSession)
+  id: Equals(Glitch9.AIDevKit.ChatSession)
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: Equals(ChatSession)
+  nameWithType: ChatSession.Equals(ChatSession)
+  fullName: Glitch9.AIDevKit.ChatSession.Equals(Glitch9.AIDevKit.ChatSession)
+  type: Method
+  source:
+    id: Equals
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 381
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public bool Equals(ChatSession other)
+    parameters:
+    - id: other
+      type: Glitch9.AIDevKit.ChatSession
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As ChatSession) As Boolean
+  overload: Glitch9.AIDevKit.ChatSession.Equals*
+- uid: Glitch9.AIDevKit.ChatSession.GetHashCode
+  commentId: M:Glitch9.AIDevKit.ChatSession.GetHashCode
+  id: GetHashCode
+  parent: Glitch9.AIDevKit.ChatSession
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ChatSession.GetHashCode()
+  fullName: Glitch9.AIDevKit.ChatSession.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Session/ChatSession.cs
+    startLine: 382
+  namespace: Glitch9.AIDevKit
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Glitch9.AIDevKit.ChatSession.GetHashCode*
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.ChatSession.Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatMessage)
+  commentId: M:Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+  parent: Glitch9.AIDevKit.GENTaskExtensions
+  definition: Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+  href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENChat_Glitch9_AIDevKit_ChatSession_Glitch9_AIDevKit_ChatMessage_
+  name: GENChat(ChatSession, ChatMessage)
+  nameWithType: GENTaskExtensions.GENChat(ChatSession, ChatMessage)
+  fullName: Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatSession, Glitch9.AIDevKit.ChatMessage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+    name: GENChat
+    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENChat_Glitch9_AIDevKit_ChatSession_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatSession
+    name: ChatSession
+    href: Glitch9.AIDevKit.ChatSession.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+    name: GENChat
+    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENChat_Glitch9_AIDevKit_ChatSession_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatSession
+    name: ChatSession
+    href: Glitch9.AIDevKit.ChatSession.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+  commentId: M:Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+  href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENChat_Glitch9_AIDevKit_ChatSession_Glitch9_AIDevKit_ChatMessage_
+  name: GENChat(ChatSession, ChatMessage)
+  nameWithType: GENTaskExtensions.GENChat(ChatSession, ChatMessage)
+  fullName: Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatSession, Glitch9.AIDevKit.ChatMessage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+    name: GENChat
+    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENChat_Glitch9_AIDevKit_ChatSession_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatSession
+    name: ChatSession
+    href: Glitch9.AIDevKit.ChatSession.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENChat(Glitch9.AIDevKit.ChatSession,Glitch9.AIDevKit.ChatMessage)
+    name: GENChat
+    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENChat_Glitch9_AIDevKit_ChatSession_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatSession
+    name: ChatSession
+    href: Glitch9.AIDevKit.ChatSession.html
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENTaskExtensions
+  commentId: T:Glitch9.AIDevKit.GENTaskExtensions
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENTaskExtensions.html
+  name: GENTaskExtensions
+  nameWithType: GENTaskExtensions
+  fullName: Glitch9.AIDevKit.GENTaskExtensions
+- uid: Glitch9.AIDevKit.ChatSession.CreateFile*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.CreateFile
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_CreateFile_System_String_System_String_System_String_
+  name: CreateFile
+  nameWithType: ChatSession.CreateFile
+  fullName: Glitch9.AIDevKit.ChatSession.CreateFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.ChatSession
+  commentId: T:Glitch9.AIDevKit.ChatSession
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatSession.html
+  name: ChatSession
+  nameWithType: ChatSession
+  fullName: Glitch9.AIDevKit.ChatSession
+- uid: Glitch9.AIDevKit.ChatSession.LoadFile*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.LoadFile
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_LoadFile_System_String_
+  name: LoadFile
+  nameWithType: ChatSession.LoadFile
+  fullName: Glitch9.AIDevKit.ChatSession.LoadFile
+- uid: Glitch9.AIDevKit.ChatSession.DeleteFile*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.DeleteFile
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_DeleteFile_System_String_
+  name: DeleteFile
+  nameWithType: ChatSession.DeleteFile
+  fullName: Glitch9.AIDevKit.ChatSession.DeleteFile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Glitch9.AIDevKit.ChatSession.Id*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.Id
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_Id
+  name: Id
+  nameWithType: ChatSession.Id
+  fullName: Glitch9.AIDevKit.ChatSession.Id
+- uid: Glitch9.AIDevKit.ChatSession.Name*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.Name
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_Name
+  name: Name
+  nameWithType: ChatSession.Name
+  fullName: Glitch9.AIDevKit.ChatSession.Name
+- uid: Glitch9.AIDevKit.ChatSession.CreatedAt*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.CreatedAt
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_CreatedAt
+  name: CreatedAt
+  nameWithType: ChatSession.CreatedAt
+  fullName: Glitch9.AIDevKit.ChatSession.CreatedAt
+- uid: Glitch9.UnixTime
+  commentId: T:Glitch9.UnixTime
+  parent: Glitch9
+  name: UnixTime
+  nameWithType: UnixTime
+  fullName: Glitch9.UnixTime
+- uid: Glitch9
+  commentId: N:Glitch9
+  href: Glitch9.html
+  name: Glitch9
+  nameWithType: Glitch9
+  fullName: Glitch9
+- uid: Glitch9.AIDevKit.ChatSession.UpdatedAt*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.UpdatedAt
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_UpdatedAt
+  name: UpdatedAt
+  nameWithType: ChatSession.UpdatedAt
+  fullName: Glitch9.AIDevKit.ChatSession.UpdatedAt
+- uid: Glitch9.AIDevKit.ChatSession.AutoSave*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.AutoSave
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_AutoSave
+  name: AutoSave
+  nameWithType: ChatSession.AutoSave
+  fullName: Glitch9.AIDevKit.ChatSession.AutoSave
+- uid: Glitch9.AIDevKit.ChatSession.Stream*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.Stream
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_Stream
+  name: Stream
+  nameWithType: ChatSession.Stream
+  fullName: Glitch9.AIDevKit.ChatSession.Stream
+- uid: Glitch9.AIDevKit.ChatSession.MaxContextMessages*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.MaxContextMessages
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_MaxContextMessages
+  name: MaxContextMessages
+  nameWithType: ChatSession.MaxContextMessages
+  fullName: Glitch9.AIDevKit.ChatSession.MaxContextMessages
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Glitch9.AIDevKit.ChatSession.Model*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.Model
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_Model
+  name: Model
+  nameWithType: ChatSession.Model
+  fullName: Glitch9.AIDevKit.ChatSession.Model
+- uid: Glitch9.AIDevKit.Model
+  commentId: T:Glitch9.AIDevKit.Model
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Model.html
+  name: Model
+  nameWithType: Model
+  fullName: Glitch9.AIDevKit.Model
+- uid: Glitch9.AIDevKit.ChatSession.ModelOptions*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.ModelOptions
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_ModelOptions
+  name: ModelOptions
+  nameWithType: ChatSession.ModelOptions
+  fullName: Glitch9.AIDevKit.ChatSession.ModelOptions
+- uid: Glitch9.AIDevKit.ModelOptions
+  commentId: T:Glitch9.AIDevKit.ModelOptions
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelOptions.html
+  name: ModelOptions
+  nameWithType: ModelOptions
+  fullName: Glitch9.AIDevKit.ModelOptions
+- uid: Glitch9.AIDevKit.ChatSession.ReasoningOptions*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.ReasoningOptions
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_ReasoningOptions
+  name: ReasoningOptions
+  nameWithType: ChatSession.ReasoningOptions
+  fullName: Glitch9.AIDevKit.ChatSession.ReasoningOptions
+- uid: Glitch9.AIDevKit.ReasoningOptions
+  commentId: T:Glitch9.AIDevKit.ReasoningOptions
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ReasoningOptions.html
+  name: ReasoningOptions
+  nameWithType: ReasoningOptions
+  fullName: Glitch9.AIDevKit.ReasoningOptions
+- uid: Glitch9.AIDevKit.ChatSession.WebSearchOptions*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.WebSearchOptions
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_WebSearchOptions
+  name: WebSearchOptions
+  nameWithType: ChatSession.WebSearchOptions
+  fullName: Glitch9.AIDevKit.ChatSession.WebSearchOptions
+- uid: Glitch9.AIDevKit.WebSearchOptions
+  commentId: T:Glitch9.AIDevKit.WebSearchOptions
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.WebSearchOptions.html
+  name: WebSearchOptions
+  nameWithType: WebSearchOptions
+  fullName: Glitch9.AIDevKit.WebSearchOptions
+- uid: Glitch9.AIDevKit.ChatSession.SpeechOutputOptions*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.SpeechOutputOptions
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_SpeechOutputOptions
+  name: SpeechOutputOptions
+  nameWithType: ChatSession.SpeechOutputOptions
+  fullName: Glitch9.AIDevKit.ChatSession.SpeechOutputOptions
+- uid: Glitch9.AIDevKit.SpeechOutputOptions
+  commentId: T:Glitch9.AIDevKit.SpeechOutputOptions
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.SpeechOutputOptions.html
+  name: SpeechOutputOptions
+  nameWithType: SpeechOutputOptions
+  fullName: Glitch9.AIDevKit.SpeechOutputOptions
+- uid: Glitch9.AIDevKit.ChatSession.ModerationOptions*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.ModerationOptions
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_ModerationOptions
+  name: ModerationOptions
+  nameWithType: ChatSession.ModerationOptions
+  fullName: Glitch9.AIDevKit.ChatSession.ModerationOptions
+- uid: Glitch9.AIDevKit.ModerationOptions
+  commentId: T:Glitch9.AIDevKit.ModerationOptions
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModerationOptions.html
+  name: ModerationOptions
+  nameWithType: ModerationOptions
+  fullName: Glitch9.AIDevKit.ModerationOptions
+- uid: Glitch9.AIDevKit.ChatSession.SystemInstruction*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.SystemInstruction
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_SystemInstruction
+  name: SystemInstruction
+  nameWithType: ChatSession.SystemInstruction
+  fullName: Glitch9.AIDevKit.ChatSession.SystemInstruction
+- uid: Glitch9.AIDevKit.ChatSession.StartingMessage*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.StartingMessage
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_StartingMessage
+  name: StartingMessage
+  nameWithType: ChatSession.StartingMessage
+  fullName: Glitch9.AIDevKit.ChatSession.StartingMessage
+- uid: Glitch9.AIDevKit.ChatSession.SummaryModel*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.SummaryModel
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_SummaryModel
+  name: SummaryModel
+  nameWithType: ChatSession.SummaryModel
+  fullName: Glitch9.AIDevKit.ChatSession.SummaryModel
+- uid: Glitch9.AIDevKit.ChatSession.Summary*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.Summary
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_Summary
+  name: Summary
+  nameWithType: ChatSession.Summary
+  fullName: Glitch9.AIDevKit.ChatSession.Summary
+- uid: Glitch9.AIDevKit.ChatSession.LastSummaryUpdate*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.LastSummaryUpdate
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_LastSummaryUpdate
+  name: LastSummaryUpdate
+  nameWithType: ChatSession.LastSummaryUpdate
+  fullName: Glitch9.AIDevKit.ChatSession.LastSummaryUpdate
+- uid: Glitch9.AIDevKit.ChatSession.Messages*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.Messages
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_Messages
+  name: Messages
+  nameWithType: ChatSession.Messages
+  fullName: Glitch9.AIDevKit.ChatSession.Messages
+- uid: System.Collections.Generic.List{Glitch9.AIDevKit.ChatMessage}
+  commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.ChatMessage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: Glitch9.AIDevKit.ChatMessage.html
+  name: List<ChatMessage>
+  nameWithType: List<ChatMessage>
+  fullName: System.Collections.Generic.List<Glitch9.AIDevKit.ChatMessage>
+  nameWithType.vb: List(Of ChatMessage)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.AIDevKit.ChatMessage)
+  name.vb: List(Of ChatMessage)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Glitch9.AIDevKit.ChatSession.RecentMessages*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.RecentMessages
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_RecentMessages
+  name: RecentMessages
+  nameWithType: ChatSession.RecentMessages
+  fullName: Glitch9.AIDevKit.ChatSession.RecentMessages
+- uid: Glitch9.AIDevKit.ChatSession.Last*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.Last
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_Last
+  name: Last
+  nameWithType: ChatSession.Last
+  fullName: Glitch9.AIDevKit.ChatSession.Last
+- uid: Glitch9.AIDevKit.ChatCompletion
+  commentId: T:Glitch9.AIDevKit.ChatCompletion
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: ChatCompletion
+  nameWithType: ChatCompletion
+  fullName: Glitch9.AIDevKit.ChatCompletion
+- uid: Glitch9.AIDevKit.ChatSession.LastException*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.LastException
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_LastException
+  name: LastException
+  nameWithType: ChatSession.LastException
+  fullName: Glitch9.AIDevKit.ChatSession.LastException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Glitch9.AIDevKit.ChatSession.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.#ctor
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession__ctor
+  name: ChatSession
+  nameWithType: ChatSession.ChatSession
+  fullName: Glitch9.AIDevKit.ChatSession.ChatSession
+  nameWithType.vb: ChatSession.New
+  fullName.vb: Glitch9.AIDevKit.ChatSession.New
+  name.vb: New
+- uid: Glitch9.AIDevKit.ChatSession.EnterMessageAsync*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.EnterMessageAsync
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_EnterMessageAsync_Glitch9_AIDevKit_ChatMessage_Glitch9_AIDevKit_ChatStreamHandler_
+  name: EnterMessageAsync
+  nameWithType: ChatSession.EnterMessageAsync
+  fullName: Glitch9.AIDevKit.ChatSession.EnterMessageAsync
+- uid: Glitch9.AIDevKit.ChatMessage
+  commentId: T:Glitch9.AIDevKit.ChatMessage
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatMessage.html
+  name: ChatMessage
+  nameWithType: ChatMessage
+  fullName: Glitch9.AIDevKit.ChatMessage
+- uid: Glitch9.AIDevKit.ChatStreamHandler
+  commentId: T:Glitch9.AIDevKit.ChatStreamHandler
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatStreamHandler.html
+  name: ChatStreamHandler
+  nameWithType: ChatStreamHandler
+  fullName: Glitch9.AIDevKit.ChatStreamHandler
+- uid: UniTask{Glitch9.AIDevKit.AssistantMessage}
+  commentId: '!:UniTask{Glitch9.AIDevKit.AssistantMessage}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.AssistantMessage.html
+  name: UniTask<AssistantMessage>
+  nameWithType: UniTask<AssistantMessage>
+  fullName: UniTask<Glitch9.AIDevKit.AssistantMessage>
+  nameWithType.vb: UniTask(Of AssistantMessage)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.AssistantMessage)
+  name.vb: UniTask(Of AssistantMessage)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.AssistantMessage
+    name: AssistantMessage
+    href: Glitch9.AIDevKit.AssistantMessage.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.AssistantMessage
+    name: AssistantMessage
+    href: Glitch9.AIDevKit.AssistantMessage.html
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.ChatSession.ClearMessages*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.ClearMessages
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_ClearMessages
+  name: ClearMessages
+  nameWithType: ChatSession.ClearMessages
+  fullName: Glitch9.AIDevKit.ChatSession.ClearMessages
+- uid: Glitch9.AIDevKit.ChatSession.SaveFile*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.SaveFile
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_SaveFile_System_String_
+  name: SaveFile
+  nameWithType: ChatSession.SaveFile
+  fullName: Glitch9.AIDevKit.ChatSession.SaveFile
+- uid: Glitch9.AIDevKit.ChatSession.SaveFileAsync*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.SaveFileAsync
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_SaveFileAsync_System_String_
+  name: SaveFileAsync
+  nameWithType: ChatSession.SaveFileAsync
+  fullName: Glitch9.AIDevKit.ChatSession.SaveFileAsync
+- uid: UniTask
+  isExternal: true
+  name: UniTask
+  nameWithType: UniTask
+  fullName: UniTask
+- uid: Glitch9.AIDevKit.ChatSession.Rewind*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.Rewind
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_Rewind
+  name: Rewind
+  nameWithType: ChatSession.Rewind
+  fullName: Glitch9.AIDevKit.ChatSession.Rewind
+- uid: System.ValueTuple{Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatMessage}
+  commentId: T:System.ValueTuple{Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatMessage}
+  parent: System
+  definition: System.ValueTuple`2
+  href: Glitch9.AIDevKit.ChatMessage.html
+  name: (ChatMessage lastSent, ChatMessage lastReceived)
+  nameWithType: (ChatMessage lastSent, ChatMessage lastReceived)
+  fullName: (Glitch9.AIDevKit.ChatMessage lastSent, Glitch9.AIDevKit.ChatMessage lastReceived)
+  nameWithType.vb: (lastSent As ChatMessage, lastReceived As ChatMessage)
+  fullName.vb: (lastSent As Glitch9.AIDevKit.ChatMessage, lastReceived As Glitch9.AIDevKit.ChatMessage)
+  name.vb: (lastSent As ChatMessage, lastReceived As ChatMessage)
+  spec.csharp:
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: " "
+  - uid: System.ValueTuple{Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatMessage}.lastSent
+    name: lastSent
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-glitch9.aidevkit.chatmessage,glitch9.aidevkit.chatmessage-.lastsent
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: " "
+  - uid: System.ValueTuple{Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatMessage}.lastReceived
+    name: lastReceived
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-glitch9.aidevkit.chatmessage,glitch9.aidevkit.chatmessage-.lastreceived
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatMessage}.lastSent
+    name: lastSent
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-glitch9.aidevkit.chatmessage,glitch9.aidevkit.chatmessage-.lastsent
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatMessage}.lastReceived
+    name: lastReceived
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-glitch9.aidevkit.chatmessage,glitch9.aidevkit.chatmessage-.lastreceived
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.ChatSession.ToString*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.ToString
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_ToString
+  name: ToString
+  nameWithType: ChatSession.ToString
+  fullName: Glitch9.AIDevKit.ChatSession.ToString
+- uid: Glitch9.AIDevKit.ChatSession.Equals*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.Equals
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_Equals_Glitch9_AIDevKit_ChatSession_
+  name: Equals
+  nameWithType: ChatSession.Equals
+  fullName: Glitch9.AIDevKit.ChatSession.Equals
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.ChatSession.GetHashCode*
+  commentId: Overload:Glitch9.AIDevKit.ChatSession.GetHashCode
+  href: Glitch9.AIDevKit.ChatSession.html#Glitch9_AIDevKit_ChatSession_GetHashCode
+  name: GetHashCode
+  nameWithType: ChatSession.GetHashCode
+  fullName: Glitch9.AIDevKit.ChatSession.GetHashCode

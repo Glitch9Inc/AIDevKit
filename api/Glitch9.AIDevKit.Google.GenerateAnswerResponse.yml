@@ -1,0 +1,251 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerResponse
+  commentId: T:Glitch9.AIDevKit.Google.GenerateAnswerResponse
+  id: GenerateAnswerResponse
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.GenerateAnswerResponse.Answer
+  - Glitch9.AIDevKit.Google.GenerateAnswerResponse.AnswerableProbability
+  - Glitch9.AIDevKit.Google.GenerateAnswerResponse.InputFeedback
+  langs:
+  - csharp
+  - vb
+  name: GenerateAnswerResponse
+  nameWithType: GenerateAnswerResponse
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerResponse
+  type: Class
+  source:
+    id: GenerateAnswerResponse
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerResponse.cs
+    startLine: 8
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Response from the model for a grounded answer.
+
+    If successful, the response body contains data with the following structure:
+  example: []
+  syntax:
+    content: public class GenerateAnswerResponse
+    content.vb: Public Class GenerateAnswerResponse
+  inheritance:
+  - System.Object
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerResponse.Answer
+  commentId: P:Glitch9.AIDevKit.Google.GenerateAnswerResponse.Answer
+  id: Answer
+  parent: Glitch9.AIDevKit.Google.GenerateAnswerResponse
+  langs:
+  - csharp
+  - vb
+  name: Answer
+  nameWithType: GenerateAnswerResponse.Answer
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerResponse.Answer
+  type: Property
+  source:
+    id: Answer
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerResponse.cs
+    startLine: 19
+  namespace: Glitch9.AIDevKit.Google
+  summary: Candidate answer from the model.
+  remarks: >-
+    Note: The model always attempts to provide a grounded answer,
+
+    even when the answer is unlikely to be answerable from the given passages.
+
+    In that case, a low-quality or ungrounded answer may be provided,
+
+    along with a low answerableProbability.
+  example: []
+  syntax:
+    content: public Candidate Answer { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.Candidate
+    content.vb: Public Property Answer As Candidate
+  overload: Glitch9.AIDevKit.Google.GenerateAnswerResponse.Answer*
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerResponse.AnswerableProbability
+  commentId: P:Glitch9.AIDevKit.Google.GenerateAnswerResponse.AnswerableProbability
+  id: AnswerableProbability
+  parent: Glitch9.AIDevKit.Google.GenerateAnswerResponse
+  langs:
+  - csharp
+  - vb
+  name: AnswerableProbability
+  nameWithType: GenerateAnswerResponse.AnswerableProbability
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerResponse.AnswerableProbability
+  type: Property
+  source:
+    id: AnswerableProbability
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerResponse.cs
+    startLine: 31
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Output only.
+
+    The model's estimate of the probability that its answer is correct and grounded in the input passages.
+
+    <p>A low answerableProbability indicates that the answer might not be grounded in the sources.</p>
+
+    <p>When answerableProbability is low, some clients may wish to:</p>
+
+    <p>- Display a message to the effect of "We couldn’t answer that question" to the user.</p>
+
+    <p>- Fall back to a general-purpose LLM that answers the question from world knowledge.
+
+    The threshold and nature of such fallbacks will depend on individual clients’ use cases.
+
+    0.5 is a good starting threshold.</p>
+  example: []
+  syntax:
+    content: public float AnswerableProbability { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AnswerableProbability As Single
+  overload: Glitch9.AIDevKit.Google.GenerateAnswerResponse.AnswerableProbability*
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerResponse.InputFeedback
+  commentId: P:Glitch9.AIDevKit.Google.GenerateAnswerResponse.InputFeedback
+  id: InputFeedback
+  parent: Glitch9.AIDevKit.Google.GenerateAnswerResponse
+  langs:
+  - csharp
+  - vb
+  name: InputFeedback
+  nameWithType: GenerateAnswerResponse.InputFeedback
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerResponse.InputFeedback
+  type: Property
+  source:
+    id: InputFeedback
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerResponse.cs
+    startLine: 40
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Output only. Feedback related to the input data used to answer the question, as opposed to model-generated response to the question.
+
+    <p>"Input data" can be one or more of the following:</p>
+
+    <p>- Question specified by the last entry in GenerateAnswerRequest.content</p>
+
+    <p>- Conversation history specified by the other entries in GenerateAnswerRequest.content</p>
+
+    <p>- Grounding sources (GenerateAnswerRequest.semantic_retriever or GenerateAnswerRequest.inline_passages)</p>
+  example: []
+  syntax:
+    content: public PromptFeedback InputFeedback { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.PromptFeedback
+    content.vb: Public Property InputFeedback As PromptFeedback
+  overload: Glitch9.AIDevKit.Google.GenerateAnswerResponse.InputFeedback*
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerResponse.Answer*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateAnswerResponse.Answer
+  href: Glitch9.AIDevKit.Google.GenerateAnswerResponse.html#Glitch9_AIDevKit_Google_GenerateAnswerResponse_Answer
+  name: Answer
+  nameWithType: GenerateAnswerResponse.Answer
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerResponse.Answer
+- uid: Glitch9.AIDevKit.Google.Candidate
+  commentId: T:Glitch9.AIDevKit.Google.Candidate
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.Candidate.html
+  name: Candidate
+  nameWithType: Candidate
+  fullName: Glitch9.AIDevKit.Google.Candidate
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerResponse.AnswerableProbability*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateAnswerResponse.AnswerableProbability
+  href: Glitch9.AIDevKit.Google.GenerateAnswerResponse.html#Glitch9_AIDevKit_Google_GenerateAnswerResponse_AnswerableProbability
+  name: AnswerableProbability
+  nameWithType: GenerateAnswerResponse.AnswerableProbability
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerResponse.AnswerableProbability
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerResponse.InputFeedback*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateAnswerResponse.InputFeedback
+  href: Glitch9.AIDevKit.Google.GenerateAnswerResponse.html#Glitch9_AIDevKit_Google_GenerateAnswerResponse_InputFeedback
+  name: InputFeedback
+  nameWithType: GenerateAnswerResponse.InputFeedback
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerResponse.InputFeedback
+- uid: Glitch9.AIDevKit.PromptFeedback
+  commentId: T:Glitch9.AIDevKit.PromptFeedback
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.PromptFeedback.html
+  name: PromptFeedback
+  nameWithType: PromptFeedback
+  fullName: Glitch9.AIDevKit.PromptFeedback
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html

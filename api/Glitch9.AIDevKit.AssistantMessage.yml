@@ -1,0 +1,514 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.AssistantMessage
+  commentId: T:Glitch9.AIDevKit.AssistantMessage
+  id: AssistantMessage
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.AssistantMessage.#ctor
+  - Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.ChatCompletion)
+  - Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.Content,Glitch9.AIDevKit.ChatRole)
+  - Glitch9.AIDevKit.AssistantMessage.Tools
+  - Glitch9.AIDevKit.AssistantMessage.Usage
+  - Glitch9.AIDevKit.AssistantMessage.op_Implicit(Glitch9.AIDevKit.AssistantMessage)~System.String
+  langs:
+  - csharp
+  - vb
+  name: AssistantMessage
+  nameWithType: AssistantMessage
+  fullName: Glitch9.AIDevKit.AssistantMessage
+  type: Class
+  source:
+    id: AssistantMessage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 126
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: 'public class AssistantMessage : ChatMessage'
+    content.vb: Public Class AssistantMessage Inherits ChatMessage
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.ChatMessage
+  derivedClasses:
+  - Glitch9.AIDevKit.ToolMessage
+  inheritedMembers:
+  - Glitch9.AIDevKit.ChatMessage.Role
+  - Glitch9.AIDevKit.ChatMessage.Content
+  - Glitch9.AIDevKit.ChatMessage.Name
+  - Glitch9.AIDevKit.ChatMessage.SentAt
+  - Glitch9.AIDevKit.ChatMessage.ToString
+  - Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,System.String)
+  extensionMethods:
+  - Glitch9.AIDevKit.ChatMessage.Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest
+- uid: Glitch9.AIDevKit.AssistantMessage.op_Implicit(Glitch9.AIDevKit.AssistantMessage)~System.String
+  commentId: M:Glitch9.AIDevKit.AssistantMessage.op_Implicit(Glitch9.AIDevKit.AssistantMessage)~System.String
+  id: op_Implicit(Glitch9.AIDevKit.AssistantMessage)~System.String
+  parent: Glitch9.AIDevKit.AssistantMessage
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string(AssistantMessage)
+  nameWithType: AssistantMessage.implicit operator string(AssistantMessage)
+  fullName: Glitch9.AIDevKit.AssistantMessage.implicit operator string(Glitch9.AIDevKit.AssistantMessage)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 129
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static implicit operator string(AssistantMessage message)
+    parameters:
+    - id: message
+      type: Glitch9.AIDevKit.AssistantMessage
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(message As AssistantMessage) As String
+  overload: Glitch9.AIDevKit.AssistantMessage.op_Implicit*
+  nameWithType.vb: AssistantMessage.CType(AssistantMessage)
+  fullName.vb: Glitch9.AIDevKit.AssistantMessage.CType(Glitch9.AIDevKit.AssistantMessage)
+  name.vb: CType(AssistantMessage)
+- uid: Glitch9.AIDevKit.AssistantMessage.Tools
+  commentId: P:Glitch9.AIDevKit.AssistantMessage.Tools
+  id: Tools
+  parent: Glitch9.AIDevKit.AssistantMessage
+  langs:
+  - csharp
+  - vb
+  name: Tools
+  nameWithType: AssistantMessage.Tools
+  fullName: Glitch9.AIDevKit.AssistantMessage.Tools
+  type: Property
+  source:
+    id: Tools
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 134
+  namespace: Glitch9.AIDevKit
+  summary: Optional. A list of tool calls (functions) the model wants to use.
+  example: []
+  syntax:
+    content: public ToolCall[] Tools { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ToolCall[]
+    content.vb: Public Property Tools As ToolCall()
+  overload: Glitch9.AIDevKit.AssistantMessage.Tools*
+- uid: Glitch9.AIDevKit.AssistantMessage.Usage
+  commentId: P:Glitch9.AIDevKit.AssistantMessage.Usage
+  id: Usage
+  parent: Glitch9.AIDevKit.AssistantMessage
+  langs:
+  - csharp
+  - vb
+  name: Usage
+  nameWithType: AssistantMessage.Usage
+  fullName: Glitch9.AIDevKit.AssistantMessage.Usage
+  type: Property
+  source:
+    id: Usage
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 137
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public Usage Usage { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Usage
+    content.vb: Public Property Usage As Usage
+  overload: Glitch9.AIDevKit.AssistantMessage.Usage*
+- uid: Glitch9.AIDevKit.AssistantMessage.#ctor
+  commentId: M:Glitch9.AIDevKit.AssistantMessage.#ctor
+  id: '#ctor'
+  parent: Glitch9.AIDevKit.AssistantMessage
+  langs:
+  - csharp
+  - vb
+  name: AssistantMessage()
+  nameWithType: AssistantMessage.AssistantMessage()
+  fullName: Glitch9.AIDevKit.AssistantMessage.AssistantMessage()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 139
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public AssistantMessage()
+    content.vb: Public Sub New()
+  overload: Glitch9.AIDevKit.AssistantMessage.#ctor*
+  nameWithType.vb: AssistantMessage.New()
+  fullName.vb: Glitch9.AIDevKit.AssistantMessage.New()
+  name.vb: New()
+- uid: Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.Content,Glitch9.AIDevKit.ChatRole)
+  commentId: M:Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.Content,Glitch9.AIDevKit.ChatRole)
+  id: '#ctor(Glitch9.AIDevKit.Content,Glitch9.AIDevKit.ChatRole)'
+  parent: Glitch9.AIDevKit.AssistantMessage
+  langs:
+  - csharp
+  - vb
+  name: AssistantMessage(Content, ChatRole)
+  nameWithType: AssistantMessage.AssistantMessage(Content, ChatRole)
+  fullName: Glitch9.AIDevKit.AssistantMessage.AssistantMessage(Glitch9.AIDevKit.Content, Glitch9.AIDevKit.ChatRole)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 140
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public AssistantMessage(Content content, ChatRole role = ChatRole.Assistant)
+    parameters:
+    - id: content
+      type: Glitch9.AIDevKit.Content
+    - id: role
+      type: Glitch9.AIDevKit.ChatRole
+    content.vb: Public Sub New(content As Content, role As ChatRole = ChatRole.Assistant)
+  overload: Glitch9.AIDevKit.AssistantMessage.#ctor*
+  nameWithType.vb: AssistantMessage.New(Content, ChatRole)
+  fullName.vb: Glitch9.AIDevKit.AssistantMessage.New(Glitch9.AIDevKit.Content, Glitch9.AIDevKit.ChatRole)
+  name.vb: New(Content, ChatRole)
+- uid: Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.ChatCompletion)
+  commentId: M:Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.ChatCompletion)
+  id: '#ctor(Glitch9.AIDevKit.ChatCompletion)'
+  parent: Glitch9.AIDevKit.AssistantMessage
+  langs:
+  - csharp
+  - vb
+  name: AssistantMessage(ChatCompletion)
+  nameWithType: AssistantMessage.AssistantMessage(ChatCompletion)
+  fullName: Glitch9.AIDevKit.AssistantMessage.AssistantMessage(Glitch9.AIDevKit.ChatCompletion)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 141
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public AssistantMessage(ChatCompletion chat)
+    parameters:
+    - id: chat
+      type: Glitch9.AIDevKit.ChatCompletion
+    content.vb: Public Sub New(chat As ChatCompletion)
+  overload: Glitch9.AIDevKit.AssistantMessage.#ctor*
+  nameWithType.vb: AssistantMessage.New(ChatCompletion)
+  fullName.vb: Glitch9.AIDevKit.AssistantMessage.New(Glitch9.AIDevKit.ChatCompletion)
+  name.vb: New(ChatCompletion)
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.ChatMessage
+  commentId: T:Glitch9.AIDevKit.ChatMessage
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatMessage.html
+  name: ChatMessage
+  nameWithType: ChatMessage
+  fullName: Glitch9.AIDevKit.ChatMessage
+- uid: Glitch9.AIDevKit.ChatMessage.Role
+  commentId: P:Glitch9.AIDevKit.ChatMessage.Role
+  parent: Glitch9.AIDevKit.ChatMessage
+  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Role
+  name: Role
+  nameWithType: ChatMessage.Role
+  fullName: Glitch9.AIDevKit.ChatMessage.Role
+- uid: Glitch9.AIDevKit.ChatMessage.Content
+  commentId: P:Glitch9.AIDevKit.ChatMessage.Content
+  parent: Glitch9.AIDevKit.ChatMessage
+  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Content
+  name: Content
+  nameWithType: ChatMessage.Content
+  fullName: Glitch9.AIDevKit.ChatMessage.Content
+- uid: Glitch9.AIDevKit.ChatMessage.Name
+  commentId: P:Glitch9.AIDevKit.ChatMessage.Name
+  parent: Glitch9.AIDevKit.ChatMessage
+  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Name
+  name: Name
+  nameWithType: ChatMessage.Name
+  fullName: Glitch9.AIDevKit.ChatMessage.Name
+- uid: Glitch9.AIDevKit.ChatMessage.SentAt
+  commentId: P:Glitch9.AIDevKit.ChatMessage.SentAt
+  parent: Glitch9.AIDevKit.ChatMessage
+  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_SentAt
+  name: SentAt
+  nameWithType: ChatMessage.SentAt
+  fullName: Glitch9.AIDevKit.ChatMessage.SentAt
+- uid: Glitch9.AIDevKit.ChatMessage.ToString
+  commentId: M:Glitch9.AIDevKit.ChatMessage.ToString
+  parent: Glitch9.AIDevKit.ChatMessage
+  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_ToString
+  name: ToString()
+  nameWithType: ChatMessage.ToString()
+  fullName: Glitch9.AIDevKit.ChatMessage.ToString()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ChatMessage.ToString
+    name: ToString
+    href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ChatMessage.ToString
+    name: ToString
+    href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_ToString
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,System.String)
+  commentId: M:Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,System.String)
+  parent: Glitch9.AIDevKit.ChatMessage
+  isExternal: true
+  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Create_Glitch9_AIDevKit_ChatRole_System_String_
+  name: Create(ChatRole, string)
+  nameWithType: ChatMessage.Create(ChatRole, string)
+  fullName: Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole, string)
+  nameWithType.vb: ChatMessage.Create(ChatRole, String)
+  fullName.vb: Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole, String)
+  name.vb: Create(ChatRole, String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,System.String)
+    name: Create
+    href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Create_Glitch9_AIDevKit_ChatRole_System_String_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatRole
+    name: ChatRole
+    href: Glitch9.AIDevKit.ChatRole.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,System.String)
+    name: Create
+    href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Create_Glitch9_AIDevKit_ChatRole_System_String_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatRole
+    name: ChatRole
+    href: Glitch9.AIDevKit.ChatRole.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.ChatMessage.Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest
+  commentId: M:Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest(Glitch9.AIDevKit.ChatMessage)
+  parent: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions
+  definition: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest(Glitch9.AIDevKit.ChatMessage)
+  href: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.html#Glitch9_AIDevKit_OpenAI_ThreadMessageExtensions_ToThreadMessageRequest_Glitch9_AIDevKit_ChatMessage_
+  name: ToThreadMessageRequest(ChatMessage)
+  nameWithType: ThreadMessageExtensions.ToThreadMessageRequest(ChatMessage)
+  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest(Glitch9.AIDevKit.ChatMessage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest(Glitch9.AIDevKit.ChatMessage)
+    name: ToThreadMessageRequest
+    href: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.html#Glitch9_AIDevKit_OpenAI_ThreadMessageExtensions_ToThreadMessageRequest_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest(Glitch9.AIDevKit.ChatMessage)
+    name: ToThreadMessageRequest
+    href: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.html#Glitch9_AIDevKit_OpenAI_ThreadMessageExtensions_ToThreadMessageRequest_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest(Glitch9.AIDevKit.ChatMessage)
+  commentId: M:Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest(Glitch9.AIDevKit.ChatMessage)
+  href: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.html#Glitch9_AIDevKit_OpenAI_ThreadMessageExtensions_ToThreadMessageRequest_Glitch9_AIDevKit_ChatMessage_
+  name: ToThreadMessageRequest(ChatMessage)
+  nameWithType: ThreadMessageExtensions.ToThreadMessageRequest(ChatMessage)
+  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest(Glitch9.AIDevKit.ChatMessage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest(Glitch9.AIDevKit.ChatMessage)
+    name: ToThreadMessageRequest
+    href: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.html#Glitch9_AIDevKit_OpenAI_ThreadMessageExtensions_ToThreadMessageRequest_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.ToThreadMessageRequest(Glitch9.AIDevKit.ChatMessage)
+    name: ToThreadMessageRequest
+    href: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.html#Glitch9_AIDevKit_OpenAI_ThreadMessageExtensions_ToThreadMessageRequest_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+- uid: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions
+  commentId: T:Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions.html
+  name: ThreadMessageExtensions
+  nameWithType: ThreadMessageExtensions
+  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions
+- uid: Glitch9.AIDevKit.OpenAI
+  commentId: N:Glitch9.AIDevKit.OpenAI
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.OpenAI
+  nameWithType: Glitch9.AIDevKit.OpenAI
+  fullName: Glitch9.AIDevKit.OpenAI
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI
+    name: OpenAI
+    href: Glitch9.AIDevKit.OpenAI.html
+- uid: Glitch9.AIDevKit.AssistantMessage.op_Implicit*
+  commentId: Overload:Glitch9.AIDevKit.AssistantMessage.op_Implicit
+  name: implicit operator
+  nameWithType: AssistantMessage.implicit operator
+  fullName: Glitch9.AIDevKit.AssistantMessage.implicit operator
+  nameWithType.vb: AssistantMessage.CType
+  fullName.vb: Glitch9.AIDevKit.AssistantMessage.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Glitch9.AIDevKit.AssistantMessage
+  commentId: T:Glitch9.AIDevKit.AssistantMessage
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.AssistantMessage.html
+  name: AssistantMessage
+  nameWithType: AssistantMessage
+  fullName: Glitch9.AIDevKit.AssistantMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.AssistantMessage.Tools*
+  commentId: Overload:Glitch9.AIDevKit.AssistantMessage.Tools
+  href: Glitch9.AIDevKit.AssistantMessage.html#Glitch9_AIDevKit_AssistantMessage_Tools
+  name: Tools
+  nameWithType: AssistantMessage.Tools
+  fullName: Glitch9.AIDevKit.AssistantMessage.Tools
+- uid: Glitch9.AIDevKit.ToolCall[]
+  isExternal: true
+  href: Glitch9.AIDevKit.ToolCall.html
+  name: ToolCall[]
+  nameWithType: ToolCall[]
+  fullName: Glitch9.AIDevKit.ToolCall[]
+  nameWithType.vb: ToolCall()
+  fullName.vb: Glitch9.AIDevKit.ToolCall()
+  name.vb: ToolCall()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ToolCall
+    name: ToolCall
+    href: Glitch9.AIDevKit.ToolCall.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ToolCall
+    name: ToolCall
+    href: Glitch9.AIDevKit.ToolCall.html
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.AssistantMessage.Usage*
+  commentId: Overload:Glitch9.AIDevKit.AssistantMessage.Usage
+  href: Glitch9.AIDevKit.AssistantMessage.html#Glitch9_AIDevKit_AssistantMessage_Usage
+  name: Usage
+  nameWithType: AssistantMessage.Usage
+  fullName: Glitch9.AIDevKit.AssistantMessage.Usage
+- uid: Glitch9.AIDevKit.Usage
+  commentId: T:Glitch9.AIDevKit.Usage
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Usage.html
+  name: Usage
+  nameWithType: Usage
+  fullName: Glitch9.AIDevKit.Usage
+- uid: Glitch9.AIDevKit.AssistantMessage.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.AssistantMessage.#ctor
+  href: Glitch9.AIDevKit.AssistantMessage.html#Glitch9_AIDevKit_AssistantMessage__ctor
+  name: AssistantMessage
+  nameWithType: AssistantMessage.AssistantMessage
+  fullName: Glitch9.AIDevKit.AssistantMessage.AssistantMessage
+  nameWithType.vb: AssistantMessage.New
+  fullName.vb: Glitch9.AIDevKit.AssistantMessage.New
+  name.vb: New
+- uid: Glitch9.AIDevKit.Content
+  commentId: T:Glitch9.AIDevKit.Content
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Content.html
+  name: Content
+  nameWithType: Content
+  fullName: Glitch9.AIDevKit.Content
+- uid: Glitch9.AIDevKit.ChatRole
+  commentId: T:Glitch9.AIDevKit.ChatRole
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatRole.html
+  name: ChatRole
+  nameWithType: ChatRole
+  fullName: Glitch9.AIDevKit.ChatRole
+- uid: Glitch9.AIDevKit.ChatCompletion
+  commentId: T:Glitch9.AIDevKit.ChatCompletion
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: ChatCompletion
+  nameWithType: ChatCompletion
+  fullName: Glitch9.AIDevKit.ChatCompletion

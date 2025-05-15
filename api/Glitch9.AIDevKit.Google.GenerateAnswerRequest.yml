@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  commentId: T:Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  id: GenerateAnswerRequest
+  parent: Glitch9.AIDevKit.Google
+  children:
+  - Glitch9.AIDevKit.Google.GenerateAnswerRequest.AnswerStyle
+  - Glitch9.AIDevKit.Google.GenerateAnswerRequest.Contents
+  - Glitch9.AIDevKit.Google.GenerateAnswerRequest.InlinePassages
+  - Glitch9.AIDevKit.Google.GenerateAnswerRequest.SafetySettings
+  - Glitch9.AIDevKit.Google.GenerateAnswerRequest.SemanticRetriever
+  - Glitch9.AIDevKit.Google.GenerateAnswerRequest.Temperature
+  langs:
+  - csharp
+  - vb
+  name: GenerateAnswerRequest
+  nameWithType: GenerateAnswerRequest
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  type: Class
+  source:
+    id: GenerateAnswerRequest
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerRequest.cs
+    startLine: 12
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Generates a response from the model given an input GenerateContentRequest.
+
+    Input capabilities differ between models, including tuned models.
+
+    See the <a href="https://ai.google.dev/models/gemini">model guide</a>
+
+    and <a href="https://ai.google.dev/docs/model_tuning_guidance">tuning guide</a> for details.
+  example: []
+  syntax:
+    content: 'public class GenerateAnswerRequest : GenerativeAIRequest'
+    content.vb: Public Class GenerateAnswerRequest Inherits GenerativeAIRequest
+  inheritance:
+  - System.Object
+  - Glitch9.IO.Networking.RESTApi.RequestBody
+  - Glitch9.AIDevKit.Google.GenerativeAIRequest
+  inheritedMembers:
+  - Glitch9.AIDevKit.Google.GenerativeAIRequest.Model
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.Contents
+  commentId: P:Glitch9.AIDevKit.Google.GenerateAnswerRequest.Contents
+  id: Contents
+  parent: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  langs:
+  - csharp
+  - vb
+  name: Contents
+  nameWithType: GenerateAnswerRequest.Contents
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.Contents
+  type: Property
+  source:
+    id: Contents
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerRequest.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public List<Content> Contents { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Glitch9.AIDevKit.Google.Content}
+    content.vb: Public Property Contents As List(Of Content)
+  overload: Glitch9.AIDevKit.Google.GenerateAnswerRequest.Contents*
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.AnswerStyle
+  commentId: P:Glitch9.AIDevKit.Google.GenerateAnswerRequest.AnswerStyle
+  id: AnswerStyle
+  parent: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  langs:
+  - csharp
+  - vb
+  name: AnswerStyle
+  nameWithType: GenerateAnswerRequest.AnswerStyle
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.AnswerStyle
+  type: Property
+  source:
+    id: AnswerStyle
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerRequest.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public AnswerStyle AnswerStyle { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.AnswerStyle
+    content.vb: Public Property AnswerStyle As AnswerStyle
+  overload: Glitch9.AIDevKit.Google.GenerateAnswerRequest.AnswerStyle*
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.SafetySettings
+  commentId: P:Glitch9.AIDevKit.Google.GenerateAnswerRequest.SafetySettings
+  id: SafetySettings
+  parent: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  langs:
+  - csharp
+  - vb
+  name: SafetySettings
+  nameWithType: GenerateAnswerRequest.SafetySettings
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.SafetySettings
+  type: Property
+  source:
+    id: SafetySettings
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerRequest.cs
+    startLine: 16
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public List<SafetySetting> SafetySettings { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Glitch9.AIDevKit.SafetySetting}
+    content.vb: Public Property SafetySettings As List(Of SafetySetting)
+  overload: Glitch9.AIDevKit.Google.GenerateAnswerRequest.SafetySettings*
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.InlinePassages
+  commentId: P:Glitch9.AIDevKit.Google.GenerateAnswerRequest.InlinePassages
+  id: InlinePassages
+  parent: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  langs:
+  - csharp
+  - vb
+  name: InlinePassages
+  nameWithType: GenerateAnswerRequest.InlinePassages
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.InlinePassages
+  type: Property
+  source:
+    id: InlinePassages
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerRequest.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public GroundingPassages InlinePassages { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.GroundingPassages
+    content.vb: Public Property InlinePassages As GroundingPassages
+  overload: Glitch9.AIDevKit.Google.GenerateAnswerRequest.InlinePassages*
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.SemanticRetriever
+  commentId: P:Glitch9.AIDevKit.Google.GenerateAnswerRequest.SemanticRetriever
+  id: SemanticRetriever
+  parent: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  langs:
+  - csharp
+  - vb
+  name: SemanticRetriever
+  nameWithType: GenerateAnswerRequest.SemanticRetriever
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.SemanticRetriever
+  type: Property
+  source:
+    id: SemanticRetriever
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerRequest.cs
+    startLine: 18
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public SemanticRetrieverConfig SemanticRetriever { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Google.SemanticRetrieverConfig
+    content.vb: Public Property SemanticRetriever As SemanticRetrieverConfig
+  overload: Glitch9.AIDevKit.Google.GenerateAnswerRequest.SemanticRetriever*
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.Temperature
+  commentId: P:Glitch9.AIDevKit.Google.GenerateAnswerRequest.Temperature
+  id: Temperature
+  parent: Glitch9.AIDevKit.Google.GenerateAnswerRequest
+  langs:
+  - csharp
+  - vb
+  name: Temperature
+  nameWithType: GenerateAnswerRequest.Temperature
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.Temperature
+  type: Property
+  source:
+    id: Temperature
+    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateAnswer/GenerateAnswerRequest.cs
+    startLine: 19
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public double Temperature { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Temperature As Double
+  overload: Glitch9.AIDevKit.Google.GenerateAnswerRequest.Temperature*
+references:
+- uid: Glitch9.AIDevKit.Google
+  commentId: N:Glitch9.AIDevKit.Google
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Google
+  nameWithType: Glitch9.AIDevKit.Google
+  fullName: Glitch9.AIDevKit.Google
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Google
+    name: Google
+    href: Glitch9.AIDevKit.Google.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.IO.Networking.RESTApi.RequestBody
+  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
+  parent: Glitch9.IO.Networking.RESTApi
+  name: RequestBody
+  nameWithType: RequestBody
+  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
+- uid: Glitch9.AIDevKit.Google.GenerativeAIRequest
+  commentId: T:Glitch9.AIDevKit.Google.GenerativeAIRequest
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GenerativeAIRequest.html
+  name: GenerativeAIRequest
+  nameWithType: GenerativeAIRequest
+  fullName: Glitch9.AIDevKit.Google.GenerativeAIRequest
+- uid: Glitch9.AIDevKit.Google.GenerativeAIRequest.Model
+  commentId: P:Glitch9.AIDevKit.Google.GenerativeAIRequest.Model
+  parent: Glitch9.AIDevKit.Google.GenerativeAIRequest
+  href: Glitch9.AIDevKit.Google.GenerativeAIRequest.html#Glitch9_AIDevKit_Google_GenerativeAIRequest_Model
+  name: Model
+  nameWithType: GenerativeAIRequest.Model
+  fullName: Glitch9.AIDevKit.Google.GenerativeAIRequest.Model
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.IO.Networking.RESTApi
+  commentId: N:Glitch9.IO.Networking.RESTApi
+  href: Glitch9.html
+  name: Glitch9.IO.Networking.RESTApi
+  nameWithType: Glitch9.IO.Networking.RESTApi
+  fullName: Glitch9.IO.Networking.RESTApi
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Networking
+    name: Networking
+    href: Glitch9.IO.Networking.html
+  - name: .
+  - uid: Glitch9.IO.Networking.RESTApi
+    name: RESTApi
+    href: Glitch9.IO.Networking.RESTApi.html
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.Contents*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateAnswerRequest.Contents
+  href: Glitch9.AIDevKit.Google.GenerateAnswerRequest.html#Glitch9_AIDevKit_Google_GenerateAnswerRequest_Contents
+  name: Contents
+  nameWithType: GenerateAnswerRequest.Contents
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.Contents
+- uid: System.Collections.Generic.List{Glitch9.AIDevKit.Google.Content}
+  commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.Google.Content}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: Glitch9.AIDevKit.Google.Content.html
+  name: List<Content>
+  nameWithType: List<Content>
+  fullName: System.Collections.Generic.List<Glitch9.AIDevKit.Google.Content>
+  nameWithType.vb: List(Of Content)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.AIDevKit.Google.Content)
+  name.vb: List(Of Content)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Google.Content
+    name: Content
+    href: Glitch9.AIDevKit.Google.Content.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Google.Content
+    name: Content
+    href: Glitch9.AIDevKit.Google.Content.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.AnswerStyle*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateAnswerRequest.AnswerStyle
+  href: Glitch9.AIDevKit.Google.GenerateAnswerRequest.html#Glitch9_AIDevKit_Google_GenerateAnswerRequest_AnswerStyle
+  name: AnswerStyle
+  nameWithType: GenerateAnswerRequest.AnswerStyle
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.AnswerStyle
+- uid: Glitch9.AIDevKit.Google.AnswerStyle
+  commentId: T:Glitch9.AIDevKit.Google.AnswerStyle
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.AnswerStyle.html
+  name: AnswerStyle
+  nameWithType: AnswerStyle
+  fullName: Glitch9.AIDevKit.Google.AnswerStyle
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.SafetySettings*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateAnswerRequest.SafetySettings
+  href: Glitch9.AIDevKit.Google.GenerateAnswerRequest.html#Glitch9_AIDevKit_Google_GenerateAnswerRequest_SafetySettings
+  name: SafetySettings
+  nameWithType: GenerateAnswerRequest.SafetySettings
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.SafetySettings
+- uid: System.Collections.Generic.List{Glitch9.AIDevKit.SafetySetting}
+  commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.SafetySetting}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: Glitch9.AIDevKit.SafetySetting.html
+  name: List<SafetySetting>
+  nameWithType: List<SafetySetting>
+  fullName: System.Collections.Generic.List<Glitch9.AIDevKit.SafetySetting>
+  nameWithType.vb: List(Of SafetySetting)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.AIDevKit.SafetySetting)
+  name.vb: List(Of SafetySetting)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.SafetySetting
+    name: SafetySetting
+    href: Glitch9.AIDevKit.SafetySetting.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.SafetySetting
+    name: SafetySetting
+    href: Glitch9.AIDevKit.SafetySetting.html
+  - name: )
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.InlinePassages*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateAnswerRequest.InlinePassages
+  href: Glitch9.AIDevKit.Google.GenerateAnswerRequest.html#Glitch9_AIDevKit_Google_GenerateAnswerRequest_InlinePassages
+  name: InlinePassages
+  nameWithType: GenerateAnswerRequest.InlinePassages
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.InlinePassages
+- uid: Glitch9.AIDevKit.Google.GroundingPassages
+  commentId: T:Glitch9.AIDevKit.Google.GroundingPassages
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GroundingPassages.html
+  name: GroundingPassages
+  nameWithType: GroundingPassages
+  fullName: Glitch9.AIDevKit.Google.GroundingPassages
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.SemanticRetriever*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateAnswerRequest.SemanticRetriever
+  href: Glitch9.AIDevKit.Google.GenerateAnswerRequest.html#Glitch9_AIDevKit_Google_GenerateAnswerRequest_SemanticRetriever
+  name: SemanticRetriever
+  nameWithType: GenerateAnswerRequest.SemanticRetriever
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.SemanticRetriever
+- uid: Glitch9.AIDevKit.Google.SemanticRetrieverConfig
+  commentId: T:Glitch9.AIDevKit.Google.SemanticRetrieverConfig
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.SemanticRetrieverConfig.html
+  name: SemanticRetrieverConfig
+  nameWithType: SemanticRetrieverConfig
+  fullName: Glitch9.AIDevKit.Google.SemanticRetrieverConfig
+- uid: Glitch9.AIDevKit.Google.GenerateAnswerRequest.Temperature*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateAnswerRequest.Temperature
+  href: Glitch9.AIDevKit.Google.GenerateAnswerRequest.html#Glitch9_AIDevKit_Google_GenerateAnswerRequest_Temperature
+  name: Temperature
+  nameWithType: GenerateAnswerRequest.Temperature
+  fullName: Glitch9.AIDevKit.Google.GenerateAnswerRequest.Temperature
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
