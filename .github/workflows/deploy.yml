@@ -17,10 +17,10 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: "7.0.x" # DocFX가 사용하는 .NET SDK 버전
+          dotnet-version: "8.0.x" # DocFX가 사용하는 .NET SDK 버전
 
       - name: Install DocFX
-        run: dotnet tool update -g docfx
+        run: dotnet tool install -g docfx --version 2.74.1
 
       - name: Build DocFX
         run: docfx docfx.json
