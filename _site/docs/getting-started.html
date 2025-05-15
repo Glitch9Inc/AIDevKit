@@ -90,7 +90,8 @@
 <li><strong>Sequencing Tasks:</strong> The system provides a <strong>GENSequence</strong> utility to run multiple tasks in order, which is useful for multi-step workflows (for example, generate a text description, then generate an image from that description, sequentially).</li>
 </ul>
 <p>In the sections below, we'll explore each major GENTask type with simple code examples, demonstrate how to configure tasks using the fluent API, show how to chain tasks with GENSequence, and explain how to use streaming callbacks like <code>OnStreamText</code> for real-time updates. This guide assumes you have imported the necessary AI Dev Kit into your Unity project and have any required API keys or configuration set up (for OpenAI, etc.), but <strong>no prior experience with AI APIs is needed</strong> – GENTask abstracts those details for you.</p>
-<h2 id="text-generation-tasks-gentexttask">Text Generation Tasks (GENTextTask)</h2>
+<hr>
+<h2 id="text-generation---gentext">Text Generation - GENText</h2>
 <p>Text generation is one of the core uses of generative AI. In the GENTask system, the <strong>GENTextTask</strong> class is used to generate text (for example, completing a prompt or answering a question). This task sends a prompt to a Large Language Model (LLM) and returns a text response.</p>
 <p><strong>How to create a text generation task:</strong> You can start a text task from a plain string prompt by calling the extension method <code>.GENText()</code> on a string. This returns a <code>GENTextTask</code> which you can then configure and execute. For example:</p>
 <pre><code class="lang-csharp">&quot;Tell me a joke about cats.&quot;
@@ -126,7 +127,8 @@ Debug.Log(result);
     .ExecuteAsync();
 </code></pre>
 <p>Here, <code>chatSession</code> might hold the conversation history and system instructions, and <code>userMessage</code> is the latest user prompt (perhaps created as <code>ChatMessage.CreateUserMessage(&quot;Hello, how are you?&quot;)</code>). The details of <code>ChatSession</code>/<code>ChatMessage</code> are part of the Dev Kit's conversation management, but the key idea is that <code>GENChatTask</code> will incorporate context from the session (previous messages, etc.) when generating a response. Use <code>GENChatTask</code> if you need the AI to remember conversation context or if you're calling chat-specific models. If you're just generating one-off text from a prompt, <code>GENTextTask</code> is sufficient.</p>
-<h2 id="image-generation-tasks-genimagecreationtask-genimageedittask-genimagevariationtask">Image Generation Tasks (GENImageCreationTask, GENImageEditTask, GENImageVariationTask)</h2>
+<hr>
+<h2 id="image-generation---genimage">Image Generation - GENImage</h2>
 <p>Another exciting feature is the ability to generate or modify images using AI. The GENTask system includes tasks for image generation:</p>
 <ul>
 <li><strong>GENImageCreationTask</strong> – creates new image(s) from a text prompt (e.g. using models like OpenAI's DALL·E or others).</li>
@@ -158,6 +160,7 @@ Debug.Log(result);
 <p>Since variation tasks simply take the image and no additional prompt text, you just call <code>.GENImageVariation()</code> on the <code>Texture2D</code> (or Image/RawImage).</p>
 <p><strong>Note:</strong> Not all models support editing or variation. For instance, at the time of writing, OpenAI's DALL·E 3 may not support editing/variation via API (only via their UI). In such cases, you might use DALL·E 2 or another provider that supports it. Always ensure the model you set is compatible with the task type.</p>
 <p>Both <code>GENImageEditTask</code> and <code>GENImageVariationTask</code> return a generated image similar to <code>GENImageCreationTask</code>. If you chain from a Unity component (like in the examples above using <code>baseTexture</code> or an <code>Image</code>), the result will also be auto-applied to that component.</p>
+<hr>
 <h2 id="audio-tasks-text-to-speech-and-speech-to-text">Audio Tasks (Text-to-Speech and Speech-to-Text)</h2>
 <p>The GENTask system also covers audio generation and processing tasks. This opens up possibilities like generating voice-over audio from text or transcribing player speech. Major audio-related task types include:</p>
 <ul>
@@ -211,6 +214,7 @@ Debug.Log(result);
 <li><strong>Task-specific settings:</strong> Many tasks have their own extra fluent methods. For instance, <code>GENSpeechTask</code> has <code>.SetVoice(...)</code> and <code>.SetSpeed(...)</code> as shown earlier. <code>GENTranscriptTask</code> has <code>.SetLanguage(...)</code>. <code>GENSoundEffectTask</code> might have something like <code>.SetDuration(seconds)</code> to control sound length. These can be chained after the generic ones. Intellisense or documentation can reveal these if you type <code>task.</code> and see what's available for that task type.</li>
 </ul>
 <p>All these methods return the task object (<code>this</code>), which is why you can keep chaining one after another. You typically end the chain with an execution call (<code>ExecuteAsync()</code> or <code>StreamAsync()</code>), which actually runs the task. If you forget to call an execution method, nothing will happen – configuring a task alone doesn’t start it.</p>
+<hr>
 <h2 id="executing-multiple-tasks-in-sequence-with-gensequence">Executing Multiple Tasks in Sequence with GENSequence</h2>
 <p>Sometimes you may want to run several generative tasks one after the other. For example, generate a piece of text, then use that text in a subsequent task, or just run a batch of independent tasks in order. <strong>GENSequence</strong> is a utility class to help with this.</p>
 <p>Using GENSequence is straightforward:</p>
@@ -255,6 +259,7 @@ await sequence.ExecuteAsync();
 <pre><code class="lang-csharp">foreach(var task in tasks) await task.ExecuteAsync();
 </code></pre>
 <p>as seen in its implementation.</p>
+<hr>
 <h2 id="streaming-results-in-real-time-onstreamtext-and-onstreamcomplete">Streaming Results in Real Time (OnStreamText and OnStreamComplete)</h2>
 <p>For tasks like text generation, waiting for the whole response to finish can take several seconds if the output is long. Streaming allows you to get partial results from the model as they are generated. The GENTask system supports streaming particularly for text-based tasks (like GENTextTask and GENChatTask), and even for speech tasks in a way (some TTS models might stream audio).</p>
 <p>When you enable streaming, you can provide callbacks to handle the data as it arrives:</p>
@@ -284,10 +289,6 @@ await sequence.ExecuteAsync();
 <p><strong>How does this work internally?</strong> When you call <code>StreamAsync()</code>, the GENTask system calls the AI API in streaming mode (if the provider supports it). The <code>OnStreamText</code> callback is tied to the event of receiving new tokens or text from the stream. The toolkit uses a <code>ChatStreamHandler</code> behind the scenes to manage these events. You don't need to manage that handler manually – calling the fluent <code>OnStream...</code> methods sets it all up for you. Just remember to use <code>StreamAsync()</code> at the end of the chain for streaming; if you use <code>ExecuteAsync()</code>, you will <em>not</em> get partial updates (it waits for full completion).</p>
 <p><strong>Streaming audio:</strong> For text-to-speech, some TTS services stream audio chunks. GENTask provides a similar pattern where you might supply an <code>OnStreamAudio</code> callback or use a special audio player that plays as it streams. Specifically, <code>GENSpeechTask.StreamAsync(StreamAudioPlayer player)</code> could be used to stream audio directly to a player. The idea is that as audio is synthesized, it begins playing without waiting for the entire clip. This is more advanced and depends on support from the TTS provider. If your TTS model supports streaming, you could utilize this to reduce latency (the user hears the speech as it's being generated). The usage would be analogous: set up a player and call <code>.StreamAsync(player)</code> instead of <code>.ExecuteAsync()</code>. For simplicity, if you're a beginner, you can first focus on non-streaming audio (generate then play).</p>
 <p><strong>Tip:</strong> Not all tasks support streaming. Primarily, it's for text and chat completions, and possibly TTS. Image generation and others usually have to wait for the whole result. The fluent API methods <code>OnStreamText</code>, <code>OnStreamComplete</code>, etc., are available on <code>GENTextTask</code> and <code>GENChatTask</code>. If you attempt to use <code>StreamAsync()</code> on a task that doesn't stream, it will likely throw a not-supported exception or simply behave like a normal call. Always test your specific use-case.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>In summary, the GENTask system in Unity’s AI Dev Kit allows you to easily leverage generative AI for a variety of content types with minimal code. You create tasks from your data (text, images, audio) via intuitive extension methods, configure them with a fluent API, and run them asynchronously – keeping your game interactive. For multi-step AI workflows, GENSequence helps organize sequential execution, and for responsive UI or interactivity, streaming callbacks like <code>OnStreamText</code> let you present AI output in real-time.</p>
-<p>As a beginner, start with simple examples: generate some text and display it, create an image from a prompt and show it in a UI, or convert a line of dialogue to speech and play it. Once comfortable, you can explore more advanced features like chat sessions, structured JSON outputs (using <code>GENObjectTask&lt;T&gt;</code> for getting AI to fill a C# object), content moderation checks with <code>GENModerationTask</code>, or fine-tuning how each task operates with the many configuration options provided.</p>
-<p>With GENTask, you don't need to know the intricacies of HTTP calls or JSON parsing for AI APIs – you can focus on creative ideas of <em>what</em> to generate and <em>how</em> to use it in your game. Happy experimenting with generative AI in Unity!</p>
 
 </article>
           </div>
@@ -296,6 +297,9 @@ await sequence.ExecuteAsync();
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/AIDevKit/blob/main/docs/getting-started.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

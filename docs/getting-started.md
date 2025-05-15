@@ -14,7 +14,13 @@
 
 In the sections below, we'll explore each major GENTask type with simple code examples, demonstrate how to configure tasks using the fluent API, show how to chain tasks with GENSequence, and explain how to use streaming callbacks like `OnStreamText` for real-time updates. This guide assumes you have imported the necessary AI Dev Kit into your Unity project and have any required API keys or configuration set up (for OpenAI, etc.), but **no prior experience with AI APIs is needed** – GENTask abstracts those details for you.
 
-## Text Generation Tasks (GENTextTask)
+
+
+---
+
+
+
+## Text Generation - GENText
 
 Text generation is one of the core uses of generative AI. In the GENTask system, the **GENTextTask** class is used to generate text (for example, completing a prompt or answering a question). This task sends a prompt to a Large Language Model (LLM) and returns a text response.
 
@@ -66,7 +72,13 @@ chatSession.GENChat(userMessage)
 
 Here, `chatSession` might hold the conversation history and system instructions, and `userMessage` is the latest user prompt (perhaps created as `ChatMessage.CreateUserMessage("Hello, how are you?")`). The details of `ChatSession`/`ChatMessage` are part of the Dev Kit's conversation management, but the key idea is that `GENChatTask` will incorporate context from the session (previous messages, etc.) when generating a response. Use `GENChatTask` if you need the AI to remember conversation context or if you're calling chat-specific models. If you're just generating one-off text from a prompt, `GENTextTask` is sufficient.
 
-## Image Generation Tasks (GENImageCreationTask, GENImageEditTask, GENImageVariationTask)
+
+
+---
+
+
+
+## Image Generation - GENImage
 
 Another exciting feature is the ability to generate or modify images using AI. The GENTask system includes tasks for image generation:
 
@@ -114,6 +126,12 @@ Since variation tasks simply take the image and no additional prompt text, you j
 **Note:** Not all models support editing or variation. For instance, at the time of writing, OpenAI's DALL·E 3 may not support editing/variation via API (only via their UI). In such cases, you might use DALL·E 2 or another provider that supports it. Always ensure the model you set is compatible with the task type.
 
 Both `GENImageEditTask` and `GENImageVariationTask` return a generated image similar to `GENImageCreationTask`. If you chain from a Unity component (like in the examples above using `baseTexture` or an `Image`), the result will also be auto-applied to that component.
+
+
+
+---
+
+
 
 ## Audio Tasks (Text-to-Speech and Speech-to-Text)
 
@@ -189,6 +207,12 @@ All GENTask types support a set of **fluent configuration methods** that you can
 
 All these methods return the task object (`this`), which is why you can keep chaining one after another. You typically end the chain with an execution call (`ExecuteAsync()` or `StreamAsync()`), which actually runs the task. If you forget to call an execution method, nothing will happen – configuring a task alone doesn’t start it.
 
+
+
+---
+
+
+
 ## Executing Multiple Tasks in Sequence with GENSequence
 
 Sometimes you may want to run several generative tasks one after the other. For example, generate a piece of text, then use that text in a subsequent task, or just run a batch of independent tasks in order. **GENSequence** is a utility class to help with this.
@@ -247,6 +271,12 @@ foreach(var task in tasks) await task.ExecuteAsync();
 
 as seen in its implementation.
 
+
+
+---
+
+
+
 ## Streaming Results in Real Time (OnStreamText and OnStreamComplete)
 
 For tasks like text generation, waiting for the whole response to finish can take several seconds if the output is long. Streaming allows you to get partial results from the model as they are generated. The GENTask system supports streaming particularly for text-based tasks (like GENTextTask and GENChatTask), and even for speech tasks in a way (some TTS models might stream audio).
@@ -284,11 +314,3 @@ In this example, we clear a UI Text (`myTextUI`) and then start a streaming text
 **Streaming audio:** For text-to-speech, some TTS services stream audio chunks. GENTask provides a similar pattern where you might supply an `OnStreamAudio` callback or use a special audio player that plays as it streams. Specifically, `GENSpeechTask.StreamAsync(StreamAudioPlayer player)` could be used to stream audio directly to a player. The idea is that as audio is synthesized, it begins playing without waiting for the entire clip. This is more advanced and depends on support from the TTS provider. If your TTS model supports streaming, you could utilize this to reduce latency (the user hears the speech as it's being generated). The usage would be analogous: set up a player and call `.StreamAsync(player)` instead of `.ExecuteAsync()`. For simplicity, if you're a beginner, you can first focus on non-streaming audio (generate then play).
 
 **Tip:** Not all tasks support streaming. Primarily, it's for text and chat completions, and possibly TTS. Image generation and others usually have to wait for the whole result. The fluent API methods `OnStreamText`, `OnStreamComplete`, etc., are available on `GENTextTask` and `GENChatTask`. If you attempt to use `StreamAsync()` on a task that doesn't stream, it will likely throw a not-supported exception or simply behave like a normal call. Always test your specific use-case.
-
-## Conclusion
-
-In summary, the GENTask system in Unity’s AI Dev Kit allows you to easily leverage generative AI for a variety of content types with minimal code. You create tasks from your data (text, images, audio) via intuitive extension methods, configure them with a fluent API, and run them asynchronously – keeping your game interactive. For multi-step AI workflows, GENSequence helps organize sequential execution, and for responsive UI or interactivity, streaming callbacks like `OnStreamText` let you present AI output in real-time.
-
-As a beginner, start with simple examples: generate some text and display it, create an image from a prompt and show it in a UI, or convert a line of dialogue to speech and play it. Once comfortable, you can explore more advanced features like chat sessions, structured JSON outputs (using `GENObjectTask<T>` for getting AI to fill a C# object), content moderation checks with `GENModerationTask`, or fine-tuning how each task operates with the many configuration options provided.
-
-With GENTask, you don't need to know the intricacies of HTTP calls or JSON parsing for AI APIs – you can focus on creative ideas of *what* to generate and *how* to use it in your game. Happy experimenting with generative AI in Unity!

@@ -87,7 +87,7 @@ A gateway to multiple third-party LLMs offering **300+ models** including **Clau
 <br>
 
 > [!NOTE]
-> More API integrations are on the way: Have something you'd like to see next? Let us know via Discord — your feedback shapes the roadmap.
+> More API integrations are on the way: Have something you'd like to see next? Let us know via [Discord](https://discord.com/invite/hgajxPpJYf) — your feedback shapes the roadmap.
 
 ---
 
@@ -95,20 +95,25 @@ A gateway to multiple third-party LLMs offering **300+ models** including **Clau
 
 ![Generative Features](images/supported_features.png)
 
+---
+
 ## **Editor Tools**
 
-### Unity-Specialized AI Chat
+- ### Unity-Specialized AI Chat
+
 
 ![Editor Chat](images/editor_chat.png)
 Chat directly with an integrated AI-powered assistant within the Unity Editor. Ask anything from *"How do I fix this error?"* to *"What scripts do I need for character jumping?"* The assistant provides clear explanations, coding tips, and even edits existing scripts on command, simplifying your coding process.
 
-### Image & Texture Generation
+- ### Image & Texture Generation
+
 
 ![Editor Vision](images/editor_vision.png)
 
 Generate detailed textures, sprites, icons, and concept art directly from descriptive text prompts using cutting-edge AI like DALL·E and Stable Diffusion. Just input something like *"Pixel art icon of a magic sword with blue flames,"* and receive high-quality assets instantly ready to use.
 
-### Speech Generation
+- ### Speech Generation
+
 
 ![Editor Speech](images/editor_speech.png)
 
