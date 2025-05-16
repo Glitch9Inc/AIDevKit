@@ -78,6 +78,42 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 
+<h2 id="text-generation---gentext">Text Generation - GENText</h2>
+<p>Text generation is one of the core uses of generative AI. In the GENTask system, the <strong>GENTextTask</strong> class is used to generate text (for example, completing a prompt or answering a question). This task sends a prompt to a Large Language Model (LLM) and returns a text response.</p>
+<p><strong>How to create a text generation task:</strong> You can start a text task from a plain string prompt by calling the extension method <code>.GENText()</code> on a string. This returns a <code>GENTextTask</code> which you can then configure and execute. For example:</p>
+<pre><code class="lang-csharp">&quot;Tell me a joke about cats.&quot;
+    .GENText()                            // Create a text-generation task with this prompt
+    .SetModel(OpenAIModel.GPT4)           // Choose an AI model (e.g. GPT-4)
+    .SetOutputPath(&quot;Assets/AIOutputs/joke.txt&quot;) // (Optional) save output to a file
+    .ExecuteAsync();                      // Run the task asynchronously
+</code></pre>
+<p>Let's break down what happens here:</p>
+<ul>
+<li><code>&quot;Tell me a joke about cats.&quot;</code> – This is our prompt string. By calling <code>.GENText()</code> on it, we construct a <code>GENTextTask</code> using that string as the prompt. Under the hood, this creates a new <code>GENTextTask</code> instance.</li>
+<li><code>.SetModel(OpenAIModel.GPT4)</code> – We specify which AI model to use. The Dev Kit likely provides an <code>OpenAIModel</code> class or enum with options like GPT3, GPT4, etc. Here we choose GPT-4. If you don’t call <code>SetModel</code>, a default model (configured in your settings) will be used. Using <code>SetModel</code> ensures we target the model we want.</li>
+<li><code>.SetOutputPath(&quot;Assets/AIOutputs/joke.txt&quot;)</code> – This optional step sets a file path to save the generated text. If provided, the system will write the output to that path (e.g., a text or JSON file) when the task completes. This is useful for logging or reusing the content later. If omitted, the text is still available in memory (as the return value or via callbacks), just not automatically saved.</li>
+<li><code>.ExecuteAsync()</code> – Finally, we execute the task asynchronously. This sends the request to the AI model and returns a UniTask that completes when the AI's response is received. We don't <code>await</code> it in this snippet (for simplicity), but in a real script you might want to <code>await</code> this call inside an async method, or handle the result in a callback (we'll discuss handling results in a moment). The task runs in the background without freezing your game.</li>
+</ul>
+<p><strong>Using the result:</strong> After execution, the generated text (let's call it <code>GeneratedText</code>) will be returned by <code>ExecuteAsync()</code>. If you're in an async context, you can capture it like:</p>
+<pre><code class="lang-csharp">GeneratedText result = await &quot;Tell me a joke about cats.&quot;
+                          .GENText()
+                          .SetModel(OpenAIModel.GPT4)
+                          .ExecuteAsync();
+// Now do something with result, e.g. display it
+Debug.Log(result);
+</code></pre>
+<p>Here, <code>GeneratedText</code> is essentially the resulting text (the library uses a <code>GeneratedText</code> type for the output, which can be treated as a <code>string</code>). If you provided a Unity UI <code>Text</code> or TMP text object as a target when creating the task, the system would automatically assign the resulting text to that UI element for you. For example:</p>
+<pre><code class="lang-csharp">myTextComponent.GENText(&quot;Once upon a time,&quot;)
+    .SetModel(OpenAIModel.GPT3)   // choose a model, say GPT-3 for faster response
+    .ExecuteAsync();
+</code></pre>
+<p>In this case, <code>myTextComponent</code> is a <code>UnityEngine.UI.Text</code> element in the scene. Because we called <code>.GENText</code> on a <code>Text</code> object (with the prompt as a parameter), the <code>GENTextTask</code> knows about that target text object. When the task completes, it will automatically set <code>myTextComponent.text</code> to the generated text for you – no manual assignment needed. This is a convenient way to have AI-generated text appear directly in your UI.</p>
+<p><strong>Chat completions (GENChatTask):</strong> If you want to have a conversational AI (with system, user, assistant roles or multi-turn dialogue), the GENTask system provides <strong>GENChatTask</strong>. This is similar to <code>GENTextTask</code> but uses a chat-centric model (like ChatGPT). To use it, you'd typically maintain a <code>ChatSession</code> object and create a new <code>ChatMessage</code>, then call <code>chatSession.GENChat(chatMessage)</code>. For example:</p>
+<pre><code class="lang-csharp">chatSession.GENChat(userMessage)
+    .SetModel(OpenAIModel.GPT4)  // e.g. GPT-4 in chat mode
+    .ExecuteAsync();
+</code></pre>
+<p>Here, <code>chatSession</code> might hold the conversation history and system instructions, and <code>userMessage</code> is the latest user prompt (perhaps created as <code>ChatMessage.CreateUserMessage(&quot;Hello, how are you?&quot;)</code>). The details of <code>ChatSession</code>/<code>ChatMessage</code> are part of the Dev Kit's conversation management, but the key idea is that <code>GENChatTask</code> will incorporate context from the session (previous messages, etc.) when generating a response. Use <code>GENChatTask</code> if you need the AI to remember conversation context or if you're calling chat-specific models. If you're just generating one-off text from a prompt, <code>GENTextTask</code> is sufficient.</p>
 
 </article>
           </div>

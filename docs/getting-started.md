@@ -1,7 +1,5 @@
 # Getting Started with GENTask
 
-## Generative AI Tasks for Text, Images, and More
-
 **GENTask** is a unified system for running generative AI tasks (text generation, image creation, audio processing, etc.) within Unity. It simplifies calling AI models (like GPT or DALL·E) by providing easy-to-use classes for each task type and a fluent, chainable API for configuring and executing these tasks. The goal is to make it beginner-friendly to integrate AI-generated content into your Unity project without deep knowledge of HTTP requests or specific AI API details.
 
 **Key Features:**
@@ -14,96 +12,9 @@
 
 In the sections below, we'll explore each major GENTask type with simple code examples, demonstrate how to configure tasks using the fluent API, show how to chain tasks with GENSequence, and explain how to use streaming callbacks like `OnStreamText` for real-time updates. This guide assumes you have imported the necessary AI Dev Kit into your Unity project and have any required API keys or configuration set up (for OpenAI, etc.), but **no prior experience with AI APIs is needed** – GENTask abstracts those details for you.
 
-
-
 ---
 
-
-
-## Text Generation - GENText
-
-Text generation is one of the core uses of generative AI. In the GENTask system, the **GENTextTask** class is used to generate text (for example, completing a prompt or answering a question). This task sends a prompt to a Large Language Model (LLM) and returns a text response.
-
-**How to create a text generation task:** You can start a text task from a plain string prompt by calling the extension method `.GENText()` on a string. This returns a `GENTextTask` which you can then configure and execute. For example:
-
-```csharp
-"Tell me a joke about cats."
-    .GENText()                            // Create a text-generation task with this prompt
-    .SetModel(OpenAIModel.GPT4)           // Choose an AI model (e.g. GPT-4)
-    .SetOutputPath("Assets/AIOutputs/joke.txt") // (Optional) save output to a file
-    .ExecuteAsync();                      // Run the task asynchronously
-```
-
-Let's break down what happens here:
-
-* `"Tell me a joke about cats."` – This is our prompt string. By calling `.GENText()` on it, we construct a `GENTextTask` using that string as the prompt. Under the hood, this creates a new `GENTextTask` instance.
-* `.SetModel(OpenAIModel.GPT4)` – We specify which AI model to use. The Dev Kit likely provides an `OpenAIModel` class or enum with options like GPT3, GPT4, etc. Here we choose GPT-4. If you don’t call `SetModel`, a default model (configured in your settings) will be used. Using `SetModel` ensures we target the model we want.
-* `.SetOutputPath("Assets/AIOutputs/joke.txt")` – This optional step sets a file path to save the generated text. If provided, the system will write the output to that path (e.g., a text or JSON file) when the task completes. This is useful for logging or reusing the content later. If omitted, the text is still available in memory (as the return value or via callbacks), just not automatically saved.
-* `.ExecuteAsync()` – Finally, we execute the task asynchronously. This sends the request to the AI model and returns a UniTask that completes when the AI's response is received. We don't `await` it in this snippet (for simplicity), but in a real script you might want to `await` this call inside an async method, or handle the result in a callback (we'll discuss handling results in a moment). The task runs in the background without freezing your game.
-
-**Using the result:** After execution, the generated text (let's call it `GeneratedText`) will be returned by `ExecuteAsync()`. If you're in an async context, you can capture it like:
-
-```csharp
-GeneratedText result = await "Tell me a joke about cats."
-                          .GENText()
-                          .SetModel(OpenAIModel.GPT4)
-                          .ExecuteAsync();
-// Now do something with result, e.g. display it
-Debug.Log(result);
-```
-
-Here, `GeneratedText` is essentially the resulting text (the library uses a `GeneratedText` type for the output, which can be treated as a `string`). If you provided a Unity UI `Text` or TMP text object as a target when creating the task, the system would automatically assign the resulting text to that UI element for you. For example:
-
-```csharp
-myTextComponent.GENText("Once upon a time,")
-    .SetModel(OpenAIModel.GPT3)   // choose a model, say GPT-3 for faster response
-    .ExecuteAsync();
-```
-
-In this case, `myTextComponent` is a `UnityEngine.UI.Text` element in the scene. Because we called `.GENText` on a `Text` object (with the prompt as a parameter), the `GENTextTask` knows about that target text object. When the task completes, it will automatically set `myTextComponent.text` to the generated text for you – no manual assignment needed. This is a convenient way to have AI-generated text appear directly in your UI.
-
-**Chat completions (GENChatTask):** If you want to have a conversational AI (with system, user, assistant roles or multi-turn dialogue), the GENTask system provides **GENChatTask**. This is similar to `GENTextTask` but uses a chat-centric model (like ChatGPT). To use it, you'd typically maintain a `ChatSession` object and create a new `ChatMessage`, then call `chatSession.GENChat(chatMessage)`. For example:
-
-```csharp
-chatSession.GENChat(userMessage)
-    .SetModel(OpenAIModel.GPT4)  // e.g. GPT-4 in chat mode
-    .ExecuteAsync();
-```
-
-Here, `chatSession` might hold the conversation history and system instructions, and `userMessage` is the latest user prompt (perhaps created as `ChatMessage.CreateUserMessage("Hello, how are you?")`). The details of `ChatSession`/`ChatMessage` are part of the Dev Kit's conversation management, but the key idea is that `GENChatTask` will incorporate context from the session (previous messages, etc.) when generating a response. Use `GENChatTask` if you need the AI to remember conversation context or if you're calling chat-specific models. If you're just generating one-off text from a prompt, `GENTextTask` is sufficient.
-
-
-
 ---
-
-
-
-## Image Generation - GENImage
-
-Another exciting feature is the ability to generate or modify images using AI. The GENTask system includes tasks for image generation:
-
-* **GENImageCreationTask** – creates new image(s) from a text prompt (e.g. using models like OpenAI's DALL·E or others).
-* **GENImageEditTask** – takes an existing image plus a text instruction to modify the image (e.g. "add sunglasses to this person").
-* **GENImageVariationTask** – takes an existing image and produces variations of it (remixes or similar images).
-
-**Creating an image from text:** Just like text, you can start an image generation task from a prompt string with the extension `.GENImage()`. For example:
-
-```csharp
-"An astronaut riding a unicorn in space".GENImage()
-    .SetModel(ImageModel.DallE3)                // choose an image generation model (e.g., DALL·E 3)
-    .SetOutputPath("Assets/AIOutputs/astronaut.png") // save the generated image to a PNG file
-    .ExecuteAsync();
-```
-
-When this task completes, it will return a `GeneratedImage` (which in this toolkit is likely a Sprite or Texture2D under the hood). If you provided a Unity UI `Image` or `RawImage` as the target, it would automatically assign the resulting image to that component's sprite/texture. For example:
-
-```csharp
-myImageUI.GENImage("A sunset over mountains")
-    .SetModel(ImageModel.DallE2)
-    .ExecuteAsync();
-```
-
-Here `myImageUI` is a `UnityEngine.UI.Image`. The extension method recognizes an `Image` object and uses its `sprite` as the output target. After the task runs, `myImageUI.sprite` will be set to the generated image sprite automatically. For a `RawImage`, the texture would be assigned, and for a `SpriteRenderer` in the scene, its sprite would be set. This makes displaying generated images in your game UI or scene very straightforward.
 
 **Image Editing and Variations:** To use these, you start from an existing image (a `Texture2D` or an `Image`/`RawImage`/`SpriteRenderer`). For example, say you have a `Texture2D` named `baseTexture` and you want to edit it:
 
@@ -127,12 +38,6 @@ Since variation tasks simply take the image and no additional prompt text, you j
 
 Both `GENImageEditTask` and `GENImageVariationTask` return a generated image similar to `GENImageCreationTask`. If you chain from a Unity component (like in the examples above using `baseTexture` or an `Image`), the result will also be auto-applied to that component.
 
-
-
----
-
-
-
 ## Audio Tasks (Text-to-Speech and Speech-to-Text)
 
 The GENTask system also covers audio generation and processing tasks. This opens up possibilities like generating voice-over audio from text or transcribing player speech. Major audio-related task types include:
@@ -146,52 +51,7 @@ The GENTask system also covers audio generation and processing tasks. This opens
 
 For beginners, the most common would be TTS and STT, so let's focus on those first.
 
-**Text-to-Speech (GENSpeechTask):** You can create a speech synthesis task from a string using `.GENSpeech()`. For example:
-
-```csharp
-"Hello, world!".GENSpeech()
-    .SetVoice(ElevenLabsVoice.Rachel)   // choose a voice (e.g., a preset from ElevenLabs)
-    .ExecuteAsync();
-```
-
-This will send the text to a TTS model and produce an audio clip (the `GeneratedAudio`). If you call `.GENSpeech()` on an `AudioSource` component instead of a string, the resulting audio clip will be automatically assigned to that AudioSource. For instance:
-
-```csharp
-myAudioSource.GENSpeech("Welcome to our game!")
-    .SetVoice(ElevenLabsVoice.Rachel)
-    .ExecuteAsync();
-// After completion, myAudioSource.clip is set to the generated speech audio.
-```
-
-Now that the AudioSource has the clip, you can play it in-game. In this example, you might want to call `myAudioSource.Play()` after the task finishes to actually hear it. If using an async method, you could `await` the `ExecuteAsync()` call, then call `Play()` on the next line. Alternatively, as we'll see in the streaming section, you could use a callback to play automatically when done.
-
-**Choosing a Voice:** The `.SetVoice(...)` method on GENSpeechTask lets you pick a specific voice preset for TTS. The Dev Kit likely includes predefined voices (for example, `ElevenLabsVoice.Rachel` as used above, or other providers' voices). If not set, a default voice may be used. You might also have methods like `.SetSpeed(float)` to control playback speed of the voice or `.SetSeed(uint)` for reproducibility, depending on the AI provider capabilities.
-
-**Speech-to-Text (GENTranscriptTask):** To transcribe an `AudioClip` (e.g., microphone recording) to text, use `.GENTranscript()` on the AudioClip. For example:
-
-```csharp
-audioClip.GENTranscript()
-    .ExecuteAsync();
-```
-
-This will produce a `GeneratedText` result with the transcription of the audio (often using models like OpenAI's Whisper for speech recognition). If you have a UI text element where you want the transcription to appear, you can call `.GENTranscript()` on that text element and pass the clip as a parameter:
-
-```csharp
-myTranscriptTextUI.GENTranscript(myRecordedClip)
-    .ExecuteAsync();
-```
-
-Because we started from `myTranscriptTextUI` (a `Text` or TMP text), once the transcription is done, the resulting text will automatically be set on that UI element (so the spoken words appear as on-screen text).
-
-There is also an optional `.SetLanguage()` for GENTranscriptTask if you want to hint the language of the audio for better accuracy (if not English). For example: `audioClip.GENTranscript().SetLanguage(SystemLanguage.French).ExecuteAsync();`.
-
-**Other audio tasks:** They work similarly:
-
-* To generate a **sound effect** from text: `"Footsteps on snow".GENSoundEffect().ExecuteAsync();` (this returns an AudioClip; you can target an AudioSource similarly with `.GENSoundEffect()` on the AudioSource).
-* To **change the voice** in a clip: `myClip.GENVoiceChange().SetVoice(ElevenLabsVoice.Antoni).ExecuteAsync();` (this might use an AI voice transformation model; target an AudioSource to apply the new voice clip to it).
-* To **isolate audio** elements: `myClip.GENAudioIsolation().ExecuteAsync();` (e.g., returns an AudioClip of isolated vocals or removed vocals, depending on default settings).
-
-Keep in mind some of these specialized tasks may require specific AI providers (for example, the ElevenLabs API for certain voice cloning or sound generation features). If you attempt to use them without the appropriate model or API configured, you might get a "Not supported" error. Always ensure you have set a suitable model via `SetModel` or that your default provider supports the task.
+---
 
 ## Configuring Tasks with Fluent APIs
 
@@ -207,11 +67,7 @@ All GENTask types support a set of **fluent configuration methods** that you can
 
 All these methods return the task object (`this`), which is why you can keep chaining one after another. You typically end the chain with an execution call (`ExecuteAsync()` or `StreamAsync()`), which actually runs the task. If you forget to call an execution method, nothing will happen – configuring a task alone doesn’t start it.
 
-
-
 ---
-
-
 
 ## Executing Multiple Tasks in Sequence with GENSequence
 
@@ -271,11 +127,7 @@ foreach(var task in tasks) await task.ExecuteAsync();
 
 as seen in its implementation.
 
-
-
 ---
-
-
 
 ## Streaming Results in Real Time (OnStreamText and OnStreamComplete)
 
