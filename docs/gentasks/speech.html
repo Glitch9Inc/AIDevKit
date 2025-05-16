@@ -78,6 +78,36 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 
+<p><strong>Text-to-Speech (GENSpeechTask):</strong> You can create a speech synthesis task from a string using <code>.GENSpeech()</code>. For example:</p>
+<pre><code class="lang-csharp">&quot;Hello, world!&quot;.GENSpeech()
+    .SetVoice(ElevenLabsVoice.Rachel)   // choose a voice (e.g., a preset from ElevenLabs)
+    .ExecuteAsync();
+</code></pre>
+<p>This will send the text to a TTS model and produce an audio clip (the <code>GeneratedAudio</code>). If you call <code>.GENSpeech()</code> on an <code>AudioSource</code> component instead of a string, the resulting audio clip will be automatically assigned to that AudioSource. For instance:</p>
+<pre><code class="lang-csharp">myAudioSource.GENSpeech(&quot;Welcome to our game!&quot;)
+    .SetVoice(ElevenLabsVoice.Rachel)
+    .ExecuteAsync();
+// After completion, myAudioSource.clip is set to the generated speech audio.
+</code></pre>
+<p>Now that the AudioSource has the clip, you can play it in-game. In this example, you might want to call <code>myAudioSource.Play()</code> after the task finishes to actually hear it. If using an async method, you could <code>await</code> the <code>ExecuteAsync()</code> call, then call <code>Play()</code> on the next line. Alternatively, as we'll see in the streaming section, you could use a callback to play automatically when done.</p>
+<p><strong>Choosing a Voice:</strong> The <code>.SetVoice(...)</code> method on GENSpeechTask lets you pick a specific voice preset for TTS. The Dev Kit likely includes predefined voices (for example, <code>ElevenLabsVoice.Rachel</code> as used above, or other providers' voices). If not set, a default voice may be used. You might also have methods like <code>.SetSpeed(float)</code> to control playback speed of the voice or <code>.SetSeed(uint)</code> for reproducibility, depending on the AI provider capabilities.</p>
+<p><strong>Speech-to-Text (GENTranscriptTask):</strong> To transcribe an <code>AudioClip</code> (e.g., microphone recording) to text, use <code>.GENTranscript()</code> on the AudioClip. For example:</p>
+<pre><code class="lang-csharp">audioClip.GENTranscript()
+    .ExecuteAsync();
+</code></pre>
+<p>This will produce a <code>GeneratedText</code> result with the transcription of the audio (often using models like OpenAI's Whisper for speech recognition). If you have a UI text element where you want the transcription to appear, you can call <code>.GENTranscript()</code> on that text element and pass the clip as a parameter:</p>
+<pre><code class="lang-csharp">myTranscriptTextUI.GENTranscript(myRecordedClip)
+    .ExecuteAsync();
+</code></pre>
+<p>Because we started from <code>myTranscriptTextUI</code> (a <code>Text</code> or TMP text), once the transcription is done, the resulting text will automatically be set on that UI element (so the spoken words appear as on-screen text).</p>
+<p>There is also an optional <code>.SetLanguage()</code> for GENTranscriptTask if you want to hint the language of the audio for better accuracy (if not English). For example: <code>audioClip.GENTranscript().SetLanguage(SystemLanguage.French).ExecuteAsync();</code>.</p>
+<p><strong>Other audio tasks:</strong> They work similarly:</p>
+<ul>
+<li>To generate a <strong>sound effect</strong> from text: <code>&quot;Footsteps on snow&quot;.GENSoundEffect().ExecuteAsync();</code> (this returns an AudioClip; you can target an AudioSource similarly with <code>.GENSoundEffect()</code> on the AudioSource).</li>
+<li>To <strong>change the voice</strong> in a clip: <code>myClip.GENVoiceChange().SetVoice(ElevenLabsVoice.Antoni).ExecuteAsync();</code> (this might use an AI voice transformation model; target an AudioSource to apply the new voice clip to it).</li>
+<li>To <strong>isolate audio</strong> elements: <code>myClip.GENAudioIsolation().ExecuteAsync();</code> (e.g., returns an AudioClip of isolated vocals or removed vocals, depending on default settings).</li>
+</ul>
+<p>Keep in mind some of these specialized tasks may require specific AI providers (for example, the ElevenLabs API for certain voice cloning or sound generation features). If you attempt to use them without the appropriate model or API configured, you might get a &quot;Not supported&quot; error. Always ensure you have set a suitable model via <code>SetModel</code> or that your default provider supports the task.</p>
 
 </article>
           </div>
