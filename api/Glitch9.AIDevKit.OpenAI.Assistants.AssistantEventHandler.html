@@ -1,1124 +1,1368 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class AssistantEventHandler | AI DevKit </title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class AssistantEventHandler | AI DevKit ">
-    
-    
-      <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class AssistantEventHandler | AI Dev Kit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AssistantEventHandler | AI Dev Kit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="AI DevKit">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+            AI Dev Kit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler">
+
+        <article data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler">
 
 
 
-  <h1 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler" class="text-break">Class AssistantEventHandler</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><span class="xref">AssistantEventHandler</span></div>
+  <h1 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler" class="text-break">
+Class AssistantEventHandler  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistants.html">Assistants</a></dd></dl>
+  
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistants.html">Assistants</a></h6>
-  <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_syntax">Syntax</h5>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AssistantEventHandler</code></pre>
   </div>
-  <h3 id="methods">Methods
-</h3>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">AssistantEventHandler</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerAssistantCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerAssistantCreated*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerAssistantCreated_Glitch9_AIDevKit_OpenAI_Assistant_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerAssistantCreated(Glitch9.AIDevKit.OpenAI.Assistant)">TriggerAssistantCreated(Assistant)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerAssistantCreated_Glitch9_AIDevKit_OpenAI_Assistant_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerAssistantCreated(Glitch9.AIDevKit.OpenAI.Assistant)">
+  TriggerAssistantCreated(Assistant)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerAssistantCreated(Assistant assistant)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></td>
-        <td><span class="parametername">assistant</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assistant</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerAssistantRetrieved_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerAssistantRetrieved*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerAssistantRetrieved_Glitch9_AIDevKit_OpenAI_Assistant_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerAssistantRetrieved(Glitch9.AIDevKit.OpenAI.Assistant)">TriggerAssistantRetrieved(Assistant)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerAssistantRetrieved_Glitch9_AIDevKit_OpenAI_Assistant_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerAssistantRetrieved(Glitch9.AIDevKit.OpenAI.Assistant)">
+  TriggerAssistantRetrieved(Assistant)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerAssistantRetrieved(Assistant assistant)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></td>
-        <td><span class="parametername">assistant</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assistant</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerAssistantUpdated_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerAssistantUpdated*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerAssistantUpdated_Glitch9_AIDevKit_OpenAI_Assistant_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerAssistantUpdated(Glitch9.AIDevKit.OpenAI.Assistant)">TriggerAssistantUpdated(Assistant)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerAssistantUpdated_Glitch9_AIDevKit_OpenAI_Assistant_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerAssistantUpdated(Glitch9.AIDevKit.OpenAI.Assistant)">
+  TriggerAssistantUpdated(Assistant)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerAssistantUpdated(Assistant assistant)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></td>
-        <td><span class="parametername">assistant</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assistant</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerError_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerError*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerError_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerError(System.String)">TriggerError(string)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerError_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerError(System.String)">
+  TriggerError(string)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerError(string error)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">error</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>error</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerMessageCompleted_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerMessageCompleted*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerMessageCompleted_Glitch9_AIDevKit_OpenAI_ThreadMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerMessageCompleted(Glitch9.AIDevKit.OpenAI.ThreadMessage)">TriggerMessageCompleted(ThreadMessage)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerMessageCompleted_Glitch9_AIDevKit_OpenAI_ThreadMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerMessageCompleted(Glitch9.AIDevKit.OpenAI.ThreadMessage)">
+  TriggerMessageCompleted(ThreadMessage)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerMessageCompleted(ThreadMessage message)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerMessageCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerMessageCreated*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerMessageCreated_Glitch9_AIDevKit_OpenAI_ThreadMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerMessageCreated(Glitch9.AIDevKit.OpenAI.ThreadMessage)">TriggerMessageCreated(ThreadMessage)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerMessageCreated_Glitch9_AIDevKit_OpenAI_ThreadMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerMessageCreated(Glitch9.AIDevKit.OpenAI.ThreadMessage)">
+  TriggerMessageCreated(ThreadMessage)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerMessageCreated(ThreadMessage message)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerMessageRetrieved_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerMessageRetrieved*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerMessageRetrieved_Glitch9_AIDevKit_OpenAI_ThreadMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerMessageRetrieved(Glitch9.AIDevKit.OpenAI.ThreadMessage)">TriggerMessageRetrieved(ThreadMessage)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerMessageRetrieved_Glitch9_AIDevKit_OpenAI_ThreadMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerMessageRetrieved(Glitch9.AIDevKit.OpenAI.ThreadMessage)">
+  TriggerMessageRetrieved(ThreadMessage)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerMessageRetrieved(ThreadMessage message)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunCreated*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunCreated_Glitch9_AIDevKit_OpenAI_Run_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunCreated(Glitch9.AIDevKit.OpenAI.Run)">TriggerRunCreated(Run)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunCreated_Glitch9_AIDevKit_OpenAI_Run_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunCreated(Glitch9.AIDevKit.OpenAI.Run)">
+  TriggerRunCreated(Run)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerRunCreated(Run run)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></td>
-        <td><span class="parametername">run</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>run</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunRetrieved_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunRetrieved*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunRetrieved_Glitch9_AIDevKit_OpenAI_Run_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunRetrieved(Glitch9.AIDevKit.OpenAI.Run)">TriggerRunRetrieved(Run)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunRetrieved_Glitch9_AIDevKit_OpenAI_Run_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunRetrieved(Glitch9.AIDevKit.OpenAI.Run)">
+  TriggerRunRetrieved(Run)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerRunRetrieved(Run run)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></td>
-        <td><span class="parametername">run</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>run</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunStatusChanged_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunStatusChanged*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunStatusChanged_Glitch9_AIDevKit_OpenAI_RunStatus_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunStatusChanged(Glitch9.AIDevKit.OpenAI.RunStatus)">TriggerRunStatusChanged(RunStatus)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunStatusChanged_Glitch9_AIDevKit_OpenAI_RunStatus_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunStatusChanged(Glitch9.AIDevKit.OpenAI.RunStatus)">
+  TriggerRunStatusChanged(RunStatus)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerRunStatusChanged(RunStatus runStatus)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStatus.html">RunStatus</a></td>
-        <td><span class="parametername">runStatus</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runStatus</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStatus.html">RunStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunStepRetrieved_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunStepRetrieved*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunStepRetrieved_Glitch9_AIDevKit_OpenAI_RunStep_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunStepRetrieved(Glitch9.AIDevKit.OpenAI.RunStep)">TriggerRunStepRetrieved(RunStep)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunStepRetrieved_Glitch9_AIDevKit_OpenAI_RunStep_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunStepRetrieved(Glitch9.AIDevKit.OpenAI.RunStep)">
+  TriggerRunStepRetrieved(RunStep)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerRunStepRetrieved(RunStep runStep)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a></td>
-        <td><span class="parametername">runStep</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runStep</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunUpdated_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunUpdated*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunUpdated_Glitch9_AIDevKit_OpenAI_Run_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunUpdated(Glitch9.AIDevKit.OpenAI.Run)">TriggerRunUpdated(Run)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerRunUpdated_Glitch9_AIDevKit_OpenAI_Run_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerRunUpdated(Glitch9.AIDevKit.OpenAI.Run)">
+  TriggerRunUpdated(Run)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerRunUpdated(Run run)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></td>
-        <td><span class="parametername">run</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>run</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerStreamDone_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerStreamDone*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerStreamDone" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerStreamDone">TriggerStreamDone()</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerStreamDone" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerStreamDone">
+  TriggerStreamDone()
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerStreamDone()</code></pre>
   </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerTextCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerTextCreated*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerTextCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerTextCreated">TriggerTextCreated()</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerTextCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerTextCreated">
+  TriggerTextCreated()
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerTextCreated()</code></pre>
   </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerTextDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerTextDelta*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerTextDelta_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerTextDelta(System.String)">TriggerTextDelta(string)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerTextDelta_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerTextDelta(System.String)">
+  TriggerTextDelta(string)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerTextDelta(string delta)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">delta</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerThreadCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerThreadCreated*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerThreadCreated_Glitch9_AIDevKit_OpenAI_Thread_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerThreadCreated(Glitch9.AIDevKit.OpenAI.Thread)">TriggerThreadCreated(Thread)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerThreadCreated_Glitch9_AIDevKit_OpenAI_Thread_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerThreadCreated(Glitch9.AIDevKit.OpenAI.Thread)">
+  TriggerThreadCreated(Thread)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerThreadCreated(Thread thread)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a></td>
-        <td><span class="parametername">thread</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thread</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerThreadRetrieved_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerThreadRetrieved*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerThreadRetrieved_Glitch9_AIDevKit_OpenAI_Thread_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerThreadRetrieved(Glitch9.AIDevKit.OpenAI.Thread)">TriggerThreadRetrieved(Thread)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerThreadRetrieved_Glitch9_AIDevKit_OpenAI_Thread_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerThreadRetrieved(Glitch9.AIDevKit.OpenAI.Thread)">
+  TriggerThreadRetrieved(Thread)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerThreadRetrieved(Thread thread)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a></td>
-        <td><span class="parametername">thread</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thread</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerThreadUpdated_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerThreadUpdated*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerThreadUpdated_Glitch9_AIDevKit_OpenAI_Thread_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerThreadUpdated(Glitch9.AIDevKit.OpenAI.Thread)">TriggerThreadUpdated(Thread)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerThreadUpdated_Glitch9_AIDevKit_OpenAI_Thread_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerThreadUpdated(Glitch9.AIDevKit.OpenAI.Thread)">
+  TriggerThreadUpdated(Thread)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerThreadUpdated(Thread thread)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a></td>
-        <td><span class="parametername">thread</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thread</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerToolCallCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerToolCallCreated*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerToolCallCreated_Glitch9_AIDevKit_ToolCall_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerToolCallCreated(Glitch9.AIDevKit.ToolCall)">TriggerToolCallCreated(ToolCall)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerToolCallCreated_Glitch9_AIDevKit_ToolCall_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerToolCallCreated(Glitch9.AIDevKit.ToolCall)">
+  TriggerToolCallCreated(ToolCall)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerToolCallCreated(ToolCall toolCall)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a></td>
-        <td><span class="parametername">toolCall</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toolCall</code> <a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerToolCallDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerToolCallDelta*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerToolCallDelta_Glitch9_AIDevKit_ToolCall_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerToolCallDelta(Glitch9.AIDevKit.ToolCall)">TriggerToolCallDelta(ToolCall)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_TriggerToolCallDelta_Glitch9_AIDevKit_ToolCall_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.TriggerToolCallDelta(Glitch9.AIDevKit.ToolCall)">
+  TriggerToolCallDelta(ToolCall)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TriggerToolCallDelta(ToolCall toolCall)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a></td>
-        <td><span class="parametername">toolCall</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="events">Events
-</h3>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toolCall</code> <a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a></dt>
+    <dd></dd>
+  </dl>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onAssistantCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onAssistantCreated">onAssistantCreated</h4>
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onAssistantCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onAssistantCreated">
+  onAssistantCreated
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;Assistant&gt; onAssistantCreated</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onAssistantRetrieved" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onAssistantRetrieved">onAssistantRetrieved</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onAssistantRetrieved" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onAssistantRetrieved">
+  onAssistantRetrieved
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;Assistant&gt; onAssistantRetrieved</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onAssistantUpdated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onAssistantUpdated">onAssistantUpdated</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onAssistantUpdated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onAssistantUpdated">
+  onAssistantUpdated
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;Assistant&gt; onAssistantUpdated</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onError" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onError">onError</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onError" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onError">
+  onError
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;string&gt; onError</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onMessageCompleted" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onMessageCompleted">onMessageCompleted</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<span class="xref">string</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onMessageCompleted" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onMessageCompleted">
+  onMessageCompleted
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;ThreadMessage&gt; onMessageCompleted</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onMessageCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onMessageCreated">onMessageCreated</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onMessageCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onMessageCreated">
+  onMessageCreated
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;ThreadMessage&gt; onMessageCreated</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onMessageRetrieved" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onMessageRetrieved">onMessageRetrieved</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onMessageRetrieved" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onMessageRetrieved">
+  onMessageRetrieved
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;ThreadMessage&gt; onMessageRetrieved</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onRunCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onRunCreated">onRunCreated</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onRunCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onRunCreated">
+  onRunCreated
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;Run&gt; onRunCreated</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onRunRetrieved" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onRunRetrieved">onRunRetrieved</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onRunRetrieved" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onRunRetrieved">
+  onRunRetrieved
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;Run&gt; onRunRetrieved</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onRunStatusChanged" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onRunStatusChanged">onRunStatusChanged</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onRunStatusChanged" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onRunStatusChanged">
+  onRunStatusChanged
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;RunStatus&gt; onRunStatusChanged</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStatus.html">RunStatus</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onRunStepRetrieved" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onRunStepRetrieved">onRunStepRetrieved</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStatus.html">RunStatus</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onRunStepRetrieved" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onRunStepRetrieved">
+  onRunStepRetrieved
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;RunStep&gt; onRunStepRetrieved</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onRunUpdated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onRunUpdated">onRunUpdated</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onRunUpdated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onRunUpdated">
+  onRunUpdated
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;Run&gt; onRunUpdated</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onStreamDone" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onStreamDone">onStreamDone</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onStreamDone" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onStreamDone">
+  onStreamDone
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler onStreamDone</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onTextCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onTextCreated">onTextCreated</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onTextCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onTextCreated">
+  onTextCreated
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler onTextCreated</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onTextDelta" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onTextDelta">onTextDelta</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onTextDelta" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onTextDelta">
+  onTextDelta
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;string&gt; onTextDelta</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onThreadCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onThreadCreated">onThreadCreated</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<span class="xref">string</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onThreadCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onThreadCreated">
+  onThreadCreated
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;Thread&gt; onThreadCreated</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onThreadRetrieved" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onThreadRetrieved">onThreadRetrieved</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onThreadRetrieved" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onThreadRetrieved">
+  onThreadRetrieved
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;Thread&gt; onThreadRetrieved</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onThreadUpdated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onThreadUpdated">onThreadUpdated</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onThreadUpdated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onThreadUpdated">
+  onThreadUpdated
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;Thread&gt; onThreadUpdated</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onToolCallCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onToolCallCreated">onToolCallCreated</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onToolCallCreated" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onToolCallCreated">
+  onToolCallCreated
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;ToolCall&gt; onToolCallCreated</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onToolCallDelta" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onToolCallDelta">onToolCallDelta</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantEventHandler_onToolCallDelta" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.onToolCallDelta">
+  onToolCallDelta
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;ToolCall&gt; onToolCallDelta</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+        <div class="contribution d-print-none">
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      
-      <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,1086 +1,1332 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class RealtimeEventId | AI DevKit </title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class RealtimeEventId | AI DevKit ">
-    
-    <meta name="description" content="Contains all string constants representing OpenAI Realtime Event types.">
-      <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class RealtimeEventId | AI Dev Kit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RealtimeEventId | AI Dev Kit ">
+      
+      <meta name="description" content="Contains all string constants representing OpenAI Realtime Event types.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="AI DevKit">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+            AI Dev Kit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId">
+
+        <article data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId">
 
 
 
-  <h1 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId" class="text-break">Class RealtimeEventId</h1>
-  <div class="markdown level0 summary"><p>Contains all string constants representing OpenAI Realtime Event types.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><span class="xref">RealtimeEventId</span></div>
+  <h1 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId" class="text-break">
+Class RealtimeEventId  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.html">Realtime</a></dd></dl>
+  
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.html">Realtime</a></h6>
-  <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_syntax">Syntax</h5>
+
+  <div class="markdown summary"><p>Contains all string constants representing OpenAI Realtime Event types.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class RealtimeEventId</code></pre>
   </div>
-  <h3 id="fields">Fields
-</h3>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationCreated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationCreated">ConversationCreated</h4>
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">RealtimeEventId</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationCreated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationCreated">
+  ConversationCreated
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when a conversation is created. Emitted right after session creation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ConversationCreated = &quot;conversation.created&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemCreate" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemCreate">ConversationItemCreate</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemCreate" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemCreate">
+  ConversationItemCreate
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Send this event when adding an item to the conversation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ConversationItemCreate = &quot;conversation.item.create&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemCreated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemCreated">ConversationItemCreated</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemCreated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemCreated">
+  ConversationItemCreated
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when a conversation item is created.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ConversationItemCreated = &quot;conversation.item.created&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemDelete" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemDelete">ConversationItemDelete</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemDelete" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemDelete">
+  ConversationItemDelete
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Send this event when you want to remove any item from the conversation history.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ConversationItemDelete = &quot;conversation.item.delete&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemDeleted" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemDeleted">ConversationItemDeleted</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemDeleted" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemDeleted">
+  ConversationItemDeleted
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when an item in the conversation is deleted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ConversationItemDeleted = &quot;conversation.item.deleted&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemInputAudioTranscriptionCompleted" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemInputAudioTranscriptionCompleted">ConversationItemInputAudioTranscriptionCompleted</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemInputAudioTranscriptionCompleted" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemInputAudioTranscriptionCompleted">
+  ConversationItemInputAudioTranscriptionCompleted
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when input audio transcription is enabled and a transcription succeeds.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ConversationItemInputAudioTranscriptionCompleted = &quot;conversation.item.input_audio_transcription.completed&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemInputAudioTranscriptionDelta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemInputAudioTranscriptionDelta">ConversationItemInputAudioTranscriptionDelta</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemInputAudioTranscriptionDelta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemInputAudioTranscriptionDelta">
+  ConversationItemInputAudioTranscriptionDelta
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ConversationItemInputAudioTranscriptionDelta = &quot;conversation.item.input_audio_transcription.delta&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemInputAudioTranscriptionFailed" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemInputAudioTranscriptionFailed">ConversationItemInputAudioTranscriptionFailed</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemInputAudioTranscriptionFailed" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemInputAudioTranscriptionFailed">
+  ConversationItemInputAudioTranscriptionFailed
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when input audio transcription is configured, and a transcription request for a user message failed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ConversationItemInputAudioTranscriptionFailed = &quot;conversation.item.input_audio_transcription.failed&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemTruncate" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemTruncate">ConversationItemTruncate</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemTruncate" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemTruncate">
+  ConversationItemTruncate
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Send this event when you want to truncate a previous assistant message’s audio.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ConversationItemTruncate = &quot;conversation.item.truncate&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemTruncated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemTruncated">ConversationItemTruncated</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ConversationItemTruncated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ConversationItemTruncated">
+  ConversationItemTruncated
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when an earlier assistant audio message item is truncated by the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ConversationItemTruncated = &quot;conversation.item.truncated&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_Error" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.Error">Error</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_Error" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.Error">
+  Error
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when an error occurs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string Error = &quot;error&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferAppend" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferAppend">InputAudioBufferAppend</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferAppend" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferAppend">
+  InputAudioBufferAppend
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Send this event to append audio bytes to the input audio buffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string InputAudioBufferAppend = &quot;input_audio_buffer.append&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferClear" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferClear">InputAudioBufferClear</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferClear" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferClear">
+  InputAudioBufferClear
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Send this event to clear the audio bytes in the buffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string InputAudioBufferClear = &quot;input_audio_buffer.clear&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferCleared" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferCleared">InputAudioBufferCleared</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferCleared" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferCleared">
+  InputAudioBufferCleared
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when the input audio buffer is cleared by the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string InputAudioBufferCleared = &quot;input_audio_buffer.cleared&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferCommit" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferCommit">InputAudioBufferCommit</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferCommit" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferCommit">
+  InputAudioBufferCommit
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Send this event to commit audio bytes to a user message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string InputAudioBufferCommit = &quot;input_audio_buffer.commit&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferCommitted" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferCommitted">InputAudioBufferCommitted</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferCommitted" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferCommitted">
+  InputAudioBufferCommitted
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when an input audio buffer is committed, either by the client or automatically in server VAD mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string InputAudioBufferCommitted = &quot;input_audio_buffer.committed&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferSpeechStarted" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferSpeechStarted">InputAudioBufferSpeechStarted</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferSpeechStarted" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferSpeechStarted">
+  InputAudioBufferSpeechStarted
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned in server turn detection mode when speech is detected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string InputAudioBufferSpeechStarted = &quot;input_audio_buffer.speech_started&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferSpeechStopped" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferSpeechStopped">InputAudioBufferSpeechStopped</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferSpeechStopped" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferSpeechStopped">
+  InputAudioBufferSpeechStopped
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned in server turn detection mode when speech stops.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string InputAudioBufferSpeechStopped = &quot;input_audio_buffer.speech_stopped&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_RateLimitsUpdated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.RateLimitsUpdated">RateLimitsUpdated</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_RateLimitsUpdated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.RateLimitsUpdated">
+  RateLimitsUpdated
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Emitted after every &quot;response.done&quot; event to indicate the updated rate limits.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string RateLimitsUpdated = &quot;rate_limits.updated&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioDelta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioDelta">ResponseAudioDelta</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioDelta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioDelta">
+  ResponseAudioDelta
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when the model-generated audio is updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseAudioDelta = &quot;response.audio.delta&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioDone">ResponseAudioDone</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioDone">
+  ResponseAudioDone
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when the model-generated audio is done. Also emitted when a Response is interrupted, incomplete, or cancelled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseAudioDone = &quot;response.audio.done&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioTranscriptDelta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDelta">ResponseAudioTranscriptDelta</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioTranscriptDelta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDelta">
+  ResponseAudioTranscriptDelta
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when the model-generated transcription of audio output is updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseAudioTranscriptDelta = &quot;response.audio_transcript.delta&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioTranscriptDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDone">ResponseAudioTranscriptDone</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioTranscriptDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDone">
+  ResponseAudioTranscriptDone
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when the model-generated transcription of audio output is done streaming. Also emitted when a Response is interrupted, incomplete, or cancelled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseAudioTranscriptDone = &quot;response.audio_transcript.done&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseCancel" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseCancel">ResponseCancel</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseCancel" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseCancel">
+  ResponseCancel
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Send this event to cancel an in-progress response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseCancel = &quot;response.cancel&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseContentPartAdded" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartAdded">ResponseContentPartAdded</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseContentPartAdded" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartAdded">
+  ResponseContentPartAdded
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when a new content part is added to an assistant message item during response generation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseContentPartAdded = &quot;response.content_part.added&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseContentPartDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartDone">ResponseContentPartDone</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseContentPartDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartDone">
+  ResponseContentPartDone
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when a content part is done streaming in an assistant message item. Also emitted when a Response is interrupted, incomplete, or cancelled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseContentPartDone = &quot;response.content_part.done&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseCreate" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseCreate">ResponseCreate</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseCreate" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseCreate">
+  ResponseCreate
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Send this event to trigger a response generation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseCreate = &quot;response.create&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseCreated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseCreated">ResponseCreated</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseCreated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseCreated">
+  ResponseCreated
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when a new Response is created. The first event of response creation, where the response is in an initial state of &quot;in_progress&quot;.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseCreated = &quot;response.created&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseDone">ResponseDone</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseDone">
+  ResponseDone
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when a Response is done streaming. Always emitted, no matter the final state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseDone = &quot;response.done&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseFunctionCallArgumentsDelta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseFunctionCallArgumentsDelta">ResponseFunctionCallArgumentsDelta</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseFunctionCallArgumentsDelta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseFunctionCallArgumentsDelta">
+  ResponseFunctionCallArgumentsDelta
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when the model-generated function call arguments are updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseFunctionCallArgumentsDelta = &quot;response.function_call_arguments.delta&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseFunctionCallArgumentsDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseFunctionCallArgumentsDone">ResponseFunctionCallArgumentsDone</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseFunctionCallArgumentsDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseFunctionCallArgumentsDone">
+  ResponseFunctionCallArgumentsDone
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when the model-generated function call arguments are done streaming. Also emitted when a Response is interrupted, incomplete, or cancelled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseFunctionCallArgumentsDone = &quot;response.function_call_arguments.done&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseOutputItemAdded" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseOutputItemAdded">ResponseOutputItemAdded</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseOutputItemAdded" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseOutputItemAdded">
+  ResponseOutputItemAdded
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when a new Item is created during response generation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseOutputItemAdded = &quot;response.output_item.added&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseOutputItemDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseOutputItemDone">ResponseOutputItemDone</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseOutputItemDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseOutputItemDone">
+  ResponseOutputItemDone
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when an Item is done streaming. Also emitted when a Response is interrupted, incomplete, or cancelled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseOutputItemDone = &quot;response.output_item.done&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseTextDelta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseTextDelta">ResponseTextDelta</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseTextDelta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseTextDelta">
+  ResponseTextDelta
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when the text value of a &quot;text&quot; content part is updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseTextDelta = &quot;response.text.delta&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseTextDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseTextDone">ResponseTextDone</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseTextDone" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseTextDone">
+  ResponseTextDone
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when the text value of a &quot;text&quot; content part is done streaming. Also emitted when a Response is interrupted, incomplete, or cancelled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ResponseTextDone = &quot;response.text.done&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_SessionCreated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.SessionCreated">SessionCreated</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_SessionCreated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.SessionCreated">
+  SessionCreated
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when a session is created. Emitted automatically when a new connection is established.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string SessionCreated = &quot;session.created&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_SessionUpdate" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.SessionUpdate">SessionUpdate</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_SessionUpdate" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.SessionUpdate">
+  SessionUpdate
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Send this event to update the session’s default configuration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string SessionUpdate = &quot;session.update&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_SessionUpdated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.SessionUpdated">SessionUpdated</h4>
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_SessionUpdated" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.SessionUpdated">
+  SessionUpdated
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returned when a session is updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string SessionUpdated = &quot;session.updated&quot;</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+        <div class="contribution d-print-none">
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      
-      <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

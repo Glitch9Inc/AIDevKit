@@ -1,1296 +1,1206 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class RealtimeSessionController | AI DevKit </title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class RealtimeSessionController | AI DevKit ">
-    
-    
-      <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class RealtimeSessionController | AI Dev Kit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RealtimeSessionController | AI Dev Kit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="AI DevKit">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+            AI Dev Kit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController">
+
+        <article data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController">
 
 
 
-  <h1 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController" class="text-break">Class RealtimeSessionController</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><span class="xref">RealtimeSessionController</span></div>
+  <h1 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController" class="text-break">
+Class RealtimeSessionController  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.html">Realtime</a></dd></dl>
+  
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.html">Realtime</a></h6>
-  <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_syntax">Syntax</h5>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class RealtimeSessionController</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-</h3>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">RealtimeSessionController</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Model_SystemLanguage_System_Action_System_Single____System_Action_System_Single____System_Action_AudioClip__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_Glitch9_AIDevKit_ErrorResponse__System_Action_System_String__System_Action_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemStatus__Glitch9_AIDevKit_Components_FunctionManager_System_Boolean_System_Boolean_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Action{System.Single[]},System.Action{System.Single[]},System.Action{AudioClip},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{Glitch9.AIDevKit.ErrorResponse},System.Action{System.String},System.Action{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus},Glitch9.AIDevKit.Components.FunctionManager,System.Boolean,System.Boolean,System.Boolean)">RealtimeSessionController(Model, Model, SystemLanguage, Action&lt;float[]&gt;, Action&lt;float[]&gt;, Action&lt;AudioClip&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;ErrorResponse&gt;, Action&lt;string&gt;, Action&lt;RealtimeItemStatus&gt;, FunctionManager, bool, bool, bool)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Model_SystemLanguage_System_Action_System_Single____System_Action_System_Single____System_Action_AudioClip__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_Glitch9_AIDevKit_ErrorResponse__System_Action_System_String__System_Action_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemStatus__Glitch9_AIDevKit_Components_FunctionManager_System_Boolean_System_Boolean_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Action{System.Single[]},System.Action{System.Single[]},System.Action{AudioClip},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{Glitch9.AIDevKit.ErrorResponse},System.Action{System.String},System.Action{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus},Glitch9.AIDevKit.Components.FunctionManager,System.Boolean,System.Boolean,System.Boolean)">
+  RealtimeSessionController(Model, Model, SystemLanguage, Action&lt;float[]&gt;, Action&lt;float[]&gt;, Action&lt;AudioClip&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;ErrorResponse&gt;, Action&lt;string&gt;, Action&lt;RealtimeItemStatus&gt;, FunctionManager, bool, bool, bool)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Create a new RealtimeSessionController instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RealtimeSessionController(Model rtmModel = null, Model sttModel = null, SystemLanguage spokenLanguage = null, Action&lt;float[]&gt; onReceiveAudio = null, Action&lt;float[]&gt; onReceiveAudioDone = null, Action&lt;AudioClip&gt; onReceiveAudioClip = null, Action&lt;string&gt; onReceiveText = null, Action&lt;string&gt; onReceiveTextDone = null, Action&lt;string&gt; onReceiveTranscript = null, Action&lt;string&gt; onReceiveTranscriptDone = null, Action&lt;string&gt; onReceiveInputTranscriptionSuccess = null, Action&lt;ErrorResponse&gt; onReceiveInputTranscriptionFailed = null, Action&lt;string&gt; onSessionStateChanged = null, Action&lt;RealtimeItemStatus&gt; onItemStatusChanged = null, FunctionManager functionManager = null, bool enableAudio = true, bool enableTranscript = true, bool autoManageWebSocketState = false)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td><span class="parametername">rtmModel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td><span class="parametername">sttModel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">SystemLanguage</span></td>
-        <td><span class="parametername">spokenLanguage</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">float</span>[]&gt;</td>
-        <td><span class="parametername">onReceiveAudio</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">float</span>[]&gt;</td>
-        <td><span class="parametername">onReceiveAudioDone</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">AudioClip</span>&gt;</td>
-        <td><span class="parametername">onReceiveAudioClip</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onReceiveText</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onReceiveTextDone</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onReceiveTranscript</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onReceiveTranscriptDone</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onReceiveInputTranscriptionSuccess</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ErrorResponse.html">ErrorResponse</a>&gt;</td>
-        <td><span class="parametername">onReceiveInputTranscriptionFailed</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onSessionStateChanged</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus.html">RealtimeItemStatus</a>&gt;</td>
-        <td><span class="parametername">onItemStatusChanged</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Components.FunctionManager.html">FunctionManager</a></td>
-        <td><span class="parametername">functionManager</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">enableAudio</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">enableTranscript</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">autoManageWebSocketState</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rtmModel</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
+    <dd></dd>
+    <dt><code>sttModel</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
+    <dd></dd>
+    <dt><code>spokenLanguage</code> <span class="xref">SystemLanguage</span></dt>
+    <dd></dd>
+    <dt><code>onReceiveAudio</code> <span class="xref">Action</span>&lt;<span class="xref">float</span>[]&gt;</dt>
+    <dd></dd>
+    <dt><code>onReceiveAudioDone</code> <span class="xref">Action</span>&lt;<span class="xref">float</span>[]&gt;</dt>
+    <dd></dd>
+    <dt><code>onReceiveAudioClip</code> <span class="xref">Action</span>&lt;<span class="xref">AudioClip</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>onReceiveText</code> <span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>onReceiveTextDone</code> <span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>onReceiveTranscript</code> <span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>onReceiveTranscriptDone</code> <span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>onReceiveInputTranscriptionSuccess</code> <span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>onReceiveInputTranscriptionFailed</code> <span class="xref">Action</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ErrorResponse.html">ErrorResponse</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onSessionStateChanged</code> <span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>onItemStatusChanged</code> <span class="xref">Action</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus.html">RealtimeItemStatus</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>functionManager</code> <a class="xref" href="Glitch9.AIDevKit.Components.FunctionManager.html">FunctionManager</a></dt>
+    <dd></dd>
+    <dt><code>enableAudio</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>enableTranscript</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>autoManageWebSocketState</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Model_SystemLanguage_System_Boolean_System_Boolean_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Boolean,System.Boolean,System.Boolean)">RealtimeSessionController(RealtimeEventReceiverBase, Model, Model, SystemLanguage, bool, bool, bool)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Model_SystemLanguage_System_Boolean_System_Boolean_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Boolean,System.Boolean,System.Boolean)">
+  RealtimeSessionController(RealtimeEventReceiverBase, Model, Model, SystemLanguage, bool, bool, bool)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Create a new RealtimeSessionController instance with a event receiver.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RealtimeSessionController(RealtimeEventReceiverBase eventReceiver, Model rtmModel = null, Model sttModel = null, SystemLanguage spokenLanguage = null, bool enableAudio = true, bool enableTranscript = true, bool autoManageWebSocketState = false)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html">RealtimeEventReceiverBase</a></td>
-        <td><span class="parametername">eventReceiver</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td><span class="parametername">rtmModel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td><span class="parametername">sttModel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">SystemLanguage</span></td>
-        <td><span class="parametername">spokenLanguage</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">enableAudio</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">enableTranscript</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">autoManageWebSocketState</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-</h3>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventReceiver</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html">RealtimeEventReceiverBase</a></dt>
+    <dd></dd>
+    <dt><code>rtmModel</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
+    <dd></dd>
+    <dt><code>sttModel</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
+    <dd></dd>
+    <dt><code>spokenLanguage</code> <span class="xref">SystemLanguage</span></dt>
+    <dd></dd>
+    <dt><code>enableAudio</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>enableTranscript</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>autoManageWebSocketState</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_AudioEnabled_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_AudioEnabled" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled">AudioEnabled</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_AudioEnabled" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled">
+  AudioEnabled
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool AudioEnabled { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_InputFormat_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.InputFormat*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_InputFormat" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.InputFormat">InputFormat</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_InputFormat" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.InputFormat">
+  InputFormat
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RealtimeAudioFormat InputFormat { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat.html">RealtimeAudioFormat</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat.html">RealtimeAudioFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_OutputFormat_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.OutputFormat*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_OutputFormat" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.OutputFormat">OutputFormat</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_OutputFormat" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.OutputFormat">
+  OutputFormat
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RealtimeAudioFormat OutputFormat { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat.html">RealtimeAudioFormat</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat.html">RealtimeAudioFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_RTMModel_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RTMModel*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_RTMModel" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RTMModel">RTMModel</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_RTMModel" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RTMModel">
+  RTMModel
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Model RTMModel { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_STTModel_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.STTModel*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_STTModel" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.STTModel">STTModel</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_STTModel" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.STTModel">
+  STTModel
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Model STTModel { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SpokenLanguage_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SpokenLanguage*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SpokenLanguage" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SpokenLanguage">SpokenLanguage</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SpokenLanguage" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SpokenLanguage">
+  SpokenLanguage
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public SystemLanguage SpokenLanguage { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">SystemLanguage</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SystemLanguage</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_TranscriptEnabled_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_TranscriptEnabled" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled">TranscriptEnabled</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_TranscriptEnabled" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled">
+  TranscriptEnabled
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool TranscriptEnabled { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_Voice_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.Voice*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_Voice" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.Voice">Voice</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_Voice" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.Voice">
+  Voice
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Voice Voice { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_WebSocket_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.WebSocket*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_WebSocket" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.WebSocket">WebSocket</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_WebSocket" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.WebSocket">
+  WebSocket
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IWebSocket WebSocket { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IWebSocket</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IWebSocket</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_WebSocketState_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.WebSocketState*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_WebSocketState" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.WebSocketState">WebSocketState</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_WebSocketState" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.WebSocketState">
+  WebSocketState
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public WebSocketState WebSocketState { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">WebSocketState</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">WebSocketState</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_CloseConnection_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.CloseConnection*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_CloseConnection_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.CloseConnection(System.String)">CloseConnection(string)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_CloseConnection_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.CloseConnection(System.String)">
+  CloseConnection(string)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask CloseConnection(string closeReason = null)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">closeReason</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>closeReason</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_CommitUserAudioStreamInput_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.CommitUserAudioStreamInput*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_CommitUserAudioStreamInput" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.CommitUserAudioStreamInput">CommitUserAudioStreamInput()</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_CommitUserAudioStreamInput" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.CommitUserAudioStreamInput">
+  CommitUserAudioStreamInput()
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask CommitUserAudioStreamInput()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_ConfigureSession_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConfigureSession*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_ConfigureSession_System_String_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Modality___Glitch9_AIDevKit_Voice_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeAudioFormat_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeAudioFormat_Glitch9_AIDevKit_OpenAI_Realtime_SpeechToTextOptions_Glitch9_AIDevKit_OpenAI_Realtime_TurnDetection_Glitch9_AIDevKit_FunctionDeclaration___Glitch9_AIDevKit_OpenAI_ToolChoice_System_Single_System_Nullable_System_Int32__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConfigureSession(System.String,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Modality[],Glitch9.AIDevKit.Voice,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat,Glitch9.AIDevKit.OpenAI.Realtime.SpeechToTextOptions,Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection,Glitch9.AIDevKit.FunctionDeclaration[],Glitch9.AIDevKit.OpenAI.ToolChoice,System.Single,System.Nullable{System.Int32})">ConfigureSession(string, Model, Modality[], Voice, RealtimeAudioFormat, RealtimeAudioFormat, SpeechToTextOptions, TurnDetection, FunctionDeclaration[], ToolChoice, float, int?)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_ConfigureSession_System_String_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Modality___Glitch9_AIDevKit_Voice_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeAudioFormat_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeAudioFormat_Glitch9_AIDevKit_OpenAI_Realtime_SpeechToTextOptions_Glitch9_AIDevKit_OpenAI_Realtime_TurnDetection_Glitch9_AIDevKit_FunctionDeclaration___Glitch9_AIDevKit_OpenAI_ToolChoice_System_Single_System_Nullable_System_Int32__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConfigureSession(System.String,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Modality[],Glitch9.AIDevKit.Voice,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat,Glitch9.AIDevKit.OpenAI.Realtime.SpeechToTextOptions,Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection,Glitch9.AIDevKit.FunctionDeclaration[],Glitch9.AIDevKit.OpenAI.ToolChoice,System.Single,System.Nullable{System.Int32})">
+  ConfigureSession(string, Model, Modality[], Voice, RealtimeAudioFormat, RealtimeAudioFormat, SpeechToTextOptions, TurnDetection, FunctionDeclaration[], ToolChoice, float, int?)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask ConfigureSession(string instructions, Model model = null, Modality[] modalities = null, Voice voice = null, RealtimeAudioFormat inputAudioFormat = RealtimeAudioFormat.PCM16, RealtimeAudioFormat outputAudioFormat = RealtimeAudioFormat.PCM16, SpeechToTextOptions inputAudioTranscription = null, TurnDetection turnDetection = null, FunctionDeclaration[] tools = null, ToolChoice toolChoice = null, float temperature = 0.8, int? maxOutputTokens = null)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">instructions</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td><span class="parametername">model</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Modality.html">Modality</a>[]</td>
-        <td><span class="parametername">modalities</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></td>
-        <td><span class="parametername">voice</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat.html">RealtimeAudioFormat</a></td>
-        <td><span class="parametername">inputAudioFormat</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat.html">RealtimeAudioFormat</a></td>
-        <td><span class="parametername">outputAudioFormat</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.SpeechToTextOptions.html">SpeechToTextOptions</a></td>
-        <td><span class="parametername">inputAudioTranscription</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.html">TurnDetection</a></td>
-        <td><span class="parametername">turnDetection</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.FunctionDeclaration.html">FunctionDeclaration</a>[]</td>
-        <td><span class="parametername">tools</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolChoice.html">ToolChoice</a></td>
-        <td><span class="parametername">toolChoice</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">temperature</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">int</span>?</td>
-        <td><span class="parametername">maxOutputTokens</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instructions</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>model</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
+    <dd></dd>
+    <dt><code>modalities</code> <a class="xref" href="Glitch9.AIDevKit.Modality.html">Modality</a>[]</dt>
+    <dd></dd>
+    <dt><code>voice</code> <a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></dt>
+    <dd></dd>
+    <dt><code>inputAudioFormat</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat.html">RealtimeAudioFormat</a></dt>
+    <dd></dd>
+    <dt><code>outputAudioFormat</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat.html">RealtimeAudioFormat</a></dt>
+    <dd></dd>
+    <dt><code>inputAudioTranscription</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.SpeechToTextOptions.html">SpeechToTextOptions</a></dt>
+    <dd></dd>
+    <dt><code>turnDetection</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection.html">TurnDetection</a></dt>
+    <dd></dd>
+    <dt><code>tools</code> <a class="xref" href="Glitch9.AIDevKit.FunctionDeclaration.html">FunctionDeclaration</a>[]</dt>
+    <dd></dd>
+    <dt><code>toolChoice</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolChoice.html">ToolChoice</a></dt>
+    <dd></dd>
+    <dt><code>temperature</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>maxOutputTokens</code> <span class="xref">int</span>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_ConnectAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConnectAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_ConnectAsync" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConnectAsync">ConnectAsync()</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_ConnectAsync" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConnectAsync">
+  ConnectAsync()
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask ConnectAsync()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_ReconnectAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ReconnectAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_ReconnectAsync_Glitch9_AIDevKit_Model_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ReconnectAsync(Glitch9.AIDevKit.Model)">ReconnectAsync(Model)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_ReconnectAsync_Glitch9_AIDevKit_Model_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ReconnectAsync(Glitch9.AIDevKit.Model)">
+  ReconnectAsync(Model)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask ReconnectAsync(Model model = null)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td><span class="parametername">model</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SendUserAudioClip_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SendUserAudioClip*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SendUserAudioClip_AudioClip_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SendUserAudioClip(AudioClip)">SendUserAudioClip(AudioClip)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SendUserAudioClip_AudioClip_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SendUserAudioClip(AudioClip)">
+  SendUserAudioClip(AudioClip)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask SendUserAudioClip(AudioClip audioClip)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">AudioClip</span></td>
-        <td><span class="parametername">audioClip</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioClip</code> <span class="xref">AudioClip</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SendUserAudioFile_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SendUserAudioFile*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SendUserAudioFile_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SendUserAudioFile(System.String)">SendUserAudioFile(string)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SendUserAudioFile_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SendUserAudioFile(System.String)">
+  SendUserAudioFile(string)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask SendUserAudioFile(string audioFilePath)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">audioFilePath</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioFilePath</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SendUserText_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SendUserText*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SendUserText_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SendUserText(System.String)">SendUserText(string)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SendUserText_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SendUserText(System.String)">
+  SendUserText(string)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask SendUserText(string text)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">text</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetInputAudioTranscriptionEnabledAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetInputAudioTranscriptionEnabledAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetInputAudioTranscriptionEnabledAsync_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetInputAudioTranscriptionEnabledAsync(System.Boolean)">SetInputAudioTranscriptionEnabledAsync(bool)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetInputAudioTranscriptionEnabledAsync_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetInputAudioTranscriptionEnabledAsync(System.Boolean)">
+  SetInputAudioTranscriptionEnabledAsync(bool)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask SetInputAudioTranscriptionEnabledAsync(bool enabled)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">enabled</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetInstructionsAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetInstructionsAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetInstructionsAsync_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetInstructionsAsync(System.String)">SetInstructionsAsync(string)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetInstructionsAsync_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetInstructionsAsync(System.String)">
+  SetInstructionsAsync(string)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask SetInstructionsAsync(string instructions)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">instructions</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instructions</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetMaxOutputTokensAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetMaxOutputTokensAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetMaxOutputTokensAsync_System_Int32_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetMaxOutputTokensAsync(System.Int32)">SetMaxOutputTokensAsync(int)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetMaxOutputTokensAsync_System_Int32_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetMaxOutputTokensAsync(System.Int32)">
+  SetMaxOutputTokensAsync(int)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask SetMaxOutputTokensAsync(int maxOutputTokens)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">int</span></td>
-        <td><span class="parametername">maxOutputTokens</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxOutputTokens</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetModelAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetModelAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetModelAsync_Glitch9_AIDevKit_Model_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetModelAsync(Glitch9.AIDevKit.Model)">SetModelAsync(Model)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetModelAsync_Glitch9_AIDevKit_Model_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetModelAsync(Glitch9.AIDevKit.Model)">
+  SetModelAsync(Model)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask SetModelAsync(Model model)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td><span class="parametername">model</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetTemperatureAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetTemperatureAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetTemperatureAsync_System_Single_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetTemperatureAsync(System.Single)">SetTemperatureAsync(float)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetTemperatureAsync_System_Single_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetTemperatureAsync(System.Single)">
+  SetTemperatureAsync(float)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask SetTemperatureAsync(float temperature)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">temperature</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>temperature</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetVoiceAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetVoiceAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetVoiceAsync_Glitch9_AIDevKit_Voice_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetVoiceAsync(Glitch9.AIDevKit.Voice)">SetVoiceAsync(Voice)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_SetVoiceAsync_Glitch9_AIDevKit_Voice_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SetVoiceAsync(Glitch9.AIDevKit.Voice)">
+  SetVoiceAsync(Voice)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask SetVoiceAsync(Voice voice)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></td>
-        <td><span class="parametername">voice</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voice</code> <a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_StreamUserAudioClips_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioClips*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_StreamUserAudioClips_System_Collections_Generic_List_AudioClip__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioClips(System.Collections.Generic.List{AudioClip})">StreamUserAudioClips(List&lt;AudioClip&gt;)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_StreamUserAudioClips_System_Collections_Generic_List_AudioClip__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioClips(System.Collections.Generic.List{AudioClip})">
+  StreamUserAudioClips(List&lt;AudioClip&gt;)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask StreamUserAudioClips(List&lt;AudioClip&gt; audioClips)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">AudioClip</span>&gt;</td>
-        <td><span class="parametername">audioClips</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioClips</code> <span class="xref">List</span>&lt;<span class="xref">AudioClip</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_StreamUserAudioData_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioData*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_StreamUserAudioData_System_Single___" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioData(System.Single[])">StreamUserAudioData(float[])</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_StreamUserAudioData_System_Single___" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioData(System.Single[])">
+  StreamUserAudioData(float[])
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask StreamUserAudioData(float[] audioData)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span>[]</td>
-        <td><span class="parametername">audioData</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioData</code> <span class="xref">float</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_StreamUserAudioFiles_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioFiles*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_StreamUserAudioFiles_System_Collections_Generic_List_System_String__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioFiles(System.Collections.Generic.List{System.String})">StreamUserAudioFiles(List&lt;string&gt;)</h4>
+
+  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_StreamUserAudioFiles_System_Collections_Generic_List_System_String__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioFiles(System.Collections.Generic.List{System.String})">
+  StreamUserAudioFiles(List&lt;string&gt;)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask StreamUserAudioFiles(List&lt;string&gt; audioFilePaths)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">audioFilePaths</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioFilePaths</code> <span class="xref">List</span>&lt;<span class="xref">string</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+        <div class="contribution d-print-none">
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      
-      <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

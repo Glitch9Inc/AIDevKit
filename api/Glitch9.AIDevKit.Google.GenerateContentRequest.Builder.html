@@ -1,1070 +1,957 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class GenerateContentRequest.Builder | AI DevKit </title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class GenerateContentRequest.Builder | AI DevKit ">
-    
-    
-      <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class GenerateContentRequest.Builder | AI Dev Kit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GenerateContentRequest.Builder | AI Dev Kit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="AI DevKit">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+            AI Dev Kit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder">
+
+        <article data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder">
 
 
 
-  <h1 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder" class="text-break">Class GenerateContentRequest.Builder</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><span class="xref">RequestBody</span>.<span class="xref">RequestBodyBuilder</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a>, <a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>&gt;</div>
-    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.html">GenerativeAIRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.GenerativeAIRequestBuilder-2.html">GenerativeAIRequestBuilder</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a>, <a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>&gt;</div>
-    <div class="level3"><span class="xref">GenerateContentRequest.Builder</span></div>
+  <h1 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder" class="text-break">
+Class GenerateContentRequest.Builder  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Google.html">Google</a></dd></dl>
+  
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.GenerativeAIRequestBuilder-2.html#Glitch9_AIDevKit_Google_GenerativeAIRequest_GenerativeAIRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_">GenerativeAIRequest.GenerativeAIRequestBuilder&lt;GenerateContentRequest.Builder, GenerateContentRequest&gt;.SetModel(Model)</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Google.html">Google</a></h6>
-  <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_syntax">Syntax</h5>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class GenerateContentRequest.Builder : GenerativeAIRequest.GenerativeAIRequestBuilder&lt;GenerateContentRequest.Builder, GenerateContentRequest&gt;</code></pre>
   </div>
-  <h3 id="methods">Methods
-</h3>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">RequestBody</span>.<span class="xref">RequestBodyBuilder</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a>, <a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>&gt;</div>
+      <div><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.html">GenerativeAIRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.GenerativeAIRequestBuilder-2.html">GenerativeAIRequestBuilder</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a>, <a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>&gt;</div>
+      <div><span class="xref">GenerateContentRequest.Builder</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.GenerativeAIRequestBuilder-2.html#Glitch9_AIDevKit_Google_GenerativeAIRequest_GenerativeAIRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_">GenerativeAIRequest.GenerativeAIRequestBuilder&lt;GenerateContentRequest.Builder, GenerateContentRequest&gt;.SetModel(Model)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_PushMessage_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.PushMessage*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_PushMessage_Glitch9_AIDevKit_ChatMessage_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.PushMessage(Glitch9.AIDevKit.ChatMessage)">PushMessage(ChatMessage)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_PushMessage_Glitch9_AIDevKit_ChatMessage_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.PushMessage(Glitch9.AIDevKit.ChatMessage)">
+  PushMessage(ChatMessage)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder PushMessage(ChatMessage message)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetConfig_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetConfig*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetConfig_Glitch9_AIDevKit_Google_GenerationConfig_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetConfig(Glitch9.AIDevKit.Google.GenerationConfig)">SetConfig(GenerationConfig)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetConfig_Glitch9_AIDevKit_Google_GenerationConfig_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetConfig(Glitch9.AIDevKit.Google.GenerationConfig)">
+  SetConfig(GenerationConfig)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetConfig(GenerationConfig generationConfig)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerationConfig.html">GenerationConfig</a></td>
-        <td><span class="parametername">generationConfig</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>generationConfig</code> <a class="xref" href="Glitch9.AIDevKit.Google.GenerationConfig.html">GenerationConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetFrequencyPenalty_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetFrequencyPenalty*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetFrequencyPenalty_System_Single_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetFrequencyPenalty(System.Single)">SetFrequencyPenalty(float)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetFrequencyPenalty_System_Single_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetFrequencyPenalty(System.Single)">
+  SetFrequencyPenalty(float)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetFrequencyPenalty(float frequencyPenalty)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">frequencyPenalty</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frequencyPenalty</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetFunctions_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetFunctions*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetFunctions_Glitch9_AIDevKit_FunctionDeclaration___" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetFunctions(Glitch9.AIDevKit.FunctionDeclaration[])">SetFunctions(params FunctionDeclaration[])</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetFunctions_Glitch9_AIDevKit_FunctionDeclaration___" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetFunctions(Glitch9.AIDevKit.FunctionDeclaration[])">
+  SetFunctions(params FunctionDeclaration[])
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetFunctions(params FunctionDeclaration[] functions)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.FunctionDeclaration.html">FunctionDeclaration</a>[]</td>
-        <td><span class="parametername">functions</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>functions</code> <a class="xref" href="Glitch9.AIDevKit.FunctionDeclaration.html">FunctionDeclaration</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetInstruction_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetInstruction*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetInstruction_System_String_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetInstruction(System.String)">SetInstruction(string)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetInstruction_System_String_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetInstruction(System.String)">
+  SetInstruction(string)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Adds a system instruction to the beginning of the message list.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetInstruction(string systemInstruction)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">systemInstruction</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>systemInstruction</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetJsonSchema_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetJsonSchema*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetJsonSchema_System_Type_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetJsonSchema(System.Type)">SetJsonSchema(Type)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetJsonSchema_System_Type_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetJsonSchema(System.Type)">
+  SetJsonSchema(Type)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetJsonSchema(Type type)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Type</span></td>
-        <td><span class="parametername">type</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <span class="xref">Type</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetMaxTokens_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetMaxTokens*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetMaxTokens_System_Int32_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetMaxTokens(System.Int32)">SetMaxTokens(int)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetMaxTokens_System_Int32_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetMaxTokens(System.Int32)">
+  SetMaxTokens(int)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetMaxTokens(int maxTokens)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">int</span></td>
-        <td><span class="parametername">maxTokens</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxTokens</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetMessages_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetMessages*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetMessages_System_Collections_Generic_List_Glitch9_AIDevKit_ChatMessage__" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetMessages(System.Collections.Generic.List{Glitch9.AIDevKit.ChatMessage})">SetMessages(List&lt;ChatMessage&gt;)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetMessages_System_Collections_Generic_List_Glitch9_AIDevKit_ChatMessage__" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetMessages(System.Collections.Generic.List{Glitch9.AIDevKit.ChatMessage})">
+  SetMessages(List&lt;ChatMessage&gt;)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetMessages(List&lt;ChatMessage&gt; messages)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>&gt;</td>
-        <td><span class="parametername">messages</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messages</code> <span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetModelOptions_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetModelOptions*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetModelOptions_Glitch9_AIDevKit_ModelOptions_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetModelOptions(Glitch9.AIDevKit.ModelOptions)">SetModelOptions(ModelOptions)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetModelOptions_Glitch9_AIDevKit_ModelOptions_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetModelOptions(Glitch9.AIDevKit.ModelOptions)">
+  SetModelOptions(ModelOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetModelOptions(ModelOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.ModelOptions.html">ModelOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Glitch9.AIDevKit.ModelOptions.html">ModelOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetPresencePenalty_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetPresencePenalty*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetPresencePenalty_System_Single_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetPresencePenalty(System.Single)">SetPresencePenalty(float)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetPresencePenalty_System_Single_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetPresencePenalty(System.Single)">
+  SetPresencePenalty(float)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetPresencePenalty(float presencePenalty)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">presencePenalty</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>presencePenalty</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetPrompt_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetPrompt*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetPrompt_Glitch9_AIDevKit_InpaintPrompt_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetPrompt(Glitch9.AIDevKit.InpaintPrompt)">SetPrompt(InpaintPrompt)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetPrompt_Glitch9_AIDevKit_InpaintPrompt_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetPrompt(Glitch9.AIDevKit.InpaintPrompt)">
+  SetPrompt(InpaintPrompt)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetPrompt(InpaintPrompt prompt)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.InpaintPrompt.html">InpaintPrompt</a></td>
-        <td><span class="parametername">prompt</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="Glitch9.AIDevKit.InpaintPrompt.html">InpaintPrompt</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetPrompt_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetPrompt*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetPrompt_System_String_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetPrompt(System.String)">SetPrompt(string)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetPrompt_System_String_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetPrompt(System.String)">
+  SetPrompt(string)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetPrompt(string prompt)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">prompt</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetResponseCount_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetResponseCount*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetResponseCount_System_Int32_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetResponseCount(System.Int32)">SetResponseCount(int)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetResponseCount_System_Int32_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetResponseCount(System.Int32)">
+  SetResponseCount(int)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetResponseCount(int count)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">int</span></td>
-        <td><span class="parametername">count</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetResponseModalities_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetResponseModalities*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetResponseModalities_Glitch9_AIDevKit_Modality___" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetResponseModalities(Glitch9.AIDevKit.Modality[])">SetResponseModalities(params Modality[])</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetResponseModalities_Glitch9_AIDevKit_Modality___" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetResponseModalities(Glitch9.AIDevKit.Modality[])">
+  SetResponseModalities(params Modality[])
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetResponseModalities(params Modality[] responseModalities)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Modality.html">Modality</a>[]</td>
-        <td><span class="parametername">responseModalities</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>responseModalities</code> <a class="xref" href="Glitch9.AIDevKit.Modality.html">Modality</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetSafetySettings_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetSafetySettings*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetSafetySettings_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_SafetySetting__" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetSafetySettings(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})">SetSafetySettings(IEnumerable&lt;SafetySetting&gt;)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetSafetySettings_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_SafetySetting__" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetSafetySettings(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})">
+  SetSafetySettings(IEnumerable&lt;SafetySetting&gt;)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetSafetySettings(IEnumerable&lt;SafetySetting&gt; safetySettings)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Glitch9.AIDevKit.SafetySetting.html">SafetySetting</a>&gt;</td>
-        <td><span class="parametername">safetySettings</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>safetySettings</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Glitch9.AIDevKit.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetSeed_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetSeed*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetSeed_System_Int32_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetSeed(System.Int32)">SetSeed(int)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetSeed_System_Int32_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetSeed(System.Int32)">
+  SetSeed(int)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetSeed(int seed)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">int</span></td>
-        <td><span class="parametername">seed</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seed</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetStartingMessage_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetStartingMessage*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetStartingMessage_System_String_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetStartingMessage(System.String)">SetStartingMessage(string)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetStartingMessage_System_String_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetStartingMessage(System.String)">
+  SetStartingMessage(string)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Adds a system instruction and an assistant message to the beginning of the message list.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetStartingMessage(string startingMessage)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">startingMessage</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startingMessage</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetSystemInstruction_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetSystemInstruction*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetSystemInstruction_Glitch9_AIDevKit_Google_Content_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetSystemInstruction(Glitch9.AIDevKit.Google.Content)">SetSystemInstruction(Content)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetSystemInstruction_Glitch9_AIDevKit_Google_Content_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetSystemInstruction(Glitch9.AIDevKit.Google.Content)">
+  SetSystemInstruction(Content)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetSystemInstruction(Content systemInstruction)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.Content.html">Content</a></td>
-        <td><span class="parametername">systemInstruction</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>systemInstruction</code> <a class="xref" href="Glitch9.AIDevKit.Google.Content.html">Content</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTemperature_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTemperature*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTemperature_System_Single_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTemperature(System.Single)">SetTemperature(float)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTemperature_System_Single_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTemperature(System.Single)">
+  SetTemperature(float)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetTemperature(float temperature)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">temperature</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>temperature</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTools_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTools*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTools_Glitch9_AIDevKit_Google_Tool___" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTools(Glitch9.AIDevKit.Google.Tool[])">SetTools(params Tool[])</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTools_Glitch9_AIDevKit_Google_Tool___" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTools(Glitch9.AIDevKit.Google.Tool[])">
+  SetTools(params Tool[])
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetTools(params Tool[] tools)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.Tool.html">Tool</a>[]</td>
-        <td><span class="parametername">tools</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tools</code> <a class="xref" href="Glitch9.AIDevKit.Google.Tool.html">Tool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTopK_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTopK*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTopK_System_Int32_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTopK(System.Int32)">SetTopK(int)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTopK_System_Int32_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTopK(System.Int32)">
+  SetTopK(int)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetTopK(int topK)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">int</span></td>
-        <td><span class="parametername">topK</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>topK</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTopP_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTopP*"></a>
-  <h4 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTopP_System_Single_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTopP(System.Single)">SetTopP(float)</h4>
+
+  <h3 id="Glitch9_AIDevKit_Google_GenerateContentRequest_Builder_SetTopP_System_Single_" data-uid="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.SetTopP(System.Single)">
+  SetTopP(float)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GenerateContentRequest.Builder SetTopP(float topP)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">topP</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>topP</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.<a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">Builder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+        <div class="contribution d-print-none">
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      
-      <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
