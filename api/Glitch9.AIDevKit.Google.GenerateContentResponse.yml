@@ -7,6 +7,7 @@ items:
   children:
   - Glitch9.AIDevKit.Google.GenerateContentResponse.Candidates
   - Glitch9.AIDevKit.Google.GenerateContentResponse.GetContents
+  - Glitch9.AIDevKit.Google.GenerateContentResponse.GetFirstContent
   - Glitch9.AIDevKit.Google.GenerateContentResponse.GetToolCalls
   - Glitch9.AIDevKit.Google.GenerateContentResponse.Parts
   - Glitch9.AIDevKit.Google.GenerateContentResponse.PromptFeedback
@@ -25,7 +26,7 @@ items:
   type: Class
   source:
     id: GenerateContentResponse
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
     startLine: 19
   namespace: Glitch9.AIDevKit.Google
   summary: >-
@@ -58,7 +59,7 @@ items:
   type: Property
   source:
     id: Candidates
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
     startLine: 21
   namespace: Glitch9.AIDevKit.Google
   syntax:
@@ -81,7 +82,7 @@ items:
   type: Property
   source:
     id: PromptFeedback
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
     startLine: 22
   namespace: Glitch9.AIDevKit.Google
   syntax:
@@ -104,7 +105,7 @@ items:
   type: Property
   source:
     id: Usage
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
     startLine: 23
   namespace: Glitch9.AIDevKit.Google
   syntax:
@@ -127,7 +128,7 @@ items:
   type: Method
   source:
     id: ToString
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
     startLine: 24
   namespace: Glitch9.AIDevKit.Google
   summary: Returns a string that represents the current object.
@@ -153,7 +154,7 @@ items:
   type: Method
   source:
     id: ToTextDelta
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
     startLine: 25
   namespace: Glitch9.AIDevKit.Google
   example: []
@@ -176,7 +177,7 @@ items:
   type: Property
   source:
     id: Parts
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
     startLine: 27
   namespace: Glitch9.AIDevKit.Google
   syntax:
@@ -199,7 +200,7 @@ items:
   type: Method
   source:
     id: ToGeneratedImageAsync
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
     startLine: 51
   namespace: Glitch9.AIDevKit.Google
   syntax:
@@ -227,7 +228,7 @@ items:
   type: Method
   source:
     id: ToChatDelta
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
     startLine: 73
   namespace: Glitch9.AIDevKit.Google
   syntax:
@@ -249,7 +250,7 @@ items:
   type: Method
   source:
     id: GetContents
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
     startLine: 103
   namespace: Glitch9.AIDevKit.Google
   syntax:
@@ -258,6 +259,28 @@ items:
       type: Glitch9.AIDevKit.Content[]
     content.vb: Public Function GetContents() As Content()
   overload: Glitch9.AIDevKit.Google.GenerateContentResponse.GetContents*
+- uid: Glitch9.AIDevKit.Google.GenerateContentResponse.GetFirstContent
+  commentId: M:Glitch9.AIDevKit.Google.GenerateContentResponse.GetFirstContent
+  id: GetFirstContent
+  parent: Glitch9.AIDevKit.Google.GenerateContentResponse
+  langs:
+  - csharp
+  - vb
+  name: GetFirstContent()
+  nameWithType: GenerateContentResponse.GetFirstContent()
+  fullName: Glitch9.AIDevKit.Google.GenerateContentResponse.GetFirstContent()
+  type: Method
+  source:
+    id: GetFirstContent
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    startLine: 119
+  namespace: Glitch9.AIDevKit.Google
+  syntax:
+    content: public Content GetFirstContent()
+    return:
+      type: Glitch9.AIDevKit.Content
+    content.vb: Public Function GetFirstContent() As Content
+  overload: Glitch9.AIDevKit.Google.GenerateContentResponse.GetFirstContent*
 - uid: Glitch9.AIDevKit.Google.GenerateContentResponse.GetToolCalls
   commentId: M:Glitch9.AIDevKit.Google.GenerateContentResponse.GetToolCalls
   id: GetToolCalls
@@ -271,8 +294,8 @@ items:
   type: Method
   source:
     id: GetToolCalls
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
-    startLine: 158
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    startLine: 172
   namespace: Glitch9.AIDevKit.Google
   syntax:
     content: public ToolCall[] GetToolCalls()
@@ -293,8 +316,8 @@ items:
   type: Method
   source:
     id: ToChatContent
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
-    startLine: 175
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/GenerateContentResponse.cs
+    startLine: 189
   namespace: Glitch9.AIDevKit.Google
   syntax:
     content: public Content ToChatContent()
@@ -724,6 +747,19 @@ references:
     href: Glitch9.AIDevKit.Content.html
   - name: (
   - name: )
+- uid: Glitch9.AIDevKit.Google.GenerateContentResponse.GetFirstContent*
+  commentId: Overload:Glitch9.AIDevKit.Google.GenerateContentResponse.GetFirstContent
+  href: Glitch9.AIDevKit.Google.GenerateContentResponse.html#Glitch9_AIDevKit_Google_GenerateContentResponse_GetFirstContent
+  name: GetFirstContent
+  nameWithType: GenerateContentResponse.GetFirstContent
+  fullName: Glitch9.AIDevKit.Google.GenerateContentResponse.GetFirstContent
+- uid: Glitch9.AIDevKit.Content
+  commentId: T:Glitch9.AIDevKit.Content
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Content.html
+  name: Content
+  nameWithType: Content
+  fullName: Glitch9.AIDevKit.Content
 - uid: Glitch9.AIDevKit.Google.GenerateContentResponse.GetToolCalls*
   commentId: Overload:Glitch9.AIDevKit.Google.GenerateContentResponse.GetToolCalls
   href: Glitch9.AIDevKit.Google.GenerateContentResponse.html#Glitch9_AIDevKit_Google_GenerateContentResponse_GetToolCalls
@@ -757,10 +793,3 @@ references:
   name: ToChatContent
   nameWithType: GenerateContentResponse.ToChatContent
   fullName: Glitch9.AIDevKit.Google.GenerateContentResponse.ToChatContent
-- uid: Glitch9.AIDevKit.Content
-  commentId: T:Glitch9.AIDevKit.Content
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.Content.html
-  name: Content
-  nameWithType: Content
-  fullName: Glitch9.AIDevKit.Content

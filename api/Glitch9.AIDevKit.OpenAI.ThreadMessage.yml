@@ -12,6 +12,7 @@ items:
   - Glitch9.AIDevKit.OpenAI.ThreadMessage.Id
   - Glitch9.AIDevKit.OpenAI.ThreadMessage.Metadata
   - Glitch9.AIDevKit.OpenAI.ThreadMessage.Object
+  - Glitch9.AIDevKit.OpenAI.ThreadMessage.Role
   - Glitch9.AIDevKit.OpenAI.ThreadMessage.RunId
   - Glitch9.AIDevKit.OpenAI.ThreadMessage.ThreadId
   - Glitch9.AIDevKit.OpenAI.ThreadMessage.ToolCallId
@@ -25,7 +26,7 @@ items:
   type: Class
   source:
     id: ThreadMessage
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
     startLine: 13
   namespace: Glitch9.AIDevKit.OpenAI
   summary: Represents a message within a thread.
@@ -43,7 +44,6 @@ items:
   - System.Object
   - Glitch9.AIDevKit.ChatMessage
   inheritedMembers:
-  - Glitch9.AIDevKit.ChatMessage.Role
   - Glitch9.AIDevKit.ChatMessage.Content
   - Glitch9.AIDevKit.ChatMessage.Name
   - Glitch9.AIDevKit.ChatMessage.SentAt
@@ -56,6 +56,32 @@ items:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
     arguments: []
+- uid: Glitch9.AIDevKit.OpenAI.ThreadMessage.Role
+  commentId: P:Glitch9.AIDevKit.OpenAI.ThreadMessage.Role
+  id: Role
+  parent: Glitch9.AIDevKit.OpenAI.ThreadMessage
+  langs:
+  - csharp
+  - vb
+  name: Role
+  nameWithType: ThreadMessage.Role
+  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessage.Role
+  type: Property
+  source:
+    id: Role
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 16
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: The role of the messages author.
+  example: []
+  syntax:
+    content: public override ChatRole Role { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ChatRole
+    content.vb: Public Overrides ReadOnly Property Role As ChatRole
+  overridden: Glitch9.AIDevKit.ChatMessage.Role
+  overload: Glitch9.AIDevKit.OpenAI.ThreadMessage.Role*
 - uid: Glitch9.AIDevKit.OpenAI.ThreadMessage.Id
   commentId: P:Glitch9.AIDevKit.OpenAI.ThreadMessage.Id
   id: Id
@@ -69,8 +95,8 @@ items:
   type: Property
   source:
     id: Id
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 16
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 18
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public string Id { get; set; }
@@ -92,8 +118,8 @@ items:
   type: Property
   source:
     id: Object
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 21
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 23
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The OpenAI object type
   example: []
@@ -117,8 +143,8 @@ items:
   type: Property
   source:
     id: Metadata
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 28
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 30
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     Set of 16 key-value pairs that can be attached to an object. 
@@ -147,8 +173,8 @@ items:
   type: Property
   source:
     id: ThreadId
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 33
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 35
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The <xref href="Glitch9.AIDevKit.OpenAI.Thread" data-throw-if-not-resolved="false"></xref> that this message belongs to.
   example: []
@@ -172,8 +198,8 @@ items:
   type: Property
   source:
     id: AssistantId
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 38
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 40
   namespace: Glitch9.AIDevKit.OpenAI
   summary: If applicable, the <xref href="Glitch9.AIDevKit.OpenAI.Assistant" data-throw-if-not-resolved="false"></xref> that authored this message.
   example: []
@@ -197,8 +223,8 @@ items:
   type: Property
   source:
     id: RunId
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 44
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 46
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     The <xref href="Glitch9.AIDevKit.OpenAI.Run" data-throw-if-not-resolved="false"></xref> associated with the creation of this message. 
@@ -225,8 +251,8 @@ items:
   type: Property
   source:
     id: Attachments
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 49
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 51
   namespace: Glitch9.AIDevKit.OpenAI
   summary: A list of files attached to the message, and the tools they were added to.
   example: []
@@ -250,8 +276,8 @@ items:
   type: Property
   source:
     id: Tools
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 54
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 56
   namespace: Glitch9.AIDevKit.OpenAI
   summary: Optional. A list of tool calls (functions) the model wants to use.
   example: []
@@ -275,8 +301,8 @@ items:
   type: Property
   source:
     id: ToolCallId
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 59
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 61
   namespace: Glitch9.AIDevKit.OpenAI
   summary: '[Required] Tool call that this message is responding to.'
   example: []
@@ -300,8 +326,8 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 61
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 63
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public ThreadMessage()
@@ -323,8 +349,8 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
-    startLine: 62
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Threads/ThreadMessage.cs
+    startLine: 64
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public ThreadMessage(ChatRole role, string content = null)
@@ -386,13 +412,6 @@ references:
   name: ChatMessage
   nameWithType: ChatMessage
   fullName: Glitch9.AIDevKit.ChatMessage
-- uid: Glitch9.AIDevKit.ChatMessage.Role
-  commentId: P:Glitch9.AIDevKit.ChatMessage.Role
-  parent: Glitch9.AIDevKit.ChatMessage
-  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Role
-  name: Role
-  nameWithType: ChatMessage.Role
-  fullName: Glitch9.AIDevKit.ChatMessage.Role
 - uid: Glitch9.AIDevKit.ChatMessage.Content
   commentId: P:Glitch9.AIDevKit.ChatMessage.Content
   parent: Glitch9.AIDevKit.ChatMessage
@@ -608,6 +627,26 @@ references:
     name: ThreadMessage
     href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
   - name: )
+- uid: Glitch9.AIDevKit.ChatMessage.Role
+  commentId: P:Glitch9.AIDevKit.ChatMessage.Role
+  parent: Glitch9.AIDevKit.ChatMessage
+  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Role
+  name: Role
+  nameWithType: ChatMessage.Role
+  fullName: Glitch9.AIDevKit.ChatMessage.Role
+- uid: Glitch9.AIDevKit.OpenAI.ThreadMessage.Role*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.ThreadMessage.Role
+  href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html#Glitch9_AIDevKit_OpenAI_ThreadMessage_Role
+  name: Role
+  nameWithType: ThreadMessage.Role
+  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessage.Role
+- uid: Glitch9.AIDevKit.ChatRole
+  commentId: T:Glitch9.AIDevKit.ChatRole
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatRole.html
+  name: ChatRole
+  nameWithType: ChatRole
+  fullName: Glitch9.AIDevKit.ChatRole
 - uid: Glitch9.AIDevKit.OpenAI.ThreadMessage.Id*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.ThreadMessage.Id
   href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html#Glitch9_AIDevKit_OpenAI_ThreadMessage_Id
@@ -852,10 +891,3 @@ references:
   nameWithType.vb: ThreadMessage.New
   fullName.vb: Glitch9.AIDevKit.OpenAI.ThreadMessage.New
   name.vb: New
-- uid: Glitch9.AIDevKit.ChatRole
-  commentId: T:Glitch9.AIDevKit.ChatRole
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ChatRole.html
-  name: ChatRole
-  nameWithType: ChatRole
-  fullName: Glitch9.AIDevKit.ChatRole

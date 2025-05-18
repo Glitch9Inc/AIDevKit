@@ -17,8 +17,8 @@ items:
   type: Class
   source:
     id: GENTextTask
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 380
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 381
   namespace: Glitch9.AIDevKit
   syntax:
     content: 'public class GENTextTask : GENCompletionTask<GENTextTask, Prompt, GeneratedText>, IGENTask'
@@ -42,8 +42,8 @@ items:
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.SetWebSearchOptions(Glitch9.AIDevKit.WebSearchOptions)
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamText(System.Action{System.String})
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamError(System.Action{System.String})
-  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
-  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
+  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
+  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
   - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.token
   - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.enableHistory
   - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.isCanceled
@@ -78,8 +78,8 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 382
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 383
   namespace: Glitch9.AIDevKit
   syntax:
     content: public GENTextTask(Prompt prompt, UnityEngine.Object target = null)
@@ -106,8 +106,8 @@ items:
   type: Method
   source:
     id: ExecuteAsync
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 389
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 390
   namespace: Glitch9.AIDevKit
   summary: Executes the text generation and returns the full response as a string.
   example: []
@@ -131,8 +131,8 @@ items:
   type: Method
   source:
     id: StreamAsync
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 407
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 408
   namespace: Glitch9.AIDevKit
   summary: Streams text generation output in real time as it's received from the model.
   example: []
@@ -631,35 +631,35 @@ references:
     isExternal: true
   - name: )
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
+- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
   parent: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}
-  definition: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
-  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamComplete_System_Action_Glitch9_AIDevKit_GeneratedText__
-  name: OnStreamComplete(Action<GeneratedText>)
-  nameWithType: GENCompletionTask<GENTextTask, Prompt, GeneratedText>.OnStreamComplete(Action<GeneratedText>)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENTextTask, Glitch9.AIDevKit.Prompt, Glitch9.AIDevKit.GeneratedText>.OnStreamComplete(System.Action<Glitch9.AIDevKit.GeneratedText>)
-  nameWithType.vb: GENCompletionTask(Of GENTextTask, Prompt, GeneratedText).OnStreamComplete(Action(Of GeneratedText))
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENTextTask, Glitch9.AIDevKit.Prompt, Glitch9.AIDevKit.GeneratedText).OnStreamComplete(System.Action(Of Glitch9.AIDevKit.GeneratedText))
-  name.vb: OnStreamComplete(Action(Of GeneratedText))
+  definition: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
+  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamDOne_System_Action_Glitch9_AIDevKit_ChatCompletion__
+  name: OnStreamDOne(Action<ChatCompletion>)
+  nameWithType: GENCompletionTask<GENTextTask, Prompt, GeneratedText>.OnStreamDOne(Action<ChatCompletion>)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENTextTask, Glitch9.AIDevKit.Prompt, Glitch9.AIDevKit.GeneratedText>.OnStreamDOne(System.Action<Glitch9.AIDevKit.ChatCompletion>)
+  nameWithType.vb: GENCompletionTask(Of GENTextTask, Prompt, GeneratedText).OnStreamDOne(Action(Of ChatCompletion))
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENTextTask, Glitch9.AIDevKit.Prompt, Glitch9.AIDevKit.GeneratedText).OnStreamDOne(System.Action(Of Glitch9.AIDevKit.ChatCompletion))
+  name.vb: OnStreamDOne(Action(Of ChatCompletion))
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
-    name: OnStreamComplete
-    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamComplete_System_Action_Glitch9_AIDevKit_GeneratedText__
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
+    name: OnStreamDOne
+    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamDOne_System_Action_Glitch9_AIDevKit_ChatCompletion__
   - name: (
   - uid: System.Action`1
     name: Action
     isExternal: true
   - name: <
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
-    name: OnStreamComplete
-    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamComplete_System_Action_Glitch9_AIDevKit_GeneratedText__
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
+    name: OnStreamDOne
+    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamDOne_System_Action_Glitch9_AIDevKit_ChatCompletion__
   - name: (
   - uid: System.Action`1
     name: Action
@@ -667,26 +667,26 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
   - name: )
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
+- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
   parent: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}
-  definition: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
-  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCall_System_Action_Glitch9_AIDevKit_ToolCall____
-  name: OnStreamToolCall(Action<ToolCall[]>)
-  nameWithType: GENCompletionTask<GENTextTask, Prompt, GeneratedText>.OnStreamToolCall(Action<ToolCall[]>)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENTextTask, Glitch9.AIDevKit.Prompt, Glitch9.AIDevKit.GeneratedText>.OnStreamToolCall(System.Action<Glitch9.AIDevKit.ToolCall[]>)
-  nameWithType.vb: GENCompletionTask(Of GENTextTask, Prompt, GeneratedText).OnStreamToolCall(Action(Of ToolCall()))
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENTextTask, Glitch9.AIDevKit.Prompt, Glitch9.AIDevKit.GeneratedText).OnStreamToolCall(System.Action(Of Glitch9.AIDevKit.ToolCall()))
-  name.vb: OnStreamToolCall(Action(Of ToolCall()))
+  definition: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
+  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCalls_System_Action_Glitch9_AIDevKit_ToolCall____
+  name: OnStreamToolCalls(Action<ToolCall[]>)
+  nameWithType: GENCompletionTask<GENTextTask, Prompt, GeneratedText>.OnStreamToolCalls(Action<ToolCall[]>)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENTextTask, Glitch9.AIDevKit.Prompt, Glitch9.AIDevKit.GeneratedText>.OnStreamToolCalls(System.Action<Glitch9.AIDevKit.ToolCall[]>)
+  nameWithType.vb: GENCompletionTask(Of GENTextTask, Prompt, GeneratedText).OnStreamToolCalls(Action(Of ToolCall()))
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENTextTask, Glitch9.AIDevKit.Prompt, Glitch9.AIDevKit.GeneratedText).OnStreamToolCalls(System.Action(Of Glitch9.AIDevKit.ToolCall()))
+  name.vb: OnStreamToolCalls(Action(Of ToolCall()))
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
-    name: OnStreamToolCall
-    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCall_System_Action_Glitch9_AIDevKit_ToolCall____
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
+    name: OnStreamToolCalls
+    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCalls_System_Action_Glitch9_AIDevKit_ToolCall____
   - name: (
   - uid: System.Action`1
     name: Action
@@ -700,9 +700,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
-    name: OnStreamToolCall
-    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCall_System_Action_Glitch9_AIDevKit_ToolCall____
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENTextTask,Glitch9.AIDevKit.Prompt,Glitch9.AIDevKit.GeneratedText}.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
+    name: OnStreamToolCalls
+    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCalls_System_Action_Glitch9_AIDevKit_ToolCall____
   - name: (
   - uid: System.Action`1
     name: Action
@@ -1702,34 +1702,34 @@ references:
     isExternal: true
   - name: )
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
+- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
   isExternal: true
-  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamComplete_System_Action_Glitch9_AIDevKit_GeneratedText__
-  name: OnStreamComplete(Action<GeneratedText>)
-  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamComplete(Action<GeneratedText>)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamComplete(System.Action<Glitch9.AIDevKit.GeneratedText>)
-  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamComplete(Action(Of GeneratedText))
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamComplete(System.Action(Of Glitch9.AIDevKit.GeneratedText))
-  name.vb: OnStreamComplete(Action(Of GeneratedText))
+  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamDOne_System_Action_Glitch9_AIDevKit_ChatCompletion__
+  name: OnStreamDOne(Action<ChatCompletion>)
+  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamDOne(Action<ChatCompletion>)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamDOne(System.Action<Glitch9.AIDevKit.ChatCompletion>)
+  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamDOne(Action(Of ChatCompletion))
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamDOne(System.Action(Of Glitch9.AIDevKit.ChatCompletion))
+  name.vb: OnStreamDOne(Action(Of ChatCompletion))
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
-    name: OnStreamComplete
-    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamComplete_System_Action_Glitch9_AIDevKit_GeneratedText__
+  - uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
+    name: OnStreamDOne
+    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamDOne_System_Action_Glitch9_AIDevKit_ChatCompletion__
   - name: (
   - uid: System.Action`1
     name: Action
     isExternal: true
   - name: <
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
-    name: OnStreamComplete
-    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamComplete_System_Action_Glitch9_AIDevKit_GeneratedText__
+  - uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
+    name: OnStreamDOne
+    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamDOne_System_Action_Glitch9_AIDevKit_ChatCompletion__
   - name: (
   - uid: System.Action`1
     name: Action
@@ -1737,25 +1737,25 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
   - name: )
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
+- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
   isExternal: true
-  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCall_System_Action_Glitch9_AIDevKit_ToolCall____
-  name: OnStreamToolCall(Action<ToolCall[]>)
-  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCall(Action<ToolCall[]>)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCall(System.Action<Glitch9.AIDevKit.ToolCall[]>)
-  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCall(Action(Of ToolCall()))
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCall(System.Action(Of Glitch9.AIDevKit.ToolCall()))
-  name.vb: OnStreamToolCall(Action(Of ToolCall()))
+  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCalls_System_Action_Glitch9_AIDevKit_ToolCall____
+  name: OnStreamToolCalls(Action<ToolCall[]>)
+  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCalls(Action<ToolCall[]>)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCalls(System.Action<Glitch9.AIDevKit.ToolCall[]>)
+  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCalls(Action(Of ToolCall()))
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCalls(System.Action(Of Glitch9.AIDevKit.ToolCall()))
+  name.vb: OnStreamToolCalls(Action(Of ToolCall()))
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
-    name: OnStreamToolCall
-    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCall_System_Action_Glitch9_AIDevKit_ToolCall____
+  - uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
+    name: OnStreamToolCalls
+    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCalls_System_Action_Glitch9_AIDevKit_ToolCall____
   - name: (
   - uid: System.Action`1
     name: Action
@@ -1769,9 +1769,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
-    name: OnStreamToolCall
-    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCall_System_Action_Glitch9_AIDevKit_ToolCall____
+  - uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
+    name: OnStreamToolCalls
+    href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCalls_System_Action_Glitch9_AIDevKit_ToolCall____
   - name: (
   - uid: System.Action`1
     name: Action

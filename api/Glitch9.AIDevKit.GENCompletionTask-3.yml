@@ -10,10 +10,10 @@ items:
   - Glitch9.AIDevKit.GENCompletionTask`3.AddAttachment(Glitch9.IO.Files.IUniFile)
   - Glitch9.AIDevKit.GENCompletionTask`3.AddAttachment(System.String)
   - Glitch9.AIDevKit.GENCompletionTask`3.AddAttachment(Texture2D)
-  - Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
+  - Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
   - Glitch9.AIDevKit.GENCompletionTask`3.OnStreamError(System.Action{System.String})
   - Glitch9.AIDevKit.GENCompletionTask`3.OnStreamText(System.Action{System.String})
-  - Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
+  - Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
   - Glitch9.AIDevKit.GENCompletionTask`3.SetInstruction(System.String)
   - Glitch9.AIDevKit.GENCompletionTask`3.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
   - Glitch9.AIDevKit.GENCompletionTask`3.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
@@ -29,8 +29,8 @@ items:
   type: Class
   source:
     id: GENCompletionTask
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 249
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 250
   namespace: Glitch9.AIDevKit
   summary: >-
     Base class for GENTasks which utilize 
@@ -96,8 +96,8 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 253
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 254
   namespace: Glitch9.AIDevKit
   syntax:
     content: protected GENCompletionTask(TPrompt prompt, UnityEngine.Object target = null)
@@ -124,8 +124,8 @@ items:
   type: Field
   source:
     id: streamHandler
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 259
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 260
   namespace: Glitch9.AIDevKit
   syntax:
     content: protected ChatStreamHandler streamHandler
@@ -147,8 +147,8 @@ items:
   type: Method
   source:
     id: AddAttachment
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 262
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 263
   namespace: Glitch9.AIDevKit
   syntax:
     content: public TSelf AddAttachment(string filePath)
@@ -175,8 +175,8 @@ items:
   type: Method
   source:
     id: AddAttachment
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 270
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 271
   namespace: Glitch9.AIDevKit
   syntax:
     content: public TSelf AddAttachment(Texture2D texture)
@@ -202,8 +202,8 @@ items:
   type: Method
   source:
     id: AddAttachment
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 277
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 278
   namespace: Glitch9.AIDevKit
   syntax:
     content: public TSelf AddAttachment(AudioClip audioClip)
@@ -229,8 +229,8 @@ items:
   type: Method
   source:
     id: AddAttachment
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 284
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 285
   namespace: Glitch9.AIDevKit
   syntax:
     content: public TSelf AddAttachment(IUniFile file)
@@ -256,8 +256,8 @@ items:
   type: Method
   source:
     id: SetInstruction
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 296
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 297
   namespace: Glitch9.AIDevKit
   summary: Sets the instruction for the task. This is a specific command or request for the model to follow.
   example: []
@@ -288,8 +288,8 @@ items:
   type: Method
   source:
     id: SetModelOptions
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 305
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 306
   namespace: Glitch9.AIDevKit
   summary: Sets the generation options for the task.
   example: []
@@ -317,8 +317,8 @@ items:
   type: Method
   source:
     id: SetReasoningEffort
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 311
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 312
   namespace: Glitch9.AIDevKit
   syntax:
     content: public TSelf SetReasoningEffort(ReasoningEffort effort)
@@ -344,8 +344,8 @@ items:
   type: Method
   source:
     id: SetSpeechOutput
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 318
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 319
   namespace: Glitch9.AIDevKit
   syntax:
     content: public TSelf SetSpeechOutput(SpeechOutputOptions options = null)
@@ -371,8 +371,8 @@ items:
   type: Method
   source:
     id: SetWebSearchOptions
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 324
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 325
   namespace: Glitch9.AIDevKit
   syntax:
     content: public TSelf SetWebSearchOptions(WebSearchOptions webSearchOptions)
@@ -398,8 +398,8 @@ items:
   type: Method
   source:
     id: OnStreamText
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 331
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 332
   namespace: Glitch9.AIDevKit
   syntax:
     content: public TSelf OnStreamText(Action<string> onTextReceived)
@@ -426,8 +426,8 @@ items:
   type: Method
   source:
     id: OnStreamError
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 338
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 339
   namespace: Glitch9.AIDevKit
   syntax:
     content: public TSelf OnStreamError(Action<string> onError)
@@ -441,62 +441,62 @@ items:
   nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamError(Action(Of String))
   fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamError(System.Action(Of String))
   name.vb: OnStreamError(Action(Of String))
-- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
-  id: OnStreamComplete(System.Action{Glitch9.AIDevKit.GeneratedText})
+- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
+  id: OnStreamDOne(System.Action{Glitch9.AIDevKit.ChatCompletion})
   parent: Glitch9.AIDevKit.GENCompletionTask`3
   langs:
   - csharp
   - vb
-  name: OnStreamComplete(Action<GeneratedText>)
-  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamComplete(Action<GeneratedText>)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamComplete(System.Action<Glitch9.AIDevKit.GeneratedText>)
+  name: OnStreamDOne(Action<ChatCompletion>)
+  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamDOne(Action<ChatCompletion>)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamDOne(System.Action<Glitch9.AIDevKit.ChatCompletion>)
   type: Method
   source:
-    id: OnStreamComplete
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 345
+    id: OnStreamDOne
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 346
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public TSelf OnStreamComplete(Action<GeneratedText> onComplete)
+    content: public TSelf OnStreamDOne(Action<ChatCompletion> onComplete)
     parameters:
     - id: onComplete
-      type: System.Action{Glitch9.AIDevKit.GeneratedText}
+      type: System.Action{Glitch9.AIDevKit.ChatCompletion}
     return:
       type: '{TSelf}'
-    content.vb: Public Function OnStreamComplete(onComplete As Action(Of GeneratedText)) As TSelf
-  overload: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete*
-  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamComplete(Action(Of GeneratedText))
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamComplete(System.Action(Of Glitch9.AIDevKit.GeneratedText))
-  name.vb: OnStreamComplete(Action(Of GeneratedText))
-- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
-  id: OnStreamToolCall(System.Action{Glitch9.AIDevKit.ToolCall[]})
+    content.vb: Public Function OnStreamDOne(onComplete As Action(Of ChatCompletion)) As TSelf
+  overload: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne*
+  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamDOne(Action(Of ChatCompletion))
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamDOne(System.Action(Of Glitch9.AIDevKit.ChatCompletion))
+  name.vb: OnStreamDOne(Action(Of ChatCompletion))
+- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
+  id: OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
   parent: Glitch9.AIDevKit.GENCompletionTask`3
   langs:
   - csharp
   - vb
-  name: OnStreamToolCall(Action<ToolCall[]>)
-  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCall(Action<ToolCall[]>)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCall(System.Action<Glitch9.AIDevKit.ToolCall[]>)
+  name: OnStreamToolCalls(Action<ToolCall[]>)
+  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCalls(Action<ToolCall[]>)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCalls(System.Action<Glitch9.AIDevKit.ToolCall[]>)
   type: Method
   source:
-    id: OnStreamToolCall
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 352
+    id: OnStreamToolCalls
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 353
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public TSelf OnStreamToolCall(Action<ToolCall[]> onToolCall)
+    content: public TSelf OnStreamToolCalls(Action<ToolCall[]> onToolCalls)
     parameters:
-    - id: onToolCall
+    - id: onToolCalls
       type: System.Action{Glitch9.AIDevKit.ToolCall[]}
     return:
       type: '{TSelf}'
-    content.vb: Public Function OnStreamToolCall(onToolCall As Action(Of ToolCall())) As TSelf
-  overload: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall*
-  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCall(Action(Of ToolCall()))
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCall(System.Action(Of Glitch9.AIDevKit.ToolCall()))
-  name.vb: OnStreamToolCall(Action(Of ToolCall()))
+    content.vb: Public Function OnStreamToolCalls(onToolCalls As Action(Of ToolCall())) As TSelf
+  overload: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls*
+  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCalls(Action(Of ToolCall()))
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCalls(System.Action(Of Glitch9.AIDevKit.ToolCall()))
+  name.vb: OnStreamToolCalls(Action(Of ToolCall()))
 references:
 - uid: Glitch9.AIDevKit.CompletionRequest
   commentId: T:Glitch9.AIDevKit.CompletionRequest
@@ -2171,33 +2171,33 @@ references:
   fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamError
   nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamError
   fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamError
-- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete*
-  commentId: Overload:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamComplete
-  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamComplete_System_Action_Glitch9_AIDevKit_GeneratedText__
-  name: OnStreamComplete
-  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamComplete
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamComplete
-  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamComplete
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamComplete
-- uid: System.Action{Glitch9.AIDevKit.GeneratedText}
-  commentId: T:System.Action{Glitch9.AIDevKit.GeneratedText}
+- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne*
+  commentId: Overload:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamDOne
+  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamDOne_System_Action_Glitch9_AIDevKit_ChatCompletion__
+  name: OnStreamDOne
+  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamDOne
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamDOne
+  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamDOne
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamDOne
+- uid: System.Action{Glitch9.AIDevKit.ChatCompletion}
+  commentId: T:System.Action{Glitch9.AIDevKit.ChatCompletion}
   parent: System
   definition: System.Action`1
-  href: Glitch9.AIDevKit.GeneratedText.html
-  name: Action<GeneratedText>
-  nameWithType: Action<GeneratedText>
-  fullName: System.Action<Glitch9.AIDevKit.GeneratedText>
-  nameWithType.vb: Action(Of GeneratedText)
-  fullName.vb: System.Action(Of Glitch9.AIDevKit.GeneratedText)
-  name.vb: Action(Of GeneratedText)
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: Action<ChatCompletion>
+  nameWithType: Action<ChatCompletion>
+  fullName: System.Action<Glitch9.AIDevKit.ChatCompletion>
+  nameWithType.vb: Action(Of ChatCompletion)
+  fullName.vb: System.Action(Of Glitch9.AIDevKit.ChatCompletion)
+  name.vb: Action(Of ChatCompletion)
   spec.csharp:
   - uid: System.Action`1
     name: Action
     isExternal: true
   - name: <
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
   - name: '>'
   spec.vb:
   - uid: System.Action`1
@@ -2206,18 +2206,18 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall*
-  commentId: Overload:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCall
-  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCall_System_Action_Glitch9_AIDevKit_ToolCall____
-  name: OnStreamToolCall
-  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCall
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCall
-  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCall
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCall
+- uid: Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls*
+  commentId: Overload:Glitch9.AIDevKit.GENCompletionTask`3.OnStreamToolCalls
+  href: Glitch9.AIDevKit.GENCompletionTask-3.html#Glitch9_AIDevKit_GENCompletionTask_3_OnStreamToolCalls_System_Action_Glitch9_AIDevKit_ToolCall____
+  name: OnStreamToolCalls
+  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCalls
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>.OnStreamToolCalls
+  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCalls
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput).OnStreamToolCalls
 - uid: System.Action{Glitch9.AIDevKit.ToolCall[]}
   commentId: T:System.Action{Glitch9.AIDevKit.ToolCall[]}
   parent: System

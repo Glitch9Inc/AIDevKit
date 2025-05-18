@@ -5,7 +5,7 @@ items:
   id: ChatStreamHandler
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.ChatStreamHandler.#ctor(System.Action,System.Action{System.String},System.Action{Glitch9.AIDevKit.ToolCall[]},System.Action{System.String},System.Action{Glitch9.AIDevKit.GeneratedText},Glitch9.AIDevKit.IGENTask)
+  - Glitch9.AIDevKit.ChatStreamHandler.#ctor(System.Action,System.Action{System.String},System.Action{Glitch9.AIDevKit.ToolCall[]},System.Action{System.String},System.Action{Glitch9.AIDevKit.ChatCompletion},Glitch9.AIDevKit.IGENTask)
   - Glitch9.AIDevKit.ChatStreamHandler.FinishStreaming
   - Glitch9.AIDevKit.ChatStreamHandler.OnError(System.String)
   - Glitch9.AIDevKit.ChatStreamHandler.OnProgress(System.Single)
@@ -15,7 +15,7 @@ items:
   - Glitch9.AIDevKit.ChatStreamHandler.onDone
   - Glitch9.AIDevKit.ChatStreamHandler.onError
   - Glitch9.AIDevKit.ChatStreamHandler.onStart
-  - Glitch9.AIDevKit.ChatStreamHandler.onStream
+  - Glitch9.AIDevKit.ChatStreamHandler.onTextDelta
   - Glitch9.AIDevKit.ChatStreamHandler.onToolCall
   langs:
   - csharp
@@ -26,8 +26,8 @@ items:
   type: Class
   source:
     id: ChatStreamHandler
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 16
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 43
   namespace: Glitch9.AIDevKit
   syntax:
     content: public class ChatStreamHandler
@@ -47,35 +47,35 @@ items:
   type: Field
   source:
     id: onStart
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 18
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 45
   namespace: Glitch9.AIDevKit
   syntax:
     content: public Action onStart
     return:
       type: System.Action
     content.vb: Public onStart As Action
-- uid: Glitch9.AIDevKit.ChatStreamHandler.onStream
-  commentId: F:Glitch9.AIDevKit.ChatStreamHandler.onStream
-  id: onStream
+- uid: Glitch9.AIDevKit.ChatStreamHandler.onTextDelta
+  commentId: F:Glitch9.AIDevKit.ChatStreamHandler.onTextDelta
+  id: onTextDelta
   parent: Glitch9.AIDevKit.ChatStreamHandler
   langs:
   - csharp
   - vb
-  name: onStream
-  nameWithType: ChatStreamHandler.onStream
-  fullName: Glitch9.AIDevKit.ChatStreamHandler.onStream
+  name: onTextDelta
+  nameWithType: ChatStreamHandler.onTextDelta
+  fullName: Glitch9.AIDevKit.ChatStreamHandler.onTextDelta
   type: Field
   source:
-    id: onStream
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 19
+    id: onTextDelta
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 46
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public Action<string> onStream
+    content: public Action<string> onTextDelta
     return:
       type: System.Action{System.String}
-    content.vb: Public onStream As Action(Of String)
+    content.vb: Public onTextDelta As Action(Of String)
 - uid: Glitch9.AIDevKit.ChatStreamHandler.onToolCall
   commentId: F:Glitch9.AIDevKit.ChatStreamHandler.onToolCall
   id: onToolCall
@@ -89,8 +89,8 @@ items:
   type: Field
   source:
     id: onToolCall
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 20
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 47
   namespace: Glitch9.AIDevKit
   syntax:
     content: public Action<ToolCall[]> onToolCall
@@ -110,8 +110,8 @@ items:
   type: Field
   source:
     id: onError
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 21
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 48
   namespace: Glitch9.AIDevKit
   syntax:
     content: public Action<string> onError
@@ -131,14 +131,14 @@ items:
   type: Field
   source:
     id: onDone
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 22
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 49
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public Action<GeneratedText> onDone
+    content: public Action<ChatCompletion> onDone
     return:
-      type: System.Action{Glitch9.AIDevKit.GeneratedText}
-    content.vb: Public onDone As Action(Of GeneratedText)
+      type: System.Action{Glitch9.AIDevKit.ChatCompletion}
+    content.vb: Public onDone As Action(Of ChatCompletion)
 - uid: Glitch9.AIDevKit.ChatStreamHandler.OnProgressEnabled
   commentId: P:Glitch9.AIDevKit.ChatStreamHandler.OnProgressEnabled
   id: OnProgressEnabled
@@ -152,8 +152,8 @@ items:
   type: Property
   source:
     id: OnProgressEnabled
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 23
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 50
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
@@ -163,42 +163,42 @@ items:
       type: System.Boolean
     content.vb: Public ReadOnly Property OnProgressEnabled As Boolean
   overload: Glitch9.AIDevKit.ChatStreamHandler.OnProgressEnabled*
-- uid: Glitch9.AIDevKit.ChatStreamHandler.#ctor(System.Action,System.Action{System.String},System.Action{Glitch9.AIDevKit.ToolCall[]},System.Action{System.String},System.Action{Glitch9.AIDevKit.GeneratedText},Glitch9.AIDevKit.IGENTask)
-  commentId: M:Glitch9.AIDevKit.ChatStreamHandler.#ctor(System.Action,System.Action{System.String},System.Action{Glitch9.AIDevKit.ToolCall[]},System.Action{System.String},System.Action{Glitch9.AIDevKit.GeneratedText},Glitch9.AIDevKit.IGENTask)
-  id: '#ctor(System.Action,System.Action{System.String},System.Action{Glitch9.AIDevKit.ToolCall[]},System.Action{System.String},System.Action{Glitch9.AIDevKit.GeneratedText},Glitch9.AIDevKit.IGENTask)'
+- uid: Glitch9.AIDevKit.ChatStreamHandler.#ctor(System.Action,System.Action{System.String},System.Action{Glitch9.AIDevKit.ToolCall[]},System.Action{System.String},System.Action{Glitch9.AIDevKit.ChatCompletion},Glitch9.AIDevKit.IGENTask)
+  commentId: M:Glitch9.AIDevKit.ChatStreamHandler.#ctor(System.Action,System.Action{System.String},System.Action{Glitch9.AIDevKit.ToolCall[]},System.Action{System.String},System.Action{Glitch9.AIDevKit.ChatCompletion},Glitch9.AIDevKit.IGENTask)
+  id: '#ctor(System.Action,System.Action{System.String},System.Action{Glitch9.AIDevKit.ToolCall[]},System.Action{System.String},System.Action{Glitch9.AIDevKit.ChatCompletion},Glitch9.AIDevKit.IGENTask)'
   parent: Glitch9.AIDevKit.ChatStreamHandler
   langs:
   - csharp
   - vb
-  name: ChatStreamHandler(Action, Action<string>, Action<ToolCall[]>, Action<string>, Action<GeneratedText>, IGENTask)
-  nameWithType: ChatStreamHandler.ChatStreamHandler(Action, Action<string>, Action<ToolCall[]>, Action<string>, Action<GeneratedText>, IGENTask)
-  fullName: Glitch9.AIDevKit.ChatStreamHandler.ChatStreamHandler(System.Action, System.Action<string>, System.Action<Glitch9.AIDevKit.ToolCall[]>, System.Action<string>, System.Action<Glitch9.AIDevKit.GeneratedText>, Glitch9.AIDevKit.IGENTask)
+  name: ChatStreamHandler(Action, Action<string>, Action<ToolCall[]>, Action<string>, Action<ChatCompletion>, IGENTask)
+  nameWithType: ChatStreamHandler.ChatStreamHandler(Action, Action<string>, Action<ToolCall[]>, Action<string>, Action<ChatCompletion>, IGENTask)
+  fullName: Glitch9.AIDevKit.ChatStreamHandler.ChatStreamHandler(System.Action, System.Action<string>, System.Action<Glitch9.AIDevKit.ToolCall[]>, System.Action<string>, System.Action<Glitch9.AIDevKit.ChatCompletion>, Glitch9.AIDevKit.IGENTask)
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 25
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 52
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public ChatStreamHandler(Action onStart = null, Action<string> onStream = null, Action<ToolCall[]> onToolCall = null, Action<string> onError = null, Action<GeneratedText> onDone = null, IGENTask task = null)
+    content: public ChatStreamHandler(Action onStart = null, Action<string> onTextDelta = null, Action<ToolCall[]> onToolCall = null, Action<string> onError = null, Action<ChatCompletion> onDone = null, IGENTask task = null)
     parameters:
     - id: onStart
       type: System.Action
-    - id: onStream
+    - id: onTextDelta
       type: System.Action{System.String}
     - id: onToolCall
       type: System.Action{Glitch9.AIDevKit.ToolCall[]}
     - id: onError
       type: System.Action{System.String}
     - id: onDone
-      type: System.Action{Glitch9.AIDevKit.GeneratedText}
+      type: System.Action{Glitch9.AIDevKit.ChatCompletion}
     - id: task
       type: Glitch9.AIDevKit.IGENTask
-    content.vb: Public Sub New(onStart As Action = Nothing, onStream As Action(Of String) = Nothing, onToolCall As Action(Of ToolCall()) = Nothing, onError As Action(Of String) = Nothing, onDone As Action(Of GeneratedText) = Nothing, task As IGENTask = Nothing)
+    content.vb: Public Sub New(onStart As Action = Nothing, onTextDelta As Action(Of String) = Nothing, onToolCall As Action(Of ToolCall()) = Nothing, onError As Action(Of String) = Nothing, onDone As Action(Of ChatCompletion) = Nothing, task As IGENTask = Nothing)
   overload: Glitch9.AIDevKit.ChatStreamHandler.#ctor*
-  nameWithType.vb: ChatStreamHandler.New(Action, Action(Of String), Action(Of ToolCall()), Action(Of String), Action(Of GeneratedText), IGENTask)
-  fullName.vb: Glitch9.AIDevKit.ChatStreamHandler.New(System.Action, System.Action(Of String), System.Action(Of Glitch9.AIDevKit.ToolCall()), System.Action(Of String), System.Action(Of Glitch9.AIDevKit.GeneratedText), Glitch9.AIDevKit.IGENTask)
-  name.vb: New(Action, Action(Of String), Action(Of ToolCall()), Action(Of String), Action(Of GeneratedText), IGENTask)
+  nameWithType.vb: ChatStreamHandler.New(Action, Action(Of String), Action(Of ToolCall()), Action(Of String), Action(Of ChatCompletion), IGENTask)
+  fullName.vb: Glitch9.AIDevKit.ChatStreamHandler.New(System.Action, System.Action(Of String), System.Action(Of Glitch9.AIDevKit.ToolCall()), System.Action(Of String), System.Action(Of Glitch9.AIDevKit.ChatCompletion), Glitch9.AIDevKit.IGENTask)
+  name.vb: New(Action, Action(Of String), Action(Of ToolCall()), Action(Of String), Action(Of ChatCompletion), IGENTask)
 - uid: Glitch9.AIDevKit.ChatStreamHandler.Stream(System.String)
   commentId: M:Glitch9.AIDevKit.ChatStreamHandler.Stream(System.String)
   id: Stream(System.String)
@@ -212,8 +212,8 @@ items:
   type: Method
   source:
     id: Stream
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 62
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 89
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
@@ -239,8 +239,8 @@ items:
   type: Method
   source:
     id: StartStreaming
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 105
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 133
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
@@ -260,8 +260,8 @@ items:
   type: Method
   source:
     id: OnProgress
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 111
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 139
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
@@ -287,8 +287,8 @@ items:
   type: Method
   source:
     id: OnError
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 116
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 144
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
@@ -314,8 +314,8 @@ items:
   type: Method
   source:
     id: FinishStreaming
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
-    startLine: 123
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Requests/ChatStreamHandler.cs
+    startLine: 151
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
@@ -459,25 +459,25 @@ references:
   - name: (
   - name: )
   - name: )
-- uid: System.Action{Glitch9.AIDevKit.GeneratedText}
-  commentId: T:System.Action{Glitch9.AIDevKit.GeneratedText}
+- uid: System.Action{Glitch9.AIDevKit.ChatCompletion}
+  commentId: T:System.Action{Glitch9.AIDevKit.ChatCompletion}
   parent: System
   definition: System.Action`1
-  href: Glitch9.AIDevKit.GeneratedText.html
-  name: Action<GeneratedText>
-  nameWithType: Action<GeneratedText>
-  fullName: System.Action<Glitch9.AIDevKit.GeneratedText>
-  nameWithType.vb: Action(Of GeneratedText)
-  fullName.vb: System.Action(Of Glitch9.AIDevKit.GeneratedText)
-  name.vb: Action(Of GeneratedText)
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: Action<ChatCompletion>
+  nameWithType: Action<ChatCompletion>
+  fullName: System.Action<Glitch9.AIDevKit.ChatCompletion>
+  nameWithType.vb: Action(Of ChatCompletion)
+  fullName.vb: System.Action(Of Glitch9.AIDevKit.ChatCompletion)
+  name.vb: Action(Of ChatCompletion)
   spec.csharp:
   - uid: System.Action`1
     name: Action
     isExternal: true
   - name: <
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
   - name: '>'
   spec.vb:
   - uid: System.Action`1
@@ -486,9 +486,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
   - name: )
 - uid: Glitch9.AIDevKit.ChatStreamHandler.OnProgressEnabled*
   commentId: Overload:Glitch9.AIDevKit.ChatStreamHandler.OnProgressEnabled
@@ -508,7 +508,7 @@ references:
   name.vb: Boolean
 - uid: Glitch9.AIDevKit.ChatStreamHandler.#ctor*
   commentId: Overload:Glitch9.AIDevKit.ChatStreamHandler.#ctor
-  href: Glitch9.AIDevKit.ChatStreamHandler.html#Glitch9_AIDevKit_ChatStreamHandler__ctor_System_Action_System_Action_System_String__System_Action_Glitch9_AIDevKit_ToolCall____System_Action_System_String__System_Action_Glitch9_AIDevKit_GeneratedText__Glitch9_AIDevKit_IGENTask_
+  href: Glitch9.AIDevKit.ChatStreamHandler.html#Glitch9_AIDevKit_ChatStreamHandler__ctor_System_Action_System_Action_System_String__System_Action_Glitch9_AIDevKit_ToolCall____System_Action_System_String__System_Action_Glitch9_AIDevKit_ChatCompletion__Glitch9_AIDevKit_IGENTask_
   name: ChatStreamHandler
   nameWithType: ChatStreamHandler.ChatStreamHandler
   fullName: Glitch9.AIDevKit.ChatStreamHandler.ChatStreamHandler

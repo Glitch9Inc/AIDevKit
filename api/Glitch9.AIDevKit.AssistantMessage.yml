@@ -7,7 +7,8 @@ items:
   children:
   - Glitch9.AIDevKit.AssistantMessage.#ctor
   - Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.ChatCompletion)
-  - Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.Content,Glitch9.AIDevKit.ChatRole)
+  - Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.Content)
+  - Glitch9.AIDevKit.AssistantMessage.Role
   - Glitch9.AIDevKit.AssistantMessage.Tools
   - Glitch9.AIDevKit.AssistantMessage.Usage
   - Glitch9.AIDevKit.AssistantMessage.op_Implicit(Glitch9.AIDevKit.AssistantMessage)~System.String
@@ -20,8 +21,8 @@ items:
   type: Class
   source:
     id: AssistantMessage
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 126
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 128
   namespace: Glitch9.AIDevKit
   syntax:
     content: 'public class AssistantMessage : ChatMessage'
@@ -32,7 +33,6 @@ items:
   derivedClasses:
   - Glitch9.AIDevKit.ToolMessage
   inheritedMembers:
-  - Glitch9.AIDevKit.ChatMessage.Role
   - Glitch9.AIDevKit.ChatMessage.Content
   - Glitch9.AIDevKit.ChatMessage.Name
   - Glitch9.AIDevKit.ChatMessage.SentAt
@@ -53,8 +53,8 @@ items:
   type: Operator
   source:
     id: op_Implicit
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 129
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 131
   namespace: Glitch9.AIDevKit
   syntax:
     content: public static implicit operator string(AssistantMessage message)
@@ -68,6 +68,32 @@ items:
   nameWithType.vb: AssistantMessage.CType(AssistantMessage)
   fullName.vb: Glitch9.AIDevKit.AssistantMessage.CType(Glitch9.AIDevKit.AssistantMessage)
   name.vb: CType(AssistantMessage)
+- uid: Glitch9.AIDevKit.AssistantMessage.Role
+  commentId: P:Glitch9.AIDevKit.AssistantMessage.Role
+  id: Role
+  parent: Glitch9.AIDevKit.AssistantMessage
+  langs:
+  - csharp
+  - vb
+  name: Role
+  nameWithType: AssistantMessage.Role
+  fullName: Glitch9.AIDevKit.AssistantMessage.Role
+  type: Property
+  source:
+    id: Role
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 133
+  namespace: Glitch9.AIDevKit
+  summary: The role of the messages author.
+  example: []
+  syntax:
+    content: public override ChatRole Role { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ChatRole
+    content.vb: Public Overrides ReadOnly Property Role As ChatRole
+  overridden: Glitch9.AIDevKit.ChatMessage.Role
+  overload: Glitch9.AIDevKit.AssistantMessage.Role*
 - uid: Glitch9.AIDevKit.AssistantMessage.Tools
   commentId: P:Glitch9.AIDevKit.AssistantMessage.Tools
   id: Tools
@@ -81,8 +107,8 @@ items:
   type: Property
   source:
     id: Tools
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 134
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 138
   namespace: Glitch9.AIDevKit
   summary: Optional. A list of tool calls (functions) the model wants to use.
   example: []
@@ -106,8 +132,8 @@ items:
   type: Property
   source:
     id: Usage
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 137
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 141
   namespace: Glitch9.AIDevKit
   syntax:
     content: public Usage Usage { get; set; }
@@ -129,8 +155,8 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 139
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 143
   namespace: Glitch9.AIDevKit
   syntax:
     content: public AssistantMessage()
@@ -139,34 +165,32 @@ items:
   nameWithType.vb: AssistantMessage.New()
   fullName.vb: Glitch9.AIDevKit.AssistantMessage.New()
   name.vb: New()
-- uid: Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.Content,Glitch9.AIDevKit.ChatRole)
-  commentId: M:Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.Content,Glitch9.AIDevKit.ChatRole)
-  id: '#ctor(Glitch9.AIDevKit.Content,Glitch9.AIDevKit.ChatRole)'
+- uid: Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.Content)
+  commentId: M:Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.Content)
+  id: '#ctor(Glitch9.AIDevKit.Content)'
   parent: Glitch9.AIDevKit.AssistantMessage
   langs:
   - csharp
   - vb
-  name: AssistantMessage(Content, ChatRole)
-  nameWithType: AssistantMessage.AssistantMessage(Content, ChatRole)
-  fullName: Glitch9.AIDevKit.AssistantMessage.AssistantMessage(Glitch9.AIDevKit.Content, Glitch9.AIDevKit.ChatRole)
+  name: AssistantMessage(Content)
+  nameWithType: AssistantMessage.AssistantMessage(Content)
+  fullName: Glitch9.AIDevKit.AssistantMessage.AssistantMessage(Glitch9.AIDevKit.Content)
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 140
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 144
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public AssistantMessage(Content content, ChatRole role = ChatRole.Assistant)
+    content: public AssistantMessage(Content content)
     parameters:
     - id: content
       type: Glitch9.AIDevKit.Content
-    - id: role
-      type: Glitch9.AIDevKit.ChatRole
-    content.vb: Public Sub New(content As Content, role As ChatRole = ChatRole.Assistant)
+    content.vb: Public Sub New(content As Content)
   overload: Glitch9.AIDevKit.AssistantMessage.#ctor*
-  nameWithType.vb: AssistantMessage.New(Content, ChatRole)
-  fullName.vb: Glitch9.AIDevKit.AssistantMessage.New(Glitch9.AIDevKit.Content, Glitch9.AIDevKit.ChatRole)
-  name.vb: New(Content, ChatRole)
+  nameWithType.vb: AssistantMessage.New(Content)
+  fullName.vb: Glitch9.AIDevKit.AssistantMessage.New(Glitch9.AIDevKit.Content)
+  name.vb: New(Content)
 - uid: Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.ChatCompletion)
   commentId: M:Glitch9.AIDevKit.AssistantMessage.#ctor(Glitch9.AIDevKit.ChatCompletion)
   id: '#ctor(Glitch9.AIDevKit.ChatCompletion)'
@@ -180,8 +204,8 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 141
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 145
   namespace: Glitch9.AIDevKit
   syntax:
     content: public AssistantMessage(ChatCompletion chat)
@@ -233,13 +257,6 @@ references:
   name: ChatMessage
   nameWithType: ChatMessage
   fullName: Glitch9.AIDevKit.ChatMessage
-- uid: Glitch9.AIDevKit.ChatMessage.Role
-  commentId: P:Glitch9.AIDevKit.ChatMessage.Role
-  parent: Glitch9.AIDevKit.ChatMessage
-  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Role
-  name: Role
-  nameWithType: ChatMessage.Role
-  fullName: Glitch9.AIDevKit.ChatMessage.Role
 - uid: Glitch9.AIDevKit.ChatMessage.Content
   commentId: P:Glitch9.AIDevKit.ChatMessage.Content
   parent: Glitch9.AIDevKit.ChatMessage
@@ -442,6 +459,26 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Glitch9.AIDevKit.ChatMessage.Role
+  commentId: P:Glitch9.AIDevKit.ChatMessage.Role
+  parent: Glitch9.AIDevKit.ChatMessage
+  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Role
+  name: Role
+  nameWithType: ChatMessage.Role
+  fullName: Glitch9.AIDevKit.ChatMessage.Role
+- uid: Glitch9.AIDevKit.AssistantMessage.Role*
+  commentId: Overload:Glitch9.AIDevKit.AssistantMessage.Role
+  href: Glitch9.AIDevKit.AssistantMessage.html#Glitch9_AIDevKit_AssistantMessage_Role
+  name: Role
+  nameWithType: AssistantMessage.Role
+  fullName: Glitch9.AIDevKit.AssistantMessage.Role
+- uid: Glitch9.AIDevKit.ChatRole
+  commentId: T:Glitch9.AIDevKit.ChatRole
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatRole.html
+  name: ChatRole
+  nameWithType: ChatRole
+  fullName: Glitch9.AIDevKit.ChatRole
 - uid: Glitch9.AIDevKit.AssistantMessage.Tools*
   commentId: Overload:Glitch9.AIDevKit.AssistantMessage.Tools
   href: Glitch9.AIDevKit.AssistantMessage.html#Glitch9_AIDevKit_AssistantMessage_Tools
@@ -498,13 +535,6 @@ references:
   name: Content
   nameWithType: Content
   fullName: Glitch9.AIDevKit.Content
-- uid: Glitch9.AIDevKit.ChatRole
-  commentId: T:Glitch9.AIDevKit.ChatRole
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ChatRole.html
-  name: ChatRole
-  nameWithType: ChatRole
-  fullName: Glitch9.AIDevKit.ChatRole
 - uid: Glitch9.AIDevKit.ChatCompletion
   commentId: T:Glitch9.AIDevKit.ChatCompletion
   parent: Glitch9.AIDevKit

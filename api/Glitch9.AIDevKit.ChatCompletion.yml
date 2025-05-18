@@ -9,8 +9,10 @@ items:
   - Glitch9.AIDevKit.ChatCompletion.Count
   - Glitch9.AIDevKit.ChatCompletion.GetContents
   - Glitch9.AIDevKit.ChatCompletion.GetToolCalls
+  - Glitch9.AIDevKit.ChatCompletion.IsEmpty
   - Glitch9.AIDevKit.ChatCompletion.SystemFingerprint
   - Glitch9.AIDevKit.ChatCompletion.ToContent
+  - Glitch9.AIDevKit.ChatCompletion.ToDelta
   - Glitch9.AIDevKit.ChatCompletion.ToMessage
   - Glitch9.AIDevKit.ChatCompletion.ToString
   - Glitch9.AIDevKit.ChatCompletion.ToTextDelta
@@ -25,7 +27,7 @@ items:
   type: Class
   source:
     id: ChatCompletion
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
     startLine: 5
   namespace: Glitch9.AIDevKit
   syntax:
@@ -56,7 +58,7 @@ items:
   type: Operator
   source:
     id: op_Implicit
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
     startLine: 7
   namespace: Glitch9.AIDevKit
   syntax:
@@ -84,7 +86,7 @@ items:
   type: Operator
   source:
     id: op_Implicit
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
     startLine: 8
   namespace: Glitch9.AIDevKit
   syntax:
@@ -112,7 +114,7 @@ items:
   type: Property
   source:
     id: Choices
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
     startLine: 17
   namespace: Glitch9.AIDevKit
   summary: >-
@@ -146,7 +148,7 @@ items:
   type: Property
   source:
     id: SystemFingerprint
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
     startLine: 23
   namespace: Glitch9.AIDevKit
   summary: >-
@@ -174,7 +176,7 @@ items:
   type: Property
   source:
     id: Count
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
     startLine: 25
   namespace: Glitch9.AIDevKit
   example: []
@@ -187,6 +189,29 @@ items:
   overload: Glitch9.AIDevKit.ChatCompletion.Count*
   implements:
   - Glitch9.AIDevKit.IGenerated.Count
+- uid: Glitch9.AIDevKit.ChatCompletion.IsEmpty
+  commentId: P:Glitch9.AIDevKit.ChatCompletion.IsEmpty
+  id: IsEmpty
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: ChatCompletion.IsEmpty
+  fullName: Glitch9.AIDevKit.ChatCompletion.IsEmpty
+  type: Property
+  source:
+    id: IsEmpty
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 26
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: Glitch9.AIDevKit.ChatCompletion.IsEmpty*
 - uid: Glitch9.AIDevKit.ChatCompletion.ToString
   commentId: M:Glitch9.AIDevKit.ChatCompletion.ToString
   id: ToString
@@ -200,8 +225,8 @@ items:
   type: Method
   source:
     id: ToString
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
-    startLine: 26
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 27
   namespace: Glitch9.AIDevKit
   summary: Returns a string that represents the current object.
   example: []
@@ -226,8 +251,8 @@ items:
   type: Method
   source:
     id: ToTextDelta
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
-    startLine: 27
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 28
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
@@ -236,6 +261,28 @@ items:
       type: System.String
     content.vb: Public Function ToTextDelta() As String
   overload: Glitch9.AIDevKit.ChatCompletion.ToTextDelta*
+- uid: Glitch9.AIDevKit.ChatCompletion.ToDelta
+  commentId: M:Glitch9.AIDevKit.ChatCompletion.ToDelta
+  id: ToDelta
+  parent: Glitch9.AIDevKit.ChatCompletion
+  langs:
+  - csharp
+  - vb
+  name: ToDelta()
+  nameWithType: ChatCompletion.ToDelta()
+  fullName: Glitch9.AIDevKit.ChatCompletion.ToDelta()
+  type: Method
+  source:
+    id: ToDelta
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public ChatDelta ToDelta()
+    return:
+      type: Glitch9.AIDevKit.ChatDelta
+    content.vb: Public Function ToDelta() As ChatDelta
+  overload: Glitch9.AIDevKit.ChatCompletion.ToDelta*
 - uid: Glitch9.AIDevKit.ChatCompletion.ToContent
   commentId: M:Glitch9.AIDevKit.ChatCompletion.ToContent
   id: ToContent
@@ -249,8 +296,8 @@ items:
   type: Method
   source:
     id: ToContent
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
-    startLine: 28
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 30
   namespace: Glitch9.AIDevKit
   syntax:
     content: public Content ToContent()
@@ -271,8 +318,8 @@ items:
   type: Method
   source:
     id: ToMessage
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
-    startLine: 29
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 31
   namespace: Glitch9.AIDevKit
   syntax:
     content: public ChatMessage ToMessage()
@@ -293,8 +340,8 @@ items:
   type: Method
   source:
     id: GetContents
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
-    startLine: 31
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 32
   namespace: Glitch9.AIDevKit
   syntax:
     content: public Content[] GetContents()
@@ -315,8 +362,8 @@ items:
   type: Method
   source:
     id: GetToolCalls
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
-    startLine: 32
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatCompletion.cs
+    startLine: 33
   namespace: Glitch9.AIDevKit
   syntax:
     content: public ToolCall[] GetToolCalls()
@@ -512,6 +559,22 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Glitch9.AIDevKit.ChatCompletion.IsEmpty*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.IsEmpty
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_IsEmpty
+  name: IsEmpty
+  nameWithType: ChatCompletion.IsEmpty
+  fullName: Glitch9.AIDevKit.ChatCompletion.IsEmpty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -545,6 +608,19 @@ references:
   name: ToTextDelta
   nameWithType: ChatCompletion.ToTextDelta
   fullName: Glitch9.AIDevKit.ChatCompletion.ToTextDelta
+- uid: Glitch9.AIDevKit.ChatCompletion.ToDelta*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletion.ToDelta
+  href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_ToDelta
+  name: ToDelta
+  nameWithType: ChatCompletion.ToDelta
+  fullName: Glitch9.AIDevKit.ChatCompletion.ToDelta
+- uid: Glitch9.AIDevKit.ChatDelta
+  commentId: T:Glitch9.AIDevKit.ChatDelta
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatDelta.html
+  name: ChatDelta
+  nameWithType: ChatDelta
+  fullName: Glitch9.AIDevKit.ChatDelta
 - uid: Glitch9.AIDevKit.ChatCompletion.ToContent*
   commentId: Overload:Glitch9.AIDevKit.ChatCompletion.ToContent
   href: Glitch9.AIDevKit.ChatCompletion.html#Glitch9_AIDevKit_ChatCompletion_ToContent

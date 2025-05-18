@@ -7,6 +7,7 @@ items:
   children:
   - Glitch9.AIDevKit.SystemMessage.#ctor
   - Glitch9.AIDevKit.SystemMessage.#ctor(Glitch9.AIDevKit.Content)
+  - Glitch9.AIDevKit.SystemMessage.Role
   - Glitch9.AIDevKit.SystemMessage.op_Implicit(Glitch9.AIDevKit.SystemMessage)~System.String
   langs:
   - csharp
@@ -17,7 +18,7 @@ items:
   type: Class
   source:
     id: SystemMessage
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
     startLine: 77
   namespace: Glitch9.AIDevKit
   syntax:
@@ -27,7 +28,6 @@ items:
   - System.Object
   - Glitch9.AIDevKit.ChatMessage
   inheritedMembers:
-  - Glitch9.AIDevKit.ChatMessage.Role
   - Glitch9.AIDevKit.ChatMessage.Content
   - Glitch9.AIDevKit.ChatMessage.Name
   - Glitch9.AIDevKit.ChatMessage.SentAt
@@ -48,7 +48,7 @@ items:
   type: Operator
   source:
     id: op_Implicit
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
     startLine: 80
   namespace: Glitch9.AIDevKit
   syntax:
@@ -63,6 +63,32 @@ items:
   nameWithType.vb: SystemMessage.CType(SystemMessage)
   fullName.vb: Glitch9.AIDevKit.SystemMessage.CType(Glitch9.AIDevKit.SystemMessage)
   name.vb: CType(SystemMessage)
+- uid: Glitch9.AIDevKit.SystemMessage.Role
+  commentId: P:Glitch9.AIDevKit.SystemMessage.Role
+  id: Role
+  parent: Glitch9.AIDevKit.SystemMessage
+  langs:
+  - csharp
+  - vb
+  name: Role
+  nameWithType: SystemMessage.Role
+  fullName: Glitch9.AIDevKit.SystemMessage.Role
+  type: Property
+  source:
+    id: Role
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 81
+  namespace: Glitch9.AIDevKit
+  summary: The role of the messages author.
+  example: []
+  syntax:
+    content: public override ChatRole Role { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ChatRole
+    content.vb: Public Overrides ReadOnly Property Role As ChatRole
+  overridden: Glitch9.AIDevKit.ChatMessage.Role
+  overload: Glitch9.AIDevKit.SystemMessage.Role*
 - uid: Glitch9.AIDevKit.SystemMessage.#ctor
   commentId: M:Glitch9.AIDevKit.SystemMessage.#ctor
   id: '#ctor'
@@ -76,8 +102,8 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 81
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 82
   namespace: Glitch9.AIDevKit
   syntax:
     content: public SystemMessage()
@@ -99,8 +125,8 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AI Development Kit Clean/AI Development Kit Clean/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 82
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 83
   namespace: Glitch9.AIDevKit
   syntax:
     content: public SystemMessage(Content content)
@@ -152,13 +178,6 @@ references:
   name: ChatMessage
   nameWithType: ChatMessage
   fullName: Glitch9.AIDevKit.ChatMessage
-- uid: Glitch9.AIDevKit.ChatMessage.Role
-  commentId: P:Glitch9.AIDevKit.ChatMessage.Role
-  parent: Glitch9.AIDevKit.ChatMessage
-  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Role
-  name: Role
-  nameWithType: ChatMessage.Role
-  fullName: Glitch9.AIDevKit.ChatMessage.Role
 - uid: Glitch9.AIDevKit.ChatMessage.Content
   commentId: P:Glitch9.AIDevKit.ChatMessage.Content
   parent: Glitch9.AIDevKit.ChatMessage
@@ -361,6 +380,26 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Glitch9.AIDevKit.ChatMessage.Role
+  commentId: P:Glitch9.AIDevKit.ChatMessage.Role
+  parent: Glitch9.AIDevKit.ChatMessage
+  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Role
+  name: Role
+  nameWithType: ChatMessage.Role
+  fullName: Glitch9.AIDevKit.ChatMessage.Role
+- uid: Glitch9.AIDevKit.SystemMessage.Role*
+  commentId: Overload:Glitch9.AIDevKit.SystemMessage.Role
+  href: Glitch9.AIDevKit.SystemMessage.html#Glitch9_AIDevKit_SystemMessage_Role
+  name: Role
+  nameWithType: SystemMessage.Role
+  fullName: Glitch9.AIDevKit.SystemMessage.Role
+- uid: Glitch9.AIDevKit.ChatRole
+  commentId: T:Glitch9.AIDevKit.ChatRole
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatRole.html
+  name: ChatRole
+  nameWithType: ChatRole
+  fullName: Glitch9.AIDevKit.ChatRole
 - uid: Glitch9.AIDevKit.SystemMessage.#ctor*
   commentId: Overload:Glitch9.AIDevKit.SystemMessage.#ctor
   href: Glitch9.AIDevKit.SystemMessage.html#Glitch9_AIDevKit_SystemMessage__ctor
