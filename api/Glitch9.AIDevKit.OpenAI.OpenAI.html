@@ -1,129 +1,99 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class OpenAI | AI Dev Kit </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class OpenAI | AI Dev Kit ">
-      
-      <meta name="description" content="Represents the OpenAI service with methods to interact with the API.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+    
+    <meta name="description" content="Represents the OpenAI service with methods to interact with the API.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
-            AI Dev Kit
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI">
 
-        <article data-uid="Glitch9.AIDevKit.OpenAI.OpenAI">
 
 
-
-  <h1 id="Glitch9_AIDevKit_OpenAI_OpenAI" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI" class="text-break">
-Class OpenAI  
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a></dd></dl>
-  
-  </div>
-
-  <div class="markdown summary"><p>Represents the OpenAI service with methods to interact with the API.</p>
+  <h1 id="Glitch9_AIDevKit_OpenAI_OpenAI" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI" class="text-break">Class OpenAI</h1>
+  <div class="markdown level0 summary"><p>Represents the OpenAI service with methods to interact with the API.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OpenAI : AIClient&lt;OpenAI&gt;</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">RESTClient</span></div>
+    <div class="level2"><span class="xref">CRUDClient</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a>&gt;</div>
+    <div class="level3"><a class="xref" href="Glitch9.AIDevKit.Client.AIClient-1.html">AIClient</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a>&gt;</div>
+    <div class="level4"><span class="xref">OpenAI</span></div>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><span class="xref">object</span></div>
-      <div><span class="xref">RESTClient</span></div>
-      <div><span class="xref">CRUDClient</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a>&gt;</div>
-      <div><a class="xref" href="Glitch9.AIDevKit.Client.AIClient-1.html">AIClient</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a>&gt;</div>
-      <div><span class="xref">OpenAI</span></div>
-    </dd>
-  </dl>
-
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed">AIClient&lt;OpenAI&gt;.OnTokensConsumed</a>
     </div>
@@ -157,560 +127,473 @@ Class OpenAI
     <div>
       <span class="xref">CRUDClient&lt;OpenAI&gt;.HandleException(Exception)</span>
     </div>
-  </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_OpenAI_OpenAI_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OpenAI : AIClient&lt;OpenAI&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI__ctor_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.#ctor*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI__ctor" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.#ctor">
-  OpenAI()
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI__ctor" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.#ctor">OpenAI()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public OpenAI()</code></pre>
   </div>
+  <h3 id="fields">Fields
+</h3>
 
 
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_AssistantsApiHeader" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.AssistantsApiHeader">
-  AssistantsApiHeader
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_AssistantsApiHeader" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.AssistantsApiHeader">AssistantsApiHeader</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static RESTHeader AssistantsApiHeader</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RESTHeader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">RESTHeader</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_RealtimeApiHeader" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.RealtimeApiHeader">
-  RealtimeApiHeader
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_RealtimeApiHeader" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.RealtimeApiHeader">RealtimeApiHeader</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static RESTHeader RealtimeApiHeader</code></pre>
   </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">RESTHeader</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RESTHeader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_Audio_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Audio*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_Audio" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Audio">
-  Audio
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_Audio" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Audio">Audio</h4>
   <div class="markdown level1 summary"><p>Learn how to turn audio into text or text into audio.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AudioService Audio { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.AudioService.html">AudioService</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.AudioService.html">AudioService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_Batch_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Batch*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_Batch" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Batch">
-  Batch
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_Batch" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Batch">Batch</h4>
   <div class="markdown level1 summary"><p>Create large batches of API requests for asynchronous processing.
 The Batch API returns completions within 24 hours for a 50% discount.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public BatchService Batch { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.BatchService.html">BatchService</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.BatchService.html">BatchService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_Beta_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Beta*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_Beta" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Beta">
-  Beta
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_Beta" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Beta">Beta</h4>
   <div class="markdown level1 summary"><p>Beta features that are not yet available in the main API.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public BetaService Beta { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.BetaService.html">BetaService</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.BetaService.html">BetaService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_Chat_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Chat*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_Chat" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Chat">
-  Chat
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_Chat" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Chat">Chat</h4>
   <div class="markdown level1 summary"><p>Given a list of messages comprising a conversation, the model will return a response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ChatService Chat { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.ChatService.html">ChatService</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.ChatService.html">ChatService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_DefaultInstance_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_DefaultInstance" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance">
-  DefaultInstance
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_DefaultInstance" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.DefaultInstance">DefaultInstance</h4>
   <div class="markdown level1 summary"><p>The default instance of the OpenAI client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static OpenAI DefaultInstance { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_Embeddings_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_Embeddings" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings">
-  Embeddings
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_Embeddings" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Embeddings">Embeddings</h4>
   <div class="markdown level1 summary"><p>Get a vector representation of a given input that can be easily consumed by machine learning models and algorithms.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public EmbeddingService Embeddings { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.EmbeddingService.html">EmbeddingService</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.EmbeddingService.html">EmbeddingService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_Files_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Files*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_Files" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Files">
-  Files
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_Files" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Files">Files</h4>
   <div class="markdown level1 summary"><p>Files are used to upload documents that can be used with features like Assistants, Fine-tuning, and Batch API.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public FileService Files { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.FileService.html">FileService</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.FileService.html">FileService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_FineTuning_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_FineTuning" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning">
-  FineTuning
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_FineTuning" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.FineTuning">FineTuning</h4>
   <div class="markdown level1 summary"><p>Manage fine-tuning jobs to tailor a model to your specific training data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public FineTuningService FineTuning { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.FineTuningService.html">FineTuningService</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.FineTuningService.html">FineTuningService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_Images_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Images*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_Images" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Images">
-  Images
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_Images" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Images">Images</h4>
   <div class="markdown level1 summary"><p>Given a prompt and/or an input image, the model will generate a new image.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ImageService Images { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.ImageService.html">ImageService</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.ImageService.html">ImageService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_LogOpenAIStreamEvents_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_LogOpenAIStreamEvents" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents">
-  LogOpenAIStreamEvents
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_LogOpenAIStreamEvents" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.LogOpenAIStreamEvents">LogOpenAIStreamEvents</h4>
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether OpenAI stream events should be logged.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool LogOpenAIStreamEvents { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_Models_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Models*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_Models" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Models">
-  Models
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_Models" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Models">Models</h4>
   <div class="markdown level1 summary"><p>List and describe the various models available in the API.
 You can refer to the Models documentation to understand what models are available and the differences between them.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ModelService Models { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.ModelService.html">ModelService</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.ModelService.html">ModelService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_Moderations_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Moderations*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_Moderations" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Moderations">
-  Moderations
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_Moderations" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.Moderations">Moderations</h4>
   <div class="markdown level1 summary"><p>Given some input text, outputs if the model classifies it as potentially harmful across several categories.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ModerationService Moderations { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.ModerationService.html">ModerationService</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.ModerationService.html">ModerationService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAI_IsDeletedPredicate_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_OpenAI_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)">
-  IsDeletedPredicate(RESTResponse)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAI_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAI.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)">IsDeletedPredicate(RESTResponse)</h4>
   <div class="markdown level1 summary"><p>Override this method to handle the status of a <span class="xref">Glitch9.IO.Networking.RESTApi.CRUDMethod.Delete</span> operation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override bool IsDeletedPredicate(RESTResponse res)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>res</code> <span class="xref">RESTResponse</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RESTResponse</span></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_IsDeletedPredicate_Glitch9_IO_Networking_RESTApi_RESTResponse_">AIClient&lt;OpenAI&gt;.IsDeletedPredicate(RESTResponse)</a></div>
 
 </article>
+          </div>
 
-        <div class="contribution d-print-none">
-        </div>
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

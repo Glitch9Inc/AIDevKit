@@ -1,95 +1,87 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title> | AI Dev Kit </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content=" | AI Dev Kit ">
-      
-      
-      <link rel="icon" href="../../favicon.ico">
-      <link rel="stylesheet" href="../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../public/main.css">
-      <meta name="docfx:navrel" content="../../toc.html">
-      <meta name="docfx:tocrel" content="../toc.html">
-      
-      <meta name="docfx:rel" content="../../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/Glitch9Inc/AIDevKit/blob/main/docs/gentasks/text.md/#L1">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../index.html">
-            <img id="logo" class="svg" src="../../images/logo.png" alt="AI Dev Kit">
-            AI Dev Kit
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
-
-        <article data-uid="">
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
 
 <h2 id="text-generation---gentext">Text Generation - GENText</h2>
 <p>Text generation is one of the core uses of generative AI. In the GENTask system, the <strong>GENTextTask</strong> class is used to generate text (for example, completing a prompt or answering a question). This task sends a prompt to a Large Language Model (LLM) and returns a text response.</p>
 <p><strong>How to create a text generation task:</strong> You can start a text task from a plain string prompt by calling the extension method <code>.GENText()</code> on a string. This returns a <code>GENTextTask</code> which you can then configure and execute. For example:</p>
-<pre><code class="lang-csharp">&quot;Tell me a joke about cats.&quot;
+<pre><code class="lang-c#">&quot;Tell me a joke about cats.&quot;
     .GENText()                            // Create a text-generation task with this prompt
     .SetModel(OpenAIModel.GPT4)           // Choose an AI model (e.g. GPT-4)
     .SetOutputPath(&quot;Assets/AIOutputs/joke.txt&quot;) // (Optional) save output to a file
@@ -103,7 +95,7 @@
 <li><code>.ExecuteAsync()</code> – Finally, we execute the task asynchronously. This sends the request to the AI model and returns a UniTask that completes when the AI's response is received. We don't <code>await</code> it in this snippet (for simplicity), but in a real script you might want to <code>await</code> this call inside an async method, or handle the result in a callback (we'll discuss handling results in a moment). The task runs in the background without freezing your game.</li>
 </ul>
 <p><strong>Using the result:</strong> After execution, the generated text (let's call it <code>GeneratedText</code>) will be returned by <code>ExecuteAsync()</code>. If you're in an async context, you can capture it like:</p>
-<pre><code class="lang-csharp">GeneratedText result = await &quot;Tell me a joke about cats.&quot;
+<pre><code class="lang-c#">GeneratedText result = await &quot;Tell me a joke about cats.&quot;
                           .GENText()
                           .SetModel(OpenAIModel.GPT4)
                           .ExecuteAsync();
@@ -111,41 +103,55 @@
 Debug.Log(result);
 </code></pre>
 <p>Here, <code>GeneratedText</code> is essentially the resulting text (the library uses a <code>GeneratedText</code> type for the output, which can be treated as a <code>string</code>). If you provided a Unity UI <code>Text</code> or TMP text object as a target when creating the task, the system would automatically assign the resulting text to that UI element for you. For example:</p>
-<pre><code class="lang-csharp">myTextComponent.GENText(&quot;Once upon a time,&quot;)
+<pre><code class="lang-c#">myTextComponent.GENText(&quot;Once upon a time,&quot;)
     .SetModel(OpenAIModel.GPT3)   // choose a model, say GPT-3 for faster response
     .ExecuteAsync();
 </code></pre>
 <p>In this case, <code>myTextComponent</code> is a <code>UnityEngine.UI.Text</code> element in the scene. Because we called <code>.GENText</code> on a <code>Text</code> object (with the prompt as a parameter), the <code>GENTextTask</code> knows about that target text object. When the task completes, it will automatically set <code>myTextComponent.text</code> to the generated text for you – no manual assignment needed. This is a convenient way to have AI-generated text appear directly in your UI.</p>
 <p><strong>Chat completions (GENChatTask):</strong> If you want to have a conversational AI (with system, user, assistant roles or multi-turn dialogue), the GENTask system provides <strong>GENChatTask</strong>. This is similar to <code>GENTextTask</code> but uses a chat-centric model (like ChatGPT). To use it, you'd typically maintain a <code>ChatSession</code> object and create a new <code>ChatMessage</code>, then call <code>chatSession.GENChat(chatMessage)</code>. For example:</p>
-<pre><code class="lang-csharp">chatSession.GENChat(userMessage)
+<pre><code class="lang-c#">chatSession.GENChat(userMessage)
     .SetModel(OpenAIModel.GPT4)  // e.g. GPT-4 in chat mode
     .ExecuteAsync();
 </code></pre>
 <p>Here, <code>chatSession</code> might hold the conversation history and system instructions, and <code>userMessage</code> is the latest user prompt (perhaps created as <code>ChatMessage.CreateUserMessage(&quot;Hello, how are you?&quot;)</code>). The details of <code>ChatSession</code>/<code>ChatMessage</code> are part of the Dev Kit's conversation management, but the key idea is that <code>GENChatTask</code> will incorporate context from the session (previous messages, etc.) when generating a response. Use <code>GENChatTask</code> if you need the AI to remember conversation context or if you're calling chat-specific models. If you're just generating one-off text from a prompt, <code>GENTextTask</code> is sufficient.</p>
 
 </article>
+          </div>
 
-        <div class="contribution d-print-none">
-          <a href="https://github.com/Glitch9Inc/AIDevKit/blob/main/docs/gentasks/text.md/#L1" class="edit-link">Edit this page</a>
-        </div>
-
-        <div class="next-article d-print-none border-top" id="nextArticle"></div>
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/AIDevKit/blob/main/docs/gentasks/text.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

@@ -1,433 +1,289 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Namespace Glitch9.AIDevKit.Google | AI Dev Kit </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Namespace Glitch9.AIDevKit.Google | AI Dev Kit ">
-      
-      
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
-            AI Dev Kit
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
-
-        <article data-uid="Glitch9.AIDevKit.Google">
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Google">
 
   <h1 id="Glitch9_AIDevKit_Google" data-uid="Glitch9.AIDevKit.Google" class="text-break">Namespace Glitch9.AIDevKit.Google</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-
     <h3 id="classes">
 Classes
 </h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.AttributionSourceId.html">AttributionSourceId</a></dt>
-      <dd><p>Identifier for the source contributing to this attribution.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.BatchEmbedContentsRequest.html">BatchEmbedContentsRequest</a></dt>
-      <dd><p>Generates multiple embeddings from the model given input text in a synchronous call.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.BatchEmbedContentsResponse.html">BatchEmbedContentsResponse</a></dt>
-      <dd><p>Response from calling {@link GenerativeModel.batchEmbedContents}.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Blob.html">Blob</a></dt>
-      <dd><p>Interface for sending an image.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CachedContent.html">CachedContent</a></dt>
-      <dd><p>Content that has been preprocessed and can be used in subsequent request to ModelService.
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.AttributionSourceId.html">AttributionSourceId</a></h4>
+      <section><p>Identifier for the source contributing to this attribution.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.BatchEmbedContentsRequest.html">BatchEmbedContentsRequest</a></h4>
+      <section><p>Generates multiple embeddings from the model given input text in a synchronous call.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.BatchEmbedContentsResponse.html">BatchEmbedContentsResponse</a></h4>
+      <section><p>Response from calling {@link GenerativeModel.batchEmbedContents}.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Blob.html">Blob</a></h4>
+      <section><p>Interface for sending an image.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CachedContent.html">CachedContent</a></h4>
+      <section><p>Content that has been preprocessed and can be used in subsequent request to ModelService.
 Cached content can be only used with model it was created for.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CachedContentRequest.html">CachedContentRequest</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Candidate.html">Candidate</a></dt>
-      <dd><p>A response candidate generated from the model.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Chunk.html">Chunk</a></dt>
-      <dd><p>A Chunk is a subpart of a Document that is treated as an independent unit for the purposes of vector representation and storage. A Corpus can have a maximum of 1 million Chunks.
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CachedContentRequest.html">CachedContentRequest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Candidate.html">Candidate</a></h4>
+      <section><p>A response candidate generated from the model.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Chunk.html">Chunk</a></h4>
+      <section><p>A Chunk is a subpart of a Document that is treated as an independent unit for the purposes of vector representation and storage. A Corpus can have a maximum of 1 million Chunks.
 Patch request has 'updateMask' query parameter: the list of fields to update. Currently, this only supports updating customMetadata and data.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.ChunkBatchRequest-1.html">ChunkBatchRequest&lt;T&gt;</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.ChunkData.html">ChunkData</a></dt>
-      <dd><p>Extracted data that represents the Chunk content.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CitationMetadata.html">CitationMetadata</a></dt>
-      <dd><p>Citation metadata that may be found on a {@link GenerateContentCandidate}.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CitationSource.html">CitationSource</a></dt>
-      <dd><p>A single citation source.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Condition.html">Condition</a></dt>
-      <dd><p>Filter condition applicable to a single key.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Content.html">Content</a></dt>
-      <dd><p>The base structured datatype containing multi-part content of a message.
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.ChunkBatchRequest-1.html">ChunkBatchRequest&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.ChunkData.html">ChunkData</a></h4>
+      <section><p>Extracted data that represents the Chunk content.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CitationMetadata.html">CitationMetadata</a></h4>
+      <section><p>Citation metadata that may be found on a {@link GenerateContentCandidate}.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CitationSource.html">CitationSource</a></h4>
+      <section><p>A single citation source.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Condition.html">Condition</a></h4>
+      <section><p>Filter condition applicable to a single key.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Content.html">Content</a></h4>
+      <section><p>The base structured datatype containing multi-part content of a message.
 It's a <a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a> in a demonic form.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.ContentEmbedding.html">ContentEmbedding</a></dt>
-      <dd><p>A single content embedding.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.ContentFilter.html">ContentFilter</a></dt>
-      <dd><p>Content filtering metadata associated with processing a single request.
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.ContentEmbedding.html">ContentEmbedding</a></h4>
+      <section><p>A single content embedding.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.ContentFilter.html">ContentFilter</a></h4>
+      <section><p>Content filtering metadata associated with processing a single request.
 ContentFilter contains a reason and an optional supporting string. The reason may be unspecified.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.ContentPart.html">ContentPart</a></dt>
-      <dd><p>A datatype containing media that is part of a multi-part <a class="xref" href="Glitch9.AIDevKit.Google.Content.html">Content</a> message.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.ContentPart.html">ContentPart</a></h4>
+      <section><p>A datatype containing media that is part of a multi-part <a class="xref" href="Glitch9.AIDevKit.Google.Content.html">Content</a> message.</p>
 <p>
 A <a class="xref" href="Glitch9.AIDevKit.Google.ContentPart.html">ContentPart</a> consists of data which has an associated datatype.A <a class="xref" href="Glitch9.AIDevKit.Google.ContentPart.html">ContentPart</a> can only contain one of the accepted types in ContentPart.Data.
 </p>
 <p>
 A <a class="xref" href="Glitch9.AIDevKit.Google.ContentPart.html">ContentPart</a> must have a fixed IANA MIME type identifying the type and subtype of the media if the  <a class="xref" href="Glitch9.AIDevKit.Google.ContentPart.html#Glitch9_AIDevKit_Google_ContentPart_InlineData">InlineData</a> field is filled with raw bytes.
 </p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CorporaQueryRequest.html">CorporaQueryRequest</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CorporaQueryResponse.html">CorporaQueryResponse</a></dt>
-      <dd><p>Response from corpora.query containing a list of relevant chunks.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Corpus.html">Corpus</a></dt>
-      <dd><p>A <a class="xref" href="Glitch9.AIDevKit.Google.Corpus.html">Corpus</a> is a collection of Documents. A project can create up to 5 corpora.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CountTokensRequest.html">CountTokensRequest</a></dt>
-      <dd><p>Params for calling {@link GenerativeModel.countTokens}</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CountTokensResponse.html">CountTokensResponse</a></dt>
-      <dd><p>Response from calling {@link GenerativeModel.countTokens}.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CreateChunkRequest.html">CreateChunkRequest</a></dt>
-      <dd><p>Request to create a Chunk.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CustomMetadataConverter.html">CustomMetadataConverter</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.CustomMetadataValue.html">CustomMetadataValue</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Dataset.html">Dataset</a></dt>
-      <dd><p>Dataset for training or validation.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.DeleteChunkRequest.html">DeleteChunkRequest</a></dt>
-      <dd><p>Request to delete a Chunk.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Document.html">Document</a></dt>
-      <dd><p>A <a class="xref" href="Glitch9.AIDevKit.Google.Document.html">Document</a> is a collection of Chunks. A Corpus can have a maximum of 10,000 Documents.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.EmbedContentRequest.html">EmbedContentRequest</a></dt>
-      <dd><p>Generates an embedding from the model given an input Content.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.EmbedContentResponse.html">EmbedContentResponse</a></dt>
-      <dd><p>The response to an EmbedContentRequest.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.File.html">File</a></dt>
-      <dd><p>A file uploaded to the API.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.FileData.html">FileData</a></dt>
-      <dd><p>URI based data.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.FileDataDict.html">FileDataDict</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.FileDataType.html">FileDataType</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.FileResponse.html">FileResponse</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.FluentAPIExtensions.html">FluentAPIExtensions</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.FunctionCallConverter.html">FunctionCallConverter</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.FunctionCallingConfig.html">FunctionCallingConfig</a></dt>
-      <dd><p>Configuration for specifying function calling behavior.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.FunctionExtensions.html">FunctionExtensions</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.FunctionLibrary.html">FunctionLibrary</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateAnswerRequest.html">GenerateAnswerRequest</a></dt>
-      <dd><p>Generates a response from the model given an input GenerateContentRequest.
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CorporaQueryRequest.html">CorporaQueryRequest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CorporaQueryResponse.html">CorporaQueryResponse</a></h4>
+      <section><p>Response from corpora.query containing a list of relevant chunks.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Corpus.html">Corpus</a></h4>
+      <section><p>A <a class="xref" href="Glitch9.AIDevKit.Google.Corpus.html">Corpus</a> is a collection of Documents. A project can create up to 5 corpora.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CountTokensRequest.html">CountTokensRequest</a></h4>
+      <section><p>Params for calling {@link GenerativeModel.countTokens}</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CountTokensResponse.html">CountTokensResponse</a></h4>
+      <section><p>Response from calling {@link GenerativeModel.countTokens}.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CreateChunkRequest.html">CreateChunkRequest</a></h4>
+      <section><p>Request to create a Chunk.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CustomMetadataConverter.html">CustomMetadataConverter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.CustomMetadataValue.html">CustomMetadataValue</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Dataset.html">Dataset</a></h4>
+      <section><p>Dataset for training or validation.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.DeleteChunkRequest.html">DeleteChunkRequest</a></h4>
+      <section><p>Request to delete a Chunk.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Document.html">Document</a></h4>
+      <section><p>A <a class="xref" href="Glitch9.AIDevKit.Google.Document.html">Document</a> is a collection of Chunks. A Corpus can have a maximum of 10,000 Documents.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.EmbedContentRequest.html">EmbedContentRequest</a></h4>
+      <section><p>Generates an embedding from the model given an input Content.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.EmbedContentResponse.html">EmbedContentResponse</a></h4>
+      <section><p>The response to an EmbedContentRequest.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.File.html">File</a></h4>
+      <section><p>A file uploaded to the API.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.FileData.html">FileData</a></h4>
+      <section><p>URI based data.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.FileDataDict.html">FileDataDict</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.FileDataType.html">FileDataType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.FileResponse.html">FileResponse</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.FluentAPIExtensions.html">FluentAPIExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.FunctionCallConverter.html">FunctionCallConverter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.FunctionCallingConfig.html">FunctionCallingConfig</a></h4>
+      <section><p>Configuration for specifying function calling behavior.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.FunctionExtensions.html">FunctionExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.FunctionLibrary.html">FunctionLibrary</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateAnswerRequest.html">GenerateAnswerRequest</a></h4>
+      <section><p>Generates a response from the model given an input GenerateContentRequest.
 Input capabilities differ between models, including tuned models.
 See the <a href="https://ai.google.dev/models/gemini">model guide</a>
 and <a href="https://ai.google.dev/docs/model_tuning_guidance">tuning guide</a> for details.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateAnswerResponse.html">GenerateAnswerResponse</a></dt>
-      <dd><p>Response from the model for a grounded answer.
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateAnswerResponse.html">GenerateAnswerResponse</a></h4>
+      <section><p>Response from the model for a grounded answer.
 If successful, the response body contains data with the following structure:</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a></dt>
-      <dd><p>Generates a response from the model given an input <a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a></h4>
+      <section><p>Generates a response from the model given an input <a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.html">GenerateContentRequest</a>.
 Input capabilities differ between models, including tuned models.See the model guide and tuning guide for details.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">GenerateContentRequest.Builder</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentResponse.html">GenerateContentResponse</a></dt>
-      <dd><p>Individual response from {@link GenerativeModel.generateContent} and
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentRequest.Builder.html">GenerateContentRequest.Builder</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateContentResponse.html">GenerateContentResponse</a></h4>
+      <section><p>Individual response from {@link GenerativeModel.generateContent} and
 {@link GenerativeModel.generateContentStream}.
 <code>generateContentStream()</code> will return one in each chunk until
 the stream is done.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateImagesRequestConverter.html">GenerateImagesRequestConverter</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateMediaConfig.html">GenerateMediaConfig</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateMediaRequest.html">GenerateMediaRequest</a></dt>
-      <dd><p>Generate image(s) from a prompt using the Imagen 3 model,
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateImagesRequestConverter.html">GenerateImagesRequestConverter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateMediaConfig.html">GenerateMediaConfig</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateMediaRequest.html">GenerateMediaRequest</a></h4>
+      <section><p>Generate image(s) from a prompt using the Imagen 3 model,
 or generate a video from a prompt using the Veo model.
 Both Imagen 3 and Veo models are only available on the google paid tier.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateMediaRequest.Builder.html">GenerateMediaRequest.Builder</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateTextRequest.html">GenerateTextRequest</a></dt>
-      <dd><p>Generates a response from the model given an input message.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerateTextResponse.html">GenerateTextResponse</a></dt>
-      <dd><p>The response from the model, including candidate completions.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GeneratedImageBlob.html">GeneratedImageBlob</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerationConfig.html">GenerationConfig</a></dt>
-      <dd><p>Configuration options for model generation and outputs.
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateMediaRequest.Builder.html">GenerateMediaRequest.Builder</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateTextRequest.html">GenerateTextRequest</a></h4>
+      <section><p>Generates a response from the model given an input message.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerateTextResponse.html">GenerateTextResponse</a></h4>
+      <section><p>The response from the model, including candidate completions.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GeneratedImageBlob.html">GeneratedImageBlob</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerationConfig.html">GenerationConfig</a></h4>
+      <section><p>Configuration options for model generation and outputs.
 Not all parameters may be configurable for every model.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAI.html">GenerativeAI</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIClientSettingsFactory.html">GenerativeAIClientSettingsFactory</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.html">GenerativeAIRequest</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.GenerativeAIRequestBuilder-2.html">GenerativeAIRequest.GenerativeAIRequestBuilder&lt;TBuilder, TRequest&gt;</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAISettings.html">GenerativeAISettings</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GoogleModel.html">GoogleModel</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GoogleModelData.html">GoogleModelData</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GroundingAttribution.html">GroundingAttribution</a></dt>
-      <dd><p>Attribution for a source that contributed to an answer.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GroundingPassage.html">GroundingPassage</a></dt>
-      <dd><p>Passage included inline with a grounding configuration.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GroundingPassageId.html">GroundingPassageId</a></dt>
-      <dd><p>Identifier for a part within a <a class="xref" href="Glitch9.AIDevKit.Google.GroundingPassageId.html">GroundingPassageId</a>.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GroundingPassages.html">GroundingPassages</a></dt>
-      <dd><p>A repeated list of passages.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Hyperparameters.html">Hyperparameters</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.MetadataFilter.html">MetadataFilter</a></dt>
-      <dd><p>User provided filter to limit retrieval based on Chunk or Document level metadata values.
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAI.html">GenerativeAI</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIClientSettingsFactory.html">GenerativeAIClientSettingsFactory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.html">GenerativeAIRequest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAIRequest.GenerativeAIRequestBuilder-2.html">GenerativeAIRequest.GenerativeAIRequestBuilder&lt;TBuilder, TRequest&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GenerativeAISettings.html">GenerativeAISettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GoogleModel.html">GoogleModel</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GoogleModelData.html">GoogleModelData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GroundingAttribution.html">GroundingAttribution</a></h4>
+      <section><p>Attribution for a source that contributed to an answer.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GroundingPassage.html">GroundingPassage</a></h4>
+      <section><p>Passage included inline with a grounding configuration.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GroundingPassageId.html">GroundingPassageId</a></h4>
+      <section><p>Identifier for a part within a <a class="xref" href="Glitch9.AIDevKit.Google.GroundingPassageId.html">GroundingPassageId</a>.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GroundingPassages.html">GroundingPassages</a></h4>
+      <section><p>A repeated list of passages.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Hyperparameters.html">Hyperparameters</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.MetadataFilter.html">MetadataFilter</a></h4>
+      <section><p>User provided filter to limit retrieval based on Chunk or Document level metadata values.
 Example (genre = drama OR genre = action): key = &quot;document.custom_metadata.genre&quot; conditions = [{stringValue = &quot;drama&quot;, operation = EQUAL}, {stringValue = &quot;action&quot;, operation = EQUAL}]</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.ModalityConverter.html">ModalityConverter</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Permission.html">Permission</a></dt>
-      <dd><p>Permission resource grants user, group or the rest of the world access to the PaLM API resource (e.g. <a class="xref" href="Glitch9.AIDevKit.Google.TunedModel.html">TunedModel</a> or <a class="xref" href="Glitch9.AIDevKit.Google.Corpus.html">Corpus</a>).</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.ModalityConverter.html">ModalityConverter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Permission.html">Permission</a></h4>
+      <section><p>Permission resource grants user, group or the rest of the world access to the PaLM API resource (e.g. <a class="xref" href="Glitch9.AIDevKit.Google.TunedModel.html">TunedModel</a> or <a class="xref" href="Glitch9.AIDevKit.Google.Corpus.html">Corpus</a>).</p>
 <p>A role is a collection of permitted operations that allows users to perform specific actions on PaLM API resources.
 To make them available to users, groups, or service accounts, you assign roles. When you assign a role,
 you grant permissions that the role contains.</p>
@@ -435,207 +291,145 @@ you grant permissions that the role contains.</p>
 <p>- reader can use the resource (e.g. tuned model, corpus) for inference</p>
 <p>- writer has reader's permissions and additionally can edit and share</p>
 <p>- owner has writer's permissions and additionally can delete</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.PrebuiltVoiceConfig.html">PrebuiltVoiceConfig</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.PredictionResponse.html">PredictionResponse</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.RelevantChunk.html">RelevantChunk</a></dt>
-      <dd><p>The information for a chunk relevant to a query.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.RequestExtensions.html">RequestExtensions</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.ResponseExtensions.html">ResponseExtensions</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.SemanticRetrieverChunk.html">SemanticRetrieverChunk</a></dt>
-      <dd><p>Identifier for a Chunk retrieved via Semantic Retriever specified in the <a class="xref" href="Glitch9.AIDevKit.Google.GenerateAnswerRequest.html">GenerateAnswerRequest</a> using <a class="xref" href="Glitch9.AIDevKit.Google.SemanticRetrieverConfig.html">SemanticRetrieverConfig</a>.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.SemanticRetrieverConfig.html">SemanticRetrieverConfig</a></dt>
-      <dd><p>Configuration for retrieving grounding content from a Corpus or Document created using the Semantic Retriever API.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.SpeechConfig.html">SpeechConfig</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Status.html">Status</a></dt>
-      <dd><p>The Status type defines a logical error model that is suitable for different programming environments,
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.PrebuiltVoiceConfig.html">PrebuiltVoiceConfig</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.PredictionResponse.html">PredictionResponse</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.RelevantChunk.html">RelevantChunk</a></h4>
+      <section><p>The information for a chunk relevant to a query.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.RequestExtensions.html">RequestExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.ResponseExtensions.html">ResponseExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.SemanticRetrieverChunk.html">SemanticRetrieverChunk</a></h4>
+      <section><p>Identifier for a Chunk retrieved via Semantic Retriever specified in the <a class="xref" href="Glitch9.AIDevKit.Google.GenerateAnswerRequest.html">GenerateAnswerRequest</a> using <a class="xref" href="Glitch9.AIDevKit.Google.SemanticRetrieverConfig.html">SemanticRetrieverConfig</a>.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.SemanticRetrieverConfig.html">SemanticRetrieverConfig</a></h4>
+      <section><p>Configuration for retrieving grounding content from a Corpus or Document created using the Semantic Retriever API.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.SpeechConfig.html">SpeechConfig</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Status.html">Status</a></h4>
+      <section><p>The Status type defines a logical error model that is suitable for different programming environments,
 including REST APIs and RPC APIs. It is used by gRPC.
 Each Status message contains three pieces of data: error code, error message, and error details.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.TextPrompt.html">TextPrompt</a></dt>
-      <dd><p>Text given to the model as a prompt.
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.TextPrompt.html">TextPrompt</a></h4>
+      <section><p>Text given to the model as a prompt.
 The Model will use this TextPrompt to Generate a text completion.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Tool.html">Tool</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.ToolConfig.html">ToolConfig</a></dt>
-      <dd><p>The Tool configuration containing parameters for specifying <a class="xref" href="Glitch9.AIDevKit.Google.Tool.html">Tool</a> use in the request.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.TransferOwnershipRequest.html">TransferOwnershipRequest</a></dt>
-      <dd><p>Transfers ownership of the tuned model. This is the only way to change ownership of the tuned model. The current owner will be downgraded to writer role.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.TunedModel.html">TunedModel</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.TunedModel.Builder.html">TunedModel.Builder</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.TunedModelSource.html">TunedModelSource</a></dt>
-      <dd><p>Tuned model as a source for training a new model.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.TuningExample.html">TuningExample</a></dt>
-      <dd><p>A single example for tuning.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.TuningExamples.html">TuningExamples</a></dt>
-      <dd><p>A set of tuning examples. Can be training or validation data.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.TuningSnapshot.html">TuningSnapshot</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.TuningTask.html">TuningTask</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.UpdateChunkRequest.html">UpdateChunkRequest</a></dt>
-      <dd><p>Request to update a Chunk.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.UploadFileRequest.html">UploadFileRequest</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Validator.html">Validator</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.VideoMetadata.html">VideoMetadata</a></dt>
-      <dd><p>Metadata for a video File.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.VoiceConfig.html">VoiceConfig</a></dt>
-      <dd></dd>
-    </dl>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Tool.html">Tool</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.ToolConfig.html">ToolConfig</a></h4>
+      <section><p>The Tool configuration containing parameters for specifying <a class="xref" href="Glitch9.AIDevKit.Google.Tool.html">Tool</a> use in the request.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.TransferOwnershipRequest.html">TransferOwnershipRequest</a></h4>
+      <section><p>Transfers ownership of the tuned model. This is the only way to change ownership of the tuned model. The current owner will be downgraded to writer role.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.TunedModel.html">TunedModel</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.TunedModel.Builder.html">TunedModel.Builder</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.TunedModelSource.html">TunedModelSource</a></h4>
+      <section><p>Tuned model as a source for training a new model.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.TuningExample.html">TuningExample</a></h4>
+      <section><p>A single example for tuning.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.TuningExamples.html">TuningExamples</a></h4>
+      <section><p>A set of tuning examples. Can be training or validation data.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.TuningSnapshot.html">TuningSnapshot</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.TuningTask.html">TuningTask</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.UpdateChunkRequest.html">UpdateChunkRequest</a></h4>
+      <section><p>Request to update a Chunk.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.UploadFileRequest.html">UploadFileRequest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Validator.html">Validator</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.VideoMetadata.html">VideoMetadata</a></h4>
+      <section><p>Metadata for a video File.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.VoiceConfig.html">VoiceConfig</a></h4>
+      <section></section>
     <h3 id="interfaces">
 Interfaces
 </h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.IChunkRequest.html">IChunkRequest</a></dt>
-      <dd><p>Interface for all Chunk requests.</p>
-</dd>
-    </dl>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.IChunkRequest.html">IChunkRequest</a></h4>
+      <section><p>Interface for all Chunk requests.</p>
+</section>
     <h3 id="enums">
 Enums
 </h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.AnswerStyle.html">AnswerStyle</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.AspectRatio.html">AspectRatio</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.FileState.html">FileState</a></dt>
-      <dd><p>States for the lifecycle of a File.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.GranteeType.html">GranteeType</a></dt>
-      <dd><p>Defines types of the grantee of this permission.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.MediaResolution.html">MediaResolution</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Mode.html">Mode</a></dt>
-      <dd><p>Defines the execution behavior for function calling by defining the execution mode.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.Operator.html">Operator</a></dt>
-      <dd><p>Defines the valid operators that can be applied to a key-value pair.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.PaymentMode.html">PaymentMode</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.PersonGeneration.html">PersonGeneration</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.State.html">State</a></dt>
-      <dd><p>States for the lifecycle of a Chunk.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Google.TaskType.html">TaskType</a></dt>
-      <dd><p>Task type for embedding content.</p>
-</dd>
-    </dl>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.AnswerStyle.html">AnswerStyle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.AspectRatio.html">AspectRatio</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.FileState.html">FileState</a></h4>
+      <section><p>States for the lifecycle of a File.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.GranteeType.html">GranteeType</a></h4>
+      <section><p>Defines types of the grantee of this permission.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.MediaResolution.html">MediaResolution</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Mode.html">Mode</a></h4>
+      <section><p>Defines the execution behavior for function calling by defining the execution mode.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.Operator.html">Operator</a></h4>
+      <section><p>Defines the valid operators that can be applied to a key-value pair.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.PaymentMode.html">PaymentMode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.PersonGeneration.html">PersonGeneration</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.State.html">State</a></h4>
+      <section><p>States for the lifecycle of a Chunk.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Google.TaskType.html">TaskType</a></h4>
+      <section><p>Task type for embedding content.</p>
+</section>
 
 
 </article>
+          </div>
 
-        <div class="contribution d-print-none">
-        </div>
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

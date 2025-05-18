@@ -1,899 +1,743 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class RealtimeEvent | AI Dev Kit </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class RealtimeEvent | AI Dev Kit ">
-      
-      <meta name="description" content="Handles all the different types of Realtime API events that can be sent to or received from the OpenAI API.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+    
+    <meta name="description" content="Handles all the different types of Realtime API events that can be sent to or received from the OpenAI API.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
-            AI Dev Kit
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent">
 
-        <article data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent">
 
 
-
-  <h1 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent" class="text-break">
-Class RealtimeEvent  
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.html">Realtime</a></dd></dl>
-  
-  </div>
-
-  <div class="markdown summary"><p>Handles all the different types of <code>Realtime API</code> events
+  <h1 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent" class="text-break">Class RealtimeEvent</h1>
+  <div class="markdown level0 summary"><p>Handles all the different types of <code>Realtime API</code> events
 that can be sent to or received from the OpenAI API.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">RealtimeEvent</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.html">Realtime</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class RealtimeEvent</code></pre>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><span class="xref">object</span></div>
-      <div><span class="xref">RealtimeEvent</span></div>
-    </dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
+  <h3 id="properties">Properties
+</h3>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Arguments_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Arguments*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Arguments" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Arguments">
-  Arguments
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Arguments" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Arguments">Arguments</h4>
   <div class="markdown level1 summary"><p>The final arguments as a JSON string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Arguments { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Audio_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Audio*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Audio" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Audio">
-  Audio
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Audio" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Audio">Audio</h4>
   <div class="markdown level1 summary"><p>Base64-encoded audio bytes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Audio { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-  <h4 class="section" id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Audio_remarks">Remarks</h4>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Audio_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This property is only used when the event type is <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferAppend">InputAudioBufferAppend</a>.</p>
 </div>
 
 
-
-
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_AudioEndMs_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.AudioEndMs*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_AudioEndMs" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.AudioEndMs">
-  AudioEndMs
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_AudioEndMs" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.AudioEndMs">AudioEndMs</h4>
   <div class="markdown level1 summary"><p>Inclusive duration up to which audio is truncated, in milliseconds.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int? AudioEndMs { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">int</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_AudioStartMs_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.AudioStartMs*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_AudioStartMs" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.AudioStartMs">
-  AudioStartMs
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_AudioStartMs" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.AudioStartMs">AudioStartMs</h4>
   <div class="markdown level1 summary"><p>Milliseconds since the session started when speech was detected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int? AudioStartMs { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">int</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_CallId_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.CallId*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_CallId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.CallId">
-  CallId
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_CallId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.CallId">CallId</h4>
   <div class="markdown level1 summary"><p>The ID of the function call.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string CallId { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_CancellationTokenSource_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.CancellationTokenSource*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_CancellationTokenSource" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.CancellationTokenSource">
-  CancellationTokenSource
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_CancellationTokenSource" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.CancellationTokenSource">CancellationTokenSource</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CancellationTokenSource CancellationTokenSource { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CancellationTokenSource</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationTokenSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ContentIndex_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ContentIndex*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ContentIndex" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ContentIndex">
-  ContentIndex
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ContentIndex" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ContentIndex">ContentIndex</h4>
   <div class="markdown level1 summary"><p>The index of the content part in the item's content array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int? ContentIndex { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">int</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Conversation_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Conversation*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Conversation" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Conversation">
-  Conversation
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Conversation" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Conversation">Conversation</h4>
   <div class="markdown level1 summary"><p>The conversation resource.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Conversation Conversation { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.Conversation.html">Conversation</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.Conversation.html">Conversation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Delta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Delta*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Delta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Delta">
-  Delta
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Delta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Delta">Delta</h4>
   <div class="markdown level1 summary"><p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseTextDelta">ResponseTextDelta</a>: The text delta.</p>
 <p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioTranscriptDelta">ResponseAudioTranscriptDelta</a>: The transcript delta.</p>
 <p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioDelta">ResponseAudioDelta</a>: Base64-encoded audio data delta.</p>
 <p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseFunctionCallArgumentsDelta">ResponseFunctionCallArgumentsDelta</a>: The arguments delta as a JSON string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Delta { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Error_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Error*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Error" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Error">
-  Error
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Error" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Error">Error</h4>
   <div class="markdown level1 summary"><p>Details of the error.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ErrorResponse Error { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.ErrorResponse.html">ErrorResponse</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ErrorResponse.html">ErrorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_EventId_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.EventId*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_EventId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.EventId">
-  EventId
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_EventId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.EventId">EventId</h4>
   <div class="markdown level1 summary"><p><code>Requests</code>: Optional client-generated ID used to identify this event.</p>
 <p><code>Responses</code>: The unique ID of the realtime event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string EventId { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Item_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Item*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Item" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Item">
-  Item
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Item" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Item">Item</h4>
   <div class="markdown level1 summary"><p>The item to add to the conversation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RealtimeItem Item { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ItemId_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ItemId*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ItemId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ItemId">
-  ItemId
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ItemId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ItemId">ItemId</h4>
   <div class="markdown level1 summary"><p>The ID of the item or the function call item.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ItemId { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_OutputIndex_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.OutputIndex*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_OutputIndex" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.OutputIndex">
-  OutputIndex
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_OutputIndex" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.OutputIndex">OutputIndex</h4>
   <div class="markdown level1 summary"><p>The index of the output item in the response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int? OutputIndex { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">int</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Part_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Part*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Part" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Part">
-  Part
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Part" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Part">Part</h4>
   <div class="markdown level1 summary"><p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseContentPartAdded">ResponseContentPartAdded</a>: The content part that was added.</p>
 <p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseContentPartDone">ResponseContentPartDone</a>: The content part that is done.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RealtimeItemContent Part { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html">RealtimeItemContent</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html">RealtimeItemContent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_PreviousItemId_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.PreviousItemId*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_PreviousItemId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.PreviousItemId">
-  PreviousItemId
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_PreviousItemId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.PreviousItemId">PreviousItemId</h4>
   <div class="markdown level1 summary"><p>The ID of the preceding item after which the new item will be inserted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string PreviousItemId { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_RateLimits_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.RateLimits*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_RateLimits" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.RateLimits">
-  RateLimits
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_RateLimits" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.RateLimits">RateLimits</h4>
   <div class="markdown level1 summary"><p>List of rate limit information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RateLimit[] RateLimits { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RateLimit.html">RateLimit</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RateLimit.html">RateLimit</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Response_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Response" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response">
-  Response
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Response" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response">Response</h4>
   <div class="markdown level1 summary"><p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseCreate">ResponseCreate</a>: Configuration for the response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RealtimeItem Response { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ResponseId_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseId*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ResponseId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseId">
-  ResponseId
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ResponseId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseId">ResponseId</h4>
   <div class="markdown level1 summary"><p>The ID of the response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ResponseId { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Session_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Session*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Session" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Session">
-  Session
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Session" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Session">Session</h4>
   <div class="markdown level1 summary"><p>The session resource.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RealtimeSession Session { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession.html">RealtimeSession</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession.html">RealtimeSession</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Text_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Text*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Text" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Text">
-  Text
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Text" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Text">Text</h4>
   <div class="markdown level1 summary"><p>The final text content.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Text { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Transcript_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Transcript*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Transcript" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Transcript">
-  Transcript
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Transcript" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Transcript">Transcript</h4>
   <div class="markdown level1 summary"><p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioTranscriptDone">ResponseAudioTranscriptDone</a>: The final transcript of the audio.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Transcript { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Type_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Type*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Type" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Type">
-  Type
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Type" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Type">Type</h4>
   <div class="markdown level1 summary"><p>The event type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Type { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-        <div class="contribution d-print-none">
-        </div>
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>
