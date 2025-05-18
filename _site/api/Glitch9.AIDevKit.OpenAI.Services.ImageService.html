@@ -1,751 +1,869 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class ImageService | AI Dev Kit </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class ImageService | AI Dev Kit ">
-      
-      <meta name="description" content="Partial Client class of OpenAIClient for Image requests. (Image Creation / Editing / Variation) Those requests have slightly different formats.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+    
+    <meta name="description" content="Partial Client class of OpenAIClient for Image requests. (Image Creation / Editing / Variation) Those requests have slightly different formats.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
-            AI Dev Kit
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService">
 
-        <article data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService">
 
 
-
-  <h1 id="Glitch9_AIDevKit_OpenAI_Services_ImageService" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService" class="text-break">
-Class ImageService  
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.html">Services</a></dd></dl>
-  
-  </div>
-
-  <div class="markdown summary"><p>Partial Client class of OpenAIClient for Image requests. (Image Creation / Editing / Variation)
+  <h1 id="Glitch9_AIDevKit_OpenAI_Services_ImageService" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService" class="text-break">Class ImageService</h1>
+  <div class="markdown level0 summary"><p>Partial Client class of OpenAIClient for Image requests. (Image Creation / Editing / Variation)
 Those requests have slightly different formats.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">CRUDServiceBase</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a>&gt;</div>
+    <div class="level2"><span class="xref">ImageService</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Services.html">Services</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ImageService : CRUDServiceBase&lt;OpenAI&gt;</code></pre>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><span class="xref">object</span></div>
-      <div><span class="xref">CRUDServiceBase</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a>&gt;</div>
-      <div><span class="xref">ImageService</span></div>
-    </dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
+  <h3 id="constructors">Constructors
+</h3>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService__ctor_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.#ctor*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService__ctor_Glitch9_AIDevKit_OpenAI_OpenAI_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.#ctor(Glitch9.AIDevKit.OpenAI.OpenAI)">
-  ImageService(OpenAI)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService__ctor_Glitch9_AIDevKit_OpenAI_OpenAI_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.#ctor(Glitch9.AIDevKit.OpenAI.OpenAI)">ImageService(OpenAI)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ImageService(OpenAI client)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>client</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
 
 
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_kBaseUrl" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.kBaseUrl">
-  kBaseUrl
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_kBaseUrl" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.kBaseUrl">kBaseUrl</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string kBaseUrl = &quot;{ver}/images&quot;</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_kEditsEndpoint" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.kEditsEndpoint">
-  kEditsEndpoint
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_kEditsEndpoint" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.kEditsEndpoint">kEditsEndpoint</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string kEditsEndpoint = &quot;{ver}/images/edits&quot;</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_kGenerationEndpoint" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.kGenerationEndpoint">
-  kGenerationEndpoint
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_kGenerationEndpoint" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.kGenerationEndpoint">kGenerationEndpoint</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string kGenerationEndpoint = &quot;{ver}/images/generations&quot;</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_kVariationsEndpoint" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.kVariationsEndpoint">
-  kVariationsEndpoint
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_kVariationsEndpoint" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.kVariationsEndpoint">kVariationsEndpoint</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string kVariationsEndpoint = &quot;{ver}/images/variations&quot;</code></pre>
   </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateAsync*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateAsync_Glitch9_AIDevKit_OpenAI_ImageCreationRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateAsync(Glitch9.AIDevKit.OpenAI.ImageCreationRequest)">
-  CreateAsync(ImageCreationRequest)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateAsync_Glitch9_AIDevKit_OpenAI_ImageCreationRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateAsync(Glitch9.AIDevKit.OpenAI.ImageCreationRequest)">CreateAsync(ImageCreationRequest)</h4>
   <div class="markdown level1 summary"><p>Creates an image given a prompt.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask&lt;GeneratedImage&gt; CreateAsync(ImageCreationRequest req)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>req</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageCreationRequest.html">ImageCreationRequest</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageCreationRequest.html">ImageCreationRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariation_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariation*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariation_Glitch9_IO_Networking_RESTApi_FormFile_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariation(Glitch9.IO.Networking.RESTApi.FormFile,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">
-  CreateVariation(FormFile, int, Model, ImageSize, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariation_Glitch9_IO_Networking_RESTApi_FormFile_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariation(Glitch9.IO.Networking.RESTApi.FormFile,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">CreateVariation(FormFile, int, Model, ImageSize, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask&lt;GeneratedImage&gt; CreateVariation(FormFile image, int imageCount, Model model = null, ImageSize size = ImageSize._1024x1024, string downloadDir = null)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>image</code> <span class="xref">FormFile</span></dt>
-    <dd></dd>
-    <dt><code>imageCount</code> <span class="xref">int</span></dt>
-    <dd></dd>
-    <dt><code>model</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
-    <dd></dd>
-    <dt><code>size</code> <a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></dt>
-    <dd></dd>
-    <dt><code>downloadDir</code> <span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FormFile</span></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">imageCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">downloadDir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariation_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariation*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariation_Sprite_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariation(Sprite,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">
-  CreateVariation(Sprite, int, Model, ImageSize, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariation_Sprite_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariation(Sprite,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">CreateVariation(Sprite, int, Model, ImageSize, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask&lt;GeneratedImage&gt; CreateVariation(Sprite image, int imageCount, Model model = null, ImageSize size = ImageSize._1024x1024, string downloadDir = null)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>image</code> <span class="xref">Sprite</span></dt>
-    <dd></dd>
-    <dt><code>imageCount</code> <span class="xref">int</span></dt>
-    <dd></dd>
-    <dt><code>model</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
-    <dd></dd>
-    <dt><code>size</code> <a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></dt>
-    <dd></dd>
-    <dt><code>downloadDir</code> <span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sprite</span></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">imageCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">downloadDir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariation_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariation*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariation_Texture2D_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariation(Texture2D,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">
-  CreateVariation(Texture2D, int, Model, ImageSize, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariation_Texture2D_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariation(Texture2D,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">CreateVariation(Texture2D, int, Model, ImageSize, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask&lt;GeneratedImage&gt; CreateVariation(Texture2D image, int imageCount, Model model = null, ImageSize size = ImageSize._1024x1024, string downloadDir = null)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>image</code> <span class="xref">Texture2D</span></dt>
-    <dd></dd>
-    <dt><code>imageCount</code> <span class="xref">int</span></dt>
-    <dd></dd>
-    <dt><code>model</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
-    <dd></dd>
-    <dt><code>size</code> <a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></dt>
-    <dd></dd>
-    <dt><code>downloadDir</code> <span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Texture2D</span></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">imageCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">downloadDir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariationAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariationAsync*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariationAsync_Glitch9_AIDevKit_OpenAI_ImageVariationRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariationAsync(Glitch9.AIDevKit.OpenAI.ImageVariationRequest)">
-  CreateVariationAsync(ImageVariationRequest)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_CreateVariationAsync_Glitch9_AIDevKit_OpenAI_ImageVariationRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.CreateVariationAsync(Glitch9.AIDevKit.OpenAI.ImageVariationRequest)">CreateVariationAsync(ImageVariationRequest)</h4>
   <div class="markdown level1 summary"><p>Creates a variation of a given image.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask&lt;GeneratedImage&gt; CreateVariationAsync(ImageVariationRequest req)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>req</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageVariationRequest.html">ImageVariationRequest</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageVariationRequest.html">ImageVariationRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Edit_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Edit*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Edit_Glitch9_IO_Networking_RESTApi_FormFile_System_String_System_Nullable_Glitch9_IO_Networking_RESTApi_FormFile__System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Edit(Glitch9.IO.Networking.RESTApi.FormFile,System.String,System.Nullable{Glitch9.IO.Networking.RESTApi.FormFile},System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">
-  Edit(FormFile, string, FormFile?, int, Model, ImageSize, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Edit_Glitch9_IO_Networking_RESTApi_FormFile_System_String_System_Nullable_Glitch9_IO_Networking_RESTApi_FormFile__System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Edit(Glitch9.IO.Networking.RESTApi.FormFile,System.String,System.Nullable{Glitch9.IO.Networking.RESTApi.FormFile},System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">Edit(FormFile, string, FormFile?, int, Model, ImageSize, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask&lt;GeneratedImage&gt; Edit(FormFile image, string prompt, FormFile? mask = null, int imageCount = 1, Model model = null, ImageSize size = ImageSize._1024x1024, string downloadDir = null)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>image</code> <span class="xref">FormFile</span></dt>
-    <dd></dd>
-    <dt><code>prompt</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>mask</code> <span class="xref">FormFile</span>?</dt>
-    <dd></dd>
-    <dt><code>imageCount</code> <span class="xref">int</span></dt>
-    <dd></dd>
-    <dt><code>model</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
-    <dd></dd>
-    <dt><code>size</code> <a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></dt>
-    <dd></dd>
-    <dt><code>downloadDir</code> <span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FormFile</span></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">FormFile</span>?</td>
+        <td><span class="parametername">mask</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">imageCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">downloadDir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Edit_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Edit*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Edit_Sprite_System_String_Sprite_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Edit(Sprite,System.String,Sprite,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">
-  Edit(Sprite, string, Sprite, int, Model, ImageSize, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Edit_Sprite_System_String_Sprite_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Edit(Sprite,System.String,Sprite,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">Edit(Sprite, string, Sprite, int, Model, ImageSize, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask&lt;GeneratedImage&gt; Edit(Sprite image, string prompt, Sprite mask = null, int imageCount = 1, Model model = null, ImageSize size = ImageSize._1024x1024, string downloadDir = null)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>image</code> <span class="xref">Sprite</span></dt>
-    <dd></dd>
-    <dt><code>prompt</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>mask</code> <span class="xref">Sprite</span></dt>
-    <dd></dd>
-    <dt><code>imageCount</code> <span class="xref">int</span></dt>
-    <dd></dd>
-    <dt><code>model</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
-    <dd></dd>
-    <dt><code>size</code> <a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></dt>
-    <dd></dd>
-    <dt><code>downloadDir</code> <span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sprite</span></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Sprite</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">imageCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">downloadDir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Edit_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Edit*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Edit_Texture2D_System_String_Texture2D_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Edit(Texture2D,System.String,Texture2D,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">
-  Edit(Texture2D, string, Texture2D, int, Model, ImageSize, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Edit_Texture2D_System_String_Texture2D_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Edit(Texture2D,System.String,Texture2D,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,System.String)">Edit(Texture2D, string, Texture2D, int, Model, ImageSize, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask&lt;GeneratedImage&gt; Edit(Texture2D image, string prompt, Texture2D mask = null, int imageCount = 1, Model model = null, ImageSize size = ImageSize._1024x1024, string downloadDir = null)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>image</code> <span class="xref">Texture2D</span></dt>
-    <dd></dd>
-    <dt><code>prompt</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>mask</code> <span class="xref">Texture2D</span></dt>
-    <dd></dd>
-    <dt><code>imageCount</code> <span class="xref">int</span></dt>
-    <dd></dd>
-    <dt><code>model</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
-    <dd></dd>
-    <dt><code>size</code> <a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></dt>
-    <dd></dd>
-    <dt><code>downloadDir</code> <span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Texture2D</span></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Texture2D</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">imageCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">downloadDir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService_EditAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.EditAsync*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_EditAsync_Glitch9_AIDevKit_OpenAI_ImageEditRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.EditAsync(Glitch9.AIDevKit.OpenAI.ImageEditRequest)">
-  EditAsync(ImageEditRequest)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_EditAsync_Glitch9_AIDevKit_OpenAI_ImageEditRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.EditAsync(Glitch9.AIDevKit.OpenAI.ImageEditRequest)">EditAsync(ImageEditRequest)</h4>
   <div class="markdown level1 summary"><p>Creates an edited or extended image given an original image and a prompt.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask&lt;GeneratedImage&gt; EditAsync(ImageEditRequest req)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>req</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageEditRequest.html">ImageEditRequest</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageEditRequest.html">ImageEditRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Generate_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Generate*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Generate_System_String_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_Glitch9_AIDevKit_ImageQuality_Glitch9_AIDevKit_ImageStyle_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Generate(System.String,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,Glitch9.AIDevKit.ImageQuality,Glitch9.AIDevKit.ImageStyle,System.String)">
-  Generate(string, int, Model, ImageSize, ImageQuality, ImageStyle, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Services_ImageService_Generate_System_String_System_Int32_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ImageSize_Glitch9_AIDevKit_ImageQuality_Glitch9_AIDevKit_ImageStyle_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Services.ImageService.Generate(System.String,System.Int32,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ImageSize,Glitch9.AIDevKit.ImageQuality,Glitch9.AIDevKit.ImageStyle,System.String)">Generate(string, int, Model, ImageSize, ImageQuality, ImageStyle, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UniTask&lt;GeneratedImage&gt; Generate(string prompt, int imageCount, Model model = null, ImageSize size = ImageSize._1024x1024, ImageQuality quality = ImageQuality.Standard, ImageStyle style = ImageStyle.Vivid, string downloadDir = null)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>prompt</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>imageCount</code> <span class="xref">int</span></dt>
-    <dd></dd>
-    <dt><code>model</code> <a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></dt>
-    <dd></dd>
-    <dt><code>size</code> <a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></dt>
-    <dd></dd>
-    <dt><code>quality</code> <a class="xref" href="Glitch9.AIDevKit.ImageQuality.html">ImageQuality</a></dt>
-    <dd></dd>
-    <dt><code>style</code> <a class="xref" href="Glitch9.AIDevKit.ImageStyle.html">ImageStyle</a></dt>
-    <dd></dd>
-    <dt><code>downloadDir</code> <span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">imageCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ImageSize.html">ImageSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ImageQuality.html">ImageQuality</a></td>
+        <td><span class="parametername">quality</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ImageStyle.html">ImageStyle</a></td>
+        <td><span class="parametername">style</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">downloadDir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-        <div class="contribution d-print-none">
-        </div>
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

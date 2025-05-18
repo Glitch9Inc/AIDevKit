@@ -1,1411 +1,1503 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class RealtimeEventReceiverBase | AI Dev Kit </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class RealtimeEventReceiverBase | AI Dev Kit ">
-      
-      <meta name="description" content="Extend this class if you want to do custom handling of Realtime Events.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+    
+    <meta name="description" content="Extend this class if you want to do custom handling of Realtime Events.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
-            AI Dev Kit
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase">
 
-        <article data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase">
 
 
-
-  <h1 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase" class="text-break">
-Class RealtimeEventReceiverBase  
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.html">Realtime</a></dd></dl>
-  
-  </div>
-
-  <div class="markdown summary"><p>Extend this class if you want to do custom handling of Realtime Events.</p>
+  <h1 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase" class="text-break">Class RealtimeEventReceiverBase</h1>
+  <div class="markdown level0 summary"><p>Extend this class if you want to do custom handling of Realtime Events.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">RealtimeEventReceiverBase</span></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiver.html">RealtimeEventReceiver</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.html">Realtime</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class RealtimeEventReceiverBase</code></pre>
   </div>
+  <h3 id="fields">Fields
+</h3>
 
 
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><span class="xref">object</span></div>
-      <div><span class="xref">RealtimeEventReceiverBase</span></div>
-    </dd>
-  </dl>
-
-
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiver.html">RealtimeEventReceiver</a></div>
-    </dd>
-  </dl>
-
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnSessionStateChanged" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionStateChanged">
-  OnSessionStateChanged
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnSessionStateChanged" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionStateChanged">OnSessionStateChanged</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Action&lt;string&gt; OnSessionStateChanged</code></pre>
   </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_Conversation_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.Conversation)">
-  OnConversationCreated(string, Conversation)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_Conversation_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.Conversation)">OnConversationCreated(string, Conversation)</h4>
   <div class="markdown level1 summary"><p>Returned when a conversation is created. Emitted right after session creation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnConversationCreated(string eventId, Conversation conversation)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>conversation</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.Conversation.html">Conversation</a></dt>
-    <dd><p>The conversation resource.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.Conversation.html">Conversation</a></td>
+        <td><span class="parametername">conversation</span></td>
+        <td><p>The conversation resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemCreated_System_String_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated(System.String,System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">
-  OnConversationItemCreated(string, string, RealtimeItem)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemCreated_System_String_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemCreated(System.String,System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">OnConversationItemCreated(string, string, RealtimeItem)</h4>
   <div class="markdown level1 summary"><p>Returned when a conversation item is created.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnConversationItemCreated(string eventId, string previousItemId, RealtimeItem item)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>previousItemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the preceding item.</p>
-</dd>
-    <dt><code>item</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
-    <dd><p>The newly created conversation item.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">previousItemId</span></td>
+        <td><p>The ID of the preceding item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The newly created conversation item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemDeleted_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemDeleted_System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted(System.String,System.String)">
-  OnConversationItemDeleted(string, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemDeleted_System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemDeleted(System.String,System.String)">OnConversationItemDeleted(string, string)</h4>
   <div class="markdown level1 summary"><p>Returned when an item in the conversation is deleted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnConversationItemDeleted(string eventId, string itemId)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the item that was deleted.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the item that was deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionCompleted_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionCompleted_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted(System.String,System.Nullable{System.Int32},System.String)">
-  OnConversationItemInputAudioTranscriptionCompleted(string, int?, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionCompleted_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionCompleted(System.String,System.Nullable{System.Int32},System.String)">OnConversationItemInputAudioTranscriptionCompleted(string, int?, string)</h4>
   <div class="markdown level1 summary"><p>Returned when input audio transcription is enabled and a transcription succeeds.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnConversationItemInputAudioTranscriptionCompleted(string eventId, int? contentIndex, string transcription)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part containing the audio.</p>
-</dd>
-    <dt><code>transcription</code> <span class="xref">string</span></dt>
-    <dd><p>The transcribed text.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part containing the audio.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">transcription</span></td>
+        <td><p>The transcribed text.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionDelta_System_String_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta(System.String,System.String,System.Nullable{System.Int32},System.String)">
-  OnConversationItemInputAudioTranscriptionDelta(string, string, int?, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionDelta_System_String_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionDelta(System.String,System.String,System.Nullable{System.Int32},System.String)">OnConversationItemInputAudioTranscriptionDelta(string, string, int?, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnConversationItemInputAudioTranscriptionDelta(string eventId, string itemId, int? contentIndex, string delta)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>delta</code> <span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionFailed_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionFailed_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_ErrorResponse_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed(System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.ErrorResponse)">
-  OnConversationItemInputAudioTranscriptionFailed(string, int?, ErrorResponse)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemInputAudioTranscriptionFailed_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_ErrorResponse_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemInputAudioTranscriptionFailed(System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.ErrorResponse)">OnConversationItemInputAudioTranscriptionFailed(string, int?, ErrorResponse)</h4>
   <div class="markdown level1 summary"><p>Returned when input audio transcription is configured, and a transcription request for a user message failed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnConversationItemInputAudioTranscriptionFailed(string eventId, int? contentIndex, ErrorResponse error)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part containing the audio.</p>
-</dd>
-    <dt><code>error</code> <a class="xref" href="Glitch9.AIDevKit.ErrorResponse.html">ErrorResponse</a></dt>
-    <dd><p>Details of the transcription error.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part containing the audio.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ErrorResponse.html">ErrorResponse</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Details of the transcription error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemTruncated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemTruncated_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
-  OnConversationItemTruncated(string, string, int?, int?)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnConversationItemTruncated_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnConversationItemTruncated(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">OnConversationItemTruncated(string, string, int?, int?)</h4>
   <div class="markdown level1 summary"><p>Returned when an earlier assistant audio message item is truncated by the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnConversationItemTruncated(string eventId, string itemId, int? contentIndex, int? audioEndMs)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the assistant message item that was truncated.</p>
-</dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part that was truncated.</p>
-</dd>
-    <dt><code>audioEndMs</code> <span class="xref">int</span>?</dt>
-    <dd><p>The duration up to which the audio was truncated, in milliseconds.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the assistant message item that was truncated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part that was truncated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">audioEndMs</span></td>
+        <td><p>The duration up to which the audio was truncated, in milliseconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnError_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnError_System_String_Glitch9_AIDevKit_ErrorResponse_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError(System.String,Glitch9.AIDevKit.ErrorResponse)">
-  OnError(string, ErrorResponse)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnError_System_String_Glitch9_AIDevKit_ErrorResponse_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnError(System.String,Glitch9.AIDevKit.ErrorResponse)">OnError(string, ErrorResponse)</h4>
   <div class="markdown level1 summary"><p>Returned when an error occurs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnError(string eventId, ErrorResponse error)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>error</code> <a class="xref" href="Glitch9.AIDevKit.ErrorResponse.html">ErrorResponse</a></dt>
-    <dd><p>Details of the error.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ErrorResponse.html">ErrorResponse</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Details of the error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferCleared_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferCleared_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared(System.String)">
-  OnInputAudioBufferCleared(string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferCleared_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCleared(System.String)">OnInputAudioBufferCleared(string)</h4>
   <div class="markdown level1 summary"><p>Returned when the input audio buffer is cleared by the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnInputAudioBufferCleared(string eventId)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferCommitted_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferCommitted_System_String_System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted(System.String,System.String,System.String)">
-  OnInputAudioBufferCommitted(string, string, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferCommitted_System_String_System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferCommitted(System.String,System.String,System.String)">OnInputAudioBufferCommitted(string, string, string)</h4>
   <div class="markdown level1 summary"><p>Returned when an input audio buffer is committed, either by the client or automatically in server VAD mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnInputAudioBufferCommitted(string eventId, string previousItemId, string itemId)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>previousItemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the preceding item.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the new item.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">previousItemId</span></td>
+        <td><p>The ID of the preceding item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the new item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferSpeechStarted_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferSpeechStarted_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted(System.String,System.Nullable{System.Int32},System.String)">
-  OnInputAudioBufferSpeechStarted(string, int?, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferSpeechStarted_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStarted(System.String,System.Nullable{System.Int32},System.String)">OnInputAudioBufferSpeechStarted(string, int?, string)</h4>
   <div class="markdown level1 summary"><p>Returned in server turn detection mode when speech is detected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnInputAudioBufferSpeechStarted(string eventId, int? audioStartMs, string itemId)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>audioStartMs</code> <span class="xref">int</span>?</dt>
-    <dd><p>Milliseconds since the session started when speech was detected.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the new item.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">audioStartMs</span></td>
+        <td><p>Milliseconds since the session started when speech was detected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the new item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferSpeechStopped_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferSpeechStopped_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped(System.String,System.Nullable{System.Int32},System.String)">
-  OnInputAudioBufferSpeechStopped(string, int?, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnInputAudioBufferSpeechStopped_System_String_System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnInputAudioBufferSpeechStopped(System.String,System.Nullable{System.Int32},System.String)">OnInputAudioBufferSpeechStopped(string, int?, string)</h4>
   <div class="markdown level1 summary"><p>Returned in server turn detection mode when speech stops.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnInputAudioBufferSpeechStopped(string eventId, int? audioEndMs, string itemId)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>audioEndMs</code> <span class="xref">int</span>?</dt>
-    <dd><p>Milliseconds since the session started when speech stopped.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the new item.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">audioEndMs</span></td>
+        <td><p>Milliseconds since the session started when speech stopped.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the new item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnRateLimitsUpdated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnRateLimitsUpdated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RateLimit___" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[])">
-  OnRateLimitsUpdated(string, RateLimit[])
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnRateLimitsUpdated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RateLimit___" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRateLimitsUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RateLimit[])">OnRateLimitsUpdated(string, RateLimit[])</h4>
   <div class="markdown level1 summary"><p>Emitted after every &quot;response.done&quot; event to indicate the updated rate limits.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnRateLimitsUpdated(string eventId, RateLimit[] rateLimits)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>rateLimits</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RateLimit.html">RateLimit</a>[]</dt>
-    <dd><p>List of rate limit information.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RateLimit.html">RateLimit</a>[]</td>
+        <td><span class="parametername">rateLimits</span></td>
+        <td><p>List of rate limit information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnRealtimeEventReceived_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnRealtimeEventReceived_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent)">
-  OnRealtimeEventReceived(RealtimeEvent)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnRealtimeEventReceived_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnRealtimeEventReceived(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent)">OnRealtimeEventReceived(RealtimeEvent)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnRealtimeEventReceived(RealtimeEvent realtimeEvent)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>realtimeEvent</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html">RealtimeEvent</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html">RealtimeEvent</a></td>
+        <td><span class="parametername">realtimeEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
-  OnResponseAudioDelta(string, string, string, int?, int?, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">OnResponseAudioDelta(string, string, string, int?, int?, string)</h4>
   <div class="markdown level1 summary"><p>Returned when the model-generated audio is updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseAudioDelta(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string delta)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the item.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part in the item's content array.</p>
-</dd>
-    <dt><code>delta</code> <span class="xref">string</span></dt>
-    <dd><p>Base64-encoded audio data delta.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part in the item's content array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">delta</span></td>
+        <td><p>Base64-encoded audio data delta.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
-  OnResponseAudioDone(string, string, string, int?, int?)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">OnResponseAudioDone(string, string, string, int?, int?)</h4>
   <div class="markdown level1 summary"><p>Returned when the model-generated audio is done.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseAudioDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the item.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part in the item's content array.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part in the item's content array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioTranscriptDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioTranscriptDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
-  OnResponseAudioTranscriptDelta(string, string, string, int?, int?, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioTranscriptDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">OnResponseAudioTranscriptDelta(string, string, string, int?, int?, string)</h4>
   <div class="markdown level1 summary"><p>Returned when the model-generated transcription of audio output is updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseAudioTranscriptDelta(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string delta)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the item.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part in the item's content array.</p>
-</dd>
-    <dt><code>delta</code> <span class="xref">string</span></dt>
-    <dd><p>The transcript delta.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part in the item's content array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">delta</span></td>
+        <td><p>The transcript delta.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioTranscriptDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioTranscriptDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
-  OnResponseAudioTranscriptDone(string, string, string, int?, int?, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseAudioTranscriptDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseAudioTranscriptDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">OnResponseAudioTranscriptDone(string, string, string, int?, int?, string)</h4>
   <div class="markdown level1 summary"><p>Returned when the model-generated transcription of audio output is done streaming.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseAudioTranscriptDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string transcript)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the item.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part in the item's content array.</p>
-</dd>
-    <dt><code>transcript</code> <span class="xref">string</span></dt>
-    <dd><p>The final transcript of the audio.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part in the item's content array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">transcript</span></td>
+        <td><p>The final transcript of the audio.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseContentPartAdded_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseContentPartAdded_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemContent_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)">
-  OnResponseContentPartAdded(string, string, string, int?, int?, RealtimeItemContent)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseContentPartAdded_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemContent_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartAdded(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)">OnResponseContentPartAdded(string, string, string, int?, int?, RealtimeItemContent)</h4>
   <div class="markdown level1 summary"><p>Returned when a new content part is added to an assistant message item during response generation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseContentPartAdded(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, RealtimeItemContent part)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the item to which the content part was added.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part in the item's content array.</p>
-</dd>
-    <dt><code>part</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html">RealtimeItemContent</a></dt>
-    <dd><p>The added content part.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the item to which the content part was added.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part in the item's content array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html">RealtimeItemContent</a></td>
+        <td><span class="parametername">part</span></td>
+        <td><p>The added content part.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseContentPartDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseContentPartDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemContent_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)">
-  OnResponseContentPartDone(string, string, string, int?, int?, RealtimeItemContent)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseContentPartDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemContent_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseContentPartDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent)">OnResponseContentPartDone(string, string, string, int?, int?, RealtimeItemContent)</h4>
   <div class="markdown level1 summary"><p>Returned when a content part is done streaming in an assistant message item.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseContentPartDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, RealtimeItemContent part)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the item.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part in the item's content array.</p>
-</dd>
-    <dt><code>part</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html">RealtimeItemContent</a></dt>
-    <dd><p>The completed content part.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part in the item's content array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html">RealtimeItemContent</a></td>
+        <td><span class="parametername">part</span></td>
+        <td><p>The completed content part.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">
-  OnResponseCreated(string, RealtimeItem)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">OnResponseCreated(string, RealtimeItem)</h4>
   <div class="markdown level1 summary"><p>Returned when a new Response is created.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseCreated(string eventId, RealtimeItem response)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>response</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
-    <dd><p>The response resource.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td><span class="parametername">response</span></td>
+        <td><p>The response resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseDone_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">
-  OnResponseDone(string, RealtimeItem)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseDone_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseDone(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">OnResponseDone(string, RealtimeItem)</h4>
   <div class="markdown level1 summary"><p>Returned when a Response is done streaming.
 Always emitted, no matter the final state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseDone(string eventId, RealtimeItem response)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>response</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
-    <dd><p>The response resource.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td><span class="parametername">response</span></td>
+        <td><p>The response resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseFunctionCallArgumentsDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseFunctionCallArgumentsDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)">
-  OnResponseFunctionCallArgumentsDelta(string, string, string, int?, string, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseFunctionCallArgumentsDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)">OnResponseFunctionCallArgumentsDelta(string, string, string, int?, string, string)</h4>
   <div class="markdown level1 summary"><p>Returned when the model-generated function call arguments are updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseFunctionCallArgumentsDelta(string eventId, string responseId, string itemId, int? itemIndex, string callId, string delta)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the function call item.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>callId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the function call.</p>
-</dd>
-    <dt><code>delta</code> <span class="xref">string</span></dt>
-    <dd><p>The arguments delta as a JSON string.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the function call item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">callId</span></td>
+        <td><p>The ID of the function call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">delta</span></td>
+        <td><p>The arguments delta as a JSON string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseFunctionCallArgumentsDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseFunctionCallArgumentsDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)">
-  OnResponseFunctionCallArgumentsDone(string, string, string, int?, string, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseFunctionCallArgumentsDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseFunctionCallArgumentsDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String)">OnResponseFunctionCallArgumentsDone(string, string, string, int?, string, string)</h4>
   <div class="markdown level1 summary"><p>Returned when the model-generated function call arguments are done streaming.
 Also emitted when a Response is interrupted, incomplete, or cancelled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseFunctionCallArgumentsDone(string eventId, string responseId, string itemId, int? itemIndex, string callId, string arguments)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the function call item.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>callId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the function call.</p>
-</dd>
-    <dt><code>arguments</code> <span class="xref">string</span></dt>
-    <dd><p>The final arguments as a JSON string.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the function call item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">callId</span></td>
+        <td><p>The ID of the function call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>The final arguments as a JSON string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseOutputItemAdded_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseOutputItemAdded_System_String_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">
-  OnResponseOutputItemAdded(string, string, int?, RealtimeItem)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseOutputItemAdded_System_String_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemAdded(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">OnResponseOutputItemAdded(string, string, int?, RealtimeItem)</h4>
   <div class="markdown level1 summary"><p>Returned when a new Item is created during response generation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseOutputItemAdded(string eventId, string responseId, int? itemIndex, RealtimeItem item)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response to which the item belongs.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>item</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
-    <dd><p>The created item.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response to which the item belongs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The created item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseOutputItemDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseOutputItemDone_System_String_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">
-  OnResponseOutputItemDone(string, string, int?, RealtimeItem)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseOutputItemDone_System_String_System_String_System_Nullable_System_Int32__Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseOutputItemDone(System.String,System.String,System.Nullable{System.Int32},Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem)">OnResponseOutputItemDone(string, string, int?, RealtimeItem)</h4>
   <div class="markdown level1 summary"><p>Returned when an Item is done streaming.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseOutputItemDone(string eventId, string responseId, int? itemIndex, RealtimeItem item)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response to which the item belongs.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>item</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></dt>
-    <dd><p>The completed item.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response to which the item belongs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The completed item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseTextDelta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseTextDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
-  OnResponseTextDelta(string, string, string, int?, int?, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseTextDelta_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDelta(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">OnResponseTextDelta(string, string, string, int?, int?, string)</h4>
   <div class="markdown level1 summary"><p>Returned when the text value of a &quot;text&quot; content part is updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseTextDelta(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string delta)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the item.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part in the item's content array.</p>
-</dd>
-    <dt><code>delta</code> <span class="xref">string</span></dt>
-    <dd><p>The text delta.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part in the item's content array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">delta</span></td>
+        <td><p>The text delta.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseTextDone_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseTextDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
-  OnResponseTextDone(string, string, string, int?, int?, string)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnResponseTextDone_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnResponseTextDone(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">OnResponseTextDone(string, string, string, int?, int?, string)</h4>
   <div class="markdown level1 summary"><p>Returned when the text value of a &quot;text&quot; content part is done streaming.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResponseTextDone(string eventId, string responseId, string itemId, int? itemIndex, int? contentIndex, string text)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>responseId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the response.</p>
-</dd>
-    <dt><code>itemId</code> <span class="xref">string</span></dt>
-    <dd><p>The ID of the item.</p>
-</dd>
-    <dt><code>itemIndex</code> <span class="xref">int</span>?</dt>
-    <dd></dd>
-    <dt><code>contentIndex</code> <span class="xref">int</span>?</dt>
-    <dd><p>The index of the content part in the item's content array.</p>
-</dd>
-    <dt><code>text</code> <span class="xref">string</span></dt>
-    <dd><p>The final text content.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The ID of the response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The ID of the item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">itemIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">contentIndex</span></td>
+        <td><p>The index of the content part in the item's content array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The final text content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnSessionCreated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnSessionCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSession_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)">
-  OnSessionCreated(string, RealtimeSession)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnSessionCreated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSession_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionCreated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)">OnSessionCreated(string, RealtimeSession)</h4>
   <div class="markdown level1 summary"><p>Returned when a session is created. Emitted automatically when a new connection is established.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnSessionCreated(string eventId, RealtimeSession session)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>session</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession.html">RealtimeSession</a></dt>
-    <dd><p>The session resource.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession.html">RealtimeSession</a></td>
+        <td><span class="parametername">session</span></td>
+        <td><p>The session resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnSessionUpdated_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated*"></a>
-
-  <h3 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnSessionUpdated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSession_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)">
-  OnSessionUpdated(string, RealtimeSession)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_OnSessionUpdated_System_String_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSession_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.OnSessionUpdated(System.String,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession)">OnSessionUpdated(string, RealtimeSession)</h4>
   <div class="markdown level1 summary"><p>Returned when a session is updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnSessionUpdated(string eventId, RealtimeSession session)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <span class="xref">string</span></dt>
-    <dd><p>The unique ID of the event.</p>
-</dd>
-    <dt><code>session</code> <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession.html">RealtimeSession</a></dt>
-    <dd><p>The updated session resource.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The unique ID of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession.html">RealtimeSession</a></td>
+        <td><span class="parametername">session</span></td>
+        <td><p>The updated session resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-        <div class="contribution d-print-none">
-        </div>
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

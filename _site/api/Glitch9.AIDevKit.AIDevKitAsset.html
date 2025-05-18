@@ -1,768 +1,697 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class AIDevKitAsset | AI Dev Kit </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class AIDevKitAsset | AI Dev Kit ">
-      
-      
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
-            AI Dev Kit
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.AIDevKitAsset">
 
-        <article data-uid="Glitch9.AIDevKit.AIDevKitAsset">
 
 
-
-  <h1 id="Glitch9_AIDevKit_AIDevKitAsset" data-uid="Glitch9.AIDevKit.AIDevKitAsset" class="text-break">
-Class AIDevKitAsset  
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></dd></dl>
-  
+  <h1 id="Glitch9_AIDevKit_AIDevKitAsset" data-uid="Glitch9.AIDevKit.AIDevKitAsset" class="text-break">Class AIDevKitAsset</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">AIDevKitAsset</span></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></div>
   </div>
-
-  <div class="markdown summary"></div>
-  <div class="markdown conceptual"></div>
-
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_AIDevKitAsset_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class AIDevKitAsset : ScriptableObject</code></pre>
   </div>
+  <h3 id="fields">Fields
+</h3>
 
 
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><span class="xref">object</span></div>
-      <div><span class="xref">AIDevKitAsset</span></div>
-    </dd>
-  </dl>
-
-
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></div>
-      <div><a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></div>
-    </dd>
-  </dl>
-
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_api" data-uid="Glitch9.AIDevKit.AIDevKitAsset.api">
-  api
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_api" data-uid="Glitch9.AIDevKit.AIDevKitAsset.api">api</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected AIProvider api</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AIProvider.html">AIProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.AIProvider.html">AIProvider</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_custom" data-uid="Glitch9.AIDevKit.AIDevKitAsset.custom">
-  custom
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_custom" data-uid="Glitch9.AIDevKit.AIDevKitAsset.custom">custom</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected bool custom</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_deprecated" data-uid="Glitch9.AIDevKit.AIDevKitAsset.deprecated">
-  deprecated
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_deprecated" data-uid="Glitch9.AIDevKit.AIDevKitAsset.deprecated">deprecated</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected bool deprecated</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_displayName" data-uid="Glitch9.AIDevKit.AIDevKitAsset.displayName">
-  displayName
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_displayName" data-uid="Glitch9.AIDevKit.AIDevKitAsset.displayName">displayName</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected string displayName</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_id" data-uid="Glitch9.AIDevKit.AIDevKitAsset.id">
-  id
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_id" data-uid="Glitch9.AIDevKit.AIDevKitAsset.id">id</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected string id</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_locked" data-uid="Glitch9.AIDevKit.AIDevKitAsset.locked">
-  locked
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_locked" data-uid="Glitch9.AIDevKit.AIDevKitAsset.locked">locked</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected bool locked</code></pre>
   </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_Api_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Api*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_Api" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Api">
-  Api
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_Api" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Api">Api</h4>
   <div class="markdown level1 summary"><p>The API service this asset uses (e.g., OpenAI, Google).
 This information is used to route requests to the correct AIClient.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AIProvider Api { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.AIProvider.html">AIProvider</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AIProvider.html">AIProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_Id_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Id*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_Id" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Id">
-  Id
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_Id" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Id">Id</h4>
   <div class="markdown level1 summary"><p>The unique identifier of the asset
 If it's a model: &quot;gpt-3.5-turbo&quot;, &quot;gemini-pro-vision&quot;
 If it's a voice: &quot;alloy&quot;(OpenAI), &quot;21m00Tcm4TlvDq8ikWAM&quot;(ElevenLabs)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_IsCustom_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.IsCustom*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_IsCustom" data-uid="Glitch9.AIDevKit.AIDevKitAsset.IsCustom">
-  IsCustom
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_IsCustom" data-uid="Glitch9.AIDevKit.AIDevKitAsset.IsCustom">IsCustom</h4>
   <div class="markdown level1 summary"><p>Indicates whether the asset is user-customized or not.
 If it's a model, it means the model is a fine-tuned version of a base model.
 If it's a voice, it means the voice is a custom voice created by the user.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsCustom { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_IsDeprecated_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.IsDeprecated*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_IsDeprecated" data-uid="Glitch9.AIDevKit.AIDevKitAsset.IsDeprecated">
-  IsDeprecated
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_IsDeprecated" data-uid="Glitch9.AIDevKit.AIDevKitAsset.IsDeprecated">IsDeprecated</h4>
   <div class="markdown level1 summary"><p>Indicates whether the asset is deprecated and should not be used in production.
 CRUDService will throw an exception if a deprecated asset is used.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsDeprecated { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_Name_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Name*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_Name" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Name">
-  Name
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_Name" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Name">Name</h4>
   <div class="markdown level1 summary"><p>The name of the asset
 If it's a model: &quot;gpt-3.5-turbo&quot;, &quot;gemini-pro-vision&quot;
 If it's a voice: &quot;alloy&quot;(OpenAI), &quot;rachel&quot;(ElevenLabs)
 This is a human-readable name for the model that can be displayed in the UI or logs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual string Name { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_Equals_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Equals*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_Equals_Glitch9_AIDevKit_AIDevKitAsset_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Equals(Glitch9.AIDevKit.AIDevKitAsset)">
-  Equals(AIDevKitAsset)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_Equals_Glitch9_AIDevKit_AIDevKitAsset_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Equals(Glitch9.AIDevKit.AIDevKitAsset)">Equals(AIDevKitAsset)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Equals(AIDevKitAsset other)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>other</code> <a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_Equals_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Equals*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_Equals_System_Object_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Equals(System.Object)">
-  Equals(object)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_Equals_System_Object_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.Equals(System.Object)">Equals(object)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>obj</code> <span class="xref">object</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_GetHashCode_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.GetHashCode*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_GetHashCode" data-uid="Glitch9.AIDevKit.AIDevKitAsset.GetHashCode">
-  GetHashCode()
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_GetHashCode" data-uid="Glitch9.AIDevKit.AIDevKitAsset.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
   </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_ToString_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.ToString*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_ToString" data-uid="Glitch9.AIDevKit.AIDevKitAsset.ToString">
-  ToString()
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_ToString" data-uid="Glitch9.AIDevKit.AIDevKitAsset.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="operators">Operators
-</h2>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_op_Equality_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.op_Equality*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_op_Equality_Glitch9_AIDevKit_AIDevKitAsset_Glitch9_AIDevKit_AIDevKitAsset_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.op_Equality(Glitch9.AIDevKit.AIDevKitAsset,Glitch9.AIDevKit.AIDevKitAsset)">
-  operator ==(AIDevKitAsset, AIDevKitAsset)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_op_Equality_Glitch9_AIDevKit_AIDevKitAsset_Glitch9_AIDevKit_AIDevKitAsset_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.op_Equality(Glitch9.AIDevKit.AIDevKitAsset,Glitch9.AIDevKit.AIDevKitAsset)">operator ==(AIDevKitAsset, AIDevKitAsset)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator ==(AIDevKitAsset a, AIDevKitAsset b)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>a</code> <a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></dt>
-    <dd></dd>
-    <dt><code>b</code> <a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_op_Implicit_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.op_Implicit*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_op_Implicit_Glitch9_AIDevKit_AIDevKitAsset__System_String" data-uid="Glitch9.AIDevKit.AIDevKitAsset.op_Implicit(Glitch9.AIDevKit.AIDevKitAsset)~System.String">
-  implicit operator string(AIDevKitAsset)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_op_Implicit_Glitch9_AIDevKit_AIDevKitAsset__System_String" data-uid="Glitch9.AIDevKit.AIDevKitAsset.op_Implicit(Glitch9.AIDevKit.AIDevKitAsset)~System.String">implicit operator string(AIDevKitAsset)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static implicit operator string(AIDevKitAsset asset)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>asset</code> <a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_AIDevKitAsset_op_Inequality_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.op_Inequality*"></a>
-
-  <h3 id="Glitch9_AIDevKit_AIDevKitAsset_op_Inequality_Glitch9_AIDevKit_AIDevKitAsset_Glitch9_AIDevKit_AIDevKitAsset_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.op_Inequality(Glitch9.AIDevKit.AIDevKitAsset,Glitch9.AIDevKit.AIDevKitAsset)">
-  operator !=(AIDevKitAsset, AIDevKitAsset)
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_AIDevKitAsset_op_Inequality_Glitch9_AIDevKit_AIDevKitAsset_Glitch9_AIDevKit_AIDevKitAsset_" data-uid="Glitch9.AIDevKit.AIDevKitAsset.op_Inequality(Glitch9.AIDevKit.AIDevKitAsset,Glitch9.AIDevKit.AIDevKitAsset)">operator !=(AIDevKitAsset, AIDevKitAsset)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator !=(AIDevKitAsset a, AIDevKitAsset b)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>a</code> <a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></dt>
-    <dd></dd>
-    <dt><code>b</code> <a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AIDevKitAsset.html">AIDevKitAsset</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-        <div class="contribution d-print-none">
-        </div>
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

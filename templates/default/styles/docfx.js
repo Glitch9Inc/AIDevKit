@@ -339,7 +339,7 @@ $(function () {
         $(data).find("#toc>ul").appendTo("#navbar");
         // const $ul = $(data).find("#toc>ul");
         // const $wrapper = $('<div class="d-flex justify-content-end w-100"></div>').append($ul);
-        // $wrapper.appendTo("#navbar");
+        // $wrapper.appendTo("#navbar"); 
         showSearch();
         var index = navbarPath.lastIndexOf('/');
         var navrel = '';

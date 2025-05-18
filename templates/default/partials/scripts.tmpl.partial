@@ -2,4 +2,25 @@
 
 <script type="text/javascript" src="{{_rel}}styles/docfx.vendor.min.js"></script>
 <script type="text/javascript" src="{{_rel}}styles/docfx.js"></script>
-<script type="text/javascript" src="{{_rel}}styles/main.js"></script>
+//<script type="text/javascript" src="{{_rel}}styles/main.js"></script>
+
+<script>
+  window.addEventListener("load", () => {
+    // 테두리 적용 (추가 보정용)
+    const navBar = document.querySelector(".navbar");
+    if (navBar) {
+      navBar.style.height = "90px";
+      navBar.style.alignContent = "end";
+    }
+
+    const sideToc = document.querySelector(".sidetoc");
+    if (sideToc) {
+      sideToc.style.width = "280px";
+    }
+
+    const sideFilter = document.querySelector(".sidefilter");
+    if (sideFilter) {
+      sideFilter.style.width = "280px";
+    } 
+  });
+</script>

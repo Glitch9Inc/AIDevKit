@@ -1,264 +1,208 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Namespace Glitch9.AIDevKit.Mubert | AI Dev Kit </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Namespace Glitch9.AIDevKit.Mubert | AI Dev Kit ">
-      
-      
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
-            AI Dev Kit
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
-
-        <article data-uid="Glitch9.AIDevKit.Mubert">
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Mubert">
 
   <h1 id="Glitch9_AIDevKit_Mubert" data-uid="Glitch9.AIDevKit.Mubert" class="text-break">Namespace Glitch9.AIDevKit.Mubert</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-
     <h3 id="classes">
 Classes
 </h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.BaseRecordTrackRequestParams.html">BaseRecordTrackRequestParams</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.GetPlayMusicData.html">GetPlayMusicData</a></dt>
-      <dd><p>The data payload containing the music channel structure.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.GetPlayMusicRequest.html">GetPlayMusicRequest</a></dt>
-      <dd><p>Request object for getting all available music channels for streaming and generation.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.GetPlayMusicResponse.html">GetPlayMusicResponse</a></dt>
-      <dd><p>Response object for GetPlayMusic request.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.ImageToMusicRequest.html">ImageToMusicRequest</a></dt>
-      <dd><p>Request object for Mubert's ITMRecordTrack method (Image-to-Music).</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.ImageToMusicRequestParams.html">ImageToMusicRequestParams</a></dt>
-      <dd><p>Parameters for ITMRecordTrack method.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.Mubert.html">Mubert</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertClientSettingsFactory.html">MubertClientSettingsFactory</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertRequestParams.html">MubertRequestParams</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertRequest-1.html">MubertRequest&lt;T&gt;</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertResponse-1.html">MubertResponse&lt;T&gt;</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertSettings.html">MubertSettings</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MusicCategory.html">MusicCategory</a></dt>
-      <dd><p>Represents a music category (e.g. Moods, Genres, etc.).</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MusicChannel.html">MusicChannel</a></dt>
-      <dd><p>Represents an actual music channel that can be streamed or used for generation.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MusicGroup.html">MusicGroup</a></dt>
-      <dd><p>Represents a group within a category (e.g. Calm inside Moods).</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.RecordTrackRequest.html">RecordTrackRequest</a></dt>
-      <dd><p>Request object for generating a music track based on playlist and other settings.
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.BaseRecordTrackRequestParams.html">BaseRecordTrackRequestParams</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.GetPlayMusicData.html">GetPlayMusicData</a></h4>
+      <section><p>The data payload containing the music channel structure.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.GetPlayMusicRequest.html">GetPlayMusicRequest</a></h4>
+      <section><p>Request object for getting all available music channels for streaming and generation.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.GetPlayMusicResponse.html">GetPlayMusicResponse</a></h4>
+      <section><p>Response object for GetPlayMusic request.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.ImageToMusicRequest.html">ImageToMusicRequest</a></h4>
+      <section><p>Request object for Mubert's ITMRecordTrack method (Image-to-Music).</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.ImageToMusicRequestParams.html">ImageToMusicRequestParams</a></h4>
+      <section><p>Parameters for ITMRecordTrack method.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.Mubert.html">Mubert</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertClientSettingsFactory.html">MubertClientSettingsFactory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertRequestParams.html">MubertRequestParams</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertRequest-1.html">MubertRequest&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertResponse-1.html">MubertResponse&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertSettings.html">MubertSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MusicCategory.html">MusicCategory</a></h4>
+      <section><p>Represents a music category (e.g. Moods, Genres, etc.).</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MusicChannel.html">MusicChannel</a></h4>
+      <section><p>Represents an actual music channel that can be streamed or used for generation.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MusicGroup.html">MusicGroup</a></h4>
+      <section><p>Represents a group within a category (e.g. Calm inside Moods).</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.RecordTrackRequest.html">RecordTrackRequest</a></h4>
+      <section><p>Request object for generating a music track based on playlist and other settings.
 Uses Mubert's RecordTrack method.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.RecordTrackRequestParams.html">RecordTrackRequestParams</a></dt>
-      <dd><p>Parameters for the RecordTrack method.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.RequestExtensions.html">RequestExtensions</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.StreamInfo.html">StreamInfo</a></dt>
-      <dd><p>Contains the streaming URL for a channel.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.TextToMusicRequest.html">TextToMusicRequest</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.TextToMusicRequestParams.html">TextToMusicRequestParams</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.TrackResponse.html">TrackResponse</a></dt>
-      <dd><p>Response wrapper for RecordTrack method.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.TrackResponseParams.html">TrackResponseParams</a></dt>
-      <dd><p>Contains the list of generated track tasks.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.TrackStatusRequest.html">TrackStatusRequest</a></dt>
-      <dd><p>Request object for checking the status of generated tracks.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.TrackTask.html">TrackTask</a></dt>
-      <dd><p>Information about a single track generation task.</p>
-</dd>
-    </dl>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.RecordTrackRequestParams.html">RecordTrackRequestParams</a></h4>
+      <section><p>Parameters for the RecordTrack method.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.RequestExtensions.html">RequestExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.StreamInfo.html">StreamInfo</a></h4>
+      <section><p>Contains the streaming URL for a channel.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.TextToMusicRequest.html">TextToMusicRequest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.TextToMusicRequestParams.html">TextToMusicRequestParams</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.TrackResponse.html">TrackResponse</a></h4>
+      <section><p>Response wrapper for RecordTrack method.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.TrackResponseParams.html">TrackResponseParams</a></h4>
+      <section><p>Contains the list of generated track tasks.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.TrackStatusRequest.html">TrackStatusRequest</a></h4>
+      <section><p>Request object for checking the status of generated tracks.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.TrackTask.html">TrackTask</a></h4>
+      <section><p>Information about a single track generation task.</p>
+</section>
     <h3 id="enums">
 Enums
 </h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.ArrangementIntensity.html">ArrangementIntensity</a></dt>
-      <dd><p>The complexity of the arrangement, representing how many instruments play simultaneously.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.CompositionMode.html">CompositionMode</a></dt>
-      <dd><p>The composition type that defines the structure of the generated track.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertBitrate.html">MubertBitrate</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertFormat.html">MubertFormat</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertMethod.html">MubertMethod</a></dt>
-      <dd><p>Just .ToString() the enum to get the method name.</p>
-</dd>
-    </dl>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.ArrangementIntensity.html">ArrangementIntensity</a></h4>
+      <section><p>The complexity of the arrangement, representing how many instruments play simultaneously.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.CompositionMode.html">CompositionMode</a></h4>
+      <section><p>The composition type that defines the structure of the generated track.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertBitrate.html">MubertBitrate</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertFormat.html">MubertFormat</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Mubert.MubertMethod.html">MubertMethod</a></h4>
+      <section><p>Just .ToString() the enum to get the method name.</p>
+</section>
 
 
 </article>
+          </div>
 
-        <div class="contribution d-print-none">
-        </div>
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

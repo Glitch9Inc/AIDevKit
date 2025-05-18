@@ -1,1178 +1,968 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class VoiceSharing | AI Dev Kit </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class VoiceSharing | AI Dev Kit ">
-      
-      
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
-            AI Dev Kit
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing">
 
-        <article data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing">
 
 
-
-  <h1 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing" class="text-break">
-Class VoiceSharing  
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.ElevenLabs.html">ElevenLabs</a></dd></dl>
-  
+  <h1 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing" class="text-break">Class VoiceSharing</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">VoiceSharing</span></div>
   </div>
-
-  <div class="markdown summary"></div>
-  <div class="markdown conceptual"></div>
-
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.ElevenLabs.html">ElevenLabs</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class VoiceSharing</code></pre>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><span class="xref">object</span></div>
-      <div><span class="xref">VoiceSharing</span></div>
-    </dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
+  <h3 id="properties">Properties
+</h3>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_BanReason_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.BanReason*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_BanReason" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.BanReason">
-  BanReason
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_BanReason" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.BanReason">BanReason</h4>
   <div class="markdown level1 summary"><p>Optional. The ban reason of the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string BanReason { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Category_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Category*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Category" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Category">
-  Category
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Category" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Category">Category</h4>
   <div class="markdown level1 summary"><p>Optional. The category of the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public VoiceCategory? Category { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Glitch9.AIDevKit.VoiceCategory.html">VoiceCategory</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.VoiceCategory.html">VoiceCategory</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ClonedByCount_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ClonedByCount*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ClonedByCount" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ClonedByCount">
-  ClonedByCount
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ClonedByCount" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ClonedByCount">ClonedByCount</h4>
   <div class="markdown level1 summary"><p>Optional. Number of clones on the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int? ClonedByCount { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">int</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_DateUnix_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.DateUnix*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_DateUnix" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.DateUnix">
-  DateUnix
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_DateUnix" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.DateUnix">DateUnix</h4>
   <div class="markdown level1 summary"><p>Optional. The date of the voice sharing in Unix time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UnixTime? DateUnix { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UnixTime</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnixTime</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Description_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Description*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Description" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Description">
-  Description
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Description" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Description">Description</h4>
   <div class="markdown level1 summary"><p>Optional. The description of the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_DisableAtUnix_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.DisableAtUnix*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_DisableAtUnix" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.DisableAtUnix">
-  DisableAtUnix
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_DisableAtUnix" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.DisableAtUnix">DisableAtUnix</h4>
   <div class="markdown level1 summary"><p>Optional. The date to disable the voice sharing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UnixTime? DisableAtUnix { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UnixTime</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnixTime</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_EnabledInLibrary_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.EnabledInLibrary*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_EnabledInLibrary" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.EnabledInLibrary">
-  EnabledInLibrary
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_EnabledInLibrary" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.EnabledInLibrary">EnabledInLibrary</h4>
   <div class="markdown level1 summary"><p>Optional. Whether the voice is enabled in the library.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? EnabledInLibrary { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Featured_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Featured*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Featured" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Featured">
-  Featured
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Featured" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Featured">Featured</h4>
   <div class="markdown level1 summary"><p>Optional. Whether the voice is featured.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? Featured { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_FinancialRewardsEnabled_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.FinancialRewardsEnabled*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_FinancialRewardsEnabled" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.FinancialRewardsEnabled">
-  FinancialRewardsEnabled
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_FinancialRewardsEnabled" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.FinancialRewardsEnabled">FinancialRewardsEnabled</h4>
   <div class="markdown level1 summary"><p>Optional. Whether financial rewards are enabled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? FinancialRewardsEnabled { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_FreeUsersAllowed_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.FreeUsersAllowed*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_FreeUsersAllowed" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.FreeUsersAllowed">
-  FreeUsersAllowed
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_FreeUsersAllowed" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.FreeUsersAllowed">FreeUsersAllowed</h4>
   <div class="markdown level1 summary"><p>Optional. Whether free users are allowed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? FreeUsersAllowed { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_HistoryItemSampleId_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.HistoryItemSampleId*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_HistoryItemSampleId" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.HistoryItemSampleId">
-  HistoryItemSampleId
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_HistoryItemSampleId" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.HistoryItemSampleId">HistoryItemSampleId</h4>
   <div class="markdown level1 summary"><p>Optional. The sample ID of the history item.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string HistoryItemSampleId { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ImageUrl_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ImageUrl*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ImageUrl" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ImageUrl">
-  ImageUrl
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ImageUrl" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ImageUrl">ImageUrl</h4>
   <div class="markdown level1 summary"><p>Optional. The image URL of the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ImageUrl { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_InstagramUsername_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.InstagramUsername*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_InstagramUsername" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.InstagramUsername">
-  InstagramUsername
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_InstagramUsername" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.InstagramUsername">InstagramUsername</h4>
   <div class="markdown level1 summary"><p>Optional. Instagram username associated with the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string InstagramUsername { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Labels_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Labels*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Labels" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Labels">
-  Labels
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Labels" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Labels">Labels</h4>
   <div class="markdown level1 summary"><p>Optional. Labels of the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; Labels { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">string</span>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">string</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_LikedByCount_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.LikedByCount*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_LikedByCount" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.LikedByCount">
-  LikedByCount
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_LikedByCount" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.LikedByCount">LikedByCount</h4>
   <div class="markdown level1 summary"><p>Optional. Number of likes on the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int? LikedByCount { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">int</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_LiveModerationEnabled_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.LiveModerationEnabled*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_LiveModerationEnabled" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.LiveModerationEnabled">
-  LiveModerationEnabled
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_LiveModerationEnabled" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.LiveModerationEnabled">LiveModerationEnabled</h4>
   <div class="markdown level1 summary"><p>Optional. Whether live moderation is enabled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? LiveModerationEnabled { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ModerationCheck_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ModerationCheck*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ModerationCheck" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ModerationCheck">
-  ModerationCheck
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ModerationCheck" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ModerationCheck">ModerationCheck</h4>
   <div class="markdown level1 summary"><p>Optional. Moderation check object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public object ModerationCheck { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">object</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Name_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Name*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Name" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Name">
-  Name
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Name" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Name">Name</h4>
   <div class="markdown level1 summary"><p>Optional. The name of the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_NoticePeriod_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.NoticePeriod*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_NoticePeriod" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.NoticePeriod">
-  NoticePeriod
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_NoticePeriod" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.NoticePeriod">NoticePeriod</h4>
   <div class="markdown level1 summary"><p>Optional. The notice period of the voice sharing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int? NoticePeriod { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">int</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_OriginalVoiceId_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.OriginalVoiceId*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_OriginalVoiceId" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.OriginalVoiceId">
-  OriginalVoiceId
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_OriginalVoiceId" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.OriginalVoiceId">OriginalVoiceId</h4>
   <div class="markdown level1 summary"><p>Optional. The ID of the original voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string OriginalVoiceId { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_PublicOwnerId_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.PublicOwnerId*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_PublicOwnerId" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.PublicOwnerId">
-  PublicOwnerId
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_PublicOwnerId" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.PublicOwnerId">PublicOwnerId</h4>
   <div class="markdown level1 summary"><p>Optional. The ID of the public owner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string PublicOwnerId { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Rate_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Rate*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Rate" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Rate">
-  Rate
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Rate" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Rate">Rate</h4>
   <div class="markdown level1 summary"><p>Optional. The rate of the voice sharing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double? Rate { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">double</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">double</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReaderAppEnabled_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReaderAppEnabled*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReaderAppEnabled" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReaderAppEnabled">
-  ReaderAppEnabled
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReaderAppEnabled" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReaderAppEnabled">ReaderAppEnabled</h4>
   <div class="markdown level1 summary"><p>Optional. Whether the reader app is enabled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? ReaderAppEnabled { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReaderRestrictedOn_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReaderRestrictedOn*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReaderRestrictedOn" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReaderRestrictedOn">
-  ReaderRestrictedOn
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReaderRestrictedOn" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReaderRestrictedOn">ReaderRestrictedOn</h4>
   <div class="markdown level1 summary"><p>Optional. Reader restrictions applied on platforms.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public List&lt;object&gt; ReaderRestrictedOn { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">List</span>&lt;<span class="xref">object</span>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReviewMessage_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReviewMessage*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReviewMessage" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReviewMessage">
-  ReviewMessage
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReviewMessage" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReviewMessage">ReviewMessage</h4>
   <div class="markdown level1 summary"><p>Optional. The review message of the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ReviewMessage { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReviewStatus_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReviewStatus*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReviewStatus" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReviewStatus">
-  ReviewStatus
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_ReviewStatus" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.ReviewStatus">ReviewStatus</h4>
   <div class="markdown level1 summary"><p>Optional. The review status of the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ReviewStatus { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Status_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Status*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Status" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Status">
-  Status
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_Status" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.Status">Status</h4>
   <div class="markdown level1 summary"><p>Required. The status of the voice sharing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Status { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_TiktokUsername_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.TiktokUsername*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_TiktokUsername" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.TiktokUsername">
-  TiktokUsername
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_TiktokUsername" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.TiktokUsername">TiktokUsername</h4>
   <div class="markdown level1 summary"><p>Optional. TikTok username associated with the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string TiktokUsername { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_TwitterUsername_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.TwitterUsername*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_TwitterUsername" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.TwitterUsername">
-  TwitterUsername
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_TwitterUsername" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.TwitterUsername">TwitterUsername</h4>
   <div class="markdown level1 summary"><p>Optional. Twitter/X username associated with the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string TwitterUsername { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_VoiceMixingAllowed_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.VoiceMixingAllowed*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_VoiceMixingAllowed" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.VoiceMixingAllowed">
-  VoiceMixingAllowed
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_VoiceMixingAllowed" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.VoiceMixingAllowed">VoiceMixingAllowed</h4>
   <div class="markdown level1 summary"><p>Optional. Whether voice mixing is allowed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? VoiceMixingAllowed { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_WhitelistedEmails_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.WhitelistedEmails*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_WhitelistedEmails" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.WhitelistedEmails">
-  WhitelistedEmails
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_WhitelistedEmails" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.WhitelistedEmails">WhitelistedEmails</h4>
   <div class="markdown level1 summary"><p>Optional. A list of whitelisted emails.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public List&lt;string&gt; WhitelistedEmails { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">List</span>&lt;<span class="xref">string</span>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_YoutubeUsername_" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.YoutubeUsername*"></a>
-
-  <h3 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_YoutubeUsername" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.YoutubeUsername">
-  YoutubeUsername
-  
-  </h3>
-
+  <h4 id="Glitch9_AIDevKit_ElevenLabs_VoiceSharing_YoutubeUsername" data-uid="Glitch9.AIDevKit.ElevenLabs.VoiceSharing.YoutubeUsername">YoutubeUsername</h4>
   <div class="markdown level1 summary"><p>Optional. YouTube username associated with the voice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string YoutubeUsername { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-        <div class="contribution d-print-none">
-        </div>
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

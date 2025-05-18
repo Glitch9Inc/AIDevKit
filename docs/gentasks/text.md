@@ -5,7 +5,7 @@ Text generation is one of the core uses of generative AI. In the GENTask system,
 
 **How to create a text generation task:** You can start a text task from a plain string prompt by calling the extension method `.GENText()` on a string. This returns a `GENTextTask` which you can then configure and execute. For example:
 
-```csharp
+```c#
 "Tell me a joke about cats."
     .GENText()                            // Create a text-generation task with this prompt
     .SetModel(OpenAIModel.GPT4)           // Choose an AI model (e.g. GPT-4)
@@ -22,7 +22,7 @@ Let's break down what happens here:
 
 **Using the result:** After execution, the generated text (let's call it `GeneratedText`) will be returned by `ExecuteAsync()`. If you're in an async context, you can capture it like:
 
-```csharp
+```c#
 GeneratedText result = await "Tell me a joke about cats."
                           .GENText()
                           .SetModel(OpenAIModel.GPT4)
@@ -33,7 +33,7 @@ Debug.Log(result);
 
 Here, `GeneratedText` is essentially the resulting text (the library uses a `GeneratedText` type for the output, which can be treated as a `string`). If you provided a Unity UI `Text` or TMP text object as a target when creating the task, the system would automatically assign the resulting text to that UI element for you. For example:
 
-```csharp
+```c#
 myTextComponent.GENText("Once upon a time,")
     .SetModel(OpenAIModel.GPT3)   // choose a model, say GPT-3 for faster response
     .ExecuteAsync();
@@ -43,7 +43,7 @@ In this case, `myTextComponent` is a `UnityEngine.UI.Text` element in the scene.
 
 **Chat completions (GENChatTask):** If you want to have a conversational AI (with system, user, assistant roles or multi-turn dialogue), the GENTask system provides **GENChatTask**. This is similar to `GENTextTask` but uses a chat-centric model (like ChatGPT). To use it, you'd typically maintain a `ChatSession` object and create a new `ChatMessage`, then call `chatSession.GENChat(chatMessage)`. For example:
 
-```csharp
+```c#
 chatSession.GENChat(userMessage)
     .SetModel(OpenAIModel.GPT4)  // e.g. GPT-4 in chat mode
     .ExecuteAsync();

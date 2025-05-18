@@ -128,7 +128,7 @@ $(function () {
       return;
     }
     try {
-      if (!window.Worker) {
+      if(!window.Worker){
         return;
       }
       webWorkerSearch();
@@ -322,8 +322,8 @@ $(function () {
 
     function showSearch() {
       if ($('#search-results').length !== 0) {
-        $('#search').show();
-        $('body').trigger("searchEvent");
+          $('#search').show();
+          $('body').trigger("searchEvent");
       }
     }
 
@@ -337,16 +337,13 @@ $(function () {
       if (tocPath) tocPath = tocPath.replace(/\\/g, '/');
       $.get(navbarPath, function (data) {
         $(data).find("#toc>ul").appendTo("#navbar");
-        // const $ul = $(data).find("#toc>ul");
-        // const $wrapper = $('<div class="d-flex justify-content-end w-100"></div>').append($ul);
-        // $wrapper.appendTo("#navbar");
         showSearch();
         var index = navbarPath.lastIndexOf('/');
         var navrel = '';
         if (index > -1) {
           navrel = navbarPath.substr(0, index + 1);
         }
-        $('#navbar>ul').addClass('navbar-nav navbar-right');
+        $('#navbar>ul').addClass('navbar-nav');
         var currentAbsPath = util.getCurrentWindowAbsolutePath();
         // set active item
         $('#navbar').find('a[href]').each(function (i, e) {
@@ -421,11 +418,12 @@ $(function () {
       tocFilterInput.on('input', function (e) {
         var val = this.value;
         //Save filter string to local session storage
-        if (typeof (Storage) !== "undefined") {
+        if (typeof(Storage) !== "undefined") {
           try {
             sessionStorage.filterString = val;
-          }
-          catch (e) { }
+            }
+          catch(e)
+            {}
         }
         if (val === '') {
           // Clear 'filtered' class
@@ -488,24 +486,26 @@ $(function () {
 
       // toc filter clear button
       tocFilterClearButton.hide();
-      tocFilterClearButton.on("click", function (e) {
+      tocFilterClearButton.on("click", function(e){
         tocFilterInput.val("");
         tocFilterInput.trigger('input');
-        if (typeof (Storage) !== "undefined") {
+        if (typeof(Storage) !== "undefined") {
           try {
             sessionStorage.filterString = "";
-          }
-          catch (e) { }
+            }
+          catch(e)
+            {}
         }
       });
 
       //Set toc filter from local session storage on page load
-      if (typeof (Storage) !== "undefined") {
+      if (typeof(Storage) !== "undefined") {
         try {
           tocFilterInput.val(sessionStorage.filterString);
           tocFilterInput.trigger('input');
-        }
-        catch (e) { }
+          }
+        catch(e)
+          {}
       }
     }
 
@@ -522,7 +522,7 @@ $(function () {
           tocrel = tocPath.substr(0, index + 1);
         }
         var currentHref = util.getCurrentWindowAbsolutePath();
-        if (!currentHref.endsWith('.html')) {
+        if(!currentHref.endsWith('.html')) {
           currentHref += '.html';
         }
         $('#sidetoc').find('a[href]').each(function (i, e) {
@@ -575,7 +575,7 @@ $(function () {
       if ($('footer').is(':visible')) {
         $(".sideaffix").css("bottom", "70px");
       }
-      $('#affix a').click(function (e) {
+      $('#affix a').click(function(e) {
         var scrollspy = $('[data-spy="scroll"]').data()['bs.scrollspy'];
         var target = e.target.hash;
         if (scrollspy && target) {
@@ -1032,7 +1032,7 @@ $(function () {
       var stack = currentAbsPath.split("/");
       stack.pop();
       var parts = href.split("/");
-      for (var i = 0; i < parts.length; i++) {
+      for (var i=0; i< parts.length; i++) {
         if (parts[i] == ".") continue;
         if (parts[i] == ".." && stack.length > 0)
           stack.pop();
@@ -1176,13 +1176,13 @@ $(function () {
     $(window).on('hashchange', scrollToCurrent);
 
     $(window).on('load', function () {
-      // scroll to the anchor if present, offset by the header
-      scrollToCurrent();
+        // scroll to the anchor if present, offset by the header
+        scrollToCurrent();
     });
 
     $(document).ready(function () {
-      // Exclude tabbed content case
-      $('a:not([data-tab])').click(function (e) { delegateAnchors(e); });
+        // Exclude tabbed content case
+        $('a:not([data-tab])').click(function (e) { delegateAnchors(e); });
     });
   }
 });
