@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GENChatTask | AI Dev Kit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GENChatTask | AI Dev Kit ">
+    
+    <meta name="description" content="Task for generating text using an LLM model. Supports instructions and role-based prompts.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask" class="text-break">Class GENChatTask</h1>
+  <div class="markdown level0 summary"><p>Task for generating text using an LLM model. Supports instructions and role-based prompts.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="Glitch9.AIDevKit.GENTask-3.html">GENTask</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.html">GENChatTask</a>, <a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>, <a class="xref" href="Glitch9.AIDevKit.ChatCompletion.html">ChatCompletion</a>&gt;</div>
+    <div class="level2"><span class="xref">GENChatTask</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.AIDevKit.IGENTask.html">IGENTask</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_token">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.token</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_enableHistory">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.enableHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_isCanceled">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.isCanceled</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_outputMimeType">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.outputMimeType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.SetOption(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.TryGetOption&lt;T&gt;(string, out T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.SetModel(Model)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.SetCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.SetOutputPath(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.SetSender(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.SetIgnoreLogs(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.EnablePromptHistory(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.SetCancellationToken(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.ExecuteAsyncINTERNAL()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.ExecuteAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.ExecuteAsync&lt;T&gt;()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Advanced.html">Advanced</a>.<a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.html">Chat</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GENChatTask : GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;, IGENTask</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask__ctor_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask__ctor_Glitch9_AIDevKit_Advanced_Chat_ChatSession_Glitch9_AIDevKit_ChatMessage_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.#ctor(Glitch9.AIDevKit.Advanced.Chat.ChatSession,Glitch9.AIDevKit.ChatMessage)">GENChatTask(ChatSession, ChatMessage)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GENChatTask(ChatSession chatSession, ChatMessage chatMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.ChatSession.html">ChatSession</a></td>
+        <td><span class="parametername">chatSession</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a></td>
+        <td><span class="parametername">chatMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_AddFunctions_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.AddFunctions*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_AddFunctions_Glitch9_AIDevKit_FunctionCall___" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.AddFunctions(Glitch9.AIDevKit.FunctionCall[])">AddFunctions(params FunctionCall[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GENChatTask AddFunctions(params FunctionCall[] functions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.FunctionCall.html">FunctionCall</a>[]</td>
+        <td><span class="parametername">functions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.html">GENChatTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_AddTools_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.AddTools*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_AddTools_Glitch9_AIDevKit_ToolCall___" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.AddTools(Glitch9.AIDevKit.ToolCall[])">AddTools(params ToolCall[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GENChatTask AddTools(params ToolCall[] tools)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a>[]</td>
+        <td><span class="parametername">tools</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.html">GENChatTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_ExecuteAsyncINTERNAL_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.ExecuteAsyncINTERNAL*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_ExecuteAsyncINTERNAL" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.ExecuteAsyncINTERNAL">ExecuteAsyncINTERNAL()</h4>
+  <div class="markdown level1 summary"><p>Executes the task and returns the generated result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override UniTask&lt;ChatCompletion&gt; ExecuteAsyncINTERNAL()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ChatCompletion.html">ChatCompletion</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL">GENTask&lt;GENChatTask, ChatMessage, ChatCompletion&gt;.ExecuteAsyncINTERNAL()</a></div>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_GetStreamHandler_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.GetStreamHandler*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_GetStreamHandler" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.GetStreamHandler">GetStreamHandler()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ChatCompletionStreamHandler GetStreamHandler()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatCompletionStreamHandler.html">ChatCompletionStreamHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_OnStreamDone_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.OnStreamDone*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_OnStreamDone_System_Action_Glitch9_AIDevKit_ChatCompletion__" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.OnStreamDone(System.Action{Glitch9.AIDevKit.ChatCompletion})">OnStreamDone(Action&lt;ChatCompletion&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GENChatTask OnStreamDone(Action&lt;ChatCompletion&gt; onDone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ChatCompletion.html">ChatCompletion</a>&gt;</td>
+        <td><span class="parametername">onDone</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.html">GENChatTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_OnStreamError_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.OnStreamError*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_OnStreamError_System_Action_System_String__" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.OnStreamError(System.Action{System.String})">OnStreamError(Action&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GENChatTask OnStreamError(Action&lt;string&gt; onError)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td><span class="parametername">onError</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.html">GENChatTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_OnStreamText_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.OnStreamText*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_OnStreamText_System_Action_System_String__System_Action_System_String__" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.OnStreamText(System.Action{System.String},System.Action{System.String})">OnStreamText(Action&lt;string&gt;, Action&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GENChatTask OnStreamText(Action&lt;string&gt; onReceiveText, Action&lt;string&gt; onReceiveRefusal = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td><span class="parametername">onReceiveText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td><span class="parametername">onReceiveRefusal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.html">GENChatTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_OnStreamToolCalls_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.OnStreamToolCalls*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_OnStreamToolCalls_System_Action_Glitch9_AIDevKit_ToolCall____" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.OnStreamToolCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})">OnStreamToolCalls(Action&lt;ToolCall[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GENChatTask OnStreamToolCalls(Action&lt;ToolCall[]&gt; onToolCalls)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a>[]&gt;</td>
+        <td><span class="parametername">onToolCalls</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.html">GENChatTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_SetFunctions_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.SetFunctions*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_SetFunctions_Glitch9_AIDevKit_FunctionCall___" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.SetFunctions(Glitch9.AIDevKit.FunctionCall[])">SetFunctions(params FunctionCall[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GENChatTask SetFunctions(params FunctionCall[] functions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.FunctionCall.html">FunctionCall</a>[]</td>
+        <td><span class="parametername">functions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.html">GENChatTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_SetTools_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.SetTools*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_SetTools_Glitch9_AIDevKit_ToolCall___" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.SetTools(Glitch9.AIDevKit.ToolCall[])">SetTools(params ToolCall[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GENChatTask SetTools(params ToolCall[] tools)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a>[]</td>
+        <td><span class="parametername">tools</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.html">GENChatTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_StreamAsync_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.StreamAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Advanced_Chat_GENChatTask_StreamAsync_Glitch9_AIDevKit_IChatCompletionStreamHandler_" data-uid="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.StreamAsync(Glitch9.AIDevKit.IChatCompletionStreamHandler)">StreamAsync(IChatCompletionStreamHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask StreamAsync(IChatCompletionStreamHandler streamHandler = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.IChatCompletionStreamHandler.html">IChatCompletionStreamHandler</a></td>
+        <td><span class="parametername">streamHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IGENTask.html">IGENTask</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetAspectRatio__1___0_Glitch9_AIDevKit_Google_AspectRatio_">FluentAPIExtensions.SetAspectRatio&lt;TTask&gt;(TTask, AspectRatio)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetPersonGeneration__1___0_Glitch9_AIDevKit_Google_PersonGeneration_">FluentAPIExtensions.SetPersonGeneration&lt;TTask&gt;(TTask, PersonGeneration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.html#Glitch9_AIDevKit_OpenAI_FluentAPIExtensions_SetSize__1___0_Glitch9_AIDevKit_ImageSize_">FluentAPIExtensions.SetSize&lt;T&gt;(T, ImageSize)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AssistantController | AI Dev Kit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AssistantController | AI Dev Kit ">
+    
+    <meta name="description" content="Formarly AssistantsAPIv2, this class is now called . The Assistants API allows you to build AI assistants within your own applications. An Assistant has instructions and can leverage models, tools, and files to respond to user queries. The Assistants API currently supports three types of tools: Code Interpreter, File Search, and Function calling.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController">
+
+
+
+  <h1 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController" class="text-break">Class AssistantController</h1>
+  <div class="markdown level0 summary"><p>Formarly AssistantsAPIv2, this class is now called <a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.html">AssistantController</a>.
+The Assistants API allows you to build AI assistants within your own applications.
+An Assistant has instructions and can leverage models, tools, and files to respond to user queries.
+The Assistants API currently supports three types of tools: Code Interpreter, File Search, and Function calling.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">AssistantController</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistants.html">Assistants</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AssistantController</code></pre>
+  </div>
+  <h5 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>AssistantTool now uses <a href="https://platform.openai.com/docs/assistants/overview">Assistants APIv2</a>.
+Assistants APIv1 will no longer be used. (Updated on 2024-05-23 by Munchkin)</p>
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController__ctor_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController__ctor_Glitch9_AIDevKit_OpenAI_Assistants_AssistantSettings_Glitch9_AIDevKit_OpenAI_RunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.#ctor(Glitch9.AIDevKit.OpenAI.Assistants.AssistantSettings,Glitch9.AIDevKit.OpenAI.RunRequest)">AssistantController(AssistantSettings, RunRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssistantController(AssistantSettings settings, RunRequest defaultRunOptions = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantSettings.html">AssistantSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
+        <td><span class="parametername">defaultRunOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_MIN_INTERNAL_OPERATION_MILLIS" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.MIN_INTERNAL_OPERATION_MILLIS">MIN_INTERNAL_OPERATION_MILLIS</h4>
+  <div class="markdown level1 summary"><p>The minimum interval between operations in milliseconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MIN_INTERNAL_OPERATION_MILLIS = 1000</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_MIN_INTERVAL_REQUEST_MILLIS" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.MIN_INTERVAL_REQUEST_MILLIS">MIN_INTERVAL_REQUEST_MILLIS</h4>
+  <div class="markdown level1 summary"><p>The minimum interval between requests in milliseconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MIN_INTERVAL_REQUEST_MILLIS = 2000</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Assistant_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Assistant*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Assistant" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Assistant">Assistant</h4>
+  <div class="markdown level1 summary"><p>Current assistant object used by this tool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Assistant Assistant { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_AssistantId_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.AssistantId*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_AssistantId" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.AssistantId">AssistantId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AssistantId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_AssistantName_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.AssistantName*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_AssistantName" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.AssistantName">AssistantName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of this assistant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AssistantName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_AssistantStatus_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.AssistantStatus*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_AssistantStatus" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.AssistantStatus">AssistantStatus</h4>
+  <div class="markdown level1 summary"><p>Gets the current stage of the Assistants API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssistantStatus AssistantStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.html">AssistantStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_AutoCancelOnRequiredAction_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.AutoCancelOnRequiredAction*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_AutoCancelOnRequiredAction" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.AutoCancelOnRequiredAction">AutoCancelOnRequiredAction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoCancelOnRequiredAction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Client_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Client*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Client" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Client">Client</h4>
+  <div class="markdown level1 summary"><p>Gets the OpenAiClient instance used by this tool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpenAI Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAI.html">OpenAI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_DefaultRunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.DefaultRunRequest*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_DefaultRunRequest" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.DefaultRunRequest">DefaultRunRequest</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the default run request options for this tool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RunRequest DefaultRunRequest { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Description_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Description*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Description" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the description of this assistant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_ForcedTool_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.ForcedTool*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_ForcedTool" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.ForcedTool">ForcedTool</h4>
+  <div class="markdown level1 summary"><p>If not null, it forces this AssistantsAPI to use a specific tool on every request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolChoice ForcedTool { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolChoice.html">ToolChoice</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Instructions_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Instructions*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Instructions" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Instructions">Instructions</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the instructions for this assistant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Instructions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_IsBusy_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.IsBusy*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_IsBusy" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.IsBusy">IsBusy</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the AssistantsAPI is busy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBusy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_IsInitialized_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.IsInitialized*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_IsInitialized" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.IsInitialized">IsInitialized</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the AssistantsAPI instance is initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInitialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_LastAssistantMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.LastAssistantMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_LastAssistantMessage" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.LastAssistantMessage">LastAssistantMessage</h4>
+  <div class="markdown level1 summary"><p>Last assistant message received from the AssistantsAPI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThreadMessage LastAssistantMessage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_LastRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.LastRequest*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_LastRequest" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.LastRequest">LastRequest</h4>
+  <div class="markdown level1 summary"><p>Last request object sent to the AssistantsAPI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThreadMessageRequest LastRequest { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html">ThreadMessageRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_LastToolMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.LastToolMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_LastToolMessage" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.LastToolMessage">LastToolMessage</h4>
+  <div class="markdown level1 summary"><p>Last tool message received from the AssistantsAPI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThreadMessage LastToolMessage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_LastUserMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.LastUserMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_LastUserMessage" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.LastUserMessage">LastUserMessage</h4>
+  <div class="markdown level1 summary"><p>Last user message sent to the AssistantsAPI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThreadMessage LastUserMessage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_MaxRequestLength_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.MaxRequestLength*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_MaxRequestLength" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.MaxRequestLength">MaxRequestLength</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum request length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxRequestLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Metadata_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Metadata*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Metadata" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the metadata associated with this assistant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; Metadata { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">string</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Model_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Model*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Model" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Model">Model</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the GPT model used by this assistant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Model Model { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequiredActionTimeoutSeconds_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequiredActionTimeoutSeconds*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequiredActionTimeoutSeconds" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequiredActionTimeoutSeconds">RequiredActionTimeoutSeconds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RequiredActionTimeoutSeconds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequiredActions_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequiredActions*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequiredActions" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequiredActions">RequiredActions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; RequiredActions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequiresAction_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequiresAction*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequiresAction" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequiresAction">RequiresAction</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the AssistantsAPI requires action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequiresAction { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_ResponseFormat_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.ResponseFormat*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_ResponseFormat" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.ResponseFormat">ResponseFormat</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the response format for this assistant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextFormat? ResponseFormat { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TextFormat.html">TextFormat</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Run_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Run*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Run" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Run">Run</h4>
+  <div class="markdown level1 summary"><p>Current run object used by this tool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Run Run { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RunId_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RunId*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RunId" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RunId">RunId</h4>
+  <div class="markdown level1 summary"><p>Gets the current run ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RunId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RunStatus_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RunStatus*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RunStatus" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RunStatus">RunStatus</h4>
+  <div class="markdown level1 summary"><p>Gets the current run status of the Assistants API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RunStatus RunStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStatus.html">RunStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RunStep_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RunStep*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RunStep" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RunStep">RunStep</h4>
+  <div class="markdown level1 summary"><p>Current run step object used by this tool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RunStep RunStep { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStep.html">RunStep</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_SaveThreadMessages_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.SaveThreadMessages*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_SaveThreadMessages" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.SaveThreadMessages">SaveThreadMessages</h4>
+  <div class="markdown level1 summary"><p>Indicates whether to save thread messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveThreadMessages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_SavedMessages_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.SavedMessages*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_SavedMessages" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.SavedMessages">SavedMessages</h4>
+  <div class="markdown level1 summary"><p>Gets the saved messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrefsDictionary&lt;string, ThreadMessage&gt; SavedMessages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PrefsDictionary</span>&lt;<span class="xref">string</span>, <a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Stream_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Stream*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Stream" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Stream">Stream</h4>
+  <div class="markdown level1 summary"><p>Indicates if the tool is set to stream (not supported yet).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Stream { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Temperature_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Temperature*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Temperature" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Temperature">Temperature</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the temperature setting for this assistant's responses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Temperature { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Thread_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Thread*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Thread" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Thread">Thread</h4>
+  <div class="markdown level1 summary"><p>Current thread object used by this tool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Thread Thread { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_ThreadId_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.ThreadId*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_ThreadId" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.ThreadId">ThreadId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the current thread ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ThreadId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_ToolResources_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.ToolResources*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_ToolResources" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.ToolResources">ToolResources</h4>
+  <div class="markdown level1 summary"><p>Give the tools like code_interpreter and file_search access to files.
+Files are uploaded using the File upload endpoint
+and must have the purpose set to assistants to be used with this API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolResources ToolResources { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolResources.html">ToolResources</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Tools_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Tools*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_Tools" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Tools">Tools</h4>
+  <div class="markdown level1 summary"><p>Give the Assistant access to up to 128 tools.
+You can give it access to OpenAI-hosted tools like code_interpreter and file_search,
+or call a third-party tools via a function calling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ToolCall&gt; Tools { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_TopP_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.TopP*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_TopP" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.TopP">TopP</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the top-p setting for this assistant's responses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TopP { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_CancelRunAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.CancelRunAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_CancelRunAsync" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.CancelRunAsync">CancelRunAsync()</h4>
+  <div class="markdown level1 summary"><p>Cancels the current run operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask CancelRunAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td><p>A UniTask representing the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_CreateThreadAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.CreateThreadAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_CreateThreadAsync_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.CreateThreadAsync(System.Boolean)">CreateThreadAsync(bool)</h4>
+  <div class="markdown level1 summary"><p>Create a new thread and set it as the current thread.
+If deleteCurrent is true, the current thread will be deleted before creating a new one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask CreateThreadAsync(bool deleteCurrent = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">deleteCurrent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_DeleteThreadAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.DeleteThreadAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_DeleteThreadAsync_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.DeleteThreadAsync(System.String)">DeleteThreadAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Delete the thread with the threadId.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;bool&gt; DeleteThreadAsync(string threadId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">threadId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<span class="xref">bool</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_GetThreadIds_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.GetThreadIds*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_GetThreadIds" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.GetThreadIds">GetThreadIds()</h4>
+  <div class="markdown level1 summary"><p>Get all thread ids saved in the PlayerPrefs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetThreadIds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_InitializeAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.InitializeAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_InitializeAsync_System_Action_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.InitializeAsync(System.Action)">InitializeAsync(Action)</h4>
+  <div class="markdown level1 summary"><p>Initializes the AssistantsAPI instance asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask InitializeAsync(Action onInitialized = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">onInitialized</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td><p>A UniTask representing the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_AudioClip_Glitch9_AIDevKit_OpenAI_RunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(AudioClip,Glitch9.AIDevKit.OpenAI.RunRequest)">RequestAsync(AudioClip, RunRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;ThreadMessage&gt; RequestAsync(AudioClip audioPrompt, RunRequest customRunRequest = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span></td>
+        <td><span class="parametername">audioPrompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
+        <td><span class="parametername">customRunRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_Glitch9_AIDevKit_OpenAI_ThreadMessageRequest_Glitch9_AIDevKit_OpenAI_RunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.AIDevKit.OpenAI.ThreadMessageRequest,Glitch9.AIDevKit.OpenAI.RunRequest)">RequestAsync(ThreadMessageRequest, RunRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;ThreadMessage&gt; RequestAsync(ThreadMessageRequest messageRequest, RunRequest customRunRequest = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html">ThreadMessageRequest</a></td>
+        <td><span class="parametername">messageRequest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
+        <td><span class="parametername">customRunRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_Glitch9_AIDevKit_OpenAI_TranscriptionRequest_Glitch9_AIDevKit_OpenAI_RunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.AIDevKit.OpenAI.TranscriptionRequest,Glitch9.AIDevKit.OpenAI.RunRequest)">RequestAsync(TranscriptionRequest, RunRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;ThreadMessage&gt; RequestAsync(TranscriptionRequest transcriptionRequest, RunRequest customRunRequest = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.TranscriptionRequest.html">TranscriptionRequest</a></td>
+        <td><span class="parametername">transcriptionRequest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
+        <td><span class="parametername">customRunRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_Glitch9_IO_Files_File_AudioClip__Glitch9_AIDevKit_OpenAI_RunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.IO.Files.File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)">RequestAsync(File&lt;AudioClip&gt;, RunRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;ThreadMessage&gt; RequestAsync(File&lt;AudioClip&gt; audioPrompt, RunRequest customRunRequest = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">File</span>&lt;<span class="xref">AudioClip</span>&gt;</td>
+        <td><span class="parametername">audioPrompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
+        <td><span class="parametername">customRunRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_System_String_Glitch9_AIDevKit_OpenAI_RunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest)">RequestAsync(string, RunRequest)</h4>
+  <div class="markdown level1 summary"><p>Requests a response from the assistant asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;ThreadMessage&gt; RequestAsync(string textPrompt, RunRequest customRunRequest = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">textPrompt</span></td>
+        <td><p>The text prompt to send to the assistant.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
+        <td><span class="parametername">customRunRequest</span></td>
+        <td><p>Optional custom run request options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
+        <td><p>A task representing the result of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_System_String_Glitch9_AIDevKit_OpenAI_RunRequest_Glitch9_IO_Files_File_Texture2D____" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,Glitch9.IO.Files.File{Texture2D}[])">RequestAsync(string, RunRequest, params File&lt;Texture2D&gt;[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;ThreadMessage&gt; RequestAsync(string textPrompt, RunRequest customRunRequest, params File&lt;Texture2D&gt;[] imageFiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">textPrompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
+        <td><span class="parametername">customRunRequest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">File</span>&lt;<span class="xref">Texture2D</span>&gt;[]</td>
+        <td><span class="parametername">imageFiles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_System_String_Glitch9_AIDevKit_OpenAI_RunRequest_System_String___" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,System.String[])">RequestAsync(string, RunRequest, params string[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;ThreadMessage&gt; RequestAsync(string textPrompt, RunRequest customRunRequest, params string[] imageUrls)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">textPrompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
+        <td><span class="parametername">customRunRequest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">imageUrls</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_SetThreadAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.SetThreadAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_SetThreadAsync_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.SetThreadAsync(System.String)">SetThreadAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Switch to the existing thread with threadId.
+The thread with the threadId must exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;Thread&gt; SetThreadAsync(string threadId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">threadId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_SubmitToolOutputAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.SubmitToolOutputAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_SubmitToolOutputAsync_System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.SubmitToolOutputAsync(System.String,System.String)">SubmitToolOutputAsync(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;ThreadMessage&gt; SubmitToolOutputAsync(string toolCallId, string outputToSubmit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">toolCallId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">outputToSubmit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_UpdateAssistantAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.UpdateAssistantAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_UpdateAssistantAsync_Glitch9_AIDevKit_OpenAI_AssistantRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.UpdateAssistantAsync(Glitch9.AIDevKit.OpenAI.AssistantRequest)">UpdateAssistantAsync(AssistantRequest)</h4>
+  <div class="markdown level1 summary"><p>Update(modify) the assistant with the <a class="xref" href="Glitch9.AIDevKit.OpenAI.AssistantRequest.html">AssistantRequest</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;Assistant&gt; UpdateAssistantAsync(AssistantRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.AssistantRequest.html">AssistantRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

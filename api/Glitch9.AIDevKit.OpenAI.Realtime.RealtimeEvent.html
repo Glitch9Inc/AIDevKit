@@ -151,7 +151,7 @@ that can be sent to or received from the OpenAI API.</p>
     </tbody>
   </table>
   <h5 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Audio_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property is only used when the event type is <a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferAppend">InputAudioBufferAppend</a>.</p>
+  <div class="markdown level1 remarks"><p>This property is only used when the event type is RealtimeEventId.InputAudioBufferAppend.</p>
 </div>
 
 
@@ -312,10 +312,10 @@ that can be sent to or received from the OpenAI API.</p>
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Delta_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Delta*"></a>
   <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Delta" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Delta">Delta</h4>
-  <div class="markdown level1 summary"><p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseTextDelta">ResponseTextDelta</a>: The text delta.</p>
-<p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioTranscriptDelta">ResponseAudioTranscriptDelta</a>: The transcript delta.</p>
-<p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioDelta">ResponseAudioDelta</a>: Base64-encoded audio data delta.</p>
-<p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseFunctionCallArgumentsDelta">ResponseFunctionCallArgumentsDelta</a>: The arguments delta as a JSON string.</p>
+  <div class="markdown level1 summary"><p>RealtimeEventId.ResponseTextDelta: The text delta.</p>
+<p>RealtimeEventId.ResponseAudioTranscriptDelta: The transcript delta.</p>
+<p>RealtimeEventId.ResponseAudioDelta: Base64-encoded audio data delta.</p>
+<p>RealtimeEventId.ResponseFunctionCallArgumentsDelta: The arguments delta as a JSON string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -472,8 +472,8 @@ that can be sent to or received from the OpenAI API.</p>
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Part_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Part*"></a>
   <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Part" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Part">Part</h4>
-  <div class="markdown level1 summary"><p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseContentPartAdded">ResponseContentPartAdded</a>: The content part that was added.</p>
-<p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseContentPartDone">ResponseContentPartDone</a>: The content part that is done.</p>
+  <div class="markdown level1 summary"><p>RealtimeEventId.ResponseContentPartAdded: The content part that was added.</p>
+<p>RealtimeEventId.ResponseContentPartDone: The content part that is done.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -549,32 +549,6 @@ that can be sent to or received from the OpenAI API.</p>
   </table>
 
 
-  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Response_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Response" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response">Response</h4>
-  <div class="markdown level1 summary"><p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseCreate">ResponseCreate</a>: Configuration for the response.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RealtimeItem Response { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ResponseId_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseId*"></a>
   <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ResponseId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseId">ResponseId</h4>
   <div class="markdown level1 summary"><p>The ID of the response.</p>
@@ -595,6 +569,32 @@ that can be sent to or received from the OpenAI API.</p>
     <tbody>
       <tr>
         <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ResponseItem_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseItem*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ResponseItem" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseItem">ResponseItem</h4>
+  <div class="markdown level1 summary"><p>RealtimeEventId.ResponseCreate: Configuration for the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RealtimeItem ResponseItem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -655,7 +655,7 @@ that can be sent to or received from the OpenAI API.</p>
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Transcript_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Transcript*"></a>
   <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Transcript" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Transcript">Transcript</h4>
-  <div class="markdown level1 summary"><p><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioTranscriptDone">ResponseAudioTranscriptDone</a>: The final transcript of the audio.</p>
+  <div class="markdown level1 summary"><p>RealtimeEventId.ResponseAudioTranscriptDone: The final transcript of the audio.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>

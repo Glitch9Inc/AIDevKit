@@ -85,10 +85,6 @@
     <h3 id="classes">
 Classes
 </h3>
-      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ActionRequest.html">ActionRequest</a></h4>
-      <section><p>Details on the action required to continue the <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
-<p>Will be null if no action is required.</p>
-</section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistant.html">Assistant</a></h4>
       <section><p>Renamed from AssistantObject to Assistant (2024.06.14)</p>
 </section>
@@ -145,9 +141,6 @@ Usage of OpenAI-hosted tools comes at an additional fee — visit our help cente
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.Expiration.html">Expiration</a></h4>
       <section></section>
-      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.File.html">File</a></h4>
-      <section><p>The File object represents a document that has been uploaded to OpenAI.</p>
-</section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.FileCounts.html">FileCounts</a></h4>
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.FileRequest.html">FileRequest</a></h4>
@@ -229,6 +222,9 @@ POST <a href="https://api.openai.com/v1/moderations">https://api.openai.com/v1/m
 </section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIClientSettingsFactory.html">OpenAIClientSettingsFactory</a></h4>
       <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIFile.html">OpenAIFile</a></h4>
+      <section><p>The File object represents a document that has been uploaded to OpenAI.</p>
+</section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIModel.html">OpenAIModel</a></h4>
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAIModelData.html">OpenAIModelData</a></h4>
@@ -248,7 +244,11 @@ POST <a href="https://api.openai.com/v1/moderations">https://api.openai.com/v1/m
       <section><p>Extension methods for the all OpenAI requests that
 calls OpenAiClient's DefaultInstance to process the request.</p>
 </section>
-      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ResponseExtensions.html">ResponseExtensions</a></h4>
+      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.RequiredAction.html">RequiredAction</a></h4>
+      <section><p>Details on the action required to continue the <a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a>.</p>
+<p>Will be null if no action is required.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.RequiredActionListener.html">RequiredActionListener</a></h4>
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.Run.html">Run</a></h4>
       <section><p>Represents an execution run on a <a class="xref" href="Glitch9.AIDevKit.OpenAI.Thread.html">Thread</a>.</p>
@@ -295,13 +295,9 @@ calls OpenAiClient's DefaultInstance to process the request.</p>
 </section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html">ThreadMessageRequest</a></h4>
       <section></section>
-      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Builder.html">ThreadMessageRequest.Builder</a></h4>
-      <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadRequest.html">ThreadRequest</a></h4>
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadRequest.Builder.html">ThreadRequest.Builder</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolCallConverter.html">ToolCallConverter</a></h4>
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolChoice.html">ToolChoice</a></h4>
       <section><p>This can be a String or an Object
@@ -317,7 +313,7 @@ Use to force the model to call a specific tool.</p>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolOutputsRequest.Builder.html">ToolOutputsRequest.Builder</a></h4>
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ToolOutputsSubmission.html">ToolOutputsSubmission</a></h4>
-      <section><p>When a run has the status: <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStatus.html#Glitch9_AIDevKit_OpenAI_RunStatus_RequiresAction">RequiresAction</a> and <a class="xref" href="Glitch9.AIDevKit.OpenAI.ActionRequest.html#Glitch9_AIDevKit_OpenAI_ActionRequest_Type">Type</a> is <a class="xref" href="Glitch9.AIDevKit.OpenAI.ActionRequestType.html#Glitch9_AIDevKit_OpenAI_ActionRequestType_SubmitToolOutputs">SubmitToolOutputs</a>,
+      <section><p>When a run has the status: <a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStatus.html#Glitch9_AIDevKit_OpenAI_RunStatus_RequiresAction">RequiresAction</a> and <a class="xref" href="Glitch9.AIDevKit.OpenAI.RequiredAction.html#Glitch9_AIDevKit_OpenAI_RequiredAction_Type">Type</a> is <a class="xref" href="Glitch9.AIDevKit.OpenAI.RequiredAction.html#Glitch9_AIDevKit_OpenAI_RequiredAction_SubmitToolOutputs">SubmitToolOutputs</a>,
 this endpoint can be used to submit the outputs from the tool calls once they're all completed.</p>
 <p>All outputs must be submitted in a single request.</p>
 </section>
@@ -361,16 +357,29 @@ Use this to control the intial context window of the run.</p>
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.WordObject.html">WordObject</a></h4>
       <section></section>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.IAssistantEventReceiver.html">IAssistantEventReceiver</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.IRequiredActionListener.html">IRequiredActionListener</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.IRunEventReceiver.html">IRunEventReceiver</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.IThreadEventReceiver.html">IThreadEventReceiver</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.IThreadMessageEventReceiver.html">IThreadMessageEventReceiver</a></h4>
+      <section></section>
     <h3 id="enums">
 Enums
 </h3>
-      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.ActionRequestType.html">ActionRequestType</a></h4>
-      <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.CodeInterpreterOutputType.html">CodeInterpreterOutputType</a></h4>
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.EncodingFormat.html">EncodingFormat</a></h4>
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.FineTuningJobStatus.html">FineTuningJobStatus</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.RequiredActionType.html">RequiredActionType</a></h4>
       <section></section>
       <h4><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunStatus.html">RunStatus</a></h4>
       <section><p>Enum representing the various statuses a Run can have during its lifecycle.</p>

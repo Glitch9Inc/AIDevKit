@@ -95,29 +95,29 @@ The Fine-tuning API only supports .jsonl files.</p>
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">RequestBody</span></div>
-    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.ModelRequest.html">ModelRequest</a></div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.AIRequest.html">AIRequest</a></div>
     <div class="level3"><span class="xref">FileUploadRequest</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model">ModelRequest.Model</a>
+      <a class="xref" href="Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Model">AIRequest.Model</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N">ModelRequest.N</a>
+      <a class="xref" href="Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_N">AIRequest.N</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata">ModelRequest.Metadata</a>
+      <a class="xref" href="Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Metadata">AIRequest.Metadata</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User">ModelRequest.User</a>
+      <a class="xref" href="Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_User">AIRequest.User</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_OpenAI_FileUploadRequest_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FileUploadRequest : ModelRequest</code></pre>
+    <pre><code class="lang-csharp hljs">public class FileUploadRequest : AIRequest</code></pre>
   </div>
   <h5 id="Glitch9_AIDevKit_OpenAI_FileUploadRequest_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>POST <a href="https://api.openai.com/v1/files">https://api.openai.com/v1/files</a></p>
@@ -133,7 +133,7 @@ The Fine-tuning API only supports .jsonl files.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FormFile File { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IFile File { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -145,7 +145,7 @@ The Fine-tuning API only supports .jsonl files.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">FormFile</span></td>
+        <td><span class="xref">IFile</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -161,7 +161,7 @@ This allows us to validate the format of the uploaded file is correct for fine-t
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Purpose { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public UploadPurpose Purpose { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -173,7 +173,7 @@ This allows us to validate the format of the uploaded file is correct for fine-t
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.UploadPurpose.html">UploadPurpose</a></td>
         <td></td>
       </tr>
     </tbody>

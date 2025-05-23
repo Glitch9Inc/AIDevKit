@@ -89,24 +89,28 @@
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">FunctionManager</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.AIDevKit.Components.IFunctionManager.html">IFunctionManager</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Components.html">Components</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_Components_FunctionManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FunctionManager : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class FunctionManager : MonoBehaviour, IFunctionManager</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
 
 
-  <a id="Glitch9_AIDevKit_Components_FunctionManager_Functions_" data-uid="Glitch9.AIDevKit.Components.FunctionManager.Functions*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_FunctionManager_Functions" data-uid="Glitch9.AIDevKit.Components.FunctionManager.Functions">Functions</h4>
+  <a id="Glitch9_AIDevKit_Components_FunctionManager_IsEmpty_" data-uid="Glitch9.AIDevKit.Components.FunctionManager.IsEmpty*"></a>
+  <h4 id="Glitch9_AIDevKit_Components_FunctionManager_IsEmpty" data-uid="Glitch9.AIDevKit.Components.FunctionManager.IsEmpty">IsEmpty</h4>
   <div class="markdown level1 summary"><p>List of functions registered in this manager.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;FunctionReference&gt; Functions { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -118,7 +122,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Components.FunctionReference.html">FunctionReference</a>&gt;</td>
+        <td><span class="xref">bool</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -127,14 +131,14 @@
 </h3>
 
 
-  <a id="Glitch9_AIDevKit_Components_FunctionManager_CallFunction_" data-uid="Glitch9.AIDevKit.Components.FunctionManager.CallFunction*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_FunctionManager_CallFunction_System_String_System_String_" data-uid="Glitch9.AIDevKit.Components.FunctionManager.CallFunction(System.String,System.String)">CallFunction(string, string)</h4>
-  <div class="markdown level1 summary"><p>Dynamically calls a registered method by name with JSON-serialized arguments.</p>
+  <a id="Glitch9_AIDevKit_Components_FunctionManager_ExecuteFunction_" data-uid="Glitch9.AIDevKit.Components.FunctionManager.ExecuteFunction*"></a>
+  <h4 id="Glitch9_AIDevKit_Components_FunctionManager_ExecuteFunction_System_String_System_String_" data-uid="Glitch9.AIDevKit.Components.FunctionManager.ExecuteFunction(System.String,System.String)">ExecuteFunction(string, string)</h4>
+  <div class="markdown level1 summary"><p>Invokes a function by name with JSON-serialized arguments.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CallFunction(string methodName, string jsonArguments)</code></pre>
+    <pre><code class="lang-csharp hljs">public JToken ExecuteFunction(string methodName, string jsonArguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -149,27 +153,40 @@
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">methodName</span></td>
-        <td><p>The name of the method to invoke.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">jsonArguments</span></td>
-        <td><p>The arguments as a JSON string.</p>
-</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JToken</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
 
 
-  <a id="Glitch9_AIDevKit_Components_FunctionManager_GetFunctions_" data-uid="Glitch9.AIDevKit.Components.FunctionManager.GetFunctions*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_FunctionManager_GetFunctions" data-uid="Glitch9.AIDevKit.Components.FunctionManager.GetFunctions">GetFunctions()</h4>
-  <div class="markdown level1 summary"><p>Converts the registered functions into FunctionDeclaration objects with JSON schema info.</p>
+  <a id="Glitch9_AIDevKit_Components_FunctionManager_GetFunctionDeclarations_" data-uid="Glitch9.AIDevKit.Components.FunctionManager.GetFunctionDeclarations*"></a>
+  <h4 id="Glitch9_AIDevKit_Components_FunctionManager_GetFunctionDeclarations" data-uid="Glitch9.AIDevKit.Components.FunctionManager.GetFunctionDeclarations">GetFunctionDeclarations()</h4>
+  <div class="markdown level1 summary"><p>Retrieves function declarations for AI function calling.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FunctionDeclaration[] GetFunctions()</code></pre>
+    <pre><code class="lang-csharp hljs">public FunctionDeclaration[] GetFunctionDeclarations()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -182,14 +199,55 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Glitch9.AIDevKit.FunctionDeclaration.html">FunctionDeclaration</a>[]</td>
-        <td><p>Array of FunctionDeclaration containing metadata and parameters.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
+
+
+  <a id="Glitch9_AIDevKit_Components_FunctionManager_HasFunction_" data-uid="Glitch9.AIDevKit.Components.FunctionManager.HasFunction*"></a>
+  <h4 id="Glitch9_AIDevKit_Components_FunctionManager_HasFunction_System_String_" data-uid="Glitch9.AIDevKit.Components.FunctionManager.HasFunction(System.String)">HasFunction(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFunction(string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.FunctionExtensions.html#Glitch9_AIDevKit_Google_FunctionExtensions_GetFunctionLibrary_Glitch9_AIDevKit_Components_FunctionManager_">FunctionExtensions.GetFunctionLibrary(FunctionManager)</a>
+      <a class="xref" href="Glitch9.AIDevKit.Components.IFunctionManager.html">IFunctionManager</a>
   </div>
 
 </article>

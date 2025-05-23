@@ -112,33 +112,6 @@ This FunctionDeclaration is a representation of a block of code that can be used
 
 
   <a id="Glitch9_AIDevKit_FunctionDeclaration__ctor_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_FunctionDeclaration__ctor_Glitch9_AIDevKit_IFunctionDelegate_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.#ctor(Glitch9.AIDevKit.IFunctionDelegate)">FunctionDeclaration(IFunctionDelegate)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FunctionDeclaration(IFunctionDelegate functionDelegate)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.IFunctionDelegate.html">IFunctionDelegate</a></td>
-        <td><span class="parametername">functionDelegate</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_FunctionDeclaration__ctor_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.#ctor*"></a>
   <h4 id="Glitch9_AIDevKit_FunctionDeclaration__ctor_System_String_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.#ctor(System.String)">FunctionDeclaration(string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -166,12 +139,12 @@ This FunctionDeclaration is a representation of a block of code that can be used
 
 
   <a id="Glitch9_AIDevKit_FunctionDeclaration__ctor_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_FunctionDeclaration__ctor_System_Type_System_String_System_String_Glitch9_AIDevKit_IFunctionDelegate_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.#ctor(System.Type,System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)">FunctionDeclaration(Type, string, string, IFunctionDelegate)</h4>
+  <h4 id="Glitch9_AIDevKit_FunctionDeclaration__ctor_System_Type_System_String_System_String_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.#ctor(System.Type,System.String,System.String)">FunctionDeclaration(Type, string, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FunctionDeclaration(Type type, string name, string description = null, IFunctionDelegate functionDelegate = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public FunctionDeclaration(Type type, string name, string description = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -196,11 +169,6 @@ This FunctionDeclaration is a representation of a block of code that can be used
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">description</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.IFunctionDelegate.html">IFunctionDelegate</a></td>
-        <td><span class="parametername">functionDelegate</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -235,33 +203,6 @@ This FunctionDeclaration is a representation of a block of code that can be used
   </table>
 
 
-  <a id="Glitch9_AIDevKit_FunctionDeclaration_Delegate_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.Delegate*"></a>
-  <h4 id="Glitch9_AIDevKit_FunctionDeclaration_Delegate" data-uid="Glitch9.AIDevKit.FunctionDeclaration.Delegate">Delegate</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the delegate that will execute the function.
-This property is ignored during JSON serialization.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IFunctionDelegate Delegate { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.IFunctionDelegate.html">IFunctionDelegate</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
   <a id="Glitch9_AIDevKit_FunctionDeclaration_Description_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.Description*"></a>
   <h4 id="Glitch9_AIDevKit_FunctionDeclaration_Description" data-uid="Glitch9.AIDevKit.FunctionDeclaration.Description">Description</h4>
   <div class="markdown level1 summary"><p>Required.
@@ -283,31 +224,6 @@ A brief description of the function.</p>
     <tbody>
       <tr>
         <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_FunctionDeclaration_IsCallable_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.IsCallable*"></a>
-  <h4 id="Glitch9_AIDevKit_FunctionDeclaration_IsCallable" data-uid="Glitch9.AIDevKit.FunctionDeclaration.IsCallable">IsCallable</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsCallable { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -403,13 +319,13 @@ The Schema defines the type used for the response value of the function.</p>
 </h3>
 
 
-  <a id="Glitch9_AIDevKit_FunctionDeclaration_Create_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.Create*"></a>
-  <h4 id="Glitch9_AIDevKit_FunctionDeclaration_Create__1_System_String_System_String_Glitch9_AIDevKit_IFunctionDelegate_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.Create``1(System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)">Create&lt;T&gt;(string, string, IFunctionDelegate)</h4>
+  <a id="Glitch9_AIDevKit_FunctionDeclaration_FromSchema_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.FromSchema*"></a>
+  <h4 id="Glitch9_AIDevKit_FunctionDeclaration_FromSchema__1_System_String_System_String_" data-uid="Glitch9.AIDevKit.FunctionDeclaration.FromSchema``1(System.String,System.String)">FromSchema&lt;T&gt;(string, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static FunctionDeclaration Create&lt;T&gt;(string name, string description = null, IFunctionDelegate functionDelegate = null) where T : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static FunctionDeclaration FromSchema&lt;T&gt;(string name, string description = null) where T : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -429,11 +345,6 @@ The Schema defines the type used for the response value of the function.</p>
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">description</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.IFunctionDelegate.html">IFunctionDelegate</a></td>
-        <td><span class="parametername">functionDelegate</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -468,10 +379,6 @@ The Schema defines the type used for the response value of the function.</p>
       </tr>
     </tbody>
   </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.FunctionExtensions.html#Glitch9_AIDevKit_Google_FunctionExtensions_Invoke_Glitch9_AIDevKit_FunctionDeclaration_Glitch9_AIDevKit_FunctionCall_">FunctionExtensions.Invoke(FunctionDeclaration, FunctionCall)</a>
-  </div>
 
 </article>
           </div>

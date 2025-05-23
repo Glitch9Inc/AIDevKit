@@ -117,7 +117,7 @@ public class PromptRecord</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AIProvider Api { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Api Api { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -129,7 +129,7 @@ public class PromptRecord</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.AIProvider.html">AIProvider</a></td>
+        <td><a class="xref" href="Glitch9.AIDevKit.Api.html">Api</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -187,13 +187,13 @@ public class PromptRecord</code></pre>
   </table>
 
 
-  <a id="Glitch9_AIDevKit_PromptRecord_InputContents_" data-uid="Glitch9.AIDevKit.PromptRecord.InputContents*"></a>
-  <h4 id="Glitch9_AIDevKit_PromptRecord_InputContents" data-uid="Glitch9.AIDevKit.PromptRecord.InputContents">InputContents</h4>
+  <a id="Glitch9_AIDevKit_PromptRecord_InputFiles_" data-uid="Glitch9.AIDevKit.PromptRecord.InputFiles*"></a>
+  <h4 id="Glitch9_AIDevKit_PromptRecord_InputFiles" data-uid="Glitch9.AIDevKit.PromptRecord.InputFiles">InputFiles</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ISerializedContent&gt; InputContents { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;IFile&gt; InputFiles { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -205,7 +205,7 @@ public class PromptRecord</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ISerializedContent.html">ISerializedContent</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">IFile</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -313,13 +313,13 @@ public class PromptRecord</code></pre>
   </table>
 
 
-  <a id="Glitch9_AIDevKit_PromptRecord_OutputContents_" data-uid="Glitch9.AIDevKit.PromptRecord.OutputContents*"></a>
-  <h4 id="Glitch9_AIDevKit_PromptRecord_OutputContents" data-uid="Glitch9.AIDevKit.PromptRecord.OutputContents">OutputContents</h4>
+  <a id="Glitch9_AIDevKit_PromptRecord_OutputFiles_" data-uid="Glitch9.AIDevKit.PromptRecord.OutputFiles*"></a>
+  <h4 id="Glitch9_AIDevKit_PromptRecord_OutputFiles" data-uid="Glitch9.AIDevKit.PromptRecord.OutputFiles">OutputFiles</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ISerializedContent&gt; OutputContents { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;IFile&gt; OutputFiles { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -331,7 +331,7 @@ public class PromptRecord</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ISerializedContent.html">ISerializedContent</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">IFile</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -488,90 +488,6 @@ public class PromptRecord</code></pre>
   </table>
   <h3 id="methods">Methods
 </h3>
-
-
-  <a id="Glitch9_AIDevKit_PromptRecord_AddInputAudio_" data-uid="Glitch9.AIDevKit.PromptRecord.AddInputAudio*"></a>
-  <h4 id="Glitch9_AIDevKit_PromptRecord_AddInputAudio_Glitch9_IO_Files_UniAudioFile___" data-uid="Glitch9.AIDevKit.PromptRecord.AddInputAudio(Glitch9.IO.Files.UniAudioFile[])">AddInputAudio(params UniAudioFile[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PromptRecord AddInputAudio(params UniAudioFile[] audios)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniAudioFile</span>[]</td>
-        <td><span class="parametername">audios</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.PromptRecord.html">PromptRecord</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_PromptRecord_AddInputImages_" data-uid="Glitch9.AIDevKit.PromptRecord.AddInputImages*"></a>
-  <h4 id="Glitch9_AIDevKit_PromptRecord_AddInputImages_Glitch9_IO_Files_UniImageFile___" data-uid="Glitch9.AIDevKit.PromptRecord.AddInputImages(Glitch9.IO.Files.UniImageFile[])">AddInputImages(params UniImageFile[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PromptRecord AddInputImages(params UniImageFile[] images)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniImageFile</span>[]</td>
-        <td><span class="parametername">images</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.PromptRecord.html">PromptRecord</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
   <a id="Glitch9_AIDevKit_PromptRecord_Equals_" data-uid="Glitch9.AIDevKit.PromptRecord.Equals*"></a>

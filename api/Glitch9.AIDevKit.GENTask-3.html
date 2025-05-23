@@ -89,10 +89,10 @@ Supports text, image, and audio prompts with fluent configuration methods.</p>
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">GENTask&lt;TSelf, TPrompt, TOutput&gt;</span></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.GENChatTask.html">GENChatTask</a></div>
       <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GENAudioInputTask-2.html">GENAudioInputTask&lt;TSelf, TOuput&gt;</a></div>
       <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GENAudioOutputTask-2.html">GENAudioOutputTask&lt;TSelf, TPrompt&gt;</a></div>
-      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GENChatTask.html">GENChatTask</a></div>
-      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GENCompletionTask-3.html">GENCompletionTask&lt;TSelf, TPrompt, TOutput&gt;</a></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GENCompletionTask-2.html">GENCompletionTask&lt;TSelf, TOutput&gt;</a></div>
       <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GENImageTask.html">GENImageTask</a></div>
       <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GENImageVariationTask.html">GENImageVariationTask</a></div>
       <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GENInpaintTask.html">GENInpaintTask</a></div>
@@ -147,12 +147,12 @@ Supports text, image, and audio prompts with fluent configuration methods.</p>
 
 
   <a id="Glitch9_AIDevKit_GENTask_3__ctor_" data-uid="Glitch9.AIDevKit.GENTask`3.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_GENTask_3__ctor__1_UnityEngine_Object_" data-uid="Glitch9.AIDevKit.GENTask`3.#ctor(`1,UnityEngine.Object)">GENTask(TPrompt, Object)</h4>
+  <h4 id="Glitch9_AIDevKit_GENTask_3__ctor__1_" data-uid="Glitch9.AIDevKit.GENTask`3.#ctor(`1)">GENTask(TPrompt)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected GENTask(TPrompt prompt, UnityEngine.Object target = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected GENTask(TPrompt prompt)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -167,11 +167,6 @@ Supports text, image, and audio prompts with fluent configuration methods.</p>
       <tr>
         <td><span class="xref">TPrompt</span></td>
         <td><span class="parametername">prompt</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Object</span></td>
-        <td><span class="parametername">target</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -336,12 +331,11 @@ Supports text, image, and audio prompts with fluent configuration methods.</p>
 
   <a id="Glitch9_AIDevKit_GENTask_3_ExecuteAsync_" data-uid="Glitch9.AIDevKit.GENTask`3.ExecuteAsync*"></a>
   <h4 id="Glitch9_AIDevKit_GENTask_3_ExecuteAsync" data-uid="Glitch9.AIDevKit.GENTask`3.ExecuteAsync">ExecuteAsync()</h4>
-  <div class="markdown level1 summary"><p>Executes the task and returns the generated result.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract UniTask&lt;TOutput&gt; ExecuteAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TOutput&gt; ExecuteAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -360,13 +354,79 @@ Supports text, image, and audio prompts with fluent configuration methods.</p>
   </table>
 
 
-  <a id="Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_" data-uid="Glitch9.AIDevKit.GENTask`3.SetAudioToTarget*"></a>
-  <h4 id="Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_" data-uid="Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)">SetAudioToTarget(GeneratedAudio)</h4>
+  <a id="Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL_" data-uid="Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL*"></a>
+  <h4 id="Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL" data-uid="Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL">ExecuteAsyncINTERNAL()</h4>
+  <div class="markdown level1 summary"><p>Executes the task and returns the generated result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract UniTask&lt;TOutput&gt; ExecuteAsyncINTERNAL()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TOutput&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENTask_3_ExecuteAsync_" data-uid="Glitch9.AIDevKit.GENTask`3.ExecuteAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1" data-uid="Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1">ExecuteAsync&lt;T&gt;()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void SetAudioToTarget(GeneratedAudio audio)</code></pre>
+    <pre><code class="lang-csharp hljs">public UniTask&lt;T&gt; ExecuteAsync&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENTask_3_SetCancellationToken_" data-uid="Glitch9.AIDevKit.GENTask`3.SetCancellationToken*"></a>
+  <h4 id="Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)">SetCancellationToken(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetCancellationToken(CancellationToken token)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -379,8 +439,23 @@ Supports text, image, and audio prompts with fluent configuration methods.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.GeneratedAudio.html">GeneratedAudio</a></td>
-        <td><span class="parametername">audio</span></td>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -466,33 +541,6 @@ Supports text, image, and audio prompts with fluent configuration methods.</p>
     <tbody>
       <tr>
         <td><span class="xref">TSelf</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_GENTask_3_SetImageToTarget_" data-uid="Glitch9.AIDevKit.GENTask`3.SetImageToTarget*"></a>
-  <h4 id="Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_" data-uid="Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)">SetImageToTarget(GeneratedImage)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void SetImageToTarget(GeneratedImage image)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.GeneratedImage.html">GeneratedImage</a></td>
-        <td><span class="parametername">image</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -656,33 +704,6 @@ This is the path where the generated content(s) will be saved.</p>
     <tbody>
       <tr>
         <td><span class="xref">TSelf</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_GENTask_3_SetTextToTarget_" data-uid="Glitch9.AIDevKit.GENTask`3.SetTextToTarget*"></a>
-  <h4 id="Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_" data-uid="Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)">SetTextToTarget(GeneratedText)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void SetTextToTarget(GeneratedText text)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.GeneratedText.html">GeneratedText</a></td>
-        <td><span class="parametername">text</span></td>
         <td></td>
       </tr>
     </tbody>
