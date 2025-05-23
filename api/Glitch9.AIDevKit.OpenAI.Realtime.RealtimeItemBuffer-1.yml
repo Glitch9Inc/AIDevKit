@@ -6,9 +6,9 @@ items:
   parent: Glitch9.AIDevKit.OpenAI.Realtime
   children:
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.#ctor(System.String,System.Action{`0},System.Action{`0})
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDeltaWithTempIndex(System.String,System.Nullable{System.Int32},`0)
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.CompleteDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDeltaWithTempIndex(System.String,System.Nullable{System.Int32},`0)
   langs:
   - csharp
   - vb
@@ -18,7 +18,7 @@ items:
   type: Class
   source:
     id: RealtimeItemBuffer
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeItemBuffer.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/Models/RealtimeItemBuffer.cs
     startLine: 5
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
@@ -44,7 +44,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeItemBuffer.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/Models/RealtimeItemBuffer.cs
     startLine: 26
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
@@ -61,24 +61,24 @@ items:
   nameWithType.vb: RealtimeItemBuffer(Of T).New(String, Action(Of T), Action(Of T))
   fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer(Of T).New(String, System.Action(Of T), System.Action(Of T))
   name.vb: New(String, Action(Of T), Action(Of T))
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDeltaWithTempIndex(System.String,System.Nullable{System.Int32},`0)
-  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDeltaWithTempIndex(System.String,System.Nullable{System.Int32},`0)
-  id: ProcessDeltaWithTempIndex(System.String,System.Nullable{System.Int32},`0)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDeltaWithTempIndex(System.String,System.Nullable{System.Int32},`0)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDeltaWithTempIndex(System.String,System.Nullable{System.Int32},`0)
+  id: AppendDeltaWithTempIndex(System.String,System.Nullable{System.Int32},`0)
   parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1
   langs:
   - csharp
   - vb
-  name: ProcessDeltaWithTempIndex(string, int?, T)
-  nameWithType: RealtimeItemBuffer<T>.ProcessDeltaWithTempIndex(string, int?, T)
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer<T>.ProcessDeltaWithTempIndex(string, int?, T)
+  name: AppendDeltaWithTempIndex(string, int?, T)
+  nameWithType: RealtimeItemBuffer<T>.AppendDeltaWithTempIndex(string, int?, T)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer<T>.AppendDeltaWithTempIndex(string, int?, T)
   type: Method
   source:
-    id: ProcessDeltaWithTempIndex
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeItemBuffer.cs
+    id: AppendDeltaWithTempIndex
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/Models/RealtimeItemBuffer.cs
     startLine: 37
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
-    content: public void ProcessDeltaWithTempIndex(string itemId, int? itemIndex, T content)
+    content: public void AppendDeltaWithTempIndex(string itemId, int? itemIndex, T content)
     parameters:
     - id: itemId
       type: System.String
@@ -86,29 +86,29 @@ items:
       type: System.Nullable{System.Int32}
     - id: content
       type: '{T}'
-    content.vb: Public Sub ProcessDeltaWithTempIndex(itemId As String, itemIndex As Integer?, content As T)
-  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDeltaWithTempIndex*
-  nameWithType.vb: RealtimeItemBuffer(Of T).ProcessDeltaWithTempIndex(String, Integer?, T)
-  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer(Of T).ProcessDeltaWithTempIndex(String, Integer?, T)
-  name.vb: ProcessDeltaWithTempIndex(String, Integer?, T)
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
-  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
-  id: ProcessDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
+    content.vb: Public Sub AppendDeltaWithTempIndex(itemId As String, itemIndex As Integer?, content As T)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDeltaWithTempIndex*
+  nameWithType.vb: RealtimeItemBuffer(Of T).AppendDeltaWithTempIndex(String, Integer?, T)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer(Of T).AppendDeltaWithTempIndex(String, Integer?, T)
+  name.vb: AppendDeltaWithTempIndex(String, Integer?, T)
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
+  id: AppendDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
   parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1
   langs:
   - csharp
   - vb
-  name: ProcessDelta(string, int?, int?, T)
-  nameWithType: RealtimeItemBuffer<T>.ProcessDelta(string, int?, int?, T)
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer<T>.ProcessDelta(string, int?, int?, T)
+  name: AppendDelta(string, int?, int?, T)
+  nameWithType: RealtimeItemBuffer<T>.AppendDelta(string, int?, int?, T)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer<T>.AppendDelta(string, int?, int?, T)
   type: Method
   source:
-    id: ProcessDelta
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeItemBuffer.cs
+    id: AppendDelta
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/Models/RealtimeItemBuffer.cs
     startLine: 47
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
-    content: public void ProcessDelta(string itemId, int? itemIndex, int? contentIndex, T content)
+    content: public void AppendDelta(string itemId, int? itemIndex, int? contentIndex, T content)
     parameters:
     - id: itemId
       type: System.String
@@ -118,11 +118,11 @@ items:
       type: System.Nullable{System.Int32}
     - id: content
       type: '{T}'
-    content.vb: Public Sub ProcessDelta(itemId As String, itemIndex As Integer?, contentIndex As Integer?, content As T)
-  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDelta*
-  nameWithType.vb: RealtimeItemBuffer(Of T).ProcessDelta(String, Integer?, Integer?, T)
-  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer(Of T).ProcessDelta(String, Integer?, Integer?, T)
-  name.vb: ProcessDelta(String, Integer?, Integer?, T)
+    content.vb: Public Sub AppendDelta(itemId As String, itemIndex As Integer?, contentIndex As Integer?, content As T)
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDelta*
+  nameWithType.vb: RealtimeItemBuffer(Of T).AppendDelta(String, Integer?, Integer?, T)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer(Of T).AppendDelta(String, Integer?, Integer?, T)
+  name.vb: AppendDelta(String, Integer?, Integer?, T)
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.CompleteDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
   commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.CompleteDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
   id: CompleteDelta(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},`0)
@@ -136,7 +136,7 @@ items:
   type: Method
   source:
     id: CompleteDelta
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeItemBuffer.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/Models/RealtimeItemBuffer.cs
     startLine: 53
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
@@ -281,14 +281,14 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDeltaWithTempIndex*
-  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDeltaWithTempIndex
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer-1.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemBuffer_1_ProcessDeltaWithTempIndex_System_String_System_Nullable_System_Int32___0_
-  name: ProcessDeltaWithTempIndex
-  nameWithType: RealtimeItemBuffer<T>.ProcessDeltaWithTempIndex
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer<T>.ProcessDeltaWithTempIndex
-  nameWithType.vb: RealtimeItemBuffer(Of T).ProcessDeltaWithTempIndex
-  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer(Of T).ProcessDeltaWithTempIndex
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDeltaWithTempIndex*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDeltaWithTempIndex
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer-1.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemBuffer_1_AppendDeltaWithTempIndex_System_String_System_Nullable_System_Int32___0_
+  name: AppendDeltaWithTempIndex
+  nameWithType: RealtimeItemBuffer<T>.AppendDeltaWithTempIndex
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer<T>.AppendDeltaWithTempIndex
+  nameWithType.vb: RealtimeItemBuffer(Of T).AppendDeltaWithTempIndex
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer(Of T).AppendDeltaWithTempIndex
 - uid: System.Nullable{System.Int32}
   commentId: T:System.Nullable{System.Int32}
   parent: System
@@ -344,14 +344,14 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDelta*
-  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.ProcessDelta
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer-1.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemBuffer_1_ProcessDelta_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32___0_
-  name: ProcessDelta
-  nameWithType: RealtimeItemBuffer<T>.ProcessDelta
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer<T>.ProcessDelta
-  nameWithType.vb: RealtimeItemBuffer(Of T).ProcessDelta
-  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer(Of T).ProcessDelta
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDelta*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.AppendDelta
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer-1.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemBuffer_1_AppendDelta_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32___0_
+  name: AppendDelta
+  nameWithType: RealtimeItemBuffer<T>.AppendDelta
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer<T>.AppendDelta
+  nameWithType.vb: RealtimeItemBuffer(Of T).AppendDelta
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer(Of T).AppendDelta
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.CompleteDelta*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1.CompleteDelta
   href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer-1.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemBuffer_1_CompleteDelta_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32___0_

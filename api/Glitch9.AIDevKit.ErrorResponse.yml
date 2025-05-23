@@ -5,9 +5,9 @@ items:
   id: ErrorResponse
   parent: Glitch9.AIDevKit
   children:
+  - Glitch9.AIDevKit.ErrorResponse.#ctor
   - Glitch9.AIDevKit.ErrorResponse.Code
   - Glitch9.AIDevKit.ErrorResponse.EventId
-  - Glitch9.AIDevKit.ErrorResponse.GetMessage
   - Glitch9.AIDevKit.ErrorResponse.Message
   - Glitch9.AIDevKit.ErrorResponse.Param
   - Glitch9.AIDevKit.ErrorResponse.Status
@@ -206,28 +206,29 @@ items:
     content.vb: Public Overrides Function ToString() As String
   overridden: System.Object.ToString
   overload: Glitch9.AIDevKit.ErrorResponse.ToString*
-- uid: Glitch9.AIDevKit.ErrorResponse.GetMessage
-  commentId: M:Glitch9.AIDevKit.ErrorResponse.GetMessage
-  id: GetMessage
+- uid: Glitch9.AIDevKit.ErrorResponse.#ctor
+  commentId: M:Glitch9.AIDevKit.ErrorResponse.#ctor
+  id: '#ctor'
   parent: Glitch9.AIDevKit.ErrorResponse
   langs:
   - csharp
   - vb
-  name: GetMessage()
-  nameWithType: ErrorResponse.GetMessage()
-  fullName: Glitch9.AIDevKit.ErrorResponse.GetMessage()
-  type: Method
+  name: ErrorResponse()
+  nameWithType: ErrorResponse.ErrorResponse()
+  fullName: Glitch9.AIDevKit.ErrorResponse.ErrorResponse()
+  type: Constructor
   source:
-    id: GetMessage
+    id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Common/ErrorResponse.cs
-    startLine: 51
+    startLine: 58
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public string GetMessage()
-    return:
-      type: System.String
-    content.vb: Public Function GetMessage() As String
-  overload: Glitch9.AIDevKit.ErrorResponse.GetMessage*
+    content: public ErrorResponse()
+    content.vb: Public Sub New()
+  overload: Glitch9.AIDevKit.ErrorResponse.#ctor*
+  nameWithType.vb: ErrorResponse.New()
+  fullName.vb: Glitch9.AIDevKit.ErrorResponse.New()
+  name.vb: New()
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -341,9 +342,12 @@ references:
   name: ToString
   nameWithType: ErrorResponse.ToString
   fullName: Glitch9.AIDevKit.ErrorResponse.ToString
-- uid: Glitch9.AIDevKit.ErrorResponse.GetMessage*
-  commentId: Overload:Glitch9.AIDevKit.ErrorResponse.GetMessage
-  href: Glitch9.AIDevKit.ErrorResponse.html#Glitch9_AIDevKit_ErrorResponse_GetMessage
-  name: GetMessage
-  nameWithType: ErrorResponse.GetMessage
-  fullName: Glitch9.AIDevKit.ErrorResponse.GetMessage
+- uid: Glitch9.AIDevKit.ErrorResponse.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.ErrorResponse.#ctor
+  href: Glitch9.AIDevKit.ErrorResponse.html#Glitch9_AIDevKit_ErrorResponse__ctor
+  name: ErrorResponse
+  nameWithType: ErrorResponse.ErrorResponse
+  fullName: Glitch9.AIDevKit.ErrorResponse.ErrorResponse
+  nameWithType.vb: ErrorResponse.New
+  fullName.vb: Glitch9.AIDevKit.ErrorResponse.New
+  name.vb: New

@@ -10,11 +10,17 @@ items:
   - uid: Glitch9.AIDevKit.AIDevKitSettings
     name: AIDevKitSettings
     type: Class
-  - uid: Glitch9.AIDevKit.AIProvider
-    name: AIProvider
-    type: Enum
   - uid: Glitch9.AIDevKit.AIProviders
     name: AIProviders
+    type: Class
+  - uid: Glitch9.AIDevKit.AIRequest
+    name: AIRequest
+    type: Class
+  - uid: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2
+    name: AIRequest.ModelRequestBuilder<TBuilder, TRequest>
+    type: Class
+  - uid: Glitch9.AIDevKit.AIResponse
+    name: AIResponse
     type: Class
   - uid: Glitch9.AIDevKit.Annotation
     name: Annotation
@@ -25,14 +31,17 @@ items:
   - uid: Glitch9.AIDevKit.AnnotationType
     name: AnnotationType
     type: Enum
+  - uid: Glitch9.AIDevKit.Api
+    name: Api
+    type: Enum
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    type: Class
   - uid: Glitch9.AIDevKit.ApiKey
     name: ApiKey
     type: Class
   - uid: Glitch9.AIDevKit.ApproximateLocation
     name: ApproximateLocation
-    type: Class
-  - uid: Glitch9.AIDevKit.AssistantMessage
-    name: AssistantMessage
     type: Class
   - uid: Glitch9.AIDevKit.AudioBase64ContentPart
     name: AudioBase64ContentPart
@@ -46,8 +55,8 @@ items:
   - uid: Glitch9.AIDevKit.BlockedPromptException
     name: BlockedPromptException
     type: Class
-  - uid: Glitch9.AIDevKit.BrokenCompletionException
-    name: BrokenCompletionException
+  - uid: Glitch9.AIDevKit.BrokenResponseException
+    name: BrokenResponseException
     type: Class
   - uid: Glitch9.AIDevKit.ChatChoice
     name: ChatChoice
@@ -55,11 +64,20 @@ items:
   - uid: Glitch9.AIDevKit.ChatCompletion
     name: ChatCompletion
     type: Class
+  - uid: Glitch9.AIDevKit.ChatCompletionChunk
+    name: ChatCompletionChunk
+    type: Class
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     type: Class
   - uid: Glitch9.AIDevKit.ChatCompletionRequest.Builder
     name: ChatCompletionRequest.Builder
+    type: Class
+  - uid: Glitch9.AIDevKit.ChatCompletionStreamHandler
+    name: ChatCompletionStreamHandler
+    type: Class
+  - uid: Glitch9.AIDevKit.ChatCompletionStreamReceiver
+    name: ChatCompletionStreamReceiver
     type: Class
   - uid: Glitch9.AIDevKit.ChatDelta
     name: ChatDelta
@@ -70,15 +88,6 @@ items:
   - uid: Glitch9.AIDevKit.ChatRole
     name: ChatRole
     type: Enum
-  - uid: Glitch9.AIDevKit.ChatSession
-    name: ChatSession
-    type: Class
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    type: Class
-  - uid: Glitch9.AIDevKit.ChatSummarizer
-    name: ChatSummarizer
-    type: Class
   - uid: Glitch9.AIDevKit.CompletionRequest
     name: CompletionRequest
     type: Class
@@ -91,8 +100,8 @@ items:
   - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
     name: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>
     type: Class
-  - uid: Glitch9.AIDevKit.CompletionRequestConverter
-    name: CompletionRequestConverter
+  - uid: Glitch9.AIDevKit.CompletionRequestConverter`1
+    name: CompletionRequestConverter<TRequest>
     type: Class
   - uid: Glitch9.AIDevKit.CompletionResult`1
     name: CompletionResult<T>
@@ -112,6 +121,9 @@ items:
   - uid: Glitch9.AIDevKit.DeprecatedModelException
     name: DeprecatedModelException
     type: Class
+  - uid: Glitch9.AIDevKit.EmptyPromptException
+    name: EmptyPromptException
+    type: Class
   - uid: Glitch9.AIDevKit.EmptyResponseException
     name: EmptyResponseException
     type: Class
@@ -126,9 +138,6 @@ items:
     type: Class
   - uid: Glitch9.AIDevKit.FileContentPart
     name: FileContentPart
-    type: Class
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
     type: Class
   - uid: Glitch9.AIDevKit.FileIdContentPart
     name: FileIdContentPart
@@ -151,9 +160,6 @@ items:
   - uid: Glitch9.AIDevKit.FunctionDeclarationConverter
     name: FunctionDeclarationConverter
     type: Class
-  - uid: Glitch9.AIDevKit.FunctionDelegate`2
-    name: FunctionDelegate<TArgument, TResult>
-    type: Class
   - uid: Glitch9.AIDevKit.FunctionResponse
     name: FunctionResponse
     type: Class
@@ -166,14 +172,8 @@ items:
   - uid: Glitch9.AIDevKit.GENAudioOutputTask`2
     name: GENAudioOutputTask<TSelf, TPrompt>
     type: Class
-  - uid: Glitch9.AIDevKit.GENChatTask
-    name: GENChatTask
-    type: Class
-  - uid: Glitch9.AIDevKit.GENCompletionTask`3
-    name: GENCompletionTask<TSelf, TPrompt, TOutput>
-    type: Class
-  - uid: Glitch9.AIDevKit.GENContentTask
-    name: GENContentTask
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2
+    name: GENCompletionTask<TSelf, TOutput>
     type: Class
   - uid: Glitch9.AIDevKit.GENImageTask
     name: GENImageTask
@@ -187,8 +187,8 @@ items:
   - uid: Glitch9.AIDevKit.GENModerationTask
     name: GENModerationTask
     type: Class
-  - uid: Glitch9.AIDevKit.GENObjectTask`1
-    name: GENObjectTask<T>
+  - uid: Glitch9.AIDevKit.GENResponseTask
+    name: GENResponseTask
     type: Class
   - uid: Glitch9.AIDevKit.GENSequence
     name: GENSequence
@@ -199,14 +199,14 @@ items:
   - uid: Glitch9.AIDevKit.GENSpeechTask
     name: GENSpeechTask
     type: Class
+  - uid: Glitch9.AIDevKit.GENStructTask`1
+    name: GENStructTask<T>
+    type: Class
   - uid: Glitch9.AIDevKit.GENTaskExtensions
     name: GENTaskExtensions
     type: Class
   - uid: Glitch9.AIDevKit.GENTask`3
     name: GENTask<TSelf, TPrompt, TOutput>
-    type: Class
-  - uid: Glitch9.AIDevKit.GENTextTask
-    name: GENTextTask
     type: Class
   - uid: Glitch9.AIDevKit.GENTranscriptTask
     name: GENTranscriptTask
@@ -226,9 +226,6 @@ items:
   - uid: Glitch9.AIDevKit.GeneratedAudio
     name: GeneratedAudio
     type: Class
-  - uid: Glitch9.AIDevKit.GeneratedContent
-    name: GeneratedContent
-    type: Class
   - uid: Glitch9.AIDevKit.GeneratedImage
     name: GeneratedImage
     type: Class
@@ -237,9 +234,6 @@ items:
     type: Class
   - uid: Glitch9.AIDevKit.GeneratedResult`1
     name: GeneratedResult<T>
-    type: Class
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
     type: Class
   - uid: Glitch9.AIDevKit.GeneratedVideo
     name: GeneratedVideo
@@ -256,20 +250,32 @@ items:
   - uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1
     name: IAIDevKitAssetFilter<T>
     type: Interface
+  - uid: Glitch9.AIDevKit.IApiFile
+    name: IApiFile
+    type: Interface
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    type: Interface
   - uid: Glitch9.AIDevKit.IChatbot
     name: IChatbot
-    type: Interface
-  - uid: Glitch9.AIDevKit.IFunctionDelegate
-    name: IFunctionDelegate
     type: Interface
   - uid: Glitch9.AIDevKit.IGENTask
     name: IGENTask
     type: Interface
-  - uid: Glitch9.AIDevKit.IGenerated
-    name: IGenerated
+  - uid: Glitch9.AIDevKit.IGeneratedResult
+    name: IGeneratedResult
     type: Interface
-  - uid: Glitch9.AIDevKit.ISerializedContent
-    name: ISerializedContent
+  - uid: Glitch9.AIDevKit.IStreamingAudioEventReceiver
+    name: IStreamingAudioEventReceiver
+    type: Interface
+  - uid: Glitch9.AIDevKit.IStreamingTextEventReceiver
+    name: IStreamingTextEventReceiver
+    type: Interface
+  - uid: Glitch9.AIDevKit.IToolCallReceiver
+    name: IToolCallReceiver
+    type: Interface
+  - uid: Glitch9.AIDevKit.IWebSocketEventReceiver
+    name: IWebSocketEventReceiver
     type: Interface
   - uid: Glitch9.AIDevKit.ImageBase64ContentPart
     name: ImageBase64ContentPart
@@ -307,6 +313,15 @@ items:
   - uid: Glitch9.AIDevKit.InpaintPrompt
     name: InpaintPrompt
     type: Class
+  - uid: Glitch9.AIDevKit.InterruptedResponseException
+    name: InterruptedResponseException
+    type: Class
+  - uid: Glitch9.AIDevKit.InvalidEndpointException
+    name: InvalidEndpointException
+    type: Class
+  - uid: Glitch9.AIDevKit.InvalidServiceStatusException
+    name: InvalidServiceStatusException
+    type: Class
   - uid: Glitch9.AIDevKit.JsonSchemaFormat
     name: JsonSchemaFormat
     type: Class
@@ -325,15 +340,12 @@ items:
   - uid: Glitch9.AIDevKit.Model
     name: Model
     type: Class
-  - uid: Glitch9.AIDevKit.ModelCapability
-    name: ModelCapability
-    type: Enum
-  - uid: Glitch9.AIDevKit.ModelCapabilityExtensions
-    name: ModelCapabilityExtensions
-    type: Class
   - uid: Glitch9.AIDevKit.ModelFamily
     name: ModelFamily
     type: Class
+  - uid: Glitch9.AIDevKit.ModelFeature
+    name: ModelFeature
+    type: Enum
   - uid: Glitch9.AIDevKit.ModelFilter
     name: ModelFilter
     type: Class
@@ -355,23 +367,17 @@ items:
   - uid: Glitch9.AIDevKit.ModelPriceArrayExtensions
     name: ModelPriceArrayExtensions
     type: Class
-  - uid: Glitch9.AIDevKit.ModelRequest
-    name: ModelRequest
-    type: Class
-  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
-    name: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>
-    type: Class
-  - uid: Glitch9.AIDevKit.ModelResponse
-    name: ModelResponse
-    type: Class
   - uid: Glitch9.AIDevKit.ModerationOptions
     name: ModerationOptions
     type: Class
+  - uid: Glitch9.AIDevKit.MultiResponseStreamHandler
+    name: MultiResponseStreamHandler
+    type: Class
+  - uid: Glitch9.AIDevKit.MultiResponseStreamReceiver
+    name: MultiResponseStreamReceiver
+    type: Class
   - uid: Glitch9.AIDevKit.NotSupportedFeatureException
     name: NotSupportedFeatureException
-    type: Class
-  - uid: Glitch9.AIDevKit.NotSupportedGENTaskException
-    name: NotSupportedGENTaskException
     type: Class
   - uid: Glitch9.AIDevKit.OllamaModelOptionsConverter
     name: OllamaModelOptionsConverter
@@ -388,9 +394,6 @@ items:
   - uid: Glitch9.AIDevKit.ProjectContext.Platform
     name: ProjectContext.Platform
     type: Enum
-  - uid: Glitch9.AIDevKit.Prompt
-    name: Prompt
-    type: Class
   - uid: Glitch9.AIDevKit.PromptFeedback
     name: PromptFeedback
     type: Class
@@ -402,6 +405,9 @@ items:
     type: Class
   - uid: Glitch9.AIDevKit.PromptRecord
     name: PromptRecord
+    type: Class
+  - uid: Glitch9.AIDevKit.RateLimitExceededException
+    name: RateLimitExceededException
     type: Class
   - uid: Glitch9.AIDevKit.ReasoningEffort
     name: ReasoningEffort
@@ -418,6 +424,12 @@ items:
   - uid: Glitch9.AIDevKit.ResponseFormatExtensions
     name: ResponseFormatExtensions
     type: Class
+  - uid: Glitch9.AIDevKit.ResponseMessage
+    name: ResponseMessage
+    type: Class
+  - uid: Glitch9.AIDevKit.ResponseType
+    name: ResponseType
+    type: Enum
   - uid: Glitch9.AIDevKit.SafetyFeedback
     name: SafetyFeedback
     type: Class
@@ -430,35 +442,23 @@ items:
   - uid: Glitch9.AIDevKit.SearchContextSize
     name: SearchContextSize
     type: Enum
-  - uid: Glitch9.AIDevKit.SerializedAudioContent
-    name: SerializedAudioContent
+  - uid: Glitch9.AIDevKit.SingleResponseStreamHandler
+    name: SingleResponseStreamHandler
     type: Class
-  - uid: Glitch9.AIDevKit.SerializedContent`1
-    name: SerializedContent<T>
-    type: Class
-  - uid: Glitch9.AIDevKit.SerializedFileContent
-    name: SerializedFileContent
-    type: Class
-  - uid: Glitch9.AIDevKit.SerializedImageContent
-    name: SerializedImageContent
-    type: Class
-  - uid: Glitch9.AIDevKit.SerializedTextContent
-    name: SerializedTextContent
-    type: Class
-  - uid: Glitch9.AIDevKit.SerializedVideoContent
-    name: SerializedVideoContent
+  - uid: Glitch9.AIDevKit.SingleResponseStreamReceiver
+    name: SingleResponseStreamReceiver
     type: Class
   - uid: Glitch9.AIDevKit.SpeechOutputOptions
     name: SpeechOutputOptions
-    type: Class
-  - uid: Glitch9.AIDevKit.StopCompletionException
-    name: StopCompletionException
     type: Class
   - uid: Glitch9.AIDevKit.StopReason
     name: StopReason
     type: Enum
   - uid: Glitch9.AIDevKit.StreamOptions
     name: StreamOptions
+    type: Class
+  - uid: Glitch9.AIDevKit.StreamingTextEventReceiver
+    name: StreamingTextEventReceiver
     type: Class
   - uid: Glitch9.AIDevKit.StrictJsonSchema
     name: StrictJsonSchema
@@ -468,6 +468,9 @@ items:
     type: Class
   - uid: Glitch9.AIDevKit.StrictJsonSchemaConverter
     name: StrictJsonSchemaConverter
+    type: Class
+  - uid: Glitch9.AIDevKit.StructuredOutput`1
+    name: StructuredOutput<T>
     type: Class
   - uid: Glitch9.AIDevKit.SystemMessage
     name: SystemMessage
@@ -556,6 +559,22 @@ items:
   - uid: Glitch9.AIDevKit.WebSearchOptionsWrapper
     name: WebSearchOptionsWrapper
     type: Class
+  - uid: Glitch9.AIDevKit.WebSocketEventReceiver
+    name: WebSocketEventReceiver
+    type: Class
+- uid: Glitch9.AIDevKit.Advanced.Chat
+  name: Glitch9.AIDevKit.Advanced.Chat
+  type: Namespace
+  items:
+  - uid: Glitch9.AIDevKit.Advanced.Chat.ChatSession
+    name: ChatSession
+    type: Class
+  - uid: Glitch9.AIDevKit.Advanced.Chat.ChatSummarizer
+    name: ChatSummarizer
+    type: Class
+  - uid: Glitch9.AIDevKit.Advanced.Chat.GENChatTask
+    name: GENChatTask
+    type: Class
 - uid: Glitch9.AIDevKit.Client
   name: Glitch9.AIDevKit.Client
   type: Namespace
@@ -572,9 +591,6 @@ items:
   - uid: Glitch9.AIDevKit.Client.AIClient`1
     name: AIClient<TSelf>
     type: Class
-  - uid: Glitch9.AIDevKit.Client.AIClient`1.UsageHandler
-    name: AIClient<TSelf>.UsageHandler
-    type: Delegate
 - uid: Glitch9.AIDevKit.Components
   name: Glitch9.AIDevKit.Components
   type: Namespace
@@ -582,14 +598,23 @@ items:
   - uid: Glitch9.AIDevKit.Components.AIDevKitComponent
     name: AIDevKitComponent
     type: Class
-  - uid: Glitch9.AIDevKit.Components.AIDevKitEventHandler
-    name: AIDevKitEventHandler
+  - uid: Glitch9.AIDevKit.Components.AssistantEventReceiver
+    name: AssistantEventReceiver
     type: Class
-  - uid: Glitch9.AIDevKit.Components.ChatEventHandler
-    name: ChatEventHandler
+  - uid: Glitch9.AIDevKit.Components.AssistantsAPI
+    name: AssistantsAPI
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.ChatEventReceiver
+    name: ChatEventReceiver
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.ChatTextEventReceiver
+    name: ChatTextEventReceiver
     type: Class
   - uid: Glitch9.AIDevKit.Components.Chatbot
     name: Chatbot
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.ChatbotBase
+    name: ChatbotBase
     type: Class
   - uid: Glitch9.AIDevKit.Components.FunctionManager
     name: FunctionManager
@@ -600,23 +625,47 @@ items:
   - uid: Glitch9.AIDevKit.Components.FunctionReference
     name: FunctionReference
     type: Class
-  - uid: Glitch9.AIDevKit.Components.NonStreamingChatEventHandler
-    name: NonStreamingChatEventHandler
+  - uid: Glitch9.AIDevKit.Components.IChatEventReceiver
+    name: IChatEventReceiver
+    type: Interface
+  - uid: Glitch9.AIDevKit.Components.IFunctionManager
+    name: IFunctionManager
+    type: Interface
+  - uid: Glitch9.AIDevKit.Components.IRealtimeEventReceiver
+    name: IRealtimeEventReceiver
+    type: Interface
+  - uid: Glitch9.AIDevKit.Components.MessageEventReceiver
+    name: MessageEventReceiver
     type: Class
-  - uid: Glitch9.AIDevKit.Components.RealtimeAssistant
-    name: RealtimeAssistant
+  - uid: Glitch9.AIDevKit.Components.MultiChatEventReceiver
+    name: MultiChatEventReceiver
     type: Class
-  - uid: Glitch9.AIDevKit.Components.RealtimeEventHandler
-    name: RealtimeEventHandler
+  - uid: Glitch9.AIDevKit.Components.RealtimeAPI
+    name: RealtimeAPI
     type: Class
-  - uid: Glitch9.AIDevKit.Components.SpeechAssistant
-    name: SpeechAssistant
+  - uid: Glitch9.AIDevKit.Components.RealtimeEventReceiver
+    name: RealtimeEventReceiver
     type: Class
-  - uid: Glitch9.AIDevKit.Components.SpeechEventHandler
-    name: SpeechEventHandler
+  - uid: Glitch9.AIDevKit.Components.RunEventReceiver
+    name: RunEventReceiver
     type: Class
-  - uid: Glitch9.AIDevKit.Components.StreamingChatEventHandler
-    name: StreamingChatEventHandler
+  - uid: Glitch9.AIDevKit.Components.SingleChatEventReceiver
+    name: SingleChatEventReceiver
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.SpeechAPI
+    name: SpeechAPI
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.SpeechEventReceiver
+    name: SpeechEventReceiver
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver
+    name: StreamingAudioEventReceiver
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.ThreadEventReceiver
+    name: ThreadEventReceiver
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.ToolCallReceiver
+    name: ToolCallReceiver
     type: Class
 - uid: Glitch9.AIDevKit.ElevenLabs
   name: Glitch9.AIDevKit.ElevenLabs
@@ -921,21 +970,6 @@ items:
   - uid: Glitch9.AIDevKit.Google.EmbedContentResponse
     name: EmbedContentResponse
     type: Class
-  - uid: Glitch9.AIDevKit.Google.File
-    name: File
-    type: Class
-  - uid: Glitch9.AIDevKit.Google.FileData
-    name: FileData
-    type: Class
-  - uid: Glitch9.AIDevKit.Google.FileDataDict
-    name: FileDataDict
-    type: Class
-  - uid: Glitch9.AIDevKit.Google.FileDataType
-    name: FileDataType
-    type: Class
-  - uid: Glitch9.AIDevKit.Google.FileResponse
-    name: FileResponse
-    type: Class
   - uid: Glitch9.AIDevKit.Google.FileState
     name: FileState
     type: Enum
@@ -1007,6 +1041,18 @@ items:
     type: Class
   - uid: Glitch9.AIDevKit.Google.GenerativeAISettings
     name: GenerativeAISettings
+    type: Class
+  - uid: Glitch9.AIDevKit.Google.GoogleFile
+    name: GoogleFile
+    type: Class
+  - uid: Glitch9.AIDevKit.Google.GoogleFileData
+    name: GoogleFileData
+    type: Class
+  - uid: Glitch9.AIDevKit.Google.GoogleFileSource
+    name: GoogleFileSource
+    type: Enum
+  - uid: Glitch9.AIDevKit.Google.GoogleFileUploadRequest
+    name: GoogleFileUploadRequest
     type: Class
   - uid: Glitch9.AIDevKit.Google.GoogleModel
     name: GoogleModel
@@ -1127,9 +1173,6 @@ items:
     type: Class
   - uid: Glitch9.AIDevKit.Google.UpdateChunkRequest
     name: UpdateChunkRequest
-    type: Class
-  - uid: Glitch9.AIDevKit.Google.UploadFileRequest
-    name: UploadFileRequest
     type: Class
   - uid: Glitch9.AIDevKit.Google.Validator
     name: Validator
@@ -1374,12 +1417,6 @@ items:
   name: Glitch9.AIDevKit.OpenAI
   type: Namespace
   items:
-  - uid: Glitch9.AIDevKit.OpenAI.ActionRequest
-    name: ActionRequest
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.ActionRequestType
-    name: ActionRequestType
-    type: Enum
   - uid: Glitch9.AIDevKit.OpenAI.Assistant
     name: Assistant
     type: Class
@@ -1458,9 +1495,6 @@ items:
   - uid: Glitch9.AIDevKit.OpenAI.Expiration
     name: Expiration
     type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.File
-    name: File
-    type: Class
   - uid: Glitch9.AIDevKit.OpenAI.FileCounts
     name: FileCounts
     type: Class
@@ -1506,6 +1540,21 @@ items:
   - uid: Glitch9.AIDevKit.OpenAI.HyperParameters
     name: HyperParameters
     type: Class
+  - uid: Glitch9.AIDevKit.OpenAI.IAssistantEventReceiver
+    name: IAssistantEventReceiver
+    type: Interface
+  - uid: Glitch9.AIDevKit.OpenAI.IRequiredActionListener
+    name: IRequiredActionListener
+    type: Interface
+  - uid: Glitch9.AIDevKit.OpenAI.IRunEventReceiver
+    name: IRunEventReceiver
+    type: Interface
+  - uid: Glitch9.AIDevKit.OpenAI.IThreadEventReceiver
+    name: IThreadEventReceiver
+    type: Interface
+  - uid: Glitch9.AIDevKit.OpenAI.IThreadMessageEventReceiver
+    name: IThreadMessageEventReceiver
+    type: Interface
   - uid: Glitch9.AIDevKit.OpenAI.Image
     name: Image
     type: Class
@@ -1551,6 +1600,9 @@ items:
   - uid: Glitch9.AIDevKit.OpenAI.OpenAIClientSettingsFactory
     name: OpenAIClientSettingsFactory
     type: Class
+  - uid: Glitch9.AIDevKit.OpenAI.OpenAIFile
+    name: OpenAIFile
+    type: Class
   - uid: Glitch9.AIDevKit.OpenAI.OpenAIModel
     name: OpenAIModel
     type: Class
@@ -1572,9 +1624,15 @@ items:
   - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions
     name: RequestExtensions
     type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.ResponseExtensions
-    name: ResponseExtensions
+  - uid: Glitch9.AIDevKit.OpenAI.RequiredAction
+    name: RequiredAction
     type: Class
+  - uid: Glitch9.AIDevKit.OpenAI.RequiredActionListener
+    name: RequiredActionListener
+    type: Class
+  - uid: Glitch9.AIDevKit.OpenAI.RequiredActionType
+    name: RequiredActionType
+    type: Enum
   - uid: Glitch9.AIDevKit.OpenAI.Run
     name: Run
     type: Class
@@ -1629,17 +1687,11 @@ items:
   - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
     name: ThreadMessageRequest
     type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Builder
-    name: ThreadMessageRequest.Builder
-    type: Class
   - uid: Glitch9.AIDevKit.OpenAI.ThreadRequest
     name: ThreadRequest
     type: Class
   - uid: Glitch9.AIDevKit.OpenAI.ThreadRequest.Builder
     name: ThreadRequest.Builder
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.ToolCallConverter
-    name: ToolCallConverter
     type: Class
   - uid: Glitch9.AIDevKit.OpenAI.ToolChoice
     name: ToolChoice
@@ -1727,69 +1779,21 @@ items:
   name: Glitch9.AIDevKit.OpenAI.Assistants
   type: Namespace
   items:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler
-    name: AssistantEventHandler
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController
+    name: AssistantController
     type: Class
   - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream
     name: AssistantEventStream
     type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStreamHandler
-    name: AssistantEventStreamHandler
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
-    name: AssistantOptions
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
-    name: AssistantProvider
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
-    name: AssistantProviderBase<T>
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantResult
-    name: AssistantResult
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantSettings
+    name: AssistantSettings
     type: Class
   - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
     name: AssistantStatus
     type: Enum
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-    name: AssistantsAPIResultExtensions
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultStatus
-    name: AssistantsAPIResultStatus
+  - uid: Glitch9.AIDevKit.OpenAI.Assistants.RunStatusCheckType
+    name: RunStatusCheckType
     type: Enum
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
-    name: AssistantsAPIv2
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler
-    name: IAssistantEventStreamHandler
-    type: Interface
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifier
-    name: IntentClassifier
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifierResponse
-    name: IntentClassifierResponse
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.IntentType
-    name: IntentType
-    type: Enum
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.MessageProvider
-    name: MessageProvider
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.RequiredActionStack
-    name: RequiredActionStack
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.RunCheckType
-    name: RunCheckType
-    type: Enum
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.RunProvider
-    name: RunProvider
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.RunStepProvider
-    name: RunStepProvider
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.ThreadProvider
-    name: ThreadProvider
-    type: Class
 - uid: Glitch9.AIDevKit.OpenAI.Realtime
   name: Glitch9.AIDevKit.OpenAI.Realtime
   type: Namespace
@@ -1809,17 +1813,14 @@ items:
   - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
     name: RealtimeEvent
     type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
-    name: RealtimeEventHandler
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Request
+    name: RealtimeEvent.Request
     type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId
-    name: RealtimeEventId
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
+    name: RealtimeEvent.Response
     type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiver
-    name: RealtimeEventReceiver
-    type: Class
-  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
-    name: RealtimeEventReceiverBase
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventProcessor
+    name: RealtimeEventProcessor
     type: Class
   - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
     name: RealtimeItem
@@ -1842,9 +1843,6 @@ items:
   - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemType
     name: RealtimeItemType
     type: Enum
-  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeService
-    name: RealtimeService
-    type: Class
   - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
     name: RealtimeSession
     type: Class

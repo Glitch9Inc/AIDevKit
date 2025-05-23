@@ -29,20 +29,20 @@ items:
     startLine: 11
   namespace: Glitch9.AIDevKit
   syntax:
-    content: 'public abstract class CompletionRequestBase : ModelRequest'
-    content.vb: Public MustInherit Class CompletionRequestBase Inherits ModelRequest
+    content: 'public abstract class CompletionRequestBase : AIRequest'
+    content.vb: Public MustInherit Class CompletionRequestBase Inherits AIRequest
   inheritance:
   - System.Object
   - Glitch9.IO.Networking.RESTApi.RequestBody
-  - Glitch9.AIDevKit.ModelRequest
+  - Glitch9.AIDevKit.AIRequest
   derivedClasses:
   - Glitch9.AIDevKit.ChatCompletionRequest
   - Glitch9.AIDevKit.CompletionRequest
   inheritedMembers:
-  - Glitch9.AIDevKit.ModelRequest.Model
-  - Glitch9.AIDevKit.ModelRequest.N
-  - Glitch9.AIDevKit.ModelRequest.Metadata
-  - Glitch9.AIDevKit.ModelRequest.User
+  - Glitch9.AIDevKit.AIRequest.Model
+  - Glitch9.AIDevKit.AIRequest.N
+  - Glitch9.AIDevKit.AIRequest.Metadata
+  - Glitch9.AIDevKit.AIRequest.User
 - uid: Glitch9.AIDevKit.CompletionRequestBase.Prompt
   commentId: P:Glitch9.AIDevKit.CompletionRequestBase.Prompt
   id: Prompt
@@ -341,11 +341,11 @@ items:
     startLine: 77
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public List<IUniFile> AttachedFiles { get; set; }
+    content: public List<IFile> AttachedFiles { get; set; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{Glitch9.IO.Files.IUniFile}
-    content.vb: Public Property AttachedFiles As List(Of IUniFile)
+      type: System.Collections.Generic.List{Glitch9.IO.Files.IFile}
+    content.vb: Public Property AttachedFiles As List(Of IFile)
   overload: Glitch9.AIDevKit.CompletionRequestBase.AttachedFiles*
 references:
 - uid: Glitch9.AIDevKit
@@ -386,41 +386,41 @@ references:
   name: RequestBody
   nameWithType: RequestBody
   fullName: Glitch9.IO.Networking.RESTApi.RequestBody
-- uid: Glitch9.AIDevKit.ModelRequest
-  commentId: T:Glitch9.AIDevKit.ModelRequest
+- uid: Glitch9.AIDevKit.AIRequest
+  commentId: T:Glitch9.AIDevKit.AIRequest
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelRequest.html
-  name: ModelRequest
-  nameWithType: ModelRequest
-  fullName: Glitch9.AIDevKit.ModelRequest
-- uid: Glitch9.AIDevKit.ModelRequest.Model
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Model
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model
+  href: Glitch9.AIDevKit.AIRequest.html
+  name: AIRequest
+  nameWithType: AIRequest
+  fullName: Glitch9.AIDevKit.AIRequest
+- uid: Glitch9.AIDevKit.AIRequest.Model
+  commentId: P:Glitch9.AIDevKit.AIRequest.Model
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Model
   name: Model
-  nameWithType: ModelRequest.Model
-  fullName: Glitch9.AIDevKit.ModelRequest.Model
-- uid: Glitch9.AIDevKit.ModelRequest.N
-  commentId: P:Glitch9.AIDevKit.ModelRequest.N
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N
+  nameWithType: AIRequest.Model
+  fullName: Glitch9.AIDevKit.AIRequest.Model
+- uid: Glitch9.AIDevKit.AIRequest.N
+  commentId: P:Glitch9.AIDevKit.AIRequest.N
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_N
   name: N
-  nameWithType: ModelRequest.N
-  fullName: Glitch9.AIDevKit.ModelRequest.N
-- uid: Glitch9.AIDevKit.ModelRequest.Metadata
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Metadata
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata
+  nameWithType: AIRequest.N
+  fullName: Glitch9.AIDevKit.AIRequest.N
+- uid: Glitch9.AIDevKit.AIRequest.Metadata
+  commentId: P:Glitch9.AIDevKit.AIRequest.Metadata
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Metadata
   name: Metadata
-  nameWithType: ModelRequest.Metadata
-  fullName: Glitch9.AIDevKit.ModelRequest.Metadata
-- uid: Glitch9.AIDevKit.ModelRequest.User
-  commentId: P:Glitch9.AIDevKit.ModelRequest.User
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User
+  nameWithType: AIRequest.Metadata
+  fullName: Glitch9.AIDevKit.AIRequest.Metadata
+- uid: Glitch9.AIDevKit.AIRequest.User
+  commentId: P:Glitch9.AIDevKit.AIRequest.User
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_User
   name: User
-  nameWithType: ModelRequest.User
-  fullName: Glitch9.AIDevKit.ModelRequest.User
+  nameWithType: AIRequest.User
+  fullName: Glitch9.AIDevKit.AIRequest.User
 - uid: System
   commentId: N:System
   isExternal: true
@@ -707,23 +707,23 @@ references:
   name: AttachedFiles
   nameWithType: CompletionRequestBase.AttachedFiles
   fullName: Glitch9.AIDevKit.CompletionRequestBase.AttachedFiles
-- uid: System.Collections.Generic.List{Glitch9.IO.Files.IUniFile}
-  commentId: T:System.Collections.Generic.List{Glitch9.IO.Files.IUniFile}
+- uid: System.Collections.Generic.List{Glitch9.IO.Files.IFile}
+  commentId: T:System.Collections.Generic.List{Glitch9.IO.Files.IFile}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
-  name: List<IUniFile>
-  nameWithType: List<IUniFile>
-  fullName: System.Collections.Generic.List<Glitch9.IO.Files.IUniFile>
-  nameWithType.vb: List(Of IUniFile)
-  fullName.vb: System.Collections.Generic.List(Of Glitch9.IO.Files.IUniFile)
-  name.vb: List(Of IUniFile)
+  name: List<IFile>
+  nameWithType: List<IFile>
+  fullName: System.Collections.Generic.List<Glitch9.IO.Files.IFile>
+  nameWithType.vb: List(Of IFile)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.IO.Files.IFile)
+  name.vb: List(Of IFile)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
   - name: <
-  - uid: Glitch9.IO.Files.IUniFile
-    name: IUniFile
+  - uid: Glitch9.IO.Files.IFile
+    name: IFile
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -732,6 +732,6 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.IO.Files.IUniFile
-    name: IUniFile
+  - uid: Glitch9.IO.Files.IFile
+    name: IFile
   - name: )

@@ -23,7 +23,7 @@ items:
   source:
     id: AssistantRequest
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/AssistantRequest.cs
-    startLine: 12
+    startLine: 13
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     Give Assistants access to OpenAI-hosted tools like Issue Interpreter and Knowledge Retrieval, or build your own tools using Function calling. 
@@ -32,17 +32,17 @@ items:
   remarks: https://platform.openai.com/docs/Assistants/tools
   example: []
   syntax:
-    content: 'public class AssistantRequest : ModelRequest'
-    content.vb: Public Class AssistantRequest Inherits ModelRequest
+    content: 'public class AssistantRequest : AIRequest'
+    content.vb: Public Class AssistantRequest Inherits AIRequest
   inheritance:
   - System.Object
   - Glitch9.IO.Networking.RESTApi.RequestBody
-  - Glitch9.AIDevKit.ModelRequest
+  - Glitch9.AIDevKit.AIRequest
   inheritedMembers:
-  - Glitch9.AIDevKit.ModelRequest.Model
-  - Glitch9.AIDevKit.ModelRequest.N
-  - Glitch9.AIDevKit.ModelRequest.Metadata
-  - Glitch9.AIDevKit.ModelRequest.User
+  - Glitch9.AIDevKit.AIRequest.Model
+  - Glitch9.AIDevKit.AIRequest.N
+  - Glitch9.AIDevKit.AIRequest.Metadata
+  - Glitch9.AIDevKit.AIRequest.User
 - uid: Glitch9.AIDevKit.OpenAI.AssistantRequest.Name
   commentId: P:Glitch9.AIDevKit.OpenAI.AssistantRequest.Name
   id: Name
@@ -57,7 +57,7 @@ items:
   source:
     id: Name
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/AssistantRequest.cs
-    startLine: 18
+    startLine: 19
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     The name of the AssistantObject. 
@@ -85,7 +85,7 @@ items:
   source:
     id: Description
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/AssistantRequest.cs
-    startLine: 24
+    startLine: 25
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     The description of the AssistantObject. 
@@ -113,7 +113,7 @@ items:
   source:
     id: Instructions
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/AssistantRequest.cs
-    startLine: 30
+    startLine: 31
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     The System instructions that the AssistantObject uses. 
@@ -141,7 +141,7 @@ items:
   source:
     id: Tools
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/AssistantRequest.cs
-    startLine: 40
+    startLine: 41
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     A list of Tool enabled on the AssistantObject. 
@@ -172,7 +172,7 @@ items:
   source:
     id: ToolResources
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/AssistantRequest.cs
-    startLine: 48
+    startLine: 49
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     A set of resources that are used by the assistant's tools.
@@ -204,7 +204,7 @@ items:
   source:
     id: Temperature
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/AssistantRequest.cs
-    startLine: 56
+    startLine: 57
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     What sampling temperature to use, between 0 and 2.
@@ -236,7 +236,7 @@ items:
   source:
     id: TopP
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/AssistantRequest.cs
-    startLine: 64
+    startLine: 65
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     An alternative to sampling with temperature, called nucleus sampling,
@@ -268,7 +268,7 @@ items:
   source:
     id: ResponseFormat
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/AssistantRequest.cs
-    startLine: 80
+    startLine: 81
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     Specifies the format that the model must output.
@@ -345,41 +345,41 @@ references:
   name: RequestBody
   nameWithType: RequestBody
   fullName: Glitch9.IO.Networking.RESTApi.RequestBody
-- uid: Glitch9.AIDevKit.ModelRequest
-  commentId: T:Glitch9.AIDevKit.ModelRequest
+- uid: Glitch9.AIDevKit.AIRequest
+  commentId: T:Glitch9.AIDevKit.AIRequest
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelRequest.html
-  name: ModelRequest
-  nameWithType: ModelRequest
-  fullName: Glitch9.AIDevKit.ModelRequest
-- uid: Glitch9.AIDevKit.ModelRequest.Model
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Model
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model
+  href: Glitch9.AIDevKit.AIRequest.html
+  name: AIRequest
+  nameWithType: AIRequest
+  fullName: Glitch9.AIDevKit.AIRequest
+- uid: Glitch9.AIDevKit.AIRequest.Model
+  commentId: P:Glitch9.AIDevKit.AIRequest.Model
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Model
   name: Model
-  nameWithType: ModelRequest.Model
-  fullName: Glitch9.AIDevKit.ModelRequest.Model
-- uid: Glitch9.AIDevKit.ModelRequest.N
-  commentId: P:Glitch9.AIDevKit.ModelRequest.N
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N
+  nameWithType: AIRequest.Model
+  fullName: Glitch9.AIDevKit.AIRequest.Model
+- uid: Glitch9.AIDevKit.AIRequest.N
+  commentId: P:Glitch9.AIDevKit.AIRequest.N
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_N
   name: N
-  nameWithType: ModelRequest.N
-  fullName: Glitch9.AIDevKit.ModelRequest.N
-- uid: Glitch9.AIDevKit.ModelRequest.Metadata
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Metadata
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata
+  nameWithType: AIRequest.N
+  fullName: Glitch9.AIDevKit.AIRequest.N
+- uid: Glitch9.AIDevKit.AIRequest.Metadata
+  commentId: P:Glitch9.AIDevKit.AIRequest.Metadata
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Metadata
   name: Metadata
-  nameWithType: ModelRequest.Metadata
-  fullName: Glitch9.AIDevKit.ModelRequest.Metadata
-- uid: Glitch9.AIDevKit.ModelRequest.User
-  commentId: P:Glitch9.AIDevKit.ModelRequest.User
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User
+  nameWithType: AIRequest.Metadata
+  fullName: Glitch9.AIDevKit.AIRequest.Metadata
+- uid: Glitch9.AIDevKit.AIRequest.User
+  commentId: P:Glitch9.AIDevKit.AIRequest.User
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_User
   name: User
-  nameWithType: ModelRequest.User
-  fullName: Glitch9.AIDevKit.ModelRequest.User
+  nameWithType: AIRequest.User
+  fullName: Glitch9.AIDevKit.AIRequest.User
 - uid: System
   commentId: N:System
   isExternal: true

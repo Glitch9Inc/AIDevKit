@@ -6,14 +6,11 @@ items:
   parent: Glitch9.AIDevKit
   children:
   - Glitch9.AIDevKit.FunctionDeclaration.#ctor
-  - Glitch9.AIDevKit.FunctionDeclaration.#ctor(Glitch9.AIDevKit.IFunctionDelegate)
   - Glitch9.AIDevKit.FunctionDeclaration.#ctor(System.String)
-  - Glitch9.AIDevKit.FunctionDeclaration.#ctor(System.Type,System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)
+  - Glitch9.AIDevKit.FunctionDeclaration.#ctor(System.Type,System.String,System.String)
   - Glitch9.AIDevKit.FunctionDeclaration.Arguments
-  - Glitch9.AIDevKit.FunctionDeclaration.Create``1(System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)
-  - Glitch9.AIDevKit.FunctionDeclaration.Delegate
   - Glitch9.AIDevKit.FunctionDeclaration.Description
-  - Glitch9.AIDevKit.FunctionDeclaration.IsCallable
+  - Glitch9.AIDevKit.FunctionDeclaration.FromSchema``1(System.String,System.String)
   - Glitch9.AIDevKit.FunctionDeclaration.Name
   - Glitch9.AIDevKit.FunctionDeclaration.Parameters
   - Glitch9.AIDevKit.FunctionDeclaration.Response
@@ -41,8 +38,6 @@ items:
     content.vb: Public Class FunctionDeclaration
   inheritance:
   - System.Object
-  extensionMethods:
-  - Glitch9.AIDevKit.FunctionDeclaration.Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionCall)
 - uid: Glitch9.AIDevKit.FunctionDeclaration.Name
   commentId: P:Glitch9.AIDevKit.FunctionDeclaration.Name
   id: Name
@@ -193,57 +188,6 @@ items:
       type: System.String
     content.vb: Public Property Arguments As String
   overload: Glitch9.AIDevKit.FunctionDeclaration.Arguments*
-- uid: Glitch9.AIDevKit.FunctionDeclaration.Delegate
-  commentId: P:Glitch9.AIDevKit.FunctionDeclaration.Delegate
-  id: Delegate
-  parent: Glitch9.AIDevKit.FunctionDeclaration
-  langs:
-  - csharp
-  - vb
-  name: Delegate
-  nameWithType: FunctionDeclaration.Delegate
-  fullName: Glitch9.AIDevKit.FunctionDeclaration.Delegate
-  type: Property
-  source:
-    id: Delegate
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDeclaration.cs
-    startLine: 54
-  namespace: Glitch9.AIDevKit
-  summary: >-
-    Gets or sets the delegate that will execute the function.
-
-    This property is ignored during JSON serialization.
-  example: []
-  syntax:
-    content: public IFunctionDelegate Delegate { get; set; }
-    parameters: []
-    return:
-      type: Glitch9.AIDevKit.IFunctionDelegate
-    content.vb: Public Property [Delegate] As IFunctionDelegate
-  overload: Glitch9.AIDevKit.FunctionDeclaration.Delegate*
-- uid: Glitch9.AIDevKit.FunctionDeclaration.IsCallable
-  commentId: P:Glitch9.AIDevKit.FunctionDeclaration.IsCallable
-  id: IsCallable
-  parent: Glitch9.AIDevKit.FunctionDeclaration
-  langs:
-  - csharp
-  - vb
-  name: IsCallable
-  nameWithType: FunctionDeclaration.IsCallable
-  fullName: Glitch9.AIDevKit.FunctionDeclaration.IsCallable
-  type: Property
-  source:
-    id: IsCallable
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDeclaration.cs
-    startLine: 55
-  namespace: Glitch9.AIDevKit
-  syntax:
-    content: public bool IsCallable { get; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public ReadOnly Property IsCallable As Boolean
-  overload: Glitch9.AIDevKit.FunctionDeclaration.IsCallable*
 - uid: Glitch9.AIDevKit.FunctionDeclaration.#ctor
   commentId: M:Glitch9.AIDevKit.FunctionDeclaration.#ctor
   id: '#ctor'
@@ -258,7 +202,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDeclaration.cs
-    startLine: 57
+    startLine: 50
   namespace: Glitch9.AIDevKit
   syntax:
     content: public FunctionDeclaration()
@@ -281,7 +225,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDeclaration.cs
-    startLine: 58
+    startLine: 51
   namespace: Glitch9.AIDevKit
   syntax:
     content: public FunctionDeclaration(string name)
@@ -293,50 +237,24 @@ items:
   nameWithType.vb: FunctionDeclaration.New(String)
   fullName.vb: Glitch9.AIDevKit.FunctionDeclaration.New(String)
   name.vb: New(String)
-- uid: Glitch9.AIDevKit.FunctionDeclaration.#ctor(Glitch9.AIDevKit.IFunctionDelegate)
-  commentId: M:Glitch9.AIDevKit.FunctionDeclaration.#ctor(Glitch9.AIDevKit.IFunctionDelegate)
-  id: '#ctor(Glitch9.AIDevKit.IFunctionDelegate)'
+- uid: Glitch9.AIDevKit.FunctionDeclaration.#ctor(System.Type,System.String,System.String)
+  commentId: M:Glitch9.AIDevKit.FunctionDeclaration.#ctor(System.Type,System.String,System.String)
+  id: '#ctor(System.Type,System.String,System.String)'
   parent: Glitch9.AIDevKit.FunctionDeclaration
   langs:
   - csharp
   - vb
-  name: FunctionDeclaration(IFunctionDelegate)
-  nameWithType: FunctionDeclaration.FunctionDeclaration(IFunctionDelegate)
-  fullName: Glitch9.AIDevKit.FunctionDeclaration.FunctionDeclaration(Glitch9.AIDevKit.IFunctionDelegate)
+  name: FunctionDeclaration(Type, string, string)
+  nameWithType: FunctionDeclaration.FunctionDeclaration(Type, string, string)
+  fullName: Glitch9.AIDevKit.FunctionDeclaration.FunctionDeclaration(System.Type, string, string)
   type: Constructor
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDeclaration.cs
-    startLine: 63
+    startLine: 53
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public FunctionDeclaration(IFunctionDelegate functionDelegate)
-    parameters:
-    - id: functionDelegate
-      type: Glitch9.AIDevKit.IFunctionDelegate
-    content.vb: Public Sub New(functionDelegate As IFunctionDelegate)
-  overload: Glitch9.AIDevKit.FunctionDeclaration.#ctor*
-  nameWithType.vb: FunctionDeclaration.New(IFunctionDelegate)
-  fullName.vb: Glitch9.AIDevKit.FunctionDeclaration.New(Glitch9.AIDevKit.IFunctionDelegate)
-  name.vb: New(IFunctionDelegate)
-- uid: Glitch9.AIDevKit.FunctionDeclaration.#ctor(System.Type,System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)
-  commentId: M:Glitch9.AIDevKit.FunctionDeclaration.#ctor(System.Type,System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)
-  id: '#ctor(System.Type,System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)'
-  parent: Glitch9.AIDevKit.FunctionDeclaration
-  langs:
-  - csharp
-  - vb
-  name: FunctionDeclaration(Type, string, string, IFunctionDelegate)
-  nameWithType: FunctionDeclaration.FunctionDeclaration(Type, string, string, IFunctionDelegate)
-  fullName: Glitch9.AIDevKit.FunctionDeclaration.FunctionDeclaration(System.Type, string, string, Glitch9.AIDevKit.IFunctionDelegate)
-  type: Constructor
-  source:
-    id: .ctor
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDeclaration.cs
-    startLine: 69
-  namespace: Glitch9.AIDevKit
-  syntax:
-    content: public FunctionDeclaration(Type type, string name, string description = null, IFunctionDelegate functionDelegate = null)
+    content: public FunctionDeclaration(Type type, string name, string description = null)
     parameters:
     - id: type
       type: System.Type
@@ -344,47 +262,43 @@ items:
       type: System.String
     - id: description
       type: System.String
-    - id: functionDelegate
-      type: Glitch9.AIDevKit.IFunctionDelegate
-    content.vb: Public Sub New(type As Type, name As String, description As String = Nothing, functionDelegate As IFunctionDelegate = Nothing)
+    content.vb: Public Sub New(type As Type, name As String, description As String = Nothing)
   overload: Glitch9.AIDevKit.FunctionDeclaration.#ctor*
-  nameWithType.vb: FunctionDeclaration.New(Type, String, String, IFunctionDelegate)
-  fullName.vb: Glitch9.AIDevKit.FunctionDeclaration.New(System.Type, String, String, Glitch9.AIDevKit.IFunctionDelegate)
-  name.vb: New(Type, String, String, IFunctionDelegate)
-- uid: Glitch9.AIDevKit.FunctionDeclaration.Create``1(System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)
-  commentId: M:Glitch9.AIDevKit.FunctionDeclaration.Create``1(System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)
-  id: Create``1(System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)
+  nameWithType.vb: FunctionDeclaration.New(Type, String, String)
+  fullName.vb: Glitch9.AIDevKit.FunctionDeclaration.New(System.Type, String, String)
+  name.vb: New(Type, String, String)
+- uid: Glitch9.AIDevKit.FunctionDeclaration.FromSchema``1(System.String,System.String)
+  commentId: M:Glitch9.AIDevKit.FunctionDeclaration.FromSchema``1(System.String,System.String)
+  id: FromSchema``1(System.String,System.String)
   parent: Glitch9.AIDevKit.FunctionDeclaration
   langs:
   - csharp
   - vb
-  name: Create<T>(string, string, IFunctionDelegate)
-  nameWithType: FunctionDeclaration.Create<T>(string, string, IFunctionDelegate)
-  fullName: Glitch9.AIDevKit.FunctionDeclaration.Create<T>(string, string, Glitch9.AIDevKit.IFunctionDelegate)
+  name: FromSchema<T>(string, string)
+  nameWithType: FunctionDeclaration.FromSchema<T>(string, string)
+  fullName: Glitch9.AIDevKit.FunctionDeclaration.FromSchema<T>(string, string)
   type: Method
   source:
-    id: Create
+    id: FromSchema
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Tool/FunctionDeclaration.cs
-    startLine: 77
+    startLine: 60
   namespace: Glitch9.AIDevKit
   syntax:
-    content: 'public static FunctionDeclaration Create<T>(string name, string description = null, IFunctionDelegate functionDelegate = null) where T : class'
+    content: 'public static FunctionDeclaration FromSchema<T>(string name, string description = null) where T : class'
     parameters:
     - id: name
       type: System.String
     - id: description
       type: System.String
-    - id: functionDelegate
-      type: Glitch9.AIDevKit.IFunctionDelegate
     typeParameters:
     - id: T
     return:
       type: Glitch9.AIDevKit.FunctionDeclaration
-    content.vb: Public Shared Function Create(Of T As Class)(name As String, description As String = Nothing, functionDelegate As IFunctionDelegate = Nothing) As FunctionDeclaration
-  overload: Glitch9.AIDevKit.FunctionDeclaration.Create*
-  nameWithType.vb: FunctionDeclaration.Create(Of T)(String, String, IFunctionDelegate)
-  fullName.vb: Glitch9.AIDevKit.FunctionDeclaration.Create(Of T)(String, String, Glitch9.AIDevKit.IFunctionDelegate)
-  name.vb: Create(Of T)(String, String, IFunctionDelegate)
+    content.vb: Public Shared Function FromSchema(Of T As Class)(name As String, description As String = Nothing) As FunctionDeclaration
+  overload: Glitch9.AIDevKit.FunctionDeclaration.FromSchema*
+  nameWithType.vb: FunctionDeclaration.FromSchema(Of T)(String, String)
+  fullName.vb: Glitch9.AIDevKit.FunctionDeclaration.FromSchema(Of T)(String, String)
+  name.vb: FromSchema(Of T)(String, String)
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -418,42 +332,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.AIDevKit.FunctionDeclaration.Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionCall)
-  commentId: M:Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionDeclaration,Glitch9.AIDevKit.FunctionCall)
-  parent: Glitch9.AIDevKit.Google.FunctionExtensions
-  definition: Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionDeclaration,Glitch9.AIDevKit.FunctionCall)
-  href: Glitch9.AIDevKit.Google.FunctionExtensions.html#Glitch9_AIDevKit_Google_FunctionExtensions_Invoke_Glitch9_AIDevKit_FunctionDeclaration_Glitch9_AIDevKit_FunctionCall_
-  name: Invoke(FunctionDeclaration, FunctionCall)
-  nameWithType: FunctionExtensions.Invoke(FunctionDeclaration, FunctionCall)
-  fullName: Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionDeclaration, Glitch9.AIDevKit.FunctionCall)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionDeclaration,Glitch9.AIDevKit.FunctionCall)
-    name: Invoke
-    href: Glitch9.AIDevKit.Google.FunctionExtensions.html#Glitch9_AIDevKit_Google_FunctionExtensions_Invoke_Glitch9_AIDevKit_FunctionDeclaration_Glitch9_AIDevKit_FunctionCall_
-  - name: (
-  - uid: Glitch9.AIDevKit.FunctionDeclaration
-    name: FunctionDeclaration
-    href: Glitch9.AIDevKit.FunctionDeclaration.html
-  - name: ','
-  - name: " "
-  - uid: Glitch9.AIDevKit.FunctionCall
-    name: FunctionCall
-    href: Glitch9.AIDevKit.FunctionCall.html
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionDeclaration,Glitch9.AIDevKit.FunctionCall)
-    name: Invoke
-    href: Glitch9.AIDevKit.Google.FunctionExtensions.html#Glitch9_AIDevKit_Google_FunctionExtensions_Invoke_Glitch9_AIDevKit_FunctionDeclaration_Glitch9_AIDevKit_FunctionCall_
-  - name: (
-  - uid: Glitch9.AIDevKit.FunctionDeclaration
-    name: FunctionDeclaration
-    href: Glitch9.AIDevKit.FunctionDeclaration.html
-  - name: ','
-  - name: " "
-  - uid: Glitch9.AIDevKit.FunctionCall
-    name: FunctionCall
-    href: Glitch9.AIDevKit.FunctionCall.html
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -461,77 +339,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionDeclaration,Glitch9.AIDevKit.FunctionCall)
-  commentId: M:Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionDeclaration,Glitch9.AIDevKit.FunctionCall)
-  href: Glitch9.AIDevKit.Google.FunctionExtensions.html#Glitch9_AIDevKit_Google_FunctionExtensions_Invoke_Glitch9_AIDevKit_FunctionDeclaration_Glitch9_AIDevKit_FunctionCall_
-  name: Invoke(FunctionDeclaration, FunctionCall)
-  nameWithType: FunctionExtensions.Invoke(FunctionDeclaration, FunctionCall)
-  fullName: Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionDeclaration, Glitch9.AIDevKit.FunctionCall)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionDeclaration,Glitch9.AIDevKit.FunctionCall)
-    name: Invoke
-    href: Glitch9.AIDevKit.Google.FunctionExtensions.html#Glitch9_AIDevKit_Google_FunctionExtensions_Invoke_Glitch9_AIDevKit_FunctionDeclaration_Glitch9_AIDevKit_FunctionCall_
-  - name: (
-  - uid: Glitch9.AIDevKit.FunctionDeclaration
-    name: FunctionDeclaration
-    href: Glitch9.AIDevKit.FunctionDeclaration.html
-  - name: ','
-  - name: " "
-  - uid: Glitch9.AIDevKit.FunctionCall
-    name: FunctionCall
-    href: Glitch9.AIDevKit.FunctionCall.html
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.Google.FunctionExtensions.Invoke(Glitch9.AIDevKit.FunctionDeclaration,Glitch9.AIDevKit.FunctionCall)
-    name: Invoke
-    href: Glitch9.AIDevKit.Google.FunctionExtensions.html#Glitch9_AIDevKit_Google_FunctionExtensions_Invoke_Glitch9_AIDevKit_FunctionDeclaration_Glitch9_AIDevKit_FunctionCall_
-  - name: (
-  - uid: Glitch9.AIDevKit.FunctionDeclaration
-    name: FunctionDeclaration
-    href: Glitch9.AIDevKit.FunctionDeclaration.html
-  - name: ','
-  - name: " "
-  - uid: Glitch9.AIDevKit.FunctionCall
-    name: FunctionCall
-    href: Glitch9.AIDevKit.FunctionCall.html
-  - name: )
-- uid: Glitch9.AIDevKit.Google.FunctionExtensions
-  commentId: T:Glitch9.AIDevKit.Google.FunctionExtensions
-  parent: Glitch9.AIDevKit.Google
-  href: Glitch9.AIDevKit.Google.FunctionExtensions.html
-  name: FunctionExtensions
-  nameWithType: FunctionExtensions
-  fullName: Glitch9.AIDevKit.Google.FunctionExtensions
-- uid: Glitch9.AIDevKit.Google
-  commentId: N:Glitch9.AIDevKit.Google
-  href: Glitch9.html
-  name: Glitch9.AIDevKit.Google
-  nameWithType: Glitch9.AIDevKit.Google
-  fullName: Glitch9.AIDevKit.Google
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.AIDevKit
-    name: AIDevKit
-    href: Glitch9.AIDevKit.html
-  - name: .
-  - uid: Glitch9.AIDevKit.Google
-    name: Google
-    href: Glitch9.AIDevKit.Google.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.AIDevKit
-    name: AIDevKit
-    href: Glitch9.AIDevKit.html
-  - name: .
-  - uid: Glitch9.AIDevKit.Google
-    name: Google
-    href: Glitch9.AIDevKit.Google.html
 - uid: Glitch9.AIDevKit.FunctionDeclaration.Name*
   commentId: Overload:Glitch9.AIDevKit.FunctionDeclaration.Name
   href: Glitch9.AIDevKit.FunctionDeclaration.html#Glitch9_AIDevKit_FunctionDeclaration_Name
@@ -616,35 +423,6 @@ references:
   name: Arguments
   nameWithType: FunctionDeclaration.Arguments
   fullName: Glitch9.AIDevKit.FunctionDeclaration.Arguments
-- uid: Glitch9.AIDevKit.FunctionDeclaration.Delegate*
-  commentId: Overload:Glitch9.AIDevKit.FunctionDeclaration.Delegate
-  href: Glitch9.AIDevKit.FunctionDeclaration.html#Glitch9_AIDevKit_FunctionDeclaration_Delegate
-  name: Delegate
-  nameWithType: FunctionDeclaration.Delegate
-  fullName: Glitch9.AIDevKit.FunctionDeclaration.Delegate
-- uid: Glitch9.AIDevKit.IFunctionDelegate
-  commentId: T:Glitch9.AIDevKit.IFunctionDelegate
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.IFunctionDelegate.html
-  name: IFunctionDelegate
-  nameWithType: IFunctionDelegate
-  fullName: Glitch9.AIDevKit.IFunctionDelegate
-- uid: Glitch9.AIDevKit.FunctionDeclaration.IsCallable*
-  commentId: Overload:Glitch9.AIDevKit.FunctionDeclaration.IsCallable
-  href: Glitch9.AIDevKit.FunctionDeclaration.html#Glitch9_AIDevKit_FunctionDeclaration_IsCallable
-  name: IsCallable
-  nameWithType: FunctionDeclaration.IsCallable
-  fullName: Glitch9.AIDevKit.FunctionDeclaration.IsCallable
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: Glitch9.AIDevKit.FunctionDeclaration.#ctor*
   commentId: Overload:Glitch9.AIDevKit.FunctionDeclaration.#ctor
   href: Glitch9.AIDevKit.FunctionDeclaration.html#Glitch9_AIDevKit_FunctionDeclaration__ctor
@@ -661,12 +439,12 @@ references:
   name: Type
   nameWithType: Type
   fullName: System.Type
-- uid: Glitch9.AIDevKit.FunctionDeclaration.Create*
-  commentId: Overload:Glitch9.AIDevKit.FunctionDeclaration.Create
-  href: Glitch9.AIDevKit.FunctionDeclaration.html#Glitch9_AIDevKit_FunctionDeclaration_Create__1_System_String_System_String_Glitch9_AIDevKit_IFunctionDelegate_
-  name: Create
-  nameWithType: FunctionDeclaration.Create
-  fullName: Glitch9.AIDevKit.FunctionDeclaration.Create
+- uid: Glitch9.AIDevKit.FunctionDeclaration.FromSchema*
+  commentId: Overload:Glitch9.AIDevKit.FunctionDeclaration.FromSchema
+  href: Glitch9.AIDevKit.FunctionDeclaration.html#Glitch9_AIDevKit_FunctionDeclaration_FromSchema__1_System_String_System_String_
+  name: FromSchema
+  nameWithType: FunctionDeclaration.FromSchema
+  fullName: Glitch9.AIDevKit.FunctionDeclaration.FromSchema
 - uid: Glitch9.AIDevKit.FunctionDeclaration
   commentId: T:Glitch9.AIDevKit.FunctionDeclaration
   parent: Glitch9.AIDevKit

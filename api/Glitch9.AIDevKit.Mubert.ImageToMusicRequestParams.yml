@@ -56,11 +56,11 @@ items:
     Should be used with multipart/form-data.
   example: []
   syntax:
-    content: public FormFile File { get; set; }
+    content: public IFile File { get; set; }
     parameters: []
     return:
-      type: Glitch9.IO.Networking.RESTApi.FormFile
-    content.vb: Public Property File As FormFile
+      type: Glitch9.IO.Files.IFile
+    content.vb: Public Property File As IFile
   overload: Glitch9.AIDevKit.Mubert.ImageToMusicRequestParams.File*
 references:
 - uid: Glitch9.AIDevKit.Mubert
@@ -172,18 +172,18 @@ references:
   name: File
   nameWithType: ImageToMusicRequestParams.File
   fullName: Glitch9.AIDevKit.Mubert.ImageToMusicRequestParams.File
-- uid: Glitch9.IO.Networking.RESTApi.FormFile
-  commentId: T:Glitch9.IO.Networking.RESTApi.FormFile
-  parent: Glitch9.IO.Networking.RESTApi
-  name: FormFile
-  nameWithType: FormFile
-  fullName: Glitch9.IO.Networking.RESTApi.FormFile
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
+- uid: Glitch9.IO.Files.IFile
+  commentId: T:Glitch9.IO.Files.IFile
+  parent: Glitch9.IO.Files
+  name: IFile
+  nameWithType: IFile
+  fullName: Glitch9.IO.Files.IFile
+- uid: Glitch9.IO.Files
+  commentId: N:Glitch9.IO.Files
   href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
+  name: Glitch9.IO.Files
+  nameWithType: Glitch9.IO.Files
+  fullName: Glitch9.IO.Files
   spec.csharp:
   - uid: Glitch9
     name: Glitch9
@@ -193,13 +193,9 @@ references:
     name: IO
     href: Glitch9.IO.html
   - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
+  - uid: Glitch9.IO.Files
+    name: Files
+    href: Glitch9.IO.Files.html
   spec.vb:
   - uid: Glitch9
     name: Glitch9
@@ -209,10 +205,6 @@ references:
     name: IO
     href: Glitch9.IO.html
   - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
+  - uid: Glitch9.IO.Files
+    name: Files
+    href: Glitch9.IO.Files.html

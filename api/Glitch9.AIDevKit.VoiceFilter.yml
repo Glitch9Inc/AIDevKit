@@ -5,7 +5,7 @@ items:
   id: VoiceFilter
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.VoiceFilter.API(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.VoiceFilter.API(Glitch9.AIDevKit.Api)
   - Glitch9.AIDevKit.VoiceFilter.Api
   - Glitch9.AIDevKit.VoiceFilter.Equals(Glitch9.AIDevKit.VoiceFilter)
   - Glitch9.AIDevKit.VoiceFilter.Equals(System.Object)
@@ -50,11 +50,11 @@ items:
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
-    content: public AIProvider Api { get; set; }
+    content: public Api Api { get; set; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.AIProvider
-    content.vb: Public Property Api As AIProvider
+      type: Glitch9.AIDevKit.Api
+    content.vb: Public Property Api As Api
   overload: Glitch9.AIDevKit.VoiceFilter.Api*
   implements:
   - Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Voice}.Api
@@ -112,16 +112,16 @@ items:
   overload: Glitch9.AIDevKit.VoiceFilter.Matches*
   implements:
   - Glitch9.AIDevKit.IAIDevKitAssetFilter{Glitch9.AIDevKit.Voice}.Matches(Glitch9.AIDevKit.Voice)
-- uid: Glitch9.AIDevKit.VoiceFilter.API(Glitch9.AIDevKit.AIProvider)
-  commentId: M:Glitch9.AIDevKit.VoiceFilter.API(Glitch9.AIDevKit.AIProvider)
-  id: API(Glitch9.AIDevKit.AIProvider)
+- uid: Glitch9.AIDevKit.VoiceFilter.API(Glitch9.AIDevKit.Api)
+  commentId: M:Glitch9.AIDevKit.VoiceFilter.API(Glitch9.AIDevKit.Api)
+  id: API(Glitch9.AIDevKit.Api)
   parent: Glitch9.AIDevKit.VoiceFilter
   langs:
   - csharp
   - vb
-  name: API(AIProvider)
-  nameWithType: VoiceFilter.API(AIProvider)
-  fullName: Glitch9.AIDevKit.VoiceFilter.API(Glitch9.AIDevKit.AIProvider)
+  name: API(Api)
+  nameWithType: VoiceFilter.API(Api)
+  fullName: Glitch9.AIDevKit.VoiceFilter.API(Glitch9.AIDevKit.Api)
   type: Method
   source:
     id: API
@@ -129,13 +129,13 @@ items:
     startLine: 16
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public static VoiceFilter API(AIProvider api = AIProvider.All)
+    content: public static VoiceFilter API(Api api = Api.All)
     parameters:
     - id: api
-      type: Glitch9.AIDevKit.AIProvider
+      type: Glitch9.AIDevKit.Api
     return:
       type: Glitch9.AIDevKit.VoiceFilter
-    content.vb: Public Shared Function API(api As AIProvider = AIProvider.All) As VoiceFilter
+    content.vb: Public Shared Function API(api As Api = Api.All) As VoiceFilter
   overload: Glitch9.AIDevKit.VoiceFilter.API*
 - uid: Glitch9.AIDevKit.VoiceFilter.Equals(System.Object)
   commentId: M:Glitch9.AIDevKit.VoiceFilter.Equals(System.Object)
@@ -395,13 +395,13 @@ references:
   fullName: Glitch9.AIDevKit.IAIDevKitAssetFilter<Glitch9.AIDevKit.Voice>.Api
   nameWithType.vb: IAIDevKitAssetFilter(Of Voice).Api
   fullName.vb: Glitch9.AIDevKit.IAIDevKitAssetFilter(Of Glitch9.AIDevKit.Voice).Api
-- uid: Glitch9.AIDevKit.AIProvider
-  commentId: T:Glitch9.AIDevKit.AIProvider
+- uid: Glitch9.AIDevKit.Api
+  commentId: T:Glitch9.AIDevKit.Api
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.AIProvider.html
-  name: AIProvider
-  nameWithType: AIProvider
-  fullName: Glitch9.AIDevKit.AIProvider
+  href: Glitch9.AIDevKit.Api.html
+  name: Api
+  nameWithType: Api
+  fullName: Glitch9.AIDevKit.Api
 - uid: Glitch9.AIDevKit.IAIDevKitAssetFilter`1.Api
   commentId: P:Glitch9.AIDevKit.IAIDevKitAssetFilter`1.Api
   href: Glitch9.AIDevKit.IAIDevKitAssetFilter-1.html#Glitch9_AIDevKit_IAIDevKitAssetFilter_1_Api
@@ -509,7 +509,7 @@ references:
   - name: )
 - uid: Glitch9.AIDevKit.VoiceFilter.API*
   commentId: Overload:Glitch9.AIDevKit.VoiceFilter.API
-  href: Glitch9.AIDevKit.VoiceFilter.html#Glitch9_AIDevKit_VoiceFilter_API_Glitch9_AIDevKit_AIProvider_
+  href: Glitch9.AIDevKit.VoiceFilter.html#Glitch9_AIDevKit_VoiceFilter_API_Glitch9_AIDevKit_Api_
   name: API
   nameWithType: VoiceFilter.API
   fullName: Glitch9.AIDevKit.VoiceFilter.API

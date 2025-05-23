@@ -9,7 +9,7 @@ items:
   - Glitch9.AIDevKit.Google.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.Google.GenerateContentRequest)
   - Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
   - Glitch9.AIDevKit.Google.RequestExtensions.GenerateVideoAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
-  - Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   langs:
   - csharp
   - vb
@@ -84,17 +84,17 @@ items:
       type: UniTask{Glitch9.AIDevKit.Google.GenerateContentResponse}
     content.vb: Public Shared Function ExecuteAsync(request As GenerateContentRequest) As UniTask(Of GenerateContentResponse)
   overload: Glitch9.AIDevKit.Google.RequestExtensions.ExecuteAsync*
-- uid: Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  id: StreamAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  id: StreamAsync(Glitch9.AIDevKit.Google.GenerateContentRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   isExtensionMethod: true
   parent: Glitch9.AIDevKit.Google.RequestExtensions
   langs:
   - csharp
   - vb
-  name: StreamAsync(GenerateContentRequest, ChatStreamHandler)
-  nameWithType: RequestExtensions.StreamAsync(GenerateContentRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Google.GenerateContentRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  name: StreamAsync(GenerateContentRequest, IChatCompletionStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(GenerateContentRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Google.GenerateContentRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   type: Method
   source:
     id: StreamAsync
@@ -102,15 +102,15 @@ items:
     startLine: 22
   namespace: Glitch9.AIDevKit.Google
   syntax:
-    content: public static UniTask StreamAsync(this GenerateContentRequest request, ChatStreamHandler streamHandler)
+    content: public static UniTask StreamAsync(this GenerateContentRequest request, IChatCompletionStreamHandler streamHandler)
     parameters:
     - id: request
       type: Glitch9.AIDevKit.Google.GenerateContentRequest
     - id: streamHandler
-      type: Glitch9.AIDevKit.ChatStreamHandler
+      type: Glitch9.AIDevKit.IChatCompletionStreamHandler
     return:
       type: UniTask
-    content.vb: Public Shared Function StreamAsync(request As GenerateContentRequest, streamHandler As ChatStreamHandler) As UniTask
+    content.vb: Public Shared Function StreamAsync(request As GenerateContentRequest, streamHandler As IChatCompletionStreamHandler) As UniTask
   overload: Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync*
 - uid: Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
   commentId: M:Glitch9.AIDevKit.Google.RequestExtensions.GenerateImageAsync(Glitch9.AIDevKit.Google.GenerateMediaRequest)
@@ -315,17 +315,17 @@ references:
   - name: )
 - uid: Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync*
   commentId: Overload:Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync
-  href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_StreamAsync_Glitch9_AIDevKit_Google_GenerateContentRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  href: Glitch9.AIDevKit.Google.RequestExtensions.html#Glitch9_AIDevKit_Google_RequestExtensions_StreamAsync_Glitch9_AIDevKit_Google_GenerateContentRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   name: StreamAsync
   nameWithType: RequestExtensions.StreamAsync
   fullName: Glitch9.AIDevKit.Google.RequestExtensions.StreamAsync
-- uid: Glitch9.AIDevKit.ChatStreamHandler
-  commentId: T:Glitch9.AIDevKit.ChatStreamHandler
+- uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+  commentId: T:Glitch9.AIDevKit.IChatCompletionStreamHandler
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ChatStreamHandler.html
-  name: ChatStreamHandler
-  nameWithType: ChatStreamHandler
-  fullName: Glitch9.AIDevKit.ChatStreamHandler
+  href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
+  name: IChatCompletionStreamHandler
+  nameWithType: IChatCompletionStreamHandler
+  fullName: Glitch9.AIDevKit.IChatCompletionStreamHandler
 - uid: UniTask
   isExternal: true
   name: UniTask

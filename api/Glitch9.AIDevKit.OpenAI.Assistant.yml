@@ -5,7 +5,9 @@ items:
   id: Assistant
   parent: Glitch9.AIDevKit.OpenAI
   children:
+  - Glitch9.AIDevKit.OpenAI.Assistant.CodeInterpreterEnabled
   - Glitch9.AIDevKit.OpenAI.Assistant.Description
+  - Glitch9.AIDevKit.OpenAI.Assistant.FileSearchEnabled
   - Glitch9.AIDevKit.OpenAI.Assistant.Instructions
   - Glitch9.AIDevKit.OpenAI.Assistant.Name
   - Glitch9.AIDevKit.OpenAI.Assistant.ResponseFormat
@@ -22,23 +24,23 @@ items:
   source:
     id: Assistant
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/Assistant.cs
-    startLine: 7
+    startLine: 16
   namespace: Glitch9.AIDevKit.OpenAI
   summary: Renamed from AssistantObject to Assistant (2024.06.14)
   example: []
   syntax:
-    content: 'public class Assistant : ModelResponse'
-    content.vb: Public Class Assistant Inherits ModelResponse
+    content: 'public class Assistant : AIResponse'
+    content.vb: Public Class Assistant Inherits AIResponse
   inheritance:
   - System.Object
-  - Glitch9.AIDevKit.ModelResponse
+  - Glitch9.AIDevKit.AIResponse
   inheritedMembers:
-  - Glitch9.AIDevKit.ModelResponse.Id
-  - Glitch9.AIDevKit.ModelResponse.Object
-  - Glitch9.AIDevKit.ModelResponse.Model
-  - Glitch9.AIDevKit.ModelResponse.CreatedAt
-  - Glitch9.AIDevKit.ModelResponse.Metadata
-  - Glitch9.AIDevKit.ModelResponse.Usage
+  - Glitch9.AIDevKit.AIResponse.Id
+  - Glitch9.AIDevKit.AIResponse.Object
+  - Glitch9.AIDevKit.AIResponse.Model
+  - Glitch9.AIDevKit.AIResponse.CreatedAt
+  - Glitch9.AIDevKit.AIResponse.Metadata
+  - Glitch9.AIDevKit.AIResponse.Usage
 - uid: Glitch9.AIDevKit.OpenAI.Assistant.Name
   commentId: P:Glitch9.AIDevKit.OpenAI.Assistant.Name
   id: Name
@@ -53,7 +55,7 @@ items:
   source:
     id: Name
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/Assistant.cs
-    startLine: 12
+    startLine: 21
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The name of the AssistantObject. The maximum length is 256 characters.
   example: []
@@ -78,7 +80,7 @@ items:
   source:
     id: Description
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/Assistant.cs
-    startLine: 17
+    startLine: 26
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The description of the AssistantObject. The maximum length is 512 characters.
   example: []
@@ -103,7 +105,7 @@ items:
   source:
     id: Instructions
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/Assistant.cs
-    startLine: 22
+    startLine: 31
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The System instructions that the AssistantObject uses. The maximum length is 32768 characters.
   example: []
@@ -128,16 +130,16 @@ items:
   source:
     id: Tools
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/Assistant.cs
-    startLine: 27
+    startLine: 36
   namespace: Glitch9.AIDevKit.OpenAI
   summary: A list of Tool enabled on the AssistantObject. There can be a maximum of 128 tools per AssistantObject. Tools can be of types code_interpreter, retrieval, or Function.
   example: []
   syntax:
-    content: public ToolCall[] Tools { get; set; }
+    content: public List<ToolCall> Tools { get; set; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.ToolCall[]
-    content.vb: Public Property Tools As ToolCall()
+      type: System.Collections.Generic.List{Glitch9.AIDevKit.ToolCall}
+    content.vb: Public Property Tools As List(Of ToolCall)
   overload: Glitch9.AIDevKit.OpenAI.Assistant.Tools*
 - uid: Glitch9.AIDevKit.OpenAI.Assistant.Temperature
   commentId: P:Glitch9.AIDevKit.OpenAI.Assistant.Temperature
@@ -153,7 +155,7 @@ items:
   source:
     id: Temperature
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/Assistant.cs
-    startLine: 41
+    startLine: 50
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     [Legacy]
@@ -181,7 +183,7 @@ items:
   source:
     id: TopP
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/Assistant.cs
-    startLine: 49
+    startLine: 58
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     An alternative to sampling with temperature, called nucleus sampling,
@@ -213,7 +215,7 @@ items:
   source:
     id: ResponseFormat
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/Assistant.cs
-    startLine: 65
+    startLine: 74
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     Specifies the format that the model must output.
@@ -243,6 +245,52 @@ items:
       type: Glitch9.AIDevKit.ResponseFormat
     content.vb: Public Property ResponseFormat As ResponseFormat
   overload: Glitch9.AIDevKit.OpenAI.Assistant.ResponseFormat*
+- uid: Glitch9.AIDevKit.OpenAI.Assistant.CodeInterpreterEnabled
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistant.CodeInterpreterEnabled
+  id: CodeInterpreterEnabled
+  parent: Glitch9.AIDevKit.OpenAI.Assistant
+  langs:
+  - csharp
+  - vb
+  name: CodeInterpreterEnabled
+  nameWithType: Assistant.CodeInterpreterEnabled
+  fullName: Glitch9.AIDevKit.OpenAI.Assistant.CodeInterpreterEnabled
+  type: Property
+  source:
+    id: CodeInterpreterEnabled
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/Assistant.cs
+    startLine: 77
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public bool CodeInterpreterEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property CodeInterpreterEnabled As Boolean
+  overload: Glitch9.AIDevKit.OpenAI.Assistant.CodeInterpreterEnabled*
+- uid: Glitch9.AIDevKit.OpenAI.Assistant.FileSearchEnabled
+  commentId: P:Glitch9.AIDevKit.OpenAI.Assistant.FileSearchEnabled
+  id: FileSearchEnabled
+  parent: Glitch9.AIDevKit.OpenAI.Assistant
+  langs:
+  - csharp
+  - vb
+  name: FileSearchEnabled
+  nameWithType: Assistant.FileSearchEnabled
+  fullName: Glitch9.AIDevKit.OpenAI.Assistant.FileSearchEnabled
+  type: Property
+  source:
+    id: FileSearchEnabled
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Assistant/Assistant.cs
+    startLine: 97
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public bool FileSearchEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FileSearchEnabled As Boolean
+  overload: Glitch9.AIDevKit.OpenAI.Assistant.FileSearchEnabled*
 references:
 - uid: Glitch9.AIDevKit.OpenAI
   commentId: N:Glitch9.AIDevKit.OpenAI
@@ -284,55 +332,55 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.AIDevKit.ModelResponse
-  commentId: T:Glitch9.AIDevKit.ModelResponse
+- uid: Glitch9.AIDevKit.AIResponse
+  commentId: T:Glitch9.AIDevKit.AIResponse
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelResponse.html
-  name: ModelResponse
-  nameWithType: ModelResponse
-  fullName: Glitch9.AIDevKit.ModelResponse
-- uid: Glitch9.AIDevKit.ModelResponse.Id
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Id
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Id
+  href: Glitch9.AIDevKit.AIResponse.html
+  name: AIResponse
+  nameWithType: AIResponse
+  fullName: Glitch9.AIDevKit.AIResponse
+- uid: Glitch9.AIDevKit.AIResponse.Id
+  commentId: P:Glitch9.AIDevKit.AIResponse.Id
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Id
   name: Id
-  nameWithType: ModelResponse.Id
-  fullName: Glitch9.AIDevKit.ModelResponse.Id
-- uid: Glitch9.AIDevKit.ModelResponse.Object
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Object
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Object
+  nameWithType: AIResponse.Id
+  fullName: Glitch9.AIDevKit.AIResponse.Id
+- uid: Glitch9.AIDevKit.AIResponse.Object
+  commentId: P:Glitch9.AIDevKit.AIResponse.Object
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Object
   name: Object
-  nameWithType: ModelResponse.Object
-  fullName: Glitch9.AIDevKit.ModelResponse.Object
-- uid: Glitch9.AIDevKit.ModelResponse.Model
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Model
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Model
+  nameWithType: AIResponse.Object
+  fullName: Glitch9.AIDevKit.AIResponse.Object
+- uid: Glitch9.AIDevKit.AIResponse.Model
+  commentId: P:Glitch9.AIDevKit.AIResponse.Model
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Model
   name: Model
-  nameWithType: ModelResponse.Model
-  fullName: Glitch9.AIDevKit.ModelResponse.Model
-- uid: Glitch9.AIDevKit.ModelResponse.CreatedAt
-  commentId: P:Glitch9.AIDevKit.ModelResponse.CreatedAt
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_CreatedAt
+  nameWithType: AIResponse.Model
+  fullName: Glitch9.AIDevKit.AIResponse.Model
+- uid: Glitch9.AIDevKit.AIResponse.CreatedAt
+  commentId: P:Glitch9.AIDevKit.AIResponse.CreatedAt
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_CreatedAt
   name: CreatedAt
-  nameWithType: ModelResponse.CreatedAt
-  fullName: Glitch9.AIDevKit.ModelResponse.CreatedAt
-- uid: Glitch9.AIDevKit.ModelResponse.Metadata
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Metadata
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Metadata
+  nameWithType: AIResponse.CreatedAt
+  fullName: Glitch9.AIDevKit.AIResponse.CreatedAt
+- uid: Glitch9.AIDevKit.AIResponse.Metadata
+  commentId: P:Glitch9.AIDevKit.AIResponse.Metadata
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Metadata
   name: Metadata
-  nameWithType: ModelResponse.Metadata
-  fullName: Glitch9.AIDevKit.ModelResponse.Metadata
-- uid: Glitch9.AIDevKit.ModelResponse.Usage
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Usage
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Usage
+  nameWithType: AIResponse.Metadata
+  fullName: Glitch9.AIDevKit.AIResponse.Metadata
+- uid: Glitch9.AIDevKit.AIResponse.Usage
+  commentId: P:Glitch9.AIDevKit.AIResponse.Usage
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Usage
   name: Usage
-  nameWithType: ModelResponse.Usage
-  fullName: Glitch9.AIDevKit.ModelResponse.Usage
+  nameWithType: AIResponse.Usage
+  fullName: Glitch9.AIDevKit.AIResponse.Usage
 - uid: System
   commentId: N:System
   isExternal: true
@@ -396,27 +444,99 @@ references:
   name: Tools
   nameWithType: Assistant.Tools
   fullName: Glitch9.AIDevKit.OpenAI.Assistant.Tools
-- uid: Glitch9.AIDevKit.ToolCall[]
-  isExternal: true
+- uid: System.Collections.Generic.List{Glitch9.AIDevKit.ToolCall}
+  commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.ToolCall}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
   href: Glitch9.AIDevKit.ToolCall.html
-  name: ToolCall[]
-  nameWithType: ToolCall[]
-  fullName: Glitch9.AIDevKit.ToolCall[]
-  nameWithType.vb: ToolCall()
-  fullName.vb: Glitch9.AIDevKit.ToolCall()
-  name.vb: ToolCall()
+  name: List<ToolCall>
+  nameWithType: List<ToolCall>
+  fullName: System.Collections.Generic.List<Glitch9.AIDevKit.ToolCall>
+  nameWithType.vb: List(Of ToolCall)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.AIDevKit.ToolCall)
+  name.vb: List(Of ToolCall)
   spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
   - uid: Glitch9.AIDevKit.ToolCall
     name: ToolCall
     href: Glitch9.AIDevKit.ToolCall.html
-  - name: '['
-  - name: ']'
+  - name: '>'
   spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Glitch9.AIDevKit.ToolCall
     name: ToolCall
     href: Glitch9.AIDevKit.ToolCall.html
-  - name: (
   - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Glitch9.AIDevKit.OpenAI.Assistant.Temperature*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistant.Temperature
   href: Glitch9.AIDevKit.OpenAI.Assistant.html#Glitch9_AIDevKit_OpenAI_Assistant_Temperature
@@ -487,3 +607,25 @@ references:
   name: ResponseFormat
   nameWithType: ResponseFormat
   fullName: Glitch9.AIDevKit.ResponseFormat
+- uid: Glitch9.AIDevKit.OpenAI.Assistant.CodeInterpreterEnabled*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistant.CodeInterpreterEnabled
+  href: Glitch9.AIDevKit.OpenAI.Assistant.html#Glitch9_AIDevKit_OpenAI_Assistant_CodeInterpreterEnabled
+  name: CodeInterpreterEnabled
+  nameWithType: Assistant.CodeInterpreterEnabled
+  fullName: Glitch9.AIDevKit.OpenAI.Assistant.CodeInterpreterEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Glitch9.AIDevKit.OpenAI.Assistant.FileSearchEnabled*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistant.FileSearchEnabled
+  href: Glitch9.AIDevKit.OpenAI.Assistant.html#Glitch9_AIDevKit_OpenAI_Assistant_FileSearchEnabled
+  name: FileSearchEnabled
+  nameWithType: Assistant.FileSearchEnabled
+  fullName: Glitch9.AIDevKit.OpenAI.Assistant.FileSearchEnabled

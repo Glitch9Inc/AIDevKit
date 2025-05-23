@@ -8,8 +8,8 @@ items:
   - Glitch9.AIDevKit.GeneratedAudio.ToFiles
   - Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~AudioClip
   - Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~AudioClip[]
-  - Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.UniAudioFile
-  - Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.UniAudioFile[]
+  - Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.File{AudioClip}
+  - Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.File{AudioClip}[]
   langs:
   - csharp
   - vb
@@ -20,7 +20,7 @@ items:
   source:
     id: GeneratedAudio
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedAudio.cs
-    startLine: 12
+    startLine: 11
   namespace: Glitch9.AIDevKit
   summary: >-
     Represents a generated audio or a collection of generated audios.
@@ -28,28 +28,26 @@ items:
     This class provides implicit conversions to AudioClip and Sprite types for easy usage.
   example: []
   syntax:
-    content: 'public class GeneratedAudio : GeneratedAsset<AudioClip, UniAudioFile>, IGenerated'
-    content.vb: Public Class GeneratedAudio Inherits GeneratedAsset(Of AudioClip, UniAudioFile) Implements IGenerated
+    content: 'public class GeneratedAudio : GeneratedAsset<AudioClip, File<AudioClip>>, IGeneratedResult'
+    content.vb: Public Class GeneratedAudio Inherits GeneratedAsset(Of AudioClip, File(Of AudioClip)) Implements IGeneratedResult
   inheritance:
   - System.Object
   - Glitch9.Result
   - Glitch9.IO.Networking.RESTApi.RESTResponse
   - Glitch9.AIDevKit.GeneratedResult{AudioClip}
-  - Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}
+  - Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}
   implements:
-  - Glitch9.AIDevKit.IGenerated
+  - Glitch9.AIDevKit.IGeneratedResult
   inheritedMembers:
-  - Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.Paths
-  - Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.Item(System.String)
-  - Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.ToFiles
-  - Glitch9.AIDevKit.GeneratedResult{AudioClip}.Count
+  - Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.Paths
+  - Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.Item(System.String)
+  - Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.ToFiles
   - Glitch9.AIDevKit.GeneratedResult{AudioClip}.Values
-  - Glitch9.AIDevKit.GeneratedResult{AudioClip}.values
+  - Glitch9.AIDevKit.GeneratedResult{AudioClip}.Count
   - Glitch9.AIDevKit.GeneratedResult{AudioClip}.Usage
-  - Glitch9.AIDevKit.GeneratedResult{AudioClip}.usage
   - Glitch9.AIDevKit.GeneratedResult{AudioClip}.Item(System.Int32)
-  extensionMethods:
-  - Glitch9.IResult.Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert
+  - Glitch9.AIDevKit.GeneratedResult{AudioClip}.values
+  - Glitch9.AIDevKit.GeneratedResult{AudioClip}.usage
 - uid: Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~AudioClip
   commentId: M:Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~AudioClip
   id: op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~AudioClip
@@ -64,7 +62,7 @@ items:
   source:
     id: op_Implicit
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedAudio.cs
-    startLine: 14
+    startLine: 13
   namespace: Glitch9.AIDevKit
   syntax:
     content: public static implicit operator AudioClip(GeneratedAudio generatedAudio)
@@ -92,7 +90,7 @@ items:
   source:
     id: op_Implicit
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedAudio.cs
-    startLine: 15
+    startLine: 14
   namespace: Glitch9.AIDevKit
   syntax:
     content: public static implicit operator AudioClip[](GeneratedAudio generatedAudio)
@@ -106,16 +104,44 @@ items:
   nameWithType.vb: GeneratedAudio.CType(GeneratedAudio)
   fullName.vb: Glitch9.AIDevKit.GeneratedAudio.CType(Glitch9.AIDevKit.GeneratedAudio)
   name.vb: CType(GeneratedAudio)
-- uid: Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.UniAudioFile
-  commentId: M:Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.UniAudioFile
-  id: op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.UniAudioFile
+- uid: Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.File{AudioClip}
+  commentId: M:Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.File{AudioClip}
+  id: op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.File{AudioClip}
   parent: Glitch9.AIDevKit.GeneratedAudio
   langs:
   - csharp
   - vb
-  name: implicit operator UniAudioFile(GeneratedAudio)
-  nameWithType: GeneratedAudio.implicit operator UniAudioFile(GeneratedAudio)
-  fullName: Glitch9.AIDevKit.GeneratedAudio.implicit operator Glitch9.IO.Files.UniAudioFile(Glitch9.AIDevKit.GeneratedAudio)
+  name: implicit operator File<AudioClip>(GeneratedAudio)
+  nameWithType: GeneratedAudio.implicit operator File<AudioClip>(GeneratedAudio)
+  fullName: Glitch9.AIDevKit.GeneratedAudio.implicit operator Glitch9.IO.Files.File<AudioClip>(Glitch9.AIDevKit.GeneratedAudio)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedAudio.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static implicit operator File<AudioClip>(GeneratedAudio generatedAudio)
+    parameters:
+    - id: generatedAudio
+      type: Glitch9.AIDevKit.GeneratedAudio
+    return:
+      type: Glitch9.IO.Files.File{AudioClip}
+    content.vb: Public Shared Widening Operator CType(generatedAudio As GeneratedAudio) As File(Of AudioClip)
+  overload: Glitch9.AIDevKit.GeneratedAudio.op_Implicit*
+  nameWithType.vb: GeneratedAudio.CType(GeneratedAudio)
+  fullName.vb: Glitch9.AIDevKit.GeneratedAudio.CType(Glitch9.AIDevKit.GeneratedAudio)
+  name.vb: CType(GeneratedAudio)
+- uid: Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.File{AudioClip}[]
+  commentId: M:Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.File{AudioClip}[]
+  id: op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.File{AudioClip}[]
+  parent: Glitch9.AIDevKit.GeneratedAudio
+  langs:
+  - csharp
+  - vb
+  name: implicit operator File<AudioClip>[](GeneratedAudio)
+  nameWithType: GeneratedAudio.implicit operator File<AudioClip>[](GeneratedAudio)
+  fullName: Glitch9.AIDevKit.GeneratedAudio.implicit operator Glitch9.IO.Files.File<AudioClip>[](Glitch9.AIDevKit.GeneratedAudio)
   type: Operator
   source:
     id: op_Implicit
@@ -123,41 +149,13 @@ items:
     startLine: 16
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public static implicit operator UniAudioFile(GeneratedAudio generatedAudio)
+    content: public static implicit operator File<AudioClip>[](GeneratedAudio generatedAudio)
     parameters:
     - id: generatedAudio
       type: Glitch9.AIDevKit.GeneratedAudio
     return:
-      type: Glitch9.IO.Files.UniAudioFile
-    content.vb: Public Shared Widening Operator CType(generatedAudio As GeneratedAudio) As UniAudioFile
-  overload: Glitch9.AIDevKit.GeneratedAudio.op_Implicit*
-  nameWithType.vb: GeneratedAudio.CType(GeneratedAudio)
-  fullName.vb: Glitch9.AIDevKit.GeneratedAudio.CType(Glitch9.AIDevKit.GeneratedAudio)
-  name.vb: CType(GeneratedAudio)
-- uid: Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.UniAudioFile[]
-  commentId: M:Glitch9.AIDevKit.GeneratedAudio.op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.UniAudioFile[]
-  id: op_Implicit(Glitch9.AIDevKit.GeneratedAudio)~Glitch9.IO.Files.UniAudioFile[]
-  parent: Glitch9.AIDevKit.GeneratedAudio
-  langs:
-  - csharp
-  - vb
-  name: implicit operator UniAudioFile[](GeneratedAudio)
-  nameWithType: GeneratedAudio.implicit operator UniAudioFile[](GeneratedAudio)
-  fullName: Glitch9.AIDevKit.GeneratedAudio.implicit operator Glitch9.IO.Files.UniAudioFile[](Glitch9.AIDevKit.GeneratedAudio)
-  type: Operator
-  source:
-    id: op_Implicit
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedAudio.cs
-    startLine: 17
-  namespace: Glitch9.AIDevKit
-  syntax:
-    content: public static implicit operator UniAudioFile[](GeneratedAudio generatedAudio)
-    parameters:
-    - id: generatedAudio
-      type: Glitch9.AIDevKit.GeneratedAudio
-    return:
-      type: Glitch9.IO.Files.UniAudioFile[]
-    content.vb: Public Shared Widening Operator CType(generatedAudio As GeneratedAudio) As UniAudioFile()
+      type: Glitch9.IO.Files.File{AudioClip}[]
+    content.vb: Public Shared Widening Operator CType(generatedAudio As GeneratedAudio) As File(Of AudioClip)()
   overload: Glitch9.AIDevKit.GeneratedAudio.op_Implicit*
   nameWithType.vb: GeneratedAudio.CType(GeneratedAudio)
   fullName.vb: Glitch9.AIDevKit.GeneratedAudio.CType(Glitch9.AIDevKit.GeneratedAudio)
@@ -176,15 +174,15 @@ items:
   source:
     id: ToFiles
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedAudio.cs
-    startLine: 22
+    startLine: 21
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
-    content: public override UniAudioFile[] ToFiles()
+    content: public override File<AudioClip>[] ToFiles()
     return:
-      type: Glitch9.IO.Files.UniAudioFile[]
-    content.vb: Public Overrides Function ToFiles() As UniAudioFile()
-  overridden: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.ToFiles
+      type: Glitch9.IO.Files.File{AudioClip}[]
+    content.vb: Public Overrides Function ToFiles() As File(Of AudioClip)()
+  overridden: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.ToFiles
   overload: Glitch9.AIDevKit.GeneratedAudio.ToFiles*
 references:
 - uid: Glitch9.AIDevKit
@@ -262,17 +260,17 @@ references:
     name: AudioClip
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}
-  commentId: T:Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}
+- uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}
+  commentId: T:Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}
   parent: Glitch9.AIDevKit
   definition: Glitch9.AIDevKit.GeneratedAsset`2
   href: Glitch9.AIDevKit.GeneratedAsset-2.html
-  name: GeneratedAsset<AudioClip, UniAudioFile>
-  nameWithType: GeneratedAsset<AudioClip, UniAudioFile>
-  fullName: Glitch9.AIDevKit.GeneratedAsset<AudioClip, Glitch9.IO.Files.UniAudioFile>
-  nameWithType.vb: GeneratedAsset(Of AudioClip, UniAudioFile)
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of AudioClip, Glitch9.IO.Files.UniAudioFile)
-  name.vb: GeneratedAsset(Of AudioClip, UniAudioFile)
+  name: GeneratedAsset<AudioClip, File<AudioClip>>
+  nameWithType: GeneratedAsset<AudioClip, File<AudioClip>>
+  fullName: Glitch9.AIDevKit.GeneratedAsset<AudioClip, Glitch9.IO.Files.File<AudioClip>>
+  nameWithType.vb: GeneratedAsset(Of AudioClip, File(Of AudioClip))
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of AudioClip, Glitch9.IO.Files.File(Of AudioClip))
+  name.vb: GeneratedAsset(Of AudioClip, File(Of AudioClip))
   spec.csharp:
   - uid: Glitch9.AIDevKit.GeneratedAsset`2
     name: GeneratedAsset
@@ -283,8 +281,13 @@ references:
     isExternal: true
   - name: ','
   - name: " "
-  - uid: Glitch9.IO.Files.UniAudioFile
-    name: UniAudioFile
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: <
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: '>'
   - name: '>'
   spec.vb:
   - uid: Glitch9.AIDevKit.GeneratedAsset`2
@@ -298,36 +301,43 @@ references:
     isExternal: true
   - name: ','
   - name: " "
-  - uid: Glitch9.IO.Files.UniAudioFile
-    name: UniAudioFile
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.IGenerated
-  commentId: T:Glitch9.AIDevKit.IGenerated
+  - name: )
+- uid: Glitch9.AIDevKit.IGeneratedResult
+  commentId: T:Glitch9.AIDevKit.IGeneratedResult
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.IGenerated.html
-  name: IGenerated
-  nameWithType: IGenerated
-  fullName: Glitch9.AIDevKit.IGenerated
-- uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.Paths
-  commentId: P:Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.Paths
-  parent: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}
+  href: Glitch9.AIDevKit.IGeneratedResult.html
+  name: IGeneratedResult
+  nameWithType: IGeneratedResult
+  fullName: Glitch9.AIDevKit.IGeneratedResult
+- uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.Paths
+  commentId: P:Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.Paths
+  parent: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}
   definition: Glitch9.AIDevKit.GeneratedAsset`2.Paths
   href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Paths
   name: Paths
-  nameWithType: GeneratedAsset<AudioClip, UniAudioFile>.Paths
-  fullName: Glitch9.AIDevKit.GeneratedAsset<AudioClip, Glitch9.IO.Files.UniAudioFile>.Paths
-  nameWithType.vb: GeneratedAsset(Of AudioClip, UniAudioFile).Paths
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of AudioClip, Glitch9.IO.Files.UniAudioFile).Paths
-- uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.Item(System.String)
-  commentId: P:Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.Item(System.String)
-  parent: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}
+  nameWithType: GeneratedAsset<AudioClip, File<AudioClip>>.Paths
+  fullName: Glitch9.AIDevKit.GeneratedAsset<AudioClip, Glitch9.IO.Files.File<AudioClip>>.Paths
+  nameWithType.vb: GeneratedAsset(Of AudioClip, File(Of AudioClip)).Paths
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of AudioClip, Glitch9.IO.Files.File(Of AudioClip)).Paths
+- uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.Item(System.String)
+  commentId: P:Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.Item(System.String)
+  parent: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}
   definition: Glitch9.AIDevKit.GeneratedAsset`2.Item(System.String)
   href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Item_System_String_
   name: this[string]
-  nameWithType: GeneratedAsset<AudioClip, UniAudioFile>.this[string]
-  fullName: Glitch9.AIDevKit.GeneratedAsset<AudioClip, Glitch9.IO.Files.UniAudioFile>.this[string]
-  nameWithType.vb: GeneratedAsset(Of AudioClip, UniAudioFile).this[](String)
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of AudioClip, Glitch9.IO.Files.UniAudioFile).this[](String)
+  nameWithType: GeneratedAsset<AudioClip, File<AudioClip>>.this[string]
+  fullName: Glitch9.AIDevKit.GeneratedAsset<AudioClip, Glitch9.IO.Files.File<AudioClip>>.this[string]
+  nameWithType.vb: GeneratedAsset(Of AudioClip, File(Of AudioClip)).this[](String)
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of AudioClip, Glitch9.IO.Files.File(Of AudioClip)).this[](String)
   name.vb: this[](String)
   spec.csharp:
   - name: this
@@ -337,7 +347,7 @@ references:
     isExternal: true
   - name: ']'
   spec.vb:
-  - uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.Item(System.String)
+  - uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.Item(System.String)
     name: this[]
     href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Item_System_String_
   - name: (
@@ -345,38 +355,28 @@ references:
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.ToFiles
-  commentId: M:Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.ToFiles
-  parent: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}
+- uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.ToFiles
+  commentId: M:Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.ToFiles
+  parent: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}
   definition: Glitch9.AIDevKit.GeneratedAsset`2.ToFiles
   href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles
   name: ToFiles()
-  nameWithType: GeneratedAsset<AudioClip, UniAudioFile>.ToFiles()
-  fullName: Glitch9.AIDevKit.GeneratedAsset<AudioClip, Glitch9.IO.Files.UniAudioFile>.ToFiles()
-  nameWithType.vb: GeneratedAsset(Of AudioClip, UniAudioFile).ToFiles()
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of AudioClip, Glitch9.IO.Files.UniAudioFile).ToFiles()
+  nameWithType: GeneratedAsset<AudioClip, File<AudioClip>>.ToFiles()
+  fullName: Glitch9.AIDevKit.GeneratedAsset<AudioClip, Glitch9.IO.Files.File<AudioClip>>.ToFiles()
+  nameWithType.vb: GeneratedAsset(Of AudioClip, File(Of AudioClip)).ToFiles()
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of AudioClip, Glitch9.IO.Files.File(Of AudioClip)).ToFiles()
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.ToFiles
+  - uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.ToFiles
     name: ToFiles
     href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles
   - name: (
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.UniAudioFile}.ToFiles
+  - uid: Glitch9.AIDevKit.GeneratedAsset{AudioClip,Glitch9.IO.Files.File{AudioClip}}.ToFiles
     name: ToFiles
     href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles
   - name: (
   - name: )
-- uid: Glitch9.AIDevKit.GeneratedResult{AudioClip}.Count
-  commentId: P:Glitch9.AIDevKit.GeneratedResult{AudioClip}.Count
-  parent: Glitch9.AIDevKit.GeneratedResult{AudioClip}
-  definition: Glitch9.AIDevKit.GeneratedResult`1.Count
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Count
-  name: Count
-  nameWithType: GeneratedResult<AudioClip>.Count
-  fullName: Glitch9.AIDevKit.GeneratedResult<AudioClip>.Count
-  nameWithType.vb: GeneratedResult(Of AudioClip).Count
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of AudioClip).Count
 - uid: Glitch9.AIDevKit.GeneratedResult{AudioClip}.Values
   commentId: P:Glitch9.AIDevKit.GeneratedResult{AudioClip}.Values
   parent: Glitch9.AIDevKit.GeneratedResult{AudioClip}
@@ -387,16 +387,16 @@ references:
   fullName: Glitch9.AIDevKit.GeneratedResult<AudioClip>.Values
   nameWithType.vb: GeneratedResult(Of AudioClip).Values
   fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of AudioClip).Values
-- uid: Glitch9.AIDevKit.GeneratedResult{AudioClip}.values
-  commentId: F:Glitch9.AIDevKit.GeneratedResult{AudioClip}.values
+- uid: Glitch9.AIDevKit.GeneratedResult{AudioClip}.Count
+  commentId: P:Glitch9.AIDevKit.GeneratedResult{AudioClip}.Count
   parent: Glitch9.AIDevKit.GeneratedResult{AudioClip}
-  definition: Glitch9.AIDevKit.GeneratedResult`1.values
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_values
-  name: values
-  nameWithType: GeneratedResult<AudioClip>.values
-  fullName: Glitch9.AIDevKit.GeneratedResult<AudioClip>.values
-  nameWithType.vb: GeneratedResult(Of AudioClip).values
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of AudioClip).values
+  definition: Glitch9.AIDevKit.GeneratedResult`1.Count
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Count
+  name: Count
+  nameWithType: GeneratedResult<AudioClip>.Count
+  fullName: Glitch9.AIDevKit.GeneratedResult<AudioClip>.Count
+  nameWithType.vb: GeneratedResult(Of AudioClip).Count
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of AudioClip).Count
 - uid: Glitch9.AIDevKit.GeneratedResult{AudioClip}.Usage
   commentId: P:Glitch9.AIDevKit.GeneratedResult{AudioClip}.Usage
   parent: Glitch9.AIDevKit.GeneratedResult{AudioClip}
@@ -407,16 +407,6 @@ references:
   fullName: Glitch9.AIDevKit.GeneratedResult<AudioClip>.Usage
   nameWithType.vb: GeneratedResult(Of AudioClip).Usage
   fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of AudioClip).Usage
-- uid: Glitch9.AIDevKit.GeneratedResult{AudioClip}.usage
-  commentId: F:Glitch9.AIDevKit.GeneratedResult{AudioClip}.usage
-  parent: Glitch9.AIDevKit.GeneratedResult{AudioClip}
-  definition: Glitch9.AIDevKit.GeneratedResult`1.usage
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_usage
-  name: usage
-  nameWithType: GeneratedResult<AudioClip>.usage
-  fullName: Glitch9.AIDevKit.GeneratedResult<AudioClip>.usage
-  nameWithType.vb: GeneratedResult(Of AudioClip).usage
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of AudioClip).usage
 - uid: Glitch9.AIDevKit.GeneratedResult{AudioClip}.Item(System.Int32)
   commentId: P:Glitch9.AIDevKit.GeneratedResult{AudioClip}.Item(System.Int32)
   parent: Glitch9.AIDevKit.GeneratedResult{AudioClip}
@@ -444,30 +434,26 @@ references:
     name: Integer
     isExternal: true
   - name: )
-- uid: Glitch9.IResult.Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert
-  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-  definition: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  name: Convert(IResult)
-  nameWithType: AssistantsAPIResultExtensions.Convert(IResult)
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-    name: Convert
-    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  - name: (
-  - uid: Glitch9.IResult
-    name: IResult
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-    name: Convert
-    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  - name: (
-  - uid: Glitch9.IResult
-    name: IResult
-  - name: )
+- uid: Glitch9.AIDevKit.GeneratedResult{AudioClip}.values
+  commentId: F:Glitch9.AIDevKit.GeneratedResult{AudioClip}.values
+  parent: Glitch9.AIDevKit.GeneratedResult{AudioClip}
+  definition: Glitch9.AIDevKit.GeneratedResult`1.values
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_values
+  name: values
+  nameWithType: GeneratedResult<AudioClip>.values
+  fullName: Glitch9.AIDevKit.GeneratedResult<AudioClip>.values
+  nameWithType.vb: GeneratedResult(Of AudioClip).values
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of AudioClip).values
+- uid: Glitch9.AIDevKit.GeneratedResult{AudioClip}.usage
+  commentId: F:Glitch9.AIDevKit.GeneratedResult{AudioClip}.usage
+  parent: Glitch9.AIDevKit.GeneratedResult{AudioClip}
+  definition: Glitch9.AIDevKit.GeneratedResult`1.usage
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_usage
+  name: usage
+  nameWithType: GeneratedResult<AudioClip>.usage
+  fullName: Glitch9.AIDevKit.GeneratedResult<AudioClip>.usage
+  nameWithType.vb: GeneratedResult(Of AudioClip).usage
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of AudioClip).usage
 - uid: System
   commentId: N:System
   isExternal: true
@@ -629,14 +615,6 @@ references:
     href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles
   - name: (
   - name: )
-- uid: Glitch9.AIDevKit.GeneratedResult`1.Count
-  commentId: P:Glitch9.AIDevKit.GeneratedResult`1.Count
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Count
-  name: Count
-  nameWithType: GeneratedResult<T>.Count
-  fullName: Glitch9.AIDevKit.GeneratedResult<T>.Count
-  nameWithType.vb: GeneratedResult(Of T).Count
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).Count
 - uid: Glitch9.AIDevKit.GeneratedResult`1.Values
   commentId: P:Glitch9.AIDevKit.GeneratedResult`1.Values
   href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Values
@@ -645,14 +623,14 @@ references:
   fullName: Glitch9.AIDevKit.GeneratedResult<T>.Values
   nameWithType.vb: GeneratedResult(Of T).Values
   fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).Values
-- uid: Glitch9.AIDevKit.GeneratedResult`1.values
-  commentId: F:Glitch9.AIDevKit.GeneratedResult`1.values
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_values
-  name: values
-  nameWithType: GeneratedResult<T>.values
-  fullName: Glitch9.AIDevKit.GeneratedResult<T>.values
-  nameWithType.vb: GeneratedResult(Of T).values
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).values
+- uid: Glitch9.AIDevKit.GeneratedResult`1.Count
+  commentId: P:Glitch9.AIDevKit.GeneratedResult`1.Count
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Count
+  name: Count
+  nameWithType: GeneratedResult<T>.Count
+  fullName: Glitch9.AIDevKit.GeneratedResult<T>.Count
+  nameWithType.vb: GeneratedResult(Of T).Count
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).Count
 - uid: Glitch9.AIDevKit.GeneratedResult`1.Usage
   commentId: P:Glitch9.AIDevKit.GeneratedResult`1.Usage
   href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Usage
@@ -661,14 +639,6 @@ references:
   fullName: Glitch9.AIDevKit.GeneratedResult<T>.Usage
   nameWithType.vb: GeneratedResult(Of T).Usage
   fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).Usage
-- uid: Glitch9.AIDevKit.GeneratedResult`1.usage
-  commentId: F:Glitch9.AIDevKit.GeneratedResult`1.usage
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_usage
-  name: usage
-  nameWithType: GeneratedResult<T>.usage
-  fullName: Glitch9.AIDevKit.GeneratedResult<T>.usage
-  nameWithType.vb: GeneratedResult(Of T).usage
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).usage
 - uid: Glitch9.AIDevKit.GeneratedResult`1.Item(System.Int32)
   commentId: P:Glitch9.AIDevKit.GeneratedResult`1.Item(System.Int32)
   isExternal: true
@@ -695,73 +665,22 @@ references:
     name: Integer
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  name: Convert(IResult)
-  nameWithType: AssistantsAPIResultExtensions.Convert(IResult)
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-    name: Convert
-    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  - name: (
-  - uid: Glitch9.IResult
-    name: IResult
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-    name: Convert
-    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  - name: (
-  - uid: Glitch9.IResult
-    name: IResult
-  - name: )
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-  parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html
-  name: AssistantsAPIResultExtensions
-  nameWithType: AssistantsAPIResultExtensions
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-- uid: Glitch9.AIDevKit.OpenAI.Assistants
-  commentId: N:Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.html
-  name: Glitch9.AIDevKit.OpenAI.Assistants
-  nameWithType: Glitch9.AIDevKit.OpenAI.Assistants
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.AIDevKit
-    name: AIDevKit
-    href: Glitch9.AIDevKit.html
-  - name: .
-  - uid: Glitch9.AIDevKit.OpenAI
-    name: OpenAI
-    href: Glitch9.AIDevKit.OpenAI.html
-  - name: .
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants
-    name: Assistants
-    href: Glitch9.AIDevKit.OpenAI.Assistants.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.AIDevKit
-    name: AIDevKit
-    href: Glitch9.AIDevKit.html
-  - name: .
-  - uid: Glitch9.AIDevKit.OpenAI
-    name: OpenAI
-    href: Glitch9.AIDevKit.OpenAI.html
-  - name: .
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants
-    name: Assistants
-    href: Glitch9.AIDevKit.OpenAI.Assistants.html
+- uid: Glitch9.AIDevKit.GeneratedResult`1.values
+  commentId: F:Glitch9.AIDevKit.GeneratedResult`1.values
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_values
+  name: values
+  nameWithType: GeneratedResult<T>.values
+  fullName: Glitch9.AIDevKit.GeneratedResult<T>.values
+  nameWithType.vb: GeneratedResult(Of T).values
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).values
+- uid: Glitch9.AIDevKit.GeneratedResult`1.usage
+  commentId: F:Glitch9.AIDevKit.GeneratedResult`1.usage
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_usage
+  name: usage
+  nameWithType: GeneratedResult<T>.usage
+  fullName: Glitch9.AIDevKit.GeneratedResult<T>.usage
+  nameWithType.vb: GeneratedResult(Of T).usage
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).usage
 - uid: Glitch9.AIDevKit.GeneratedAudio.op_Implicit*
   commentId: Overload:Glitch9.AIDevKit.GeneratedAudio.op_Implicit
   name: implicit operator
@@ -806,12 +725,56 @@ references:
     isExternal: true
   - name: (
   - name: )
-- uid: Glitch9.IO.Files.UniAudioFile
-  commentId: T:Glitch9.IO.Files.UniAudioFile
+- uid: Glitch9.IO.Files.File{AudioClip}
+  commentId: T:Glitch9.IO.Files.File{AudioClip}
   parent: Glitch9.IO.Files
-  name: UniAudioFile
-  nameWithType: UniAudioFile
-  fullName: Glitch9.IO.Files.UniAudioFile
+  definition: Glitch9.IO.Files.File`1
+  name: File<AudioClip>
+  nameWithType: File<AudioClip>
+  fullName: Glitch9.IO.Files.File<AudioClip>
+  nameWithType.vb: File(Of AudioClip)
+  fullName.vb: Glitch9.IO.Files.File(Of AudioClip)
+  name.vb: File(Of AudioClip)
+  spec.csharp:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: <
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: )
+- uid: Glitch9.IO.Files.File`1
+  commentId: T:Glitch9.IO.Files.File`1
+  name: File<T>
+  nameWithType: File<T>
+  fullName: Glitch9.IO.Files.File<T>
+  nameWithType.vb: File(Of T)
+  fullName.vb: Glitch9.IO.Files.File(Of T)
+  name.vb: File(Of T)
+  spec.csharp:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Glitch9.IO.Files
   commentId: N:Glitch9.IO.Files
   href: Glitch9.html
@@ -842,22 +805,34 @@ references:
   - uid: Glitch9.IO.Files
     name: Files
     href: Glitch9.IO.Files.html
-- uid: Glitch9.IO.Files.UniAudioFile[]
+- uid: Glitch9.IO.Files.File{AudioClip}[]
   isExternal: true
-  name: UniAudioFile[]
-  nameWithType: UniAudioFile[]
-  fullName: Glitch9.IO.Files.UniAudioFile[]
-  nameWithType.vb: UniAudioFile()
-  fullName.vb: Glitch9.IO.Files.UniAudioFile()
-  name.vb: UniAudioFile()
+  name: File<AudioClip>[]
+  nameWithType: File<AudioClip>[]
+  fullName: Glitch9.IO.Files.File<AudioClip>[]
+  nameWithType.vb: File(Of AudioClip)()
+  fullName.vb: Glitch9.IO.Files.File(Of AudioClip)()
+  name.vb: File(Of AudioClip)()
   spec.csharp:
-  - uid: Glitch9.IO.Files.UniAudioFile
-    name: UniAudioFile
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: <
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: '>'
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: Glitch9.IO.Files.UniAudioFile
-    name: UniAudioFile
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: )
   - name: (
   - name: )
 - uid: Glitch9.AIDevKit.GeneratedAudio.ToFiles*

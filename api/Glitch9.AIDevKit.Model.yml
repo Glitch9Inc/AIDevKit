@@ -29,7 +29,7 @@ items:
   source:
     id: Model
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 13
+    startLine: 12
   namespace: Glitch9.AIDevKit
   summary: >-
     ScriptableObject representation of a generative AI model with metadata, configuration, and pricing information.
@@ -72,7 +72,7 @@ items:
   source:
     id: Capability
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 34
+    startLine: 32
   namespace: Glitch9.AIDevKit
   summary: >-
     The type of the model, such as LLM (text), TTS (speech), STT (transcription), or Image.
@@ -80,11 +80,11 @@ items:
     This information is used to route requests to the correct CRUDService of the AIClient.
   example: []
   syntax:
-    content: public ModelCapability Capability { get; }
+    content: public ModelFeature Capability { get; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.ModelCapability
-    content.vb: Public ReadOnly Property Capability As ModelCapability
+      type: Glitch9.AIDevKit.ModelFeature
+    content.vb: Public ReadOnly Property Capability As ModelFeature
   overload: Glitch9.AIDevKit.Model.Capability*
 - uid: Glitch9.AIDevKit.Model.Family
   commentId: P:Glitch9.AIDevKit.Model.Family
@@ -100,7 +100,7 @@ items:
   source:
     id: Family
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 40
+    startLine: 38
   namespace: Glitch9.AIDevKit
   summary: >-
     The family classification of the model (e.g., GPT, Gemini, Imagen).
@@ -128,7 +128,7 @@ items:
   source:
     id: IsLegacy
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 46
+    startLine: 44
   namespace: Glitch9.AIDevKit
   summary: >-
     Indicates whether the model is a legacy version.
@@ -156,7 +156,7 @@ items:
   source:
     id: InputModality
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 52
+    startLine: 50
   namespace: Glitch9.AIDevKit
   summary: >-
     A bitflag indicating supported input modalities (e.g., Text, Image, Audio).
@@ -184,7 +184,7 @@ items:
   source:
     id: OutputModality
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 58
+    startLine: 56
   namespace: Glitch9.AIDevKit
   summary: >-
     A bitflag indicating supported output modalities (e.g., Text, Image, Audio).
@@ -212,7 +212,7 @@ items:
   source:
     id: MaxImageOutput
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 64
+    startLine: 62
   namespace: Glitch9.AIDevKit
   summary: >-
     The maximum number of images that this model can generate in a single request.
@@ -240,7 +240,7 @@ items:
   source:
     id: ModelVersion
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 65
+    startLine: 63
   namespace: Glitch9.AIDevKit
   syntax:
     content: public string ModelVersion { get; }
@@ -263,7 +263,7 @@ items:
   source:
     id: FamilyVersion
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 66
+    startLine: 64
   namespace: Glitch9.AIDevKit
   syntax:
     content: public string FamilyVersion { get; }
@@ -286,7 +286,7 @@ items:
   source:
     id: MaxInputTokens
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 67
+    startLine: 65
   namespace: Glitch9.AIDevKit
   syntax:
     content: public int MaxInputTokens { get; }
@@ -309,7 +309,7 @@ items:
   source:
     id: MaxOutputTokens
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 68
+    startLine: 66
   namespace: Glitch9.AIDevKit
   syntax:
     content: public int MaxOutputTokens { get; }
@@ -332,7 +332,7 @@ items:
   source:
     id: IsFineTuned
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 69
+    startLine: 67
   namespace: Glitch9.AIDevKit
   syntax:
     content: public bool IsFineTuned { get; }
@@ -355,7 +355,7 @@ items:
   source:
     id: Prices
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 70
+    startLine: 68
   namespace: Glitch9.AIDevKit
   syntax:
     content: public ModelPrice[] Prices { get; }
@@ -378,7 +378,7 @@ items:
   source:
     id: EstimatePrice
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 82
+    startLine: 80
   namespace: Glitch9.AIDevKit
   summary: >-
     Estimates the price of using the model based on the provided usage data.
@@ -410,7 +410,7 @@ items:
   source:
     id: op_Implicit
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/Model.cs
-    startLine: 164
+    startLine: 162
   namespace: Glitch9.AIDevKit
   syntax:
     content: public static implicit operator Model(string apiName)
@@ -646,13 +646,13 @@ references:
   name: Capability
   nameWithType: Model.Capability
   fullName: Glitch9.AIDevKit.Model.Capability
-- uid: Glitch9.AIDevKit.ModelCapability
-  commentId: T:Glitch9.AIDevKit.ModelCapability
+- uid: Glitch9.AIDevKit.ModelFeature
+  commentId: T:Glitch9.AIDevKit.ModelFeature
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelCapability.html
-  name: ModelCapability
-  nameWithType: ModelCapability
-  fullName: Glitch9.AIDevKit.ModelCapability
+  href: Glitch9.AIDevKit.ModelFeature.html
+  name: ModelFeature
+  nameWithType: ModelFeature
+  fullName: Glitch9.AIDevKit.ModelFeature
 - uid: Glitch9.AIDevKit.Model.Family*
   commentId: Overload:Glitch9.AIDevKit.Model.Family
   href: Glitch9.AIDevKit.Model.html#Glitch9_AIDevKit_Model_Family

@@ -7,7 +7,8 @@ items:
   children:
   - Glitch9.AIDevKit.OpenAI.UploadPurpose.Assistants
   - Glitch9.AIDevKit.OpenAI.UploadPurpose.AssistantsOutput
-  - Glitch9.AIDevKit.OpenAI.UploadPurpose.BatchAPI
+  - Glitch9.AIDevKit.OpenAI.UploadPurpose.Batch
+  - Glitch9.AIDevKit.OpenAI.UploadPurpose.BatchOutput
   - Glitch9.AIDevKit.OpenAI.UploadPurpose.FineTune
   - Glitch9.AIDevKit.OpenAI.UploadPurpose.FineTuneResults
   - Glitch9.AIDevKit.OpenAI.UploadPurpose.Unknown
@@ -21,8 +22,8 @@ items:
   type: Enum
   source:
     id: UploadPurpose
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/File.cs
-    startLine: 6
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/OpenAIFile.cs
+    startLine: 8
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public enum UploadPurpose
@@ -40,8 +41,8 @@ items:
   type: Field
   source:
     id: Unknown
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/File.cs
-    startLine: 8
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/OpenAIFile.cs
+    startLine: 10
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: Unknown = 0
@@ -60,8 +61,8 @@ items:
   type: Field
   source:
     id: Assistants
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/File.cs
-    startLine: 10
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/OpenAIFile.cs
+    startLine: 12
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: >-
@@ -87,8 +88,8 @@ items:
   type: Field
   source:
     id: AssistantsOutput
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/File.cs
-    startLine: 13
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/OpenAIFile.cs
+    startLine: 15
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: >-
@@ -114,8 +115,8 @@ items:
   type: Field
   source:
     id: FineTune
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/File.cs
-    startLine: 16
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/OpenAIFile.cs
+    startLine: 18
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: >-
@@ -141,8 +142,8 @@ items:
   type: Field
   source:
     id: FineTuneResults
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/File.cs
-    startLine: 19
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/OpenAIFile.cs
+    startLine: 21
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: >-
@@ -168,8 +169,8 @@ items:
   type: Field
   source:
     id: Vision
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/File.cs
-    startLine: 22
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/OpenAIFile.cs
+    startLine: 24
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: >-
@@ -182,33 +183,60 @@ items:
       <ApiEnumAttribute>
 
       Vision = 5
-- uid: Glitch9.AIDevKit.OpenAI.UploadPurpose.BatchAPI
-  commentId: F:Glitch9.AIDevKit.OpenAI.UploadPurpose.BatchAPI
-  id: BatchAPI
+- uid: Glitch9.AIDevKit.OpenAI.UploadPurpose.Batch
+  commentId: F:Glitch9.AIDevKit.OpenAI.UploadPurpose.Batch
+  id: Batch
   parent: Glitch9.AIDevKit.OpenAI.UploadPurpose
   langs:
   - csharp
   - vb
-  name: BatchAPI
-  nameWithType: UploadPurpose.BatchAPI
-  fullName: Glitch9.AIDevKit.OpenAI.UploadPurpose.BatchAPI
+  name: Batch
+  nameWithType: UploadPurpose.Batch
+  fullName: Glitch9.AIDevKit.OpenAI.UploadPurpose.Batch
   type: Field
   source:
-    id: BatchAPI
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/File.cs
-    startLine: 25
+    id: Batch
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/OpenAIFile.cs
+    startLine: 27
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: >-
       [ApiEnumAttribute]
 
-      BatchAPI = 6
+      Batch = 6
     return:
       type: Glitch9.AIDevKit.OpenAI.UploadPurpose
     content.vb: >-
       <ApiEnumAttribute>
 
-      BatchAPI = 6
+      Batch = 6
+- uid: Glitch9.AIDevKit.OpenAI.UploadPurpose.BatchOutput
+  commentId: F:Glitch9.AIDevKit.OpenAI.UploadPurpose.BatchOutput
+  id: BatchOutput
+  parent: Glitch9.AIDevKit.OpenAI.UploadPurpose
+  langs:
+  - csharp
+  - vb
+  name: BatchOutput
+  nameWithType: UploadPurpose.BatchOutput
+  fullName: Glitch9.AIDevKit.OpenAI.UploadPurpose.BatchOutput
+  type: Field
+  source:
+    id: BatchOutput
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/OpenAIFile.cs
+    startLine: 30
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: >-
+      [ApiEnumAttribute]
+
+      BatchOutput = 7
+    return:
+      type: Glitch9.AIDevKit.OpenAI.UploadPurpose
+    content.vb: >-
+      <ApiEnumAttribute>
+
+      BatchOutput = 7
 references:
 - uid: Glitch9.AIDevKit.OpenAI
   commentId: N:Glitch9.AIDevKit.OpenAI

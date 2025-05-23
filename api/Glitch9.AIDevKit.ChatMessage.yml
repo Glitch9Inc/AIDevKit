@@ -6,14 +6,15 @@ items:
   parent: Glitch9.AIDevKit
   children:
   - Glitch9.AIDevKit.ChatMessage.#ctor
-  - Glitch9.AIDevKit.ChatMessage.#ctor(System.String)
+  - Glitch9.AIDevKit.ChatMessage.#ctor(Glitch9.AIDevKit.Content)
   - Glitch9.AIDevKit.ChatMessage.Content
-  - Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,System.String)
+  - Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,Glitch9.AIDevKit.Content)
   - Glitch9.AIDevKit.ChatMessage.Name
   - Glitch9.AIDevKit.ChatMessage.Role
   - Glitch9.AIDevKit.ChatMessage.SentAt
   - Glitch9.AIDevKit.ChatMessage.ToString
   - Glitch9.AIDevKit.ChatMessage.op_Implicit(Glitch9.AIDevKit.ChatMessage)~System.String
+  - Glitch9.AIDevKit.ChatMessage.op_Implicit(System.String)~Glitch9.AIDevKit.ChatMessage
   langs:
   - csharp
   - vb
@@ -24,7 +25,7 @@ items:
   source:
     id: ChatMessage
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 161
+    startLine: 175
   namespace: Glitch9.AIDevKit
   syntax:
     content: public abstract class ChatMessage
@@ -32,8 +33,8 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
-  - Glitch9.AIDevKit.AssistantMessage
   - Glitch9.AIDevKit.OpenAI.ThreadMessage
+  - Glitch9.AIDevKit.ResponseMessage
   - Glitch9.AIDevKit.SystemMessage
   - Glitch9.AIDevKit.UserMessage
   extensionMethods:
@@ -52,7 +53,7 @@ items:
   source:
     id: op_Implicit
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 164
+    startLine: 178
   namespace: Glitch9.AIDevKit
   syntax:
     content: public static implicit operator string(ChatMessage message)
@@ -66,6 +67,34 @@ items:
   nameWithType.vb: ChatMessage.CType(ChatMessage)
   fullName.vb: Glitch9.AIDevKit.ChatMessage.CType(Glitch9.AIDevKit.ChatMessage)
   name.vb: CType(ChatMessage)
+- uid: Glitch9.AIDevKit.ChatMessage.op_Implicit(System.String)~Glitch9.AIDevKit.ChatMessage
+  commentId: M:Glitch9.AIDevKit.ChatMessage.op_Implicit(System.String)~Glitch9.AIDevKit.ChatMessage
+  id: op_Implicit(System.String)~Glitch9.AIDevKit.ChatMessage
+  parent: Glitch9.AIDevKit.ChatMessage
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ChatMessage(string)
+  nameWithType: ChatMessage.implicit operator ChatMessage(string)
+  fullName: Glitch9.AIDevKit.ChatMessage.implicit operator Glitch9.AIDevKit.ChatMessage(string)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
+    startLine: 179
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public static implicit operator ChatMessage(string message)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: Glitch9.AIDevKit.ChatMessage
+    content.vb: Public Shared Widening Operator CType(message As String) As ChatMessage
+  overload: Glitch9.AIDevKit.ChatMessage.op_Implicit*
+  nameWithType.vb: ChatMessage.CType(String)
+  fullName.vb: Glitch9.AIDevKit.ChatMessage.CType(String)
+  name.vb: CType(String)
 - uid: Glitch9.AIDevKit.ChatMessage.Role
   commentId: P:Glitch9.AIDevKit.ChatMessage.Role
   id: Role
@@ -80,7 +109,7 @@ items:
   source:
     id: Role
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 169
+    startLine: 184
   namespace: Glitch9.AIDevKit
   summary: The role of the messages author.
   example: []
@@ -105,7 +134,7 @@ items:
   source:
     id: Content
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 174
+    startLine: 189
   namespace: Glitch9.AIDevKit
   summary: The contents of the user message.
   example: []
@@ -130,7 +159,7 @@ items:
   source:
     id: Name
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 180
+    startLine: 195
   namespace: Glitch9.AIDevKit
   summary: >-
     Optional. An optional name for the participant.
@@ -158,7 +187,7 @@ items:
   source:
     id: SentAt
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 183
+    startLine: 198
   namespace: Glitch9.AIDevKit
   syntax:
     content: public UnixTime SentAt { get; }
@@ -181,7 +210,7 @@ items:
   source:
     id: ToString
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 184
+    startLine: 199
   namespace: Glitch9.AIDevKit
   summary: Returns a string that represents the current object.
   example: []
@@ -207,7 +236,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 186
+    startLine: 201
   namespace: Glitch9.AIDevKit
   syntax:
     content: public ChatMessage()
@@ -216,62 +245,59 @@ items:
   nameWithType.vb: ChatMessage.New()
   fullName.vb: Glitch9.AIDevKit.ChatMessage.New()
   name.vb: New()
-- uid: Glitch9.AIDevKit.ChatMessage.#ctor(System.String)
-  commentId: M:Glitch9.AIDevKit.ChatMessage.#ctor(System.String)
-  id: '#ctor(System.String)'
+- uid: Glitch9.AIDevKit.ChatMessage.#ctor(Glitch9.AIDevKit.Content)
+  commentId: M:Glitch9.AIDevKit.ChatMessage.#ctor(Glitch9.AIDevKit.Content)
+  id: '#ctor(Glitch9.AIDevKit.Content)'
   parent: Glitch9.AIDevKit.ChatMessage
   langs:
   - csharp
   - vb
-  name: ChatMessage(string)
-  nameWithType: ChatMessage.ChatMessage(string)
-  fullName: Glitch9.AIDevKit.ChatMessage.ChatMessage(string)
+  name: ChatMessage(Content)
+  nameWithType: ChatMessage.ChatMessage(Content)
+  fullName: Glitch9.AIDevKit.ChatMessage.ChatMessage(Glitch9.AIDevKit.Content)
   type: Constructor
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 187
+    startLine: 202
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public ChatMessage(string content = null)
+    content: public ChatMessage(Content content = null)
     parameters:
     - id: content
-      type: System.String
-    content.vb: Public Sub New(content As String = Nothing)
+      type: Glitch9.AIDevKit.Content
+    content.vb: Public Sub New(content As Content = Nothing)
   overload: Glitch9.AIDevKit.ChatMessage.#ctor*
-  nameWithType.vb: ChatMessage.New(String)
-  fullName.vb: Glitch9.AIDevKit.ChatMessage.New(String)
-  name.vb: New(String)
-- uid: Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,System.String)
-  commentId: M:Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,System.String)
-  id: Create(Glitch9.AIDevKit.ChatRole,System.String)
+  nameWithType.vb: ChatMessage.New(Content)
+  fullName.vb: Glitch9.AIDevKit.ChatMessage.New(Glitch9.AIDevKit.Content)
+  name.vb: New(Content)
+- uid: Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,Glitch9.AIDevKit.Content)
+  commentId: M:Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole,Glitch9.AIDevKit.Content)
+  id: Create(Glitch9.AIDevKit.ChatRole,Glitch9.AIDevKit.Content)
   parent: Glitch9.AIDevKit.ChatMessage
   langs:
   - csharp
   - vb
-  name: Create(ChatRole, string)
-  nameWithType: ChatMessage.Create(ChatRole, string)
-  fullName: Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole, string)
+  name: Create(ChatRole, Content)
+  nameWithType: ChatMessage.Create(ChatRole, Content)
+  fullName: Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole, Glitch9.AIDevKit.Content)
   type: Method
   source:
     id: Create
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 189
+    startLine: 204
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public static ChatMessage Create(ChatRole role, string content = null)
+    content: public static ChatMessage Create(ChatRole role, Content content = null)
     parameters:
     - id: role
       type: Glitch9.AIDevKit.ChatRole
     - id: content
-      type: System.String
+      type: Glitch9.AIDevKit.Content
     return:
       type: Glitch9.AIDevKit.ChatMessage
-    content.vb: Public Shared Function Create(role As ChatRole, content As String = Nothing) As ChatMessage
+    content.vb: Public Shared Function Create(role As ChatRole, content As Content = Nothing) As ChatMessage
   overload: Glitch9.AIDevKit.ChatMessage.Create*
-  nameWithType.vb: ChatMessage.Create(ChatRole, String)
-  fullName.vb: Glitch9.AIDevKit.ChatMessage.Create(Glitch9.AIDevKit.ChatRole, String)
-  name.vb: Create(ChatRole, String)
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -516,7 +542,7 @@ references:
   name.vb: New
 - uid: Glitch9.AIDevKit.ChatMessage.Create*
   commentId: Overload:Glitch9.AIDevKit.ChatMessage.Create
-  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Create_Glitch9_AIDevKit_ChatRole_System_String_
+  href: Glitch9.AIDevKit.ChatMessage.html#Glitch9_AIDevKit_ChatMessage_Create_Glitch9_AIDevKit_ChatRole_Glitch9_AIDevKit_Content_
   name: Create
   nameWithType: ChatMessage.Create
   fullName: Glitch9.AIDevKit.ChatMessage.Create

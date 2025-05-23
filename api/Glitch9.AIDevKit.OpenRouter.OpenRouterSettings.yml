@@ -7,7 +7,7 @@ items:
   children:
   - Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.DefaultLLM
   - Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.HttpReferer
-  - Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
+  - Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelFeature)
   - Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.XTitle
   langs:
   - csharp
@@ -22,8 +22,14 @@ items:
     startLine: 5
   namespace: Glitch9.AIDevKit.OpenRouter
   syntax:
-    content: 'public class OpenRouterSettings : AIClientSettings<OpenRouterSettings>'
-    content.vb: Public Class OpenRouterSettings Inherits AIClientSettings(Of OpenRouterSettings)
+    content: >-
+      [AssetPath("Resources/AIDevKit")]
+
+      public class OpenRouterSettings : AIClientSettings<OpenRouterSettings>
+    content.vb: >-
+      <AssetPath("Resources/AIDevKit")>
+
+      Public Class OpenRouterSettings Inherits AIClientSettings(Of OpenRouterSettings)
   inheritance:
   - System.Object
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}
@@ -36,6 +42,12 @@ items:
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}.GetApiKey
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}.HasApiKey
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}.Instance
+  attributes:
+  - type: Glitch9.AssetPathAttribute
+    ctor: Glitch9.AssetPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Resources/AIDevKit
 - uid: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.HttpReferer
   commentId: P:Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.HttpReferer
   id: HttpReferer
@@ -105,16 +117,16 @@ items:
       type: System.String
     content.vb: Public Shared ReadOnly Property DefaultLLM As String
   overload: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.DefaultLLM*
-- uid: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
-  commentId: M:Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
-  id: IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)
+- uid: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelFeature)
+  commentId: M:Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelFeature)
+  id: IsDefaultModel(System.String,Glitch9.AIDevKit.ModelFeature)
   parent: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings
   langs:
   - csharp
   - vb
-  name: IsDefaultModel(string, ModelCapability)
-  nameWithType: OpenRouterSettings.IsDefaultModel(string, ModelCapability)
-  fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel(string, Glitch9.AIDevKit.ModelCapability)
+  name: IsDefaultModel(string, ModelFeature)
+  nameWithType: OpenRouterSettings.IsDefaultModel(string, ModelFeature)
+  fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel(string, Glitch9.AIDevKit.ModelFeature)
   type: Method
   source:
     id: IsDefaultModel
@@ -122,19 +134,19 @@ items:
     startLine: 19
   namespace: Glitch9.AIDevKit.OpenRouter
   syntax:
-    content: public static bool IsDefaultModel(string id, ModelCapability cap)
+    content: public static bool IsDefaultModel(string id, ModelFeature cap)
     parameters:
     - id: id
       type: System.String
     - id: cap
-      type: Glitch9.AIDevKit.ModelCapability
+      type: Glitch9.AIDevKit.ModelFeature
     return:
       type: System.Boolean
-    content.vb: Public Shared Function IsDefaultModel(id As String, cap As ModelCapability) As Boolean
+    content.vb: Public Shared Function IsDefaultModel(id As String, cap As ModelFeature) As Boolean
   overload: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel*
-  nameWithType.vb: OpenRouterSettings.IsDefaultModel(String, ModelCapability)
-  fullName.vb: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel(String, Glitch9.AIDevKit.ModelCapability)
-  name.vb: IsDefaultModel(String, ModelCapability)
+  nameWithType.vb: OpenRouterSettings.IsDefaultModel(String, ModelFeature)
+  fullName.vb: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel(String, Glitch9.AIDevKit.ModelFeature)
+  name.vb: IsDefaultModel(String, ModelFeature)
 references:
 - uid: Glitch9.AIDevKit.OpenRouter
   commentId: N:Glitch9.AIDevKit.OpenRouter
@@ -544,17 +556,17 @@ references:
   fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.DefaultLLM
 - uid: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel*
   commentId: Overload:Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel
-  href: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.html#Glitch9_AIDevKit_OpenRouter_OpenRouterSettings_IsDefaultModel_System_String_Glitch9_AIDevKit_ModelCapability_
+  href: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.html#Glitch9_AIDevKit_OpenRouter_OpenRouterSettings_IsDefaultModel_System_String_Glitch9_AIDevKit_ModelFeature_
   name: IsDefaultModel
   nameWithType: OpenRouterSettings.IsDefaultModel
   fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.IsDefaultModel
-- uid: Glitch9.AIDevKit.ModelCapability
-  commentId: T:Glitch9.AIDevKit.ModelCapability
+- uid: Glitch9.AIDevKit.ModelFeature
+  commentId: T:Glitch9.AIDevKit.ModelFeature
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelCapability.html
-  name: ModelCapability
-  nameWithType: ModelCapability
-  fullName: Glitch9.AIDevKit.ModelCapability
+  href: Glitch9.AIDevKit.ModelFeature.html
+  name: ModelFeature
+  nameWithType: ModelFeature
+  fullName: Glitch9.AIDevKit.ModelFeature
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

@@ -32,7 +32,7 @@ items:
   inheritance:
   - System.Object
   - Glitch9.IO.Networking.RESTApi.RequestBody
-  - Glitch9.AIDevKit.ModelRequest
+  - Glitch9.AIDevKit.AIRequest
   - Glitch9.AIDevKit.CompletionRequestBase
   inheritedMembers:
   - Glitch9.AIDevKit.CompletionRequestBase.Prompt
@@ -46,17 +46,17 @@ items:
   - Glitch9.AIDevKit.CompletionRequestBase.Transforms
   - Glitch9.AIDevKit.CompletionRequestBase.KeepAlive
   - Glitch9.AIDevKit.CompletionRequestBase.AttachedFiles
-  - Glitch9.AIDevKit.ModelRequest.Model
-  - Glitch9.AIDevKit.ModelRequest.N
-  - Glitch9.AIDevKit.ModelRequest.Metadata
-  - Glitch9.AIDevKit.ModelRequest.User
+  - Glitch9.AIDevKit.AIRequest.Model
+  - Glitch9.AIDevKit.AIRequest.N
+  - Glitch9.AIDevKit.AIRequest.Metadata
+  - Glitch9.AIDevKit.AIRequest.User
   extensionMethods:
   - Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync
-  - Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatStreamHandler)
+  - Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.IChatCompletionStreamHandler)
   - Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync
-  - Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatStreamHandler)
+  - Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.IChatCompletionStreamHandler)
   - Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync
-  - Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatStreamHandler)
+  - Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.IChatCompletionStreamHandler)
 - uid: Glitch9.AIDevKit.ChatCompletionRequest.StartingMessage
   commentId: P:Glitch9.AIDevKit.ChatCompletionRequest.StartingMessage
   id: StartingMessage
@@ -364,13 +364,13 @@ references:
   name: RequestBody
   nameWithType: RequestBody
   fullName: Glitch9.IO.Networking.RESTApi.RequestBody
-- uid: Glitch9.AIDevKit.ModelRequest
-  commentId: T:Glitch9.AIDevKit.ModelRequest
+- uid: Glitch9.AIDevKit.AIRequest
+  commentId: T:Glitch9.AIDevKit.AIRequest
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelRequest.html
-  name: ModelRequest
-  nameWithType: ModelRequest
-  fullName: Glitch9.AIDevKit.ModelRequest
+  href: Glitch9.AIDevKit.AIRequest.html
+  name: AIRequest
+  nameWithType: AIRequest
+  fullName: Glitch9.AIDevKit.AIRequest
 - uid: Glitch9.AIDevKit.CompletionRequestBase
   commentId: T:Glitch9.AIDevKit.CompletionRequestBase
   parent: Glitch9.AIDevKit
@@ -455,34 +455,34 @@ references:
   name: AttachedFiles
   nameWithType: CompletionRequestBase.AttachedFiles
   fullName: Glitch9.AIDevKit.CompletionRequestBase.AttachedFiles
-- uid: Glitch9.AIDevKit.ModelRequest.Model
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Model
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model
+- uid: Glitch9.AIDevKit.AIRequest.Model
+  commentId: P:Glitch9.AIDevKit.AIRequest.Model
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Model
   name: Model
-  nameWithType: ModelRequest.Model
-  fullName: Glitch9.AIDevKit.ModelRequest.Model
-- uid: Glitch9.AIDevKit.ModelRequest.N
-  commentId: P:Glitch9.AIDevKit.ModelRequest.N
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N
+  nameWithType: AIRequest.Model
+  fullName: Glitch9.AIDevKit.AIRequest.Model
+- uid: Glitch9.AIDevKit.AIRequest.N
+  commentId: P:Glitch9.AIDevKit.AIRequest.N
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_N
   name: N
-  nameWithType: ModelRequest.N
-  fullName: Glitch9.AIDevKit.ModelRequest.N
-- uid: Glitch9.AIDevKit.ModelRequest.Metadata
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Metadata
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata
+  nameWithType: AIRequest.N
+  fullName: Glitch9.AIDevKit.AIRequest.N
+- uid: Glitch9.AIDevKit.AIRequest.Metadata
+  commentId: P:Glitch9.AIDevKit.AIRequest.Metadata
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Metadata
   name: Metadata
-  nameWithType: ModelRequest.Metadata
-  fullName: Glitch9.AIDevKit.ModelRequest.Metadata
-- uid: Glitch9.AIDevKit.ModelRequest.User
-  commentId: P:Glitch9.AIDevKit.ModelRequest.User
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User
+  nameWithType: AIRequest.Metadata
+  fullName: Glitch9.AIDevKit.AIRequest.Metadata
+- uid: Glitch9.AIDevKit.AIRequest.User
+  commentId: P:Glitch9.AIDevKit.AIRequest.User
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_User
   name: User
-  nameWithType: ModelRequest.User
-  fullName: Glitch9.AIDevKit.ModelRequest.User
+  nameWithType: AIRequest.User
+  fullName: Glitch9.AIDevKit.AIRequest.User
 - uid: Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync
   commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ChatCompletionRequest)
   parent: Glitch9.AIDevKit.Ollama.RequestExtensions
@@ -509,41 +509,41 @@ references:
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: )
-- uid: Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   parent: Glitch9.AIDevKit.Ollama.RequestExtensions
-  definition: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
-  name: StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  definition: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
+  name: StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
 - uid: Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync
   commentId: M:Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ChatCompletionRequest)
@@ -571,41 +571,41 @@ references:
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: )
-- uid: Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   parent: Glitch9.AIDevKit.OpenAI.RequestExtensions
-  definition: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
-  name: StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  definition: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
+  name: StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
 - uid: Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync
   commentId: M:Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ChatCompletionRequest)
@@ -633,41 +633,41 @@ references:
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: )
-- uid: Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.ChatCompletionRequest.Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   parent: Glitch9.AIDevKit.OpenRouter.RequestExtensions
-  definition: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
-  name: StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  definition: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
+  name: StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
 - uid: System
   commentId: N:System
@@ -745,39 +745,39 @@ references:
   name: RequestExtensions
   nameWithType: RequestExtensions
   fullName: Glitch9.AIDevKit.Ollama.RequestExtensions
-- uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
-  name: StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
+  name: StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
 - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ChatCompletionRequest)
   commentId: M:Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ChatCompletionRequest)
@@ -810,39 +810,39 @@ references:
   name: RequestExtensions
   nameWithType: RequestExtensions
   fullName: Glitch9.AIDevKit.OpenAI.RequestExtensions
-- uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
-  name: StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
+  name: StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.OpenAI.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.OpenAI.RequestExtensions.html#Glitch9_AIDevKit_OpenAI_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
 - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ChatCompletionRequest)
   commentId: M:Glitch9.AIDevKit.OpenRouter.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ChatCompletionRequest)
@@ -875,39 +875,39 @@ references:
   name: RequestExtensions
   nameWithType: RequestExtensions
   fullName: Glitch9.AIDevKit.OpenRouter.RequestExtensions
-- uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
-  name: StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
+  name: StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - uid: Glitch9.AIDevKit.OpenRouter.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
     name: StreamAsync
-    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+    href: Glitch9.AIDevKit.OpenRouter.RequestExtensions.html#Glitch9_AIDevKit_OpenRouter_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ChatCompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   - name: (
   - uid: Glitch9.AIDevKit.ChatCompletionRequest
     name: ChatCompletionRequest
     href: Glitch9.AIDevKit.ChatCompletionRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.ChatStreamHandler
-    name: ChatStreamHandler
-    href: Glitch9.AIDevKit.ChatStreamHandler.html
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    name: IChatCompletionStreamHandler
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
   - name: )
 - uid: Glitch9.AIDevKit.Ollama
   commentId: N:Glitch9.AIDevKit.Ollama

@@ -6,6 +6,7 @@ items:
   parent: Glitch9.AIDevKit.OpenAI
   children:
   - Glitch9.AIDevKit.OpenAI.FileRequest.#ctor(System.String)
+  - Glitch9.AIDevKit.OpenAI.FileRequest.FileId
   langs:
   - csharp
   - vb
@@ -19,17 +20,40 @@ items:
     startLine: 4
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
-    content: 'public class FileRequest : ModelRequest'
-    content.vb: Public Class FileRequest Inherits ModelRequest
+    content: 'public class FileRequest : AIRequest'
+    content.vb: Public Class FileRequest Inherits AIRequest
   inheritance:
   - System.Object
   - Glitch9.IO.Networking.RESTApi.RequestBody
-  - Glitch9.AIDevKit.ModelRequest
+  - Glitch9.AIDevKit.AIRequest
   inheritedMembers:
-  - Glitch9.AIDevKit.ModelRequest.Model
-  - Glitch9.AIDevKit.ModelRequest.N
-  - Glitch9.AIDevKit.ModelRequest.Metadata
-  - Glitch9.AIDevKit.ModelRequest.User
+  - Glitch9.AIDevKit.AIRequest.Model
+  - Glitch9.AIDevKit.AIRequest.N
+  - Glitch9.AIDevKit.AIRequest.Metadata
+  - Glitch9.AIDevKit.AIRequest.User
+- uid: Glitch9.AIDevKit.OpenAI.FileRequest.FileId
+  commentId: P:Glitch9.AIDevKit.OpenAI.FileRequest.FileId
+  id: FileId
+  parent: Glitch9.AIDevKit.OpenAI.FileRequest
+  langs:
+  - csharp
+  - vb
+  name: FileId
+  nameWithType: FileRequest.FileId
+  fullName: Glitch9.AIDevKit.OpenAI.FileRequest.FileId
+  type: Property
+  source:
+    id: FileId
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/FileRequest.cs
+    startLine: 6
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public string FileId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileId As String
+  overload: Glitch9.AIDevKit.OpenAI.FileRequest.FileId*
 - uid: Glitch9.AIDevKit.OpenAI.FileRequest.#ctor(System.String)
   commentId: M:Glitch9.AIDevKit.OpenAI.FileRequest.#ctor(System.String)
   id: '#ctor(System.String)'
@@ -44,7 +68,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Files/FileRequest.cs
-    startLine: 8
+    startLine: 7
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public FileRequest(string fileId)
@@ -103,41 +127,41 @@ references:
   name: RequestBody
   nameWithType: RequestBody
   fullName: Glitch9.IO.Networking.RESTApi.RequestBody
-- uid: Glitch9.AIDevKit.ModelRequest
-  commentId: T:Glitch9.AIDevKit.ModelRequest
+- uid: Glitch9.AIDevKit.AIRequest
+  commentId: T:Glitch9.AIDevKit.AIRequest
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelRequest.html
-  name: ModelRequest
-  nameWithType: ModelRequest
-  fullName: Glitch9.AIDevKit.ModelRequest
-- uid: Glitch9.AIDevKit.ModelRequest.Model
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Model
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model
+  href: Glitch9.AIDevKit.AIRequest.html
+  name: AIRequest
+  nameWithType: AIRequest
+  fullName: Glitch9.AIDevKit.AIRequest
+- uid: Glitch9.AIDevKit.AIRequest.Model
+  commentId: P:Glitch9.AIDevKit.AIRequest.Model
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Model
   name: Model
-  nameWithType: ModelRequest.Model
-  fullName: Glitch9.AIDevKit.ModelRequest.Model
-- uid: Glitch9.AIDevKit.ModelRequest.N
-  commentId: P:Glitch9.AIDevKit.ModelRequest.N
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N
+  nameWithType: AIRequest.Model
+  fullName: Glitch9.AIDevKit.AIRequest.Model
+- uid: Glitch9.AIDevKit.AIRequest.N
+  commentId: P:Glitch9.AIDevKit.AIRequest.N
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_N
   name: N
-  nameWithType: ModelRequest.N
-  fullName: Glitch9.AIDevKit.ModelRequest.N
-- uid: Glitch9.AIDevKit.ModelRequest.Metadata
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Metadata
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata
+  nameWithType: AIRequest.N
+  fullName: Glitch9.AIDevKit.AIRequest.N
+- uid: Glitch9.AIDevKit.AIRequest.Metadata
+  commentId: P:Glitch9.AIDevKit.AIRequest.Metadata
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Metadata
   name: Metadata
-  nameWithType: ModelRequest.Metadata
-  fullName: Glitch9.AIDevKit.ModelRequest.Metadata
-- uid: Glitch9.AIDevKit.ModelRequest.User
-  commentId: P:Glitch9.AIDevKit.ModelRequest.User
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User
+  nameWithType: AIRequest.Metadata
+  fullName: Glitch9.AIDevKit.AIRequest.Metadata
+- uid: Glitch9.AIDevKit.AIRequest.User
+  commentId: P:Glitch9.AIDevKit.AIRequest.User
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_User
   name: User
-  nameWithType: ModelRequest.User
-  fullName: Glitch9.AIDevKit.ModelRequest.User
+  nameWithType: AIRequest.User
+  fullName: Glitch9.AIDevKit.AIRequest.User
 - uid: System
   commentId: N:System
   isExternal: true
@@ -205,15 +229,12 @@ references:
   - uid: Glitch9.AIDevKit
     name: AIDevKit
     href: Glitch9.AIDevKit.html
-- uid: Glitch9.AIDevKit.OpenAI.FileRequest.#ctor*
-  commentId: Overload:Glitch9.AIDevKit.OpenAI.FileRequest.#ctor
-  href: Glitch9.AIDevKit.OpenAI.FileRequest.html#Glitch9_AIDevKit_OpenAI_FileRequest__ctor_System_String_
-  name: FileRequest
-  nameWithType: FileRequest.FileRequest
-  fullName: Glitch9.AIDevKit.OpenAI.FileRequest.FileRequest
-  nameWithType.vb: FileRequest.New
-  fullName.vb: Glitch9.AIDevKit.OpenAI.FileRequest.New
-  name.vb: New
+- uid: Glitch9.AIDevKit.OpenAI.FileRequest.FileId*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.FileRequest.FileId
+  href: Glitch9.AIDevKit.OpenAI.FileRequest.html#Glitch9_AIDevKit_OpenAI_FileRequest_FileId
+  name: FileId
+  nameWithType: FileRequest.FileId
+  fullName: Glitch9.AIDevKit.OpenAI.FileRequest.FileId
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -224,3 +245,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Glitch9.AIDevKit.OpenAI.FileRequest.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.FileRequest.#ctor
+  href: Glitch9.AIDevKit.OpenAI.FileRequest.html#Glitch9_AIDevKit_OpenAI_FileRequest__ctor_System_String_
+  name: FileRequest
+  nameWithType: FileRequest.FileRequest
+  fullName: Glitch9.AIDevKit.OpenAI.FileRequest.FileRequest
+  nameWithType.vb: FileRequest.New
+  fullName.vb: Glitch9.AIDevKit.OpenAI.FileRequest.New
+  name.vb: New

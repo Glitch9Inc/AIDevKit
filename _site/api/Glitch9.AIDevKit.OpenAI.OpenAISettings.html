@@ -118,7 +118,8 @@
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_OpenAI_OpenAISettings_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OpenAISettings : AIClientSettings&lt;OpenAISettings&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[AssetPath(&quot;Resources/AIDevKit&quot;)]
+public class OpenAISettings : AIClientSettings&lt;OpenAISettings&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
@@ -430,12 +431,12 @@
 
 
   <a id="Glitch9_AIDevKit_OpenAI_OpenAISettings_IsDefaultModel_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAISettings_IsDefaultModel_System_String_Glitch9_AIDevKit_ModelCapability_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelCapability)">IsDefaultModel(string, ModelCapability)</h4>
+  <h4 id="Glitch9_AIDevKit_OpenAI_OpenAISettings_IsDefaultModel_System_String_Glitch9_AIDevKit_ModelFeature_" data-uid="Glitch9.AIDevKit.OpenAI.OpenAISettings.IsDefaultModel(System.String,Glitch9.AIDevKit.ModelFeature)">IsDefaultModel(string, ModelFeature)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsDefaultModel(string id, ModelCapability cap)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsDefaultModel(string id, ModelFeature cap)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -453,7 +454,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.ModelCapability.html">ModelCapability</a></td>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelFeature.html">ModelFeature</a></td>
         <td><span class="parametername">cap</span></td>
         <td></td>
       </tr>

@@ -4,27 +4,11 @@ items:
   commentId: N:Glitch9.AIDevKit.OpenAI.Assistants
   id: Glitch9.AIDevKit.OpenAI.Assistants
   children:
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStreamHandler
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantResult
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantSettings
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultStatus
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
-  - Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler
-  - Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifier
-  - Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifierResponse
-  - Glitch9.AIDevKit.OpenAI.Assistants.IntentType
-  - Glitch9.AIDevKit.OpenAI.Assistants.MessageProvider
-  - Glitch9.AIDevKit.OpenAI.Assistants.RequiredActionStack
-  - Glitch9.AIDevKit.OpenAI.Assistants.RunCheckType
-  - Glitch9.AIDevKit.OpenAI.Assistants.RunProvider
-  - Glitch9.AIDevKit.OpenAI.Assistants.RunStepProvider
-  - Glitch9.AIDevKit.OpenAI.Assistants.ThreadProvider
+  - Glitch9.AIDevKit.OpenAI.Assistants.RunStatusCheckType
   langs:
   - csharp
   - vb
@@ -33,67 +17,26 @@ items:
   fullName: Glitch9.AIDevKit.OpenAI.Assistants
   type: Namespace
 references:
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantController
   parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2.html
-  name: AssistantsAPIv2
-  nameWithType: AssistantsAPIv2
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIv2
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler
-  parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler.html
-  name: AssistantEventHandler
-  nameWithType: AssistantEventHandler
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventHandler
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.html
+  name: AssistantController
+  nameWithType: AssistantController
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController
 - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream
   commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream
   href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream.html
   name: AssistantEventStream
   nameWithType: AssistantEventStream
   fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStream
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStreamHandler
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStreamHandler
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStreamHandler.html
-  name: AssistantEventStreamHandler
-  nameWithType: AssistantEventStreamHandler
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantEventStreamHandler
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantSettings
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantSettings
   parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler.html
-  name: IAssistantEventStreamHandler
-  nameWithType: IAssistantEventStreamHandler
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.IAssistantEventStreamHandler
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
-  parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions.html
-  name: AssistantOptions
-  nameWithType: AssistantOptions
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantOptions
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantResult
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantResult
-  parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantResult.html
-  name: AssistantResult
-  nameWithType: AssistantResult
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantResult
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultStatus
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultStatus
-  parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultStatus.html
-  name: AssistantsAPIResultStatus
-  nameWithType: AssistantsAPIResultStatus
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultStatus
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-  parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html
-  name: AssistantsAPIResultExtensions
-  nameWithType: AssistantsAPIResultExtensions
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
+  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantSettings.html
+  name: AssistantSettings
+  nameWithType: AssistantSettings
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantSettings
 - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
   commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
   parent: Glitch9.AIDevKit.OpenAI.Assistants
@@ -101,93 +44,13 @@ references:
   name: AssistantStatus
   nameWithType: AssistantStatus
   fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.RequiredActionStack
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.RequiredActionStack
-  href: Glitch9.AIDevKit.OpenAI.Assistants.RequiredActionStack.html
-  name: RequiredActionStack
-  nameWithType: RequiredActionStack
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.RequiredActionStack
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider.html
-  name: AssistantProvider
-  nameWithType: AssistantProvider
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProvider
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.MessageProvider
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.MessageProvider
-  href: Glitch9.AIDevKit.OpenAI.Assistants.MessageProvider.html
-  name: MessageProvider
-  nameWithType: MessageProvider
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.MessageProvider
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.RunProvider
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.RunProvider
-  href: Glitch9.AIDevKit.OpenAI.Assistants.RunProvider.html
-  name: RunProvider
-  nameWithType: RunProvider
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.RunProvider
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.RunStepProvider
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.RunStepProvider
-  href: Glitch9.AIDevKit.OpenAI.Assistants.RunStepProvider.html
-  name: RunStepProvider
-  nameWithType: RunStepProvider
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.RunStepProvider
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.ThreadProvider
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.ThreadProvider
-  href: Glitch9.AIDevKit.OpenAI.Assistants.ThreadProvider.html
-  name: ThreadProvider
-  nameWithType: ThreadProvider
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.ThreadProvider
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html
-  name: AssistantProviderBase<T>
-  nameWithType: AssistantProviderBase<T>
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase<T>
-  nameWithType.vb: AssistantProviderBase(Of T)
-  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase(Of T)
-  name.vb: AssistantProviderBase(Of T)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
-    name: AssistantProviderBase
-    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase`1
-    name: AssistantProviderBase
-    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantProviderBase-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.IntentType
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.IntentType
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.RunStatusCheckType
+  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.RunStatusCheckType
   parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.IntentType.html
-  name: IntentType
-  nameWithType: IntentType
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.IntentType
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifierResponse
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifierResponse
-  href: Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifierResponse.html
-  name: IntentClassifierResponse
-  nameWithType: IntentClassifierResponse
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifierResponse
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifier
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifier
-  href: Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifier.html
-  name: IntentClassifier
-  nameWithType: IntentClassifier
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.IntentClassifier
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.RunCheckType
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.RunCheckType
-  parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.RunCheckType.html
-  name: RunCheckType
-  nameWithType: RunCheckType
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.RunCheckType
+  href: Glitch9.AIDevKit.OpenAI.Assistants.RunStatusCheckType.html
+  name: RunStatusCheckType
+  nameWithType: RunStatusCheckType
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.RunStatusCheckType
 - uid: Glitch9.AIDevKit.OpenAI.Assistants
   commentId: N:Glitch9.AIDevKit.OpenAI.Assistants
   href: Glitch9.html

@@ -7,7 +7,7 @@ items:
   children:
   - Glitch9.AIDevKit.Ollama.Services.ModelService.#ctor(Glitch9.AIDevKit.Ollama.Ollama)
   - Glitch9.AIDevKit.Ollama.Services.ModelService.CopyModelAsync(Glitch9.AIDevKit.Ollama.CopyModelRequest)
-  - Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   - Glitch9.AIDevKit.Ollama.Services.ModelService.DeleteModelAsync(Glitch9.AIDevKit.Ollama.DeleteModelRequest)
   - Glitch9.AIDevKit.Ollama.Services.ModelService.ListLocalModelsAsync
   - Glitch9.AIDevKit.Ollama.Services.ModelService.ListRunningModelsAsync
@@ -57,16 +57,16 @@ items:
   nameWithType.vb: ModelService.New(Ollama)
   fullName.vb: Glitch9.AIDevKit.Ollama.Services.ModelService.New(Glitch9.AIDevKit.Ollama.Ollama)
   name.vb: New(Ollama)
-- uid: Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  id: CreateModelAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  id: CreateModelAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   parent: Glitch9.AIDevKit.Ollama.Services.ModelService
   langs:
   - csharp
   - vb
-  name: CreateModelAsync(CreateModelRequest, ChatStreamHandler)
-  nameWithType: ModelService.CreateModelAsync(CreateModelRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  name: CreateModelAsync(CreateModelRequest, IChatCompletionStreamHandler)
+  nameWithType: ModelService.CreateModelAsync(CreateModelRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   type: Method
   source:
     id: CreateModelAsync
@@ -90,13 +90,13 @@ items:
     and then use the file name and SHA256 digest associated with each blob in the files field.
   example: []
   syntax:
-    content: public UniTask CreateModelAsync(CreateModelRequest req, ChatStreamHandler streamHandler)
+    content: public UniTask CreateModelAsync(CreateModelRequest req, IChatCompletionStreamHandler streamHandler)
     parameters:
     - id: req
       type: Glitch9.AIDevKit.Ollama.CreateModelRequest
       description: ''
     - id: streamHandler
-      type: Glitch9.AIDevKit.ChatStreamHandler
+      type: Glitch9.AIDevKit.IChatCompletionStreamHandler
     return:
       type: UniTask
       description: >-
@@ -123,7 +123,7 @@ items:
         {"status":"writing manifest"}
 
         {"status":"success"}
-    content.vb: Public Function CreateModelAsync(req As CreateModelRequest, streamHandler As ChatStreamHandler) As UniTask
+    content.vb: Public Function CreateModelAsync(req As CreateModelRequest, streamHandler As IChatCompletionStreamHandler) As UniTask
   overload: Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync*
 - uid: Glitch9.AIDevKit.Ollama.Services.ModelService.ListLocalModelsAsync
   commentId: M:Glitch9.AIDevKit.Ollama.Services.ModelService.ListLocalModelsAsync
@@ -468,7 +468,7 @@ references:
     href: Glitch9.AIDevKit.Ollama.html
 - uid: Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync*
   commentId: Overload:Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync
-  href: Glitch9.AIDevKit.Ollama.Services.ModelService.html#Glitch9_AIDevKit_Ollama_Services_ModelService_CreateModelAsync_Glitch9_AIDevKit_Ollama_CreateModelRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  href: Glitch9.AIDevKit.Ollama.Services.ModelService.html#Glitch9_AIDevKit_Ollama_Services_ModelService_CreateModelAsync_Glitch9_AIDevKit_Ollama_CreateModelRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   name: CreateModelAsync
   nameWithType: ModelService.CreateModelAsync
   fullName: Glitch9.AIDevKit.Ollama.Services.ModelService.CreateModelAsync
@@ -479,13 +479,13 @@ references:
   name: CreateModelRequest
   nameWithType: CreateModelRequest
   fullName: Glitch9.AIDevKit.Ollama.CreateModelRequest
-- uid: Glitch9.AIDevKit.ChatStreamHandler
-  commentId: T:Glitch9.AIDevKit.ChatStreamHandler
+- uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+  commentId: T:Glitch9.AIDevKit.IChatCompletionStreamHandler
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ChatStreamHandler.html
-  name: ChatStreamHandler
-  nameWithType: ChatStreamHandler
-  fullName: Glitch9.AIDevKit.ChatStreamHandler
+  href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
+  name: IChatCompletionStreamHandler
+  nameWithType: IChatCompletionStreamHandler
+  fullName: Glitch9.AIDevKit.IChatCompletionStreamHandler
 - uid: UniTask
   isExternal: true
   name: UniTask

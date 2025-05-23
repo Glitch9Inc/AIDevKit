@@ -5,9 +5,7 @@ items:
   id: RealtimeSessionController
   parent: Glitch9.AIDevKit.OpenAI.Realtime
   children:
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Action{System.Single[]},System.Action{System.Single[]},System.Action{AudioClip},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{Glitch9.AIDevKit.ErrorResponse},System.Action{System.String},System.Action{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus},Glitch9.AIDevKit.Components.FunctionManager,System.Boolean,System.Boolean,System.Boolean)
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Boolean,System.Boolean,System.Boolean)
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.IStreamingAudioEventReceiver,Glitch9.AIDevKit.Components.IRealtimeEventReceiver,Glitch9.AIDevKit.IWebSocketEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IToolCallReceiver,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,Glitch9.AIDevKit.Components.FunctionManager,System.Boolean)
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.CloseConnection(System.String)
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.CommitUserAudioStreamInput
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConfigureSession(System.String,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Modality[],Glitch9.AIDevKit.Voice,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat,Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat,Glitch9.AIDevKit.OpenAI.Realtime.SpeechToTextOptions,Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection,Glitch9.AIDevKit.FunctionDeclaration[],Glitch9.AIDevKit.OpenAI.ToolChoice,System.Single,System.Nullable{System.Int32})
@@ -30,7 +28,6 @@ items:
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioClips(System.Collections.Generic.List{AudioClip})
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioData(System.Single[])
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.StreamUserAudioFiles(System.Collections.Generic.List{System.String})
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.Voice
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.WebSocket
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.WebSocketState
@@ -43,8 +40,8 @@ items:
   type: Class
   source:
     id: RealtimeSessionController
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 11
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 12
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public class RealtimeSessionController
@@ -64,8 +61,8 @@ items:
   type: Property
   source:
     id: WebSocket
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 17
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 18
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public IWebSocket WebSocket { get; }
@@ -87,8 +84,8 @@ items:
   type: Property
   source:
     id: WebSocketState
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 18
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 19
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public WebSocketState WebSocketState { get; }
@@ -110,8 +107,8 @@ items:
   type: Property
   source:
     id: InputFormat
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 19
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 20
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public RealtimeAudioFormat InputFormat { get; set; }
@@ -133,8 +130,8 @@ items:
   type: Property
   source:
     id: OutputFormat
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 20
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 21
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public RealtimeAudioFormat OutputFormat { get; set; }
@@ -143,52 +140,6 @@ items:
       type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat
     content.vb: Public Property OutputFormat As RealtimeAudioFormat
   overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.OutputFormat*
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled
-  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled
-  id: AudioEnabled
-  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
-  langs:
-  - csharp
-  - vb
-  name: AudioEnabled
-  nameWithType: RealtimeSessionController.AudioEnabled
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled
-  type: Property
-  source:
-    id: AudioEnabled
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 22
-  namespace: Glitch9.AIDevKit.OpenAI.Realtime
-  syntax:
-    content: public bool AudioEnabled { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property AudioEnabled As Boolean
-  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled*
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled
-  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled
-  id: TranscriptEnabled
-  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
-  langs:
-  - csharp
-  - vb
-  name: TranscriptEnabled
-  nameWithType: RealtimeSessionController.TranscriptEnabled
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled
-  type: Property
-  source:
-    id: TranscriptEnabled
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 23
-  namespace: Glitch9.AIDevKit.OpenAI.Realtime
-  syntax:
-    content: public bool TranscriptEnabled { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property TranscriptEnabled As Boolean
-  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled*
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RTMModel
   commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RTMModel
   id: RTMModel
@@ -202,8 +153,8 @@ items:
   type: Property
   source:
     id: RTMModel
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 25
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 23
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public Model RTMModel { get; set; }
@@ -225,8 +176,8 @@ items:
   type: Property
   source:
     id: STTModel
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 26
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 24
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public Model STTModel { get; set; }
@@ -248,8 +199,8 @@ items:
   type: Property
   source:
     id: Voice
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 27
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 25
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public Voice Voice { get; set; }
@@ -271,8 +222,8 @@ items:
   type: Property
   source:
     id: SpokenLanguage
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 28
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 26
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public SystemLanguage SpokenLanguage { get; set; }
@@ -281,127 +232,56 @@ items:
       type: SystemLanguage
     content.vb: Public Property SpokenLanguage As SystemLanguage
   overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.SpokenLanguage*
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Action{System.Single[]},System.Action{System.Single[]},System.Action{AudioClip},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{Glitch9.AIDevKit.ErrorResponse},System.Action{System.String},System.Action{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus},Glitch9.AIDevKit.Components.FunctionManager,System.Boolean,System.Boolean,System.Boolean)
-  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Action{System.Single[]},System.Action{System.Single[]},System.Action{AudioClip},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{Glitch9.AIDevKit.ErrorResponse},System.Action{System.String},System.Action{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus},Glitch9.AIDevKit.Components.FunctionManager,System.Boolean,System.Boolean,System.Boolean)
-  id: '#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Action{System.Single[]},System.Action{System.Single[]},System.Action{AudioClip},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{Glitch9.AIDevKit.ErrorResponse},System.Action{System.String},System.Action{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus},Glitch9.AIDevKit.Components.FunctionManager,System.Boolean,System.Boolean,System.Boolean)'
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.IStreamingAudioEventReceiver,Glitch9.AIDevKit.Components.IRealtimeEventReceiver,Glitch9.AIDevKit.IWebSocketEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IToolCallReceiver,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,Glitch9.AIDevKit.Components.FunctionManager,System.Boolean)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.IStreamingAudioEventReceiver,Glitch9.AIDevKit.Components.IRealtimeEventReceiver,Glitch9.AIDevKit.IWebSocketEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IToolCallReceiver,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,Glitch9.AIDevKit.Components.FunctionManager,System.Boolean)
+  id: '#ctor(Glitch9.AIDevKit.IStreamingAudioEventReceiver,Glitch9.AIDevKit.Components.IRealtimeEventReceiver,Glitch9.AIDevKit.IWebSocketEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IToolCallReceiver,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,Glitch9.AIDevKit.Components.FunctionManager,System.Boolean)'
   parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
   langs:
   - csharp
   - vb
-  name: RealtimeSessionController(Model, Model, SystemLanguage, Action<float[]>, Action<float[]>, Action<AudioClip>, Action<string>, Action<string>, Action<string>, Action<string>, Action<string>, Action<ErrorResponse>, Action<string>, Action<RealtimeItemStatus>, FunctionManager, bool, bool, bool)
-  nameWithType: RealtimeSessionController.RealtimeSessionController(Model, Model, SystemLanguage, Action<float[]>, Action<float[]>, Action<AudioClip>, Action<string>, Action<string>, Action<string>, Action<string>, Action<string>, Action<ErrorResponse>, Action<string>, Action<RealtimeItemStatus>, FunctionManager, bool, bool, bool)
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RealtimeSessionController(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Model, SystemLanguage, System.Action<float[]>, System.Action<float[]>, System.Action<AudioClip>, System.Action<string>, System.Action<string>, System.Action<string>, System.Action<string>, System.Action<string>, System.Action<Glitch9.AIDevKit.ErrorResponse>, System.Action<string>, System.Action<Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus>, Glitch9.AIDevKit.Components.FunctionManager, bool, bool, bool)
+  name: RealtimeSessionController(IStreamingAudioEventReceiver, IRealtimeEventReceiver, IWebSocketEventReceiver, IStreamingTextEventReceiver, IStreamingTextEventReceiver, IStreamingTextEventReceiver, IToolCallReceiver, Model, Model, SystemLanguage, FunctionManager, bool)
+  nameWithType: RealtimeSessionController.RealtimeSessionController(IStreamingAudioEventReceiver, IRealtimeEventReceiver, IWebSocketEventReceiver, IStreamingTextEventReceiver, IStreamingTextEventReceiver, IStreamingTextEventReceiver, IToolCallReceiver, Model, Model, SystemLanguage, FunctionManager, bool)
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RealtimeSessionController(Glitch9.AIDevKit.IStreamingAudioEventReceiver, Glitch9.AIDevKit.Components.IRealtimeEventReceiver, Glitch9.AIDevKit.IWebSocketEventReceiver, Glitch9.AIDevKit.IStreamingTextEventReceiver, Glitch9.AIDevKit.IStreamingTextEventReceiver, Glitch9.AIDevKit.IStreamingTextEventReceiver, Glitch9.AIDevKit.IToolCallReceiver, Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Model, SystemLanguage, Glitch9.AIDevKit.Components.FunctionManager, bool)
   type: Constructor
   source:
     id: .ctor
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 50
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 33
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: Create a new RealtimeSessionController instance.
   example: []
   syntax:
-    content: public RealtimeSessionController(Model rtmModel = null, Model sttModel = null, SystemLanguage spokenLanguage = null, Action<float[]> onReceiveAudio = null, Action<float[]> onReceiveAudioDone = null, Action<AudioClip> onReceiveAudioClip = null, Action<string> onReceiveText = null, Action<string> onReceiveTextDone = null, Action<string> onReceiveTranscript = null, Action<string> onReceiveTranscriptDone = null, Action<string> onReceiveInputTranscriptionSuccess = null, Action<ErrorResponse> onReceiveInputTranscriptionFailed = null, Action<string> onSessionStateChanged = null, Action<RealtimeItemStatus> onItemStatusChanged = null, FunctionManager functionManager = null, bool enableAudio = true, bool enableTranscript = true, bool autoManageWebSocketState = false)
+    content: public RealtimeSessionController(IStreamingAudioEventReceiver audioEventReceiver, IRealtimeEventReceiver realtimeEventReceiver = null, IWebSocketEventReceiver webSocketEventReceiver = null, IStreamingTextEventReceiver inputTranscriptionEventReceiver = null, IStreamingTextEventReceiver textEventReceiver = null, IStreamingTextEventReceiver transcriptEventReceiver = null, IToolCallReceiver toolCallReceiver = null, Model rtmModel = null, Model sttModel = null, SystemLanguage spokenLanguage = null, FunctionManager functionManager = null, bool autoManageWebSocketState = false)
     parameters:
+    - id: audioEventReceiver
+      type: Glitch9.AIDevKit.IStreamingAudioEventReceiver
+    - id: realtimeEventReceiver
+      type: Glitch9.AIDevKit.Components.IRealtimeEventReceiver
+    - id: webSocketEventReceiver
+      type: Glitch9.AIDevKit.IWebSocketEventReceiver
+    - id: inputTranscriptionEventReceiver
+      type: Glitch9.AIDevKit.IStreamingTextEventReceiver
+    - id: textEventReceiver
+      type: Glitch9.AIDevKit.IStreamingTextEventReceiver
+    - id: transcriptEventReceiver
+      type: Glitch9.AIDevKit.IStreamingTextEventReceiver
+    - id: toolCallReceiver
+      type: Glitch9.AIDevKit.IToolCallReceiver
     - id: rtmModel
       type: Glitch9.AIDevKit.Model
-      description: ''
     - id: sttModel
       type: Glitch9.AIDevKit.Model
     - id: spokenLanguage
       type: SystemLanguage
-    - id: onReceiveAudio
-      type: System.Action{System.Single[]}
-      description: ''
-    - id: onReceiveAudioDone
-      type: System.Action{System.Single[]}
-      description: ''
-    - id: onReceiveAudioClip
-      type: System.Action{AudioClip}
-      description: ''
-    - id: onReceiveText
-      type: System.Action{System.String}
-      description: ''
-    - id: onReceiveTextDone
-      type: System.Action{System.String}
-      description: ''
-    - id: onReceiveTranscript
-      type: System.Action{System.String}
-      description: ''
-    - id: onReceiveTranscriptDone
-      type: System.Action{System.String}
-      description: ''
-    - id: onReceiveInputTranscriptionSuccess
-      type: System.Action{System.String}
-      description: ''
-    - id: onReceiveInputTranscriptionFailed
-      type: System.Action{Glitch9.AIDevKit.ErrorResponse}
-      description: ''
-    - id: onSessionStateChanged
-      type: System.Action{System.String}
-      description: ''
-    - id: onItemStatusChanged
-      type: System.Action{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus}
-      description: ''
     - id: functionManager
       type: Glitch9.AIDevKit.Components.FunctionManager
-    - id: enableAudio
-      type: System.Boolean
-      description: ''
-    - id: enableTranscript
-      type: System.Boolean
-      description: ''
     - id: autoManageWebSocketState
       type: System.Boolean
-      description: ''
-    content.vb: Public Sub New(rtmModel As Model = Nothing, sttModel As Model = Nothing, spokenLanguage As SystemLanguage = Nothing, onReceiveAudio As Action(Of Single()) = Nothing, onReceiveAudioDone As Action(Of Single()) = Nothing, onReceiveAudioClip As Action(Of AudioClip) = Nothing, onReceiveText As Action(Of String) = Nothing, onReceiveTextDone As Action(Of String) = Nothing, onReceiveTranscript As Action(Of String) = Nothing, onReceiveTranscriptDone As Action(Of String) = Nothing, onReceiveInputTranscriptionSuccess As Action(Of String) = Nothing, onReceiveInputTranscriptionFailed As Action(Of ErrorResponse) = Nothing, onSessionStateChanged As Action(Of String) = Nothing, onItemStatusChanged As Action(Of RealtimeItemStatus) = Nothing, functionManager As FunctionManager = Nothing, enableAudio As Boolean = True, enableTranscript As Boolean = True, autoManageWebSocketState As Boolean = False)
+    content.vb: Public Sub New(audioEventReceiver As IStreamingAudioEventReceiver, realtimeEventReceiver As IRealtimeEventReceiver = Nothing, webSocketEventReceiver As IWebSocketEventReceiver = Nothing, inputTranscriptionEventReceiver As IStreamingTextEventReceiver = Nothing, textEventReceiver As IStreamingTextEventReceiver = Nothing, transcriptEventReceiver As IStreamingTextEventReceiver = Nothing, toolCallReceiver As IToolCallReceiver = Nothing, rtmModel As Model = Nothing, sttModel As Model = Nothing, spokenLanguage As SystemLanguage = Nothing, functionManager As FunctionManager = Nothing, autoManageWebSocketState As Boolean = False)
   overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor*
-  nameWithType.vb: RealtimeSessionController.New(Model, Model, SystemLanguage, Action(Of Single()), Action(Of Single()), Action(Of AudioClip), Action(Of String), Action(Of String), Action(Of String), Action(Of String), Action(Of String), Action(Of ErrorResponse), Action(Of String), Action(Of RealtimeItemStatus), FunctionManager, Boolean, Boolean, Boolean)
-  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.New(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Model, SystemLanguage, System.Action(Of Single()), System.Action(Of Single()), System.Action(Of AudioClip), System.Action(Of String), System.Action(Of String), System.Action(Of String), System.Action(Of String), System.Action(Of String), System.Action(Of Glitch9.AIDevKit.ErrorResponse), System.Action(Of String), System.Action(Of Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus), Glitch9.AIDevKit.Components.FunctionManager, Boolean, Boolean, Boolean)
-  name.vb: New(Model, Model, SystemLanguage, Action(Of Single()), Action(Of Single()), Action(Of AudioClip), Action(Of String), Action(Of String), Action(Of String), Action(Of String), Action(Of String), Action(Of ErrorResponse), Action(Of String), Action(Of RealtimeItemStatus), FunctionManager, Boolean, Boolean, Boolean)
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Boolean,System.Boolean,System.Boolean)
-  commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Boolean,System.Boolean,System.Boolean)
-  id: '#ctor(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Boolean,System.Boolean,System.Boolean)'
-  parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
-  langs:
-  - csharp
-  - vb
-  name: RealtimeSessionController(RealtimeEventReceiverBase, Model, Model, SystemLanguage, bool, bool, bool)
-  nameWithType: RealtimeSessionController.RealtimeSessionController(RealtimeEventReceiverBase, Model, Model, SystemLanguage, bool, bool, bool)
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RealtimeSessionController(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase, Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Model, SystemLanguage, bool, bool, bool)
-  type: Constructor
-  source:
-    id: .ctor
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 112
-  namespace: Glitch9.AIDevKit.OpenAI.Realtime
-  summary: Create a new RealtimeSessionController instance with a event receiver.
-  example: []
-  syntax:
-    content: public RealtimeSessionController(RealtimeEventReceiverBase eventReceiver, Model rtmModel = null, Model sttModel = null, SystemLanguage spokenLanguage = null, bool enableAudio = true, bool enableTranscript = true, bool autoManageWebSocketState = false)
-    parameters:
-    - id: eventReceiver
-      type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
-      description: ''
-    - id: rtmModel
-      type: Glitch9.AIDevKit.Model
-    - id: sttModel
-      type: Glitch9.AIDevKit.Model
-    - id: spokenLanguage
-      type: SystemLanguage
-    - id: enableAudio
-      type: System.Boolean
-      description: ''
-    - id: enableTranscript
-      type: System.Boolean
-      description: ''
-    - id: autoManageWebSocketState
-      type: System.Boolean
-      description: ''
-    content.vb: Public Sub New(eventReceiver As RealtimeEventReceiverBase, rtmModel As Model = Nothing, sttModel As Model = Nothing, spokenLanguage As SystemLanguage = Nothing, enableAudio As Boolean = True, enableTranscript As Boolean = True, autoManageWebSocketState As Boolean = False)
-  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor*
-  nameWithType.vb: RealtimeSessionController.New(RealtimeEventReceiverBase, Model, Model, SystemLanguage, Boolean, Boolean, Boolean)
-  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.New(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase, Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Model, SystemLanguage, Boolean, Boolean, Boolean)
-  name.vb: New(RealtimeEventReceiverBase, Model, Model, SystemLanguage, Boolean, Boolean, Boolean)
+  nameWithType.vb: RealtimeSessionController.New(IStreamingAudioEventReceiver, IRealtimeEventReceiver, IWebSocketEventReceiver, IStreamingTextEventReceiver, IStreamingTextEventReceiver, IStreamingTextEventReceiver, IToolCallReceiver, Model, Model, SystemLanguage, FunctionManager, Boolean)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.New(Glitch9.AIDevKit.IStreamingAudioEventReceiver, Glitch9.AIDevKit.Components.IRealtimeEventReceiver, Glitch9.AIDevKit.IWebSocketEventReceiver, Glitch9.AIDevKit.IStreamingTextEventReceiver, Glitch9.AIDevKit.IStreamingTextEventReceiver, Glitch9.AIDevKit.IStreamingTextEventReceiver, Glitch9.AIDevKit.IToolCallReceiver, Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Model, SystemLanguage, Glitch9.AIDevKit.Components.FunctionManager, Boolean)
+  name.vb: New(IStreamingAudioEventReceiver, IRealtimeEventReceiver, IWebSocketEventReceiver, IStreamingTextEventReceiver, IStreamingTextEventReceiver, IStreamingTextEventReceiver, IToolCallReceiver, Model, Model, SystemLanguage, FunctionManager, Boolean)
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConnectAsync
   commentId: M:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConnectAsync
   id: ConnectAsync
@@ -415,8 +295,8 @@ items:
   type: Method
   source:
     id: ConnectAsync
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 138
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 72
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask ConnectAsync()
@@ -437,8 +317,8 @@ items:
   type: Method
   source:
     id: ReconnectAsync
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 145
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 85
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask ReconnectAsync(Model model = null)
@@ -462,8 +342,8 @@ items:
   type: Method
   source:
     id: ConfigureSession
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 159
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 99
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask ConfigureSession(string instructions, Model model = null, Modality[] modalities = null, Voice voice = null, RealtimeAudioFormat inputAudioFormat = RealtimeAudioFormat.PCM16, RealtimeAudioFormat outputAudioFormat = RealtimeAudioFormat.PCM16, SpeechToTextOptions inputAudioTranscription = null, TurnDetection turnDetection = null, FunctionDeclaration[] tools = null, ToolChoice toolChoice = null, float temperature = 0.8, int? maxOutputTokens = null)
@@ -512,8 +392,8 @@ items:
   type: Method
   source:
     id: CloseConnection
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 221
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 147
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask CloseConnection(string closeReason = null)
@@ -540,8 +420,8 @@ items:
   type: Method
   source:
     id: SendUserText
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 226
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 152
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask SendUserText(string text)
@@ -568,8 +448,8 @@ items:
   type: Method
   source:
     id: SendUserAudioFile
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 233
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 159
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask SendUserAudioFile(string audioFilePath)
@@ -596,8 +476,8 @@ items:
   type: Method
   source:
     id: SendUserAudioClip
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 239
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 165
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask SendUserAudioClip(AudioClip audioClip)
@@ -621,8 +501,8 @@ items:
   type: Method
   source:
     id: StreamUserAudioFiles
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 245
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 171
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask StreamUserAudioFiles(List<string> audioFilePaths)
@@ -649,8 +529,8 @@ items:
   type: Method
   source:
     id: StreamUserAudioClips
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 254
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 180
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask StreamUserAudioClips(List<AudioClip> audioClips)
@@ -677,8 +557,8 @@ items:
   type: Method
   source:
     id: StreamUserAudioData
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 263
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 189
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask StreamUserAudioData(float[] audioData)
@@ -705,8 +585,8 @@ items:
   type: Method
   source:
     id: CommitUserAudioStreamInput
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 282
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 208
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask CommitUserAudioStreamInput()
@@ -727,8 +607,8 @@ items:
   type: Method
   source:
     id: SetModelAsync
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 319
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 245
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask SetModelAsync(Model model)
@@ -752,8 +632,8 @@ items:
   type: Method
   source:
     id: SetVoiceAsync
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 326
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 252
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask SetVoiceAsync(Voice voice)
@@ -777,8 +657,8 @@ items:
   type: Method
   source:
     id: SetInstructionsAsync
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 333
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 259
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask SetInstructionsAsync(string instructions)
@@ -805,8 +685,8 @@ items:
   type: Method
   source:
     id: SetInputAudioTranscriptionEnabledAsync
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 340
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 266
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask SetInputAudioTranscriptionEnabledAsync(bool enabled)
@@ -833,8 +713,8 @@ items:
   type: Method
   source:
     id: SetMaxOutputTokensAsync
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 356
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 282
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask SetMaxOutputTokensAsync(int maxOutputTokens)
@@ -861,8 +741,8 @@ items:
   type: Method
   source:
     id: SetTemperatureAsync
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/RealtimeAPI/RealtimeSessionController.cs
-    startLine: 363
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Realtime/RealtimeSessionController.cs
+    startLine: 289
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   syntax:
     content: public UniTask SetTemperatureAsync(float temperature)
@@ -1051,28 +931,6 @@ references:
   name: OutputFormat
   nameWithType: RealtimeSessionController.OutputFormat
   fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.OutputFormat
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled*
-  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_AudioEnabled
-  name: AudioEnabled
-  nameWithType: RealtimeSessionController.AudioEnabled
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled*
-  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_TranscriptEnabled
-  name: TranscriptEnabled
-  nameWithType: RealtimeSessionController.TranscriptEnabled
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RTMModel*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RTMModel
   href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_RTMModel
@@ -1140,169 +998,48 @@ references:
   fullName: SystemLanguage
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Model_SystemLanguage_System_Action_System_Single____System_Action_System_Single____System_Action_AudioClip__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_Glitch9_AIDevKit_ErrorResponse__System_Action_System_String__System_Action_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemStatus__Glitch9_AIDevKit_Components_FunctionManager_System_Boolean_System_Boolean_System_Boolean_
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_Glitch9_AIDevKit_IStreamingAudioEventReceiver_Glitch9_AIDevKit_Components_IRealtimeEventReceiver_Glitch9_AIDevKit_IWebSocketEventReceiver_Glitch9_AIDevKit_IStreamingTextEventReceiver_Glitch9_AIDevKit_IStreamingTextEventReceiver_Glitch9_AIDevKit_IStreamingTextEventReceiver_Glitch9_AIDevKit_IToolCallReceiver_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Model_SystemLanguage_Glitch9_AIDevKit_Components_FunctionManager_System_Boolean_
   name: RealtimeSessionController
   nameWithType: RealtimeSessionController.RealtimeSessionController
   fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.RealtimeSessionController
   nameWithType.vb: RealtimeSessionController.New
   fullName.vb: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.New
   name.vb: New
-- uid: System.Action{System.Single[]}
-  commentId: T:System.Action{System.Single[]}
-  parent: System
-  definition: System.Action`1
-  name: Action<float[]>
-  nameWithType: Action<float[]>
-  fullName: System.Action<float[]>
-  nameWithType.vb: Action(Of Single())
-  fullName.vb: System.Action(Of Single())
-  name.vb: Action(Of Single())
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: <
-  - uid: System.Single
-    name: float
-    isExternal: true
-  - name: '['
-  - name: ']'
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.Single
-    name: Single
-    isExternal: true
-  - name: (
-  - name: )
-  - name: )
-- uid: System.Action{AudioClip}
-  commentId: T:System.Action{AudioClip}
-  parent: System
-  definition: System.Action`1
-  name: Action<AudioClip>
-  nameWithType: Action<AudioClip>
-  fullName: System.Action<AudioClip>
-  nameWithType.vb: Action(Of AudioClip)
-  fullName.vb: System.Action(Of AudioClip)
-  name.vb: Action(Of AudioClip)
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: <
-  - uid: AudioClip
-    name: AudioClip
-    isExternal: true
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: AudioClip
-    name: AudioClip
-    isExternal: true
-  - name: )
-- uid: System.Action{System.String}
-  commentId: T:System.Action{System.String}
-  parent: System
-  definition: System.Action`1
-  name: Action<string>
-  nameWithType: Action<string>
-  fullName: System.Action<string>
-  nameWithType.vb: Action(Of String)
-  fullName.vb: System.Action(Of String)
-  name.vb: Action(Of String)
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: <
-  - uid: System.String
-    name: string
-    isExternal: true
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-  - name: )
-- uid: System.Action{Glitch9.AIDevKit.ErrorResponse}
-  commentId: T:System.Action{Glitch9.AIDevKit.ErrorResponse}
-  parent: System
-  definition: System.Action`1
-  href: Glitch9.AIDevKit.ErrorResponse.html
-  name: Action<ErrorResponse>
-  nameWithType: Action<ErrorResponse>
-  fullName: System.Action<Glitch9.AIDevKit.ErrorResponse>
-  nameWithType.vb: Action(Of ErrorResponse)
-  fullName.vb: System.Action(Of Glitch9.AIDevKit.ErrorResponse)
-  name.vb: Action(Of ErrorResponse)
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: <
-  - uid: Glitch9.AIDevKit.ErrorResponse
-    name: ErrorResponse
-    href: Glitch9.AIDevKit.ErrorResponse.html
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Glitch9.AIDevKit.ErrorResponse
-    name: ErrorResponse
-    href: Glitch9.AIDevKit.ErrorResponse.html
-  - name: )
-- uid: System.Action{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus}
-  commentId: T:System.Action{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus}
-  parent: System
-  definition: System.Action`1
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus.html
-  name: Action<RealtimeItemStatus>
-  nameWithType: Action<RealtimeItemStatus>
-  fullName: System.Action<Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus>
-  nameWithType.vb: Action(Of RealtimeItemStatus)
-  fullName.vb: System.Action(Of Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus)
-  name.vb: Action(Of RealtimeItemStatus)
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: <
-  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus
-    name: RealtimeItemStatus
-    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus.html
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus
-    name: RealtimeItemStatus
-    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus.html
-  - name: )
+- uid: Glitch9.AIDevKit.IStreamingAudioEventReceiver
+  commentId: T:Glitch9.AIDevKit.IStreamingAudioEventReceiver
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IStreamingAudioEventReceiver.html
+  name: IStreamingAudioEventReceiver
+  nameWithType: IStreamingAudioEventReceiver
+  fullName: Glitch9.AIDevKit.IStreamingAudioEventReceiver
+- uid: Glitch9.AIDevKit.Components.IRealtimeEventReceiver
+  commentId: T:Glitch9.AIDevKit.Components.IRealtimeEventReceiver
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.IRealtimeEventReceiver.html
+  name: IRealtimeEventReceiver
+  nameWithType: IRealtimeEventReceiver
+  fullName: Glitch9.AIDevKit.Components.IRealtimeEventReceiver
+- uid: Glitch9.AIDevKit.IWebSocketEventReceiver
+  commentId: T:Glitch9.AIDevKit.IWebSocketEventReceiver
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IWebSocketEventReceiver.html
+  name: IWebSocketEventReceiver
+  nameWithType: IWebSocketEventReceiver
+  fullName: Glitch9.AIDevKit.IWebSocketEventReceiver
+- uid: Glitch9.AIDevKit.IStreamingTextEventReceiver
+  commentId: T:Glitch9.AIDevKit.IStreamingTextEventReceiver
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html
+  name: IStreamingTextEventReceiver
+  nameWithType: IStreamingTextEventReceiver
+  fullName: Glitch9.AIDevKit.IStreamingTextEventReceiver
+- uid: Glitch9.AIDevKit.IToolCallReceiver
+  commentId: T:Glitch9.AIDevKit.IToolCallReceiver
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IToolCallReceiver.html
+  name: IToolCallReceiver
+  nameWithType: IToolCallReceiver
+  fullName: Glitch9.AIDevKit.IToolCallReceiver
 - uid: Glitch9.AIDevKit.Components.FunctionManager
   commentId: T:Glitch9.AIDevKit.Components.FunctionManager
   parent: Glitch9.AIDevKit.Components
@@ -1310,31 +1047,16 @@ references:
   name: FunctionManager
   nameWithType: FunctionManager
   fullName: Glitch9.AIDevKit.Components.FunctionManager
-- uid: System.Action`1
-  commentId: T:System.Action`1
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
   isExternal: true
-  name: Action<T>
-  nameWithType: Action<T>
-  fullName: System.Action<T>
-  nameWithType.vb: Action(Of T)
-  fullName.vb: System.Action(Of T)
-  name.vb: Action(Of T)
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: Glitch9.AIDevKit.Components
   commentId: N:Glitch9.AIDevKit.Components
   href: Glitch9.html
@@ -1365,13 +1087,6 @@ references:
   - uid: Glitch9.AIDevKit.Components
     name: Components
     href: Glitch9.AIDevKit.Components.html
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
-  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
-  parent: Glitch9.AIDevKit.OpenAI.Realtime
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html
-  name: RealtimeEventReceiverBase
-  nameWithType: RealtimeEventReceiverBase
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConnectAsync*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.ConnectAsync
   href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_ConnectAsync

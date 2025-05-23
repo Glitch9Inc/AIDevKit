@@ -5,9 +5,10 @@ items:
   id: Transcript
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.Transcript.CalculateUsage
+  - Glitch9.AIDevKit.Transcript.Count
   - Glitch9.AIDevKit.Transcript.Language
   - Glitch9.AIDevKit.Transcript.Text
+  - Glitch9.AIDevKit.Transcript.Usage
   - Glitch9.AIDevKit.Transcript.op_Implicit(Glitch9.AIDevKit.Transcript)~System.String
   langs:
   - csharp
@@ -22,13 +23,15 @@ items:
     startLine: 4
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public class Transcript
-    content.vb: Public Class Transcript
+    content: 'public class Transcript : IGeneratedResult'
+    content.vb: Public Class Transcript Implements IGeneratedResult
   inheritance:
   - System.Object
   derivedClasses:
   - Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript
   - Glitch9.AIDevKit.OpenAI.OpenAITranscript
+  implements:
+  - Glitch9.AIDevKit.IGeneratedResult
 - uid: Glitch9.AIDevKit.Transcript.op_Implicit(Glitch9.AIDevKit.Transcript)~System.String
   commentId: M:Glitch9.AIDevKit.Transcript.op_Implicit(Glitch9.AIDevKit.Transcript)~System.String
   id: op_Implicit(Glitch9.AIDevKit.Transcript)~System.String
@@ -103,28 +106,58 @@ items:
       type: System.String
     content.vb: Public Overridable Property Text As String
   overload: Glitch9.AIDevKit.Transcript.Text*
-- uid: Glitch9.AIDevKit.Transcript.CalculateUsage
-  commentId: M:Glitch9.AIDevKit.Transcript.CalculateUsage
-  id: CalculateUsage
+- uid: Glitch9.AIDevKit.Transcript.Count
+  commentId: P:Glitch9.AIDevKit.Transcript.Count
+  id: Count
   parent: Glitch9.AIDevKit.Transcript
   langs:
   - csharp
   - vb
-  name: CalculateUsage()
-  nameWithType: Transcript.CalculateUsage()
-  fullName: Glitch9.AIDevKit.Transcript.CalculateUsage()
-  type: Method
+  name: Count
+  nameWithType: Transcript.Count
+  fullName: Glitch9.AIDevKit.Transcript.Count
+  type: Property
   source:
-    id: CalculateUsage
+    id: Count
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/Transcript.cs
     startLine: 9
   namespace: Glitch9.AIDevKit
+  example: []
   syntax:
-    content: public Usage CalculateUsage()
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Glitch9.AIDevKit.Transcript.Count*
+  implements:
+  - Glitch9.AIDevKit.IGeneratedResult.Count
+- uid: Glitch9.AIDevKit.Transcript.Usage
+  commentId: P:Glitch9.AIDevKit.Transcript.Usage
+  id: Usage
+  parent: Glitch9.AIDevKit.Transcript
+  langs:
+  - csharp
+  - vb
+  name: Usage
+  nameWithType: Transcript.Usage
+  fullName: Glitch9.AIDevKit.Transcript.Usage
+  type: Property
+  source:
+    id: Usage
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/Transcript.cs
+    startLine: 10
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public Usage Usage { get; }
+    parameters: []
     return:
       type: Glitch9.AIDevKit.Usage
-    content.vb: Public Function CalculateUsage() As Usage
-  overload: Glitch9.AIDevKit.Transcript.CalculateUsage*
+    content.vb: Public ReadOnly Property Usage As Usage
+  overload: Glitch9.AIDevKit.Transcript.Usage*
+  implements:
+  - Glitch9.AIDevKit.IGeneratedResult.Usage
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -158,6 +191,13 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: Glitch9.AIDevKit.IGeneratedResult
+  commentId: T:Glitch9.AIDevKit.IGeneratedResult
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IGeneratedResult.html
+  name: IGeneratedResult
+  nameWithType: IGeneratedResult
+  fullName: Glitch9.AIDevKit.IGeneratedResult
 - uid: System
   commentId: N:System
   isExternal: true
@@ -211,12 +251,42 @@ references:
   name: Text
   nameWithType: Transcript.Text
   fullName: Glitch9.AIDevKit.Transcript.Text
-- uid: Glitch9.AIDevKit.Transcript.CalculateUsage*
-  commentId: Overload:Glitch9.AIDevKit.Transcript.CalculateUsage
-  href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_CalculateUsage
-  name: CalculateUsage
-  nameWithType: Transcript.CalculateUsage
-  fullName: Glitch9.AIDevKit.Transcript.CalculateUsage
+- uid: Glitch9.AIDevKit.Transcript.Count*
+  commentId: Overload:Glitch9.AIDevKit.Transcript.Count
+  href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_Count
+  name: Count
+  nameWithType: Transcript.Count
+  fullName: Glitch9.AIDevKit.Transcript.Count
+- uid: Glitch9.AIDevKit.IGeneratedResult.Count
+  commentId: P:Glitch9.AIDevKit.IGeneratedResult.Count
+  parent: Glitch9.AIDevKit.IGeneratedResult
+  href: Glitch9.AIDevKit.IGeneratedResult.html#Glitch9_AIDevKit_IGeneratedResult_Count
+  name: Count
+  nameWithType: IGeneratedResult.Count
+  fullName: Glitch9.AIDevKit.IGeneratedResult.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Glitch9.AIDevKit.Transcript.Usage*
+  commentId: Overload:Glitch9.AIDevKit.Transcript.Usage
+  href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_Usage
+  name: Usage
+  nameWithType: Transcript.Usage
+  fullName: Glitch9.AIDevKit.Transcript.Usage
+- uid: Glitch9.AIDevKit.IGeneratedResult.Usage
+  commentId: P:Glitch9.AIDevKit.IGeneratedResult.Usage
+  parent: Glitch9.AIDevKit.IGeneratedResult
+  href: Glitch9.AIDevKit.IGeneratedResult.html#Glitch9_AIDevKit_IGeneratedResult_Usage
+  name: Usage
+  nameWithType: IGeneratedResult.Usage
+  fullName: Glitch9.AIDevKit.IGeneratedResult.Usage
 - uid: Glitch9.AIDevKit.Usage
   commentId: T:Glitch9.AIDevKit.Usage
   parent: Glitch9.AIDevKit

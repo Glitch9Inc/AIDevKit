@@ -6,6 +6,7 @@ items:
   parent: Glitch9.AIDevKit.OpenAI
   children:
   - Glitch9.AIDevKit.OpenAI.OpenAIModelData.Api
+  - Glitch9.AIDevKit.OpenAI.OpenAIModelData.Name
   - Glitch9.AIDevKit.OpenAI.OpenAIModelData.OwnedBy
   - Glitch9.AIDevKit.OpenAI.OpenAIModelData.Provider
   langs:
@@ -24,18 +25,18 @@ items:
   remarks: Only used for List models and Retrieve model call.
   example: []
   syntax:
-    content: 'public class OpenAIModelData : ModelResponse'
-    content.vb: Public Class OpenAIModelData Inherits ModelResponse
+    content: 'public class OpenAIModelData : AIResponse'
+    content.vb: Public Class OpenAIModelData Inherits AIResponse
   inheritance:
   - System.Object
-  - Glitch9.AIDevKit.ModelResponse
+  - Glitch9.AIDevKit.AIResponse
   inheritedMembers:
-  - Glitch9.AIDevKit.ModelResponse.Id
-  - Glitch9.AIDevKit.ModelResponse.Object
-  - Glitch9.AIDevKit.ModelResponse.Model
-  - Glitch9.AIDevKit.ModelResponse.CreatedAt
-  - Glitch9.AIDevKit.ModelResponse.Metadata
-  - Glitch9.AIDevKit.ModelResponse.Usage
+  - Glitch9.AIDevKit.AIResponse.Id
+  - Glitch9.AIDevKit.AIResponse.Object
+  - Glitch9.AIDevKit.AIResponse.Model
+  - Glitch9.AIDevKit.AIResponse.CreatedAt
+  - Glitch9.AIDevKit.AIResponse.Metadata
+  - Glitch9.AIDevKit.AIResponse.Usage
 - uid: Glitch9.AIDevKit.OpenAI.OpenAIModelData.OwnedBy
   commentId: P:Glitch9.AIDevKit.OpenAI.OpenAIModelData.OwnedBy
   id: OwnedBy
@@ -82,11 +83,11 @@ items:
   namespace: Glitch9.AIDevKit.OpenAI
   example: []
   syntax:
-    content: public AIProvider Api { get; }
+    content: public Api Api { get; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.AIProvider
-    content.vb: Public ReadOnly Property Api As AIProvider
+      type: Glitch9.AIDevKit.Api
+    content.vb: Public ReadOnly Property Api As Api
   overload: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Api*
 - uid: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Provider
   commentId: P:Glitch9.AIDevKit.OpenAI.OpenAIModelData.Provider
@@ -112,6 +113,31 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property Provider As String
   overload: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Provider*
+- uid: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Name
+  commentId: P:Glitch9.AIDevKit.OpenAI.OpenAIModelData.Name
+  id: Name
+  parent: Glitch9.AIDevKit.OpenAI.OpenAIModelData
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: OpenAIModelData.Name
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Name
+  type: Property
+  source:
+    id: Name
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Models/OpenAIModelData.cs
+    startLine: 22
+  namespace: Glitch9.AIDevKit.OpenAI
+  summary: Name of this data.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Name*
 references:
 - uid: Glitch9.AIDevKit.OpenAI
   commentId: N:Glitch9.AIDevKit.OpenAI
@@ -153,55 +179,55 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.AIDevKit.ModelResponse
-  commentId: T:Glitch9.AIDevKit.ModelResponse
+- uid: Glitch9.AIDevKit.AIResponse
+  commentId: T:Glitch9.AIDevKit.AIResponse
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelResponse.html
-  name: ModelResponse
-  nameWithType: ModelResponse
-  fullName: Glitch9.AIDevKit.ModelResponse
-- uid: Glitch9.AIDevKit.ModelResponse.Id
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Id
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Id
+  href: Glitch9.AIDevKit.AIResponse.html
+  name: AIResponse
+  nameWithType: AIResponse
+  fullName: Glitch9.AIDevKit.AIResponse
+- uid: Glitch9.AIDevKit.AIResponse.Id
+  commentId: P:Glitch9.AIDevKit.AIResponse.Id
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Id
   name: Id
-  nameWithType: ModelResponse.Id
-  fullName: Glitch9.AIDevKit.ModelResponse.Id
-- uid: Glitch9.AIDevKit.ModelResponse.Object
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Object
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Object
+  nameWithType: AIResponse.Id
+  fullName: Glitch9.AIDevKit.AIResponse.Id
+- uid: Glitch9.AIDevKit.AIResponse.Object
+  commentId: P:Glitch9.AIDevKit.AIResponse.Object
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Object
   name: Object
-  nameWithType: ModelResponse.Object
-  fullName: Glitch9.AIDevKit.ModelResponse.Object
-- uid: Glitch9.AIDevKit.ModelResponse.Model
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Model
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Model
+  nameWithType: AIResponse.Object
+  fullName: Glitch9.AIDevKit.AIResponse.Object
+- uid: Glitch9.AIDevKit.AIResponse.Model
+  commentId: P:Glitch9.AIDevKit.AIResponse.Model
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Model
   name: Model
-  nameWithType: ModelResponse.Model
-  fullName: Glitch9.AIDevKit.ModelResponse.Model
-- uid: Glitch9.AIDevKit.ModelResponse.CreatedAt
-  commentId: P:Glitch9.AIDevKit.ModelResponse.CreatedAt
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_CreatedAt
+  nameWithType: AIResponse.Model
+  fullName: Glitch9.AIDevKit.AIResponse.Model
+- uid: Glitch9.AIDevKit.AIResponse.CreatedAt
+  commentId: P:Glitch9.AIDevKit.AIResponse.CreatedAt
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_CreatedAt
   name: CreatedAt
-  nameWithType: ModelResponse.CreatedAt
-  fullName: Glitch9.AIDevKit.ModelResponse.CreatedAt
-- uid: Glitch9.AIDevKit.ModelResponse.Metadata
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Metadata
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Metadata
+  nameWithType: AIResponse.CreatedAt
+  fullName: Glitch9.AIDevKit.AIResponse.CreatedAt
+- uid: Glitch9.AIDevKit.AIResponse.Metadata
+  commentId: P:Glitch9.AIDevKit.AIResponse.Metadata
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Metadata
   name: Metadata
-  nameWithType: ModelResponse.Metadata
-  fullName: Glitch9.AIDevKit.ModelResponse.Metadata
-- uid: Glitch9.AIDevKit.ModelResponse.Usage
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Usage
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Usage
+  nameWithType: AIResponse.Metadata
+  fullName: Glitch9.AIDevKit.AIResponse.Metadata
+- uid: Glitch9.AIDevKit.AIResponse.Usage
+  commentId: P:Glitch9.AIDevKit.AIResponse.Usage
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Usage
   name: Usage
-  nameWithType: ModelResponse.Usage
-  fullName: Glitch9.AIDevKit.ModelResponse.Usage
+  nameWithType: AIResponse.Usage
+  fullName: Glitch9.AIDevKit.AIResponse.Usage
 - uid: System
   commentId: N:System
   isExternal: true
@@ -253,16 +279,22 @@ references:
   name: Api
   nameWithType: OpenAIModelData.Api
   fullName: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Api
-- uid: Glitch9.AIDevKit.AIProvider
-  commentId: T:Glitch9.AIDevKit.AIProvider
+- uid: Glitch9.AIDevKit.Api
+  commentId: T:Glitch9.AIDevKit.Api
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.AIProvider.html
-  name: AIProvider
-  nameWithType: AIProvider
-  fullName: Glitch9.AIDevKit.AIProvider
+  href: Glitch9.AIDevKit.Api.html
+  name: Api
+  nameWithType: Api
+  fullName: Glitch9.AIDevKit.Api
 - uid: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Provider*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAIModelData.Provider
   href: Glitch9.AIDevKit.OpenAI.OpenAIModelData.html#Glitch9_AIDevKit_OpenAI_OpenAIModelData_Provider
   name: Provider
   nameWithType: OpenAIModelData.Provider
   fullName: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Provider
+- uid: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Name*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAIModelData.Name
+  href: Glitch9.AIDevKit.OpenAI.OpenAIModelData.html#Glitch9_AIDevKit_OpenAI_OpenAIModelData_Name
+  name: Name
+  nameWithType: OpenAIModelData.Name
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAIModelData.Name

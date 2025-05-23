@@ -1,0 +1,508 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ModelFeature
+  commentId: T:Glitch9.AIDevKit.ModelFeature
+  id: ModelFeature
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.ModelFeature.Caching
+  - Glitch9.AIDevKit.ModelFeature.CodeExecution
+  - Glitch9.AIDevKit.ModelFeature.ComputerUse
+  - Glitch9.AIDevKit.ModelFeature.FineTuning
+  - Glitch9.AIDevKit.ModelFeature.FunctionCalling
+  - Glitch9.AIDevKit.ModelFeature.ImageGeneration
+  - Glitch9.AIDevKit.ModelFeature.ImageInpainting
+  - Glitch9.AIDevKit.ModelFeature.Moderation
+  - Glitch9.AIDevKit.ModelFeature.None
+  - Glitch9.AIDevKit.ModelFeature.Realtime
+  - Glitch9.AIDevKit.ModelFeature.Search
+  - Glitch9.AIDevKit.ModelFeature.SoundFXGeneration
+  - Glitch9.AIDevKit.ModelFeature.SpeechGeneration
+  - Glitch9.AIDevKit.ModelFeature.SpeechRecognition
+  - Glitch9.AIDevKit.ModelFeature.Streaming
+  - Glitch9.AIDevKit.ModelFeature.StructuredOutputs
+  - Glitch9.AIDevKit.ModelFeature.TextEmbedding
+  - Glitch9.AIDevKit.ModelFeature.TextGeneration
+  - Glitch9.AIDevKit.ModelFeature.VideoGeneration
+  - Glitch9.AIDevKit.ModelFeature.VoiceChanger
+  - Glitch9.AIDevKit.ModelFeature.VoiceIsolation
+  langs:
+  - csharp
+  - vb
+  name: ModelFeature
+  nameWithType: ModelFeature
+  fullName: Glitch9.AIDevKit.ModelFeature
+  type: Enum
+  source:
+    id: ModelFeature
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 9
+  namespace: Glitch9.AIDevKit
+  summary: >-
+    Formerly known as ModelCapability, this enum represents the features that a model can support.
+
+    It is used to determine the capabilities of a model and to check if a specific feature is supported.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ModelFeature
+    content.vb: >-
+      <Flags>
+
+      Public Enum ModelFeature
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: Glitch9.AIDevKit.ModelFeature.None
+  commentId: F:Glitch9.AIDevKit.ModelFeature.None
+  id: None
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ModelFeature.None
+  fullName: Glitch9.AIDevKit.ModelFeature.None
+  type: Field
+  source:
+    id: None
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 12
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: None = 0
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.TextGeneration
+  commentId: F:Glitch9.AIDevKit.ModelFeature.TextGeneration
+  id: TextGeneration
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: TextGeneration
+  nameWithType: ModelFeature.TextGeneration
+  fullName: Glitch9.AIDevKit.ModelFeature.TextGeneration
+  type: Field
+  source:
+    id: TextGeneration
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: TextGeneration = 1
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.FineTuning
+  commentId: F:Glitch9.AIDevKit.ModelFeature.FineTuning
+  id: FineTuning
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: FineTuning
+  nameWithType: ModelFeature.FineTuning
+  fullName: Glitch9.AIDevKit.ModelFeature.FineTuning
+  type: Field
+  source:
+    id: FineTuning
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 16
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: FineTuning = 2
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.Streaming
+  commentId: F:Glitch9.AIDevKit.ModelFeature.Streaming
+  id: Streaming
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: Streaming
+  nameWithType: ModelFeature.Streaming
+  fullName: Glitch9.AIDevKit.ModelFeature.Streaming
+  type: Field
+  source:
+    id: Streaming
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: Streaming = 4
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.StructuredOutputs
+  commentId: F:Glitch9.AIDevKit.ModelFeature.StructuredOutputs
+  id: StructuredOutputs
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: StructuredOutputs
+  nameWithType: ModelFeature.StructuredOutputs
+  fullName: Glitch9.AIDevKit.ModelFeature.StructuredOutputs
+  type: Field
+  source:
+    id: StructuredOutputs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 18
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: StructuredOutputs = 8
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.CodeExecution
+  commentId: F:Glitch9.AIDevKit.ModelFeature.CodeExecution
+  id: CodeExecution
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: CodeExecution
+  nameWithType: ModelFeature.CodeExecution
+  fullName: Glitch9.AIDevKit.ModelFeature.CodeExecution
+  type: Field
+  source:
+    id: CodeExecution
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 19
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: CodeExecution = 16
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.FunctionCalling
+  commentId: F:Glitch9.AIDevKit.ModelFeature.FunctionCalling
+  id: FunctionCalling
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: FunctionCalling
+  nameWithType: ModelFeature.FunctionCalling
+  fullName: Glitch9.AIDevKit.ModelFeature.FunctionCalling
+  type: Field
+  source:
+    id: FunctionCalling
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 20
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: FunctionCalling = 32
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.Caching
+  commentId: F:Glitch9.AIDevKit.ModelFeature.Caching
+  id: Caching
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: Caching
+  nameWithType: ModelFeature.Caching
+  fullName: Glitch9.AIDevKit.ModelFeature.Caching
+  type: Field
+  source:
+    id: Caching
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 21
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: Caching = 64
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.ImageGeneration
+  commentId: F:Glitch9.AIDevKit.ModelFeature.ImageGeneration
+  id: ImageGeneration
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: ImageGeneration
+  nameWithType: ModelFeature.ImageGeneration
+  fullName: Glitch9.AIDevKit.ModelFeature.ImageGeneration
+  type: Field
+  source:
+    id: ImageGeneration
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 24
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: ImageGeneration = 128
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.ImageInpainting
+  commentId: F:Glitch9.AIDevKit.ModelFeature.ImageInpainting
+  id: ImageInpainting
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: ImageInpainting
+  nameWithType: ModelFeature.ImageInpainting
+  fullName: Glitch9.AIDevKit.ModelFeature.ImageInpainting
+  type: Field
+  source:
+    id: ImageInpainting
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 25
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: ImageInpainting = 256
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.SpeechGeneration
+  commentId: F:Glitch9.AIDevKit.ModelFeature.SpeechGeneration
+  id: SpeechGeneration
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: SpeechGeneration
+  nameWithType: ModelFeature.SpeechGeneration
+  fullName: Glitch9.AIDevKit.ModelFeature.SpeechGeneration
+  type: Field
+  source:
+    id: SpeechGeneration
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 26
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: SpeechGeneration = 512
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.SpeechRecognition
+  commentId: F:Glitch9.AIDevKit.ModelFeature.SpeechRecognition
+  id: SpeechRecognition
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: SpeechRecognition
+  nameWithType: ModelFeature.SpeechRecognition
+  fullName: Glitch9.AIDevKit.ModelFeature.SpeechRecognition
+  type: Field
+  source:
+    id: SpeechRecognition
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 27
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: SpeechRecognition = 1024
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.SoundFXGeneration
+  commentId: F:Glitch9.AIDevKit.ModelFeature.SoundFXGeneration
+  id: SoundFXGeneration
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: SoundFXGeneration
+  nameWithType: ModelFeature.SoundFXGeneration
+  fullName: Glitch9.AIDevKit.ModelFeature.SoundFXGeneration
+  type: Field
+  source:
+    id: SoundFXGeneration
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 28
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: SoundFXGeneration = 2048
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.VoiceChanger
+  commentId: F:Glitch9.AIDevKit.ModelFeature.VoiceChanger
+  id: VoiceChanger
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: VoiceChanger
+  nameWithType: ModelFeature.VoiceChanger
+  fullName: Glitch9.AIDevKit.ModelFeature.VoiceChanger
+  type: Field
+  source:
+    id: VoiceChanger
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: VoiceChanger = 4096
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.VideoGeneration
+  commentId: F:Glitch9.AIDevKit.ModelFeature.VideoGeneration
+  id: VideoGeneration
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: VideoGeneration
+  nameWithType: ModelFeature.VideoGeneration
+  fullName: Glitch9.AIDevKit.ModelFeature.VideoGeneration
+  type: Field
+  source:
+    id: VideoGeneration
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 30
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: VideoGeneration = 8192
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.TextEmbedding
+  commentId: F:Glitch9.AIDevKit.ModelFeature.TextEmbedding
+  id: TextEmbedding
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: TextEmbedding
+  nameWithType: ModelFeature.TextEmbedding
+  fullName: Glitch9.AIDevKit.ModelFeature.TextEmbedding
+  type: Field
+  source:
+    id: TextEmbedding
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 33
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: TextEmbedding = 16384
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.Moderation
+  commentId: F:Glitch9.AIDevKit.ModelFeature.Moderation
+  id: Moderation
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: Moderation
+  nameWithType: ModelFeature.Moderation
+  fullName: Glitch9.AIDevKit.ModelFeature.Moderation
+  type: Field
+  source:
+    id: Moderation
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 34
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: Moderation = 32768
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.Search
+  commentId: F:Glitch9.AIDevKit.ModelFeature.Search
+  id: Search
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: Search
+  nameWithType: ModelFeature.Search
+  fullName: Glitch9.AIDevKit.ModelFeature.Search
+  type: Field
+  source:
+    id: Search
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 35
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: Search = 65536
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.Realtime
+  commentId: F:Glitch9.AIDevKit.ModelFeature.Realtime
+  id: Realtime
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: Realtime
+  nameWithType: ModelFeature.Realtime
+  fullName: Glitch9.AIDevKit.ModelFeature.Realtime
+  type: Field
+  source:
+    id: Realtime
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 36
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: Realtime = 131072
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.ComputerUse
+  commentId: F:Glitch9.AIDevKit.ModelFeature.ComputerUse
+  id: ComputerUse
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: ComputerUse
+  nameWithType: ModelFeature.ComputerUse
+  fullName: Glitch9.AIDevKit.ModelFeature.ComputerUse
+  type: Field
+  source:
+    id: ComputerUse
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 37
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: ComputerUse = 262144
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.ModelFeature.VoiceIsolation
+  commentId: F:Glitch9.AIDevKit.ModelFeature.VoiceIsolation
+  id: VoiceIsolation
+  parent: Glitch9.AIDevKit.ModelFeature
+  langs:
+  - csharp
+  - vb
+  name: VoiceIsolation
+  nameWithType: ModelFeature.VoiceIsolation
+  fullName: Glitch9.AIDevKit.ModelFeature.VoiceIsolation
+  type: Field
+  source:
+    id: VoiceIsolation
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Data/Model/ModelFeature.cs
+    startLine: 40
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: VoiceIsolation = 524288
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.ModelFeature
+  commentId: T:Glitch9.AIDevKit.ModelFeature
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelFeature.html
+  name: ModelFeature
+  nameWithType: ModelFeature
+  fullName: Glitch9.AIDevKit.ModelFeature

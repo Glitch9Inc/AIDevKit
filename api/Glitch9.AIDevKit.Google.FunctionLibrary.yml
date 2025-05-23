@@ -8,7 +8,6 @@ items:
   - Glitch9.AIDevKit.Google.FunctionLibrary.#ctor(Glitch9.AIDevKit.Google.Tool[])
   - Glitch9.AIDevKit.Google.FunctionLibrary.#ctor(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Google.Tool})
   - Glitch9.AIDevKit.Google.FunctionLibrary.#ctor(System.String[])
-  - Glitch9.AIDevKit.Google.FunctionLibrary.CallAsync(Glitch9.AIDevKit.FunctionCall)
   - Glitch9.AIDevKit.Google.FunctionLibrary.IsEmpty
   - Glitch9.AIDevKit.Google.FunctionLibrary.Item(Glitch9.AIDevKit.FunctionCall)
   - Glitch9.AIDevKit.Google.FunctionLibrary.Item(System.String)
@@ -303,31 +302,6 @@ items:
   nameWithType.vb: FunctionLibrary.this[](FunctionCall)
   fullName.vb: Glitch9.AIDevKit.Google.FunctionLibrary.this[](Glitch9.AIDevKit.FunctionCall)
   name.vb: this[](FunctionCall)
-- uid: Glitch9.AIDevKit.Google.FunctionLibrary.CallAsync(Glitch9.AIDevKit.FunctionCall)
-  commentId: M:Glitch9.AIDevKit.Google.FunctionLibrary.CallAsync(Glitch9.AIDevKit.FunctionCall)
-  id: CallAsync(Glitch9.AIDevKit.FunctionCall)
-  parent: Glitch9.AIDevKit.Google.FunctionLibrary
-  langs:
-  - csharp
-  - vb
-  name: CallAsync(FunctionCall)
-  nameWithType: FunctionLibrary.CallAsync(FunctionCall)
-  fullName: Glitch9.AIDevKit.Google.FunctionLibrary.CallAsync(Glitch9.AIDevKit.FunctionCall)
-  type: Method
-  source:
-    id: CallAsync
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Integrations/FunctionLibrary.cs
-    startLine: 76
-  namespace: Glitch9.AIDevKit.Google
-  syntax:
-    content: public UniTask<ContentPart> CallAsync(FunctionCall fc)
-    parameters:
-    - id: fc
-      type: Glitch9.AIDevKit.FunctionCall
-    return:
-      type: UniTask{Glitch9.AIDevKit.Google.ContentPart}
-    content.vb: Public Function CallAsync(fc As FunctionCall) As UniTask(Of ContentPart)
-  overload: Glitch9.AIDevKit.Google.FunctionLibrary.CallAsync*
 - uid: Glitch9.AIDevKit.Google.FunctionLibrary.ToProto
   commentId: M:Glitch9.AIDevKit.Google.FunctionLibrary.ToProto
   id: ToProto
@@ -694,66 +668,6 @@ references:
   name: FunctionCall
   nameWithType: FunctionCall
   fullName: Glitch9.AIDevKit.FunctionCall
-- uid: Glitch9.AIDevKit.Google.FunctionLibrary.CallAsync*
-  commentId: Overload:Glitch9.AIDevKit.Google.FunctionLibrary.CallAsync
-  href: Glitch9.AIDevKit.Google.FunctionLibrary.html#Glitch9_AIDevKit_Google_FunctionLibrary_CallAsync_Glitch9_AIDevKit_FunctionCall_
-  name: CallAsync
-  nameWithType: FunctionLibrary.CallAsync
-  fullName: Glitch9.AIDevKit.Google.FunctionLibrary.CallAsync
-- uid: UniTask{Glitch9.AIDevKit.Google.ContentPart}
-  commentId: '!:UniTask{Glitch9.AIDevKit.Google.ContentPart}'
-  definition: UniTask`1
-  href: Glitch9.AIDevKit.Google.ContentPart.html
-  name: UniTask<ContentPart>
-  nameWithType: UniTask<ContentPart>
-  fullName: UniTask<Glitch9.AIDevKit.Google.ContentPart>
-  nameWithType.vb: UniTask(Of ContentPart)
-  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.ContentPart)
-  name.vb: UniTask(Of ContentPart)
-  spec.csharp:
-  - uid: UniTask`1
-    name: UniTask
-    isExternal: true
-  - name: <
-  - uid: Glitch9.AIDevKit.Google.ContentPart
-    name: ContentPart
-    href: Glitch9.AIDevKit.Google.ContentPart.html
-  - name: '>'
-  spec.vb:
-  - uid: UniTask`1
-    name: UniTask
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Glitch9.AIDevKit.Google.ContentPart
-    name: ContentPart
-    href: Glitch9.AIDevKit.Google.ContentPart.html
-  - name: )
-- uid: UniTask`1
-  isExternal: true
-  name: UniTask<>
-  nameWithType: UniTask<>
-  fullName: UniTask<>
-  nameWithType.vb: UniTask(Of )
-  fullName.vb: UniTask(Of )
-  name.vb: UniTask(Of )
-  spec.csharp:
-  - uid: UniTask`1
-    name: UniTask
-    isExternal: true
-  - name: <
-  - name: ''
-  - name: '>'
-  spec.vb:
-  - uid: UniTask`1
-    name: UniTask
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - name: ''
-  - name: )
 - uid: Glitch9.AIDevKit.Google.FunctionLibrary.ToProto*
   commentId: Overload:Glitch9.AIDevKit.Google.FunctionLibrary.ToProto
   href: Glitch9.AIDevKit.Google.FunctionLibrary.html#Glitch9_AIDevKit_Google_FunctionLibrary_ToProto

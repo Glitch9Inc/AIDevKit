@@ -5,7 +5,7 @@ items:
   id: UsageConverter
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.UsageConverter.#ctor(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.UsageConverter.#ctor(Glitch9.AIDevKit.Api)
   - Glitch9.AIDevKit.UsageConverter.ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.Usage,System.Boolean,JsonSerializer)
   - Glitch9.AIDevKit.UsageConverter.WriteJson(JsonWriter,Glitch9.AIDevKit.Usage,JsonSerializer)
   langs:
@@ -25,16 +25,16 @@ items:
     content.vb: Public Class UsageConverter Inherits JsonConverter(Of Usage)
   inheritance:
   - System.Object
-- uid: Glitch9.AIDevKit.UsageConverter.#ctor(Glitch9.AIDevKit.AIProvider)
-  commentId: M:Glitch9.AIDevKit.UsageConverter.#ctor(Glitch9.AIDevKit.AIProvider)
-  id: '#ctor(Glitch9.AIDevKit.AIProvider)'
+- uid: Glitch9.AIDevKit.UsageConverter.#ctor(Glitch9.AIDevKit.Api)
+  commentId: M:Glitch9.AIDevKit.UsageConverter.#ctor(Glitch9.AIDevKit.Api)
+  id: '#ctor(Glitch9.AIDevKit.Api)'
   parent: Glitch9.AIDevKit.UsageConverter
   langs:
   - csharp
   - vb
-  name: UsageConverter(AIProvider)
-  nameWithType: UsageConverter.UsageConverter(AIProvider)
-  fullName: Glitch9.AIDevKit.UsageConverter.UsageConverter(Glitch9.AIDevKit.AIProvider)
+  name: UsageConverter(Api)
+  nameWithType: UsageConverter.UsageConverter(Api)
+  fullName: Glitch9.AIDevKit.UsageConverter.UsageConverter(Glitch9.AIDevKit.Api)
   type: Constructor
   source:
     id: .ctor
@@ -42,15 +42,15 @@ items:
     startLine: 102
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public UsageConverter(AIProvider api)
+    content: public UsageConverter(Api api)
     parameters:
     - id: api
-      type: Glitch9.AIDevKit.AIProvider
-    content.vb: Public Sub New(api As AIProvider)
+      type: Glitch9.AIDevKit.Api
+    content.vb: Public Sub New(api As Api)
   overload: Glitch9.AIDevKit.UsageConverter.#ctor*
-  nameWithType.vb: UsageConverter.New(AIProvider)
-  fullName.vb: Glitch9.AIDevKit.UsageConverter.New(Glitch9.AIDevKit.AIProvider)
-  name.vb: New(AIProvider)
+  nameWithType.vb: UsageConverter.New(Api)
+  fullName.vb: Glitch9.AIDevKit.UsageConverter.New(Glitch9.AIDevKit.Api)
+  name.vb: New(Api)
 - uid: Glitch9.AIDevKit.UsageConverter.ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.Usage,System.Boolean,JsonSerializer)
   commentId: M:Glitch9.AIDevKit.UsageConverter.ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.Usage,System.Boolean,JsonSerializer)
   id: ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.Usage,System.Boolean,JsonSerializer)
@@ -158,20 +158,20 @@ references:
   fullName: System
 - uid: Glitch9.AIDevKit.UsageConverter.#ctor*
   commentId: Overload:Glitch9.AIDevKit.UsageConverter.#ctor
-  href: Glitch9.AIDevKit.UsageConverter.html#Glitch9_AIDevKit_UsageConverter__ctor_Glitch9_AIDevKit_AIProvider_
+  href: Glitch9.AIDevKit.UsageConverter.html#Glitch9_AIDevKit_UsageConverter__ctor_Glitch9_AIDevKit_Api_
   name: UsageConverter
   nameWithType: UsageConverter.UsageConverter
   fullName: Glitch9.AIDevKit.UsageConverter.UsageConverter
   nameWithType.vb: UsageConverter.New
   fullName.vb: Glitch9.AIDevKit.UsageConverter.New
   name.vb: New
-- uid: Glitch9.AIDevKit.AIProvider
-  commentId: T:Glitch9.AIDevKit.AIProvider
+- uid: Glitch9.AIDevKit.Api
+  commentId: T:Glitch9.AIDevKit.Api
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.AIProvider.html
-  name: AIProvider
-  nameWithType: AIProvider
-  fullName: Glitch9.AIDevKit.AIProvider
+  href: Glitch9.AIDevKit.Api.html
+  name: Api
+  nameWithType: Api
+  fullName: Glitch9.AIDevKit.Api
 - uid: Glitch9.AIDevKit.UsageConverter.ReadJson*
   commentId: Overload:Glitch9.AIDevKit.UsageConverter.ReadJson
   href: Glitch9.AIDevKit.UsageConverter.html#Glitch9_AIDevKit_UsageConverter_ReadJson_JsonReader_System_Type_Glitch9_AIDevKit_Usage_System_Boolean_JsonSerializer_

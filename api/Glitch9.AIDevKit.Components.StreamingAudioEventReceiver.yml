@@ -1,0 +1,248 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver
+  commentId: T:Glitch9.AIDevKit.Components.StreamingAudioEventReceiver
+  id: StreamingAudioEventReceiver
+  parent: Glitch9.AIDevKit.Components
+  children:
+  - Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudio(System.Single[])
+  - Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudioDone
+  langs:
+  - csharp
+  - vb
+  name: StreamingAudioEventReceiver
+  nameWithType: StreamingAudioEventReceiver
+  fullName: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver
+  type: Class
+  source:
+    id: StreamingAudioEventReceiver
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/StreamingAudioEventReceiver.cs
+    startLine: 9
+  namespace: Glitch9.AIDevKit.Components
+  summary: >-
+    Event handler for real-time assistant events.
+
+    Provides UnityEvents that are triggered by the RealtimeEventReceiver.
+  example: []
+  syntax:
+    content: 'public class StreamingAudioEventReceiver : MonoBehaviour, IStreamingAudioEventReceiver'
+    content.vb: Public Class StreamingAudioEventReceiver Inherits MonoBehaviour Implements IStreamingAudioEventReceiver
+  inheritance:
+  - System.Object
+  implements:
+  - Glitch9.AIDevKit.IStreamingAudioEventReceiver
+- uid: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudio(System.Single[])
+  commentId: M:Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudio(System.Single[])
+  id: OnReceiveAudio(System.Single[])
+  parent: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnReceiveAudio(float[])
+  nameWithType: StreamingAudioEventReceiver.OnReceiveAudio(float[])
+  fullName: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudio(float[])
+  type: Method
+  source:
+    id: OnReceiveAudio
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/StreamingAudioEventReceiver.cs
+    startLine: 24
+  namespace: Glitch9.AIDevKit.Components
+  summary: Invoked when a chunk of audio data (float array) is received during streaming.
+  example: []
+  syntax:
+    content: public void OnReceiveAudio(float[] audioData)
+    parameters:
+    - id: audioData
+      type: System.Single[]
+    content.vb: Public Sub OnReceiveAudio(audioData As Single())
+  overload: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudio*
+  implements:
+  - Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudio(System.Single[])
+  nameWithType.vb: StreamingAudioEventReceiver.OnReceiveAudio(Single())
+  fullName.vb: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudio(Single())
+  name.vb: OnReceiveAudio(Single())
+- uid: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudioDone
+  commentId: M:Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudioDone
+  id: OnReceiveAudioDone
+  parent: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnReceiveAudioDone()
+  nameWithType: StreamingAudioEventReceiver.OnReceiveAudioDone()
+  fullName: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudioDone()
+  type: Method
+  source:
+    id: OnReceiveAudioDone
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/StreamingAudioEventReceiver.cs
+    startLine: 25
+  namespace: Glitch9.AIDevKit.Components
+  summary: Invoked when the full audio stream has been received and finalized.
+  example: []
+  syntax:
+    content: public void OnReceiveAudioDone()
+    content.vb: Public Sub OnReceiveAudioDone()
+  overload: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudioDone*
+  implements:
+  - Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudioDone
+references:
+- uid: Glitch9.AIDevKit.Components
+  commentId: N:Glitch9.AIDevKit.Components
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Components
+  nameWithType: Glitch9.AIDevKit.Components
+  fullName: Glitch9.AIDevKit.Components
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Components
+    name: Components
+    href: Glitch9.AIDevKit.Components.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Components
+    name: Components
+    href: Glitch9.AIDevKit.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.IStreamingAudioEventReceiver
+  commentId: T:Glitch9.AIDevKit.IStreamingAudioEventReceiver
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IStreamingAudioEventReceiver.html
+  name: IStreamingAudioEventReceiver
+  nameWithType: IStreamingAudioEventReceiver
+  fullName: Glitch9.AIDevKit.IStreamingAudioEventReceiver
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudio*
+  commentId: Overload:Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudio
+  href: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.html#Glitch9_AIDevKit_Components_StreamingAudioEventReceiver_OnReceiveAudio_System_Single___
+  name: OnReceiveAudio
+  nameWithType: StreamingAudioEventReceiver.OnReceiveAudio
+  fullName: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudio
+- uid: Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudio(System.Single[])
+  commentId: M:Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudio(System.Single[])
+  parent: Glitch9.AIDevKit.IStreamingAudioEventReceiver
+  isExternal: true
+  href: Glitch9.AIDevKit.IStreamingAudioEventReceiver.html#Glitch9_AIDevKit_IStreamingAudioEventReceiver_OnReceiveAudio_System_Single___
+  name: OnReceiveAudio(float[])
+  nameWithType: IStreamingAudioEventReceiver.OnReceiveAudio(float[])
+  fullName: Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudio(float[])
+  nameWithType.vb: IStreamingAudioEventReceiver.OnReceiveAudio(Single())
+  fullName.vb: Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudio(Single())
+  name.vb: OnReceiveAudio(Single())
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudio(System.Single[])
+    name: OnReceiveAudio
+    href: Glitch9.AIDevKit.IStreamingAudioEventReceiver.html#Glitch9_AIDevKit_IStreamingAudioEventReceiver_OnReceiveAudio_System_Single___
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudio(System.Single[])
+    name: OnReceiveAudio
+    href: Glitch9.AIDevKit.IStreamingAudioEventReceiver.html#Glitch9_AIDevKit_IStreamingAudioEventReceiver_OnReceiveAudio_System_Single___
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Single[]
+  isExternal: true
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudioDone*
+  commentId: Overload:Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudioDone
+  href: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.html#Glitch9_AIDevKit_Components_StreamingAudioEventReceiver_OnReceiveAudioDone
+  name: OnReceiveAudioDone
+  nameWithType: StreamingAudioEventReceiver.OnReceiveAudioDone
+  fullName: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver.OnReceiveAudioDone
+- uid: Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudioDone
+  commentId: M:Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudioDone
+  parent: Glitch9.AIDevKit.IStreamingAudioEventReceiver
+  href: Glitch9.AIDevKit.IStreamingAudioEventReceiver.html#Glitch9_AIDevKit_IStreamingAudioEventReceiver_OnReceiveAudioDone
+  name: OnReceiveAudioDone()
+  nameWithType: IStreamingAudioEventReceiver.OnReceiveAudioDone()
+  fullName: Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudioDone()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudioDone
+    name: OnReceiveAudioDone
+    href: Glitch9.AIDevKit.IStreamingAudioEventReceiver.html#Glitch9_AIDevKit_IStreamingAudioEventReceiver_OnReceiveAudioDone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IStreamingAudioEventReceiver.OnReceiveAudioDone
+    name: OnReceiveAudioDone
+    href: Glitch9.AIDevKit.IStreamingAudioEventReceiver.html#Glitch9_AIDevKit_IStreamingAudioEventReceiver_OnReceiveAudioDone
+  - name: (
+  - name: )

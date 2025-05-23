@@ -1,0 +1,315 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.StreamingTextEventReceiver
+  commentId: T:Glitch9.AIDevKit.StreamingTextEventReceiver
+  id: StreamingTextEventReceiver
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveError(System.String)
+  - Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveText(System.String)
+  - Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextDone
+  - Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextStart
+  langs:
+  - csharp
+  - vb
+  name: StreamingTextEventReceiver
+  nameWithType: StreamingTextEventReceiver
+  fullName: Glitch9.AIDevKit.StreamingTextEventReceiver
+  type: Class
+  source:
+    id: StreamingTextEventReceiver
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/StreamingTextEventReceiver.cs
+    startLine: 5
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: 'public class StreamingTextEventReceiver : MonoBehaviour, IStreamingTextEventReceiver'
+    content.vb: Public Class StreamingTextEventReceiver Inherits MonoBehaviour Implements IStreamingTextEventReceiver
+  inheritance:
+  - System.Object
+  implements:
+  - Glitch9.AIDevKit.IStreamingTextEventReceiver
+- uid: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveError(System.String)
+  commentId: M:Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveError(System.String)
+  id: OnReceiveError(System.String)
+  parent: Glitch9.AIDevKit.StreamingTextEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnReceiveError(string)
+  nameWithType: StreamingTextEventReceiver.OnReceiveError(string)
+  fullName: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveError(string)
+  type: Method
+  source:
+    id: OnReceiveError
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/StreamingTextEventReceiver.cs
+    startLine: 27
+  namespace: Glitch9.AIDevKit
+  summary: Invoked when text stream is interrupted.
+  example: []
+  syntax:
+    content: public void OnReceiveError(string errorMessage)
+    parameters:
+    - id: errorMessage
+      type: System.String
+    content.vb: Public Sub OnReceiveError(errorMessage As String)
+  overload: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveError*
+  implements:
+  - Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveError(System.String)
+  nameWithType.vb: StreamingTextEventReceiver.OnReceiveError(String)
+  fullName.vb: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveError(String)
+  name.vb: OnReceiveError(String)
+- uid: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveText(System.String)
+  commentId: M:Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveText(System.String)
+  id: OnReceiveText(System.String)
+  parent: Glitch9.AIDevKit.StreamingTextEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnReceiveText(string)
+  nameWithType: StreamingTextEventReceiver.OnReceiveText(string)
+  fullName: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveText(string)
+  type: Method
+  source:
+    id: OnReceiveText
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/StreamingTextEventReceiver.cs
+    startLine: 28
+  namespace: Glitch9.AIDevKit
+  summary: Invoked when a partial text is received.
+  example: []
+  syntax:
+    content: public void OnReceiveText(string delta)
+    parameters:
+    - id: delta
+      type: System.String
+    content.vb: Public Sub OnReceiveText(delta As String)
+  overload: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveText*
+  implements:
+  - Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveText(System.String)
+  nameWithType.vb: StreamingTextEventReceiver.OnReceiveText(String)
+  fullName.vb: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveText(String)
+  name.vb: OnReceiveText(String)
+- uid: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextDone
+  commentId: M:Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextDone
+  id: OnReceiveTextDone
+  parent: Glitch9.AIDevKit.StreamingTextEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnReceiveTextDone()
+  nameWithType: StreamingTextEventReceiver.OnReceiveTextDone()
+  fullName: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextDone()
+  type: Method
+  source:
+    id: OnReceiveTextDone
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/StreamingTextEventReceiver.cs
+    startLine: 29
+  namespace: Glitch9.AIDevKit
+  summary: Invoked when the full text is finalized.
+  example: []
+  syntax:
+    content: public void OnReceiveTextDone()
+    content.vb: Public Sub OnReceiveTextDone()
+  overload: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextDone*
+  implements:
+  - Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextDone
+- uid: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextStart
+  commentId: M:Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextStart
+  id: OnReceiveTextStart
+  parent: Glitch9.AIDevKit.StreamingTextEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnReceiveTextStart()
+  nameWithType: StreamingTextEventReceiver.OnReceiveTextStart()
+  fullName: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextStart()
+  type: Method
+  source:
+    id: OnReceiveTextStart
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/StreamingTextEventReceiver.cs
+    startLine: 30
+  namespace: Glitch9.AIDevKit
+  summary: Invoked when the text is received for the first time.
+  example: []
+  syntax:
+    content: public void OnReceiveTextStart()
+    content.vb: Public Sub OnReceiveTextStart()
+  overload: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextStart*
+  implements:
+  - Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextStart
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.IStreamingTextEventReceiver
+  commentId: T:Glitch9.AIDevKit.IStreamingTextEventReceiver
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html
+  name: IStreamingTextEventReceiver
+  nameWithType: IStreamingTextEventReceiver
+  fullName: Glitch9.AIDevKit.IStreamingTextEventReceiver
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveError*
+  commentId: Overload:Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveError
+  href: Glitch9.AIDevKit.StreamingTextEventReceiver.html#Glitch9_AIDevKit_StreamingTextEventReceiver_OnReceiveError_System_String_
+  name: OnReceiveError
+  nameWithType: StreamingTextEventReceiver.OnReceiveError
+  fullName: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveError
+- uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveError(System.String)
+  commentId: M:Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveError(System.String)
+  parent: Glitch9.AIDevKit.IStreamingTextEventReceiver
+  isExternal: true
+  href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveError_System_String_
+  name: OnReceiveError(string)
+  nameWithType: IStreamingTextEventReceiver.OnReceiveError(string)
+  fullName: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveError(string)
+  nameWithType.vb: IStreamingTextEventReceiver.OnReceiveError(String)
+  fullName.vb: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveError(String)
+  name.vb: OnReceiveError(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveError(System.String)
+    name: OnReceiveError
+    href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveError_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveError(System.String)
+    name: OnReceiveError
+    href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveError_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveText*
+  commentId: Overload:Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveText
+  href: Glitch9.AIDevKit.StreamingTextEventReceiver.html#Glitch9_AIDevKit_StreamingTextEventReceiver_OnReceiveText_System_String_
+  name: OnReceiveText
+  nameWithType: StreamingTextEventReceiver.OnReceiveText
+  fullName: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveText
+- uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveText(System.String)
+  commentId: M:Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveText(System.String)
+  parent: Glitch9.AIDevKit.IStreamingTextEventReceiver
+  isExternal: true
+  href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveText_System_String_
+  name: OnReceiveText(string)
+  nameWithType: IStreamingTextEventReceiver.OnReceiveText(string)
+  fullName: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveText(string)
+  nameWithType.vb: IStreamingTextEventReceiver.OnReceiveText(String)
+  fullName.vb: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveText(String)
+  name.vb: OnReceiveText(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveText(System.String)
+    name: OnReceiveText
+    href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveText_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveText(System.String)
+    name: OnReceiveText
+    href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveText_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextDone*
+  commentId: Overload:Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextDone
+  href: Glitch9.AIDevKit.StreamingTextEventReceiver.html#Glitch9_AIDevKit_StreamingTextEventReceiver_OnReceiveTextDone
+  name: OnReceiveTextDone
+  nameWithType: StreamingTextEventReceiver.OnReceiveTextDone
+  fullName: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextDone
+- uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextDone
+  commentId: M:Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextDone
+  parent: Glitch9.AIDevKit.IStreamingTextEventReceiver
+  href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveTextDone
+  name: OnReceiveTextDone()
+  nameWithType: IStreamingTextEventReceiver.OnReceiveTextDone()
+  fullName: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextDone()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextDone
+    name: OnReceiveTextDone
+    href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveTextDone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextDone
+    name: OnReceiveTextDone
+    href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveTextDone
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextStart*
+  commentId: Overload:Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextStart
+  href: Glitch9.AIDevKit.StreamingTextEventReceiver.html#Glitch9_AIDevKit_StreamingTextEventReceiver_OnReceiveTextStart
+  name: OnReceiveTextStart
+  nameWithType: StreamingTextEventReceiver.OnReceiveTextStart
+  fullName: Glitch9.AIDevKit.StreamingTextEventReceiver.OnReceiveTextStart
+- uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextStart
+  commentId: M:Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextStart
+  parent: Glitch9.AIDevKit.IStreamingTextEventReceiver
+  href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveTextStart
+  name: OnReceiveTextStart()
+  nameWithType: IStreamingTextEventReceiver.OnReceiveTextStart()
+  fullName: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextStart()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextStart
+    name: OnReceiveTextStart
+    href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveTextStart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IStreamingTextEventReceiver.OnReceiveTextStart
+    name: OnReceiveTextStart
+    href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html#Glitch9_AIDevKit_IStreamingTextEventReceiver_OnReceiveTextStart
+  - name: (
+  - name: )

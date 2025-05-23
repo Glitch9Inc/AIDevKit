@@ -17,7 +17,7 @@ items:
   source:
     id: ChatResponse
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Generate/ChatResponse.cs
-    startLine: 5
+    startLine: 4
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
     content: 'public class ChatResponse : OllamaTextResponse'
@@ -53,16 +53,16 @@ items:
   source:
     id: Message
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Generate/ChatResponse.cs
-    startLine: 10
+    startLine: 9
   namespace: Glitch9.AIDevKit.Ollama
   summary: Required. The response message.
   example: []
   syntax:
-    content: public AssistantMessage Message { get; set; }
+    content: public ResponseMessage Message { get; set; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.AssistantMessage
-    content.vb: Public Property Message As AssistantMessage
+      type: Glitch9.AIDevKit.ResponseMessage
+    content.vb: Public Property Message As ResponseMessage
   overload: Glitch9.AIDevKit.Ollama.ChatResponse.Message*
 - uid: Glitch9.AIDevKit.Ollama.ChatResponse.ToString
   commentId: M:Glitch9.AIDevKit.Ollama.ChatResponse.ToString
@@ -78,7 +78,7 @@ items:
   source:
     id: ToString
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Generate/ChatResponse.cs
-    startLine: 12
+    startLine: 11
   namespace: Glitch9.AIDevKit.Ollama
   summary: Returns a string that represents the current object.
   example: []
@@ -312,13 +312,13 @@ references:
   name: Message
   nameWithType: ChatResponse.Message
   fullName: Glitch9.AIDevKit.Ollama.ChatResponse.Message
-- uid: Glitch9.AIDevKit.AssistantMessage
-  commentId: T:Glitch9.AIDevKit.AssistantMessage
+- uid: Glitch9.AIDevKit.ResponseMessage
+  commentId: T:Glitch9.AIDevKit.ResponseMessage
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.AssistantMessage.html
-  name: AssistantMessage
-  nameWithType: AssistantMessage
-  fullName: Glitch9.AIDevKit.AssistantMessage
+  href: Glitch9.AIDevKit.ResponseMessage.html
+  name: ResponseMessage
+  nameWithType: ResponseMessage
+  fullName: Glitch9.AIDevKit.ResponseMessage
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
   href: Glitch9.html

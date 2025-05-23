@@ -323,11 +323,11 @@ items:
   namespace: Glitch9.AIDevKit.Google
   example: []
   syntax:
-    content: public AIProvider Api { get; }
+    content: public Api Api { get; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.AIProvider
-    content.vb: Public ReadOnly Property Api As AIProvider
+      type: Glitch9.AIDevKit.Api
+    content.vb: Public ReadOnly Property Api As Api
   overload: Glitch9.AIDevKit.Google.GoogleModelData.Api*
 - uid: Glitch9.AIDevKit.Google.GoogleModelData.Provider
   commentId: P:Glitch9.AIDevKit.Google.GoogleModelData.Provider
@@ -419,11 +419,11 @@ items:
   namespace: Glitch9.AIDevKit.Google
   example: []
   syntax:
-    content: public ModelCapability? Capability { get; }
+    content: public ModelFeature? Capability { get; }
     parameters: []
     return:
-      type: System.Nullable{Glitch9.AIDevKit.ModelCapability}
-    content.vb: Public ReadOnly Property Capability As ModelCapability?
+      type: System.Nullable{Glitch9.AIDevKit.ModelFeature}
+    content.vb: Public ReadOnly Property Capability As ModelFeature?
   overload: Glitch9.AIDevKit.Google.GoogleModelData.Capability*
 references:
 - uid: Glitch9.AIDevKit.Google
@@ -640,13 +640,13 @@ references:
   name: Api
   nameWithType: GoogleModelData.Api
   fullName: Glitch9.AIDevKit.Google.GoogleModelData.Api
-- uid: Glitch9.AIDevKit.AIProvider
-  commentId: T:Glitch9.AIDevKit.AIProvider
+- uid: Glitch9.AIDevKit.Api
+  commentId: T:Glitch9.AIDevKit.Api
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.AIProvider.html
-  name: AIProvider
-  nameWithType: AIProvider
-  fullName: Glitch9.AIDevKit.AIProvider
+  href: Glitch9.AIDevKit.Api.html
+  name: Api
+  nameWithType: Api
+  fullName: Glitch9.AIDevKit.Api
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
   href: Glitch9.html
@@ -713,21 +713,21 @@ references:
   name: Capability
   nameWithType: GoogleModelData.Capability
   fullName: Glitch9.AIDevKit.Google.GoogleModelData.Capability
-- uid: System.Nullable{Glitch9.AIDevKit.ModelCapability}
-  commentId: T:System.Nullable{Glitch9.AIDevKit.ModelCapability}
+- uid: System.Nullable{Glitch9.AIDevKit.ModelFeature}
+  commentId: T:System.Nullable{Glitch9.AIDevKit.ModelFeature}
   parent: System
   definition: System.Nullable`1
-  href: Glitch9.AIDevKit.ModelCapability.html
-  name: ModelCapability?
-  nameWithType: ModelCapability?
-  fullName: Glitch9.AIDevKit.ModelCapability?
+  href: Glitch9.AIDevKit.ModelFeature.html
+  name: ModelFeature?
+  nameWithType: ModelFeature?
+  fullName: Glitch9.AIDevKit.ModelFeature?
   spec.csharp:
-  - uid: Glitch9.AIDevKit.ModelCapability
-    name: ModelCapability
-    href: Glitch9.AIDevKit.ModelCapability.html
+  - uid: Glitch9.AIDevKit.ModelFeature
+    name: ModelFeature
+    href: Glitch9.AIDevKit.ModelFeature.html
   - name: '?'
   spec.vb:
-  - uid: Glitch9.AIDevKit.ModelCapability
-    name: ModelCapability
-    href: Glitch9.AIDevKit.ModelCapability.html
+  - uid: Glitch9.AIDevKit.ModelFeature
+    name: ModelFeature
+    href: Glitch9.AIDevKit.ModelFeature.html
   - name: '?'

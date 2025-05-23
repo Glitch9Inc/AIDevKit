@@ -87,7 +87,7 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">RequestBody</span>.<span class="xref">RequestBodyBuilder</span>&lt;TBuilder, TRequest&gt;</div>
-    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.ModelRequest.html">ModelRequest</a>.<a class="xref" href="Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html">ModelRequestBuilder</a>&lt;TBuilder, TRequest&gt;</div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.AIRequest.html">AIRequest</a>.<a class="xref" href="Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html">ModelRequestBuilder</a>&lt;TBuilder, TRequest&gt;</div>
     <div class="level3"><span class="xref">CompletionRequestBase.CompletionRequestBuilder&lt;TBuilder, TRequest&gt;</span></div>
       <div class="level4"><a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequest.Builder.html">ChatCompletionRequest.Builder</a></div>
       <div class="level4"><a class="xref" href="Glitch9.AIDevKit.CompletionRequest.Builder.html">CompletionRequest.Builder</a></div>
@@ -95,20 +95,20 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetUser_System_String_">ModelRequest.ModelRequestBuilder&lt;TBuilder, TRequest&gt;.SetUser(string)</a>
+      <a class="xref" href="Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_AIRequest_ModelRequestBuilder_2_SetUser_System_String_">AIRequest.ModelRequestBuilder&lt;TBuilder, TRequest&gt;.SetUser(string)</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_">ModelRequest.ModelRequestBuilder&lt;TBuilder, TRequest&gt;.SetModel(Model)</a>
+      <a class="xref" href="Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_AIRequest_ModelRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_">AIRequest.ModelRequestBuilder&lt;TBuilder, TRequest&gt;.SetModel(Model)</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__">ModelRequest.ModelRequestBuilder&lt;TBuilder, TRequest&gt;.SetMetadata(Dictionary&lt;string, string&gt;)</a>
+      <a class="xref" href="Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_AIRequest_ModelRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__">AIRequest.ModelRequestBuilder&lt;TBuilder, TRequest&gt;.SetMetadata(Dictionary&lt;string, string&gt;)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CompletionRequestBase.CompletionRequestBuilder&lt;TBuilder, TRequest&gt; : ModelRequest.ModelRequestBuilder&lt;TBuilder, TRequest&gt; where TBuilder : CompletionRequestBase.CompletionRequestBuilder&lt;TBuilder, TRequest&gt; where TRequest : CompletionRequestBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class CompletionRequestBase.CompletionRequestBuilder&lt;TBuilder, TRequest&gt; : AIRequest.ModelRequestBuilder&lt;TBuilder, TRequest&gt; where TBuilder : CompletionRequestBase.CompletionRequestBuilder&lt;TBuilder, TRequest&gt; where TRequest : CompletionRequestBase</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -131,48 +131,6 @@
   </table>
   <h3 id="methods">Methods
 </h3>
-
-
-  <a id="Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_AttachedFiles_" data-uid="Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.AttachedFiles*"></a>
-  <h4 id="Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_AttachedFiles_System_Collections_Generic_List_Glitch9_IO_Files_IUniFile__" data-uid="Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.AttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IUniFile})">AttachedFiles(List&lt;IUniFile&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TBuilder AttachedFiles(List&lt;IUniFile&gt; files)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">IUniFile</span>&gt;</td>
-        <td><span class="parametername">files</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TBuilder</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
   <a id="Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_ExcludeReasoning_" data-uid="Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.ExcludeReasoning*"></a>
@@ -238,6 +196,48 @@
       <tr>
         <td><span class="xref">bool</span></td>
         <td><span class="parametername">includeUsage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_" data-uid="Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles*"></a>
+  <h4 id="Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_Glitch9_IO_Files_IFile__" data-uid="Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})">SetAttachedFiles(List&lt;IFile&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TBuilder SetAttachedFiles(List&lt;IFile&gt; files)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">IFile</span>&gt;</td>
+        <td><span class="parametername">files</span></td>
         <td></td>
       </tr>
     </tbody>

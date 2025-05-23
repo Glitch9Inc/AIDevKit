@@ -7,9 +7,9 @@ items:
   children:
   - Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ChatCompletionRequest)
   - Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.CompletionRequest)
-  - Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  - Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  - Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  - Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  - Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   langs:
   - csharp
   - vb
@@ -58,17 +58,17 @@ items:
       type: UniTask{Glitch9.AIDevKit.Ollama.GenerateResponse}
     content.vb: Public Shared Function ExecuteAsync(request As CompletionRequest) As UniTask(Of GenerateResponse)
   overload: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync*
-- uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  id: StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  id: StreamAsync(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   isExtensionMethod: true
   parent: Glitch9.AIDevKit.Ollama.RequestExtensions
   langs:
   - csharp
   - vb
-  name: StreamAsync(CompletionRequest, ChatStreamHandler)
-  nameWithType: RequestExtensions.StreamAsync(CompletionRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  name: StreamAsync(CompletionRequest, IChatCompletionStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(CompletionRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.CompletionRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   type: Method
   source:
     id: StreamAsync
@@ -76,15 +76,15 @@ items:
     startLine: 17
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
-    content: public static UniTask StreamAsync(this CompletionRequest request, ChatStreamHandler streamHandler)
+    content: public static UniTask StreamAsync(this CompletionRequest request, IChatCompletionStreamHandler streamHandler)
     parameters:
     - id: request
       type: Glitch9.AIDevKit.CompletionRequest
     - id: streamHandler
-      type: Glitch9.AIDevKit.ChatStreamHandler
+      type: Glitch9.AIDevKit.IChatCompletionStreamHandler
     return:
       type: UniTask
-    content.vb: Public Shared Function StreamAsync(request As CompletionRequest, streamHandler As ChatStreamHandler) As UniTask
+    content.vb: Public Shared Function StreamAsync(request As CompletionRequest, streamHandler As IChatCompletionStreamHandler) As UniTask
   overload: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync*
 - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ChatCompletionRequest)
   commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ChatCompletionRequest)
@@ -112,17 +112,17 @@ items:
       type: UniTask{Glitch9.AIDevKit.Ollama.ChatResponse}
     content.vb: Public Shared Function ExecuteAsync(request As ChatCompletionRequest) As UniTask(Of ChatResponse)
   overload: Glitch9.AIDevKit.Ollama.RequestExtensions.ExecuteAsync*
-- uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  id: StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  id: StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   isExtensionMethod: true
   parent: Glitch9.AIDevKit.Ollama.RequestExtensions
   langs:
   - csharp
   - vb
-  name: StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  name: StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(ChatCompletionRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ChatCompletionRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   type: Method
   source:
     id: StreamAsync
@@ -130,27 +130,27 @@ items:
     startLine: 27
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
-    content: public static UniTask StreamAsync(this ChatCompletionRequest request, ChatStreamHandler listener)
+    content: public static UniTask StreamAsync(this ChatCompletionRequest request, IChatCompletionStreamHandler listener)
     parameters:
     - id: request
       type: Glitch9.AIDevKit.ChatCompletionRequest
     - id: listener
-      type: Glitch9.AIDevKit.ChatStreamHandler
+      type: Glitch9.AIDevKit.IChatCompletionStreamHandler
     return:
       type: UniTask
-    content.vb: Public Shared Function StreamAsync(request As ChatCompletionRequest, listener As ChatStreamHandler) As UniTask
+    content.vb: Public Shared Function StreamAsync(request As ChatCompletionRequest, listener As IChatCompletionStreamHandler) As UniTask
   overload: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync*
-- uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  id: StreamAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  id: StreamAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   isExtensionMethod: true
   parent: Glitch9.AIDevKit.Ollama.RequestExtensions
   langs:
   - csharp
   - vb
-  name: StreamAsync(CreateModelRequest, ChatStreamHandler)
-  nameWithType: RequestExtensions.StreamAsync(CreateModelRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  name: StreamAsync(CreateModelRequest, IChatCompletionStreamHandler)
+  nameWithType: RequestExtensions.StreamAsync(CreateModelRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync(Glitch9.AIDevKit.Ollama.CreateModelRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   type: Method
   source:
     id: StreamAsync
@@ -158,15 +158,15 @@ items:
     startLine: 32
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
-    content: public static UniTask StreamAsync(this CreateModelRequest req, ChatStreamHandler streamHandler)
+    content: public static UniTask StreamAsync(this CreateModelRequest req, IChatCompletionStreamHandler streamHandler)
     parameters:
     - id: req
       type: Glitch9.AIDevKit.Ollama.CreateModelRequest
     - id: streamHandler
-      type: Glitch9.AIDevKit.ChatStreamHandler
+      type: Glitch9.AIDevKit.IChatCompletionStreamHandler
     return:
       type: UniTask
-    content.vb: Public Shared Function StreamAsync(req As CreateModelRequest, streamHandler As ChatStreamHandler) As UniTask
+    content.vb: Public Shared Function StreamAsync(req As CreateModelRequest, streamHandler As IChatCompletionStreamHandler) As UniTask
   overload: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync*
 references:
 - uid: Glitch9.AIDevKit.Ollama
@@ -307,17 +307,17 @@ references:
   - name: )
 - uid: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync*
   commentId: Overload:Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync
-  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  href: Glitch9.AIDevKit.Ollama.RequestExtensions.html#Glitch9_AIDevKit_Ollama_RequestExtensions_StreamAsync_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   name: StreamAsync
   nameWithType: RequestExtensions.StreamAsync
   fullName: Glitch9.AIDevKit.Ollama.RequestExtensions.StreamAsync
-- uid: Glitch9.AIDevKit.ChatStreamHandler
-  commentId: T:Glitch9.AIDevKit.ChatStreamHandler
+- uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+  commentId: T:Glitch9.AIDevKit.IChatCompletionStreamHandler
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ChatStreamHandler.html
-  name: ChatStreamHandler
-  nameWithType: ChatStreamHandler
-  fullName: Glitch9.AIDevKit.ChatStreamHandler
+  href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
+  name: IChatCompletionStreamHandler
+  nameWithType: IChatCompletionStreamHandler
+  fullName: Glitch9.AIDevKit.IChatCompletionStreamHandler
 - uid: UniTask
   isExternal: true
   name: UniTask

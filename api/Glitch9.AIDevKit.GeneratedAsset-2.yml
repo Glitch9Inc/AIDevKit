@@ -20,7 +20,7 @@ items:
   source:
     id: GeneratedAsset
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedResult.cs
-    startLine: 52
+    startLine: 55
   namespace: Glitch9.AIDevKit
   summary: >-
     Base class for generated assets: images, audios, and videos.
@@ -28,11 +28,11 @@ items:
     These assets are 'files' that can be downloaded and used in the application.
   example: []
   syntax:
-    content: 'public abstract class GeneratedAsset<TAsset, TFile> : GeneratedResult<TAsset>, IGenerated where TFile : UniFileBase<TAsset>'
+    content: 'public abstract class GeneratedAsset<TAsset, TFile> : GeneratedResult<TAsset>, IGeneratedResult where TFile : RawFile'
     typeParameters:
     - id: TAsset
     - id: TFile
-    content.vb: Public MustInherit Class GeneratedAsset(Of TAsset, TFile As UniFileBase(Of TAsset)) Inherits GeneratedResult(Of TAsset) Implements IGenerated
+    content.vb: Public MustInherit Class GeneratedAsset(Of TAsset, TFile As RawFile) Inherits GeneratedResult(Of TAsset) Implements IGeneratedResult
   inheritance:
   - System.Object
   - Glitch9.Result
@@ -43,16 +43,14 @@ items:
   - Glitch9.AIDevKit.GeneratedImage
   - Glitch9.AIDevKit.GeneratedVideo
   implements:
-  - Glitch9.AIDevKit.IGenerated
+  - Glitch9.AIDevKit.IGeneratedResult
   inheritedMembers:
-  - Glitch9.AIDevKit.GeneratedResult{{TAsset}}.Count
   - Glitch9.AIDevKit.GeneratedResult{{TAsset}}.Values
-  - Glitch9.AIDevKit.GeneratedResult{{TAsset}}.values
+  - Glitch9.AIDevKit.GeneratedResult{{TAsset}}.Count
   - Glitch9.AIDevKit.GeneratedResult{{TAsset}}.Usage
-  - Glitch9.AIDevKit.GeneratedResult{{TAsset}}.usage
   - Glitch9.AIDevKit.GeneratedResult{{TAsset}}.Item(System.Int32)
-  extensionMethods:
-  - Glitch9.IResult.Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert
+  - Glitch9.AIDevKit.GeneratedResult{{TAsset}}.values
+  - Glitch9.AIDevKit.GeneratedResult{{TAsset}}.usage
   nameWithType.vb: GeneratedAsset(Of TAsset, TFile)
   fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of TAsset, TFile)
   name.vb: GeneratedAsset(Of TAsset, TFile)
@@ -70,7 +68,7 @@ items:
   source:
     id: Paths
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedResult.cs
-    startLine: 56
+    startLine: 59
   namespace: Glitch9.AIDevKit
   syntax:
     content: public string[] Paths { get; }
@@ -95,7 +93,7 @@ items:
   source:
     id: this[]
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedResult.cs
-    startLine: 58
+    startLine: 61
   namespace: Glitch9.AIDevKit
   syntax:
     content: public string this[string path] { get; }
@@ -123,7 +121,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedResult.cs
-    startLine: 69
+    startLine: 72
   namespace: Glitch9.AIDevKit
   syntax:
     content: protected GeneratedAsset(TAsset asset, string path, Usage usage = null)
@@ -153,7 +151,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedResult.cs
-    startLine: 70
+    startLine: 73
   namespace: Glitch9.AIDevKit
   syntax:
     content: protected GeneratedAsset(TAsset[] asset, string[] paths, Usage usage = null)
@@ -183,7 +181,7 @@ items:
   source:
     id: ToFiles
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/GeneratedResult/GeneratedResult.cs
-    startLine: 72
+    startLine: 75
   namespace: Glitch9.AIDevKit
   syntax:
     content: public abstract TFile[] ToFiles()
@@ -265,23 +263,13 @@ references:
   - name: " "
   - name: TAsset
   - name: )
-- uid: Glitch9.AIDevKit.IGenerated
-  commentId: T:Glitch9.AIDevKit.IGenerated
+- uid: Glitch9.AIDevKit.IGeneratedResult
+  commentId: T:Glitch9.AIDevKit.IGeneratedResult
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.IGenerated.html
-  name: IGenerated
-  nameWithType: IGenerated
-  fullName: Glitch9.AIDevKit.IGenerated
-- uid: Glitch9.AIDevKit.GeneratedResult{{TAsset}}.Count
-  commentId: P:Glitch9.AIDevKit.GeneratedResult{`0}.Count
-  parent: Glitch9.AIDevKit.GeneratedResult{{TAsset}}
-  definition: Glitch9.AIDevKit.GeneratedResult`1.Count
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Count
-  name: Count
-  nameWithType: GeneratedResult<TAsset>.Count
-  fullName: Glitch9.AIDevKit.GeneratedResult<TAsset>.Count
-  nameWithType.vb: GeneratedResult(Of TAsset).Count
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of TAsset).Count
+  href: Glitch9.AIDevKit.IGeneratedResult.html
+  name: IGeneratedResult
+  nameWithType: IGeneratedResult
+  fullName: Glitch9.AIDevKit.IGeneratedResult
 - uid: Glitch9.AIDevKit.GeneratedResult{{TAsset}}.Values
   commentId: P:Glitch9.AIDevKit.GeneratedResult{`0}.Values
   parent: Glitch9.AIDevKit.GeneratedResult{{TAsset}}
@@ -292,16 +280,16 @@ references:
   fullName: Glitch9.AIDevKit.GeneratedResult<TAsset>.Values
   nameWithType.vb: GeneratedResult(Of TAsset).Values
   fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of TAsset).Values
-- uid: Glitch9.AIDevKit.GeneratedResult{{TAsset}}.values
-  commentId: F:Glitch9.AIDevKit.GeneratedResult{`0}.values
+- uid: Glitch9.AIDevKit.GeneratedResult{{TAsset}}.Count
+  commentId: P:Glitch9.AIDevKit.GeneratedResult{`0}.Count
   parent: Glitch9.AIDevKit.GeneratedResult{{TAsset}}
-  definition: Glitch9.AIDevKit.GeneratedResult`1.values
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_values
-  name: values
-  nameWithType: GeneratedResult<TAsset>.values
-  fullName: Glitch9.AIDevKit.GeneratedResult<TAsset>.values
-  nameWithType.vb: GeneratedResult(Of TAsset).values
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of TAsset).values
+  definition: Glitch9.AIDevKit.GeneratedResult`1.Count
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Count
+  name: Count
+  nameWithType: GeneratedResult<TAsset>.Count
+  fullName: Glitch9.AIDevKit.GeneratedResult<TAsset>.Count
+  nameWithType.vb: GeneratedResult(Of TAsset).Count
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of TAsset).Count
 - uid: Glitch9.AIDevKit.GeneratedResult{{TAsset}}.Usage
   commentId: P:Glitch9.AIDevKit.GeneratedResult{`0}.Usage
   parent: Glitch9.AIDevKit.GeneratedResult{{TAsset}}
@@ -312,16 +300,6 @@ references:
   fullName: Glitch9.AIDevKit.GeneratedResult<TAsset>.Usage
   nameWithType.vb: GeneratedResult(Of TAsset).Usage
   fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of TAsset).Usage
-- uid: Glitch9.AIDevKit.GeneratedResult{{TAsset}}.usage
-  commentId: F:Glitch9.AIDevKit.GeneratedResult{`0}.usage
-  parent: Glitch9.AIDevKit.GeneratedResult{{TAsset}}
-  definition: Glitch9.AIDevKit.GeneratedResult`1.usage
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_usage
-  name: usage
-  nameWithType: GeneratedResult<TAsset>.usage
-  fullName: Glitch9.AIDevKit.GeneratedResult<TAsset>.usage
-  nameWithType.vb: GeneratedResult(Of TAsset).usage
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of TAsset).usage
 - uid: Glitch9.AIDevKit.GeneratedResult{{TAsset}}.Item(System.Int32)
   commentId: P:Glitch9.AIDevKit.GeneratedResult{`0}.Item(System.Int32)
   parent: Glitch9.AIDevKit.GeneratedResult{{TAsset}}
@@ -349,30 +327,26 @@ references:
     name: Integer
     isExternal: true
   - name: )
-- uid: Glitch9.IResult.Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert
-  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-  definition: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  name: Convert(IResult)
-  nameWithType: AssistantsAPIResultExtensions.Convert(IResult)
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-    name: Convert
-    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  - name: (
-  - uid: Glitch9.IResult
-    name: IResult
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-    name: Convert
-    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  - name: (
-  - uid: Glitch9.IResult
-    name: IResult
-  - name: )
+- uid: Glitch9.AIDevKit.GeneratedResult{{TAsset}}.values
+  commentId: F:Glitch9.AIDevKit.GeneratedResult{`0}.values
+  parent: Glitch9.AIDevKit.GeneratedResult{{TAsset}}
+  definition: Glitch9.AIDevKit.GeneratedResult`1.values
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_values
+  name: values
+  nameWithType: GeneratedResult<TAsset>.values
+  fullName: Glitch9.AIDevKit.GeneratedResult<TAsset>.values
+  nameWithType.vb: GeneratedResult(Of TAsset).values
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of TAsset).values
+- uid: Glitch9.AIDevKit.GeneratedResult{{TAsset}}.usage
+  commentId: F:Glitch9.AIDevKit.GeneratedResult{`0}.usage
+  parent: Glitch9.AIDevKit.GeneratedResult{{TAsset}}
+  definition: Glitch9.AIDevKit.GeneratedResult`1.usage
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_usage
+  name: usage
+  nameWithType: GeneratedResult<TAsset>.usage
+  fullName: Glitch9.AIDevKit.GeneratedResult<TAsset>.usage
+  nameWithType.vb: GeneratedResult(Of TAsset).usage
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of TAsset).usage
 - uid: System
   commentId: N:System
   isExternal: true
@@ -449,14 +423,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Glitch9.AIDevKit.GeneratedResult`1.Count
-  commentId: P:Glitch9.AIDevKit.GeneratedResult`1.Count
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Count
-  name: Count
-  nameWithType: GeneratedResult<T>.Count
-  fullName: Glitch9.AIDevKit.GeneratedResult<T>.Count
-  nameWithType.vb: GeneratedResult(Of T).Count
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).Count
 - uid: Glitch9.AIDevKit.GeneratedResult`1.Values
   commentId: P:Glitch9.AIDevKit.GeneratedResult`1.Values
   href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Values
@@ -465,14 +431,14 @@ references:
   fullName: Glitch9.AIDevKit.GeneratedResult<T>.Values
   nameWithType.vb: GeneratedResult(Of T).Values
   fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).Values
-- uid: Glitch9.AIDevKit.GeneratedResult`1.values
-  commentId: F:Glitch9.AIDevKit.GeneratedResult`1.values
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_values
-  name: values
-  nameWithType: GeneratedResult<T>.values
-  fullName: Glitch9.AIDevKit.GeneratedResult<T>.values
-  nameWithType.vb: GeneratedResult(Of T).values
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).values
+- uid: Glitch9.AIDevKit.GeneratedResult`1.Count
+  commentId: P:Glitch9.AIDevKit.GeneratedResult`1.Count
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Count
+  name: Count
+  nameWithType: GeneratedResult<T>.Count
+  fullName: Glitch9.AIDevKit.GeneratedResult<T>.Count
+  nameWithType.vb: GeneratedResult(Of T).Count
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).Count
 - uid: Glitch9.AIDevKit.GeneratedResult`1.Usage
   commentId: P:Glitch9.AIDevKit.GeneratedResult`1.Usage
   href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Usage
@@ -481,14 +447,6 @@ references:
   fullName: Glitch9.AIDevKit.GeneratedResult<T>.Usage
   nameWithType.vb: GeneratedResult(Of T).Usage
   fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).Usage
-- uid: Glitch9.AIDevKit.GeneratedResult`1.usage
-  commentId: F:Glitch9.AIDevKit.GeneratedResult`1.usage
-  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_usage
-  name: usage
-  nameWithType: GeneratedResult<T>.usage
-  fullName: Glitch9.AIDevKit.GeneratedResult<T>.usage
-  nameWithType.vb: GeneratedResult(Of T).usage
-  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).usage
 - uid: Glitch9.AIDevKit.GeneratedResult`1.Item(System.Int32)
   commentId: P:Glitch9.AIDevKit.GeneratedResult`1.Item(System.Int32)
   isExternal: true
@@ -515,73 +473,22 @@ references:
     name: Integer
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  name: Convert(IResult)
-  nameWithType: AssistantsAPIResultExtensions.Convert(IResult)
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-    name: Convert
-    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  - name: (
-  - uid: Glitch9.IResult
-    name: IResult
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.Convert(Glitch9.IResult)
-    name: Convert
-    href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_
-  - name: (
-  - uid: Glitch9.IResult
-    name: IResult
-  - name: )
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-  commentId: T:Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-  parent: Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html
-  name: AssistantsAPIResultExtensions
-  nameWithType: AssistantsAPIResultExtensions
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions
-- uid: Glitch9.AIDevKit.OpenAI.Assistants
-  commentId: N:Glitch9.AIDevKit.OpenAI.Assistants
-  href: Glitch9.html
-  name: Glitch9.AIDevKit.OpenAI.Assistants
-  nameWithType: Glitch9.AIDevKit.OpenAI.Assistants
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.AIDevKit
-    name: AIDevKit
-    href: Glitch9.AIDevKit.html
-  - name: .
-  - uid: Glitch9.AIDevKit.OpenAI
-    name: OpenAI
-    href: Glitch9.AIDevKit.OpenAI.html
-  - name: .
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants
-    name: Assistants
-    href: Glitch9.AIDevKit.OpenAI.Assistants.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.AIDevKit
-    name: AIDevKit
-    href: Glitch9.AIDevKit.html
-  - name: .
-  - uid: Glitch9.AIDevKit.OpenAI
-    name: OpenAI
-    href: Glitch9.AIDevKit.OpenAI.html
-  - name: .
-  - uid: Glitch9.AIDevKit.OpenAI.Assistants
-    name: Assistants
-    href: Glitch9.AIDevKit.OpenAI.Assistants.html
+- uid: Glitch9.AIDevKit.GeneratedResult`1.values
+  commentId: F:Glitch9.AIDevKit.GeneratedResult`1.values
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_values
+  name: values
+  nameWithType: GeneratedResult<T>.values
+  fullName: Glitch9.AIDevKit.GeneratedResult<T>.values
+  nameWithType.vb: GeneratedResult(Of T).values
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).values
+- uid: Glitch9.AIDevKit.GeneratedResult`1.usage
+  commentId: F:Glitch9.AIDevKit.GeneratedResult`1.usage
+  href: Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_usage
+  name: usage
+  nameWithType: GeneratedResult<T>.usage
+  fullName: Glitch9.AIDevKit.GeneratedResult<T>.usage
+  nameWithType.vb: GeneratedResult(Of T).usage
+  fullName.vb: Glitch9.AIDevKit.GeneratedResult(Of T).usage
 - uid: Glitch9.AIDevKit.GeneratedAsset`2.Paths*
   commentId: Overload:Glitch9.AIDevKit.GeneratedAsset`2.Paths
   href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Paths

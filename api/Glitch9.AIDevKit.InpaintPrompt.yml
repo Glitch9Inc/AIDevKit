@@ -20,7 +20,7 @@ items:
   source:
     id: InpaintPrompt
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Prompt/Prompt.cs
-    startLine: 81
+    startLine: 10
   namespace: Glitch9.AIDevKit
   summary: >-
     A specialized prompt for inpainting tasks.<br />
@@ -35,7 +35,7 @@ items:
   inheritance:
   - System.Object
   extensionMethods:
-  - Glitch9.AIDevKit.InpaintPrompt.Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit
+  - Glitch9.AIDevKit.InpaintPrompt.Glitch9.AIDevKit.GENTaskExtensions.GENInpaint
 - uid: Glitch9.AIDevKit.InpaintPrompt.text
   commentId: F:Glitch9.AIDevKit.InpaintPrompt.text
   id: text
@@ -50,7 +50,7 @@ items:
   source:
     id: text
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Prompt/Prompt.cs
-    startLine: 87
+    startLine: 16
   namespace: Glitch9.AIDevKit
   summary: >-
     The instruction how you want to edit the image.<br />
@@ -76,7 +76,7 @@ items:
   source:
     id: image
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Prompt/Prompt.cs
-    startLine: 92
+    startLine: 21
   namespace: Glitch9.AIDevKit
   summary: The image to be edited.<br />
   example: []
@@ -99,7 +99,7 @@ items:
   source:
     id: mask
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Prompt/Prompt.cs
-    startLine: 99
+    startLine: 28
   namespace: Glitch9.AIDevKit
   summary: >-
     Optional. 
@@ -127,7 +127,7 @@ items:
   source:
     id: IsValid
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Prompt/Prompt.cs
-    startLine: 101
+    startLine: 30
   namespace: Glitch9.AIDevKit
   syntax:
     content: public bool IsValid { get; }
@@ -150,7 +150,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Prompt/Prompt.cs
-    startLine: 103
+    startLine: 32
   namespace: Glitch9.AIDevKit
   syntax:
     content: public InpaintPrompt(string instruction, Texture2D image, Texture2D mask = null)
@@ -206,27 +206,27 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.AIDevKit.InpaintPrompt.Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit
-  commentId: M:Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit(Glitch9.AIDevKit.InpaintPrompt)
+- uid: Glitch9.AIDevKit.InpaintPrompt.Glitch9.AIDevKit.GENTaskExtensions.GENInpaint
+  commentId: M:Glitch9.AIDevKit.GENTaskExtensions.GENInpaint(Glitch9.AIDevKit.InpaintPrompt)
   parent: Glitch9.AIDevKit.GENTaskExtensions
-  definition: Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit(Glitch9.AIDevKit.InpaintPrompt)
-  href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENImageEdit_Glitch9_AIDevKit_InpaintPrompt_
-  name: GENImageEdit(InpaintPrompt)
-  nameWithType: GENTaskExtensions.GENImageEdit(InpaintPrompt)
-  fullName: Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit(Glitch9.AIDevKit.InpaintPrompt)
+  definition: Glitch9.AIDevKit.GENTaskExtensions.GENInpaint(Glitch9.AIDevKit.InpaintPrompt)
+  href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENInpaint_Glitch9_AIDevKit_InpaintPrompt_
+  name: GENInpaint(InpaintPrompt)
+  nameWithType: GENTaskExtensions.GENInpaint(InpaintPrompt)
+  fullName: Glitch9.AIDevKit.GENTaskExtensions.GENInpaint(Glitch9.AIDevKit.InpaintPrompt)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit(Glitch9.AIDevKit.InpaintPrompt)
-    name: GENImageEdit
-    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENImageEdit_Glitch9_AIDevKit_InpaintPrompt_
+  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENInpaint(Glitch9.AIDevKit.InpaintPrompt)
+    name: GENInpaint
+    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENInpaint_Glitch9_AIDevKit_InpaintPrompt_
   - name: (
   - uid: Glitch9.AIDevKit.InpaintPrompt
     name: InpaintPrompt
     href: Glitch9.AIDevKit.InpaintPrompt.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit(Glitch9.AIDevKit.InpaintPrompt)
-    name: GENImageEdit
-    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENImageEdit_Glitch9_AIDevKit_InpaintPrompt_
+  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENInpaint(Glitch9.AIDevKit.InpaintPrompt)
+    name: GENInpaint
+    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENInpaint_Glitch9_AIDevKit_InpaintPrompt_
   - name: (
   - uid: Glitch9.AIDevKit.InpaintPrompt
     name: InpaintPrompt
@@ -239,25 +239,25 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit(Glitch9.AIDevKit.InpaintPrompt)
-  commentId: M:Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit(Glitch9.AIDevKit.InpaintPrompt)
-  href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENImageEdit_Glitch9_AIDevKit_InpaintPrompt_
-  name: GENImageEdit(InpaintPrompt)
-  nameWithType: GENTaskExtensions.GENImageEdit(InpaintPrompt)
-  fullName: Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit(Glitch9.AIDevKit.InpaintPrompt)
+- uid: Glitch9.AIDevKit.GENTaskExtensions.GENInpaint(Glitch9.AIDevKit.InpaintPrompt)
+  commentId: M:Glitch9.AIDevKit.GENTaskExtensions.GENInpaint(Glitch9.AIDevKit.InpaintPrompt)
+  href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENInpaint_Glitch9_AIDevKit_InpaintPrompt_
+  name: GENInpaint(InpaintPrompt)
+  nameWithType: GENTaskExtensions.GENInpaint(InpaintPrompt)
+  fullName: Glitch9.AIDevKit.GENTaskExtensions.GENInpaint(Glitch9.AIDevKit.InpaintPrompt)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit(Glitch9.AIDevKit.InpaintPrompt)
-    name: GENImageEdit
-    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENImageEdit_Glitch9_AIDevKit_InpaintPrompt_
+  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENInpaint(Glitch9.AIDevKit.InpaintPrompt)
+    name: GENInpaint
+    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENInpaint_Glitch9_AIDevKit_InpaintPrompt_
   - name: (
   - uid: Glitch9.AIDevKit.InpaintPrompt
     name: InpaintPrompt
     href: Glitch9.AIDevKit.InpaintPrompt.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENImageEdit(Glitch9.AIDevKit.InpaintPrompt)
-    name: GENImageEdit
-    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENImageEdit_Glitch9_AIDevKit_InpaintPrompt_
+  - uid: Glitch9.AIDevKit.GENTaskExtensions.GENInpaint(Glitch9.AIDevKit.InpaintPrompt)
+    name: GENInpaint
+    href: Glitch9.AIDevKit.GENTaskExtensions.html#Glitch9_AIDevKit_GENTaskExtensions_GENInpaint_Glitch9_AIDevKit_InpaintPrompt_
   - name: (
   - uid: Glitch9.AIDevKit.InpaintPrompt
     name: InpaintPrompt

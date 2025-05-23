@@ -6,8 +6,8 @@ items:
   parent: Glitch9.AIDevKit.Google.Services
   children:
   - Glitch9.AIDevKit.Google.Services.MediaService.#ctor(Glitch9.AIDevKit.Google.GenerativeAI)
-  - Glitch9.AIDevKit.Google.Services.MediaService.Upload(Glitch9.AIDevKit.Google.UploadFileRequest)
-  - Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata(Glitch9.AIDevKit.Google.UploadFileRequest)
+  - Glitch9.AIDevKit.Google.Services.MediaService.UploadAsync(Glitch9.AIDevKit.Google.GoogleFileUploadRequest)
+  - Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadataAsync(Glitch9.AIDevKit.Google.GoogleFile)
   langs:
   - csharp
   - vb
@@ -52,56 +52,56 @@ items:
   nameWithType.vb: MediaService.New(GenerativeAI)
   fullName.vb: Glitch9.AIDevKit.Google.Services.MediaService.New(Glitch9.AIDevKit.Google.GenerativeAI)
   name.vb: New(GenerativeAI)
-- uid: Glitch9.AIDevKit.Google.Services.MediaService.Upload(Glitch9.AIDevKit.Google.UploadFileRequest)
-  commentId: M:Glitch9.AIDevKit.Google.Services.MediaService.Upload(Glitch9.AIDevKit.Google.UploadFileRequest)
-  id: Upload(Glitch9.AIDevKit.Google.UploadFileRequest)
+- uid: Glitch9.AIDevKit.Google.Services.MediaService.UploadAsync(Glitch9.AIDevKit.Google.GoogleFileUploadRequest)
+  commentId: M:Glitch9.AIDevKit.Google.Services.MediaService.UploadAsync(Glitch9.AIDevKit.Google.GoogleFileUploadRequest)
+  id: UploadAsync(Glitch9.AIDevKit.Google.GoogleFileUploadRequest)
   parent: Glitch9.AIDevKit.Google.Services.MediaService
   langs:
   - csharp
   - vb
-  name: Upload(UploadFileRequest)
-  nameWithType: MediaService.Upload(UploadFileRequest)
-  fullName: Glitch9.AIDevKit.Google.Services.MediaService.Upload(Glitch9.AIDevKit.Google.UploadFileRequest)
+  name: UploadAsync(GoogleFileUploadRequest)
+  nameWithType: MediaService.UploadAsync(GoogleFileUploadRequest)
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService.UploadAsync(Glitch9.AIDevKit.Google.GoogleFileUploadRequest)
   type: Method
   source:
-    id: Upload
+    id: UploadAsync
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/MediaService.cs
     startLine: 10
   namespace: Glitch9.AIDevKit.Google.Services
   syntax:
-    content: public UniTask<FileResponse> Upload(UploadFileRequest req)
+    content: public UniTask<GoogleFile> UploadAsync(GoogleFileUploadRequest req)
     parameters:
     - id: req
-      type: Glitch9.AIDevKit.Google.UploadFileRequest
+      type: Glitch9.AIDevKit.Google.GoogleFileUploadRequest
     return:
-      type: UniTask{Glitch9.AIDevKit.Google.FileResponse}
-    content.vb: Public Function Upload(req As UploadFileRequest) As UniTask(Of FileResponse)
-  overload: Glitch9.AIDevKit.Google.Services.MediaService.Upload*
-- uid: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata(Glitch9.AIDevKit.Google.UploadFileRequest)
-  commentId: M:Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata(Glitch9.AIDevKit.Google.UploadFileRequest)
-  id: UploadMetadata(Glitch9.AIDevKit.Google.UploadFileRequest)
+      type: UniTask{Glitch9.AIDevKit.Google.GoogleFile}
+    content.vb: Public Function UploadAsync(req As GoogleFileUploadRequest) As UniTask(Of GoogleFile)
+  overload: Glitch9.AIDevKit.Google.Services.MediaService.UploadAsync*
+- uid: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadataAsync(Glitch9.AIDevKit.Google.GoogleFile)
+  commentId: M:Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadataAsync(Glitch9.AIDevKit.Google.GoogleFile)
+  id: UploadMetadataAsync(Glitch9.AIDevKit.Google.GoogleFile)
   parent: Glitch9.AIDevKit.Google.Services.MediaService
   langs:
   - csharp
   - vb
-  name: UploadMetadata(UploadFileRequest)
-  nameWithType: MediaService.UploadMetadata(UploadFileRequest)
-  fullName: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata(Glitch9.AIDevKit.Google.UploadFileRequest)
+  name: UploadMetadataAsync(GoogleFile)
+  nameWithType: MediaService.UploadMetadataAsync(GoogleFile)
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadataAsync(Glitch9.AIDevKit.Google.GoogleFile)
   type: Method
   source:
-    id: UploadMetadata
+    id: UploadMetadataAsync
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Services/MediaService.cs
     startLine: 12
   namespace: Glitch9.AIDevKit.Google.Services
   syntax:
-    content: public UniTask<FileResponse> UploadMetadata(UploadFileRequest req)
+    content: public UniTask<GoogleFile> UploadMetadataAsync(GoogleFile req)
     parameters:
     - id: req
-      type: Glitch9.AIDevKit.Google.UploadFileRequest
+      type: Glitch9.AIDevKit.Google.GoogleFile
     return:
-      type: UniTask{Glitch9.AIDevKit.Google.FileResponse}
-    content.vb: Public Function UploadMetadata(req As UploadFileRequest) As UniTask(Of FileResponse)
-  overload: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata*
+      type: UniTask{Glitch9.AIDevKit.Google.GoogleFile}
+    content.vb: Public Function UploadMetadataAsync(req As GoogleFile) As UniTask(Of GoogleFile)
+  overload: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadataAsync*
 references:
 - uid: Glitch9.AIDevKit.Google.Services
   commentId: N:Glitch9.AIDevKit.Google.Services
@@ -293,37 +293,37 @@ references:
   - uid: Glitch9.AIDevKit.Google
     name: Google
     href: Glitch9.AIDevKit.Google.html
-- uid: Glitch9.AIDevKit.Google.Services.MediaService.Upload*
-  commentId: Overload:Glitch9.AIDevKit.Google.Services.MediaService.Upload
-  href: Glitch9.AIDevKit.Google.Services.MediaService.html#Glitch9_AIDevKit_Google_Services_MediaService_Upload_Glitch9_AIDevKit_Google_UploadFileRequest_
-  name: Upload
-  nameWithType: MediaService.Upload
-  fullName: Glitch9.AIDevKit.Google.Services.MediaService.Upload
-- uid: Glitch9.AIDevKit.Google.UploadFileRequest
-  commentId: T:Glitch9.AIDevKit.Google.UploadFileRequest
+- uid: Glitch9.AIDevKit.Google.Services.MediaService.UploadAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.MediaService.UploadAsync
+  href: Glitch9.AIDevKit.Google.Services.MediaService.html#Glitch9_AIDevKit_Google_Services_MediaService_UploadAsync_Glitch9_AIDevKit_Google_GoogleFileUploadRequest_
+  name: UploadAsync
+  nameWithType: MediaService.UploadAsync
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService.UploadAsync
+- uid: Glitch9.AIDevKit.Google.GoogleFileUploadRequest
+  commentId: T:Glitch9.AIDevKit.Google.GoogleFileUploadRequest
   parent: Glitch9.AIDevKit.Google
-  href: Glitch9.AIDevKit.Google.UploadFileRequest.html
-  name: UploadFileRequest
-  nameWithType: UploadFileRequest
-  fullName: Glitch9.AIDevKit.Google.UploadFileRequest
-- uid: UniTask{Glitch9.AIDevKit.Google.FileResponse}
-  commentId: '!:UniTask{Glitch9.AIDevKit.Google.FileResponse}'
+  href: Glitch9.AIDevKit.Google.GoogleFileUploadRequest.html
+  name: GoogleFileUploadRequest
+  nameWithType: GoogleFileUploadRequest
+  fullName: Glitch9.AIDevKit.Google.GoogleFileUploadRequest
+- uid: UniTask{Glitch9.AIDevKit.Google.GoogleFile}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Google.GoogleFile}'
   definition: UniTask`1
-  href: Glitch9.AIDevKit.Google.FileResponse.html
-  name: UniTask<FileResponse>
-  nameWithType: UniTask<FileResponse>
-  fullName: UniTask<Glitch9.AIDevKit.Google.FileResponse>
-  nameWithType.vb: UniTask(Of FileResponse)
-  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.FileResponse)
-  name.vb: UniTask(Of FileResponse)
+  href: Glitch9.AIDevKit.Google.GoogleFile.html
+  name: UniTask<GoogleFile>
+  nameWithType: UniTask<GoogleFile>
+  fullName: UniTask<Glitch9.AIDevKit.Google.GoogleFile>
+  nameWithType.vb: UniTask(Of GoogleFile)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Google.GoogleFile)
+  name.vb: UniTask(Of GoogleFile)
   spec.csharp:
   - uid: UniTask`1
     name: UniTask
     isExternal: true
   - name: <
-  - uid: Glitch9.AIDevKit.Google.FileResponse
-    name: FileResponse
-    href: Glitch9.AIDevKit.Google.FileResponse.html
+  - uid: Glitch9.AIDevKit.Google.GoogleFile
+    name: GoogleFile
+    href: Glitch9.AIDevKit.Google.GoogleFile.html
   - name: '>'
   spec.vb:
   - uid: UniTask`1
@@ -332,9 +332,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.AIDevKit.Google.FileResponse
-    name: FileResponse
-    href: Glitch9.AIDevKit.Google.FileResponse.html
+  - uid: Glitch9.AIDevKit.Google.GoogleFile
+    name: GoogleFile
+    href: Glitch9.AIDevKit.Google.GoogleFile.html
   - name: )
 - uid: UniTask`1
   isExternal: true
@@ -360,9 +360,16 @@ references:
   - name: " "
   - name: ''
   - name: )
-- uid: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata*
-  commentId: Overload:Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata
-  href: Glitch9.AIDevKit.Google.Services.MediaService.html#Glitch9_AIDevKit_Google_Services_MediaService_UploadMetadata_Glitch9_AIDevKit_Google_UploadFileRequest_
-  name: UploadMetadata
-  nameWithType: MediaService.UploadMetadata
-  fullName: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadata
+- uid: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadataAsync*
+  commentId: Overload:Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadataAsync
+  href: Glitch9.AIDevKit.Google.Services.MediaService.html#Glitch9_AIDevKit_Google_Services_MediaService_UploadMetadataAsync_Glitch9_AIDevKit_Google_GoogleFile_
+  name: UploadMetadataAsync
+  nameWithType: MediaService.UploadMetadataAsync
+  fullName: Glitch9.AIDevKit.Google.Services.MediaService.UploadMetadataAsync
+- uid: Glitch9.AIDevKit.Google.GoogleFile
+  commentId: T:Glitch9.AIDevKit.Google.GoogleFile
+  parent: Glitch9.AIDevKit.Google
+  href: Glitch9.AIDevKit.Google.GoogleFile.html
+  name: GoogleFile
+  nameWithType: GoogleFile
+  fullName: Glitch9.AIDevKit.Google.GoogleFile

@@ -88,7 +88,8 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html">AIDevKitComponent</a></div>
-    <div class="level2"><span class="xref">Chatbot</span></div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html">ChatbotBase</a></div>
+    <div class="level3"><span class="xref">Chatbot</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -97,6 +98,18 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_functionManager">ChatbotBase.functionManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_chatEventReceiver">ChatbotBase.chatEventReceiver</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_toolEventReceiver">ChatbotBase.toolEventReceiver</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_Glitch9_AIDevKit_ResponseType_">ChatbotBase.EnterChatAsync(ChatMessage, ResponseType)</a>
+    </div>
+    <div>
       <a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_debugMode">AIDevKitComponent.debugMode</a>
     </div>
   </div>
@@ -104,7 +117,7 @@
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_Components_Chatbot_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Chatbot : AIDevKitComponent, IChatbot</code></pre>
+    <pre><code class="lang-csharp hljs">public class Chatbot : ChatbotBase, IChatbot</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
@@ -116,7 +129,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AutoSave { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool AutoSave { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -135,38 +148,13 @@
   </table>
 
 
-  <a id="Glitch9_AIDevKit_Components_Chatbot_FunctionManager_" data-uid="Glitch9.AIDevKit.Components.Chatbot.FunctionManager*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_Chatbot_FunctionManager" data-uid="Glitch9.AIDevKit.Components.Chatbot.FunctionManager">FunctionManager</h4>
+  <a id="Glitch9_AIDevKit_Components_Chatbot_ChatSessionId_" data-uid="Glitch9.AIDevKit.Components.Chatbot.ChatSessionId*"></a>
+  <h4 id="Glitch9_AIDevKit_Components_Chatbot_ChatSessionId" data-uid="Glitch9.AIDevKit.Components.Chatbot.ChatSessionId">ChatSessionId</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FunctionManager FunctionManager { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Components.FunctionManager.html">FunctionManager</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_Components_Chatbot_Id_" data-uid="Glitch9.AIDevKit.Components.Chatbot.Id*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_Chatbot_Id" data-uid="Glitch9.AIDevKit.Components.Chatbot.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string ChatSessionId { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -185,13 +173,38 @@
   </table>
 
 
+  <a id="Glitch9_AIDevKit_Components_Chatbot_IsInitialized_" data-uid="Glitch9.AIDevKit.Components.Chatbot.IsInitialized*"></a>
+  <h4 id="Glitch9_AIDevKit_Components_Chatbot_IsInitialized" data-uid="Glitch9.AIDevKit.Components.Chatbot.IsInitialized">IsInitialized</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInitialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
   <a id="Glitch9_AIDevKit_Components_Chatbot_Messages_" data-uid="Glitch9.AIDevKit.Components.Chatbot.Messages*"></a>
   <h4 id="Glitch9_AIDevKit_Components_Chatbot_Messages" data-uid="Glitch9.AIDevKit.Components.Chatbot.Messages">Messages</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ChatMessage&gt; Messages { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override List&lt;ChatMessage&gt; Messages { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -208,6 +221,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_Messages">ChatbotBase.Messages</a></div>
 
 
   <a id="Glitch9_AIDevKit_Components_Chatbot_Model_" data-uid="Glitch9.AIDevKit.Components.Chatbot.Model*"></a>
@@ -216,7 +231,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Model Model { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override Model Model { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -233,6 +248,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_Model">ChatbotBase.Model</a></div>
 
 
   <a id="Glitch9_AIDevKit_Components_Chatbot_Name_" data-uid="Glitch9.AIDevKit.Components.Chatbot.Name*"></a>
@@ -241,7 +258,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string Name { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -258,6 +275,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_Name">ChatbotBase.Name</a></div>
 
 
   <a id="Glitch9_AIDevKit_Components_Chatbot_Session_" data-uid="Glitch9.AIDevKit.Components.Chatbot.Session*"></a>
@@ -278,7 +297,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.ChatSession.html">ChatSession</a></td>
+        <td><a class="xref" href="Glitch9.AIDevKit.Advanced.Chat.ChatSession.html">ChatSession</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -291,7 +310,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string StartingMessage { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string StartingMessage { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -316,7 +335,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Stream { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool Stream { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -333,6 +352,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_Stream">ChatbotBase.Stream</a></div>
 
 
   <a id="Glitch9_AIDevKit_Components_Chatbot_SystemInstruction_" data-uid="Glitch9.AIDevKit.Components.Chatbot.SystemInstruction*"></a>
@@ -341,7 +362,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SystemInstruction { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string SystemInstruction { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -362,23 +383,13 @@
 </h3>
 
 
-  <a id="Glitch9_AIDevKit_Components_Chatbot_ClearMessages_" data-uid="Glitch9.AIDevKit.Components.Chatbot.ClearMessages*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_Chatbot_ClearMessages" data-uid="Glitch9.AIDevKit.Components.Chatbot.ClearMessages">ClearMessages()</h4>
+  <a id="Glitch9_AIDevKit_Components_Chatbot_SendMessageAsyncINTERNAL_" data-uid="Glitch9.AIDevKit.Components.Chatbot.SendMessageAsyncINTERNAL*"></a>
+  <h4 id="Glitch9_AIDevKit_Components_Chatbot_SendMessageAsyncINTERNAL_Glitch9_AIDevKit_ChatMessage_" data-uid="Glitch9.AIDevKit.Components.Chatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)">SendMessageAsyncINTERNAL(ChatMessage)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ClearMessages()</code></pre>
-  </div>
-
-
-  <a id="Glitch9_AIDevKit_Components_Chatbot_EnterChatAsync_" data-uid="Glitch9.AIDevKit.Components.Chatbot.EnterChatAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_Chatbot_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_Glitch9_AIDevKit_ChatStreamHandler_" data-uid="Glitch9.AIDevKit.Components.Chatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)">EnterChatAsync(ChatMessage, ChatStreamHandler)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UniTask&lt;AssistantMessage&gt; EnterChatAsync(ChatMessage inputMessage, ChatStreamHandler streamHandler = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override UniTask&lt;ChatMessage&gt; SendMessageAsyncINTERNAL(ChatMessage inputMessage)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -395,11 +406,6 @@
         <td><span class="parametername">inputMessage</span></td>
         <td></td>
       </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.ChatStreamHandler.html">ChatStreamHandler</a></td>
-        <td><span class="parametername">streamHandler</span></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -412,11 +418,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.AssistantMessage.html">AssistantMessage</a>&gt;</td>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_SendMessageAsyncINTERNAL_Glitch9_AIDevKit_ChatMessage_">ChatbotBase.SendMessageAsyncINTERNAL(ChatMessage)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Glitch9.AIDevKit.IChatbot.html">IChatbot</a>

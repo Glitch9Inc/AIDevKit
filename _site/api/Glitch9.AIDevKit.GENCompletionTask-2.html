@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GENCompletionTask&lt;TSelf, TOutput&gt; | AI Dev Kit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GENCompletionTask&lt;TSelf, TOutput&gt; | AI Dev Kit ">
+    
+    <meta name="description" content="Base class for GENTasks which utilize a  or a .">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="AI Dev Kit">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.GENCompletionTask`2">
+
+
+
+  <h1 id="Glitch9_AIDevKit_GENCompletionTask_2" data-uid="Glitch9.AIDevKit.GENCompletionTask`2" class="text-break">Class GENCompletionTask&lt;TSelf, TOutput&gt;</h1>
+  <div class="markdown level0 summary"><p>Base class for GENTasks which utilize
+a <a class="xref" href="Glitch9.AIDevKit.CompletionRequest.html">CompletionRequest</a> or
+a <a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequest.html">ChatCompletionRequest</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="Glitch9.AIDevKit.GENTask-3.html">GENTask</a>&lt;TSelf, <span class="xref">string</span>, TOutput&gt;</div>
+    <div class="level2"><span class="xref">GENCompletionTask&lt;TSelf, TOutput&gt;</span></div>
+      <div class="level3"><a class="xref" href="Glitch9.AIDevKit.GENResponseTask.html">GENResponseTask</a></div>
+      <div class="level3"><a class="xref" href="Glitch9.AIDevKit.GENStructTask-1.html">GENStructTask&lt;T&gt;</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.AIDevKit.IGENTask.html">IGENTask</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_token">GENTask&lt;TSelf, string, TOutput&gt;.token</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_enableHistory">GENTask&lt;TSelf, string, TOutput&gt;.enableHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_isCanceled">GENTask&lt;TSelf, string, TOutput&gt;.isCanceled</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_outputMimeType">GENTask&lt;TSelf, string, TOutput&gt;.outputMimeType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel">GENTask&lt;TSelf, string, TOutput&gt;.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_">GENTask&lt;TSelf, string, TOutput&gt;.SetOption(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__">GENTask&lt;TSelf, string, TOutput&gt;.TryGetOption&lt;T&gt;(string, out T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_">GENTask&lt;TSelf, string, TOutput&gt;.SetModel(Model)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_">GENTask&lt;TSelf, string, TOutput&gt;.SetCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_">GENTask&lt;TSelf, string, TOutput&gt;.SetOutputPath(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_">GENTask&lt;TSelf, string, TOutput&gt;.SetSender(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_">GENTask&lt;TSelf, string, TOutput&gt;.SetIgnoreLogs(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_">GENTask&lt;TSelf, string, TOutput&gt;.EnablePromptHistory(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_">GENTask&lt;TSelf, string, TOutput&gt;.SetCancellationToken(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL">GENTask&lt;TSelf, string, TOutput&gt;.ExecuteAsyncINTERNAL()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync">GENTask&lt;TSelf, string, TOutput&gt;.ExecuteAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1">GENTask&lt;TSelf, string, TOutput&gt;.ExecuteAsync&lt;T&gt;()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Glitch9_AIDevKit_GENCompletionTask_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GENCompletionTask&lt;TSelf, TOutput&gt; : GENTask&lt;TSelf, string, TOutput&gt;, IGENTask where TSelf : GENCompletionTask&lt;TSelf, TOutput&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSelf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOutput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2__ctor_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2__ctor_System_String_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.#ctor(System.String)">GENCompletionTask(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GENCompletionTask(string prompt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_AddFunctions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.AddFunctions*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_AddFunctions_Glitch9_AIDevKit_FunctionCall___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.AddFunctions(Glitch9.AIDevKit.FunctionCall[])">AddFunctions(params FunctionCall[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf AddFunctions(params FunctionCall[] functions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.FunctionCall.html">FunctionCall</a>[]</td>
+        <td><span class="parametername">functions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_AddTools_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.AddTools*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_AddTools_Glitch9_AIDevKit_ToolCall___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.AddTools(Glitch9.AIDevKit.ToolCall[])">AddTools(params ToolCall[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf AddTools(params ToolCall[] tools)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a>[]</td>
+        <td><span class="parametername">tools</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_AudioClip___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach(AudioClip[])">Attach(params AudioClip[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf Attach(params AudioClip[] audioClips)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span>[]</td>
+        <td><span class="parametername">audioClips</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_Glitch9_IO_Files_IFile___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach(Glitch9.IO.Files.IFile[])">Attach(params IFile[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf Attach(params IFile[] files)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFile</span>[]</td>
+        <td><span class="parametername">files</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_System_IO_FileInfo___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach(System.IO.FileInfo[])">Attach(params FileInfo[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf Attach(params FileInfo[] fileInfos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FileInfo</span>[]</td>
+        <td><span class="parametername">fileInfos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_System_String___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach(System.String[])">Attach(params string[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf Attach(params string[] filePaths)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">filePaths</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_Texture2D___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach(Texture2D[])">Attach(params Texture2D[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf Attach(params Texture2D[] textures)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Texture2D</span>[]</td>
+        <td><span class="parametername">textures</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetFunctions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetFunctions*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetFunctions_Glitch9_AIDevKit_FunctionCall___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetFunctions(Glitch9.AIDevKit.FunctionCall[])">SetFunctions(params FunctionCall[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetFunctions(params FunctionCall[] functions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.FunctionCall.html">FunctionCall</a>[]</td>
+        <td><span class="parametername">functions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetInstruction_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetInstruction*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetInstruction_System_String_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetInstruction(System.String)">SetInstruction(string)</h4>
+  <div class="markdown level1 summary"><p>Sets the instruction for the task. This is a specific command or request for the model to follow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetInstruction(string instruction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">instruction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetModelOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModelOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)">SetModelOptions(ModelOptions)</h4>
+  <div class="markdown level1 summary"><p>Sets the generation options for the task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetModelOptions(ModelOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelOptions.html">ModelOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetModerationOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModerationOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetModerationOptions_Glitch9_AIDevKit_ModerationOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)">SetModerationOptions(ModerationOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetModerationOptions(ModerationOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModerationOptions.html">ModerationOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningEffort_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningEffort*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningEffort_Glitch9_AIDevKit_ReasoningEffort_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)">SetReasoningEffort(ReasoningEffort)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetReasoningEffort(ReasoningEffort effort)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ReasoningEffort.html">ReasoningEffort</a></td>
+        <td><span class="parametername">effort</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)">SetReasoningOptions(ReasoningOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetReasoningOptions(ReasoningOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ReasoningOptions.html">ReasoningOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetSpeechOutput_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetSpeechOutput*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetSpeechOutput_Glitch9_AIDevKit_SpeechOutputOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetSpeechOutput(Glitch9.AIDevKit.SpeechOutputOptions)">SetSpeechOutput(SpeechOutputOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetSpeechOutput(SpeechOutputOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.SpeechOutputOptions.html">SpeechOutputOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetTools_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetTools*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetTools_Glitch9_AIDevKit_ToolCall___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetTools(Glitch9.AIDevKit.ToolCall[])">SetTools(params ToolCall[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetTools(params ToolCall[] tools)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ToolCall.html">ToolCall</a>[]</td>
+        <td><span class="parametername">tools</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetWebSearchOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetWebSearchOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetWebSearchOptions_Glitch9_AIDevKit_WebSearchOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetWebSearchOptions(Glitch9.AIDevKit.WebSearchOptions)">SetWebSearchOptions(WebSearchOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetWebSearchOptions(WebSearchOptions webSearchOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.WebSearchOptions.html">WebSearchOptions</a></td>
+        <td><span class="parametername">webSearchOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IGENTask.html">IGENTask</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetAspectRatio__1___0_Glitch9_AIDevKit_Google_AspectRatio_">FluentAPIExtensions.SetAspectRatio&lt;TTask&gt;(TTask, AspectRatio)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.Google.FluentAPIExtensions.html#Glitch9_AIDevKit_Google_FluentAPIExtensions_SetPersonGeneration__1___0_Glitch9_AIDevKit_Google_PersonGeneration_">FluentAPIExtensions.SetPersonGeneration&lt;TTask&gt;(TTask, PersonGeneration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.html#Glitch9_AIDevKit_OpenAI_FluentAPIExtensions_SetSize__1___0_Glitch9_AIDevKit_ImageSize_">FluentAPIExtensions.SetSize&lt;T&gt;(T, ImageSize)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Components.ChatEventReceiver
+  commentId: T:Glitch9.AIDevKit.Components.ChatEventReceiver
+  id: ChatEventReceiver
+  parent: Glitch9.AIDevKit.Components
+  children:
+  - Glitch9.AIDevKit.Components.ChatEventReceiver.OnError(System.String)
+  - Glitch9.AIDevKit.Components.ChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+  - Glitch9.AIDevKit.Components.ChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+  langs:
+  - csharp
+  - vb
+  name: ChatEventReceiver
+  nameWithType: ChatEventReceiver
+  fullName: Glitch9.AIDevKit.Components.ChatEventReceiver
+  type: Class
+  source:
+    id: ChatEventReceiver
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/ChatEventReceiver.cs
+    startLine: 5
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: 'public abstract class ChatEventReceiver : MonoBehaviour, IChatEventReceiver'
+    content.vb: Public MustInherit Class ChatEventReceiver Inherits MonoBehaviour Implements IChatEventReceiver
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Glitch9.AIDevKit.Components.ChatTextEventReceiver
+  - Glitch9.AIDevKit.Components.MultiChatEventReceiver
+  - Glitch9.AIDevKit.Components.SingleChatEventReceiver
+  implements:
+  - Glitch9.AIDevKit.Components.IChatEventReceiver
+- uid: Glitch9.AIDevKit.Components.ChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+  commentId: M:Glitch9.AIDevKit.Components.ChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+  id: OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+  parent: Glitch9.AIDevKit.Components.ChatEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnSendMessage(ChatMessage)
+  nameWithType: ChatEventReceiver.OnSendMessage(ChatMessage)
+  fullName: Glitch9.AIDevKit.Components.ChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+  type: Method
+  source:
+    id: OnSendMessage
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/ChatEventReceiver.cs
+    startLine: 13
+  namespace: Glitch9.AIDevKit.Components
+  example: []
+  syntax:
+    content: public abstract void OnSendMessage(ChatMessage requestMessage)
+    parameters:
+    - id: requestMessage
+      type: Glitch9.AIDevKit.ChatMessage
+    content.vb: Public MustOverride Sub OnSendMessage(requestMessage As ChatMessage)
+  overload: Glitch9.AIDevKit.Components.ChatEventReceiver.OnSendMessage*
+  implements:
+  - Glitch9.AIDevKit.Components.IChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+- uid: Glitch9.AIDevKit.Components.ChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+  commentId: M:Glitch9.AIDevKit.Components.ChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+  id: OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+  parent: Glitch9.AIDevKit.Components.ChatEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnReceiveResponse(ChatCompletion)
+  nameWithType: ChatEventReceiver.OnReceiveResponse(ChatCompletion)
+  fullName: Glitch9.AIDevKit.Components.ChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+  type: Method
+  source:
+    id: OnReceiveResponse
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/ChatEventReceiver.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit.Components
+  example: []
+  syntax:
+    content: public abstract void OnReceiveResponse(ChatCompletion response)
+    parameters:
+    - id: response
+      type: Glitch9.AIDevKit.ChatCompletion
+    content.vb: Public MustOverride Sub OnReceiveResponse(response As ChatCompletion)
+  overload: Glitch9.AIDevKit.Components.ChatEventReceiver.OnReceiveResponse*
+  implements:
+  - Glitch9.AIDevKit.Components.IChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+- uid: Glitch9.AIDevKit.Components.ChatEventReceiver.OnError(System.String)
+  commentId: M:Glitch9.AIDevKit.Components.ChatEventReceiver.OnError(System.String)
+  id: OnError(System.String)
+  parent: Glitch9.AIDevKit.Components.ChatEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnError(string)
+  nameWithType: ChatEventReceiver.OnError(string)
+  fullName: Glitch9.AIDevKit.Components.ChatEventReceiver.OnError(string)
+  type: Method
+  source:
+    id: OnError
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/ChatEventReceiver.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit.Components
+  example: []
+  syntax:
+    content: public void OnError(string errorMessage)
+    parameters:
+    - id: errorMessage
+      type: System.String
+    content.vb: Public Sub OnError(errorMessage As String)
+  overload: Glitch9.AIDevKit.Components.ChatEventReceiver.OnError*
+  implements:
+  - Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(System.String)
+  nameWithType.vb: ChatEventReceiver.OnError(String)
+  fullName.vb: Glitch9.AIDevKit.Components.ChatEventReceiver.OnError(String)
+  name.vb: OnError(String)
+references:
+- uid: Glitch9.AIDevKit.Components
+  commentId: N:Glitch9.AIDevKit.Components
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Components
+  nameWithType: Glitch9.AIDevKit.Components
+  fullName: Glitch9.AIDevKit.Components
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Components
+    name: Components
+    href: Glitch9.AIDevKit.Components.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Components
+    name: Components
+    href: Glitch9.AIDevKit.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.Components.IChatEventReceiver
+  commentId: T:Glitch9.AIDevKit.Components.IChatEventReceiver
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.IChatEventReceiver.html
+  name: IChatEventReceiver
+  nameWithType: IChatEventReceiver
+  fullName: Glitch9.AIDevKit.Components.IChatEventReceiver
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.Components.ChatEventReceiver.OnSendMessage*
+  commentId: Overload:Glitch9.AIDevKit.Components.ChatEventReceiver.OnSendMessage
+  href: Glitch9.AIDevKit.Components.ChatEventReceiver.html#Glitch9_AIDevKit_Components_ChatEventReceiver_OnSendMessage_Glitch9_AIDevKit_ChatMessage_
+  name: OnSendMessage
+  nameWithType: ChatEventReceiver.OnSendMessage
+  fullName: Glitch9.AIDevKit.Components.ChatEventReceiver.OnSendMessage
+- uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+  commentId: M:Glitch9.AIDevKit.Components.IChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+  parent: Glitch9.AIDevKit.Components.IChatEventReceiver
+  href: Glitch9.AIDevKit.Components.IChatEventReceiver.html#Glitch9_AIDevKit_Components_IChatEventReceiver_OnSendMessage_Glitch9_AIDevKit_ChatMessage_
+  name: OnSendMessage(ChatMessage)
+  nameWithType: IChatEventReceiver.OnSendMessage(ChatMessage)
+  fullName: Glitch9.AIDevKit.Components.IChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+    name: OnSendMessage
+    href: Glitch9.AIDevKit.Components.IChatEventReceiver.html#Glitch9_AIDevKit_Components_IChatEventReceiver_OnSendMessage_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
+    name: OnSendMessage
+    href: Glitch9.AIDevKit.Components.IChatEventReceiver.html#Glitch9_AIDevKit_Components_IChatEventReceiver_OnSendMessage_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+- uid: Glitch9.AIDevKit.ChatMessage
+  commentId: T:Glitch9.AIDevKit.ChatMessage
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatMessage.html
+  name: ChatMessage
+  nameWithType: ChatMessage
+  fullName: Glitch9.AIDevKit.ChatMessage
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.Components.ChatEventReceiver.OnReceiveResponse*
+  commentId: Overload:Glitch9.AIDevKit.Components.ChatEventReceiver.OnReceiveResponse
+  href: Glitch9.AIDevKit.Components.ChatEventReceiver.html#Glitch9_AIDevKit_Components_ChatEventReceiver_OnReceiveResponse_Glitch9_AIDevKit_ChatCompletion_
+  name: OnReceiveResponse
+  nameWithType: ChatEventReceiver.OnReceiveResponse
+  fullName: Glitch9.AIDevKit.Components.ChatEventReceiver.OnReceiveResponse
+- uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+  commentId: M:Glitch9.AIDevKit.Components.IChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+  parent: Glitch9.AIDevKit.Components.IChatEventReceiver
+  href: Glitch9.AIDevKit.Components.IChatEventReceiver.html#Glitch9_AIDevKit_Components_IChatEventReceiver_OnReceiveResponse_Glitch9_AIDevKit_ChatCompletion_
+  name: OnReceiveResponse(ChatCompletion)
+  nameWithType: IChatEventReceiver.OnReceiveResponse(ChatCompletion)
+  fullName: Glitch9.AIDevKit.Components.IChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+    name: OnReceiveResponse
+    href: Glitch9.AIDevKit.Components.IChatEventReceiver.html#Glitch9_AIDevKit_Components_IChatEventReceiver_OnReceiveResponse_Glitch9_AIDevKit_ChatCompletion_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
+    name: OnReceiveResponse
+    href: Glitch9.AIDevKit.Components.IChatEventReceiver.html#Glitch9_AIDevKit_Components_IChatEventReceiver_OnReceiveResponse_Glitch9_AIDevKit_ChatCompletion_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
+  - name: )
+- uid: Glitch9.AIDevKit.ChatCompletion
+  commentId: T:Glitch9.AIDevKit.ChatCompletion
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: ChatCompletion
+  nameWithType: ChatCompletion
+  fullName: Glitch9.AIDevKit.ChatCompletion
+- uid: Glitch9.AIDevKit.Components.ChatEventReceiver.OnError*
+  commentId: Overload:Glitch9.AIDevKit.Components.ChatEventReceiver.OnError
+  href: Glitch9.AIDevKit.Components.ChatEventReceiver.html#Glitch9_AIDevKit_Components_ChatEventReceiver_OnError_System_String_
+  name: OnError
+  nameWithType: ChatEventReceiver.OnError
+  fullName: Glitch9.AIDevKit.Components.ChatEventReceiver.OnError
+- uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(System.String)
+  commentId: M:Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(System.String)
+  parent: Glitch9.AIDevKit.Components.IChatEventReceiver
+  isExternal: true
+  href: Glitch9.AIDevKit.Components.IChatEventReceiver.html#Glitch9_AIDevKit_Components_IChatEventReceiver_OnError_System_String_
+  name: OnError(string)
+  nameWithType: IChatEventReceiver.OnError(string)
+  fullName: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(string)
+  nameWithType.vb: IChatEventReceiver.OnError(String)
+  fullName.vb: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(String)
+  name.vb: OnError(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(System.String)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.IChatEventReceiver.html#Glitch9_AIDevKit_Components_IChatEventReceiver_OnError_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(System.String)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.IChatEventReceiver.html#Glitch9_AIDevKit_Components_IChatEventReceiver_OnError_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

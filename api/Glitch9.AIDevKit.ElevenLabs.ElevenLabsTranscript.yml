@@ -24,13 +24,16 @@ items:
     startLine: 6
   namespace: Glitch9.AIDevKit.ElevenLabs
   syntax:
-    content: 'public class ElevenLabsTranscript : Transcript'
-    content.vb: Public Class ElevenLabsTranscript Inherits Transcript
+    content: 'public class ElevenLabsTranscript : Transcript, IGeneratedResult'
+    content.vb: Public Class ElevenLabsTranscript Inherits Transcript Implements IGeneratedResult
   inheritance:
   - System.Object
   - Glitch9.AIDevKit.Transcript
+  implements:
+  - Glitch9.AIDevKit.IGeneratedResult
   inheritedMembers:
-  - Glitch9.AIDevKit.Transcript.CalculateUsage
+  - Glitch9.AIDevKit.Transcript.Count
+  - Glitch9.AIDevKit.Transcript.Usage
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript.LanguageCode
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript.LanguageCode
   id: LanguageCode
@@ -230,25 +233,27 @@ references:
   name: Transcript
   nameWithType: Transcript
   fullName: Glitch9.AIDevKit.Transcript
-- uid: Glitch9.AIDevKit.Transcript.CalculateUsage
-  commentId: M:Glitch9.AIDevKit.Transcript.CalculateUsage
+- uid: Glitch9.AIDevKit.IGeneratedResult
+  commentId: T:Glitch9.AIDevKit.IGeneratedResult
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IGeneratedResult.html
+  name: IGeneratedResult
+  nameWithType: IGeneratedResult
+  fullName: Glitch9.AIDevKit.IGeneratedResult
+- uid: Glitch9.AIDevKit.Transcript.Count
+  commentId: P:Glitch9.AIDevKit.Transcript.Count
   parent: Glitch9.AIDevKit.Transcript
-  href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_CalculateUsage
-  name: CalculateUsage()
-  nameWithType: Transcript.CalculateUsage()
-  fullName: Glitch9.AIDevKit.Transcript.CalculateUsage()
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.Transcript.CalculateUsage
-    name: CalculateUsage
-    href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_CalculateUsage
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.Transcript.CalculateUsage
-    name: CalculateUsage
-    href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_CalculateUsage
-  - name: (
-  - name: )
+  href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_Count
+  name: Count
+  nameWithType: Transcript.Count
+  fullName: Glitch9.AIDevKit.Transcript.Count
+- uid: Glitch9.AIDevKit.Transcript.Usage
+  commentId: P:Glitch9.AIDevKit.Transcript.Usage
+  parent: Glitch9.AIDevKit.Transcript
+  href: Glitch9.AIDevKit.Transcript.html#Glitch9_AIDevKit_Transcript_Usage
+  name: Usage
+  nameWithType: Transcript.Usage
+  fullName: Glitch9.AIDevKit.Transcript.Usage
 - uid: System
   commentId: N:System
   isExternal: true

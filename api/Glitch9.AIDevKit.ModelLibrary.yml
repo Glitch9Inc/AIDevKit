@@ -24,8 +24,14 @@ items:
     This database is used to keep track of the models available in the AI library.
   example: []
   syntax:
-    content: 'public class ModelLibrary : ScriptableDatabase<ModelLibrary.Repo, Model, ModelLibrary>'
-    content.vb: Public Class ModelLibrary Inherits ScriptableDatabase(Of ModelLibrary.Repo, Model, ModelLibrary)
+    content: >-
+      [AssetPath("Resources/AIDevKit")]
+
+      public class ModelLibrary : ScriptableDatabase<ModelLibrary.Repo, Model, ModelLibrary>
+    content.vb: >-
+      <AssetPath("Resources/AIDevKit")>
+
+      Public Class ModelLibrary Inherits ScriptableDatabase(Of ModelLibrary.Repo, Model, ModelLibrary)
   inheritance:
   - System.Object
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.ModelLibrary}
@@ -49,6 +55,12 @@ items:
   - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.ModelLibrary.Repo,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ModelLibrary}.RestoreFromJsonFile(System.String)
   - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.ModelLibrary.Repo,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ModelLibrary}.LogIfNull
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.ModelLibrary}.Instance
+  attributes:
+  - type: Glitch9.AssetPathAttribute
+    ctor: Glitch9.AssetPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Resources/AIDevKit
 - uid: Glitch9.AIDevKit.ModelLibrary.GetJsonSchemaSupportedModels
   commentId: M:Glitch9.AIDevKit.ModelLibrary.GetJsonSchemaSupportedModels
   id: GetJsonSchemaSupportedModels

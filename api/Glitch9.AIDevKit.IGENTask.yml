@@ -5,7 +5,7 @@ items:
   id: IGENTask
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.IGENTask.ExecuteAsync
+  - Glitch9.AIDevKit.IGENTask.ExecuteAsync``1
   - Glitch9.AIDevKit.IGENTask.SetOption(System.String,System.Object)
   - Glitch9.AIDevKit.IGENTask.TryGetOption``1(System.String,``0@)
   - Glitch9.AIDevKit.IGENTask.enableHistory
@@ -19,7 +19,7 @@ items:
   source:
     id: IGENTask
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 16
+    startLine: 14
   namespace: Glitch9.AIDevKit
   syntax:
     content: public interface IGENTask
@@ -42,7 +42,7 @@ items:
   source:
     id: enableHistory
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 19
+    startLine: 17
   namespace: Glitch9.AIDevKit
   syntax:
     content: bool enableHistory { get; }
@@ -65,7 +65,7 @@ items:
   source:
     id: SetOption
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 21
+    startLine: 19
   namespace: Glitch9.AIDevKit
   syntax:
     content: void SetOption(string key, object value)
@@ -93,7 +93,7 @@ items:
   source:
     id: TryGetOption
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 22
+    startLine: 20
   namespace: Glitch9.AIDevKit
   syntax:
     content: bool TryGetOption<T>(string key, out T value)
@@ -111,28 +111,33 @@ items:
   nameWithType.vb: IGENTask.TryGetOption(Of T)(String, T)
   fullName.vb: Glitch9.AIDevKit.IGENTask.TryGetOption(Of T)(String, T)
   name.vb: TryGetOption(Of T)(String, T)
-- uid: Glitch9.AIDevKit.IGENTask.ExecuteAsync
-  commentId: M:Glitch9.AIDevKit.IGENTask.ExecuteAsync
-  id: ExecuteAsync
+- uid: Glitch9.AIDevKit.IGENTask.ExecuteAsync``1
+  commentId: M:Glitch9.AIDevKit.IGENTask.ExecuteAsync``1
+  id: ExecuteAsync``1
   parent: Glitch9.AIDevKit.IGENTask
   langs:
   - csharp
   - vb
-  name: ExecuteAsync()
-  nameWithType: IGENTask.ExecuteAsync()
-  fullName: Glitch9.AIDevKit.IGENTask.ExecuteAsync()
+  name: ExecuteAsync<T>()
+  nameWithType: IGENTask.ExecuteAsync<T>()
+  fullName: Glitch9.AIDevKit.IGENTask.ExecuteAsync<T>()
   type: Method
   source:
     id: ExecuteAsync
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 23
+    startLine: 21
   namespace: Glitch9.AIDevKit
   syntax:
-    content: UniTask ExecuteAsync()
+    content: UniTask<T> ExecuteAsync<T>()
+    typeParameters:
+    - id: T
     return:
-      type: UniTask
-    content.vb: Function ExecuteAsync() As UniTask
+      type: UniTask{{T}}
+    content.vb: Function ExecuteAsync(Of T)() As UniTask(Of T)
   overload: Glitch9.AIDevKit.IGENTask.ExecuteAsync*
+  nameWithType.vb: IGENTask.ExecuteAsync(Of T)()
+  fullName.vb: Glitch9.AIDevKit.IGENTask.ExecuteAsync(Of T)()
+  name.vb: ExecuteAsync(Of T)()
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -573,12 +578,56 @@ references:
   fullName: T
 - uid: Glitch9.AIDevKit.IGENTask.ExecuteAsync*
   commentId: Overload:Glitch9.AIDevKit.IGENTask.ExecuteAsync
-  href: Glitch9.AIDevKit.IGENTask.html#Glitch9_AIDevKit_IGENTask_ExecuteAsync
+  href: Glitch9.AIDevKit.IGENTask.html#Glitch9_AIDevKit_IGENTask_ExecuteAsync__1
   name: ExecuteAsync
   nameWithType: IGENTask.ExecuteAsync
   fullName: Glitch9.AIDevKit.IGENTask.ExecuteAsync
-- uid: UniTask
+- uid: UniTask{{T}}
+  commentId: '!:UniTask{``0}'
+  definition: UniTask`1
+  name: UniTask<T>
+  nameWithType: UniTask<T>
+  fullName: UniTask<T>
+  nameWithType.vb: UniTask(Of T)
+  fullName.vb: UniTask(Of T)
+  name.vb: UniTask(Of T)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UniTask`1
   isExternal: true
-  name: UniTask
-  nameWithType: UniTask
-  fullName: UniTask
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )

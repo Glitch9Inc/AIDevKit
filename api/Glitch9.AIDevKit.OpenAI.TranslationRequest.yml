@@ -23,17 +23,17 @@ items:
   summary: Translates audio into English.
   example: []
   syntax:
-    content: 'public class TranslationRequest : ModelRequest'
-    content.vb: Public Class TranslationRequest Inherits ModelRequest
+    content: 'public class TranslationRequest : AIRequest'
+    content.vb: Public Class TranslationRequest Inherits AIRequest
   inheritance:
   - System.Object
   - Glitch9.IO.Networking.RESTApi.RequestBody
-  - Glitch9.AIDevKit.ModelRequest
+  - Glitch9.AIDevKit.AIRequest
   inheritedMembers:
-  - Glitch9.AIDevKit.ModelRequest.Model
-  - Glitch9.AIDevKit.ModelRequest.N
-  - Glitch9.AIDevKit.ModelRequest.Metadata
-  - Glitch9.AIDevKit.ModelRequest.User
+  - Glitch9.AIDevKit.AIRequest.Model
+  - Glitch9.AIDevKit.AIRequest.N
+  - Glitch9.AIDevKit.AIRequest.Metadata
+  - Glitch9.AIDevKit.AIRequest.User
   extensionMethods:
   - Glitch9.AIDevKit.OpenAI.TranslationRequest.Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync
 - uid: Glitch9.AIDevKit.OpenAI.TranslationRequest.File
@@ -60,11 +60,11 @@ items:
     in one of these formats: flac, mp3, mp4, mpeg, mpga, m4a, ogg, wav, or webm.
   example: []
   syntax:
-    content: public FormFile File { get; set; }
+    content: public File<AudioClip> File { get; set; }
     parameters: []
     return:
-      type: Glitch9.IO.Networking.RESTApi.FormFile
-    content.vb: Public Property File As FormFile
+      type: Glitch9.IO.Files.File{AudioClip}
+    content.vb: Public Property File As File(Of AudioClip)
   overload: Glitch9.AIDevKit.OpenAI.TranslationRequest.File*
 - uid: Glitch9.AIDevKit.OpenAI.TranslationRequest.Prompt
   commentId: P:Glitch9.AIDevKit.OpenAI.TranslationRequest.Prompt
@@ -173,41 +173,41 @@ references:
   name: RequestBody
   nameWithType: RequestBody
   fullName: Glitch9.IO.Networking.RESTApi.RequestBody
-- uid: Glitch9.AIDevKit.ModelRequest
-  commentId: T:Glitch9.AIDevKit.ModelRequest
+- uid: Glitch9.AIDevKit.AIRequest
+  commentId: T:Glitch9.AIDevKit.AIRequest
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelRequest.html
-  name: ModelRequest
-  nameWithType: ModelRequest
-  fullName: Glitch9.AIDevKit.ModelRequest
-- uid: Glitch9.AIDevKit.ModelRequest.Model
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Model
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model
+  href: Glitch9.AIDevKit.AIRequest.html
+  name: AIRequest
+  nameWithType: AIRequest
+  fullName: Glitch9.AIDevKit.AIRequest
+- uid: Glitch9.AIDevKit.AIRequest.Model
+  commentId: P:Glitch9.AIDevKit.AIRequest.Model
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Model
   name: Model
-  nameWithType: ModelRequest.Model
-  fullName: Glitch9.AIDevKit.ModelRequest.Model
-- uid: Glitch9.AIDevKit.ModelRequest.N
-  commentId: P:Glitch9.AIDevKit.ModelRequest.N
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N
+  nameWithType: AIRequest.Model
+  fullName: Glitch9.AIDevKit.AIRequest.Model
+- uid: Glitch9.AIDevKit.AIRequest.N
+  commentId: P:Glitch9.AIDevKit.AIRequest.N
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_N
   name: N
-  nameWithType: ModelRequest.N
-  fullName: Glitch9.AIDevKit.ModelRequest.N
-- uid: Glitch9.AIDevKit.ModelRequest.Metadata
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Metadata
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata
+  nameWithType: AIRequest.N
+  fullName: Glitch9.AIDevKit.AIRequest.N
+- uid: Glitch9.AIDevKit.AIRequest.Metadata
+  commentId: P:Glitch9.AIDevKit.AIRequest.Metadata
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Metadata
   name: Metadata
-  nameWithType: ModelRequest.Metadata
-  fullName: Glitch9.AIDevKit.ModelRequest.Metadata
-- uid: Glitch9.AIDevKit.ModelRequest.User
-  commentId: P:Glitch9.AIDevKit.ModelRequest.User
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User
+  nameWithType: AIRequest.Metadata
+  fullName: Glitch9.AIDevKit.AIRequest.Metadata
+- uid: Glitch9.AIDevKit.AIRequest.User
+  commentId: P:Glitch9.AIDevKit.AIRequest.User
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_User
   name: User
-  nameWithType: ModelRequest.User
-  fullName: Glitch9.AIDevKit.ModelRequest.User
+  nameWithType: AIRequest.User
+  fullName: Glitch9.AIDevKit.AIRequest.User
 - uid: Glitch9.AIDevKit.OpenAI.TranslationRequest.Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync
   commentId: M:Glitch9.AIDevKit.OpenAI.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.OpenAI.TranslationRequest)
   parent: Glitch9.AIDevKit.OpenAI.RequestExtensions
@@ -338,12 +338,86 @@ references:
   name: File
   nameWithType: TranslationRequest.File
   fullName: Glitch9.AIDevKit.OpenAI.TranslationRequest.File
-- uid: Glitch9.IO.Networking.RESTApi.FormFile
-  commentId: T:Glitch9.IO.Networking.RESTApi.FormFile
-  parent: Glitch9.IO.Networking.RESTApi
-  name: FormFile
-  nameWithType: FormFile
-  fullName: Glitch9.IO.Networking.RESTApi.FormFile
+- uid: Glitch9.IO.Files.File{AudioClip}
+  commentId: T:Glitch9.IO.Files.File{AudioClip}
+  parent: Glitch9.IO.Files
+  definition: Glitch9.IO.Files.File`1
+  name: File<AudioClip>
+  nameWithType: File<AudioClip>
+  fullName: Glitch9.IO.Files.File<AudioClip>
+  nameWithType.vb: File(Of AudioClip)
+  fullName.vb: Glitch9.IO.Files.File(Of AudioClip)
+  name.vb: File(Of AudioClip)
+  spec.csharp:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: <
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: )
+- uid: Glitch9.IO.Files.File`1
+  commentId: T:Glitch9.IO.Files.File`1
+  name: File<T>
+  nameWithType: File<T>
+  fullName: Glitch9.IO.Files.File<T>
+  nameWithType.vb: File(Of T)
+  fullName.vb: Glitch9.IO.Files.File(Of T)
+  name.vb: File(Of T)
+  spec.csharp:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.IO.Files
+  commentId: N:Glitch9.IO.Files
+  href: Glitch9.html
+  name: Glitch9.IO.Files
+  nameWithType: Glitch9.IO.Files
+  fullName: Glitch9.IO.Files
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Files
+    name: Files
+    href: Glitch9.IO.Files.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Files
+    name: Files
+    href: Glitch9.IO.Files.html
 - uid: Glitch9.AIDevKit.OpenAI.TranslationRequest.Prompt*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.TranslationRequest.Prompt
   href: Glitch9.AIDevKit.OpenAI.TranslationRequest.html#Glitch9_AIDevKit_OpenAI_TranslationRequest_Prompt

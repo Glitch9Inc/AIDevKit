@@ -87,26 +87,26 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">RequestBody</span>.<span class="xref">RequestBodyBuilder</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageRequest-1.html">ImageRequest</a>&lt;T&gt;.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageRequest-1.Builder.html">Builder</a>, T&gt;</div>
-    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.ModelRequest.html">ModelRequest</a>.<a class="xref" href="Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html">ModelRequestBuilder</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageRequest-1.html">ImageRequest</a>&lt;T&gt;.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageRequest-1.Builder.html">Builder</a>, T&gt;</div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.AIRequest.html">AIRequest</a>.<a class="xref" href="Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html">ModelRequestBuilder</a>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageRequest-1.html">ImageRequest</a>&lt;T&gt;.<a class="xref" href="Glitch9.AIDevKit.OpenAI.ImageRequest-1.Builder.html">Builder</a>, T&gt;</div>
     <div class="level3"><span class="xref">ImageRequest&lt;T&gt;.Builder</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetUser_System_String_">ModelRequest.ModelRequestBuilder&lt;ImageRequest&lt;T&gt;.Builder, T&gt;.SetUser(string)</a>
+      <a class="xref" href="Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_AIRequest_ModelRequestBuilder_2_SetUser_System_String_">AIRequest.ModelRequestBuilder&lt;ImageRequest&lt;T&gt;.Builder, T&gt;.SetUser(string)</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_">ModelRequest.ModelRequestBuilder&lt;ImageRequest&lt;T&gt;.Builder, T&gt;.SetModel(Model)</a>
+      <a class="xref" href="Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_AIRequest_ModelRequestBuilder_2_SetModel_Glitch9_AIDevKit_Model_">AIRequest.ModelRequestBuilder&lt;ImageRequest&lt;T&gt;.Builder, T&gt;.SetModel(Model)</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_ModelRequest_ModelRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__">ModelRequest.ModelRequestBuilder&lt;ImageRequest&lt;T&gt;.Builder, T&gt;.SetMetadata(Dictionary&lt;string, string&gt;)</a>
+      <a class="xref" href="Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_AIRequest_ModelRequestBuilder_2_SetMetadata_System_Collections_Generic_Dictionary_System_String_System_String__">AIRequest.ModelRequestBuilder&lt;ImageRequest&lt;T&gt;.Builder, T&gt;.SetMetadata(Dictionary&lt;string, string&gt;)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_OpenAI_ImageRequest_1_Builder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ImageRequest&lt;T&gt;.Builder : ModelRequest.ModelRequestBuilder&lt;ImageRequest&lt;T&gt;.Builder, T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class ImageRequest&lt;T&gt;.Builder : AIRequest.ModelRequestBuilder&lt;ImageRequest&lt;T&gt;.Builder, T&gt;</code></pre>
   </div>
   <h3 id="methods">Methods
 </h3>
@@ -157,12 +157,12 @@
 
 
   <a id="Glitch9_AIDevKit_OpenAI_ImageRequest_1_Builder_SetImage_" data-uid="Glitch9.AIDevKit.OpenAI.ImageRequest`1.Builder.SetImage*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_ImageRequest_1_Builder_SetImage_Glitch9_IO_Networking_RESTApi_FormFile_" data-uid="Glitch9.AIDevKit.OpenAI.ImageRequest`1.Builder.SetImage(Glitch9.IO.Networking.RESTApi.FormFile)">SetImage(FormFile)</h4>
+  <h4 id="Glitch9_AIDevKit_OpenAI_ImageRequest_1_Builder_SetImage_Glitch9_IO_Files_File_Texture2D__" data-uid="Glitch9.AIDevKit.OpenAI.ImageRequest`1.Builder.SetImage(Glitch9.IO.Files.File{Texture2D})">SetImage(File&lt;Texture2D&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ImageRequest&lt;T&gt;.Builder SetImage(FormFile image)</code></pre>
+    <pre><code class="lang-csharp hljs">public ImageRequest&lt;T&gt;.Builder SetImage(File&lt;Texture2D&gt; image)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -175,7 +175,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">FormFile</span></td>
+        <td><span class="xref">File</span>&lt;<span class="xref">Texture2D</span>&gt;</td>
         <td><span class="parametername">image</span></td>
         <td></td>
       </tr>
@@ -283,12 +283,12 @@
 
 
   <a id="Glitch9_AIDevKit_OpenAI_ImageRequest_1_Builder_SetMask_" data-uid="Glitch9.AIDevKit.OpenAI.ImageRequest`1.Builder.SetMask*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_ImageRequest_1_Builder_SetMask_Glitch9_IO_Networking_RESTApi_FormFile_" data-uid="Glitch9.AIDevKit.OpenAI.ImageRequest`1.Builder.SetMask(Glitch9.IO.Networking.RESTApi.FormFile)">SetMask(FormFile)</h4>
+  <h4 id="Glitch9_AIDevKit_OpenAI_ImageRequest_1_Builder_SetMask_Glitch9_IO_Files_File_Texture2D__" data-uid="Glitch9.AIDevKit.OpenAI.ImageRequest`1.Builder.SetMask(Glitch9.IO.Files.File{Texture2D})">SetMask(File&lt;Texture2D&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ImageRequest&lt;T&gt;.Builder SetMask(FormFile mask)</code></pre>
+    <pre><code class="lang-csharp hljs">public ImageRequest&lt;T&gt;.Builder SetMask(File&lt;Texture2D&gt; mask)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -301,7 +301,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">FormFile</span></td>
+        <td><span class="xref">File</span>&lt;<span class="xref">Texture2D</span>&gt;</td>
         <td><span class="parametername">mask</span></td>
         <td></td>
       </tr>

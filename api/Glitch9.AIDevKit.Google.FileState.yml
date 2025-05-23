@@ -7,8 +7,8 @@ items:
   children:
   - Glitch9.AIDevKit.Google.FileState.Active
   - Glitch9.AIDevKit.Google.FileState.Failed
+  - Glitch9.AIDevKit.Google.FileState.None
   - Glitch9.AIDevKit.Google.FileState.Processing
-  - Glitch9.AIDevKit.Google.FileState.Unspecified
   langs:
   - csharp
   - vb
@@ -18,29 +18,29 @@ items:
   type: Enum
   source:
     id: FileState
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
-    startLine: 142
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 166
   namespace: Glitch9.AIDevKit.Google
   summary: States for the lifecycle of a File.
   example: []
   syntax:
     content: public enum FileState
     content.vb: Public Enum FileState
-- uid: Glitch9.AIDevKit.Google.FileState.Unspecified
-  commentId: F:Glitch9.AIDevKit.Google.FileState.Unspecified
-  id: Unspecified
+- uid: Glitch9.AIDevKit.Google.FileState.None
+  commentId: F:Glitch9.AIDevKit.Google.FileState.None
+  id: None
   parent: Glitch9.AIDevKit.Google.FileState
   langs:
   - csharp
   - vb
-  name: Unspecified
-  nameWithType: FileState.Unspecified
-  fullName: Glitch9.AIDevKit.Google.FileState.Unspecified
+  name: None
+  nameWithType: FileState.None
+  fullName: Glitch9.AIDevKit.Google.FileState.None
   type: Field
   source:
-    id: Unspecified
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
-    startLine: 147
+    id: None
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 171
   namespace: Glitch9.AIDevKit.Google
   summary: The default value. This value is used if the state is omitted.
   example: []
@@ -48,13 +48,13 @@ items:
     content: >-
       [ApiEnumAttribute]
 
-      Unspecified = 0
+      None = 0
     return:
       type: Glitch9.AIDevKit.Google.FileState
     content.vb: >-
       <ApiEnumAttribute>
 
-      Unspecified = 0
+      None = 0
 - uid: Glitch9.AIDevKit.Google.FileState.Processing
   commentId: F:Glitch9.AIDevKit.Google.FileState.Processing
   id: Processing
@@ -68,8 +68,8 @@ items:
   type: Field
   source:
     id: Processing
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
-    startLine: 152
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 176
   namespace: Glitch9.AIDevKit.Google
   summary: File is being processed and cannot be used for inference yet.
   example: []
@@ -97,8 +97,8 @@ items:
   type: Field
   source:
     id: Active
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
-    startLine: 157
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 181
   namespace: Glitch9.AIDevKit.Google
   summary: File is processed and available for inference.
   example: []
@@ -126,8 +126,8 @@ items:
   type: Field
   source:
     id: Failed
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
-    startLine: 162
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 186
   namespace: Glitch9.AIDevKit.Google
   summary: File failed processing.
   example: []

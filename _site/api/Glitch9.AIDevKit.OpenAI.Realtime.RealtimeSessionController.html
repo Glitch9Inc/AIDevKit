@@ -99,13 +99,13 @@
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Model_SystemLanguage_System_Action_System_Single____System_Action_System_Single____System_Action_AudioClip__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_System_String__System_Action_Glitch9_AIDevKit_ErrorResponse__System_Action_System_String__System_Action_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItemStatus__Glitch9_AIDevKit_Components_FunctionManager_System_Boolean_System_Boolean_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Action{System.Single[]},System.Action{System.Single[]},System.Action{AudioClip},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{System.String},System.Action{Glitch9.AIDevKit.ErrorResponse},System.Action{System.String},System.Action{Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus},Glitch9.AIDevKit.Components.FunctionManager,System.Boolean,System.Boolean,System.Boolean)">RealtimeSessionController(Model, Model, SystemLanguage, Action&lt;float[]&gt;, Action&lt;float[]&gt;, Action&lt;AudioClip&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;string&gt;, Action&lt;ErrorResponse&gt;, Action&lt;string&gt;, Action&lt;RealtimeItemStatus&gt;, FunctionManager, bool, bool, bool)</h4>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_Glitch9_AIDevKit_IStreamingAudioEventReceiver_Glitch9_AIDevKit_Components_IRealtimeEventReceiver_Glitch9_AIDevKit_IWebSocketEventReceiver_Glitch9_AIDevKit_IStreamingTextEventReceiver_Glitch9_AIDevKit_IStreamingTextEventReceiver_Glitch9_AIDevKit_IStreamingTextEventReceiver_Glitch9_AIDevKit_IToolCallReceiver_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Model_SystemLanguage_Glitch9_AIDevKit_Components_FunctionManager_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.IStreamingAudioEventReceiver,Glitch9.AIDevKit.Components.IRealtimeEventReceiver,Glitch9.AIDevKit.IWebSocketEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IStreamingTextEventReceiver,Glitch9.AIDevKit.IToolCallReceiver,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,Glitch9.AIDevKit.Components.FunctionManager,System.Boolean)">RealtimeSessionController(IStreamingAudioEventReceiver, IRealtimeEventReceiver, IWebSocketEventReceiver, IStreamingTextEventReceiver, IStreamingTextEventReceiver, IStreamingTextEventReceiver, IToolCallReceiver, Model, Model, SystemLanguage, FunctionManager, bool)</h4>
   <div class="markdown level1 summary"><p>Create a new RealtimeSessionController instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RealtimeSessionController(Model rtmModel = null, Model sttModel = null, SystemLanguage spokenLanguage = null, Action&lt;float[]&gt; onReceiveAudio = null, Action&lt;float[]&gt; onReceiveAudioDone = null, Action&lt;AudioClip&gt; onReceiveAudioClip = null, Action&lt;string&gt; onReceiveText = null, Action&lt;string&gt; onReceiveTextDone = null, Action&lt;string&gt; onReceiveTranscript = null, Action&lt;string&gt; onReceiveTranscriptDone = null, Action&lt;string&gt; onReceiveInputTranscriptionSuccess = null, Action&lt;ErrorResponse&gt; onReceiveInputTranscriptionFailed = null, Action&lt;string&gt; onSessionStateChanged = null, Action&lt;RealtimeItemStatus&gt; onItemStatusChanged = null, FunctionManager functionManager = null, bool enableAudio = true, bool enableTranscript = true, bool autoManageWebSocketState = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public RealtimeSessionController(IStreamingAudioEventReceiver audioEventReceiver, IRealtimeEventReceiver realtimeEventReceiver = null, IWebSocketEventReceiver webSocketEventReceiver = null, IStreamingTextEventReceiver inputTranscriptionEventReceiver = null, IStreamingTextEventReceiver textEventReceiver = null, IStreamingTextEventReceiver transcriptEventReceiver = null, IToolCallReceiver toolCallReceiver = null, Model rtmModel = null, Model sttModel = null, SystemLanguage spokenLanguage = null, FunctionManager functionManager = null, bool autoManageWebSocketState = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -117,6 +117,41 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.IStreamingAudioEventReceiver.html">IStreamingAudioEventReceiver</a></td>
+        <td><span class="parametername">audioEventReceiver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Components.IRealtimeEventReceiver.html">IRealtimeEventReceiver</a></td>
+        <td><span class="parametername">realtimeEventReceiver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.IWebSocketEventReceiver.html">IWebSocketEventReceiver</a></td>
+        <td><span class="parametername">webSocketEventReceiver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.IStreamingTextEventReceiver.html">IStreamingTextEventReceiver</a></td>
+        <td><span class="parametername">inputTranscriptionEventReceiver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.IStreamingTextEventReceiver.html">IStreamingTextEventReceiver</a></td>
+        <td><span class="parametername">textEventReceiver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.IStreamingTextEventReceiver.html">IStreamingTextEventReceiver</a></td>
+        <td><span class="parametername">transcriptEventReceiver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.IToolCallReceiver.html">IToolCallReceiver</a></td>
+        <td><span class="parametername">toolCallReceiver</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
         <td><span class="parametername">rtmModel</span></td>
@@ -130,134 +165,11 @@
       <tr>
         <td><span class="xref">SystemLanguage</span></td>
         <td><span class="parametername">spokenLanguage</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">float</span>[]&gt;</td>
-        <td><span class="parametername">onReceiveAudio</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">float</span>[]&gt;</td>
-        <td><span class="parametername">onReceiveAudioDone</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">AudioClip</span>&gt;</td>
-        <td><span class="parametername">onReceiveAudioClip</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onReceiveText</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onReceiveTextDone</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onReceiveTranscript</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onReceiveTranscriptDone</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onReceiveInputTranscriptionSuccess</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ErrorResponse.html">ErrorResponse</a>&gt;</td>
-        <td><span class="parametername">onReceiveInputTranscriptionFailed</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">onSessionStateChanged</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus.html">RealtimeItemStatus</a>&gt;</td>
-        <td><span class="parametername">onItemStatusChanged</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Glitch9.AIDevKit.Components.FunctionManager.html">FunctionManager</a></td>
         <td><span class="parametername">functionManager</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">enableAudio</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">enableTranscript</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">autoManageWebSocketState</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController__ctor_Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventReceiverBase_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Model_SystemLanguage_System_Boolean_System_Boolean_System_Boolean_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.#ctor(Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase,Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Model,SystemLanguage,System.Boolean,System.Boolean,System.Boolean)">RealtimeSessionController(RealtimeEventReceiverBase, Model, Model, SystemLanguage, bool, bool, bool)</h4>
-  <div class="markdown level1 summary"><p>Create a new RealtimeSessionController instance with a event receiver.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RealtimeSessionController(RealtimeEventReceiverBase eventReceiver, Model rtmModel = null, Model sttModel = null, SystemLanguage spokenLanguage = null, bool enableAudio = true, bool enableTranscript = true, bool autoManageWebSocketState = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html">RealtimeEventReceiverBase</a></td>
-        <td><span class="parametername">eventReceiver</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td><span class="parametername">rtmModel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
-        <td><span class="parametername">sttModel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">SystemLanguage</span></td>
-        <td><span class="parametername">spokenLanguage</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">enableAudio</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">enableTranscript</span></td>
         <td></td>
       </tr>
       <tr>
@@ -269,31 +181,6 @@
   </table>
   <h3 id="properties">Properties
 </h3>
-
-
-  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_AudioEnabled_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_AudioEnabled" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.AudioEnabled">AudioEnabled</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AudioEnabled { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_InputFormat_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.InputFormat*"></a>
@@ -415,31 +302,6 @@
     <tbody>
       <tr>
         <td><span class="xref">SystemLanguage</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_TranscriptEnabled_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeSessionController_TranscriptEnabled" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.TranscriptEnabled">TranscriptEnabled</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TranscriptEnabled { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
         <td></td>
       </tr>
     </tbody>

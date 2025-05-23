@@ -36,11 +36,6 @@ items:
   - Glitch9.AIDevKit.Google.Document
   - Glitch9.AIDevKit.Google.EmbedContentRequest
   - Glitch9.AIDevKit.Google.EmbedContentResponse
-  - Glitch9.AIDevKit.Google.File
-  - Glitch9.AIDevKit.Google.FileData
-  - Glitch9.AIDevKit.Google.FileDataDict
-  - Glitch9.AIDevKit.Google.FileDataType
-  - Glitch9.AIDevKit.Google.FileResponse
   - Glitch9.AIDevKit.Google.FileState
   - Glitch9.AIDevKit.Google.FluentAPIExtensions
   - Glitch9.AIDevKit.Google.FunctionCallConverter
@@ -65,6 +60,10 @@ items:
   - Glitch9.AIDevKit.Google.GenerativeAIRequest
   - Glitch9.AIDevKit.Google.GenerativeAIRequest.GenerativeAIRequestBuilder`2
   - Glitch9.AIDevKit.Google.GenerativeAISettings
+  - Glitch9.AIDevKit.Google.GoogleFile
+  - Glitch9.AIDevKit.Google.GoogleFileData
+  - Glitch9.AIDevKit.Google.GoogleFileSource
+  - Glitch9.AIDevKit.Google.GoogleFileUploadRequest
   - Glitch9.AIDevKit.Google.GoogleModel
   - Glitch9.AIDevKit.Google.GoogleModelData
   - Glitch9.AIDevKit.Google.GranteeType
@@ -105,7 +104,6 @@ items:
   - Glitch9.AIDevKit.Google.TuningSnapshot
   - Glitch9.AIDevKit.Google.TuningTask
   - Glitch9.AIDevKit.Google.UpdateChunkRequest
-  - Glitch9.AIDevKit.Google.UploadFileRequest
   - Glitch9.AIDevKit.Google.Validator
   - Glitch9.AIDevKit.Google.VideoMetadata
   - Glitch9.AIDevKit.Google.VoiceConfig
@@ -180,13 +178,6 @@ references:
   name: FluentAPIExtensions
   nameWithType: FluentAPIExtensions
   fullName: Glitch9.AIDevKit.Google.FluentAPIExtensions
-- uid: Glitch9.AIDevKit.Google.FunctionExtensions
-  commentId: T:Glitch9.AIDevKit.Google.FunctionExtensions
-  parent: Glitch9.AIDevKit.Google
-  href: Glitch9.AIDevKit.Google.FunctionExtensions.html
-  name: FunctionExtensions
-  nameWithType: FunctionExtensions
-  fullName: Glitch9.AIDevKit.Google.FunctionExtensions
 - uid: Glitch9.AIDevKit.Google.RequestExtensions
   commentId: T:Glitch9.AIDevKit.Google.RequestExtensions
   parent: Glitch9.AIDevKit.Google
@@ -411,33 +402,27 @@ references:
   name: RelevantChunk
   nameWithType: RelevantChunk
   fullName: Glitch9.AIDevKit.Google.RelevantChunk
-- uid: Glitch9.AIDevKit.Google.UploadFileRequest
-  commentId: T:Glitch9.AIDevKit.Google.UploadFileRequest
+- uid: Glitch9.AIDevKit.Google.GoogleFileSource
+  commentId: T:Glitch9.AIDevKit.Google.GoogleFileSource
   parent: Glitch9.AIDevKit.Google
-  href: Glitch9.AIDevKit.Google.UploadFileRequest.html
-  name: UploadFileRequest
-  nameWithType: UploadFileRequest
-  fullName: Glitch9.AIDevKit.Google.UploadFileRequest
-- uid: Glitch9.AIDevKit.Google.File
-  commentId: T:Glitch9.AIDevKit.Google.File
+  href: Glitch9.AIDevKit.Google.GoogleFileSource.html
+  name: GoogleFileSource
+  nameWithType: GoogleFileSource
+  fullName: Glitch9.AIDevKit.Google.GoogleFileSource
+- uid: Glitch9.AIDevKit.Google.GoogleFileUploadRequest
+  commentId: T:Glitch9.AIDevKit.Google.GoogleFileUploadRequest
   parent: Glitch9.AIDevKit.Google
-  href: Glitch9.AIDevKit.Google.File.html
-  name: File
-  nameWithType: File
-  fullName: Glitch9.AIDevKit.Google.File
-- uid: Glitch9.AIDevKit.Google.FileDataDict
-  commentId: T:Glitch9.AIDevKit.Google.FileDataDict
+  href: Glitch9.AIDevKit.Google.GoogleFileUploadRequest.html
+  name: GoogleFileUploadRequest
+  nameWithType: GoogleFileUploadRequest
+  fullName: Glitch9.AIDevKit.Google.GoogleFileUploadRequest
+- uid: Glitch9.AIDevKit.Google.GoogleFile
+  commentId: T:Glitch9.AIDevKit.Google.GoogleFile
   parent: Glitch9.AIDevKit.Google
-  href: Glitch9.AIDevKit.Google.FileDataDict.html
-  name: FileDataDict
-  nameWithType: FileDataDict
-  fullName: Glitch9.AIDevKit.Google.FileDataDict
-- uid: Glitch9.AIDevKit.Google.FileDataType
-  commentId: T:Glitch9.AIDevKit.Google.FileDataType
-  href: Glitch9.AIDevKit.Google.FileDataType.html
-  name: FileDataType
-  nameWithType: FileDataType
-  fullName: Glitch9.AIDevKit.Google.FileDataType
+  href: Glitch9.AIDevKit.Google.GoogleFile.html
+  name: GoogleFile
+  nameWithType: GoogleFile
+  fullName: Glitch9.AIDevKit.Google.GoogleFile
 - uid: Glitch9.AIDevKit.Google.FileState
   commentId: T:Glitch9.AIDevKit.Google.FileState
   parent: Glitch9.AIDevKit.Google
@@ -459,19 +444,13 @@ references:
   name: VideoMetadata
   nameWithType: VideoMetadata
   fullName: Glitch9.AIDevKit.Google.VideoMetadata
-- uid: Glitch9.AIDevKit.Google.FileResponse
-  commentId: T:Glitch9.AIDevKit.Google.FileResponse
-  href: Glitch9.AIDevKit.Google.FileResponse.html
-  name: FileResponse
-  nameWithType: FileResponse
-  fullName: Glitch9.AIDevKit.Google.FileResponse
-- uid: Glitch9.AIDevKit.Google.FileData
-  commentId: T:Glitch9.AIDevKit.Google.FileData
+- uid: Glitch9.AIDevKit.Google.GoogleFileData
+  commentId: T:Glitch9.AIDevKit.Google.GoogleFileData
   parent: Glitch9.AIDevKit.Google
-  href: Glitch9.AIDevKit.Google.FileData.html
-  name: FileData
-  nameWithType: FileData
-  fullName: Glitch9.AIDevKit.Google.FileData
+  href: Glitch9.AIDevKit.Google.GoogleFileData.html
+  name: GoogleFileData
+  nameWithType: GoogleFileData
+  fullName: Glitch9.AIDevKit.Google.GoogleFileData
 - uid: Glitch9.AIDevKit.Google.GenerateTextRequest
   commentId: T:Glitch9.AIDevKit.Google.GenerateTextRequest
   parent: Glitch9.AIDevKit.Google
@@ -916,6 +895,12 @@ references:
   name: Validator
   nameWithType: Validator
   fullName: Glitch9.AIDevKit.Google.Validator
+- uid: Glitch9.AIDevKit.Google.FunctionExtensions
+  commentId: T:Glitch9.AIDevKit.Google.FunctionExtensions
+  href: Glitch9.AIDevKit.Google.FunctionExtensions.html
+  name: FunctionExtensions
+  nameWithType: FunctionExtensions
+  fullName: Glitch9.AIDevKit.Google.FunctionExtensions
 - uid: Glitch9.AIDevKit.Google
   commentId: N:Glitch9.AIDevKit.Google
   href: Glitch9.html

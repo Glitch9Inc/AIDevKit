@@ -7,9 +7,10 @@ items:
   children:
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.HandlingResponse
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.Initializing
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.ProcessingRun
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.PollingRun
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.RequiresAction
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.WaitingForInput
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.WaitingForSubmitToolOutputs
   langs:
   - csharp
   - vb
@@ -19,7 +20,7 @@ items:
   type: Enum
   source:
     id: AssistantStatus
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantStatus.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Assistant/Models/AssistantStatus.cs
     startLine: 5
   namespace: Glitch9.AIDevKit.OpenAI.Assistants
   summary: Represents the stages of the Assistants API.
@@ -40,7 +41,7 @@ items:
   type: Field
   source:
     id: Initializing
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantStatus.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Assistant/Models/AssistantStatus.cs
     startLine: 7
   namespace: Glitch9.AIDevKit.OpenAI.Assistants
   syntax:
@@ -60,31 +61,31 @@ items:
   type: Field
   source:
     id: WaitingForInput
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantStatus.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Assistant/Models/AssistantStatus.cs
     startLine: 8
   namespace: Glitch9.AIDevKit.OpenAI.Assistants
   syntax:
     content: WaitingForInput = 1
     return:
       type: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.ProcessingRun
-  commentId: F:Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.ProcessingRun
-  id: ProcessingRun
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.PollingRun
+  commentId: F:Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.PollingRun
+  id: PollingRun
   parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
   langs:
   - csharp
   - vb
-  name: ProcessingRun
-  nameWithType: AssistantStatus.ProcessingRun
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.ProcessingRun
+  name: PollingRun
+  nameWithType: AssistantStatus.PollingRun
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.PollingRun
   type: Field
   source:
-    id: ProcessingRun
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantStatus.cs
+    id: PollingRun
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Assistant/Models/AssistantStatus.cs
     startLine: 9
   namespace: Glitch9.AIDevKit.OpenAI.Assistants
   syntax:
-    content: ProcessingRun = 2
+    content: PollingRun = 2
     return:
       type: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
 - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.RequiresAction
@@ -100,11 +101,31 @@ items:
   type: Field
   source:
     id: RequiresAction
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantStatus.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Assistant/Models/AssistantStatus.cs
     startLine: 10
   namespace: Glitch9.AIDevKit.OpenAI.Assistants
   syntax:
     content: RequiresAction = 3
+    return:
+      type: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.WaitingForSubmitToolOutputs
+  commentId: F:Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.WaitingForSubmitToolOutputs
+  id: WaitingForSubmitToolOutputs
+  parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
+  langs:
+  - csharp
+  - vb
+  name: WaitingForSubmitToolOutputs
+  nameWithType: AssistantStatus.WaitingForSubmitToolOutputs
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.WaitingForSubmitToolOutputs
+  type: Field
+  source:
+    id: WaitingForSubmitToolOutputs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Assistant/Models/AssistantStatus.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit.OpenAI.Assistants
+  syntax:
+    content: WaitingForSubmitToolOutputs = 4
     return:
       type: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
 - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus.HandlingResponse
@@ -120,11 +141,11 @@ items:
   type: Field
   source:
     id: HandlingResponse
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/AssistantsAPI/Common/AssistantStatus.cs
-    startLine: 11
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Advanced/Assistant/Models/AssistantStatus.cs
+    startLine: 12
   namespace: Glitch9.AIDevKit.OpenAI.Assistants
   syntax:
-    content: HandlingResponse = 4
+    content: HandlingResponse = 5
     return:
       type: Glitch9.AIDevKit.OpenAI.Assistants.AssistantStatus
 references:

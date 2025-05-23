@@ -27,7 +27,7 @@ items:
   source:
     id: ContentPart
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 52
+    startLine: 53
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     A datatype containing media that is part of a multi-part <xref href="Glitch9.AIDevKit.Google.Content" data-throw-if-not-resolved="false"></xref> message.
@@ -63,7 +63,7 @@ items:
   source:
     id: Text
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 57
+    startLine: 58
   namespace: Glitch9.AIDevKit.Google
   summary: Inline text.
   example: []
@@ -88,7 +88,7 @@ items:
   source:
     id: InlineData
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 62
+    startLine: 63
   namespace: Glitch9.AIDevKit.Google
   summary: Inline media bytes.
   example: []
@@ -113,7 +113,7 @@ items:
   source:
     id: FunctionCall
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 68
+    startLine: 69
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     A predicted FunctionCall returned from the model that contains a string
@@ -141,7 +141,7 @@ items:
   source:
     id: FunctionResponse
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 74
+    startLine: 75
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     The result output of a FunctionCall that contains a string representing the <xref href="Glitch9.AIDevKit.FunctionDeclaration.Name" data-throw-if-not-resolved="false"></xref>
@@ -169,16 +169,16 @@ items:
   source:
     id: FileData
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 79
+    startLine: 80
   namespace: Glitch9.AIDevKit.Google
   summary: URI based data.
   example: []
   syntax:
-    content: public FileData FileData { get; set; }
+    content: public GoogleFileData FileData { get; set; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.Google.FileData
-    content.vb: Public Property FileData As FileData
+      type: Glitch9.AIDevKit.Google.GoogleFileData
+    content.vb: Public Property FileData As GoogleFileData
   overload: Glitch9.AIDevKit.Google.ContentPart.FileData*
 - uid: Glitch9.AIDevKit.Google.ContentPart.IsImage
   commentId: P:Glitch9.AIDevKit.Google.ContentPart.IsImage
@@ -194,7 +194,7 @@ items:
   source:
     id: IsImage
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 81
+    startLine: 82
   namespace: Glitch9.AIDevKit.Google
   syntax:
     content: public bool IsImage { get; }
@@ -217,14 +217,14 @@ items:
   source:
     id: ImageContent
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 82
+    startLine: 83
   namespace: Glitch9.AIDevKit.Google
   syntax:
-    content: public UniImageFile ImageContent { get; set; }
+    content: public File<Texture2D> ImageContent { get; set; }
     parameters: []
     return:
-      type: Glitch9.IO.Files.UniImageFile
-    content.vb: Public Property ImageContent As UniImageFile
+      type: Glitch9.IO.Files.File{Texture2D}
+    content.vb: Public Property ImageContent As File(Of Texture2D)
   overload: Glitch9.AIDevKit.Google.ContentPart.ImageContent*
 - uid: Glitch9.AIDevKit.Google.ContentPart.#ctor
   commentId: M:Glitch9.AIDevKit.Google.ContentPart.#ctor
@@ -240,7 +240,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 85
+    startLine: 86
   namespace: Glitch9.AIDevKit.Google
   syntax:
     content: public ContentPart()
@@ -263,7 +263,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 86
+    startLine: 87
   namespace: Glitch9.AIDevKit.Google
   syntax:
     content: public ContentPart(FunctionResponse response)
@@ -289,7 +289,7 @@ items:
   source:
     id: FromText
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 89
+    startLine: 90
   namespace: Glitch9.AIDevKit.Google
   syntax:
     content: public static ContentPart FromText(string text)
@@ -317,7 +317,7 @@ items:
   source:
     id: FromBase64
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 94
+    startLine: 95
   namespace: Glitch9.AIDevKit.Google
   syntax:
     content: public static ContentPart FromBase64(string base64File, MIMEType mimeType)
@@ -347,7 +347,7 @@ items:
   source:
     id: FromUrl
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GenerateContent/Components/Content.cs
-    startLine: 106
+    startLine: 107
   namespace: Glitch9.AIDevKit.Google
   syntax:
     content: public static ContentPart FromUrl(string fileUrl)
@@ -518,13 +518,13 @@ references:
   name: FileData
   nameWithType: ContentPart.FileData
   fullName: Glitch9.AIDevKit.Google.ContentPart.FileData
-- uid: Glitch9.AIDevKit.Google.FileData
-  commentId: T:Glitch9.AIDevKit.Google.FileData
+- uid: Glitch9.AIDevKit.Google.GoogleFileData
+  commentId: T:Glitch9.AIDevKit.Google.GoogleFileData
   parent: Glitch9.AIDevKit.Google
-  href: Glitch9.AIDevKit.Google.FileData.html
-  name: FileData
-  nameWithType: FileData
-  fullName: Glitch9.AIDevKit.Google.FileData
+  href: Glitch9.AIDevKit.Google.GoogleFileData.html
+  name: GoogleFileData
+  nameWithType: GoogleFileData
+  fullName: Glitch9.AIDevKit.Google.GoogleFileData
 - uid: Glitch9.AIDevKit.Google.ContentPart.IsImage*
   commentId: Overload:Glitch9.AIDevKit.Google.ContentPart.IsImage
   href: Glitch9.AIDevKit.Google.ContentPart.html#Glitch9_AIDevKit_Google_ContentPart_IsImage
@@ -547,12 +547,56 @@ references:
   name: ImageContent
   nameWithType: ContentPart.ImageContent
   fullName: Glitch9.AIDevKit.Google.ContentPart.ImageContent
-- uid: Glitch9.IO.Files.UniImageFile
-  commentId: T:Glitch9.IO.Files.UniImageFile
+- uid: Glitch9.IO.Files.File{Texture2D}
+  commentId: T:Glitch9.IO.Files.File{Texture2D}
   parent: Glitch9.IO.Files
-  name: UniImageFile
-  nameWithType: UniImageFile
-  fullName: Glitch9.IO.Files.UniImageFile
+  definition: Glitch9.IO.Files.File`1
+  name: File<Texture2D>
+  nameWithType: File<Texture2D>
+  fullName: Glitch9.IO.Files.File<Texture2D>
+  nameWithType.vb: File(Of Texture2D)
+  fullName.vb: Glitch9.IO.Files.File(Of Texture2D)
+  name.vb: File(Of Texture2D)
+  spec.csharp:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: <
+  - uid: Texture2D
+    name: Texture2D
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Texture2D
+    name: Texture2D
+    isExternal: true
+  - name: )
+- uid: Glitch9.IO.Files.File`1
+  commentId: T:Glitch9.IO.Files.File`1
+  name: File<T>
+  nameWithType: File<T>
+  fullName: Glitch9.IO.Files.File<T>
+  nameWithType.vb: File(Of T)
+  fullName.vb: Glitch9.IO.Files.File(Of T)
+  name.vb: File(Of T)
+  spec.csharp:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Glitch9.IO.Files
   commentId: N:Glitch9.IO.Files
   href: Glitch9.html

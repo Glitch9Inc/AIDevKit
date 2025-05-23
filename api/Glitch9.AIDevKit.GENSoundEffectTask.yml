@@ -5,8 +5,8 @@ items:
   id: GENSoundEffectTask
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.GENSoundEffectTask.#ctor(System.String,UnityEngine.Object)
-  - Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsync
+  - Glitch9.AIDevKit.GENSoundEffectTask.#ctor(System.String)
+  - Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsyncINTERNAL
   - Glitch9.AIDevKit.GENSoundEffectTask.SetDuration(System.Double)
   - Glitch9.AIDevKit.GENSoundEffectTask.SetPromptInfluence(System.Double)
   langs:
@@ -19,7 +19,7 @@ items:
   source:
     id: GENSoundEffectTask
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 621
+    startLine: 622
   namespace: Glitch9.AIDevKit
   summary: Task for generating sound effects based on a text prompt.
   example: []
@@ -48,43 +48,41 @@ items:
   - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetSender(System.String)
   - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetIgnoreLogs(System.Boolean)
   - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.EnablePromptHistory(System.Boolean)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetCancellationToken(System.Threading.CancellationToken)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsyncINTERNAL
   - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsync
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsync``1
   extensionMethods:
   - Glitch9.AIDevKit.GENSoundEffectTask.Glitch9.AIDevKit.ElevenLabs.FluentAPIExtensions.SetOutputFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
   - Glitch9.AIDevKit.GENSoundEffectTask.Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(Glitch9.AIDevKit.Google.AspectRatio)
   - Glitch9.AIDevKit.GENSoundEffectTask.Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(Glitch9.AIDevKit.Google.PersonGeneration)
   - Glitch9.AIDevKit.GENSoundEffectTask.Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(Glitch9.AIDevKit.ImageSize)
-- uid: Glitch9.AIDevKit.GENSoundEffectTask.#ctor(System.String,UnityEngine.Object)
-  commentId: M:Glitch9.AIDevKit.GENSoundEffectTask.#ctor(System.String,UnityEngine.Object)
-  id: '#ctor(System.String,UnityEngine.Object)'
+- uid: Glitch9.AIDevKit.GENSoundEffectTask.#ctor(System.String)
+  commentId: M:Glitch9.AIDevKit.GENSoundEffectTask.#ctor(System.String)
+  id: '#ctor(System.String)'
   parent: Glitch9.AIDevKit.GENSoundEffectTask
   langs:
   - csharp
   - vb
-  name: GENSoundEffectTask(string, Object)
-  nameWithType: GENSoundEffectTask.GENSoundEffectTask(string, UnityEngine.Object)
-  fullName: Glitch9.AIDevKit.GENSoundEffectTask.GENSoundEffectTask(string, UnityEngine.Object)
+  name: GENSoundEffectTask(string)
+  nameWithType: GENSoundEffectTask.GENSoundEffectTask(string)
+  fullName: Glitch9.AIDevKit.GENSoundEffectTask.GENSoundEffectTask(string)
   type: Constructor
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 626
+    startLine: 627
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public GENSoundEffectTask(string prompt, UnityEngine.Object target = null)
+    content: public GENSoundEffectTask(string prompt)
     parameters:
     - id: prompt
       type: System.String
-    - id: target
-      type: UnityEngine.Object
-    content.vb: Public Sub New(prompt As String, target As UnityEngine.Object = Nothing)
+    content.vb: Public Sub New(prompt As String)
   overload: Glitch9.AIDevKit.GENSoundEffectTask.#ctor*
-  nameWithType.vb: GENSoundEffectTask.New(String, UnityEngine.Object)
-  fullName.vb: Glitch9.AIDevKit.GENSoundEffectTask.New(String, UnityEngine.Object)
-  name.vb: New(String, Object)
+  nameWithType.vb: GENSoundEffectTask.New(String)
+  fullName.vb: Glitch9.AIDevKit.GENSoundEffectTask.New(String)
+  name.vb: New(String)
 - uid: Glitch9.AIDevKit.GENSoundEffectTask.SetDuration(System.Double)
   commentId: M:Glitch9.AIDevKit.GENSoundEffectTask.SetDuration(System.Double)
   id: SetDuration(System.Double)
@@ -99,7 +97,7 @@ items:
   source:
     id: SetDuration
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 633
+    startLine: 634
   namespace: Glitch9.AIDevKit
   summary: Sets the duration of the generated sound effect in seconds.
   example: []
@@ -129,7 +127,7 @@ items:
   source:
     id: SetPromptInfluence
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 643
+    startLine: 644
   namespace: Glitch9.AIDevKit
   summary: Sets the influence of the prompt on the generated sound effect.
   example: []
@@ -146,31 +144,31 @@ items:
   nameWithType.vb: GENSoundEffectTask.SetPromptInfluence(Double)
   fullName.vb: Glitch9.AIDevKit.GENSoundEffectTask.SetPromptInfluence(Double)
   name.vb: SetPromptInfluence(Double)
-- uid: Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsync
-  commentId: M:Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsync
-  id: ExecuteAsync
+- uid: Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsyncINTERNAL
+  commentId: M:Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsyncINTERNAL
+  id: ExecuteAsyncINTERNAL
   parent: Glitch9.AIDevKit.GENSoundEffectTask
   langs:
   - csharp
   - vb
-  name: ExecuteAsync()
-  nameWithType: GENSoundEffectTask.ExecuteAsync()
-  fullName: Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsync()
+  name: ExecuteAsyncINTERNAL()
+  nameWithType: GENSoundEffectTask.ExecuteAsyncINTERNAL()
+  fullName: Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsyncINTERNAL()
   type: Method
   source:
-    id: ExecuteAsync
+    id: ExecuteAsyncINTERNAL
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 650
+    startLine: 651
   namespace: Glitch9.AIDevKit
   summary: Executes the task and returns the generated result.
   example: []
   syntax:
-    content: public override UniTask<GeneratedAudio> ExecuteAsync()
+    content: protected override UniTask<GeneratedAudio> ExecuteAsyncINTERNAL()
     return:
       type: UniTask{Glitch9.AIDevKit.GeneratedAudio}
-    content.vb: Public Overrides Function ExecuteAsync() As UniTask(Of GeneratedAudio)
-  overridden: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsync
-  overload: Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsync*
+    content.vb: Protected Overrides Function ExecuteAsyncINTERNAL() As UniTask(Of GeneratedAudio)
+  overridden: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsyncINTERNAL
+  overload: Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsyncINTERNAL*
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -658,89 +656,55 @@ references:
     name: Boolean
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetCancellationToken(System.Threading.CancellationToken)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetCancellationToken(System.Threading.CancellationToken)
   parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}
-  definition: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
-  name: SetTextToTarget(GeneratedText)
-  nameWithType: GENTask<GENSoundEffectTask, string, GeneratedAudio>.SetTextToTarget(GeneratedText)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENSoundEffectTask, string, Glitch9.AIDevKit.GeneratedAudio>.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  nameWithType.vb: GENTask(Of GENSoundEffectTask, String, GeneratedAudio).SetTextToTarget(GeneratedText)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENSoundEffectTask, String, Glitch9.AIDevKit.GeneratedAudio).SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+  definition: Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
+  name: SetCancellationToken(CancellationToken)
+  nameWithType: GENTask<GENSoundEffectTask, string, GeneratedAudio>.SetCancellationToken(CancellationToken)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENSoundEffectTask, string, Glitch9.AIDevKit.GeneratedAudio>.SetCancellationToken(System.Threading.CancellationToken)
+  nameWithType.vb: GENTask(Of GENSoundEffectTask, String, GeneratedAudio).SetCancellationToken(CancellationToken)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENSoundEffectTask, String, Glitch9.AIDevKit.GeneratedAudio).SetCancellationToken(System.Threading.CancellationToken)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-    name: SetTextToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetCancellationToken(System.Threading.CancellationToken)
+    name: SetCancellationToken
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-    name: SetTextToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetCancellationToken(System.Threading.CancellationToken)
+    name: SetCancellationToken
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsyncINTERNAL
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsyncINTERNAL
   parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}
-  definition: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
-  name: SetImageToTarget(GeneratedImage)
-  nameWithType: GENTask<GENSoundEffectTask, string, GeneratedAudio>.SetImageToTarget(GeneratedImage)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENSoundEffectTask, string, Glitch9.AIDevKit.GeneratedAudio>.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  nameWithType.vb: GENTask(Of GENSoundEffectTask, String, GeneratedAudio).SetImageToTarget(GeneratedImage)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENSoundEffectTask, String, Glitch9.AIDevKit.GeneratedAudio).SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+  definition: Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
+  name: ExecuteAsyncINTERNAL()
+  nameWithType: GENTask<GENSoundEffectTask, string, GeneratedAudio>.ExecuteAsyncINTERNAL()
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENSoundEffectTask, string, Glitch9.AIDevKit.GeneratedAudio>.ExecuteAsyncINTERNAL()
+  nameWithType.vb: GENTask(Of GENSoundEffectTask, String, GeneratedAudio).ExecuteAsyncINTERNAL()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENSoundEffectTask, String, Glitch9.AIDevKit.GeneratedAudio).ExecuteAsyncINTERNAL()
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-    name: SetImageToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsyncINTERNAL
+    name: ExecuteAsyncINTERNAL
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedImage
-    name: GeneratedImage
-    href: Glitch9.AIDevKit.GeneratedImage.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-    name: SetImageToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsyncINTERNAL
+    name: ExecuteAsyncINTERNAL
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedImage
-    name: GeneratedImage
-    href: Glitch9.AIDevKit.GeneratedImage.html
-  - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}
-  definition: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  name: SetAudioToTarget(GeneratedAudio)
-  nameWithType: GENTask<GENSoundEffectTask, string, GeneratedAudio>.SetAudioToTarget(GeneratedAudio)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENSoundEffectTask, string, Glitch9.AIDevKit.GeneratedAudio>.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  nameWithType.vb: GENTask(Of GENSoundEffectTask, String, GeneratedAudio).SetAudioToTarget(GeneratedAudio)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENSoundEffectTask, String, Glitch9.AIDevKit.GeneratedAudio).SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-    name: SetAudioToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  - name: (
-  - uid: Glitch9.AIDevKit.GeneratedAudio
-    name: GeneratedAudio
-    href: Glitch9.AIDevKit.GeneratedAudio.html
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-    name: SetAudioToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  - name: (
-  - uid: Glitch9.AIDevKit.GeneratedAudio
-    name: GeneratedAudio
-    href: Glitch9.AIDevKit.GeneratedAudio.html
   - name: )
 - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsync
   commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsync
@@ -762,6 +726,37 @@ references:
   - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsync
     name: ExecuteAsync
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsync``1
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsync``1
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}
+  definition: Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  name: ExecuteAsync<T>()
+  nameWithType: GENTask<GENSoundEffectTask, string, GeneratedAudio>.ExecuteAsync<T>()
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENSoundEffectTask, string, Glitch9.AIDevKit.GeneratedAudio>.ExecuteAsync<T>()
+  nameWithType.vb: GENTask(Of GENSoundEffectTask, String, GeneratedAudio).ExecuteAsync(Of T)()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENSoundEffectTask, String, Glitch9.AIDevKit.GeneratedAudio).ExecuteAsync(Of T)()
+  name.vb: ExecuteAsync(Of T)()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsync``1
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENSoundEffectTask,System.String,Glitch9.AIDevKit.GeneratedAudio}.ExecuteAsync``1
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: (
   - name: )
 - uid: Glitch9.AIDevKit.GENSoundEffectTask.Glitch9.AIDevKit.ElevenLabs.FluentAPIExtensions.SetOutputFormat(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
@@ -1360,83 +1355,52 @@ references:
     name: Boolean
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  commentId: M:Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
-  name: SetTextToTarget(GeneratedText)
-  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetTextToTarget(GeneratedText)
-  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetTextToTarget(GeneratedText)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+- uid: Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)
+  isExternal: true
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
+  name: SetCancellationToken(CancellationToken)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetCancellationToken(CancellationToken)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetCancellationToken(System.Threading.CancellationToken)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetCancellationToken(CancellationToken)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetCancellationToken(System.Threading.CancellationToken)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-    name: SetTextToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - uid: Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)
+    name: SetCancellationToken
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-    name: SetTextToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - uid: Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)
+    name: SetCancellationToken
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  commentId: M:Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
-  name: SetImageToTarget(GeneratedImage)
-  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetImageToTarget(GeneratedImage)
-  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetImageToTarget(GeneratedImage)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+- uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL
+  commentId: M:Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
+  name: ExecuteAsyncINTERNAL()
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.ExecuteAsyncINTERNAL()
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.ExecuteAsyncINTERNAL()
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).ExecuteAsyncINTERNAL()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).ExecuteAsyncINTERNAL()
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-    name: SetImageToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL
+    name: ExecuteAsyncINTERNAL
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedImage
-    name: GeneratedImage
-    href: Glitch9.AIDevKit.GeneratedImage.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-    name: SetImageToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL
+    name: ExecuteAsyncINTERNAL
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedImage
-    name: GeneratedImage
-    href: Glitch9.AIDevKit.GeneratedImage.html
-  - name: )
-- uid: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  commentId: M:Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  name: SetAudioToTarget(GeneratedAudio)
-  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetAudioToTarget(GeneratedAudio)
-  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetAudioToTarget(GeneratedAudio)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-    name: SetAudioToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  - name: (
-  - uid: Glitch9.AIDevKit.GeneratedAudio
-    name: GeneratedAudio
-    href: Glitch9.AIDevKit.GeneratedAudio.html
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-    name: SetAudioToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  - name: (
-  - uid: Glitch9.AIDevKit.GeneratedAudio
-    name: GeneratedAudio
-    href: Glitch9.AIDevKit.GeneratedAudio.html
   - name: )
 - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync
   commentId: M:Glitch9.AIDevKit.GENTask`3.ExecuteAsync
@@ -1456,6 +1420,35 @@ references:
   - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync
     name: ExecuteAsync
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1
+  commentId: M:Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  name: ExecuteAsync<T>()
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.ExecuteAsync<T>()
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.ExecuteAsync<T>()
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).ExecuteAsync(Of T)()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).ExecuteAsync(Of T)()
+  name.vb: ExecuteAsync(Of T)()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: (
   - name: )
 - uid: Glitch9.AIDevKit.ElevenLabs.FluentAPIExtensions.SetOutputFormat(Glitch9.AIDevKit.GENSoundEffectTask,Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
@@ -1728,7 +1721,7 @@ references:
     href: Glitch9.AIDevKit.OpenAI.html
 - uid: Glitch9.AIDevKit.GENSoundEffectTask.#ctor*
   commentId: Overload:Glitch9.AIDevKit.GENSoundEffectTask.#ctor
-  href: Glitch9.AIDevKit.GENSoundEffectTask.html#Glitch9_AIDevKit_GENSoundEffectTask__ctor_System_String_UnityEngine_Object_
+  href: Glitch9.AIDevKit.GENSoundEffectTask.html#Glitch9_AIDevKit_GENSoundEffectTask__ctor_System_String_
   name: GENSoundEffectTask
   nameWithType: GENSoundEffectTask.GENSoundEffectTask
   fullName: Glitch9.AIDevKit.GENSoundEffectTask.GENSoundEffectTask
@@ -1745,11 +1738,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: UnityEngine.Object
-  isExternal: true
-  name: Object
-  nameWithType: UnityEngine.Object
-  fullName: UnityEngine.Object
 - uid: Glitch9.AIDevKit.GENSoundEffectTask.SetDuration*
   commentId: Overload:Glitch9.AIDevKit.GENSoundEffectTask.SetDuration
   href: Glitch9.AIDevKit.GENSoundEffectTask.html#Glitch9_AIDevKit_GENSoundEffectTask_SetDuration_System_Double_
@@ -1779,12 +1767,12 @@ references:
   name: SetPromptInfluence
   nameWithType: GENSoundEffectTask.SetPromptInfluence
   fullName: Glitch9.AIDevKit.GENSoundEffectTask.SetPromptInfluence
-- uid: Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsync*
-  commentId: Overload:Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsync
-  href: Glitch9.AIDevKit.GENSoundEffectTask.html#Glitch9_AIDevKit_GENSoundEffectTask_ExecuteAsync
-  name: ExecuteAsync
-  nameWithType: GENSoundEffectTask.ExecuteAsync
-  fullName: Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsync
+- uid: Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsyncINTERNAL*
+  commentId: Overload:Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsyncINTERNAL
+  href: Glitch9.AIDevKit.GENSoundEffectTask.html#Glitch9_AIDevKit_GENSoundEffectTask_ExecuteAsyncINTERNAL
+  name: ExecuteAsyncINTERNAL
+  nameWithType: GENSoundEffectTask.ExecuteAsyncINTERNAL
+  fullName: Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsyncINTERNAL
 - uid: UniTask{Glitch9.AIDevKit.GeneratedAudio}
   commentId: '!:UniTask{Glitch9.AIDevKit.GeneratedAudio}'
   definition: UniTask`1

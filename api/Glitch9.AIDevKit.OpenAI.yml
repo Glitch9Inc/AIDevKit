@@ -4,8 +4,6 @@ items:
   commentId: N:Glitch9.AIDevKit.OpenAI
   id: Glitch9.AIDevKit.OpenAI
   children:
-  - Glitch9.AIDevKit.OpenAI.ActionRequest
-  - Glitch9.AIDevKit.OpenAI.ActionRequestType
   - Glitch9.AIDevKit.OpenAI.Assistant
   - Glitch9.AIDevKit.OpenAI.AssistantRequest
   - Glitch9.AIDevKit.OpenAI.AssistantRequest.Builder
@@ -32,7 +30,6 @@ items:
   - Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Builder
   - Glitch9.AIDevKit.OpenAI.EncodingFormat
   - Glitch9.AIDevKit.OpenAI.Expiration
-  - Glitch9.AIDevKit.OpenAI.File
   - Glitch9.AIDevKit.OpenAI.FileCounts
   - Glitch9.AIDevKit.OpenAI.FileRequest
   - Glitch9.AIDevKit.OpenAI.FileSearchCall
@@ -48,6 +45,11 @@ items:
   - Glitch9.AIDevKit.OpenAI.FluentAPIExtensions
   - Glitch9.AIDevKit.OpenAI.HttpResponse
   - Glitch9.AIDevKit.OpenAI.HyperParameters
+  - Glitch9.AIDevKit.OpenAI.IAssistantEventReceiver
+  - Glitch9.AIDevKit.OpenAI.IRequiredActionListener
+  - Glitch9.AIDevKit.OpenAI.IRunEventReceiver
+  - Glitch9.AIDevKit.OpenAI.IThreadEventReceiver
+  - Glitch9.AIDevKit.OpenAI.IThreadMessageEventReceiver
   - Glitch9.AIDevKit.OpenAI.Image
   - Glitch9.AIDevKit.OpenAI.ImageCreationRequest
   - Glitch9.AIDevKit.OpenAI.ImageEditRequest
@@ -63,6 +65,7 @@ items:
   - Glitch9.AIDevKit.OpenAI.ModerationResponse
   - Glitch9.AIDevKit.OpenAI.OpenAI
   - Glitch9.AIDevKit.OpenAI.OpenAIClientSettingsFactory
+  - Glitch9.AIDevKit.OpenAI.OpenAIFile
   - Glitch9.AIDevKit.OpenAI.OpenAIModel
   - Glitch9.AIDevKit.OpenAI.OpenAIModelData
   - Glitch9.AIDevKit.OpenAI.OpenAISettings
@@ -70,7 +73,9 @@ items:
   - Glitch9.AIDevKit.OpenAI.OpenAIVoice
   - Glitch9.AIDevKit.OpenAI.RequestCounts
   - Glitch9.AIDevKit.OpenAI.RequestExtensions
-  - Glitch9.AIDevKit.OpenAI.ResponseExtensions
+  - Glitch9.AIDevKit.OpenAI.RequiredAction
+  - Glitch9.AIDevKit.OpenAI.RequiredActionListener
+  - Glitch9.AIDevKit.OpenAI.RequiredActionType
   - Glitch9.AIDevKit.OpenAI.Run
   - Glitch9.AIDevKit.OpenAI.RunBase
   - Glitch9.AIDevKit.OpenAI.RunRequest
@@ -89,10 +94,8 @@ items:
   - Glitch9.AIDevKit.OpenAI.ThreadMessageDelta
   - Glitch9.AIDevKit.OpenAI.ThreadMessageExtensions
   - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
-  - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Builder
   - Glitch9.AIDevKit.OpenAI.ThreadRequest
   - Glitch9.AIDevKit.OpenAI.ThreadRequest.Builder
-  - Glitch9.AIDevKit.OpenAI.ToolCallConverter
   - Glitch9.AIDevKit.OpenAI.ToolChoice
   - Glitch9.AIDevKit.OpenAI.ToolChoiceConverter
   - Glitch9.AIDevKit.OpenAI.ToolOutput
@@ -155,12 +158,6 @@ references:
   name: OpenAIVoice
   nameWithType: OpenAIVoice
   fullName: Glitch9.AIDevKit.OpenAI.OpenAIVoice
-- uid: Glitch9.AIDevKit.OpenAI.ToolCallConverter
-  commentId: T:Glitch9.AIDevKit.OpenAI.ToolCallConverter
-  href: Glitch9.AIDevKit.OpenAI.ToolCallConverter.html
-  name: ToolCallConverter
-  nameWithType: ToolCallConverter
-  fullName: Glitch9.AIDevKit.OpenAI.ToolCallConverter
 - uid: Glitch9.AIDevKit.OpenAI.FluentAPIExtensions
   commentId: T:Glitch9.AIDevKit.OpenAI.FluentAPIExtensions
   parent: Glitch9.AIDevKit.OpenAI
@@ -175,12 +172,13 @@ references:
   name: RequestExtensions
   nameWithType: RequestExtensions
   fullName: Glitch9.AIDevKit.OpenAI.RequestExtensions
-- uid: Glitch9.AIDevKit.OpenAI.ResponseExtensions
-  commentId: T:Glitch9.AIDevKit.OpenAI.ResponseExtensions
-  href: Glitch9.AIDevKit.OpenAI.ResponseExtensions.html
-  name: ResponseExtensions
-  nameWithType: ResponseExtensions
-  fullName: Glitch9.AIDevKit.OpenAI.ResponseExtensions
+- uid: Glitch9.AIDevKit.OpenAI.IAssistantEventReceiver
+  commentId: T:Glitch9.AIDevKit.OpenAI.IAssistantEventReceiver
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.IAssistantEventReceiver.html
+  name: IAssistantEventReceiver
+  nameWithType: IAssistantEventReceiver
+  fullName: Glitch9.AIDevKit.OpenAI.IAssistantEventReceiver
 - uid: Glitch9.AIDevKit.OpenAI.Assistant
   commentId: T:Glitch9.AIDevKit.OpenAI.Assistant
   parent: Glitch9.AIDevKit.OpenAI
@@ -218,13 +216,26 @@ references:
   - uid: Glitch9.AIDevKit.OpenAI.AssistantRequest.Builder
     name: Builder
     href: Glitch9.AIDevKit.OpenAI.AssistantRequest.Builder.html
-- uid: Glitch9.AIDevKit.OpenAI.ActionRequest
-  commentId: T:Glitch9.AIDevKit.OpenAI.ActionRequest
+- uid: Glitch9.AIDevKit.OpenAI.IRequiredActionListener
+  commentId: T:Glitch9.AIDevKit.OpenAI.IRequiredActionListener
   parent: Glitch9.AIDevKit.OpenAI
-  href: Glitch9.AIDevKit.OpenAI.ActionRequest.html
-  name: ActionRequest
-  nameWithType: ActionRequest
-  fullName: Glitch9.AIDevKit.OpenAI.ActionRequest
+  href: Glitch9.AIDevKit.OpenAI.IRequiredActionListener.html
+  name: IRequiredActionListener
+  nameWithType: IRequiredActionListener
+  fullName: Glitch9.AIDevKit.OpenAI.IRequiredActionListener
+- uid: Glitch9.AIDevKit.OpenAI.RequiredActionListener
+  commentId: T:Glitch9.AIDevKit.OpenAI.RequiredActionListener
+  href: Glitch9.AIDevKit.OpenAI.RequiredActionListener.html
+  name: RequiredActionListener
+  nameWithType: RequiredActionListener
+  fullName: Glitch9.AIDevKit.OpenAI.RequiredActionListener
+- uid: Glitch9.AIDevKit.OpenAI.RequiredAction
+  commentId: T:Glitch9.AIDevKit.OpenAI.RequiredAction
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.RequiredAction.html
+  name: RequiredAction
+  nameWithType: RequiredAction
+  fullName: Glitch9.AIDevKit.OpenAI.RequiredAction
 - uid: Glitch9.AIDevKit.OpenAI.ToolOutputsSubmission
   commentId: T:Glitch9.AIDevKit.OpenAI.ToolOutputsSubmission
   parent: Glitch9.AIDevKit.OpenAI
@@ -232,13 +243,20 @@ references:
   name: ToolOutputsSubmission
   nameWithType: ToolOutputsSubmission
   fullName: Glitch9.AIDevKit.OpenAI.ToolOutputsSubmission
-- uid: Glitch9.AIDevKit.OpenAI.ActionRequestType
-  commentId: T:Glitch9.AIDevKit.OpenAI.ActionRequestType
+- uid: Glitch9.AIDevKit.OpenAI.RequiredActionType
+  commentId: T:Glitch9.AIDevKit.OpenAI.RequiredActionType
   parent: Glitch9.AIDevKit.OpenAI
-  href: Glitch9.AIDevKit.OpenAI.ActionRequestType.html
-  name: ActionRequestType
-  nameWithType: ActionRequestType
-  fullName: Glitch9.AIDevKit.OpenAI.ActionRequestType
+  href: Glitch9.AIDevKit.OpenAI.RequiredActionType.html
+  name: RequiredActionType
+  nameWithType: RequiredActionType
+  fullName: Glitch9.AIDevKit.OpenAI.RequiredActionType
+- uid: Glitch9.AIDevKit.OpenAI.IRunEventReceiver
+  commentId: T:Glitch9.AIDevKit.OpenAI.IRunEventReceiver
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.IRunEventReceiver.html
+  name: IRunEventReceiver
+  nameWithType: IRunEventReceiver
+  fullName: Glitch9.AIDevKit.OpenAI.IRunEventReceiver
 - uid: Glitch9.AIDevKit.OpenAI.Run
   commentId: T:Glitch9.AIDevKit.OpenAI.Run
   parent: Glitch9.AIDevKit.OpenAI
@@ -345,6 +363,13 @@ references:
   name: Thread
   nameWithType: Thread
   fullName: Glitch9.AIDevKit.OpenAI.Thread
+- uid: Glitch9.AIDevKit.OpenAI.IThreadEventReceiver
+  commentId: T:Glitch9.AIDevKit.OpenAI.IThreadEventReceiver
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.IThreadEventReceiver.html
+  name: IThreadEventReceiver
+  nameWithType: IThreadEventReceiver
+  fullName: Glitch9.AIDevKit.OpenAI.IThreadEventReceiver
 - uid: Glitch9.AIDevKit.OpenAI.ThreadExtensions
   commentId: T:Glitch9.AIDevKit.OpenAI.ThreadExtensions
   parent: Glitch9.AIDevKit.OpenAI
@@ -352,6 +377,13 @@ references:
   name: ThreadExtensions
   nameWithType: ThreadExtensions
   fullName: Glitch9.AIDevKit.OpenAI.ThreadExtensions
+- uid: Glitch9.AIDevKit.OpenAI.IThreadMessageEventReceiver
+  commentId: T:Glitch9.AIDevKit.OpenAI.IThreadMessageEventReceiver
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.IThreadMessageEventReceiver.html
+  name: IThreadMessageEventReceiver
+  nameWithType: IThreadMessageEventReceiver
+  fullName: Glitch9.AIDevKit.OpenAI.IThreadMessageEventReceiver
 - uid: Glitch9.AIDevKit.OpenAI.ThreadMessage
   commentId: T:Glitch9.AIDevKit.OpenAI.ThreadMessage
   parent: Glitch9.AIDevKit.OpenAI
@@ -379,29 +411,6 @@ references:
   name: ThreadMessageRequest
   nameWithType: ThreadMessageRequest
   fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
-- uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Builder
-  commentId: T:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Builder
-  parent: Glitch9.AIDevKit.OpenAI
-  href: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html
-  name: ThreadMessageRequest.Builder
-  nameWithType: ThreadMessageRequest.Builder
-  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Builder
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
-    name: ThreadMessageRequest
-    href: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html
-  - name: .
-  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Builder
-    name: Builder
-    href: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Builder.html
-  spec.vb:
-  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
-    name: ThreadMessageRequest
-    href: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html
-  - name: .
-  - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Builder
-    name: Builder
-    href: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Builder.html
 - uid: Glitch9.AIDevKit.OpenAI.ThreadRequest
   commentId: T:Glitch9.AIDevKit.OpenAI.ThreadRequest
   href: Glitch9.AIDevKit.OpenAI.ThreadRequest.html
@@ -655,19 +664,6 @@ references:
   name: EncodingFormat
   nameWithType: EncodingFormat
   fullName: Glitch9.AIDevKit.OpenAI.EncodingFormat
-- uid: Glitch9.AIDevKit.OpenAI.UploadPurpose
-  commentId: T:Glitch9.AIDevKit.OpenAI.UploadPurpose
-  parent: Glitch9.AIDevKit.OpenAI
-  href: Glitch9.AIDevKit.OpenAI.UploadPurpose.html
-  name: UploadPurpose
-  nameWithType: UploadPurpose
-  fullName: Glitch9.AIDevKit.OpenAI.UploadPurpose
-- uid: Glitch9.AIDevKit.OpenAI.File
-  commentId: T:Glitch9.AIDevKit.OpenAI.File
-  href: Glitch9.AIDevKit.OpenAI.File.html
-  name: File
-  nameWithType: File
-  fullName: Glitch9.AIDevKit.OpenAI.File
 - uid: Glitch9.AIDevKit.OpenAI.FileRequest
   commentId: T:Glitch9.AIDevKit.OpenAI.FileRequest
   href: Glitch9.AIDevKit.OpenAI.FileRequest.html
@@ -704,6 +700,19 @@ references:
   - uid: Glitch9.AIDevKit.OpenAI.FileUploadRequest.Builder
     name: Builder
     href: Glitch9.AIDevKit.OpenAI.FileUploadRequest.Builder.html
+- uid: Glitch9.AIDevKit.OpenAI.UploadPurpose
+  commentId: T:Glitch9.AIDevKit.OpenAI.UploadPurpose
+  parent: Glitch9.AIDevKit.OpenAI
+  href: Glitch9.AIDevKit.OpenAI.UploadPurpose.html
+  name: UploadPurpose
+  nameWithType: UploadPurpose
+  fullName: Glitch9.AIDevKit.OpenAI.UploadPurpose
+- uid: Glitch9.AIDevKit.OpenAI.OpenAIFile
+  commentId: T:Glitch9.AIDevKit.OpenAI.OpenAIFile
+  href: Glitch9.AIDevKit.OpenAI.OpenAIFile.html
+  name: OpenAIFile
+  nameWithType: OpenAIFile
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAIFile
 - uid: Glitch9.AIDevKit.OpenAI.FineTuningEvent
   commentId: T:Glitch9.AIDevKit.OpenAI.FineTuningEvent
   href: Glitch9.AIDevKit.OpenAI.FineTuningEvent.html

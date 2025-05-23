@@ -91,48 +91,48 @@ Therefore, <a class="xref" href="Glitch9.AIDevKit.GeneratedVideo.html">Generated
     <div class="level1"><span class="xref">Result</span></div>
     <div class="level2"><span class="xref">RESTResponse</span></div>
     <div class="level3"><a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html">GeneratedResult</a>&lt;<span class="xref">string</span>&gt;</div>
-    <div class="level4"><a class="xref" href="Glitch9.AIDevKit.GeneratedAsset-2.html">GeneratedAsset</a>&lt;<span class="xref">string</span>, <span class="xref">UniVideoFile</span>&gt;</div>
+    <div class="level4"><a class="xref" href="Glitch9.AIDevKit.GeneratedAsset-2.html">GeneratedAsset</a>&lt;<span class="xref">string</span>, <span class="xref">RawFile</span>&gt;</div>
     <div class="level5"><span class="xref">GeneratedVideo</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Glitch9.AIDevKit.IGenerated.html">IGenerated</a></div>
+    <div><a class="xref" href="Glitch9.AIDevKit.IGeneratedResult.html">IGeneratedResult</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Paths">GeneratedAsset&lt;string, UniVideoFile&gt;.Paths</a>
+      <a class="xref" href="Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Paths">GeneratedAsset&lt;string, RawFile&gt;.Paths</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Item_System_String_">GeneratedAsset&lt;string, UniVideoFile&gt;.this[string]</a>
+      <a class="xref" href="Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Item_System_String_">GeneratedAsset&lt;string, RawFile&gt;.this[string]</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles">GeneratedAsset&lt;string, UniVideoFile&gt;.ToFiles()</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Count">GeneratedResult&lt;string&gt;.Count</a>
+      <a class="xref" href="Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles">GeneratedAsset&lt;string, RawFile&gt;.ToFiles()</a>
     </div>
     <div>
       <a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Values">GeneratedResult&lt;string&gt;.Values</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_values">GeneratedResult&lt;string&gt;.values</a>
+      <a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Count">GeneratedResult&lt;string&gt;.Count</a>
     </div>
     <div>
       <a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Usage">GeneratedResult&lt;string&gt;.Usage</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_usage">GeneratedResult&lt;string&gt;.usage</a>
+      <a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Item_System_Int32_">GeneratedResult&lt;string&gt;.this[int]</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_Item_System_Int32_">GeneratedResult&lt;string&gt;.this[int]</a>
+      <a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_values">GeneratedResult&lt;string&gt;.values</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GeneratedResult-1.html#Glitch9_AIDevKit_GeneratedResult_1_usage">GeneratedResult&lt;string&gt;.usage</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_GeneratedVideo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GeneratedVideo : GeneratedAsset&lt;string, UniVideoFile&gt;, IGenerated</code></pre>
+    <pre><code class="lang-csharp hljs">public class GeneratedVideo : GeneratedAsset&lt;string, RawFile&gt;, IGeneratedResult</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -220,7 +220,7 @@ Therefore, <a class="xref" href="Glitch9.AIDevKit.GeneratedVideo.html">Generated
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override UniVideoFile[] ToFiles()</code></pre>
+    <pre><code class="lang-csharp hljs">public override RawFile[] ToFiles()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -232,24 +232,24 @@ Therefore, <a class="xref" href="Glitch9.AIDevKit.GeneratedVideo.html">Generated
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniVideoFile</span>[]</td>
+        <td><span class="xref">RawFile</span>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles">GeneratedAsset&lt;string, UniVideoFile&gt;.ToFiles()</a></div>
+  <div><a class="xref" href="Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles">GeneratedAsset&lt;string, RawFile&gt;.ToFiles()</a></div>
   <h3 id="operators">Operators
 </h3>
 
 
   <a id="Glitch9_AIDevKit_GeneratedVideo_op_Implicit_" data-uid="Glitch9.AIDevKit.GeneratedVideo.op_Implicit*"></a>
-  <h4 id="Glitch9_AIDevKit_GeneratedVideo_op_Implicit_Glitch9_AIDevKit_GeneratedVideo__Glitch9_IO_Files_UniVideoFile" data-uid="Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.UniVideoFile">implicit operator UniVideoFile(GeneratedVideo)</h4>
+  <h4 id="Glitch9_AIDevKit_GeneratedVideo_op_Implicit_Glitch9_AIDevKit_GeneratedVideo__Glitch9_IO_Files_RawFile" data-uid="Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.RawFile">implicit operator RawFile(GeneratedVideo)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator UniVideoFile(GeneratedVideo generatedVideo)</code></pre>
+    <pre><code class="lang-csharp hljs">public static implicit operator RawFile(GeneratedVideo generatedVideo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -278,7 +278,7 @@ Therefore, <a class="xref" href="Glitch9.AIDevKit.GeneratedVideo.html">Generated
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniVideoFile</span></td>
+        <td><span class="xref">RawFile</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -286,12 +286,12 @@ Therefore, <a class="xref" href="Glitch9.AIDevKit.GeneratedVideo.html">Generated
 
 
   <a id="Glitch9_AIDevKit_GeneratedVideo_op_Implicit_" data-uid="Glitch9.AIDevKit.GeneratedVideo.op_Implicit*"></a>
-  <h4 id="Glitch9_AIDevKit_GeneratedVideo_op_Implicit_Glitch9_AIDevKit_GeneratedVideo__Glitch9_IO_Files_UniVideoFile__" data-uid="Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.UniVideoFile[]">implicit operator UniVideoFile[](GeneratedVideo)</h4>
+  <h4 id="Glitch9_AIDevKit_GeneratedVideo_op_Implicit_Glitch9_AIDevKit_GeneratedVideo__Glitch9_IO_Files_RawFile__" data-uid="Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.RawFile[]">implicit operator RawFile[](GeneratedVideo)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator UniVideoFile[](GeneratedVideo generatedVideo)</code></pre>
+    <pre><code class="lang-csharp hljs">public static implicit operator RawFile[](GeneratedVideo generatedVideo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -320,7 +320,7 @@ Therefore, <a class="xref" href="Glitch9.AIDevKit.GeneratedVideo.html">Generated
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniVideoFile</span>[]</td>
+        <td><span class="xref">RawFile</span>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -411,11 +411,7 @@ Therefore, <a class="xref" href="Glitch9.AIDevKit.GeneratedVideo.html">Generated
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Glitch9.AIDevKit.IGenerated.html">IGenerated</a>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="Glitch9.AIDevKit.OpenAI.Assistants.AssistantsAPIResultExtensions.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantsAPIResultExtensions_Convert_Glitch9_IResult_">AssistantsAPIResultExtensions.Convert(IResult)</a>
+      <a class="xref" href="Glitch9.AIDevKit.IGeneratedResult.html">IGeneratedResult</a>
   </div>
 
 </article>

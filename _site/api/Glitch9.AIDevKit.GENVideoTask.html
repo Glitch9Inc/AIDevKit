@@ -135,16 +135,16 @@
       <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_">GENTask&lt;GENVideoTask, string, GeneratedVideo&gt;.EnablePromptHistory(bool)</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_">GENTask&lt;GENVideoTask, string, GeneratedVideo&gt;.SetTextToTarget(GeneratedText)</a>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_">GENTask&lt;GENVideoTask, string, GeneratedVideo&gt;.SetCancellationToken(CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_">GENTask&lt;GENVideoTask, string, GeneratedVideo&gt;.SetImageToTarget(GeneratedImage)</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_">GENTask&lt;GENVideoTask, string, GeneratedVideo&gt;.SetAudioToTarget(GeneratedAudio)</a>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL">GENTask&lt;GENVideoTask, string, GeneratedVideo&gt;.ExecuteAsyncINTERNAL()</a>
     </div>
     <div>
       <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync">GENTask&lt;GENVideoTask, string, GeneratedVideo&gt;.ExecuteAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1">GENTask&lt;GENVideoTask, string, GeneratedVideo&gt;.ExecuteAsync&lt;T&gt;()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
@@ -158,12 +158,12 @@
 
 
   <a id="Glitch9_AIDevKit_GENVideoTask__ctor_" data-uid="Glitch9.AIDevKit.GENVideoTask.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_GENVideoTask__ctor_System_String_UnityEngine_Object_" data-uid="Glitch9.AIDevKit.GENVideoTask.#ctor(System.String,UnityEngine.Object)">GENVideoTask(string, Object)</h4>
+  <h4 id="Glitch9_AIDevKit_GENVideoTask__ctor_System_String_" data-uid="Glitch9.AIDevKit.GENVideoTask.#ctor(System.String)">GENVideoTask(string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GENVideoTask(string promptText, UnityEngine.Object target = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public GENVideoTask(string promptText)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -180,22 +180,17 @@
         <td><span class="parametername">promptText</span></td>
         <td></td>
       </tr>
-      <tr>
-        <td><span class="xref">Object</span></td>
-        <td><span class="parametername">target</span></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
 
 
   <a id="Glitch9_AIDevKit_GENVideoTask__ctor_" data-uid="Glitch9.AIDevKit.GENVideoTask.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_GENVideoTask__ctor_Texture2D_UnityEngine_Object_" data-uid="Glitch9.AIDevKit.GENVideoTask.#ctor(Texture2D,UnityEngine.Object)">GENVideoTask(Texture2D, Object)</h4>
+  <h4 id="Glitch9_AIDevKit_GENVideoTask__ctor_Texture2D_" data-uid="Glitch9.AIDevKit.GENVideoTask.#ctor(Texture2D)">GENVideoTask(Texture2D)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GENVideoTask(Texture2D promptImage, UnityEngine.Object target = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public GENVideoTask(Texture2D promptImage)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -210,11 +205,6 @@
       <tr>
         <td><span class="xref">Texture2D</span></td>
         <td><span class="parametername">promptImage</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Object</span></td>
-        <td><span class="parametername">target</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -252,14 +242,14 @@
 </h3>
 
 
-  <a id="Glitch9_AIDevKit_GENVideoTask_ExecuteAsync_" data-uid="Glitch9.AIDevKit.GENVideoTask.ExecuteAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_GENVideoTask_ExecuteAsync" data-uid="Glitch9.AIDevKit.GENVideoTask.ExecuteAsync">ExecuteAsync()</h4>
+  <a id="Glitch9_AIDevKit_GENVideoTask_ExecuteAsyncINTERNAL_" data-uid="Glitch9.AIDevKit.GENVideoTask.ExecuteAsyncINTERNAL*"></a>
+  <h4 id="Glitch9_AIDevKit_GENVideoTask_ExecuteAsyncINTERNAL" data-uid="Glitch9.AIDevKit.GENVideoTask.ExecuteAsyncINTERNAL">ExecuteAsyncINTERNAL()</h4>
   <div class="markdown level1 summary"><p>Executes the task and returns the generated result.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override UniTask&lt;GeneratedVideo&gt; ExecuteAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override UniTask&lt;GeneratedVideo&gt; ExecuteAsyncINTERNAL()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -277,7 +267,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync">GENTask&lt;GENVideoTask, string, GeneratedVideo&gt;.ExecuteAsync()</a></div>
+  <div><a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL">GENTask&lt;GENVideoTask, string, GeneratedVideo&gt;.ExecuteAsyncINTERNAL()</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Glitch9.AIDevKit.IGENTask.html">IGENTask</a>

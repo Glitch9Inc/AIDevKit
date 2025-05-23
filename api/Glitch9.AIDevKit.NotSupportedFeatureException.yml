@@ -5,7 +5,9 @@ items:
   id: NotSupportedFeatureException
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.NotSupportedFeatureException.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ModelCapability)
+  - Glitch9.AIDevKit.NotSupportedFeatureException.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ModelFeature)
+  - Glitch9.AIDevKit.NotSupportedFeatureException.Capability
+  - Glitch9.AIDevKit.NotSupportedFeatureException.Model
   langs:
   - csharp
   - vb
@@ -16,7 +18,7 @@ items:
   source:
     id: NotSupportedFeatureException
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Exceptions/Exceptions.cs
-    startLine: 32
+    startLine: 42
   namespace: Glitch9.AIDevKit
   syntax:
     content: 'public class NotSupportedFeatureException : NotSupportedException'
@@ -26,34 +28,80 @@ items:
   - System.Exception
   - System.SystemException
   - System.NotSupportedException
-- uid: Glitch9.AIDevKit.NotSupportedFeatureException.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ModelCapability)
-  commentId: M:Glitch9.AIDevKit.NotSupportedFeatureException.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ModelCapability)
-  id: '#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ModelCapability)'
+- uid: Glitch9.AIDevKit.NotSupportedFeatureException.Capability
+  commentId: P:Glitch9.AIDevKit.NotSupportedFeatureException.Capability
+  id: Capability
   parent: Glitch9.AIDevKit.NotSupportedFeatureException
   langs:
   - csharp
   - vb
-  name: NotSupportedFeatureException(Model, ModelCapability)
-  nameWithType: NotSupportedFeatureException.NotSupportedFeatureException(Model, ModelCapability)
-  fullName: Glitch9.AIDevKit.NotSupportedFeatureException.NotSupportedFeatureException(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.ModelCapability)
+  name: Capability
+  nameWithType: NotSupportedFeatureException.Capability
+  fullName: Glitch9.AIDevKit.NotSupportedFeatureException.Capability
+  type: Property
+  source:
+    id: Capability
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Exceptions/Exceptions.cs
+    startLine: 44
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public ModelFeature Capability { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.ModelFeature
+    content.vb: Public ReadOnly Property Capability As ModelFeature
+  overload: Glitch9.AIDevKit.NotSupportedFeatureException.Capability*
+- uid: Glitch9.AIDevKit.NotSupportedFeatureException.Model
+  commentId: P:Glitch9.AIDevKit.NotSupportedFeatureException.Model
+  id: Model
+  parent: Glitch9.AIDevKit.NotSupportedFeatureException
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: NotSupportedFeatureException.Model
+  fullName: Glitch9.AIDevKit.NotSupportedFeatureException.Model
+  type: Property
+  source:
+    id: Model
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Exceptions/Exceptions.cs
+    startLine: 45
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public Model Model { get; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Model
+    content.vb: Public ReadOnly Property Model As Model
+  overload: Glitch9.AIDevKit.NotSupportedFeatureException.Model*
+- uid: Glitch9.AIDevKit.NotSupportedFeatureException.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ModelFeature)
+  commentId: M:Glitch9.AIDevKit.NotSupportedFeatureException.#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ModelFeature)
+  id: '#ctor(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.ModelFeature)'
+  parent: Glitch9.AIDevKit.NotSupportedFeatureException
+  langs:
+  - csharp
+  - vb
+  name: NotSupportedFeatureException(Model, ModelFeature)
+  nameWithType: NotSupportedFeatureException.NotSupportedFeatureException(Model, ModelFeature)
+  fullName: Glitch9.AIDevKit.NotSupportedFeatureException.NotSupportedFeatureException(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.ModelFeature)
   type: Constructor
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Exceptions/Exceptions.cs
-    startLine: 34
+    startLine: 46
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public NotSupportedFeatureException(Model model, ModelCapability cap)
+    content: public NotSupportedFeatureException(Model model, ModelFeature cap)
     parameters:
     - id: model
       type: Glitch9.AIDevKit.Model
     - id: cap
-      type: Glitch9.AIDevKit.ModelCapability
-    content.vb: Public Sub New(model As Model, cap As ModelCapability)
+      type: Glitch9.AIDevKit.ModelFeature
+    content.vb: Public Sub New(model As Model, cap As ModelFeature)
   overload: Glitch9.AIDevKit.NotSupportedFeatureException.#ctor*
-  nameWithType.vb: NotSupportedFeatureException.New(Model, ModelCapability)
-  fullName.vb: Glitch9.AIDevKit.NotSupportedFeatureException.New(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.ModelCapability)
-  name.vb: New(Model, ModelCapability)
+  nameWithType.vb: NotSupportedFeatureException.New(Model, ModelFeature)
+  fullName.vb: Glitch9.AIDevKit.NotSupportedFeatureException.New(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.ModelFeature)
+  name.vb: New(Model, ModelFeature)
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -115,15 +163,25 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.AIDevKit.NotSupportedFeatureException.#ctor*
-  commentId: Overload:Glitch9.AIDevKit.NotSupportedFeatureException.#ctor
-  href: Glitch9.AIDevKit.NotSupportedFeatureException.html#Glitch9_AIDevKit_NotSupportedFeatureException__ctor_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ModelCapability_
-  name: NotSupportedFeatureException
-  nameWithType: NotSupportedFeatureException.NotSupportedFeatureException
-  fullName: Glitch9.AIDevKit.NotSupportedFeatureException.NotSupportedFeatureException
-  nameWithType.vb: NotSupportedFeatureException.New
-  fullName.vb: Glitch9.AIDevKit.NotSupportedFeatureException.New
-  name.vb: New
+- uid: Glitch9.AIDevKit.NotSupportedFeatureException.Capability*
+  commentId: Overload:Glitch9.AIDevKit.NotSupportedFeatureException.Capability
+  href: Glitch9.AIDevKit.NotSupportedFeatureException.html#Glitch9_AIDevKit_NotSupportedFeatureException_Capability
+  name: Capability
+  nameWithType: NotSupportedFeatureException.Capability
+  fullName: Glitch9.AIDevKit.NotSupportedFeatureException.Capability
+- uid: Glitch9.AIDevKit.ModelFeature
+  commentId: T:Glitch9.AIDevKit.ModelFeature
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelFeature.html
+  name: ModelFeature
+  nameWithType: ModelFeature
+  fullName: Glitch9.AIDevKit.ModelFeature
+- uid: Glitch9.AIDevKit.NotSupportedFeatureException.Model*
+  commentId: Overload:Glitch9.AIDevKit.NotSupportedFeatureException.Model
+  href: Glitch9.AIDevKit.NotSupportedFeatureException.html#Glitch9_AIDevKit_NotSupportedFeatureException_Model
+  name: Model
+  nameWithType: NotSupportedFeatureException.Model
+  fullName: Glitch9.AIDevKit.NotSupportedFeatureException.Model
 - uid: Glitch9.AIDevKit.Model
   commentId: T:Glitch9.AIDevKit.Model
   parent: Glitch9.AIDevKit
@@ -131,10 +189,12 @@ references:
   name: Model
   nameWithType: Model
   fullName: Glitch9.AIDevKit.Model
-- uid: Glitch9.AIDevKit.ModelCapability
-  commentId: T:Glitch9.AIDevKit.ModelCapability
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelCapability.html
-  name: ModelCapability
-  nameWithType: ModelCapability
-  fullName: Glitch9.AIDevKit.ModelCapability
+- uid: Glitch9.AIDevKit.NotSupportedFeatureException.#ctor*
+  commentId: Overload:Glitch9.AIDevKit.NotSupportedFeatureException.#ctor
+  href: Glitch9.AIDevKit.NotSupportedFeatureException.html#Glitch9_AIDevKit_NotSupportedFeatureException__ctor_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_ModelFeature_
+  name: NotSupportedFeatureException
+  nameWithType: NotSupportedFeatureException.NotSupportedFeatureException
+  fullName: Glitch9.AIDevKit.NotSupportedFeatureException.NotSupportedFeatureException
+  nameWithType.vb: NotSupportedFeatureException.New
+  fullName.vb: Glitch9.AIDevKit.NotSupportedFeatureException.New
+  name.vb: New

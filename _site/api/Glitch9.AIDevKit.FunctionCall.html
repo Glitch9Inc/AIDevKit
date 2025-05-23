@@ -120,14 +120,14 @@
 
 
   <a id="Glitch9_AIDevKit_FunctionCall__ctor_" data-uid="Glitch9.AIDevKit.FunctionCall.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_FunctionCall__ctor_Glitch9_AIDevKit_FunctionDeclaration_Glitch9_AIDevKit_IFunctionDelegate_" data-uid="Glitch9.AIDevKit.FunctionCall.#ctor(Glitch9.AIDevKit.FunctionDeclaration,Glitch9.AIDevKit.IFunctionDelegate)">FunctionCall(FunctionDeclaration, IFunctionDelegate)</h4>
+  <h4 id="Glitch9_AIDevKit_FunctionCall__ctor_Glitch9_AIDevKit_FunctionDeclaration_" data-uid="Glitch9.AIDevKit.FunctionCall.#ctor(Glitch9.AIDevKit.FunctionDeclaration)">FunctionCall(FunctionDeclaration)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Glitch9.AIDevKit.FunctionCall.html">FunctionCall</a> class with the specified function and delegate.
 Sets the type to <a class="xref" href="Glitch9.AIDevKit.ToolType.html#Glitch9_AIDevKit_ToolType_Function">Function</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FunctionCall(FunctionDeclaration function, IFunctionDelegate functionDelegate = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public FunctionCall(FunctionDeclaration function)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -145,10 +145,41 @@ Sets the type to <a class="xref" href="Glitch9.AIDevKit.ToolType.html#Glitch9_AI
         <td><p>The function to be used.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_FunctionCall__ctor_" data-uid="Glitch9.AIDevKit.FunctionCall.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_FunctionCall__ctor_System_String_System_String_" data-uid="Glitch9.AIDevKit.FunctionCall.#ctor(System.String,System.String)">FunctionCall(string, string)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Glitch9.AIDevKit.FunctionCall.html">FunctionCall</a> instance with the specified name, description, and delegate.
+Using this method won't generate Parameters based on your return type class.
+Instead, the return type will be <span class="xref">string</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FunctionCall(string name, string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.IFunctionDelegate.html">IFunctionDelegate</a></td>
-        <td><span class="parametername">functionDelegate</span></td>
-        <td><p>The delegate that will execute the function.</p>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>The description of the function.</p>
 </td>
       </tr>
     </tbody>
@@ -219,33 +250,6 @@ Sets the type to <a class="xref" href="Glitch9.AIDevKit.ToolType.html#Glitch9_AI
   </table>
 
 
-  <a id="Glitch9_AIDevKit_FunctionCall_Delegate_" data-uid="Glitch9.AIDevKit.FunctionCall.Delegate*"></a>
-  <h4 id="Glitch9_AIDevKit_FunctionCall_Delegate" data-uid="Glitch9.AIDevKit.FunctionCall.Delegate">Delegate</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the delegate that will execute the function.
-This property is ignored during JSON serialization.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IFunctionDelegate Delegate { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.IFunctionDelegate.html">IFunctionDelegate</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
   <a id="Glitch9_AIDevKit_FunctionCall_Function_" data-uid="Glitch9.AIDevKit.FunctionCall.Function*"></a>
   <h4 id="Glitch9_AIDevKit_FunctionCall_Function" data-uid="Glitch9.AIDevKit.FunctionCall.Function">Function</h4>
   <div class="markdown level1 summary"><p>Gets or sets the function to be used.
@@ -300,67 +304,8 @@ This property is required.</p>
 </h3>
 
 
-  <a id="Glitch9_AIDevKit_FunctionCall_Create_" data-uid="Glitch9.AIDevKit.FunctionCall.Create*"></a>
-  <h4 id="Glitch9_AIDevKit_FunctionCall_Create_System_String_System_String_Glitch9_AIDevKit_IFunctionDelegate_" data-uid="Glitch9.AIDevKit.FunctionCall.Create(System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)">Create(string, string, IFunctionDelegate)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Glitch9.AIDevKit.FunctionCall.html">FunctionCall</a> instance with the specified name, description, and delegate.
-Using this method won't generate Parameters based on your return type class.
-Instead, the return type will be <span class="xref">string</span>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static FunctionCall Create(string name, string description, IFunctionDelegate functionDelegate = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The name of the function.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">description</span></td>
-        <td><p>The description of the function.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.IFunctionDelegate.html">IFunctionDelegate</a></td>
-        <td><span class="parametername">functionDelegate</span></td>
-        <td><p>The delegate that will execute the function.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.FunctionCall.html">FunctionCall</a></td>
-        <td><p>A new instance of the <a class="xref" href="Glitch9.AIDevKit.FunctionCall.html">FunctionCall</a> class.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_FunctionCall_Create_" data-uid="Glitch9.AIDevKit.FunctionCall.Create*"></a>
-  <h4 id="Glitch9_AIDevKit_FunctionCall_Create__1_System_String_System_String_Glitch9_AIDevKit_IFunctionDelegate_" data-uid="Glitch9.AIDevKit.FunctionCall.Create``1(System.String,System.String,Glitch9.AIDevKit.IFunctionDelegate)">Create&lt;T&gt;(string, string, IFunctionDelegate)</h4>
+  <a id="Glitch9_AIDevKit_FunctionCall_FromJsonSchema_" data-uid="Glitch9.AIDevKit.FunctionCall.FromJsonSchema*"></a>
+  <h4 id="Glitch9_AIDevKit_FunctionCall_FromJsonSchema__1_System_String_System_String_" data-uid="Glitch9.AIDevKit.FunctionCall.FromJsonSchema``1(System.String,System.String)">FromJsonSchema&lt;T&gt;(string, string)</h4>
   <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Glitch9.AIDevKit.FunctionCall.html">FunctionCall</a> instance with the specified name, description, and delegate.
 The parameters for the function are generated based on the specified type <code class="typeparamref">T</code>.
 <code class="typeparamref">T</code> is the return type of the function.</p>
@@ -368,7 +313,7 @@ The parameters for the function are generated based on the specified type <code 
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static FunctionCall Create&lt;T&gt;(string name, string description, IFunctionDelegate functionDelegate = null) where T : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static FunctionCall FromJsonSchema&lt;T&gt;(string name, string description) where T : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -390,12 +335,6 @@ The parameters for the function are generated based on the specified type <code 
         <td><span class="xref">string</span></td>
         <td><span class="parametername">description</span></td>
         <td><p>The description of the function.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.IFunctionDelegate.html">IFunctionDelegate</a></td>
-        <td><span class="parametername">functionDelegate</span></td>
-        <td><p>The delegate that will execute the function.</p>
 </td>
       </tr>
     </tbody>

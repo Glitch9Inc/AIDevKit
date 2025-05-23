@@ -5,10 +5,10 @@ items:
   id: IChatbot
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.IChatbot.ClearMessages
-  - Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)
+  - Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ResponseType)
   - Glitch9.AIDevKit.IChatbot.Messages
   - Glitch9.AIDevKit.IChatbot.Model
+  - Glitch9.AIDevKit.IChatbot.Name
   - Glitch9.AIDevKit.IChatbot.Stream
   langs:
   - csharp
@@ -25,6 +25,29 @@ items:
   syntax:
     content: public interface IChatbot
     content.vb: Public Interface IChatbot
+- uid: Glitch9.AIDevKit.IChatbot.Name
+  commentId: P:Glitch9.AIDevKit.IChatbot.Name
+  id: Name
+  parent: Glitch9.AIDevKit.IChatbot
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IChatbot.Name
+  fullName: Glitch9.AIDevKit.IChatbot.Name
+  type: Property
+  source:
+    id: Name
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Common/IChatbot.cs
+    startLine: 7
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Glitch9.AIDevKit.IChatbot.Name*
 - uid: Glitch9.AIDevKit.IChatbot.Stream
   commentId: P:Glitch9.AIDevKit.IChatbot.Stream
   id: Stream
@@ -39,14 +62,14 @@ items:
   source:
     id: Stream
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Common/IChatbot.cs
-    startLine: 7
+    startLine: 8
   namespace: Glitch9.AIDevKit
   syntax:
-    content: bool Stream { get; set; }
+    content: bool Stream { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Property Stream As Boolean
+    content.vb: ReadOnly Property Stream As Boolean
   overload: Glitch9.AIDevKit.IChatbot.Stream*
 - uid: Glitch9.AIDevKit.IChatbot.Model
   commentId: P:Glitch9.AIDevKit.IChatbot.Model
@@ -62,14 +85,14 @@ items:
   source:
     id: Model
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Common/IChatbot.cs
-    startLine: 8
+    startLine: 9
   namespace: Glitch9.AIDevKit
   syntax:
-    content: Model Model { get; set; }
+    content: Model Model { get; }
     parameters: []
     return:
       type: Glitch9.AIDevKit.Model
-    content.vb: Property Model As Model
+    content.vb: ReadOnly Property Model As Model
   overload: Glitch9.AIDevKit.IChatbot.Model*
 - uid: Glitch9.AIDevKit.IChatbot.Messages
   commentId: P:Glitch9.AIDevKit.IChatbot.Messages
@@ -85,7 +108,7 @@ items:
   source:
     id: Messages
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Common/IChatbot.cs
-    startLine: 9
+    startLine: 10
   namespace: Glitch9.AIDevKit
   syntax:
     content: List<ChatMessage> Messages { get; }
@@ -94,53 +117,33 @@ items:
       type: System.Collections.Generic.List{Glitch9.AIDevKit.ChatMessage}
     content.vb: ReadOnly Property Messages As List(Of ChatMessage)
   overload: Glitch9.AIDevKit.IChatbot.Messages*
-- uid: Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)
-  id: EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ResponseType)
+  commentId: M:Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ResponseType)
+  id: EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ResponseType)
   parent: Glitch9.AIDevKit.IChatbot
   langs:
   - csharp
   - vb
-  name: EnterChatAsync(ChatMessage, ChatStreamHandler)
-  nameWithType: IChatbot.EnterChatAsync(ChatMessage, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage, Glitch9.AIDevKit.ChatStreamHandler)
+  name: EnterChatAsync(ChatMessage, ResponseType)
+  nameWithType: IChatbot.EnterChatAsync(ChatMessage, ResponseType)
+  fullName: Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage, Glitch9.AIDevKit.ResponseType)
   type: Method
   source:
     id: EnterChatAsync
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Common/IChatbot.cs
-    startLine: 10
-  namespace: Glitch9.AIDevKit
-  syntax:
-    content: UniTask<AssistantMessage> EnterChatAsync(ChatMessage inputMessage, ChatStreamHandler streamHandler = null)
-    parameters:
-    - id: inputMessage
-      type: Glitch9.AIDevKit.ChatMessage
-    - id: streamHandler
-      type: Glitch9.AIDevKit.ChatStreamHandler
-    return:
-      type: UniTask{Glitch9.AIDevKit.AssistantMessage}
-    content.vb: Function EnterChatAsync(inputMessage As ChatMessage, streamHandler As ChatStreamHandler = Nothing) As UniTask(Of AssistantMessage)
-  overload: Glitch9.AIDevKit.IChatbot.EnterChatAsync*
-- uid: Glitch9.AIDevKit.IChatbot.ClearMessages
-  commentId: M:Glitch9.AIDevKit.IChatbot.ClearMessages
-  id: ClearMessages
-  parent: Glitch9.AIDevKit.IChatbot
-  langs:
-  - csharp
-  - vb
-  name: ClearMessages()
-  nameWithType: IChatbot.ClearMessages()
-  fullName: Glitch9.AIDevKit.IChatbot.ClearMessages()
-  type: Method
-  source:
-    id: ClearMessages
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Common/IChatbot.cs
     startLine: 11
   namespace: Glitch9.AIDevKit
   syntax:
-    content: void ClearMessages()
-    content.vb: Sub ClearMessages()
-  overload: Glitch9.AIDevKit.IChatbot.ClearMessages*
+    content: UniTask<ChatMessage> EnterChatAsync(ChatMessage inputMessage, ResponseType requestType = ResponseType.None)
+    parameters:
+    - id: inputMessage
+      type: Glitch9.AIDevKit.ChatMessage
+    - id: requestType
+      type: Glitch9.AIDevKit.ResponseType
+    return:
+      type: UniTask{Glitch9.AIDevKit.ChatMessage}
+    content.vb: Function EnterChatAsync(inputMessage As ChatMessage, requestType As ResponseType = ResponseType.None) As UniTask(Of ChatMessage)
+  overload: Glitch9.AIDevKit.IChatbot.EnterChatAsync*
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -164,6 +167,29 @@ references:
   - uid: Glitch9.AIDevKit
     name: AIDevKit
     href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.IChatbot.Name*
+  commentId: Overload:Glitch9.AIDevKit.IChatbot.Name
+  href: Glitch9.AIDevKit.IChatbot.html#Glitch9_AIDevKit_IChatbot_Name
+  name: Name
+  nameWithType: IChatbot.Name
+  fullName: Glitch9.AIDevKit.IChatbot.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: Glitch9.AIDevKit.IChatbot.Stream*
   commentId: Overload:Glitch9.AIDevKit.IChatbot.Stream
   href: Glitch9.AIDevKit.IChatbot.html#Glitch9_AIDevKit_IChatbot_Stream
@@ -180,13 +206,6 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Glitch9.AIDevKit.IChatbot.Model*
   commentId: Overload:Glitch9.AIDevKit.IChatbot.Model
   href: Glitch9.AIDevKit.IChatbot.html#Glitch9_AIDevKit_IChatbot_Model
@@ -301,7 +320,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Glitch9.AIDevKit.IChatbot.EnterChatAsync*
   commentId: Overload:Glitch9.AIDevKit.IChatbot.EnterChatAsync
-  href: Glitch9.AIDevKit.IChatbot.html#Glitch9_AIDevKit_IChatbot_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_Glitch9_AIDevKit_ChatStreamHandler_
+  href: Glitch9.AIDevKit.IChatbot.html#Glitch9_AIDevKit_IChatbot_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_Glitch9_AIDevKit_ResponseType_
   name: EnterChatAsync
   nameWithType: IChatbot.EnterChatAsync
   fullName: Glitch9.AIDevKit.IChatbot.EnterChatAsync
@@ -312,31 +331,31 @@ references:
   name: ChatMessage
   nameWithType: ChatMessage
   fullName: Glitch9.AIDevKit.ChatMessage
-- uid: Glitch9.AIDevKit.ChatStreamHandler
-  commentId: T:Glitch9.AIDevKit.ChatStreamHandler
+- uid: Glitch9.AIDevKit.ResponseType
+  commentId: T:Glitch9.AIDevKit.ResponseType
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ChatStreamHandler.html
-  name: ChatStreamHandler
-  nameWithType: ChatStreamHandler
-  fullName: Glitch9.AIDevKit.ChatStreamHandler
-- uid: UniTask{Glitch9.AIDevKit.AssistantMessage}
-  commentId: '!:UniTask{Glitch9.AIDevKit.AssistantMessage}'
+  href: Glitch9.AIDevKit.ResponseType.html
+  name: ResponseType
+  nameWithType: ResponseType
+  fullName: Glitch9.AIDevKit.ResponseType
+- uid: UniTask{Glitch9.AIDevKit.ChatMessage}
+  commentId: '!:UniTask{Glitch9.AIDevKit.ChatMessage}'
   definition: UniTask`1
-  href: Glitch9.AIDevKit.AssistantMessage.html
-  name: UniTask<AssistantMessage>
-  nameWithType: UniTask<AssistantMessage>
-  fullName: UniTask<Glitch9.AIDevKit.AssistantMessage>
-  nameWithType.vb: UniTask(Of AssistantMessage)
-  fullName.vb: UniTask(Of Glitch9.AIDevKit.AssistantMessage)
-  name.vb: UniTask(Of AssistantMessage)
+  href: Glitch9.AIDevKit.ChatMessage.html
+  name: UniTask<ChatMessage>
+  nameWithType: UniTask<ChatMessage>
+  fullName: UniTask<Glitch9.AIDevKit.ChatMessage>
+  nameWithType.vb: UniTask(Of ChatMessage)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.ChatMessage)
+  name.vb: UniTask(Of ChatMessage)
   spec.csharp:
   - uid: UniTask`1
     name: UniTask
     isExternal: true
   - name: <
-  - uid: Glitch9.AIDevKit.AssistantMessage
-    name: AssistantMessage
-    href: Glitch9.AIDevKit.AssistantMessage.html
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
   - name: '>'
   spec.vb:
   - uid: UniTask`1
@@ -345,9 +364,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.AIDevKit.AssistantMessage
-    name: AssistantMessage
-    href: Glitch9.AIDevKit.AssistantMessage.html
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
   - name: )
 - uid: UniTask`1
   isExternal: true
@@ -373,9 +392,3 @@ references:
   - name: " "
   - name: ''
   - name: )
-- uid: Glitch9.AIDevKit.IChatbot.ClearMessages*
-  commentId: Overload:Glitch9.AIDevKit.IChatbot.ClearMessages
-  href: Glitch9.AIDevKit.IChatbot.html#Glitch9_AIDevKit_IChatbot_ClearMessages
-  name: ClearMessages
-  nameWithType: IChatbot.ClearMessages
-  fullName: Glitch9.AIDevKit.IChatbot.ClearMessages

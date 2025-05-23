@@ -31,13 +31,25 @@ items:
     startLine: 7
   namespace: Glitch9.AIDevKit
   syntax:
-    content: 'public class AIDevKitSettings : ScriptableResource<AIDevKitSettings>'
-    content.vb: Public Class AIDevKitSettings Inherits ScriptableResource(Of AIDevKitSettings)
+    content: >-
+      [AssetPath("Resources/AIDevKit")]
+
+      public class AIDevKitSettings : ScriptableResource<AIDevKitSettings>
+    content.vb: >-
+      <AssetPath("Resources/AIDevKit")>
+
+      Public Class AIDevKitSettings Inherits ScriptableResource(Of AIDevKitSettings)
   inheritance:
   - System.Object
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.AIDevKitSettings}
   inheritedMembers:
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.AIDevKitSettings}.Instance
+  attributes:
+  - type: Glitch9.AssetPathAttribute
+    ctor: Glitch9.AssetPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Resources/AIDevKit
 - uid: Glitch9.AIDevKit.AIDevKitSettings.RuntimeOutputPath
   commentId: P:Glitch9.AIDevKit.AIDevKitSettings.RuntimeOutputPath
   id: RuntimeOutputPath

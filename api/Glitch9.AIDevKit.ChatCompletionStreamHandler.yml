@@ -1,0 +1,836 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  commentId: T:Glitch9.AIDevKit.ChatCompletionStreamHandler
+  id: ChatCompletionStreamHandler
+  parent: Glitch9.AIDevKit
+  children:
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.CreateResult
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.FinishStreaming
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.OnError(System.String)
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.OnProgress(System.Single)
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveChunk(Glitch9.AIDevKit.ChatCompletionChunk)
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveStreamedData(System.String)
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.SetFactory(System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}})
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.SetTask(Glitch9.AIDevKit.GENResponseTask)
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.StartStreaming
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler._chunkFactory
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler._isDone
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler._lastChunk
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler._task
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.onDone
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.onError
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler.onStart
+  langs:
+  - csharp
+  - vb
+  name: ChatCompletionStreamHandler
+  nameWithType: ChatCompletionStreamHandler
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  type: Class
+  source:
+    id: ChatCompletionStreamHandler
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 60
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: 'public abstract class ChatCompletionStreamHandler : IChatCompletionStreamHandler'
+    content.vb: Public MustInherit Class ChatCompletionStreamHandler Implements IChatCompletionStreamHandler
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Glitch9.AIDevKit.MultiResponseStreamHandler
+  - Glitch9.AIDevKit.SingleResponseStreamHandler
+  implements:
+  - Glitch9.AIDevKit.IChatCompletionStreamHandler
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.onStart
+  commentId: F:Glitch9.AIDevKit.ChatCompletionStreamHandler.onStart
+  id: onStart
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: onStart
+  nameWithType: ChatCompletionStreamHandler.onStart
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.onStart
+  type: Field
+  source:
+    id: onStart
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 62
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public Action onStart
+    return:
+      type: System.Action
+    content.vb: Public onStart As Action
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.onError
+  commentId: F:Glitch9.AIDevKit.ChatCompletionStreamHandler.onError
+  id: onError
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: onError
+  nameWithType: ChatCompletionStreamHandler.onError
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.onError
+  type: Field
+  source:
+    id: onError
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 63
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public Action<string> onError
+    return:
+      type: System.Action{System.String}
+    content.vb: Public onError As Action(Of String)
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.onDone
+  commentId: F:Glitch9.AIDevKit.ChatCompletionStreamHandler.onDone
+  id: onDone
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: onDone
+  nameWithType: ChatCompletionStreamHandler.onDone
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.onDone
+  type: Field
+  source:
+    id: onDone
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 64
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public Action<ChatCompletion> onDone
+    return:
+      type: System.Action{Glitch9.AIDevKit.ChatCompletion}
+    content.vb: Public onDone As Action(Of ChatCompletion)
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler._task
+  commentId: F:Glitch9.AIDevKit.ChatCompletionStreamHandler._task
+  id: _task
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: _task
+  nameWithType: ChatCompletionStreamHandler._task
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler._task
+  type: Field
+  source:
+    id: _task
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 65
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: protected GENResponseTask _task
+    return:
+      type: Glitch9.AIDevKit.GENResponseTask
+    content.vb: Protected _task As GENResponseTask
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler._chunkFactory
+  commentId: F:Glitch9.AIDevKit.ChatCompletionStreamHandler._chunkFactory
+  id: _chunkFactory
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: _chunkFactory
+  nameWithType: ChatCompletionStreamHandler._chunkFactory
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler._chunkFactory
+  type: Field
+  source:
+    id: _chunkFactory
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 66
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: protected Func<string, IEnumerable<ChatCompletionChunk>> _chunkFactory
+    return:
+      type: System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}}
+    content.vb: Protected _chunkFactory As Func(Of String, IEnumerable(Of ChatCompletionChunk))
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler._lastChunk
+  commentId: F:Glitch9.AIDevKit.ChatCompletionStreamHandler._lastChunk
+  id: _lastChunk
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: _lastChunk
+  nameWithType: ChatCompletionStreamHandler._lastChunk
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler._lastChunk
+  type: Field
+  source:
+    id: _lastChunk
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 67
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: protected ChatCompletionChunk _lastChunk
+    return:
+      type: Glitch9.AIDevKit.ChatCompletionChunk
+    content.vb: Protected _lastChunk As ChatCompletionChunk
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler._isDone
+  commentId: F:Glitch9.AIDevKit.ChatCompletionStreamHandler._isDone
+  id: _isDone
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: _isDone
+  nameWithType: ChatCompletionStreamHandler._isDone
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler._isDone
+  type: Field
+  source:
+    id: _isDone
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 68
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: protected bool _isDone
+    return:
+      type: System.Boolean
+    content.vb: Protected _isDone As Boolean
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetFactory(System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}})
+  commentId: M:Glitch9.AIDevKit.ChatCompletionStreamHandler.SetFactory(System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}})
+  id: SetFactory(System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}})
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: SetFactory(Func<string, IEnumerable<ChatCompletionChunk>>)
+  nameWithType: ChatCompletionStreamHandler.SetFactory(Func<string, IEnumerable<ChatCompletionChunk>>)
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetFactory(System.Func<string, System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.ChatCompletionChunk>>)
+  type: Method
+  source:
+    id: SetFactory
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 71
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public IChatCompletionStreamHandler SetFactory(Func<string, IEnumerable<ChatCompletionChunk>> chunkFactory)
+    parameters:
+    - id: chunkFactory
+      type: System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}}
+    return:
+      type: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    content.vb: Public Function SetFactory(chunkFactory As Func(Of String, IEnumerable(Of ChatCompletionChunk))) As IChatCompletionStreamHandler
+  overload: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetFactory*
+  implements:
+  - Glitch9.AIDevKit.IChatCompletionStreamHandler.SetFactory(System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}})
+  nameWithType.vb: ChatCompletionStreamHandler.SetFactory(Func(Of String, IEnumerable(Of ChatCompletionChunk)))
+  fullName.vb: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetFactory(System.Func(Of String, System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.ChatCompletionChunk)))
+  name.vb: SetFactory(Func(Of String, IEnumerable(Of ChatCompletionChunk)))
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetTask(Glitch9.AIDevKit.GENResponseTask)
+  commentId: M:Glitch9.AIDevKit.ChatCompletionStreamHandler.SetTask(Glitch9.AIDevKit.GENResponseTask)
+  id: SetTask(Glitch9.AIDevKit.GENResponseTask)
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: SetTask(GENResponseTask)
+  nameWithType: ChatCompletionStreamHandler.SetTask(GENResponseTask)
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetTask(Glitch9.AIDevKit.GENResponseTask)
+  type: Method
+  source:
+    id: SetTask
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 78
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public IChatCompletionStreamHandler SetTask(GENResponseTask task)
+    parameters:
+    - id: task
+      type: Glitch9.AIDevKit.GENResponseTask
+    return:
+      type: Glitch9.AIDevKit.IChatCompletionStreamHandler
+    content.vb: Public Function SetTask(task As GENResponseTask) As IChatCompletionStreamHandler
+  overload: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetTask*
+  implements:
+  - Glitch9.AIDevKit.IChatCompletionStreamHandler.SetTask(Glitch9.AIDevKit.GENResponseTask)
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.StartStreaming
+  commentId: M:Glitch9.AIDevKit.ChatCompletionStreamHandler.StartStreaming
+  id: StartStreaming
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: StartStreaming()
+  nameWithType: ChatCompletionStreamHandler.StartStreaming()
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.StartStreaming()
+  type: Method
+  source:
+    id: StartStreaming
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 84
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public void StartStreaming()
+    content.vb: Public Sub StartStreaming()
+  overload: Glitch9.AIDevKit.ChatCompletionStreamHandler.StartStreaming*
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveStreamedData(System.String)
+  commentId: M:Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveStreamedData(System.String)
+  id: OnReceiveStreamedData(System.String)
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: OnReceiveStreamedData(string)
+  nameWithType: ChatCompletionStreamHandler.OnReceiveStreamedData(string)
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveStreamedData(string)
+  type: Method
+  source:
+    id: OnReceiveStreamedData
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 85
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public void OnReceiveStreamedData(string streamedText)
+    parameters:
+    - id: streamedText
+      type: System.String
+    content.vb: Public Sub OnReceiveStreamedData(streamedText As String)
+  overload: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveStreamedData*
+  nameWithType.vb: ChatCompletionStreamHandler.OnReceiveStreamedData(String)
+  fullName.vb: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveStreamedData(String)
+  name.vb: OnReceiveStreamedData(String)
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveChunk(Glitch9.AIDevKit.ChatCompletionChunk)
+  commentId: M:Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveChunk(Glitch9.AIDevKit.ChatCompletionChunk)
+  id: OnReceiveChunk(Glitch9.AIDevKit.ChatCompletionChunk)
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: OnReceiveChunk(ChatCompletionChunk)
+  nameWithType: ChatCompletionStreamHandler.OnReceiveChunk(ChatCompletionChunk)
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveChunk(Glitch9.AIDevKit.ChatCompletionChunk)
+  type: Method
+  source:
+    id: OnReceiveChunk
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 112
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: protected abstract void OnReceiveChunk(ChatCompletionChunk chunk)
+    parameters:
+    - id: chunk
+      type: Glitch9.AIDevKit.ChatCompletionChunk
+    content.vb: Protected MustOverride Sub OnReceiveChunk(chunk As ChatCompletionChunk)
+  overload: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveChunk*
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.CreateResult
+  commentId: M:Glitch9.AIDevKit.ChatCompletionStreamHandler.CreateResult
+  id: CreateResult
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: CreateResult()
+  nameWithType: ChatCompletionStreamHandler.CreateResult()
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.CreateResult()
+  type: Method
+  source:
+    id: CreateResult
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 113
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: protected abstract ChatCompletion CreateResult()
+    return:
+      type: Glitch9.AIDevKit.ChatCompletion
+    content.vb: Protected MustOverride Function CreateResult() As ChatCompletion
+  overload: Glitch9.AIDevKit.ChatCompletionStreamHandler.CreateResult*
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.FinishStreaming
+  commentId: M:Glitch9.AIDevKit.ChatCompletionStreamHandler.FinishStreaming
+  id: FinishStreaming
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: FinishStreaming()
+  nameWithType: ChatCompletionStreamHandler.FinishStreaming()
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.FinishStreaming()
+  type: Method
+  source:
+    id: FinishStreaming
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 115
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public void FinishStreaming()
+    content.vb: Public Sub FinishStreaming()
+  overload: Glitch9.AIDevKit.ChatCompletionStreamHandler.FinishStreaming*
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnError(System.String)
+  commentId: M:Glitch9.AIDevKit.ChatCompletionStreamHandler.OnError(System.String)
+  id: OnError(System.String)
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: OnError(string)
+  nameWithType: ChatCompletionStreamHandler.OnError(string)
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnError(string)
+  type: Method
+  source:
+    id: OnError
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 131
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public void OnError(string error)
+    parameters:
+    - id: error
+      type: System.String
+    content.vb: Public Sub OnError([error] As String)
+  overload: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnError*
+  nameWithType.vb: ChatCompletionStreamHandler.OnError(String)
+  fullName.vb: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnError(String)
+  name.vb: OnError(String)
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnProgress(System.Single)
+  commentId: M:Glitch9.AIDevKit.ChatCompletionStreamHandler.OnProgress(System.Single)
+  id: OnProgress(System.Single)
+  parent: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  langs:
+  - csharp
+  - vb
+  name: OnProgress(float)
+  nameWithType: ChatCompletionStreamHandler.OnProgress(float)
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnProgress(float)
+  type: Method
+  source:
+    id: OnProgress
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Streaming/ChatCompletionStreamHandler.cs
+    startLine: 137
+  namespace: Glitch9.AIDevKit
+  example: []
+  syntax:
+    content: public void OnProgress(float progress)
+    parameters:
+    - id: progress
+      type: System.Single
+    content.vb: Public Sub OnProgress(progress As Single)
+  overload: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnProgress*
+  nameWithType.vb: ChatCompletionStreamHandler.OnProgress(Single)
+  fullName.vb: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnProgress(Single)
+  name.vb: OnProgress(Single)
+references:
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+  commentId: T:Glitch9.AIDevKit.IChatCompletionStreamHandler
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
+  name: IChatCompletionStreamHandler
+  nameWithType: IChatCompletionStreamHandler
+  fullName: Glitch9.AIDevKit.IChatCompletionStreamHandler
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  name: Action<string>
+  nameWithType: Action<string>
+  fullName: System.Action<string>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action{Glitch9.AIDevKit.ChatCompletion}
+  commentId: T:System.Action{Glitch9.AIDevKit.ChatCompletion}
+  parent: System
+  definition: System.Action`1
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: Action<ChatCompletion>
+  nameWithType: Action<ChatCompletion>
+  fullName: System.Action<Glitch9.AIDevKit.ChatCompletion>
+  nameWithType.vb: Action(Of ChatCompletion)
+  fullName.vb: System.Action(Of Glitch9.AIDevKit.ChatCompletion)
+  name.vb: Action(Of ChatCompletion)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENResponseTask
+  commentId: T:Glitch9.AIDevKit.GENResponseTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENResponseTask.html
+  name: GENResponseTask
+  nameWithType: GENResponseTask
+  fullName: Glitch9.AIDevKit.GENResponseTask
+- uid: System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}}
+  commentId: T:System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}}
+  parent: System
+  definition: System.Func`2
+  href: Glitch9.AIDevKit.ChatCompletionChunk.html
+  name: Func<string, IEnumerable<ChatCompletionChunk>>
+  nameWithType: Func<string, IEnumerable<ChatCompletionChunk>>
+  fullName: System.Func<string, System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.ChatCompletionChunk>>
+  nameWithType.vb: Func(Of String, IEnumerable(Of ChatCompletionChunk))
+  fullName.vb: System.Func(Of String, System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.ChatCompletionChunk))
+  name.vb: Func(Of String, IEnumerable(Of ChatCompletionChunk))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ChatCompletionChunk
+    name: ChatCompletionChunk
+    href: Glitch9.AIDevKit.ChatCompletionChunk.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatCompletionChunk
+    name: ChatCompletionChunk
+    href: Glitch9.AIDevKit.ChatCompletionChunk.html
+  - name: )
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Glitch9.AIDevKit.ChatCompletionChunk
+  commentId: T:Glitch9.AIDevKit.ChatCompletionChunk
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatCompletionChunk.html
+  name: ChatCompletionChunk
+  nameWithType: ChatCompletionChunk
+  fullName: Glitch9.AIDevKit.ChatCompletionChunk
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetFactory*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletionStreamHandler.SetFactory
+  href: Glitch9.AIDevKit.ChatCompletionStreamHandler.html#Glitch9_AIDevKit_ChatCompletionStreamHandler_SetFactory_System_Func_System_String_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_ChatCompletionChunk___
+  name: SetFactory
+  nameWithType: ChatCompletionStreamHandler.SetFactory
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetFactory
+- uid: Glitch9.AIDevKit.IChatCompletionStreamHandler.SetFactory(System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}})
+  commentId: M:Glitch9.AIDevKit.IChatCompletionStreamHandler.SetFactory(System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}})
+  parent: Glitch9.AIDevKit.IChatCompletionStreamHandler
+  isExternal: true
+  href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html#Glitch9_AIDevKit_IChatCompletionStreamHandler_SetFactory_System_Func_System_String_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_ChatCompletionChunk___
+  name: SetFactory(Func<string, IEnumerable<ChatCompletionChunk>>)
+  nameWithType: IChatCompletionStreamHandler.SetFactory(Func<string, IEnumerable<ChatCompletionChunk>>)
+  fullName: Glitch9.AIDevKit.IChatCompletionStreamHandler.SetFactory(System.Func<string, System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.ChatCompletionChunk>>)
+  nameWithType.vb: IChatCompletionStreamHandler.SetFactory(Func(Of String, IEnumerable(Of ChatCompletionChunk)))
+  fullName.vb: Glitch9.AIDevKit.IChatCompletionStreamHandler.SetFactory(System.Func(Of String, System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.ChatCompletionChunk)))
+  name.vb: SetFactory(Func(Of String, IEnumerable(Of ChatCompletionChunk)))
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler.SetFactory(System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}})
+    name: SetFactory
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html#Glitch9_AIDevKit_IChatCompletionStreamHandler_SetFactory_System_Func_System_String_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_ChatCompletionChunk___
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ChatCompletionChunk
+    name: ChatCompletionChunk
+    href: Glitch9.AIDevKit.ChatCompletionChunk.html
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler.SetFactory(System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}})
+    name: SetFactory
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html#Glitch9_AIDevKit_IChatCompletionStreamHandler_SetFactory_System_Func_System_String_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_ChatCompletionChunk___
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatCompletionChunk
+    name: ChatCompletionChunk
+    href: Glitch9.AIDevKit.ChatCompletionChunk.html
+  - name: )
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetTask*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletionStreamHandler.SetTask
+  href: Glitch9.AIDevKit.ChatCompletionStreamHandler.html#Glitch9_AIDevKit_ChatCompletionStreamHandler_SetTask_Glitch9_AIDevKit_GENResponseTask_
+  name: SetTask
+  nameWithType: ChatCompletionStreamHandler.SetTask
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.SetTask
+- uid: Glitch9.AIDevKit.IChatCompletionStreamHandler.SetTask(Glitch9.AIDevKit.GENResponseTask)
+  commentId: M:Glitch9.AIDevKit.IChatCompletionStreamHandler.SetTask(Glitch9.AIDevKit.GENResponseTask)
+  parent: Glitch9.AIDevKit.IChatCompletionStreamHandler
+  href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html#Glitch9_AIDevKit_IChatCompletionStreamHandler_SetTask_Glitch9_AIDevKit_GENResponseTask_
+  name: SetTask(GENResponseTask)
+  nameWithType: IChatCompletionStreamHandler.SetTask(GENResponseTask)
+  fullName: Glitch9.AIDevKit.IChatCompletionStreamHandler.SetTask(Glitch9.AIDevKit.GENResponseTask)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler.SetTask(Glitch9.AIDevKit.GENResponseTask)
+    name: SetTask
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html#Glitch9_AIDevKit_IChatCompletionStreamHandler_SetTask_Glitch9_AIDevKit_GENResponseTask_
+  - name: (
+  - uid: Glitch9.AIDevKit.GENResponseTask
+    name: GENResponseTask
+    href: Glitch9.AIDevKit.GENResponseTask.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.IChatCompletionStreamHandler.SetTask(Glitch9.AIDevKit.GENResponseTask)
+    name: SetTask
+    href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html#Glitch9_AIDevKit_IChatCompletionStreamHandler_SetTask_Glitch9_AIDevKit_GENResponseTask_
+  - name: (
+  - uid: Glitch9.AIDevKit.GENResponseTask
+    name: GENResponseTask
+    href: Glitch9.AIDevKit.GENResponseTask.html
+  - name: )
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.StartStreaming*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletionStreamHandler.StartStreaming
+  href: Glitch9.AIDevKit.ChatCompletionStreamHandler.html#Glitch9_AIDevKit_ChatCompletionStreamHandler_StartStreaming
+  name: StartStreaming
+  nameWithType: ChatCompletionStreamHandler.StartStreaming
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.StartStreaming
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveStreamedData*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveStreamedData
+  href: Glitch9.AIDevKit.ChatCompletionStreamHandler.html#Glitch9_AIDevKit_ChatCompletionStreamHandler_OnReceiveStreamedData_System_String_
+  name: OnReceiveStreamedData
+  nameWithType: ChatCompletionStreamHandler.OnReceiveStreamedData
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveStreamedData
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveChunk*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveChunk
+  href: Glitch9.AIDevKit.ChatCompletionStreamHandler.html#Glitch9_AIDevKit_ChatCompletionStreamHandler_OnReceiveChunk_Glitch9_AIDevKit_ChatCompletionChunk_
+  name: OnReceiveChunk
+  nameWithType: ChatCompletionStreamHandler.OnReceiveChunk
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnReceiveChunk
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.CreateResult*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletionStreamHandler.CreateResult
+  href: Glitch9.AIDevKit.ChatCompletionStreamHandler.html#Glitch9_AIDevKit_ChatCompletionStreamHandler_CreateResult
+  name: CreateResult
+  nameWithType: ChatCompletionStreamHandler.CreateResult
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.CreateResult
+- uid: Glitch9.AIDevKit.ChatCompletion
+  commentId: T:Glitch9.AIDevKit.ChatCompletion
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: ChatCompletion
+  nameWithType: ChatCompletion
+  fullName: Glitch9.AIDevKit.ChatCompletion
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.FinishStreaming*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletionStreamHandler.FinishStreaming
+  href: Glitch9.AIDevKit.ChatCompletionStreamHandler.html#Glitch9_AIDevKit_ChatCompletionStreamHandler_FinishStreaming
+  name: FinishStreaming
+  nameWithType: ChatCompletionStreamHandler.FinishStreaming
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.FinishStreaming
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnError*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletionStreamHandler.OnError
+  href: Glitch9.AIDevKit.ChatCompletionStreamHandler.html#Glitch9_AIDevKit_ChatCompletionStreamHandler_OnError_System_String_
+  name: OnError
+  nameWithType: ChatCompletionStreamHandler.OnError
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnError
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnProgress*
+  commentId: Overload:Glitch9.AIDevKit.ChatCompletionStreamHandler.OnProgress
+  href: Glitch9.AIDevKit.ChatCompletionStreamHandler.html#Glitch9_AIDevKit_ChatCompletionStreamHandler_OnProgress_System_Single_
+  name: OnProgress
+  nameWithType: ChatCompletionStreamHandler.OnProgress
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler.OnProgress
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

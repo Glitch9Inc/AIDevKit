@@ -6,46 +6,49 @@ items:
   children:
   - Glitch9.AIDevKit.AIDevKitAsset
   - Glitch9.AIDevKit.AIDevKitSettings
-  - Glitch9.AIDevKit.AIProvider
   - Glitch9.AIDevKit.AIProviders
+  - Glitch9.AIDevKit.AIRequest
+  - Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2
+  - Glitch9.AIDevKit.AIResponse
   - Glitch9.AIDevKit.Annotation
   - Glitch9.AIDevKit.AnnotationConverter
   - Glitch9.AIDevKit.AnnotationType
+  - Glitch9.AIDevKit.Api
+  - Glitch9.AIDevKit.ApiFile
   - Glitch9.AIDevKit.ApiKey
   - Glitch9.AIDevKit.ApproximateLocation
-  - Glitch9.AIDevKit.AssistantMessage
   - Glitch9.AIDevKit.AudioBase64ContentPart
   - Glitch9.AIDevKit.AudioContentPart
   - Glitch9.AIDevKit.AudioRef
   - Glitch9.AIDevKit.BlockedPromptException
-  - Glitch9.AIDevKit.BrokenCompletionException
+  - Glitch9.AIDevKit.BrokenResponseException
   - Glitch9.AIDevKit.ChatChoice
   - Glitch9.AIDevKit.ChatCompletion
+  - Glitch9.AIDevKit.ChatCompletionChunk
   - Glitch9.AIDevKit.ChatCompletionRequest
   - Glitch9.AIDevKit.ChatCompletionRequest.Builder
+  - Glitch9.AIDevKit.ChatCompletionStreamHandler
+  - Glitch9.AIDevKit.ChatCompletionStreamReceiver
   - Glitch9.AIDevKit.ChatDelta
   - Glitch9.AIDevKit.ChatMessage
   - Glitch9.AIDevKit.ChatRole
-  - Glitch9.AIDevKit.ChatSession
-  - Glitch9.AIDevKit.ChatStreamHandler
-  - Glitch9.AIDevKit.ChatSummarizer
   - Glitch9.AIDevKit.CompletionRequest
   - Glitch9.AIDevKit.CompletionRequest.Builder
   - Glitch9.AIDevKit.CompletionRequestBase
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
-  - Glitch9.AIDevKit.CompletionRequestConverter
+  - Glitch9.AIDevKit.CompletionRequestConverter`1
   - Glitch9.AIDevKit.CompletionResult`1
   - Glitch9.AIDevKit.Content
   - Glitch9.AIDevKit.ContentPart
   - Glitch9.AIDevKit.ContentPartType
   - Glitch9.AIDevKit.ContentPartWrapper
   - Glitch9.AIDevKit.DeprecatedModelException
+  - Glitch9.AIDevKit.EmptyPromptException
   - Glitch9.AIDevKit.EmptyResponseException
   - Glitch9.AIDevKit.ErrorResponse
   - Glitch9.AIDevKit.ErrorResponseWrapper
   - Glitch9.AIDevKit.FileBase64ContentPart
   - Glitch9.AIDevKit.FileContentPart
-  - Glitch9.AIDevKit.FileData
   - Glitch9.AIDevKit.FileIdContentPart
   - Glitch9.AIDevKit.FileLibrary
   - Glitch9.AIDevKit.FileLibrary.Repo
@@ -53,46 +56,45 @@ items:
   - Glitch9.AIDevKit.FunctionCall
   - Glitch9.AIDevKit.FunctionDeclaration
   - Glitch9.AIDevKit.FunctionDeclarationConverter
-  - Glitch9.AIDevKit.FunctionDelegate`2
   - Glitch9.AIDevKit.FunctionResponse
   - Glitch9.AIDevKit.GENAudioInputTask`2
   - Glitch9.AIDevKit.GENAudioIsolationTask
   - Glitch9.AIDevKit.GENAudioOutputTask`2
-  - Glitch9.AIDevKit.GENChatTask
-  - Glitch9.AIDevKit.GENCompletionTask`3
-  - Glitch9.AIDevKit.GENContentTask
+  - Glitch9.AIDevKit.GENCompletionTask`2
   - Glitch9.AIDevKit.GENImageTask
   - Glitch9.AIDevKit.GENImageVariationTask
   - Glitch9.AIDevKit.GENInpaintTask
   - Glitch9.AIDevKit.GENModerationTask
-  - Glitch9.AIDevKit.GENObjectTask`1
+  - Glitch9.AIDevKit.GENResponseTask
   - Glitch9.AIDevKit.GENSequence
   - Glitch9.AIDevKit.GENSoundEffectTask
   - Glitch9.AIDevKit.GENSpeechTask
+  - Glitch9.AIDevKit.GENStructTask`1
   - Glitch9.AIDevKit.GENTaskExtensions
   - Glitch9.AIDevKit.GENTask`3
-  - Glitch9.AIDevKit.GENTextTask
   - Glitch9.AIDevKit.GENTranscriptTask
   - Glitch9.AIDevKit.GENTranslationTask
   - Glitch9.AIDevKit.GENVideoTask
   - Glitch9.AIDevKit.GENVoiceChangeTask
   - Glitch9.AIDevKit.GeneratedAsset`2
   - Glitch9.AIDevKit.GeneratedAudio
-  - Glitch9.AIDevKit.GeneratedContent
   - Glitch9.AIDevKit.GeneratedImage
   - Glitch9.AIDevKit.GeneratedImageExtensions
   - Glitch9.AIDevKit.GeneratedResult`1
-  - Glitch9.AIDevKit.GeneratedText
   - Glitch9.AIDevKit.GeneratedVideo
   - Glitch9.AIDevKit.HarmBlockThreshold
   - Glitch9.AIDevKit.HarmCategory
   - Glitch9.AIDevKit.HarmProbability
   - Glitch9.AIDevKit.IAIDevKitAssetFilter`1
+  - Glitch9.AIDevKit.IApiFile
+  - Glitch9.AIDevKit.IChatCompletionStreamHandler
   - Glitch9.AIDevKit.IChatbot
-  - Glitch9.AIDevKit.IFunctionDelegate
   - Glitch9.AIDevKit.IGENTask
-  - Glitch9.AIDevKit.IGenerated
-  - Glitch9.AIDevKit.ISerializedContent
+  - Glitch9.AIDevKit.IGeneratedResult
+  - Glitch9.AIDevKit.IStreamingAudioEventReceiver
+  - Glitch9.AIDevKit.IStreamingTextEventReceiver
+  - Glitch9.AIDevKit.IToolCallReceiver
+  - Glitch9.AIDevKit.IWebSocketEventReceiver
   - Glitch9.AIDevKit.ImageBase64ContentPart
   - Glitch9.AIDevKit.ImageContentPart
   - Glitch9.AIDevKit.ImageContentPartConverter
@@ -105,15 +107,17 @@ items:
   - Glitch9.AIDevKit.ImageStyle
   - Glitch9.AIDevKit.ImageUrlContentPart
   - Glitch9.AIDevKit.InpaintPrompt
+  - Glitch9.AIDevKit.InterruptedResponseException
+  - Glitch9.AIDevKit.InvalidEndpointException
+  - Glitch9.AIDevKit.InvalidServiceStatusException
   - Glitch9.AIDevKit.JsonSchemaFormat
   - Glitch9.AIDevKit.LocalModelOptionsConverter
   - Glitch9.AIDevKit.Logprobs
   - Glitch9.AIDevKit.LogprobsContent
   - Glitch9.AIDevKit.Modality
   - Glitch9.AIDevKit.Model
-  - Glitch9.AIDevKit.ModelCapability
-  - Glitch9.AIDevKit.ModelCapabilityExtensions
   - Glitch9.AIDevKit.ModelFamily
+  - Glitch9.AIDevKit.ModelFeature
   - Glitch9.AIDevKit.ModelFilter
   - Glitch9.AIDevKit.ModelLibrary
   - Glitch9.AIDevKit.ModelLibrary.Repo
@@ -121,44 +125,41 @@ items:
   - Glitch9.AIDevKit.ModelOptions.Builder
   - Glitch9.AIDevKit.ModelPrice
   - Glitch9.AIDevKit.ModelPriceArrayExtensions
-  - Glitch9.AIDevKit.ModelRequest
-  - Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
-  - Glitch9.AIDevKit.ModelResponse
   - Glitch9.AIDevKit.ModerationOptions
+  - Glitch9.AIDevKit.MultiResponseStreamHandler
+  - Glitch9.AIDevKit.MultiResponseStreamReceiver
   - Glitch9.AIDevKit.NotSupportedFeatureException
-  - Glitch9.AIDevKit.NotSupportedGENTaskException
   - Glitch9.AIDevKit.OllamaModelOptionsConverter
   - Glitch9.AIDevKit.OpenAIServiceTier
   - Glitch9.AIDevKit.ProjectContext
   - Glitch9.AIDevKit.ProjectContext.LanguageTone
   - Glitch9.AIDevKit.ProjectContext.Platform
-  - Glitch9.AIDevKit.Prompt
   - Glitch9.AIDevKit.PromptFeedback
   - Glitch9.AIDevKit.PromptHistory
   - Glitch9.AIDevKit.PromptHistory.Repo
   - Glitch9.AIDevKit.PromptRecord
+  - Glitch9.AIDevKit.RateLimitExceededException
   - Glitch9.AIDevKit.ReasoningEffort
   - Glitch9.AIDevKit.ReasoningOptions
   - Glitch9.AIDevKit.ResponseFormat
   - Glitch9.AIDevKit.ResponseFormatConverter
   - Glitch9.AIDevKit.ResponseFormatExtensions
+  - Glitch9.AIDevKit.ResponseMessage
+  - Glitch9.AIDevKit.ResponseType
   - Glitch9.AIDevKit.SafetyFeedback
   - Glitch9.AIDevKit.SafetyRating
   - Glitch9.AIDevKit.SafetySetting
   - Glitch9.AIDevKit.SearchContextSize
-  - Glitch9.AIDevKit.SerializedAudioContent
-  - Glitch9.AIDevKit.SerializedContent`1
-  - Glitch9.AIDevKit.SerializedFileContent
-  - Glitch9.AIDevKit.SerializedImageContent
-  - Glitch9.AIDevKit.SerializedTextContent
-  - Glitch9.AIDevKit.SerializedVideoContent
+  - Glitch9.AIDevKit.SingleResponseStreamHandler
+  - Glitch9.AIDevKit.SingleResponseStreamReceiver
   - Glitch9.AIDevKit.SpeechOutputOptions
-  - Glitch9.AIDevKit.StopCompletionException
   - Glitch9.AIDevKit.StopReason
   - Glitch9.AIDevKit.StreamOptions
+  - Glitch9.AIDevKit.StreamingTextEventReceiver
   - Glitch9.AIDevKit.StrictJsonSchema
   - Glitch9.AIDevKit.StrictJsonSchemaAttribute
   - Glitch9.AIDevKit.StrictJsonSchemaConverter
+  - Glitch9.AIDevKit.StructuredOutput`1
   - Glitch9.AIDevKit.SystemMessage
   - Glitch9.AIDevKit.TextContentPart
   - Glitch9.AIDevKit.TextContentPartConverter
@@ -188,6 +189,7 @@ items:
   - Glitch9.AIDevKit.VoiceTypeConverter
   - Glitch9.AIDevKit.WebSearchOptions
   - Glitch9.AIDevKit.WebSearchOptionsWrapper
+  - Glitch9.AIDevKit.WebSocketEventReceiver
   langs:
   - csharp
   - vb
@@ -247,76 +249,64 @@ references:
   - name: " "
   - name: TOutput
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask`3
-  commentId: T:Glitch9.AIDevKit.GENCompletionTask`3
-  href: Glitch9.AIDevKit.GENCompletionTask-3.html
-  name: GENCompletionTask<TSelf, TPrompt, TOutput>
-  nameWithType: GENCompletionTask<TSelf, TPrompt, TOutput>
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TPrompt, TOutput>
-  nameWithType.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput)
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TPrompt, TOutput)
-  name.vb: GENCompletionTask(Of TSelf, TPrompt, TOutput)
+- uid: Glitch9.AIDevKit.GENCompletionTask`2
+  commentId: T:Glitch9.AIDevKit.GENCompletionTask`2
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html
+  name: GENCompletionTask<TSelf, TOutput>
+  nameWithType: GENCompletionTask<TSelf, TOutput>
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>
+  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput)
+  name.vb: GENCompletionTask(Of TSelf, TOutput)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`3
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2
     name: GENCompletionTask
-    href: Glitch9.AIDevKit.GENCompletionTask-3.html
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html
   - name: <
   - name: TSelf
-  - name: ','
-  - name: " "
-  - name: TPrompt
   - name: ','
   - name: " "
   - name: TOutput
   - name: '>'
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`3
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2
     name: GENCompletionTask
-    href: Glitch9.AIDevKit.GENCompletionTask-3.html
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html
   - name: (
   - name: Of
   - name: " "
   - name: TSelf
   - name: ','
   - name: " "
-  - name: TPrompt
-  - name: ','
-  - name: " "
   - name: TOutput
   - name: )
-- uid: Glitch9.AIDevKit.GENContentTask
-  commentId: T:Glitch9.AIDevKit.GENContentTask
-  href: Glitch9.AIDevKit.GENContentTask.html
-  name: GENContentTask
-  nameWithType: GENContentTask
-  fullName: Glitch9.AIDevKit.GENContentTask
-- uid: Glitch9.AIDevKit.GENTextTask
-  commentId: T:Glitch9.AIDevKit.GENTextTask
+- uid: Glitch9.AIDevKit.GENResponseTask
+  commentId: T:Glitch9.AIDevKit.GENResponseTask
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.GENTextTask.html
-  name: GENTextTask
-  nameWithType: GENTextTask
-  fullName: Glitch9.AIDevKit.GENTextTask
-- uid: Glitch9.AIDevKit.GENObjectTask`1
-  commentId: T:Glitch9.AIDevKit.GENObjectTask`1
-  href: Glitch9.AIDevKit.GENObjectTask-1.html
-  name: GENObjectTask<T>
-  nameWithType: GENObjectTask<T>
-  fullName: Glitch9.AIDevKit.GENObjectTask<T>
-  nameWithType.vb: GENObjectTask(Of T)
-  fullName.vb: Glitch9.AIDevKit.GENObjectTask(Of T)
-  name.vb: GENObjectTask(Of T)
+  href: Glitch9.AIDevKit.GENResponseTask.html
+  name: GENResponseTask
+  nameWithType: GENResponseTask
+  fullName: Glitch9.AIDevKit.GENResponseTask
+- uid: Glitch9.AIDevKit.GENStructTask`1
+  commentId: T:Glitch9.AIDevKit.GENStructTask`1
+  href: Glitch9.AIDevKit.GENStructTask-1.html
+  name: GENStructTask<T>
+  nameWithType: GENStructTask<T>
+  fullName: Glitch9.AIDevKit.GENStructTask<T>
+  nameWithType.vb: GENStructTask(Of T)
+  fullName.vb: Glitch9.AIDevKit.GENStructTask(Of T)
+  name.vb: GENStructTask(Of T)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENObjectTask`1
-    name: GENObjectTask
-    href: Glitch9.AIDevKit.GENObjectTask-1.html
+  - uid: Glitch9.AIDevKit.GENStructTask`1
+    name: GENStructTask
+    href: Glitch9.AIDevKit.GENStructTask-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENObjectTask`1
-    name: GENObjectTask
-    href: Glitch9.AIDevKit.GENObjectTask-1.html
+  - uid: Glitch9.AIDevKit.GENStructTask`1
+    name: GENStructTask
+    href: Glitch9.AIDevKit.GENStructTask-1.html
   - name: (
   - name: Of
   - name: " "
@@ -447,13 +437,6 @@ references:
   name: GENAudioIsolationTask
   nameWithType: GENAudioIsolationTask
   fullName: Glitch9.AIDevKit.GENAudioIsolationTask
-- uid: Glitch9.AIDevKit.GENChatTask
-  commentId: T:Glitch9.AIDevKit.GENChatTask
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.GENChatTask.html
-  name: GENChatTask
-  nameWithType: GENChatTask
-  fullName: Glitch9.AIDevKit.GENChatTask
 - uid: Glitch9.AIDevKit.GENVideoTask
   commentId: T:Glitch9.AIDevKit.GENVideoTask
   parent: Glitch9.AIDevKit
@@ -619,13 +602,20 @@ references:
   - uid: Glitch9.AIDevKit.VoiceLibrary.Repo
     name: Repo
     href: Glitch9.AIDevKit.VoiceLibrary.Repo.html
-- uid: Glitch9.AIDevKit.FileData
-  commentId: T:Glitch9.AIDevKit.FileData
+- uid: Glitch9.AIDevKit.IApiFile
+  commentId: T:Glitch9.AIDevKit.IApiFile
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.FileData.html
-  name: FileData
-  nameWithType: FileData
-  fullName: Glitch9.AIDevKit.FileData
+  href: Glitch9.AIDevKit.IApiFile.html
+  name: IApiFile
+  nameWithType: IApiFile
+  fullName: Glitch9.AIDevKit.IApiFile
+- uid: Glitch9.AIDevKit.ApiFile
+  commentId: T:Glitch9.AIDevKit.ApiFile
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ApiFile.html
+  name: ApiFile
+  nameWithType: ApiFile
+  fullName: Glitch9.AIDevKit.ApiFile
 - uid: Glitch9.AIDevKit.Model
   commentId: T:Glitch9.AIDevKit.Model
   parent: Glitch9.AIDevKit
@@ -640,73 +630,6 @@ references:
   name: PromptRecord
   nameWithType: PromptRecord
   fullName: Glitch9.AIDevKit.PromptRecord
-- uid: Glitch9.AIDevKit.ISerializedContent
-  commentId: T:Glitch9.AIDevKit.ISerializedContent
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ISerializedContent.html
-  name: ISerializedContent
-  nameWithType: ISerializedContent
-  fullName: Glitch9.AIDevKit.ISerializedContent
-- uid: Glitch9.AIDevKit.SerializedContent`1
-  commentId: T:Glitch9.AIDevKit.SerializedContent`1
-  href: Glitch9.AIDevKit.SerializedContent-1.html
-  name: SerializedContent<T>
-  nameWithType: SerializedContent<T>
-  fullName: Glitch9.AIDevKit.SerializedContent<T>
-  nameWithType.vb: SerializedContent(Of T)
-  fullName.vb: Glitch9.AIDevKit.SerializedContent(Of T)
-  name.vb: SerializedContent(Of T)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.SerializedContent`1
-    name: SerializedContent
-    href: Glitch9.AIDevKit.SerializedContent-1.html
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.AIDevKit.SerializedContent`1
-    name: SerializedContent
-    href: Glitch9.AIDevKit.SerializedContent-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: Glitch9.AIDevKit.SerializedTextContent
-  commentId: T:Glitch9.AIDevKit.SerializedTextContent
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.SerializedTextContent.html
-  name: SerializedTextContent
-  nameWithType: SerializedTextContent
-  fullName: Glitch9.AIDevKit.SerializedTextContent
-- uid: Glitch9.AIDevKit.SerializedImageContent
-  commentId: T:Glitch9.AIDevKit.SerializedImageContent
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.SerializedImageContent.html
-  name: SerializedImageContent
-  nameWithType: SerializedImageContent
-  fullName: Glitch9.AIDevKit.SerializedImageContent
-- uid: Glitch9.AIDevKit.SerializedAudioContent
-  commentId: T:Glitch9.AIDevKit.SerializedAudioContent
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.SerializedAudioContent.html
-  name: SerializedAudioContent
-  nameWithType: SerializedAudioContent
-  fullName: Glitch9.AIDevKit.SerializedAudioContent
-- uid: Glitch9.AIDevKit.SerializedFileContent
-  commentId: T:Glitch9.AIDevKit.SerializedFileContent
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.SerializedFileContent.html
-  name: SerializedFileContent
-  nameWithType: SerializedFileContent
-  fullName: Glitch9.AIDevKit.SerializedFileContent
-- uid: Glitch9.AIDevKit.SerializedVideoContent
-  commentId: T:Glitch9.AIDevKit.SerializedVideoContent
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.SerializedVideoContent.html
-  name: SerializedVideoContent
-  nameWithType: SerializedVideoContent
-  fullName: Glitch9.AIDevKit.SerializedVideoContent
 - uid: Glitch9.AIDevKit.Voice
   commentId: T:Glitch9.AIDevKit.Voice
   parent: Glitch9.AIDevKit
@@ -714,48 +637,66 @@ references:
   name: Voice
   nameWithType: Voice
   fullName: Glitch9.AIDevKit.Voice
-- uid: Glitch9.AIDevKit.EmptyResponseException
-  commentId: T:Glitch9.AIDevKit.EmptyResponseException
-  href: Glitch9.AIDevKit.EmptyResponseException.html
-  name: EmptyResponseException
-  nameWithType: EmptyResponseException
-  fullName: Glitch9.AIDevKit.EmptyResponseException
+- uid: Glitch9.AIDevKit.EmptyPromptException
+  commentId: T:Glitch9.AIDevKit.EmptyPromptException
+  href: Glitch9.AIDevKit.EmptyPromptException.html
+  name: EmptyPromptException
+  nameWithType: EmptyPromptException
+  fullName: Glitch9.AIDevKit.EmptyPromptException
 - uid: Glitch9.AIDevKit.BlockedPromptException
   commentId: T:Glitch9.AIDevKit.BlockedPromptException
   href: Glitch9.AIDevKit.BlockedPromptException.html
   name: BlockedPromptException
   nameWithType: BlockedPromptException
   fullName: Glitch9.AIDevKit.BlockedPromptException
-- uid: Glitch9.AIDevKit.StopCompletionException
-  commentId: T:Glitch9.AIDevKit.StopCompletionException
-  href: Glitch9.AIDevKit.StopCompletionException.html
-  name: StopCompletionException
-  nameWithType: StopCompletionException
-  fullName: Glitch9.AIDevKit.StopCompletionException
-- uid: Glitch9.AIDevKit.BrokenCompletionException
-  commentId: T:Glitch9.AIDevKit.BrokenCompletionException
-  href: Glitch9.AIDevKit.BrokenCompletionException.html
-  name: BrokenCompletionException
-  nameWithType: BrokenCompletionException
-  fullName: Glitch9.AIDevKit.BrokenCompletionException
+- uid: Glitch9.AIDevKit.EmptyResponseException
+  commentId: T:Glitch9.AIDevKit.EmptyResponseException
+  href: Glitch9.AIDevKit.EmptyResponseException.html
+  name: EmptyResponseException
+  nameWithType: EmptyResponseException
+  fullName: Glitch9.AIDevKit.EmptyResponseException
+- uid: Glitch9.AIDevKit.InterruptedResponseException
+  commentId: T:Glitch9.AIDevKit.InterruptedResponseException
+  href: Glitch9.AIDevKit.InterruptedResponseException.html
+  name: InterruptedResponseException
+  nameWithType: InterruptedResponseException
+  fullName: Glitch9.AIDevKit.InterruptedResponseException
+- uid: Glitch9.AIDevKit.BrokenResponseException
+  commentId: T:Glitch9.AIDevKit.BrokenResponseException
+  href: Glitch9.AIDevKit.BrokenResponseException.html
+  name: BrokenResponseException
+  nameWithType: BrokenResponseException
+  fullName: Glitch9.AIDevKit.BrokenResponseException
 - uid: Glitch9.AIDevKit.DeprecatedModelException
   commentId: T:Glitch9.AIDevKit.DeprecatedModelException
   href: Glitch9.AIDevKit.DeprecatedModelException.html
   name: DeprecatedModelException
   nameWithType: DeprecatedModelException
   fullName: Glitch9.AIDevKit.DeprecatedModelException
+- uid: Glitch9.AIDevKit.RateLimitExceededException
+  commentId: T:Glitch9.AIDevKit.RateLimitExceededException
+  href: Glitch9.AIDevKit.RateLimitExceededException.html
+  name: RateLimitExceededException
+  nameWithType: RateLimitExceededException
+  fullName: Glitch9.AIDevKit.RateLimitExceededException
 - uid: Glitch9.AIDevKit.NotSupportedFeatureException
   commentId: T:Glitch9.AIDevKit.NotSupportedFeatureException
   href: Glitch9.AIDevKit.NotSupportedFeatureException.html
   name: NotSupportedFeatureException
   nameWithType: NotSupportedFeatureException
   fullName: Glitch9.AIDevKit.NotSupportedFeatureException
-- uid: Glitch9.AIDevKit.NotSupportedGENTaskException
-  commentId: T:Glitch9.AIDevKit.NotSupportedGENTaskException
-  href: Glitch9.AIDevKit.NotSupportedGENTaskException.html
-  name: NotSupportedGENTaskException
-  nameWithType: NotSupportedGENTaskException
-  fullName: Glitch9.AIDevKit.NotSupportedGENTaskException
+- uid: Glitch9.AIDevKit.InvalidEndpointException
+  commentId: T:Glitch9.AIDevKit.InvalidEndpointException
+  href: Glitch9.AIDevKit.InvalidEndpointException.html
+  name: InvalidEndpointException
+  nameWithType: InvalidEndpointException
+  fullName: Glitch9.AIDevKit.InvalidEndpointException
+- uid: Glitch9.AIDevKit.InvalidServiceStatusException
+  commentId: T:Glitch9.AIDevKit.InvalidServiceStatusException
+  href: Glitch9.AIDevKit.InvalidServiceStatusException.html
+  name: InvalidServiceStatusException
+  nameWithType: InvalidServiceStatusException
+  fullName: Glitch9.AIDevKit.InvalidServiceStatusException
 - uid: Glitch9.AIDevKit.OpenAIServiceTier
   commentId: T:Glitch9.AIDevKit.OpenAIServiceTier
   parent: Glitch9.AIDevKit
@@ -789,13 +730,6 @@ references:
   name: LogprobsContent
   nameWithType: LogprobsContent
   fullName: Glitch9.AIDevKit.LogprobsContent
-- uid: Glitch9.AIDevKit.ChatCompletion
-  commentId: T:Glitch9.AIDevKit.ChatCompletion
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ChatCompletion.html
-  name: ChatCompletion
-  nameWithType: ChatCompletion
-  fullName: Glitch9.AIDevKit.ChatCompletion
 - uid: Glitch9.AIDevKit.SystemMessage
   commentId: T:Glitch9.AIDevKit.SystemMessage
   parent: Glitch9.AIDevKit
@@ -810,13 +744,13 @@ references:
   name: UserMessage
   nameWithType: UserMessage
   fullName: Glitch9.AIDevKit.UserMessage
-- uid: Glitch9.AIDevKit.AssistantMessage
-  commentId: T:Glitch9.AIDevKit.AssistantMessage
+- uid: Glitch9.AIDevKit.ResponseMessage
+  commentId: T:Glitch9.AIDevKit.ResponseMessage
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.AssistantMessage.html
-  name: AssistantMessage
-  nameWithType: AssistantMessage
-  fullName: Glitch9.AIDevKit.AssistantMessage
+  href: Glitch9.AIDevKit.ResponseMessage.html
+  name: ResponseMessage
+  nameWithType: ResponseMessage
+  fullName: Glitch9.AIDevKit.ResponseMessage
 - uid: Glitch9.AIDevKit.ToolMessage
   commentId: T:Glitch9.AIDevKit.ToolMessage
   parent: Glitch9.AIDevKit
@@ -1039,46 +973,112 @@ references:
   - uid: Glitch9.AIDevKit.ChatCompletionRequest.Builder
     name: Builder
     href: Glitch9.AIDevKit.ChatCompletionRequest.Builder.html
-- uid: Glitch9.AIDevKit.ChatStreamHandler
-  commentId: T:Glitch9.AIDevKit.ChatStreamHandler
+- uid: Glitch9.AIDevKit.ChatCompletionChunk
+  commentId: T:Glitch9.AIDevKit.ChatCompletionChunk
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ChatStreamHandler.html
-  name: ChatStreamHandler
-  nameWithType: ChatStreamHandler
-  fullName: Glitch9.AIDevKit.ChatStreamHandler
-- uid: Glitch9.AIDevKit.ModerationOptions
-  commentId: T:Glitch9.AIDevKit.ModerationOptions
+  href: Glitch9.AIDevKit.ChatCompletionChunk.html
+  name: ChatCompletionChunk
+  nameWithType: ChatCompletionChunk
+  fullName: Glitch9.AIDevKit.ChatCompletionChunk
+- uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+  commentId: T:Glitch9.AIDevKit.IChatCompletionStreamHandler
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModerationOptions.html
-  name: ModerationOptions
-  nameWithType: ModerationOptions
-  fullName: Glitch9.AIDevKit.ModerationOptions
-- uid: Glitch9.AIDevKit.ChatSession
-  commentId: T:Glitch9.AIDevKit.ChatSession
+  href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
+  name: IChatCompletionStreamHandler
+  nameWithType: IChatCompletionStreamHandler
+  fullName: Glitch9.AIDevKit.IChatCompletionStreamHandler
+- uid: Glitch9.AIDevKit.ChatCompletionStreamHandler
+  commentId: T:Glitch9.AIDevKit.ChatCompletionStreamHandler
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ChatSession.html
-  name: ChatSession
-  nameWithType: ChatSession
-  fullName: Glitch9.AIDevKit.ChatSession
-- uid: Glitch9.AIDevKit.ChatSummarizer
-  commentId: T:Glitch9.AIDevKit.ChatSummarizer
-  href: Glitch9.AIDevKit.ChatSummarizer.html
-  name: ChatSummarizer
-  nameWithType: ChatSummarizer
-  fullName: Glitch9.AIDevKit.ChatSummarizer
-- uid: Glitch9.AIDevKit.AIProvider
-  commentId: T:Glitch9.AIDevKit.AIProvider
+  href: Glitch9.AIDevKit.ChatCompletionStreamHandler.html
+  name: ChatCompletionStreamHandler
+  nameWithType: ChatCompletionStreamHandler
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamHandler
+- uid: Glitch9.AIDevKit.ChatCompletionStreamReceiver
+  commentId: T:Glitch9.AIDevKit.ChatCompletionStreamReceiver
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.AIProvider.html
-  name: AIProvider
-  nameWithType: AIProvider
-  fullName: Glitch9.AIDevKit.AIProvider
+  href: Glitch9.AIDevKit.ChatCompletionStreamReceiver.html
+  name: ChatCompletionStreamReceiver
+  nameWithType: ChatCompletionStreamReceiver
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamReceiver
+- uid: Glitch9.AIDevKit.MultiResponseStreamHandler
+  commentId: T:Glitch9.AIDevKit.MultiResponseStreamHandler
+  href: Glitch9.AIDevKit.MultiResponseStreamHandler.html
+  name: MultiResponseStreamHandler
+  nameWithType: MultiResponseStreamHandler
+  fullName: Glitch9.AIDevKit.MultiResponseStreamHandler
+- uid: Glitch9.AIDevKit.SingleResponseStreamHandler
+  commentId: T:Glitch9.AIDevKit.SingleResponseStreamHandler
+  href: Glitch9.AIDevKit.SingleResponseStreamHandler.html
+  name: SingleResponseStreamHandler
+  nameWithType: SingleResponseStreamHandler
+  fullName: Glitch9.AIDevKit.SingleResponseStreamHandler
+- uid: Glitch9.AIDevKit.Api
+  commentId: T:Glitch9.AIDevKit.Api
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Api.html
+  name: Api
+  nameWithType: Api
+  fullName: Glitch9.AIDevKit.Api
 - uid: Glitch9.AIDevKit.AIProviders
   commentId: T:Glitch9.AIDevKit.AIProviders
   href: Glitch9.AIDevKit.AIProviders.html
   name: AIProviders
   nameWithType: AIProviders
   fullName: Glitch9.AIDevKit.AIProviders
+- uid: Glitch9.AIDevKit.AIRequest
+  commentId: T:Glitch9.AIDevKit.AIRequest
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.AIRequest.html
+  name: AIRequest
+  nameWithType: AIRequest
+  fullName: Glitch9.AIDevKit.AIRequest
+- uid: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2
+  commentId: T:Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2
+  href: Glitch9.AIDevKit.AIRequest.html
+  name: AIRequest.ModelRequestBuilder<TBuilder, TRequest>
+  nameWithType: AIRequest.ModelRequestBuilder<TBuilder, TRequest>
+  fullName: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder<TBuilder, TRequest>
+  nameWithType.vb: AIRequest.ModelRequestBuilder(Of TBuilder, TRequest)
+  fullName.vb: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder(Of TBuilder, TRequest)
+  name.vb: AIRequest.ModelRequestBuilder(Of TBuilder, TRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.AIRequest
+    name: AIRequest
+    href: Glitch9.AIDevKit.AIRequest.html
+  - name: .
+  - uid: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2
+    name: ModelRequestBuilder
+    href: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html
+  - name: <
+  - name: TBuilder
+  - name: ','
+  - name: " "
+  - name: TRequest
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.AIRequest
+    name: AIRequest
+    href: Glitch9.AIDevKit.AIRequest.html
+  - name: .
+  - uid: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2
+    name: ModelRequestBuilder
+    href: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBuilder
+  - name: ','
+  - name: " "
+  - name: TRequest
+  - name: )
+- uid: Glitch9.AIDevKit.AIResponse
+  commentId: T:Glitch9.AIDevKit.AIResponse
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.AIResponse.html
+  name: AIResponse
+  nameWithType: AIResponse
+  fullName: Glitch9.AIDevKit.AIResponse
 - uid: Glitch9.AIDevKit.ApiKey
   commentId: T:Glitch9.AIDevKit.ApiKey
   parent: Glitch9.AIDevKit
@@ -1099,59 +1099,6 @@ references:
   name: ErrorResponseWrapper
   nameWithType: ErrorResponseWrapper
   fullName: Glitch9.AIDevKit.ErrorResponseWrapper
-- uid: Glitch9.AIDevKit.ModelRequest
-  commentId: T:Glitch9.AIDevKit.ModelRequest
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelRequest.html
-  name: ModelRequest
-  nameWithType: ModelRequest
-  fullName: Glitch9.AIDevKit.ModelRequest
-- uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
-  commentId: T:Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
-  href: Glitch9.AIDevKit.ModelRequest.html
-  name: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>
-  nameWithType: ModelRequest.ModelRequestBuilder<TBuilder, TRequest>
-  fullName: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder<TBuilder, TRequest>
-  nameWithType.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest)
-  fullName.vb: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest)
-  name.vb: ModelRequest.ModelRequestBuilder(Of TBuilder, TRequest)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.ModelRequest
-    name: ModelRequest
-    href: Glitch9.AIDevKit.ModelRequest.html
-  - name: .
-  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
-    name: ModelRequestBuilder
-    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html
-  - name: <
-  - name: TBuilder
-  - name: ','
-  - name: " "
-  - name: TRequest
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.AIDevKit.ModelRequest
-    name: ModelRequest
-    href: Glitch9.AIDevKit.ModelRequest.html
-  - name: .
-  - uid: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder`2
-    name: ModelRequestBuilder
-    href: Glitch9.AIDevKit.ModelRequest.ModelRequestBuilder-2.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TBuilder
-  - name: ','
-  - name: " "
-  - name: TRequest
-  - name: )
-- uid: Glitch9.AIDevKit.ModelResponse
-  commentId: T:Glitch9.AIDevKit.ModelResponse
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelResponse.html
-  name: ModelResponse
-  nameWithType: ModelResponse
-  fullName: Glitch9.AIDevKit.ModelResponse
 - uid: Glitch9.AIDevKit.Usage
   commentId: T:Glitch9.AIDevKit.Usage
   parent: Glitch9.AIDevKit
@@ -1367,12 +1314,31 @@ references:
   - name: " "
   - name: TRequest
   - name: )
-- uid: Glitch9.AIDevKit.CompletionRequestConverter
-  commentId: T:Glitch9.AIDevKit.CompletionRequestConverter
-  href: Glitch9.AIDevKit.CompletionRequestConverter.html
-  name: CompletionRequestConverter
-  nameWithType: CompletionRequestConverter
-  fullName: Glitch9.AIDevKit.CompletionRequestConverter
+- uid: Glitch9.AIDevKit.CompletionRequestConverter`1
+  commentId: T:Glitch9.AIDevKit.CompletionRequestConverter`1
+  href: Glitch9.AIDevKit.CompletionRequestConverter-1.html
+  name: CompletionRequestConverter<TRequest>
+  nameWithType: CompletionRequestConverter<TRequest>
+  fullName: Glitch9.AIDevKit.CompletionRequestConverter<TRequest>
+  nameWithType.vb: CompletionRequestConverter(Of TRequest)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestConverter(Of TRequest)
+  name.vb: CompletionRequestConverter(Of TRequest)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.CompletionRequestConverter`1
+    name: CompletionRequestConverter
+    href: Glitch9.AIDevKit.CompletionRequestConverter-1.html
+  - name: <
+  - name: TRequest
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.CompletionRequestConverter`1
+    name: CompletionRequestConverter
+    href: Glitch9.AIDevKit.CompletionRequestConverter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: )
 - uid: Glitch9.AIDevKit.FunctionCall
   commentId: T:Glitch9.AIDevKit.FunctionCall
   parent: Glitch9.AIDevKit
@@ -1393,44 +1359,6 @@ references:
   name: FunctionDeclarationConverter
   nameWithType: FunctionDeclarationConverter
   fullName: Glitch9.AIDevKit.FunctionDeclarationConverter
-- uid: Glitch9.AIDevKit.IFunctionDelegate
-  commentId: T:Glitch9.AIDevKit.IFunctionDelegate
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.IFunctionDelegate.html
-  name: IFunctionDelegate
-  nameWithType: IFunctionDelegate
-  fullName: Glitch9.AIDevKit.IFunctionDelegate
-- uid: Glitch9.AIDevKit.FunctionDelegate`2
-  commentId: T:Glitch9.AIDevKit.FunctionDelegate`2
-  href: Glitch9.AIDevKit.FunctionDelegate-2.html
-  name: FunctionDelegate<TArgument, TResult>
-  nameWithType: FunctionDelegate<TArgument, TResult>
-  fullName: Glitch9.AIDevKit.FunctionDelegate<TArgument, TResult>
-  nameWithType.vb: FunctionDelegate(Of TArgument, TResult)
-  fullName.vb: Glitch9.AIDevKit.FunctionDelegate(Of TArgument, TResult)
-  name.vb: FunctionDelegate(Of TArgument, TResult)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.FunctionDelegate`2
-    name: FunctionDelegate
-    href: Glitch9.AIDevKit.FunctionDelegate-2.html
-  - name: <
-  - name: TArgument
-  - name: ','
-  - name: " "
-  - name: TResult
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.AIDevKit.FunctionDelegate`2
-    name: FunctionDelegate
-    href: Glitch9.AIDevKit.FunctionDelegate-2.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TArgument
-  - name: ','
-  - name: " "
-  - name: TResult
-  - name: )
 - uid: Glitch9.AIDevKit.FunctionResponse
   commentId: T:Glitch9.AIDevKit.FunctionResponse
   parent: Glitch9.AIDevKit
@@ -1445,6 +1373,13 @@ references:
   name: ToolType
   nameWithType: ToolType
   fullName: Glitch9.AIDevKit.ToolType
+- uid: Glitch9.AIDevKit.IToolCallReceiver
+  commentId: T:Glitch9.AIDevKit.IToolCallReceiver
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IToolCallReceiver.html
+  name: IToolCallReceiver
+  nameWithType: IToolCallReceiver
+  fullName: Glitch9.AIDevKit.IToolCallReceiver
 - uid: Glitch9.AIDevKit.ToolCall
   commentId: T:Glitch9.AIDevKit.ToolCall
   parent: Glitch9.AIDevKit
@@ -1480,26 +1415,19 @@ references:
   name: Modality
   nameWithType: Modality
   fullName: Glitch9.AIDevKit.Modality
-- uid: Glitch9.AIDevKit.ModelCapability
-  commentId: T:Glitch9.AIDevKit.ModelCapability
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelCapability.html
-  name: ModelCapability
-  nameWithType: ModelCapability
-  fullName: Glitch9.AIDevKit.ModelCapability
-- uid: Glitch9.AIDevKit.ModelCapabilityExtensions
-  commentId: T:Glitch9.AIDevKit.ModelCapabilityExtensions
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelCapabilityExtensions.html
-  name: ModelCapabilityExtensions
-  nameWithType: ModelCapabilityExtensions
-  fullName: Glitch9.AIDevKit.ModelCapabilityExtensions
 - uid: Glitch9.AIDevKit.ModelFamily
   commentId: T:Glitch9.AIDevKit.ModelFamily
   href: Glitch9.AIDevKit.ModelFamily.html
   name: ModelFamily
   nameWithType: ModelFamily
   fullName: Glitch9.AIDevKit.ModelFamily
+- uid: Glitch9.AIDevKit.ModelFeature
+  commentId: T:Glitch9.AIDevKit.ModelFeature
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModelFeature.html
+  name: ModelFeature
+  nameWithType: ModelFeature
+  fullName: Glitch9.AIDevKit.ModelFeature
 - uid: Glitch9.AIDevKit.ModelFilter
   commentId: T:Glitch9.AIDevKit.ModelFilter
   parent: Glitch9.AIDevKit
@@ -1566,6 +1494,13 @@ references:
   name: VoiceTypeConverter
   nameWithType: VoiceTypeConverter
   fullName: Glitch9.AIDevKit.VoiceTypeConverter
+- uid: Glitch9.AIDevKit.ChatCompletion
+  commentId: T:Glitch9.AIDevKit.ChatCompletion
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatCompletion.html
+  name: ChatCompletion
+  nameWithType: ChatCompletion
+  fullName: Glitch9.AIDevKit.ChatCompletion
 - uid: Glitch9.AIDevKit.GeneratedAudio
   commentId: T:Glitch9.AIDevKit.GeneratedAudio
   parent: Glitch9.AIDevKit
@@ -1573,13 +1508,6 @@ references:
   name: GeneratedAudio
   nameWithType: GeneratedAudio
   fullName: Glitch9.AIDevKit.GeneratedAudio
-- uid: Glitch9.AIDevKit.GeneratedContent
-  commentId: T:Glitch9.AIDevKit.GeneratedContent
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.GeneratedContent.html
-  name: GeneratedContent
-  nameWithType: GeneratedContent
-  fullName: Glitch9.AIDevKit.GeneratedContent
 - uid: Glitch9.AIDevKit.GeneratedImage
   commentId: T:Glitch9.AIDevKit.GeneratedImage
   parent: Glitch9.AIDevKit
@@ -1593,13 +1521,13 @@ references:
   name: GeneratedImageExtensions
   nameWithType: GeneratedImageExtensions
   fullName: Glitch9.AIDevKit.GeneratedImageExtensions
-- uid: Glitch9.AIDevKit.IGenerated
-  commentId: T:Glitch9.AIDevKit.IGenerated
+- uid: Glitch9.AIDevKit.IGeneratedResult
+  commentId: T:Glitch9.AIDevKit.IGeneratedResult
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.IGenerated.html
-  name: IGenerated
-  nameWithType: IGenerated
-  fullName: Glitch9.AIDevKit.IGenerated
+  href: Glitch9.AIDevKit.IGeneratedResult.html
+  name: IGeneratedResult
+  nameWithType: IGeneratedResult
+  fullName: Glitch9.AIDevKit.IGeneratedResult
 - uid: Glitch9.AIDevKit.GeneratedResult`1
   commentId: T:Glitch9.AIDevKit.GeneratedResult`1
   href: Glitch9.AIDevKit.GeneratedResult-1.html
@@ -1681,13 +1609,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Glitch9.AIDevKit.GeneratedText
-  commentId: T:Glitch9.AIDevKit.GeneratedText
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.GeneratedText.html
-  name: GeneratedText
-  nameWithType: GeneratedText
-  fullName: Glitch9.AIDevKit.GeneratedText
 - uid: Glitch9.AIDevKit.GeneratedVideo
   commentId: T:Glitch9.AIDevKit.GeneratedVideo
   parent: Glitch9.AIDevKit
@@ -1695,6 +1616,32 @@ references:
   name: GeneratedVideo
   nameWithType: GeneratedVideo
   fullName: Glitch9.AIDevKit.GeneratedVideo
+- uid: Glitch9.AIDevKit.StructuredOutput`1
+  commentId: T:Glitch9.AIDevKit.StructuredOutput`1
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.StructuredOutput-1.html
+  name: StructuredOutput<T>
+  nameWithType: StructuredOutput<T>
+  fullName: Glitch9.AIDevKit.StructuredOutput<T>
+  nameWithType.vb: StructuredOutput(Of T)
+  fullName.vb: Glitch9.AIDevKit.StructuredOutput(Of T)
+  name.vb: StructuredOutput(Of T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.StructuredOutput`1
+    name: StructuredOutput
+    href: Glitch9.AIDevKit.StructuredOutput-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.StructuredOutput`1
+    name: StructuredOutput
+    href: Glitch9.AIDevKit.StructuredOutput-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Glitch9.AIDevKit.Transcript
   commentId: T:Glitch9.AIDevKit.Transcript
   parent: Glitch9.AIDevKit
@@ -1723,6 +1670,13 @@ references:
   name: HarmProbability
   nameWithType: HarmProbability
   fullName: Glitch9.AIDevKit.HarmProbability
+- uid: Glitch9.AIDevKit.ModerationOptions
+  commentId: T:Glitch9.AIDevKit.ModerationOptions
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ModerationOptions.html
+  name: ModerationOptions
+  nameWithType: ModerationOptions
+  fullName: Glitch9.AIDevKit.ModerationOptions
 - uid: Glitch9.AIDevKit.PromptFeedback
   commentId: T:Glitch9.AIDevKit.PromptFeedback
   parent: Glitch9.AIDevKit
@@ -1803,13 +1757,6 @@ references:
   - uid: Glitch9.AIDevKit.ProjectContext.LanguageTone
     name: LanguageTone
     href: Glitch9.AIDevKit.ProjectContext.LanguageTone.html
-- uid: Glitch9.AIDevKit.Prompt
-  commentId: T:Glitch9.AIDevKit.Prompt
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.Prompt.html
-  name: Prompt
-  nameWithType: Prompt
-  fullName: Glitch9.AIDevKit.Prompt
 - uid: Glitch9.AIDevKit.InpaintPrompt
   commentId: T:Glitch9.AIDevKit.InpaintPrompt
   parent: Glitch9.AIDevKit
@@ -1890,6 +1837,13 @@ references:
   name: AIDevKitSettings
   nameWithType: AIDevKitSettings
   fullName: Glitch9.AIDevKit.AIDevKitSettings
+- uid: Glitch9.AIDevKit.ResponseType
+  commentId: T:Glitch9.AIDevKit.ResponseType
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ResponseType.html
+  name: ResponseType
+  nameWithType: ResponseType
+  fullName: Glitch9.AIDevKit.ResponseType
 - uid: Glitch9.AIDevKit.IChatbot
   commentId: T:Glitch9.AIDevKit.IChatbot
   parent: Glitch9.AIDevKit
@@ -1897,6 +1851,51 @@ references:
   name: IChatbot
   nameWithType: IChatbot
   fullName: Glitch9.AIDevKit.IChatbot
+- uid: Glitch9.AIDevKit.IStreamingTextEventReceiver
+  commentId: T:Glitch9.AIDevKit.IStreamingTextEventReceiver
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IStreamingTextEventReceiver.html
+  name: IStreamingTextEventReceiver
+  nameWithType: IStreamingTextEventReceiver
+  fullName: Glitch9.AIDevKit.IStreamingTextEventReceiver
+- uid: Glitch9.AIDevKit.IStreamingAudioEventReceiver
+  commentId: T:Glitch9.AIDevKit.IStreamingAudioEventReceiver
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IStreamingAudioEventReceiver.html
+  name: IStreamingAudioEventReceiver
+  nameWithType: IStreamingAudioEventReceiver
+  fullName: Glitch9.AIDevKit.IStreamingAudioEventReceiver
+- uid: Glitch9.AIDevKit.IWebSocketEventReceiver
+  commentId: T:Glitch9.AIDevKit.IWebSocketEventReceiver
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IWebSocketEventReceiver.html
+  name: IWebSocketEventReceiver
+  nameWithType: IWebSocketEventReceiver
+  fullName: Glitch9.AIDevKit.IWebSocketEventReceiver
+- uid: Glitch9.AIDevKit.MultiResponseStreamReceiver
+  commentId: T:Glitch9.AIDevKit.MultiResponseStreamReceiver
+  href: Glitch9.AIDevKit.MultiResponseStreamReceiver.html
+  name: MultiResponseStreamReceiver
+  nameWithType: MultiResponseStreamReceiver
+  fullName: Glitch9.AIDevKit.MultiResponseStreamReceiver
+- uid: Glitch9.AIDevKit.SingleResponseStreamReceiver
+  commentId: T:Glitch9.AIDevKit.SingleResponseStreamReceiver
+  href: Glitch9.AIDevKit.SingleResponseStreamReceiver.html
+  name: SingleResponseStreamReceiver
+  nameWithType: SingleResponseStreamReceiver
+  fullName: Glitch9.AIDevKit.SingleResponseStreamReceiver
+- uid: Glitch9.AIDevKit.StreamingTextEventReceiver
+  commentId: T:Glitch9.AIDevKit.StreamingTextEventReceiver
+  href: Glitch9.AIDevKit.StreamingTextEventReceiver.html
+  name: StreamingTextEventReceiver
+  nameWithType: StreamingTextEventReceiver
+  fullName: Glitch9.AIDevKit.StreamingTextEventReceiver
+- uid: Glitch9.AIDevKit.WebSocketEventReceiver
+  commentId: T:Glitch9.AIDevKit.WebSocketEventReceiver
+  href: Glitch9.AIDevKit.WebSocketEventReceiver.html
+  name: WebSocketEventReceiver
+  nameWithType: WebSocketEventReceiver
+  fullName: Glitch9.AIDevKit.WebSocketEventReceiver
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
   href: Glitch9.html

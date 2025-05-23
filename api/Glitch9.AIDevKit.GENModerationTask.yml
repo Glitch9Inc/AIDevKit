@@ -5,9 +5,14 @@ items:
   id: GENModerationTask
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.GENModerationTask.#ctor(Glitch9.AIDevKit.Content,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})
+  - Glitch9.AIDevKit.GENModerationTask.#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})
   - Glitch9.AIDevKit.GENModerationTask.AddSafetySetting(Glitch9.AIDevKit.SafetySetting)
-  - Glitch9.AIDevKit.GENModerationTask.ExecuteAsync
+  - Glitch9.AIDevKit.GENModerationTask.Attach(AudioClip[])
+  - Glitch9.AIDevKit.GENModerationTask.Attach(Glitch9.IO.Files.IFile[])
+  - Glitch9.AIDevKit.GENModerationTask.Attach(System.IO.FileInfo[])
+  - Glitch9.AIDevKit.GENModerationTask.Attach(System.String[])
+  - Glitch9.AIDevKit.GENModerationTask.Attach(Texture2D[])
+  - Glitch9.AIDevKit.GENModerationTask.ExecuteAsyncINTERNAL
   - Glitch9.AIDevKit.GENModerationTask.RemoveSafetySetting(Glitch9.AIDevKit.HarmCategory)
   langs:
   - csharp
@@ -19,68 +24,68 @@ items:
   source:
     id: GENModerationTask
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 785
+    startLine: 714
   namespace: Glitch9.AIDevKit
   summary: Audio not supported yet.
   example: []
   syntax:
-    content: 'public class GENModerationTask : GENTask<GENModerationTask, Content, SafetyRating[]>, IGENTask'
-    content.vb: Public Class GENModerationTask Inherits GENTask(Of GENModerationTask, Content, SafetyRating()) Implements IGENTask
+    content: 'public class GENModerationTask : GENTask<GENModerationTask, string, SafetyRating[]>, IGENTask'
+    content.vb: Public Class GENModerationTask Inherits GENTask(Of GENModerationTask, String, SafetyRating()) Implements IGENTask
   inheritance:
   - System.Object
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   implements:
   - Glitch9.AIDevKit.IGENTask
   inheritedMembers:
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.token
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.enableHistory
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.isCanceled
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.outputMimeType
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.Cancel
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetOption(System.String,System.Object)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.TryGetOption``1(System.String,{T}@)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetModel(Glitch9.AIDevKit.Model)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetCount(System.Int32)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetOutputPath(System.String)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetSender(System.String)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetIgnoreLogs(System.Boolean)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.EnablePromptHistory(System.Boolean)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.token
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.enableHistory
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.isCanceled
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.outputMimeType
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.Cancel
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetOption(System.String,System.Object)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.TryGetOption``1(System.String,{T}@)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetModel(Glitch9.AIDevKit.Model)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetCount(System.Int32)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetOutputPath(System.String)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetSender(System.String)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetIgnoreLogs(System.Boolean)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.EnablePromptHistory(System.Boolean)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetCancellationToken(System.Threading.CancellationToken)
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsyncINTERNAL
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
+  - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync``1
   extensionMethods:
   - Glitch9.AIDevKit.GENModerationTask.Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(Glitch9.AIDevKit.Google.AspectRatio)
   - Glitch9.AIDevKit.GENModerationTask.Glitch9.AIDevKit.Google.FluentAPIExtensions.SetPersonGeneration``1(Glitch9.AIDevKit.Google.PersonGeneration)
   - Glitch9.AIDevKit.GENModerationTask.Glitch9.AIDevKit.OpenAI.FluentAPIExtensions.SetSize``1(Glitch9.AIDevKit.ImageSize)
-- uid: Glitch9.AIDevKit.GENModerationTask.#ctor(Glitch9.AIDevKit.Content,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})
-  commentId: M:Glitch9.AIDevKit.GENModerationTask.#ctor(Glitch9.AIDevKit.Content,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})
-  id: '#ctor(Glitch9.AIDevKit.Content,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})'
+- uid: Glitch9.AIDevKit.GENModerationTask.#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})
+  commentId: M:Glitch9.AIDevKit.GENModerationTask.#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})
+  id: '#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting})'
   parent: Glitch9.AIDevKit.GENModerationTask
   langs:
   - csharp
   - vb
-  name: GENModerationTask(Content, IEnumerable<SafetySetting>)
-  nameWithType: GENModerationTask.GENModerationTask(Content, IEnumerable<SafetySetting>)
-  fullName: Glitch9.AIDevKit.GENModerationTask.GENModerationTask(Glitch9.AIDevKit.Content, System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.SafetySetting>)
+  name: GENModerationTask(string, IEnumerable<SafetySetting>)
+  nameWithType: GENModerationTask.GENModerationTask(string, IEnumerable<SafetySetting>)
+  fullName: Glitch9.AIDevKit.GENModerationTask.GENModerationTask(string, System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.SafetySetting>)
   type: Constructor
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 789
+    startLine: 719
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public GENModerationTask(Content prompt, IEnumerable<SafetySetting> safetySettings)
+    content: public GENModerationTask(string prompt, IEnumerable<SafetySetting> safetySettings)
     parameters:
     - id: prompt
-      type: Glitch9.AIDevKit.Content
+      type: System.String
     - id: safetySettings
       type: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting}
-    content.vb: Public Sub New(prompt As Content, safetySettings As IEnumerable(Of SafetySetting))
+    content.vb: Public Sub New(prompt As String, safetySettings As IEnumerable(Of SafetySetting))
   overload: Glitch9.AIDevKit.GENModerationTask.#ctor*
-  nameWithType.vb: GENModerationTask.New(Content, IEnumerable(Of SafetySetting))
-  fullName.vb: Glitch9.AIDevKit.GENModerationTask.New(Glitch9.AIDevKit.Content, System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.SafetySetting))
-  name.vb: New(Content, IEnumerable(Of SafetySetting))
+  nameWithType.vb: GENModerationTask.New(String, IEnumerable(Of SafetySetting))
+  fullName.vb: Glitch9.AIDevKit.GENModerationTask.New(String, System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.SafetySetting))
+  name.vb: New(String, IEnumerable(Of SafetySetting))
 - uid: Glitch9.AIDevKit.GENModerationTask.AddSafetySetting(Glitch9.AIDevKit.SafetySetting)
   commentId: M:Glitch9.AIDevKit.GENModerationTask.AddSafetySetting(Glitch9.AIDevKit.SafetySetting)
   id: AddSafetySetting(Glitch9.AIDevKit.SafetySetting)
@@ -95,7 +100,7 @@ items:
   source:
     id: AddSafetySetting
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 796
+    startLine: 726
   namespace: Glitch9.AIDevKit
   syntax:
     content: public GENModerationTask AddSafetySetting(SafetySetting safetySetting)
@@ -120,7 +125,7 @@ items:
   source:
     id: RemoveSafetySetting
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 821
+    startLine: 751
   namespace: Glitch9.AIDevKit
   syntax:
     content: public GENModerationTask RemoveSafetySetting(HarmCategory category)
@@ -131,31 +136,171 @@ items:
       type: Glitch9.AIDevKit.GENModerationTask
     content.vb: Public Function RemoveSafetySetting(category As HarmCategory) As GENModerationTask
   overload: Glitch9.AIDevKit.GENModerationTask.RemoveSafetySetting*
-- uid: Glitch9.AIDevKit.GENModerationTask.ExecuteAsync
-  commentId: M:Glitch9.AIDevKit.GENModerationTask.ExecuteAsync
-  id: ExecuteAsync
+- uid: Glitch9.AIDevKit.GENModerationTask.Attach(System.String[])
+  commentId: M:Glitch9.AIDevKit.GENModerationTask.Attach(System.String[])
+  id: Attach(System.String[])
   parent: Glitch9.AIDevKit.GENModerationTask
   langs:
   - csharp
   - vb
-  name: ExecuteAsync()
-  nameWithType: GENModerationTask.ExecuteAsync()
-  fullName: Glitch9.AIDevKit.GENModerationTask.ExecuteAsync()
+  name: Attach(params string[])
+  nameWithType: GENModerationTask.Attach(params string[])
+  fullName: Glitch9.AIDevKit.GENModerationTask.Attach(params string[])
   type: Method
   source:
-    id: ExecuteAsync
+    id: Attach
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 829
+    startLine: 759
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENModerationTask Attach(params string[] filePaths)
+    parameters:
+    - id: filePaths
+      type: System.String[]
+    return:
+      type: Glitch9.AIDevKit.GENModerationTask
+    content.vb: Public Function Attach(ParamArray filePaths As String()) As GENModerationTask
+  overload: Glitch9.AIDevKit.GENModerationTask.Attach*
+  nameWithType.vb: GENModerationTask.Attach(ParamArray String())
+  fullName.vb: Glitch9.AIDevKit.GENModerationTask.Attach(ParamArray String())
+  name.vb: Attach(ParamArray String())
+- uid: Glitch9.AIDevKit.GENModerationTask.Attach(System.IO.FileInfo[])
+  commentId: M:Glitch9.AIDevKit.GENModerationTask.Attach(System.IO.FileInfo[])
+  id: Attach(System.IO.FileInfo[])
+  parent: Glitch9.AIDevKit.GENModerationTask
+  langs:
+  - csharp
+  - vb
+  name: Attach(params FileInfo[])
+  nameWithType: GENModerationTask.Attach(params FileInfo[])
+  fullName: Glitch9.AIDevKit.GENModerationTask.Attach(params System.IO.FileInfo[])
+  type: Method
+  source:
+    id: Attach
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 773
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENModerationTask Attach(params FileInfo[] fileInfos)
+    parameters:
+    - id: fileInfos
+      type: System.IO.FileInfo[]
+    return:
+      type: Glitch9.AIDevKit.GENModerationTask
+    content.vb: Public Function Attach(ParamArray fileInfos As FileInfo()) As GENModerationTask
+  overload: Glitch9.AIDevKit.GENModerationTask.Attach*
+  nameWithType.vb: GENModerationTask.Attach(ParamArray FileInfo())
+  fullName.vb: Glitch9.AIDevKit.GENModerationTask.Attach(ParamArray System.IO.FileInfo())
+  name.vb: Attach(ParamArray FileInfo())
+- uid: Glitch9.AIDevKit.GENModerationTask.Attach(Texture2D[])
+  commentId: M:Glitch9.AIDevKit.GENModerationTask.Attach(Texture2D[])
+  id: Attach(Texture2D[])
+  parent: Glitch9.AIDevKit.GENModerationTask
+  langs:
+  - csharp
+  - vb
+  name: Attach(params Texture2D[])
+  nameWithType: GENModerationTask.Attach(params Texture2D[])
+  fullName: Glitch9.AIDevKit.GENModerationTask.Attach(params Texture2D[])
+  type: Method
+  source:
+    id: Attach
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 788
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENModerationTask Attach(params Texture2D[] textures)
+    parameters:
+    - id: textures
+      type: Texture2D[]
+    return:
+      type: Glitch9.AIDevKit.GENModerationTask
+    content.vb: Public Function Attach(ParamArray textures As Texture2D()) As GENModerationTask
+  overload: Glitch9.AIDevKit.GENModerationTask.Attach*
+  nameWithType.vb: GENModerationTask.Attach(ParamArray Texture2D())
+  fullName.vb: Glitch9.AIDevKit.GENModerationTask.Attach(ParamArray Texture2D())
+  name.vb: Attach(ParamArray Texture2D())
+- uid: Glitch9.AIDevKit.GENModerationTask.Attach(AudioClip[])
+  commentId: M:Glitch9.AIDevKit.GENModerationTask.Attach(AudioClip[])
+  id: Attach(AudioClip[])
+  parent: Glitch9.AIDevKit.GENModerationTask
+  langs:
+  - csharp
+  - vb
+  name: Attach(params AudioClip[])
+  nameWithType: GENModerationTask.Attach(params AudioClip[])
+  fullName: Glitch9.AIDevKit.GENModerationTask.Attach(params AudioClip[])
+  type: Method
+  source:
+    id: Attach
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 802
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENModerationTask Attach(params AudioClip[] audioClips)
+    parameters:
+    - id: audioClips
+      type: AudioClip[]
+    return:
+      type: Glitch9.AIDevKit.GENModerationTask
+    content.vb: Public Function Attach(ParamArray audioClips As AudioClip()) As GENModerationTask
+  overload: Glitch9.AIDevKit.GENModerationTask.Attach*
+  nameWithType.vb: GENModerationTask.Attach(ParamArray AudioClip())
+  fullName.vb: Glitch9.AIDevKit.GENModerationTask.Attach(ParamArray AudioClip())
+  name.vb: Attach(ParamArray AudioClip())
+- uid: Glitch9.AIDevKit.GENModerationTask.Attach(Glitch9.IO.Files.IFile[])
+  commentId: M:Glitch9.AIDevKit.GENModerationTask.Attach(Glitch9.IO.Files.IFile[])
+  id: Attach(Glitch9.IO.Files.IFile[])
+  parent: Glitch9.AIDevKit.GENModerationTask
+  langs:
+  - csharp
+  - vb
+  name: Attach(params IFile[])
+  nameWithType: GENModerationTask.Attach(params IFile[])
+  fullName: Glitch9.AIDevKit.GENModerationTask.Attach(params Glitch9.IO.Files.IFile[])
+  type: Method
+  source:
+    id: Attach
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 816
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENModerationTask Attach(params IFile[] files)
+    parameters:
+    - id: files
+      type: Glitch9.IO.Files.IFile[]
+    return:
+      type: Glitch9.AIDevKit.GENModerationTask
+    content.vb: Public Function Attach(ParamArray files As IFile()) As GENModerationTask
+  overload: Glitch9.AIDevKit.GENModerationTask.Attach*
+  nameWithType.vb: GENModerationTask.Attach(ParamArray IFile())
+  fullName.vb: Glitch9.AIDevKit.GENModerationTask.Attach(ParamArray Glitch9.IO.Files.IFile())
+  name.vb: Attach(ParamArray IFile())
+- uid: Glitch9.AIDevKit.GENModerationTask.ExecuteAsyncINTERNAL
+  commentId: M:Glitch9.AIDevKit.GENModerationTask.ExecuteAsyncINTERNAL
+  id: ExecuteAsyncINTERNAL
+  parent: Glitch9.AIDevKit.GENModerationTask
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsyncINTERNAL()
+  nameWithType: GENModerationTask.ExecuteAsyncINTERNAL()
+  fullName: Glitch9.AIDevKit.GENModerationTask.ExecuteAsyncINTERNAL()
+  type: Method
+  source:
+    id: ExecuteAsyncINTERNAL
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
+    startLine: 832
   namespace: Glitch9.AIDevKit
   summary: Executes the task and returns the generated result.
   example: []
   syntax:
-    content: public override UniTask<SafetyRating[]> ExecuteAsync()
+    content: protected override UniTask<SafetyRating[]> ExecuteAsyncINTERNAL()
     return:
       type: UniTask{Glitch9.AIDevKit.SafetyRating[]}
-    content.vb: Public Overrides Function ExecuteAsync() As UniTask(Of SafetyRating())
-  overridden: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
-  overload: Glitch9.AIDevKit.GENModerationTask.ExecuteAsync*
+    content.vb: Protected Overrides Function ExecuteAsyncINTERNAL() As UniTask(Of SafetyRating())
+  overridden: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsyncINTERNAL
+  overload: Glitch9.AIDevKit.GENModerationTask.ExecuteAsyncINTERNAL*
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -189,17 +334,17 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
-  commentId: T:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
+  commentId: T:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   parent: Glitch9.AIDevKit
   definition: Glitch9.AIDevKit.GENTask`3
   href: Glitch9.AIDevKit.GENTask-3.html
-  name: GENTask<GENModerationTask, Content, SafetyRating[]>
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating())
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating())
-  name.vb: GENTask(Of GENModerationTask, Content, SafetyRating())
+  name: GENTask<GENModerationTask, string, SafetyRating[]>
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating())
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating())
+  name.vb: GENTask(Of GENModerationTask, String, SafetyRating())
   spec.csharp:
   - uid: Glitch9.AIDevKit.GENTask`3
     name: GENTask
@@ -210,9 +355,9 @@ references:
     href: Glitch9.AIDevKit.GENModerationTask.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.Content
-    name: Content
-    href: Glitch9.AIDevKit.Content.html
+  - uid: System.String
+    name: string
+    isExternal: true
   - name: ','
   - name: " "
   - uid: Glitch9.AIDevKit.SafetyRating
@@ -233,9 +378,9 @@ references:
     href: Glitch9.AIDevKit.GENModerationTask.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.Content
-    name: Content
-    href: Glitch9.AIDevKit.Content.html
+  - uid: System.String
+    name: String
+    isExternal: true
   - name: ','
   - name: " "
   - uid: Glitch9.AIDevKit.SafetyRating
@@ -251,81 +396,81 @@ references:
   name: IGENTask
   nameWithType: IGENTask
   fullName: Glitch9.AIDevKit.IGENTask
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.token
-  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.token
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.token
+  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.token
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.token
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_token
   name: token
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.token
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.token
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).token
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).token
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.enableHistory
-  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.enableHistory
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.token
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.token
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).token
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).token
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.enableHistory
+  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.enableHistory
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.enableHistory
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_enableHistory
   name: enableHistory
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.enableHistory
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.enableHistory
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).enableHistory
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).enableHistory
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.isCanceled
-  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.isCanceled
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.enableHistory
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.enableHistory
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).enableHistory
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).enableHistory
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.isCanceled
+  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.isCanceled
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.isCanceled
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_isCanceled
   name: isCanceled
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.isCanceled
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.isCanceled
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).isCanceled
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).isCanceled
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.outputMimeType
-  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.outputMimeType
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.isCanceled
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.isCanceled
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).isCanceled
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).isCanceled
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.outputMimeType
+  commentId: P:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.outputMimeType
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.outputMimeType
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_outputMimeType
   name: outputMimeType
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.outputMimeType
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.outputMimeType
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).outputMimeType
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).outputMimeType
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.Cancel
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.Cancel
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.outputMimeType
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.outputMimeType
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).outputMimeType
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).outputMimeType
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.Cancel
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.Cancel
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.Cancel
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel
   name: Cancel()
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.Cancel()
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.Cancel()
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).Cancel()
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).Cancel()
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.Cancel()
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.Cancel()
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).Cancel()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).Cancel()
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.Cancel
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.Cancel
     name: Cancel
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel
   - name: (
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.Cancel
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.Cancel
     name: Cancel
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_Cancel
   - name: (
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetOption(System.String,System.Object)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetOption(System.String,System.Object)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetOption(System.String,System.Object)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetOption(System.String,System.Object)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.SetOption(System.String,System.Object)
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_
   name: SetOption(string, object)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.SetOption(string, object)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.SetOption(string, object)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).SetOption(String, Object)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).SetOption(String, Object)
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.SetOption(string, object)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.SetOption(string, object)
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).SetOption(String, Object)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).SetOption(String, Object)
   name.vb: SetOption(String, Object)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetOption(System.String,System.Object)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetOption(System.String,System.Object)
     name: SetOption
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_
   - name: (
@@ -339,7 +484,7 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetOption(System.String,System.Object)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetOption(System.String,System.Object)
     name: SetOption
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOption_System_String_System_Object_
   - name: (
@@ -352,19 +497,19 @@ references:
     name: Object
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.TryGetOption``1(System.String,{T}@)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.TryGetOption``1(System.String,``0@)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.TryGetOption``1(System.String,{T}@)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.TryGetOption``1(System.String,``0@)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.TryGetOption``1(System.String,``0@)
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__
   name: TryGetOption<T>(string, out T)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.TryGetOption<T>(string, out T)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.TryGetOption<T>(string, out T)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).TryGetOption(Of T)(String, T)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).TryGetOption(Of T)(String, T)
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.TryGetOption<T>(string, out T)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.TryGetOption<T>(string, out T)
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).TryGetOption(Of T)(String, T)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).TryGetOption(Of T)(String, T)
   name.vb: TryGetOption(Of T)(String, T)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.TryGetOption``1(System.String,``0@)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.TryGetOption``1(System.String,``0@)
     name: TryGetOption
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__
   - name: <
@@ -381,7 +526,7 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.TryGetOption``1(System.String,``0@)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.TryGetOption``1(System.String,``0@)
     name: TryGetOption
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_TryGetOption__1_System_String___0__
   - name: (
@@ -397,18 +542,18 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetModel(Glitch9.AIDevKit.Model)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetModel(Glitch9.AIDevKit.Model)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetModel(Glitch9.AIDevKit.Model)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetModel(Glitch9.AIDevKit.Model)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.SetModel(Glitch9.AIDevKit.Model)
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_
   name: SetModel(Model)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.SetModel(Model)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.SetModel(Glitch9.AIDevKit.Model)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).SetModel(Model)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).SetModel(Glitch9.AIDevKit.Model)
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.SetModel(Model)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.SetModel(Glitch9.AIDevKit.Model)
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).SetModel(Model)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).SetModel(Glitch9.AIDevKit.Model)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetModel(Glitch9.AIDevKit.Model)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetModel(Glitch9.AIDevKit.Model)
     name: SetModel
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_
   - name: (
@@ -417,7 +562,7 @@ references:
     href: Glitch9.AIDevKit.Model.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetModel(Glitch9.AIDevKit.Model)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetModel(Glitch9.AIDevKit.Model)
     name: SetModel
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetModel_Glitch9_AIDevKit_Model_
   - name: (
@@ -425,19 +570,19 @@ references:
     name: Model
     href: Glitch9.AIDevKit.Model.html
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetCount(System.Int32)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetCount(System.Int32)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetCount(System.Int32)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetCount(System.Int32)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.SetCount(System.Int32)
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_
   name: SetCount(int)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.SetCount(int)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.SetCount(int)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).SetCount(Integer)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).SetCount(Integer)
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.SetCount(int)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.SetCount(int)
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).SetCount(Integer)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).SetCount(Integer)
   name.vb: SetCount(Integer)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetCount(System.Int32)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetCount(System.Int32)
     name: SetCount
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_
   - name: (
@@ -446,7 +591,7 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetCount(System.Int32)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetCount(System.Int32)
     name: SetCount
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCount_System_Int32_
   - name: (
@@ -454,19 +599,19 @@ references:
     name: Integer
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetOutputPath(System.String)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetOutputPath(System.String)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetOutputPath(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetOutputPath(System.String)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.SetOutputPath(System.String)
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_
   name: SetOutputPath(string)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.SetOutputPath(string)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.SetOutputPath(string)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).SetOutputPath(String)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).SetOutputPath(String)
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.SetOutputPath(string)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.SetOutputPath(string)
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).SetOutputPath(String)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).SetOutputPath(String)
   name.vb: SetOutputPath(String)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetOutputPath(System.String)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetOutputPath(System.String)
     name: SetOutputPath
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_
   - name: (
@@ -475,7 +620,7 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetOutputPath(System.String)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetOutputPath(System.String)
     name: SetOutputPath
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetOutputPath_System_String_
   - name: (
@@ -483,19 +628,19 @@ references:
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetSender(System.String)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetSender(System.String)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetSender(System.String)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetSender(System.String)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.SetSender(System.String)
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_
   name: SetSender(string)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.SetSender(string)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.SetSender(string)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).SetSender(String)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).SetSender(String)
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.SetSender(string)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.SetSender(string)
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).SetSender(String)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).SetSender(String)
   name.vb: SetSender(String)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetSender(System.String)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetSender(System.String)
     name: SetSender
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_
   - name: (
@@ -504,7 +649,7 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetSender(System.String)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetSender(System.String)
     name: SetSender
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetSender_System_String_
   - name: (
@@ -512,19 +657,19 @@ references:
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetIgnoreLogs(System.Boolean)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetIgnoreLogs(System.Boolean)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetIgnoreLogs(System.Boolean)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetIgnoreLogs(System.Boolean)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.SetIgnoreLogs(System.Boolean)
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_
   name: SetIgnoreLogs(bool)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.SetIgnoreLogs(bool)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.SetIgnoreLogs(bool)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).SetIgnoreLogs(Boolean)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).SetIgnoreLogs(Boolean)
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.SetIgnoreLogs(bool)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.SetIgnoreLogs(bool)
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).SetIgnoreLogs(Boolean)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).SetIgnoreLogs(Boolean)
   name.vb: SetIgnoreLogs(Boolean)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetIgnoreLogs(System.Boolean)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetIgnoreLogs(System.Boolean)
     name: SetIgnoreLogs
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_
   - name: (
@@ -533,7 +678,7 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetIgnoreLogs(System.Boolean)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetIgnoreLogs(System.Boolean)
     name: SetIgnoreLogs
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetIgnoreLogs_System_Boolean_
   - name: (
@@ -541,19 +686,19 @@ references:
     name: Boolean
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.EnablePromptHistory(System.Boolean)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.EnablePromptHistory(System.Boolean)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.EnablePromptHistory(System.Boolean)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.EnablePromptHistory(System.Boolean)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.EnablePromptHistory(System.Boolean)
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_
   name: EnablePromptHistory(bool)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.EnablePromptHistory(bool)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.EnablePromptHistory(bool)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).EnablePromptHistory(Boolean)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).EnablePromptHistory(Boolean)
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.EnablePromptHistory(bool)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.EnablePromptHistory(bool)
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).EnablePromptHistory(Boolean)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).EnablePromptHistory(Boolean)
   name.vb: EnablePromptHistory(Boolean)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.EnablePromptHistory(System.Boolean)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.EnablePromptHistory(System.Boolean)
     name: EnablePromptHistory
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_
   - name: (
@@ -562,7 +707,7 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.EnablePromptHistory(System.Boolean)
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.EnablePromptHistory(System.Boolean)
     name: EnablePromptHistory
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_
   - name: (
@@ -570,110 +715,107 @@ references:
     name: Boolean
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
-  definition: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
-  name: SetTextToTarget(GeneratedText)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.SetTextToTarget(GeneratedText)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).SetTextToTarget(GeneratedText)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetCancellationToken(System.Threading.CancellationToken)
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetCancellationToken(System.Threading.CancellationToken)
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
+  definition: Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
+  name: SetCancellationToken(CancellationToken)
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.SetCancellationToken(CancellationToken)
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.SetCancellationToken(System.Threading.CancellationToken)
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).SetCancellationToken(CancellationToken)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).SetCancellationToken(System.Threading.CancellationToken)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-    name: SetTextToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetCancellationToken(System.Threading.CancellationToken)
+    name: SetCancellationToken
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-    name: SetTextToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.SetCancellationToken(System.Threading.CancellationToken)
+    name: SetCancellationToken
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
-  definition: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
-  name: SetImageToTarget(GeneratedImage)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.SetImageToTarget(GeneratedImage)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).SetImageToTarget(GeneratedImage)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsyncINTERNAL
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsyncINTERNAL
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
+  definition: Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
+  name: ExecuteAsyncINTERNAL()
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.ExecuteAsyncINTERNAL()
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.ExecuteAsyncINTERNAL()
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).ExecuteAsyncINTERNAL()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).ExecuteAsyncINTERNAL()
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-    name: SetImageToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsyncINTERNAL
+    name: ExecuteAsyncINTERNAL
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedImage
-    name: GeneratedImage
-    href: Glitch9.AIDevKit.GeneratedImage.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-    name: SetImageToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsyncINTERNAL
+    name: ExecuteAsyncINTERNAL
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedImage
-    name: GeneratedImage
-    href: Glitch9.AIDevKit.GeneratedImage.html
   - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
-  definition: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  name: SetAudioToTarget(GeneratedAudio)
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.SetAudioToTarget(GeneratedAudio)
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).SetAudioToTarget(GeneratedAudio)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-    name: SetAudioToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  - name: (
-  - uid: Glitch9.AIDevKit.GeneratedAudio
-    name: GeneratedAudio
-    href: Glitch9.AIDevKit.GeneratedAudio.html
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-    name: SetAudioToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  - name: (
-  - uid: Glitch9.AIDevKit.GeneratedAudio
-    name: GeneratedAudio
-    href: Glitch9.AIDevKit.GeneratedAudio.html
-  - name: )
-- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
-  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
-  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
   definition: Glitch9.AIDevKit.GENTask`3.ExecuteAsync
   href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
   name: ExecuteAsync()
-  nameWithType: GENTask<GENModerationTask, Content, SafetyRating[]>.ExecuteAsync()
-  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating[]>.ExecuteAsync()
-  nameWithType.vb: GENTask(Of GENModerationTask, Content, SafetyRating()).ExecuteAsync()
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, Glitch9.AIDevKit.Content, Glitch9.AIDevKit.SafetyRating()).ExecuteAsync()
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.ExecuteAsync()
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.ExecuteAsync()
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).ExecuteAsync()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).ExecuteAsync()
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
     name: ExecuteAsync
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
   - name: (
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,Glitch9.AIDevKit.Content,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync
     name: ExecuteAsync
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync``1
+  commentId: M:Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync``1
+  parent: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}
+  definition: Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  name: ExecuteAsync<T>()
+  nameWithType: GENTask<GENModerationTask, string, SafetyRating[]>.ExecuteAsync<T>()
+  fullName: Glitch9.AIDevKit.GENTask<Glitch9.AIDevKit.GENModerationTask, string, Glitch9.AIDevKit.SafetyRating[]>.ExecuteAsync<T>()
+  nameWithType.vb: GENTask(Of GENModerationTask, String, SafetyRating()).ExecuteAsync(Of T)()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of Glitch9.AIDevKit.GENModerationTask, String, Glitch9.AIDevKit.SafetyRating()).ExecuteAsync(Of T)()
+  name.vb: ExecuteAsync(Of T)()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync``1
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENModerationTask,System.String,Glitch9.AIDevKit.SafetyRating[]}.ExecuteAsync``1
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: (
   - name: )
 - uid: Glitch9.AIDevKit.GENModerationTask.Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(Glitch9.AIDevKit.Google.AspectRatio)
@@ -1173,83 +1315,52 @@ references:
     name: Boolean
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  commentId: M:Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
-  name: SetTextToTarget(GeneratedText)
-  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetTextToTarget(GeneratedText)
-  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetTextToTarget(GeneratedText)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
+- uid: Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)
+  commentId: M:Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)
+  isExternal: true
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
+  name: SetCancellationToken(CancellationToken)
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetCancellationToken(CancellationToken)
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetCancellationToken(System.Threading.CancellationToken)
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetCancellationToken(CancellationToken)
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetCancellationToken(System.Threading.CancellationToken)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-    name: SetTextToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - uid: Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)
+    name: SetCancellationToken
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetTextToTarget(Glitch9.AIDevKit.GeneratedText)
-    name: SetTextToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_
+  - uid: Glitch9.AIDevKit.GENTask`3.SetCancellationToken(System.Threading.CancellationToken)
+    name: SetCancellationToken
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedText
-    name: GeneratedText
-    href: Glitch9.AIDevKit.GeneratedText.html
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  commentId: M:Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
-  name: SetImageToTarget(GeneratedImage)
-  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetImageToTarget(GeneratedImage)
-  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetImageToTarget(GeneratedImage)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
+- uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL
+  commentId: M:Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
+  name: ExecuteAsyncINTERNAL()
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.ExecuteAsyncINTERNAL()
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.ExecuteAsyncINTERNAL()
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).ExecuteAsyncINTERNAL()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).ExecuteAsyncINTERNAL()
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-    name: SetImageToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL
+    name: ExecuteAsyncINTERNAL
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedImage
-    name: GeneratedImage
-    href: Glitch9.AIDevKit.GeneratedImage.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetImageToTarget(Glitch9.AIDevKit.GeneratedImage)
-    name: SetImageToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_
+  - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsyncINTERNAL
+    name: ExecuteAsyncINTERNAL
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL
   - name: (
-  - uid: Glitch9.AIDevKit.GeneratedImage
-    name: GeneratedImage
-    href: Glitch9.AIDevKit.GeneratedImage.html
-  - name: )
-- uid: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  commentId: M:Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  name: SetAudioToTarget(GeneratedAudio)
-  nameWithType: GENTask<TSelf, TPrompt, TOutput>.SetAudioToTarget(GeneratedAudio)
-  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).SetAudioToTarget(GeneratedAudio)
-  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-    name: SetAudioToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  - name: (
-  - uid: Glitch9.AIDevKit.GeneratedAudio
-    name: GeneratedAudio
-    href: Glitch9.AIDevKit.GeneratedAudio.html
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.GENTask`3.SetAudioToTarget(Glitch9.AIDevKit.GeneratedAudio)
-    name: SetAudioToTarget
-    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_
-  - name: (
-  - uid: Glitch9.AIDevKit.GeneratedAudio
-    name: GeneratedAudio
-    href: Glitch9.AIDevKit.GeneratedAudio.html
   - name: )
 - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync
   commentId: M:Glitch9.AIDevKit.GENTask`3.ExecuteAsync
@@ -1269,6 +1380,35 @@ references:
   - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync
     name: ExecuteAsync
     href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1
+  commentId: M:Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1
+  href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  name: ExecuteAsync<T>()
+  nameWithType: GENTask<TSelf, TPrompt, TOutput>.ExecuteAsync<T>()
+  fullName: Glitch9.AIDevKit.GENTask<TSelf, TPrompt, TOutput>.ExecuteAsync<T>()
+  nameWithType.vb: GENTask(Of TSelf, TPrompt, TOutput).ExecuteAsync(Of T)()
+  fullName.vb: Glitch9.AIDevKit.GENTask(Of TSelf, TPrompt, TOutput).ExecuteAsync(Of T)()
+  name.vb: ExecuteAsync(Of T)()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENTask`3.ExecuteAsync``1
+    name: ExecuteAsync
+    href: Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: (
   - name: )
 - uid: Glitch9.AIDevKit.Google.FluentAPIExtensions.SetAspectRatio``1(``0,Glitch9.AIDevKit.Google.AspectRatio)
@@ -1470,20 +1610,23 @@ references:
     href: Glitch9.AIDevKit.OpenAI.html
 - uid: Glitch9.AIDevKit.GENModerationTask.#ctor*
   commentId: Overload:Glitch9.AIDevKit.GENModerationTask.#ctor
-  href: Glitch9.AIDevKit.GENModerationTask.html#Glitch9_AIDevKit_GENModerationTask__ctor_Glitch9_AIDevKit_Content_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_SafetySetting__
+  href: Glitch9.AIDevKit.GENModerationTask.html#Glitch9_AIDevKit_GENModerationTask__ctor_System_String_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_SafetySetting__
   name: GENModerationTask
   nameWithType: GENModerationTask.GENModerationTask
   fullName: Glitch9.AIDevKit.GENModerationTask.GENModerationTask
   nameWithType.vb: GENModerationTask.New
   fullName.vb: Glitch9.AIDevKit.GENModerationTask.New
   name.vb: New
-- uid: Glitch9.AIDevKit.Content
-  commentId: T:Glitch9.AIDevKit.Content
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.Content.html
-  name: Content
-  nameWithType: Content
-  fullName: Glitch9.AIDevKit.Content
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting}
   commentId: T:System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.SafetySetting}
   parent: System.Collections.Generic
@@ -1610,12 +1753,116 @@ references:
   name: HarmCategory
   nameWithType: HarmCategory
   fullName: Glitch9.AIDevKit.HarmCategory
-- uid: Glitch9.AIDevKit.GENModerationTask.ExecuteAsync*
-  commentId: Overload:Glitch9.AIDevKit.GENModerationTask.ExecuteAsync
-  href: Glitch9.AIDevKit.GENModerationTask.html#Glitch9_AIDevKit_GENModerationTask_ExecuteAsync
-  name: ExecuteAsync
-  nameWithType: GENModerationTask.ExecuteAsync
-  fullName: Glitch9.AIDevKit.GENModerationTask.ExecuteAsync
+- uid: Glitch9.AIDevKit.GENModerationTask.Attach*
+  commentId: Overload:Glitch9.AIDevKit.GENModerationTask.Attach
+  href: Glitch9.AIDevKit.GENModerationTask.html#Glitch9_AIDevKit_GENModerationTask_Attach_System_String___
+  name: Attach
+  nameWithType: GENModerationTask.Attach
+  fullName: Glitch9.AIDevKit.GENModerationTask.Attach
+- uid: System.String[]
+  isExternal: true
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.IO.FileInfo[]
+  isExternal: true
+  name: FileInfo[]
+  nameWithType: FileInfo[]
+  fullName: System.IO.FileInfo[]
+  nameWithType.vb: FileInfo()
+  fullName.vb: System.IO.FileInfo()
+  name.vb: FileInfo()
+  spec.csharp:
+  - uid: System.IO.FileInfo
+    name: FileInfo
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.IO.FileInfo
+    name: FileInfo
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Texture2D[]
+  isExternal: true
+  name: Texture2D[]
+  nameWithType: Texture2D[]
+  fullName: Texture2D[]
+  nameWithType.vb: Texture2D()
+  fullName.vb: Texture2D()
+  name.vb: Texture2D()
+  spec.csharp:
+  - uid: Texture2D
+    name: Texture2D
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Texture2D
+    name: Texture2D
+    isExternal: true
+  - name: (
+  - name: )
+- uid: AudioClip[]
+  isExternal: true
+  name: AudioClip[]
+  nameWithType: AudioClip[]
+  fullName: AudioClip[]
+  nameWithType.vb: AudioClip()
+  fullName.vb: AudioClip()
+  name.vb: AudioClip()
+  spec.csharp:
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.IO.Files.IFile[]
+  isExternal: true
+  name: IFile[]
+  nameWithType: IFile[]
+  fullName: Glitch9.IO.Files.IFile[]
+  nameWithType.vb: IFile()
+  fullName.vb: Glitch9.IO.Files.IFile()
+  name.vb: IFile()
+  spec.csharp:
+  - uid: Glitch9.IO.Files.IFile
+    name: IFile
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Glitch9.IO.Files.IFile
+    name: IFile
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.GENModerationTask.ExecuteAsyncINTERNAL*
+  commentId: Overload:Glitch9.AIDevKit.GENModerationTask.ExecuteAsyncINTERNAL
+  href: Glitch9.AIDevKit.GENModerationTask.html#Glitch9_AIDevKit_GENModerationTask_ExecuteAsyncINTERNAL
+  name: ExecuteAsyncINTERNAL
+  nameWithType: GENModerationTask.ExecuteAsyncINTERNAL
+  fullName: Glitch9.AIDevKit.GENModerationTask.ExecuteAsyncINTERNAL
 - uid: UniTask{Glitch9.AIDevKit.SafetyRating[]}
   commentId: '!:UniTask{Glitch9.AIDevKit.SafetyRating[]}'
   definition: UniTask`1

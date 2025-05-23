@@ -124,7 +124,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Model Model { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">Model Model { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -143,13 +143,38 @@
   </table>
 
 
+  <a id="Glitch9_AIDevKit_IChatbot_Name_" data-uid="Glitch9.AIDevKit.IChatbot.Name*"></a>
+  <h4 id="Glitch9_AIDevKit_IChatbot_Name" data-uid="Glitch9.AIDevKit.IChatbot.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
   <a id="Glitch9_AIDevKit_IChatbot_Stream_" data-uid="Glitch9.AIDevKit.IChatbot.Stream*"></a>
   <h4 id="Glitch9_AIDevKit_IChatbot_Stream" data-uid="Glitch9.AIDevKit.IChatbot.Stream">Stream</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Stream { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">bool Stream { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -170,23 +195,13 @@
 </h3>
 
 
-  <a id="Glitch9_AIDevKit_IChatbot_ClearMessages_" data-uid="Glitch9.AIDevKit.IChatbot.ClearMessages*"></a>
-  <h4 id="Glitch9_AIDevKit_IChatbot_ClearMessages" data-uid="Glitch9.AIDevKit.IChatbot.ClearMessages">ClearMessages()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ClearMessages()</code></pre>
-  </div>
-
-
   <a id="Glitch9_AIDevKit_IChatbot_EnterChatAsync_" data-uid="Glitch9.AIDevKit.IChatbot.EnterChatAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_IChatbot_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_Glitch9_AIDevKit_ChatStreamHandler_" data-uid="Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ChatStreamHandler)">EnterChatAsync(ChatMessage, ChatStreamHandler)</h4>
+  <h4 id="Glitch9_AIDevKit_IChatbot_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_Glitch9_AIDevKit_ResponseType_" data-uid="Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ResponseType)">EnterChatAsync(ChatMessage, ResponseType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UniTask&lt;AssistantMessage&gt; EnterChatAsync(ChatMessage inputMessage, ChatStreamHandler streamHandler = null)</code></pre>
+    <pre><code class="lang-csharp hljs">UniTask&lt;ChatMessage&gt; EnterChatAsync(ChatMessage inputMessage, ResponseType requestType = ResponseType.None)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -204,8 +219,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.ChatStreamHandler.html">ChatStreamHandler</a></td>
-        <td><span class="parametername">streamHandler</span></td>
+        <td><a class="xref" href="Glitch9.AIDevKit.ResponseType.html">ResponseType</a></td>
+        <td><span class="parametername">requestType</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -220,7 +235,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.AssistantMessage.html">AssistantMessage</a>&gt;</td>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

@@ -5,9 +5,9 @@ items:
   id: GenerateResponse
   parent: Glitch9.AIDevKit.Ollama
   children:
+  - Glitch9.AIDevKit.Ollama.GenerateResponse.FirstTextDelta
   - Glitch9.AIDevKit.Ollama.GenerateResponse.Response
   - Glitch9.AIDevKit.Ollama.GenerateResponse.ToString
-  - Glitch9.AIDevKit.Ollama.GenerateResponse.ToTextDelta
   langs:
   - csharp
   - vb
@@ -18,7 +18,7 @@ items:
   source:
     id: GenerateResponse
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Generate/GenerateResponse.cs
-    startLine: 5
+    startLine: 4
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
     content: 'public class GenerateResponse : OllamaTextResponse'
@@ -54,7 +54,7 @@ items:
   source:
     id: Response
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Generate/GenerateResponse.cs
-    startLine: 10
+    startLine: 9
   namespace: Glitch9.AIDevKit.Ollama
   summary: Required. The generated response content.
   example: []
@@ -79,7 +79,7 @@ items:
   source:
     id: ToString
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Generate/GenerateResponse.cs
-    startLine: 11
+    startLine: 10
   namespace: Glitch9.AIDevKit.Ollama
   summary: Returns a string that represents the current object.
   example: []
@@ -91,29 +91,28 @@ items:
     content.vb: Public Overrides Function ToString() As String
   overridden: System.Object.ToString
   overload: Glitch9.AIDevKit.Ollama.GenerateResponse.ToString*
-- uid: Glitch9.AIDevKit.Ollama.GenerateResponse.ToTextDelta
-  commentId: M:Glitch9.AIDevKit.Ollama.GenerateResponse.ToTextDelta
-  id: ToTextDelta
+- uid: Glitch9.AIDevKit.Ollama.GenerateResponse.FirstTextDelta
+  commentId: M:Glitch9.AIDevKit.Ollama.GenerateResponse.FirstTextDelta
+  id: FirstTextDelta
   parent: Glitch9.AIDevKit.Ollama.GenerateResponse
   langs:
   - csharp
   - vb
-  name: ToTextDelta()
-  nameWithType: GenerateResponse.ToTextDelta()
-  fullName: Glitch9.AIDevKit.Ollama.GenerateResponse.ToTextDelta()
+  name: FirstTextDelta()
+  nameWithType: GenerateResponse.FirstTextDelta()
+  fullName: Glitch9.AIDevKit.Ollama.GenerateResponse.FirstTextDelta()
   type: Method
   source:
-    id: ToTextDelta
+    id: FirstTextDelta
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Models/Generate/GenerateResponse.cs
-    startLine: 12
+    startLine: 11
   namespace: Glitch9.AIDevKit.Ollama
-  example: []
   syntax:
-    content: public string ToTextDelta()
+    content: public string FirstTextDelta()
     return:
       type: System.String
-    content.vb: Public Function ToTextDelta() As String
-  overload: Glitch9.AIDevKit.Ollama.GenerateResponse.ToTextDelta*
+    content.vb: Public Function FirstTextDelta() As String
+  overload: Glitch9.AIDevKit.Ollama.GenerateResponse.FirstTextDelta*
 references:
 - uid: Glitch9.AIDevKit.Ollama
   commentId: N:Glitch9.AIDevKit.Ollama
@@ -373,9 +372,9 @@ references:
   name: ToString
   nameWithType: GenerateResponse.ToString
   fullName: Glitch9.AIDevKit.Ollama.GenerateResponse.ToString
-- uid: Glitch9.AIDevKit.Ollama.GenerateResponse.ToTextDelta*
-  commentId: Overload:Glitch9.AIDevKit.Ollama.GenerateResponse.ToTextDelta
-  href: Glitch9.AIDevKit.Ollama.GenerateResponse.html#Glitch9_AIDevKit_Ollama_GenerateResponse_ToTextDelta
-  name: ToTextDelta
-  nameWithType: GenerateResponse.ToTextDelta
-  fullName: Glitch9.AIDevKit.Ollama.GenerateResponse.ToTextDelta
+- uid: Glitch9.AIDevKit.Ollama.GenerateResponse.FirstTextDelta*
+  commentId: Overload:Glitch9.AIDevKit.Ollama.GenerateResponse.FirstTextDelta
+  href: Glitch9.AIDevKit.Ollama.GenerateResponse.html#Glitch9_AIDevKit_Ollama_GenerateResponse_FirstTextDelta
+  name: FirstTextDelta
+  nameWithType: GenerateResponse.FirstTextDelta
+  fullName: Glitch9.AIDevKit.Ollama.GenerateResponse.FirstTextDelta

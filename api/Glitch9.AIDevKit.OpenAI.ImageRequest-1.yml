@@ -22,7 +22,7 @@ items:
   source:
     id: ImageRequest
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Images/ImageRequest.cs
-    startLine: 16
+    startLine: 17
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     Creates an image given a prompt: https://api.openai.com/v1/images/generations
@@ -32,23 +32,23 @@ items:
     Creates a variation of a given image: https://api.openai.com/v1/images/variations
   example: []
   syntax:
-    content: 'public abstract class ImageRequest<T> : ModelRequest where T : ImageRequest<T>'
+    content: 'public abstract class ImageRequest<T> : AIRequest where T : ImageRequest<T>'
     typeParameters:
     - id: T
-    content.vb: Public MustInherit Class ImageRequest(Of T As ImageRequest(Of T)) Inherits ModelRequest
+    content.vb: Public MustInherit Class ImageRequest(Of T As ImageRequest(Of T)) Inherits AIRequest
   inheritance:
   - System.Object
   - Glitch9.IO.Networking.RESTApi.RequestBody
-  - Glitch9.AIDevKit.ModelRequest
+  - Glitch9.AIDevKit.AIRequest
   derivedClasses:
   - Glitch9.AIDevKit.OpenAI.ImageCreationRequest
   - Glitch9.AIDevKit.OpenAI.ImageEditRequest
   - Glitch9.AIDevKit.OpenAI.ImageVariationRequest
   inheritedMembers:
-  - Glitch9.AIDevKit.ModelRequest.Model
-  - Glitch9.AIDevKit.ModelRequest.N
-  - Glitch9.AIDevKit.ModelRequest.Metadata
-  - Glitch9.AIDevKit.ModelRequest.User
+  - Glitch9.AIDevKit.AIRequest.Model
+  - Glitch9.AIDevKit.AIRequest.N
+  - Glitch9.AIDevKit.AIRequest.Metadata
+  - Glitch9.AIDevKit.AIRequest.User
   nameWithType.vb: ImageRequest(Of T)
   fullName.vb: Glitch9.AIDevKit.OpenAI.ImageRequest(Of T)
   name.vb: ImageRequest(Of T)
@@ -66,7 +66,7 @@ items:
   source:
     id: Image
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Images/ImageRequest.cs
-    startLine: 23
+    startLine: 24
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     [Required for Variation Request]
@@ -76,11 +76,11 @@ items:
     If mask is not provided, image must have transparency, which will be used as the mask.
   example: []
   syntax:
-    content: public FormFile? Image { get; set; }
+    content: public File<Texture2D> Image { get; set; }
     parameters: []
     return:
-      type: System.Nullable{Glitch9.IO.Networking.RESTApi.FormFile}
-    content.vb: Public Property Image As FormFile?
+      type: Glitch9.IO.Files.File{Texture2D}
+    content.vb: Public Property Image As File(Of Texture2D)
   overload: Glitch9.AIDevKit.OpenAI.ImageRequest`1.Image*
   nameWithType.vb: ImageRequest(Of T).Image
   fullName.vb: Glitch9.AIDevKit.OpenAI.ImageRequest(Of T).Image
@@ -98,7 +98,7 @@ items:
   source:
     id: Mask
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Images/ImageRequest.cs
-    startLine: 29
+    startLine: 30
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     [Optional] An additional image whose fully transparent areas (e.g. where alpha is zero) indicate where image should be edited.
@@ -106,11 +106,11 @@ items:
     Must be a valid PNG file, less than 4MB, and have the same dimensions as image.
   example: []
   syntax:
-    content: public FormFile? Mask { get; set; }
+    content: public File<Texture2D> Mask { get; set; }
     parameters: []
     return:
-      type: System.Nullable{Glitch9.IO.Networking.RESTApi.FormFile}
-    content.vb: Public Property Mask As FormFile?
+      type: Glitch9.IO.Files.File{Texture2D}
+    content.vb: Public Property Mask As File(Of Texture2D)
   overload: Glitch9.AIDevKit.OpenAI.ImageRequest`1.Mask*
   nameWithType.vb: ImageRequest(Of T).Mask
   fullName.vb: Glitch9.AIDevKit.OpenAI.ImageRequest(Of T).Mask
@@ -128,7 +128,7 @@ items:
   source:
     id: Prompt
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Images/ImageRequest.cs
-    startLine: 36
+    startLine: 37
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     [Required for Request and Edit Request]
@@ -160,7 +160,7 @@ items:
   source:
     id: Size
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Images/ImageRequest.cs
-    startLine: 46
+    startLine: 47
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     The size of the generated images.
@@ -193,7 +193,7 @@ items:
   source:
     id: Quality
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Images/ImageRequest.cs
-    startLine: 54
+    startLine: 55
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     The quality of the image that will be generated.
@@ -226,7 +226,7 @@ items:
   source:
     id: Style
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Images/ImageRequest.cs
-    startLine: 63
+    startLine: 64
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     The style of the generated images.
@@ -261,16 +261,16 @@ items:
   source:
     id: ResponseFormat
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Images/ImageRequest.cs
-    startLine: 68
+    startLine: 69
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The format of the response.
   example: []
   syntax:
-    content: public ImageFormat ResponseFormat { get; set; }
+    content: public ImageFormat? ResponseFormat { get; set; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.ImageFormat
-    content.vb: Public Property ResponseFormat As ImageFormat
+      type: System.Nullable{Glitch9.AIDevKit.ImageFormat}
+    content.vb: Public Property ResponseFormat As ImageFormat?
   overload: Glitch9.AIDevKit.OpenAI.ImageRequest`1.ResponseFormat*
   nameWithType.vb: ImageRequest(Of T).ResponseFormat
   fullName.vb: Glitch9.AIDevKit.OpenAI.ImageRequest(Of T).ResponseFormat
@@ -321,41 +321,41 @@ references:
   name: RequestBody
   nameWithType: RequestBody
   fullName: Glitch9.IO.Networking.RESTApi.RequestBody
-- uid: Glitch9.AIDevKit.ModelRequest
-  commentId: T:Glitch9.AIDevKit.ModelRequest
+- uid: Glitch9.AIDevKit.AIRequest
+  commentId: T:Glitch9.AIDevKit.AIRequest
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelRequest.html
-  name: ModelRequest
-  nameWithType: ModelRequest
-  fullName: Glitch9.AIDevKit.ModelRequest
-- uid: Glitch9.AIDevKit.ModelRequest.Model
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Model
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Model
+  href: Glitch9.AIDevKit.AIRequest.html
+  name: AIRequest
+  nameWithType: AIRequest
+  fullName: Glitch9.AIDevKit.AIRequest
+- uid: Glitch9.AIDevKit.AIRequest.Model
+  commentId: P:Glitch9.AIDevKit.AIRequest.Model
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Model
   name: Model
-  nameWithType: ModelRequest.Model
-  fullName: Glitch9.AIDevKit.ModelRequest.Model
-- uid: Glitch9.AIDevKit.ModelRequest.N
-  commentId: P:Glitch9.AIDevKit.ModelRequest.N
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_N
+  nameWithType: AIRequest.Model
+  fullName: Glitch9.AIDevKit.AIRequest.Model
+- uid: Glitch9.AIDevKit.AIRequest.N
+  commentId: P:Glitch9.AIDevKit.AIRequest.N
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_N
   name: N
-  nameWithType: ModelRequest.N
-  fullName: Glitch9.AIDevKit.ModelRequest.N
-- uid: Glitch9.AIDevKit.ModelRequest.Metadata
-  commentId: P:Glitch9.AIDevKit.ModelRequest.Metadata
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_Metadata
+  nameWithType: AIRequest.N
+  fullName: Glitch9.AIDevKit.AIRequest.N
+- uid: Glitch9.AIDevKit.AIRequest.Metadata
+  commentId: P:Glitch9.AIDevKit.AIRequest.Metadata
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_Metadata
   name: Metadata
-  nameWithType: ModelRequest.Metadata
-  fullName: Glitch9.AIDevKit.ModelRequest.Metadata
-- uid: Glitch9.AIDevKit.ModelRequest.User
-  commentId: P:Glitch9.AIDevKit.ModelRequest.User
-  parent: Glitch9.AIDevKit.ModelRequest
-  href: Glitch9.AIDevKit.ModelRequest.html#Glitch9_AIDevKit_ModelRequest_User
+  nameWithType: AIRequest.Metadata
+  fullName: Glitch9.AIDevKit.AIRequest.Metadata
+- uid: Glitch9.AIDevKit.AIRequest.User
+  commentId: P:Glitch9.AIDevKit.AIRequest.User
+  parent: Glitch9.AIDevKit.AIRequest
+  href: Glitch9.AIDevKit.AIRequest.html#Glitch9_AIDevKit_AIRequest_User
   name: User
-  nameWithType: ModelRequest.User
-  fullName: Glitch9.AIDevKit.ModelRequest.User
+  nameWithType: AIRequest.User
+  fullName: Glitch9.AIDevKit.AIRequest.User
 - uid: System
   commentId: N:System
   isExternal: true
@@ -431,46 +431,86 @@ references:
   fullName: Glitch9.AIDevKit.OpenAI.ImageRequest<T>.Image
   nameWithType.vb: ImageRequest(Of T).Image
   fullName.vb: Glitch9.AIDevKit.OpenAI.ImageRequest(Of T).Image
-- uid: System.Nullable{Glitch9.IO.Networking.RESTApi.FormFile}
-  commentId: T:System.Nullable{Glitch9.IO.Networking.RESTApi.FormFile}
-  parent: System
-  definition: System.Nullable`1
-  name: FormFile?
-  nameWithType: FormFile?
-  fullName: Glitch9.IO.Networking.RESTApi.FormFile?
+- uid: Glitch9.IO.Files.File{Texture2D}
+  commentId: T:Glitch9.IO.Files.File{Texture2D}
+  parent: Glitch9.IO.Files
+  definition: Glitch9.IO.Files.File`1
+  name: File<Texture2D>
+  nameWithType: File<Texture2D>
+  fullName: Glitch9.IO.Files.File<Texture2D>
+  nameWithType.vb: File(Of Texture2D)
+  fullName.vb: Glitch9.IO.Files.File(Of Texture2D)
+  name.vb: File(Of Texture2D)
   spec.csharp:
-  - uid: Glitch9.IO.Networking.RESTApi.FormFile
-    name: FormFile
-  - name: '?'
-  spec.vb:
-  - uid: Glitch9.IO.Networking.RESTApi.FormFile
-    name: FormFile
-  - name: '?'
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
-  isExternal: true
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: <
+  - uid: Texture2D
+    name: Texture2D
     isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Texture2D
+    name: Texture2D
+    isExternal: true
+  - name: )
+- uid: Glitch9.IO.Files.File`1
+  commentId: T:Glitch9.IO.Files.File`1
+  name: File<T>
+  nameWithType: File<T>
+  fullName: Glitch9.IO.Files.File<T>
+  nameWithType.vb: File(Of T)
+  fullName.vb: Glitch9.IO.Files.File(Of T)
+  name.vb: File(Of T)
+  spec.csharp:
+  - uid: Glitch9.IO.Files.File`1
+    name: File
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
+  - uid: Glitch9.IO.Files.File`1
+    name: File
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: )
+- uid: Glitch9.IO.Files
+  commentId: N:Glitch9.IO.Files
+  href: Glitch9.html
+  name: Glitch9.IO.Files
+  nameWithType: Glitch9.IO.Files
+  fullName: Glitch9.IO.Files
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Files
+    name: Files
+    href: Glitch9.IO.Files.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.IO
+    name: IO
+    href: Glitch9.IO.html
+  - name: .
+  - uid: Glitch9.IO.Files
+    name: Files
+    href: Glitch9.IO.Files.html
 - uid: Glitch9.AIDevKit.OpenAI.ImageRequest`1.Mask*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.ImageRequest`1.Mask
   href: Glitch9.AIDevKit.OpenAI.ImageRequest-1.html#Glitch9_AIDevKit_OpenAI_ImageRequest_1_Mask
@@ -523,6 +563,31 @@ references:
     name: ImageSize
     href: Glitch9.AIDevKit.ImageSize.html
   - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Glitch9.AIDevKit.ImageQuality.HighDefinition
   commentId: F:Glitch9.AIDevKit.ImageQuality.HighDefinition
   href: Glitch9.AIDevKit.ImageQuality.html#Glitch9_AIDevKit_ImageQuality_HighDefinition
@@ -607,10 +672,21 @@ references:
   fullName: Glitch9.AIDevKit.OpenAI.ImageRequest<T>.ResponseFormat
   nameWithType.vb: ImageRequest(Of T).ResponseFormat
   fullName.vb: Glitch9.AIDevKit.OpenAI.ImageRequest(Of T).ResponseFormat
-- uid: Glitch9.AIDevKit.ImageFormat
-  commentId: T:Glitch9.AIDevKit.ImageFormat
-  parent: Glitch9.AIDevKit
+- uid: System.Nullable{Glitch9.AIDevKit.ImageFormat}
+  commentId: T:System.Nullable{Glitch9.AIDevKit.ImageFormat}
+  parent: System
+  definition: System.Nullable`1
   href: Glitch9.AIDevKit.ImageFormat.html
-  name: ImageFormat
-  nameWithType: ImageFormat
-  fullName: Glitch9.AIDevKit.ImageFormat
+  name: ImageFormat?
+  nameWithType: ImageFormat?
+  fullName: Glitch9.AIDevKit.ImageFormat?
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ImageFormat
+    name: ImageFormat
+    href: Glitch9.AIDevKit.ImageFormat.html
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ImageFormat
+    name: ImageFormat
+    href: Glitch9.AIDevKit.ImageFormat.html
+  - name: '?'

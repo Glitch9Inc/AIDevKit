@@ -5,8 +5,17 @@ items:
   id: GENSequence
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.GENSequence.Append(Glitch9.AIDevKit.IGENTask)
+  - Glitch9.AIDevKit.GENSequence.AppendAudio(Glitch9.AIDevKit.IGENTask)
+  - Glitch9.AIDevKit.GENSequence.AppendAudioToAudio(System.Func{AudioClip,Glitch9.AIDevKit.IGENTask})
+  - Glitch9.AIDevKit.GENSequence.AppendAudioToText(System.Func{AudioClip,Glitch9.AIDevKit.IGENTask})
+  - Glitch9.AIDevKit.GENSequence.AppendImage(Glitch9.AIDevKit.IGENTask)
+  - Glitch9.AIDevKit.GENSequence.AppendImageToImage(System.Func{Texture2D,Glitch9.AIDevKit.IGENTask})
+  - Glitch9.AIDevKit.GENSequence.AppendImageToText(System.Func{Texture2D,Glitch9.AIDevKit.IGENTask})
   - Glitch9.AIDevKit.GENSequence.AppendInterval(System.Single)
+  - Glitch9.AIDevKit.GENSequence.AppendText(Glitch9.AIDevKit.IGENTask)
+  - Glitch9.AIDevKit.GENSequence.AppendTextToAudio(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  - Glitch9.AIDevKit.GENSequence.AppendTextToImage(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  - Glitch9.AIDevKit.GENSequence.AppendTextToText(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
   - Glitch9.AIDevKit.GENSequence.ExecuteAsync
   langs:
   - csharp
@@ -18,38 +27,13 @@ items:
   source:
     id: GENSequence
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
-    startLine: 6
+    startLine: 7
   namespace: Glitch9.AIDevKit
   syntax:
     content: public class GENSequence
     content.vb: Public Class GENSequence
   inheritance:
   - System.Object
-- uid: Glitch9.AIDevKit.GENSequence.Append(Glitch9.AIDevKit.IGENTask)
-  commentId: M:Glitch9.AIDevKit.GENSequence.Append(Glitch9.AIDevKit.IGENTask)
-  id: Append(Glitch9.AIDevKit.IGENTask)
-  parent: Glitch9.AIDevKit.GENSequence
-  langs:
-  - csharp
-  - vb
-  name: Append(IGENTask)
-  nameWithType: GENSequence.Append(IGENTask)
-  fullName: Glitch9.AIDevKit.GENSequence.Append(Glitch9.AIDevKit.IGENTask)
-  type: Method
-  source:
-    id: Append
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
-    startLine: 10
-  namespace: Glitch9.AIDevKit
-  syntax:
-    content: public GENSequence Append(IGENTask nextTask)
-    parameters:
-    - id: nextTask
-      type: Glitch9.AIDevKit.IGENTask
-    return:
-      type: Glitch9.AIDevKit.GENSequence
-    content.vb: Public Function Append(nextTask As IGENTask) As GENSequence
-  overload: Glitch9.AIDevKit.GENSequence.Append*
 - uid: Glitch9.AIDevKit.GENSequence.AppendInterval(System.Single)
   commentId: M:Glitch9.AIDevKit.GENSequence.AppendInterval(System.Single)
   id: AppendInterval(System.Single)
@@ -64,7 +48,7 @@ items:
   source:
     id: AppendInterval
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
-    startLine: 16
+    startLine: 20
   namespace: Glitch9.AIDevKit
   syntax:
     content: public GENSequence AppendInterval(float seconds)
@@ -78,6 +62,277 @@ items:
   nameWithType.vb: GENSequence.AppendInterval(Single)
   fullName.vb: Glitch9.AIDevKit.GENSequence.AppendInterval(Single)
   name.vb: AppendInterval(Single)
+- uid: Glitch9.AIDevKit.GENSequence.AppendText(Glitch9.AIDevKit.IGENTask)
+  commentId: M:Glitch9.AIDevKit.GENSequence.AppendText(Glitch9.AIDevKit.IGENTask)
+  id: AppendText(Glitch9.AIDevKit.IGENTask)
+  parent: Glitch9.AIDevKit.GENSequence
+  langs:
+  - csharp
+  - vb
+  name: AppendText(IGENTask)
+  nameWithType: GENSequence.AppendText(IGENTask)
+  fullName: Glitch9.AIDevKit.GENSequence.AppendText(Glitch9.AIDevKit.IGENTask)
+  type: Method
+  source:
+    id: AppendText
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
+    startLine: 26
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENSequence AppendText(IGENTask nextTask)
+    parameters:
+    - id: nextTask
+      type: Glitch9.AIDevKit.IGENTask
+    return:
+      type: Glitch9.AIDevKit.GENSequence
+    content.vb: Public Function AppendText(nextTask As IGENTask) As GENSequence
+  overload: Glitch9.AIDevKit.GENSequence.AppendText*
+- uid: Glitch9.AIDevKit.GENSequence.AppendImage(Glitch9.AIDevKit.IGENTask)
+  commentId: M:Glitch9.AIDevKit.GENSequence.AppendImage(Glitch9.AIDevKit.IGENTask)
+  id: AppendImage(Glitch9.AIDevKit.IGENTask)
+  parent: Glitch9.AIDevKit.GENSequence
+  langs:
+  - csharp
+  - vb
+  name: AppendImage(IGENTask)
+  nameWithType: GENSequence.AppendImage(IGENTask)
+  fullName: Glitch9.AIDevKit.GENSequence.AppendImage(Glitch9.AIDevKit.IGENTask)
+  type: Method
+  source:
+    id: AppendImage
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
+    startLine: 32
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENSequence AppendImage(IGENTask nextTask)
+    parameters:
+    - id: nextTask
+      type: Glitch9.AIDevKit.IGENTask
+    return:
+      type: Glitch9.AIDevKit.GENSequence
+    content.vb: Public Function AppendImage(nextTask As IGENTask) As GENSequence
+  overload: Glitch9.AIDevKit.GENSequence.AppendImage*
+- uid: Glitch9.AIDevKit.GENSequence.AppendAudio(Glitch9.AIDevKit.IGENTask)
+  commentId: M:Glitch9.AIDevKit.GENSequence.AppendAudio(Glitch9.AIDevKit.IGENTask)
+  id: AppendAudio(Glitch9.AIDevKit.IGENTask)
+  parent: Glitch9.AIDevKit.GENSequence
+  langs:
+  - csharp
+  - vb
+  name: AppendAudio(IGENTask)
+  nameWithType: GENSequence.AppendAudio(IGENTask)
+  fullName: Glitch9.AIDevKit.GENSequence.AppendAudio(Glitch9.AIDevKit.IGENTask)
+  type: Method
+  source:
+    id: AppendAudio
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
+    startLine: 38
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENSequence AppendAudio(IGENTask nextTask)
+    parameters:
+    - id: nextTask
+      type: Glitch9.AIDevKit.IGENTask
+    return:
+      type: Glitch9.AIDevKit.GENSequence
+    content.vb: Public Function AppendAudio(nextTask As IGENTask) As GENSequence
+  overload: Glitch9.AIDevKit.GENSequence.AppendAudio*
+- uid: Glitch9.AIDevKit.GENSequence.AppendTextToText(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  commentId: M:Glitch9.AIDevKit.GENSequence.AppendTextToText(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  id: AppendTextToText(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  parent: Glitch9.AIDevKit.GENSequence
+  langs:
+  - csharp
+  - vb
+  name: AppendTextToText(Func<string, IGENTask>)
+  nameWithType: GENSequence.AppendTextToText(Func<string, IGENTask>)
+  fullName: Glitch9.AIDevKit.GENSequence.AppendTextToText(System.Func<string, Glitch9.AIDevKit.IGENTask>)
+  type: Method
+  source:
+    id: AppendTextToText
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
+    startLine: 44
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENSequence AppendTextToText(Func<string, IGENTask> nextTask)
+    parameters:
+    - id: nextTask
+      type: System.Func{System.String,Glitch9.AIDevKit.IGENTask}
+    return:
+      type: Glitch9.AIDevKit.GENSequence
+    content.vb: Public Function AppendTextToText(nextTask As Func(Of String, IGENTask)) As GENSequence
+  overload: Glitch9.AIDevKit.GENSequence.AppendTextToText*
+  nameWithType.vb: GENSequence.AppendTextToText(Func(Of String, IGENTask))
+  fullName.vb: Glitch9.AIDevKit.GENSequence.AppendTextToText(System.Func(Of String, Glitch9.AIDevKit.IGENTask))
+  name.vb: AppendTextToText(Func(Of String, IGENTask))
+- uid: Glitch9.AIDevKit.GENSequence.AppendTextToImage(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  commentId: M:Glitch9.AIDevKit.GENSequence.AppendTextToImage(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  id: AppendTextToImage(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  parent: Glitch9.AIDevKit.GENSequence
+  langs:
+  - csharp
+  - vb
+  name: AppendTextToImage(Func<string, IGENTask>)
+  nameWithType: GENSequence.AppendTextToImage(Func<string, IGENTask>)
+  fullName: Glitch9.AIDevKit.GENSequence.AppendTextToImage(System.Func<string, Glitch9.AIDevKit.IGENTask>)
+  type: Method
+  source:
+    id: AppendTextToImage
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
+    startLine: 50
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENSequence AppendTextToImage(Func<string, IGENTask> nextTask)
+    parameters:
+    - id: nextTask
+      type: System.Func{System.String,Glitch9.AIDevKit.IGENTask}
+    return:
+      type: Glitch9.AIDevKit.GENSequence
+    content.vb: Public Function AppendTextToImage(nextTask As Func(Of String, IGENTask)) As GENSequence
+  overload: Glitch9.AIDevKit.GENSequence.AppendTextToImage*
+  nameWithType.vb: GENSequence.AppendTextToImage(Func(Of String, IGENTask))
+  fullName.vb: Glitch9.AIDevKit.GENSequence.AppendTextToImage(System.Func(Of String, Glitch9.AIDevKit.IGENTask))
+  name.vb: AppendTextToImage(Func(Of String, IGENTask))
+- uid: Glitch9.AIDevKit.GENSequence.AppendTextToAudio(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  commentId: M:Glitch9.AIDevKit.GENSequence.AppendTextToAudio(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  id: AppendTextToAudio(System.Func{System.String,Glitch9.AIDevKit.IGENTask})
+  parent: Glitch9.AIDevKit.GENSequence
+  langs:
+  - csharp
+  - vb
+  name: AppendTextToAudio(Func<string, IGENTask>)
+  nameWithType: GENSequence.AppendTextToAudio(Func<string, IGENTask>)
+  fullName: Glitch9.AIDevKit.GENSequence.AppendTextToAudio(System.Func<string, Glitch9.AIDevKit.IGENTask>)
+  type: Method
+  source:
+    id: AppendTextToAudio
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
+    startLine: 56
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENSequence AppendTextToAudio(Func<string, IGENTask> nextTask)
+    parameters:
+    - id: nextTask
+      type: System.Func{System.String,Glitch9.AIDevKit.IGENTask}
+    return:
+      type: Glitch9.AIDevKit.GENSequence
+    content.vb: Public Function AppendTextToAudio(nextTask As Func(Of String, IGENTask)) As GENSequence
+  overload: Glitch9.AIDevKit.GENSequence.AppendTextToAudio*
+  nameWithType.vb: GENSequence.AppendTextToAudio(Func(Of String, IGENTask))
+  fullName.vb: Glitch9.AIDevKit.GENSequence.AppendTextToAudio(System.Func(Of String, Glitch9.AIDevKit.IGENTask))
+  name.vb: AppendTextToAudio(Func(Of String, IGENTask))
+- uid: Glitch9.AIDevKit.GENSequence.AppendImageToText(System.Func{Texture2D,Glitch9.AIDevKit.IGENTask})
+  commentId: M:Glitch9.AIDevKit.GENSequence.AppendImageToText(System.Func{Texture2D,Glitch9.AIDevKit.IGENTask})
+  id: AppendImageToText(System.Func{Texture2D,Glitch9.AIDevKit.IGENTask})
+  parent: Glitch9.AIDevKit.GENSequence
+  langs:
+  - csharp
+  - vb
+  name: AppendImageToText(Func<Texture2D, IGENTask>)
+  nameWithType: GENSequence.AppendImageToText(Func<Texture2D, IGENTask>)
+  fullName: Glitch9.AIDevKit.GENSequence.AppendImageToText(System.Func<Texture2D, Glitch9.AIDevKit.IGENTask>)
+  type: Method
+  source:
+    id: AppendImageToText
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
+    startLine: 62
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENSequence AppendImageToText(Func<Texture2D, IGENTask> nextTask)
+    parameters:
+    - id: nextTask
+      type: System.Func{Texture2D,Glitch9.AIDevKit.IGENTask}
+    return:
+      type: Glitch9.AIDevKit.GENSequence
+    content.vb: Public Function AppendImageToText(nextTask As Func(Of Texture2D, IGENTask)) As GENSequence
+  overload: Glitch9.AIDevKit.GENSequence.AppendImageToText*
+  nameWithType.vb: GENSequence.AppendImageToText(Func(Of Texture2D, IGENTask))
+  fullName.vb: Glitch9.AIDevKit.GENSequence.AppendImageToText(System.Func(Of Texture2D, Glitch9.AIDevKit.IGENTask))
+  name.vb: AppendImageToText(Func(Of Texture2D, IGENTask))
+- uid: Glitch9.AIDevKit.GENSequence.AppendImageToImage(System.Func{Texture2D,Glitch9.AIDevKit.IGENTask})
+  commentId: M:Glitch9.AIDevKit.GENSequence.AppendImageToImage(System.Func{Texture2D,Glitch9.AIDevKit.IGENTask})
+  id: AppendImageToImage(System.Func{Texture2D,Glitch9.AIDevKit.IGENTask})
+  parent: Glitch9.AIDevKit.GENSequence
+  langs:
+  - csharp
+  - vb
+  name: AppendImageToImage(Func<Texture2D, IGENTask>)
+  nameWithType: GENSequence.AppendImageToImage(Func<Texture2D, IGENTask>)
+  fullName: Glitch9.AIDevKit.GENSequence.AppendImageToImage(System.Func<Texture2D, Glitch9.AIDevKit.IGENTask>)
+  type: Method
+  source:
+    id: AppendImageToImage
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
+    startLine: 68
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENSequence AppendImageToImage(Func<Texture2D, IGENTask> nextTask)
+    parameters:
+    - id: nextTask
+      type: System.Func{Texture2D,Glitch9.AIDevKit.IGENTask}
+    return:
+      type: Glitch9.AIDevKit.GENSequence
+    content.vb: Public Function AppendImageToImage(nextTask As Func(Of Texture2D, IGENTask)) As GENSequence
+  overload: Glitch9.AIDevKit.GENSequence.AppendImageToImage*
+  nameWithType.vb: GENSequence.AppendImageToImage(Func(Of Texture2D, IGENTask))
+  fullName.vb: Glitch9.AIDevKit.GENSequence.AppendImageToImage(System.Func(Of Texture2D, Glitch9.AIDevKit.IGENTask))
+  name.vb: AppendImageToImage(Func(Of Texture2D, IGENTask))
+- uid: Glitch9.AIDevKit.GENSequence.AppendAudioToText(System.Func{AudioClip,Glitch9.AIDevKit.IGENTask})
+  commentId: M:Glitch9.AIDevKit.GENSequence.AppendAudioToText(System.Func{AudioClip,Glitch9.AIDevKit.IGENTask})
+  id: AppendAudioToText(System.Func{AudioClip,Glitch9.AIDevKit.IGENTask})
+  parent: Glitch9.AIDevKit.GENSequence
+  langs:
+  - csharp
+  - vb
+  name: AppendAudioToText(Func<AudioClip, IGENTask>)
+  nameWithType: GENSequence.AppendAudioToText(Func<AudioClip, IGENTask>)
+  fullName: Glitch9.AIDevKit.GENSequence.AppendAudioToText(System.Func<AudioClip, Glitch9.AIDevKit.IGENTask>)
+  type: Method
+  source:
+    id: AppendAudioToText
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
+    startLine: 74
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENSequence AppendAudioToText(Func<AudioClip, IGENTask> nextTask)
+    parameters:
+    - id: nextTask
+      type: System.Func{AudioClip,Glitch9.AIDevKit.IGENTask}
+    return:
+      type: Glitch9.AIDevKit.GENSequence
+    content.vb: Public Function AppendAudioToText(nextTask As Func(Of AudioClip, IGENTask)) As GENSequence
+  overload: Glitch9.AIDevKit.GENSequence.AppendAudioToText*
+  nameWithType.vb: GENSequence.AppendAudioToText(Func(Of AudioClip, IGENTask))
+  fullName.vb: Glitch9.AIDevKit.GENSequence.AppendAudioToText(System.Func(Of AudioClip, Glitch9.AIDevKit.IGENTask))
+  name.vb: AppendAudioToText(Func(Of AudioClip, IGENTask))
+- uid: Glitch9.AIDevKit.GENSequence.AppendAudioToAudio(System.Func{AudioClip,Glitch9.AIDevKit.IGENTask})
+  commentId: M:Glitch9.AIDevKit.GENSequence.AppendAudioToAudio(System.Func{AudioClip,Glitch9.AIDevKit.IGENTask})
+  id: AppendAudioToAudio(System.Func{AudioClip,Glitch9.AIDevKit.IGENTask})
+  parent: Glitch9.AIDevKit.GENSequence
+  langs:
+  - csharp
+  - vb
+  name: AppendAudioToAudio(Func<AudioClip, IGENTask>)
+  nameWithType: GENSequence.AppendAudioToAudio(Func<AudioClip, IGENTask>)
+  fullName: Glitch9.AIDevKit.GENSequence.AppendAudioToAudio(System.Func<AudioClip, Glitch9.AIDevKit.IGENTask>)
+  type: Method
+  source:
+    id: AppendAudioToAudio
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
+    startLine: 80
+  namespace: Glitch9.AIDevKit
+  syntax:
+    content: public GENSequence AppendAudioToAudio(Func<AudioClip, IGENTask> nextTask)
+    parameters:
+    - id: nextTask
+      type: System.Func{AudioClip,Glitch9.AIDevKit.IGENTask}
+    return:
+      type: Glitch9.AIDevKit.GENSequence
+    content.vb: Public Function AppendAudioToAudio(nextTask As Func(Of AudioClip, IGENTask)) As GENSequence
+  overload: Glitch9.AIDevKit.GENSequence.AppendAudioToAudio*
+  nameWithType.vb: GENSequence.AppendAudioToAudio(Func(Of AudioClip, IGENTask))
+  fullName.vb: Glitch9.AIDevKit.GENSequence.AppendAudioToAudio(System.Func(Of AudioClip, Glitch9.AIDevKit.IGENTask))
+  name.vb: AppendAudioToAudio(Func(Of AudioClip, IGENTask))
 - uid: Glitch9.AIDevKit.GENSequence.ExecuteAsync
   commentId: M:Glitch9.AIDevKit.GENSequence.ExecuteAsync
   id: ExecuteAsync
@@ -92,7 +347,7 @@ items:
   source:
     id: ExecuteAsync
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENSequence.cs
-    startLine: 22
+    startLine: 86
   namespace: Glitch9.AIDevKit
   syntax:
     content: public UniTask ExecuteAsync()
@@ -140,26 +395,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.AIDevKit.GENSequence.Append*
-  commentId: Overload:Glitch9.AIDevKit.GENSequence.Append
-  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_Append_Glitch9_AIDevKit_IGENTask_
-  name: Append
-  nameWithType: GENSequence.Append
-  fullName: Glitch9.AIDevKit.GENSequence.Append
-- uid: Glitch9.AIDevKit.IGENTask
-  commentId: T:Glitch9.AIDevKit.IGENTask
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.IGENTask.html
-  name: IGENTask
-  nameWithType: IGENTask
-  fullName: Glitch9.AIDevKit.IGENTask
-- uid: Glitch9.AIDevKit.GENSequence
-  commentId: T:Glitch9.AIDevKit.GENSequence
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.GENSequence.html
-  name: GENSequence
-  nameWithType: GENSequence
-  fullName: Glitch9.AIDevKit.GENSequence
 - uid: Glitch9.AIDevKit.GENSequence.AppendInterval*
   commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendInterval
   href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendInterval_System_Single_
@@ -176,6 +411,234 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: Glitch9.AIDevKit.GENSequence
+  commentId: T:Glitch9.AIDevKit.GENSequence
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.GENSequence.html
+  name: GENSequence
+  nameWithType: GENSequence
+  fullName: Glitch9.AIDevKit.GENSequence
+- uid: Glitch9.AIDevKit.GENSequence.AppendText*
+  commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendText
+  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendText_Glitch9_AIDevKit_IGENTask_
+  name: AppendText
+  nameWithType: GENSequence.AppendText
+  fullName: Glitch9.AIDevKit.GENSequence.AppendText
+- uid: Glitch9.AIDevKit.IGENTask
+  commentId: T:Glitch9.AIDevKit.IGENTask
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IGENTask.html
+  name: IGENTask
+  nameWithType: IGENTask
+  fullName: Glitch9.AIDevKit.IGENTask
+- uid: Glitch9.AIDevKit.GENSequence.AppendImage*
+  commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendImage
+  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendImage_Glitch9_AIDevKit_IGENTask_
+  name: AppendImage
+  nameWithType: GENSequence.AppendImage
+  fullName: Glitch9.AIDevKit.GENSequence.AppendImage
+- uid: Glitch9.AIDevKit.GENSequence.AppendAudio*
+  commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendAudio
+  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendAudio_Glitch9_AIDevKit_IGENTask_
+  name: AppendAudio
+  nameWithType: GENSequence.AppendAudio
+  fullName: Glitch9.AIDevKit.GENSequence.AppendAudio
+- uid: Glitch9.AIDevKit.GENSequence.AppendTextToText*
+  commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendTextToText
+  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendTextToText_System_Func_System_String_Glitch9_AIDevKit_IGENTask__
+  name: AppendTextToText
+  nameWithType: GENSequence.AppendTextToText
+  fullName: Glitch9.AIDevKit.GENSequence.AppendTextToText
+- uid: System.Func{System.String,Glitch9.AIDevKit.IGENTask}
+  commentId: T:System.Func{System.String,Glitch9.AIDevKit.IGENTask}
+  parent: System
+  definition: System.Func`2
+  href: Glitch9.AIDevKit.IGENTask.html
+  name: Func<string, IGENTask>
+  nameWithType: Func<string, IGENTask>
+  fullName: System.Func<string, Glitch9.AIDevKit.IGENTask>
+  nameWithType.vb: Func(Of String, IGENTask)
+  fullName.vb: System.Func(Of String, Glitch9.AIDevKit.IGENTask)
+  name.vb: Func(Of String, IGENTask)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.IGENTask
+    name: IGENTask
+    href: Glitch9.AIDevKit.IGENTask.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.IGENTask
+    name: IGENTask
+    href: Glitch9.AIDevKit.IGENTask.html
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Glitch9.AIDevKit.GENSequence.AppendTextToImage*
+  commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendTextToImage
+  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendTextToImage_System_Func_System_String_Glitch9_AIDevKit_IGENTask__
+  name: AppendTextToImage
+  nameWithType: GENSequence.AppendTextToImage
+  fullName: Glitch9.AIDevKit.GENSequence.AppendTextToImage
+- uid: Glitch9.AIDevKit.GENSequence.AppendTextToAudio*
+  commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendTextToAudio
+  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendTextToAudio_System_Func_System_String_Glitch9_AIDevKit_IGENTask__
+  name: AppendTextToAudio
+  nameWithType: GENSequence.AppendTextToAudio
+  fullName: Glitch9.AIDevKit.GENSequence.AppendTextToAudio
+- uid: Glitch9.AIDevKit.GENSequence.AppendImageToText*
+  commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendImageToText
+  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendImageToText_System_Func_Texture2D_Glitch9_AIDevKit_IGENTask__
+  name: AppendImageToText
+  nameWithType: GENSequence.AppendImageToText
+  fullName: Glitch9.AIDevKit.GENSequence.AppendImageToText
+- uid: System.Func{Texture2D,Glitch9.AIDevKit.IGENTask}
+  commentId: T:System.Func{Texture2D,Glitch9.AIDevKit.IGENTask}
+  parent: System
+  definition: System.Func`2
+  href: Glitch9.AIDevKit.IGENTask.html
+  name: Func<Texture2D, IGENTask>
+  nameWithType: Func<Texture2D, IGENTask>
+  fullName: System.Func<Texture2D, Glitch9.AIDevKit.IGENTask>
+  nameWithType.vb: Func(Of Texture2D, IGENTask)
+  fullName.vb: System.Func(Of Texture2D, Glitch9.AIDevKit.IGENTask)
+  name.vb: Func(Of Texture2D, IGENTask)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - uid: Texture2D
+    name: Texture2D
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.IGENTask
+    name: IGENTask
+    href: Glitch9.AIDevKit.IGENTask.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Texture2D
+    name: Texture2D
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.IGENTask
+    name: IGENTask
+    href: Glitch9.AIDevKit.IGENTask.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENSequence.AppendImageToImage*
+  commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendImageToImage
+  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendImageToImage_System_Func_Texture2D_Glitch9_AIDevKit_IGENTask__
+  name: AppendImageToImage
+  nameWithType: GENSequence.AppendImageToImage
+  fullName: Glitch9.AIDevKit.GENSequence.AppendImageToImage
+- uid: Glitch9.AIDevKit.GENSequence.AppendAudioToText*
+  commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendAudioToText
+  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendAudioToText_System_Func_AudioClip_Glitch9_AIDevKit_IGENTask__
+  name: AppendAudioToText
+  nameWithType: GENSequence.AppendAudioToText
+  fullName: Glitch9.AIDevKit.GENSequence.AppendAudioToText
+- uid: System.Func{AudioClip,Glitch9.AIDevKit.IGENTask}
+  commentId: T:System.Func{AudioClip,Glitch9.AIDevKit.IGENTask}
+  parent: System
+  definition: System.Func`2
+  href: Glitch9.AIDevKit.IGENTask.html
+  name: Func<AudioClip, IGENTask>
+  nameWithType: Func<AudioClip, IGENTask>
+  fullName: System.Func<AudioClip, Glitch9.AIDevKit.IGENTask>
+  nameWithType.vb: Func(Of AudioClip, IGENTask)
+  fullName.vb: System.Func(Of AudioClip, Glitch9.AIDevKit.IGENTask)
+  name.vb: Func(Of AudioClip, IGENTask)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.IGENTask
+    name: IGENTask
+    href: Glitch9.AIDevKit.IGENTask.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Glitch9.AIDevKit.IGENTask
+    name: IGENTask
+    href: Glitch9.AIDevKit.IGENTask.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENSequence.AppendAudioToAudio*
+  commentId: Overload:Glitch9.AIDevKit.GENSequence.AppendAudioToAudio
+  href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_AppendAudioToAudio_System_Func_AudioClip_Glitch9_AIDevKit_IGENTask__
+  name: AppendAudioToAudio
+  nameWithType: GENSequence.AppendAudioToAudio
+  fullName: Glitch9.AIDevKit.GENSequence.AppendAudioToAudio
 - uid: Glitch9.AIDevKit.GENSequence.ExecuteAsync*
   commentId: Overload:Glitch9.AIDevKit.GENSequence.ExecuteAsync
   href: Glitch9.AIDevKit.GENSequence.html#Glitch9_AIDevKit_GENSequence_ExecuteAsync

@@ -9,10 +9,9 @@ items:
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormat
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormatExtensions
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiver
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Request
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventProcessor
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent
@@ -20,7 +19,6 @@ items:
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatusDetails
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemType
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeService
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeUtil
@@ -34,6 +32,13 @@ items:
   fullName: Glitch9.AIDevKit.OpenAI.Realtime
   type: Namespace
 references:
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.Conversation
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.Conversation
+  parent: Glitch9.AIDevKit.OpenAI.Realtime
+  href: Glitch9.AIDevKit.OpenAI.Realtime.Conversation.html
+  name: Conversation
+  nameWithType: Conversation
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.Conversation
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit
   commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RateLimit
   href: Glitch9.AIDevKit.OpenAI.Realtime.RateLimit.html
@@ -54,6 +59,56 @@ references:
   name: RealtimeAudioFormatExtensions
   nameWithType: RealtimeAudioFormatExtensions
   fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeAudioFormatExtensions
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  name: RealtimeEvent
+  nameWithType: RealtimeEvent
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Request
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Request
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  name: RealtimeEvent.Request
+  nameWithType: RealtimeEvent.Request
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Request
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+    name: RealtimeEvent
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Request
+    name: Request
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Request.html
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+    name: RealtimeEvent
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Request
+    name: Request
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Request.html
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  name: RealtimeEvent.Response
+  nameWithType: RealtimeEvent.Response
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+    name: RealtimeEvent
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
+    name: Response
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response.html
+  spec.vb:
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
+    name: RealtimeEvent
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
+  - name: .
+  - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
+    name: Response
+    href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response.html
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
   commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
   parent: Glitch9.AIDevKit.OpenAI.Realtime
@@ -75,26 +130,6 @@ references:
   name: TurnDetection
   nameWithType: TurnDetection
   fullName: Glitch9.AIDevKit.OpenAI.Realtime.TurnDetection
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.Conversation
-  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.Conversation
-  parent: Glitch9.AIDevKit.OpenAI.Realtime
-  href: Glitch9.AIDevKit.OpenAI.Realtime.Conversation.html
-  name: Conversation
-  nameWithType: Conversation
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.Conversation
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
-  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
-  parent: Glitch9.AIDevKit.OpenAI.Realtime
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html
-  name: RealtimeEvent
-  nameWithType: RealtimeEvent
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId
-  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html
-  name: RealtimeEventId
-  nameWithType: RealtimeEventId
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
   commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
   parent: Glitch9.AIDevKit.OpenAI.Realtime
@@ -137,25 +172,18 @@ references:
   name: RealtimeItemType
   nameWithType: RealtimeItemType
   fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemType
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
-  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler.html
-  name: RealtimeEventHandler
-  nameWithType: RealtimeEventHandler
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventHandler
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiver
-  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiver
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiver.html
-  name: RealtimeEventReceiver
-  nameWithType: RealtimeEventReceiver
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiver
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
-  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
-  parent: Glitch9.AIDevKit.OpenAI.Realtime
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase.html
-  name: RealtimeEventReceiverBase
-  nameWithType: RealtimeEventReceiverBase
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventReceiverBase
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.html
+  name: RealtimeSessionController
+  nameWithType: RealtimeSessionController
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventProcessor
+  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventProcessor
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventProcessor.html
+  name: RealtimeEventProcessor
+  nameWithType: RealtimeEventProcessor
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventProcessor
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1
   commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer`1
   href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemBuffer-1.html
@@ -181,19 +209,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeService
-  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeService
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeService.html
-  name: RealtimeService
-  nameWithType: RealtimeService
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeService
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
-  commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
-  parent: Glitch9.AIDevKit.OpenAI.Realtime
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController.html
-  name: RealtimeSessionController
-  nameWithType: RealtimeSessionController
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSessionController
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeUtil
   commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeUtil
   href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeUtil.html

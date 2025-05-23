@@ -22,8 +22,8 @@ items:
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Part
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.PreviousItemId
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.RateLimits
-  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseId
+  - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseItem
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Session
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Text
   - Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Transcript
@@ -37,7 +37,7 @@ items:
   type: Class
   source:
     id: RealtimeEvent
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
     startLine: 10
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: >-
@@ -63,8 +63,8 @@ items:
   type: Property
   source:
     id: CancellationTokenSource
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 12
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 131
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   example: []
   syntax:
@@ -87,8 +87,8 @@ items:
   type: Property
   source:
     id: EventId
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 18
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 137
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: >-
     <p><code>Requests</code>: Optional client-generated ID used to identify this event.</p>
@@ -115,8 +115,8 @@ items:
   type: Property
   source:
     id: Type
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 23
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 142
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The event type.
   example: []
@@ -140,8 +140,8 @@ items:
   type: Property
   source:
     id: Session
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 28
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 147
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The session resource.
   example: []
@@ -152,31 +152,31 @@ items:
       type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
     content.vb: Public Property Session As RealtimeSession
   overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Session*
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
-  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
-  id: Response
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseItem
+  commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseItem
+  id: ResponseItem
   parent: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent
   langs:
   - csharp
   - vb
-  name: Response
-  nameWithType: RealtimeEvent.Response
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
+  name: ResponseItem
+  nameWithType: RealtimeEvent.ResponseItem
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseItem
   type: Property
   source:
-    id: Response
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 33
+    id: ResponseItem
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 152
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
-  summary: '<p><xref href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseCreate" data-throw-if-not-resolved="false"></xref>: Configuration for the response.</p>'
+  summary: '<p>RealtimeEventId.ResponseCreate: Configuration for the response.</p>'
   example: []
   syntax:
-    content: public RealtimeItem Response { get; set; }
+    content: public RealtimeItem ResponseItem { get; set; }
     parameters: []
     return:
       type: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
-    content.vb: Public Property Response As RealtimeItem
-  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response*
+    content.vb: Public Property ResponseItem As RealtimeItem
+  overload: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseItem*
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Error
   commentId: P:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Error
   id: Error
@@ -190,8 +190,8 @@ items:
   type: Property
   source:
     id: Error
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 38
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 157
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: Details of the error.
   example: []
@@ -215,8 +215,8 @@ items:
   type: Property
   source:
     id: Conversation
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 43
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 162
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The conversation resource.
   example: []
@@ -240,8 +240,8 @@ items:
   type: Property
   source:
     id: Item
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 48
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 167
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The item to add to the conversation.
   example: []
@@ -265,8 +265,8 @@ items:
   type: Property
   source:
     id: ResponseId
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 53
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 172
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The ID of the response.
   example: []
@@ -290,8 +290,8 @@ items:
   type: Property
   source:
     id: ItemId
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 58
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 177
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The ID of the item or the function call item.
   example: []
@@ -315,8 +315,8 @@ items:
   type: Property
   source:
     id: PreviousItemId
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 63
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 182
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The ID of the preceding item after which the new item will be inserted.
   example: []
@@ -340,8 +340,8 @@ items:
   type: Property
   source:
     id: OutputIndex
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 68
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 187
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The index of the output item in the response.
   example: []
@@ -365,8 +365,8 @@ items:
   type: Property
   source:
     id: ContentIndex
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 73
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 192
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The index of the content part in the item's content array.
   example: []
@@ -390,8 +390,8 @@ items:
   type: Property
   source:
     id: CallId
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 78
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 197
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The ID of the function call.
   example: []
@@ -415,10 +415,10 @@ items:
   type: Property
   source:
     id: Transcript
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 83
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 202
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
-  summary: '<xref href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDone" data-throw-if-not-resolved="false"></xref>: The final transcript of the audio.'
+  summary: 'RealtimeEventId.ResponseAudioTranscriptDone: The final transcript of the audio.'
   example: []
   syntax:
     content: public string Transcript { get; set; }
@@ -440,8 +440,8 @@ items:
   type: Property
   source:
     id: Text
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 88
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 207
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The final text content.
   example: []
@@ -465,11 +465,11 @@ items:
   type: Property
   source:
     id: Audio
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 96
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 215
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: Base64-encoded audio bytes.
-  remarks: This property is only used when the event type is <xref href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferAppend" data-throw-if-not-resolved="false"></xref>.
+  remarks: This property is only used when the event type is RealtimeEventId.InputAudioBufferAppend.
   example: []
   syntax:
     content: public string Audio { get; set; }
@@ -491,13 +491,13 @@ items:
   type: Property
   source:
     id: Part
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 102
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 221
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: >-
-    <p><xref href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartAdded" data-throw-if-not-resolved="false"></xref>: The content part that was added.</p>
+    <p>RealtimeEventId.ResponseContentPartAdded: The content part that was added.</p>
 
-    <p><xref href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartDone" data-throw-if-not-resolved="false"></xref>: The content part that is done.</p>
+    <p>RealtimeEventId.ResponseContentPartDone: The content part that is done.</p>
   example: []
   syntax:
     content: public RealtimeItemContent Part { get; set; }
@@ -519,8 +519,8 @@ items:
   type: Property
   source:
     id: Arguments
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 107
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 226
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: The final arguments as a JSON string.
   example: []
@@ -544,17 +544,17 @@ items:
   type: Property
   source:
     id: Delta
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 115
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 234
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: >-
-    <p><xref href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseTextDelta" data-throw-if-not-resolved="false"></xref>: The text delta.</p>
+    <p>RealtimeEventId.ResponseTextDelta: The text delta.</p>
 
-    <p><xref href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDelta" data-throw-if-not-resolved="false"></xref>: The transcript delta.</p>
+    <p>RealtimeEventId.ResponseAudioTranscriptDelta: The transcript delta.</p>
 
-    <p><xref href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioDelta" data-throw-if-not-resolved="false"></xref>: Base64-encoded audio data delta.</p>
+    <p>RealtimeEventId.ResponseAudioDelta: Base64-encoded audio data delta.</p>
 
-    <p><xref href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseFunctionCallArgumentsDelta" data-throw-if-not-resolved="false"></xref>: The arguments delta as a JSON string.</p>
+    <p>RealtimeEventId.ResponseFunctionCallArgumentsDelta: The arguments delta as a JSON string.</p>
   example: []
   syntax:
     content: public string Delta { get; set; }
@@ -576,8 +576,8 @@ items:
   type: Property
   source:
     id: RateLimits
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 120
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 239
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: List of rate limit information.
   example: []
@@ -601,8 +601,8 @@ items:
   type: Property
   source:
     id: AudioStartMs
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 125
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 244
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: Milliseconds since the session started when speech was detected.
   example: []
@@ -626,8 +626,8 @@ items:
   type: Property
   source:
     id: AudioEndMs
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/RealtimeEvent/RealtimeEvent.cs
-    startLine: 130
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
+    startLine: 249
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
   summary: Inclusive duration up to which audio is truncated, in milliseconds.
   example: []
@@ -769,18 +769,12 @@ references:
   name: RealtimeSession
   nameWithType: RealtimeSession
   fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeSession
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseCreate
-  commentId: F:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseCreate
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseCreate
-  name: ResponseCreate
-  nameWithType: RealtimeEventId.ResponseCreate
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseCreate
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response*
-  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Response
-  name: Response
-  nameWithType: RealtimeEvent.Response
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Response
+- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseItem*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseItem
+  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_ResponseItem
+  name: ResponseItem
+  nameWithType: RealtimeEvent.ResponseItem
+  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.ResponseItem
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
   commentId: T:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem
   parent: Glitch9.AIDevKit.OpenAI.Realtime
@@ -923,12 +917,6 @@ references:
   name: CallId
   nameWithType: RealtimeEvent.CallId
   fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.CallId
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDone
-  commentId: F:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDone
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioTranscriptDone
-  name: ResponseAudioTranscriptDone
-  nameWithType: RealtimeEventId.ResponseAudioTranscriptDone
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDone
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Transcript*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Transcript
   href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Transcript
@@ -941,30 +929,12 @@ references:
   name: Text
   nameWithType: RealtimeEvent.Text
   fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Text
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferAppend
-  commentId: F:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferAppend
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_InputAudioBufferAppend
-  name: InputAudioBufferAppend
-  nameWithType: RealtimeEventId.InputAudioBufferAppend
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.InputAudioBufferAppend
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Audio*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Audio
   href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Audio
   name: Audio
   nameWithType: RealtimeEvent.Audio
   fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Audio
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartAdded
-  commentId: F:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartAdded
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseContentPartAdded
-  name: ResponseContentPartAdded
-  nameWithType: RealtimeEventId.ResponseContentPartAdded
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartAdded
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartDone
-  commentId: F:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartDone
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseContentPartDone
-  name: ResponseContentPartDone
-  nameWithType: RealtimeEventId.ResponseContentPartDone
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseContentPartDone
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Part*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Part
   href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Part
@@ -984,30 +954,6 @@ references:
   name: Arguments
   nameWithType: RealtimeEvent.Arguments
   fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Arguments
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseTextDelta
-  commentId: F:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseTextDelta
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseTextDelta
-  name: ResponseTextDelta
-  nameWithType: RealtimeEventId.ResponseTextDelta
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseTextDelta
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDelta
-  commentId: F:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDelta
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioTranscriptDelta
-  name: ResponseAudioTranscriptDelta
-  nameWithType: RealtimeEventId.ResponseAudioTranscriptDelta
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioTranscriptDelta
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioDelta
-  commentId: F:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioDelta
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseAudioDelta
-  name: ResponseAudioDelta
-  nameWithType: RealtimeEventId.ResponseAudioDelta
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseAudioDelta
-- uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseFunctionCallArgumentsDelta
-  commentId: F:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseFunctionCallArgumentsDelta
-  href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEventId_ResponseFunctionCallArgumentsDelta
-  name: ResponseFunctionCallArgumentsDelta
-  nameWithType: RealtimeEventId.ResponseFunctionCallArgumentsDelta
-  fullName: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEventId.ResponseFunctionCallArgumentsDelta
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Delta*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.Delta
   href: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.html#Glitch9_AIDevKit_OpenAI_Realtime_RealtimeEvent_Delta

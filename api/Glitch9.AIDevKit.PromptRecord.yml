@@ -6,8 +6,6 @@ items:
   parent: Glitch9.AIDevKit
   children:
   - Glitch9.AIDevKit.PromptRecord.#ctor
-  - Glitch9.AIDevKit.PromptRecord.AddInputAudio(Glitch9.IO.Files.UniAudioFile[])
-  - Glitch9.AIDevKit.PromptRecord.AddInputImages(Glitch9.IO.Files.UniImageFile[])
   - Glitch9.AIDevKit.PromptRecord.Api
   - Glitch9.AIDevKit.PromptRecord.CreatedAt
   - Glitch9.AIDevKit.PromptRecord.Equals(Glitch9.AIDevKit.PromptRecord)
@@ -15,12 +13,12 @@ items:
   - Glitch9.AIDevKit.PromptRecord.GetHashCode
   - Glitch9.AIDevKit.PromptRecord.GetMetadata(System.String)
   - Glitch9.AIDevKit.PromptRecord.Id
-  - Glitch9.AIDevKit.PromptRecord.InputContents
+  - Glitch9.AIDevKit.PromptRecord.InputFiles
   - Glitch9.AIDevKit.PromptRecord.InputText
   - Glitch9.AIDevKit.PromptRecord.ModelId
   - Glitch9.AIDevKit.PromptRecord.ModelName
   - Glitch9.AIDevKit.PromptRecord.Name
-  - Glitch9.AIDevKit.PromptRecord.OutputContents
+  - Glitch9.AIDevKit.PromptRecord.OutputFiles
   - Glitch9.AIDevKit.PromptRecord.OutputText
   - Glitch9.AIDevKit.PromptRecord.Price
   - Glitch9.AIDevKit.PromptRecord.RequestOptions
@@ -39,7 +37,7 @@ items:
   source:
     id: PromptRecord
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 10
+    startLine: 11
   namespace: Glitch9.AIDevKit
   syntax:
     content: >-
@@ -70,7 +68,7 @@ items:
   source:
     id: Id
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 33
+    startLine: 36
   namespace: Glitch9.AIDevKit
   summary: Unique identifier for this data.
   example: []
@@ -95,7 +93,7 @@ items:
   source:
     id: Name
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 34
+    startLine: 37
   namespace: Glitch9.AIDevKit
   summary: Name of this data.
   example: []
@@ -120,7 +118,7 @@ items:
   source:
     id: TaskType
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 35
+    startLine: 38
   namespace: Glitch9.AIDevKit
   syntax:
     content: public int TaskType { get; }
@@ -143,7 +141,7 @@ items:
   source:
     id: Sender
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 36
+    startLine: 39
   namespace: Glitch9.AIDevKit
   syntax:
     content: public string Sender { get; }
@@ -166,7 +164,7 @@ items:
   source:
     id: CreatedAt
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 37
+    startLine: 40
   namespace: Glitch9.AIDevKit
   syntax:
     content: public UnixTime CreatedAt { get; }
@@ -189,14 +187,14 @@ items:
   source:
     id: Api
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 38
+    startLine: 41
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public AIProvider Api { get; }
+    content: public Api Api { get; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.AIProvider
-    content.vb: Public ReadOnly Property Api As AIProvider
+      type: Glitch9.AIDevKit.Api
+    content.vb: Public ReadOnly Property Api As Api
   overload: Glitch9.AIDevKit.PromptRecord.Api*
 - uid: Glitch9.AIDevKit.PromptRecord.ModelId
   commentId: P:Glitch9.AIDevKit.PromptRecord.ModelId
@@ -212,7 +210,7 @@ items:
   source:
     id: ModelId
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 39
+    startLine: 42
   namespace: Glitch9.AIDevKit
   syntax:
     content: public string ModelId { get; }
@@ -235,7 +233,7 @@ items:
   source:
     id: ModelName
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 40
+    startLine: 43
   namespace: Glitch9.AIDevKit
   syntax:
     content: public string ModelName { get; }
@@ -244,52 +242,52 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property ModelName As String
   overload: Glitch9.AIDevKit.PromptRecord.ModelName*
-- uid: Glitch9.AIDevKit.PromptRecord.InputContents
-  commentId: P:Glitch9.AIDevKit.PromptRecord.InputContents
-  id: InputContents
+- uid: Glitch9.AIDevKit.PromptRecord.InputFiles
+  commentId: P:Glitch9.AIDevKit.PromptRecord.InputFiles
+  id: InputFiles
   parent: Glitch9.AIDevKit.PromptRecord
   langs:
   - csharp
   - vb
-  name: InputContents
-  nameWithType: PromptRecord.InputContents
-  fullName: Glitch9.AIDevKit.PromptRecord.InputContents
+  name: InputFiles
+  nameWithType: PromptRecord.InputFiles
+  fullName: Glitch9.AIDevKit.PromptRecord.InputFiles
   type: Property
   source:
-    id: InputContents
+    id: InputFiles
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 41
+    startLine: 45
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public List<ISerializedContent> InputContents { get; }
+    content: public List<IFile> InputFiles { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{Glitch9.AIDevKit.ISerializedContent}
-    content.vb: Public ReadOnly Property InputContents As List(Of ISerializedContent)
-  overload: Glitch9.AIDevKit.PromptRecord.InputContents*
-- uid: Glitch9.AIDevKit.PromptRecord.OutputContents
-  commentId: P:Glitch9.AIDevKit.PromptRecord.OutputContents
-  id: OutputContents
+      type: System.Collections.Generic.List{Glitch9.IO.Files.IFile}
+    content.vb: Public ReadOnly Property InputFiles As List(Of IFile)
+  overload: Glitch9.AIDevKit.PromptRecord.InputFiles*
+- uid: Glitch9.AIDevKit.PromptRecord.OutputFiles
+  commentId: P:Glitch9.AIDevKit.PromptRecord.OutputFiles
+  id: OutputFiles
   parent: Glitch9.AIDevKit.PromptRecord
   langs:
   - csharp
   - vb
-  name: OutputContents
-  nameWithType: PromptRecord.OutputContents
-  fullName: Glitch9.AIDevKit.PromptRecord.OutputContents
+  name: OutputFiles
+  nameWithType: PromptRecord.OutputFiles
+  fullName: Glitch9.AIDevKit.PromptRecord.OutputFiles
   type: Property
   source:
-    id: OutputContents
+    id: OutputFiles
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 42
+    startLine: 46
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public List<ISerializedContent> OutputContents { get; }
+    content: public List<IFile> OutputFiles { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{Glitch9.AIDevKit.ISerializedContent}
-    content.vb: Public ReadOnly Property OutputContents As List(Of ISerializedContent)
-  overload: Glitch9.AIDevKit.PromptRecord.OutputContents*
+      type: System.Collections.Generic.List{Glitch9.IO.Files.IFile}
+    content.vb: Public ReadOnly Property OutputFiles As List(Of IFile)
+  overload: Glitch9.AIDevKit.PromptRecord.OutputFiles*
 - uid: Glitch9.AIDevKit.PromptRecord.InputText
   commentId: P:Glitch9.AIDevKit.PromptRecord.InputText
   id: InputText
@@ -304,7 +302,7 @@ items:
   source:
     id: InputText
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 44
+    startLine: 48
   namespace: Glitch9.AIDevKit
   syntax:
     content: public string InputText { get; }
@@ -327,7 +325,7 @@ items:
   source:
     id: OutputText
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 45
+    startLine: 49
   namespace: Glitch9.AIDevKit
   syntax:
     content: public string OutputText { get; }
@@ -350,7 +348,7 @@ items:
   source:
     id: RequestOptions
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 47
+    startLine: 51
   namespace: Glitch9.AIDevKit
   syntax:
     content: public Metadata RequestOptions { get; }
@@ -373,7 +371,7 @@ items:
   source:
     id: Usage
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 48
+    startLine: 52
   namespace: Glitch9.AIDevKit
   syntax:
     content: public Usage Usage { get; set; }
@@ -396,7 +394,7 @@ items:
   source:
     id: Price
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 49
+    startLine: 53
   namespace: Glitch9.AIDevKit
   syntax:
     content: public Currency Price { get; set; }
@@ -419,7 +417,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 51
+    startLine: 55
   namespace: Glitch9.AIDevKit
   syntax:
     content: public PromptRecord()
@@ -442,7 +440,7 @@ items:
   source:
     id: GetMetadata
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 187
+    startLine: 141
   namespace: Glitch9.AIDevKit
   syntax:
     content: public string GetMetadata(string key)
@@ -456,62 +454,6 @@ items:
   nameWithType.vb: PromptRecord.GetMetadata(String)
   fullName.vb: Glitch9.AIDevKit.PromptRecord.GetMetadata(String)
   name.vb: GetMetadata(String)
-- uid: Glitch9.AIDevKit.PromptRecord.AddInputImages(Glitch9.IO.Files.UniImageFile[])
-  commentId: M:Glitch9.AIDevKit.PromptRecord.AddInputImages(Glitch9.IO.Files.UniImageFile[])
-  id: AddInputImages(Glitch9.IO.Files.UniImageFile[])
-  parent: Glitch9.AIDevKit.PromptRecord
-  langs:
-  - csharp
-  - vb
-  name: AddInputImages(params UniImageFile[])
-  nameWithType: PromptRecord.AddInputImages(params UniImageFile[])
-  fullName: Glitch9.AIDevKit.PromptRecord.AddInputImages(params Glitch9.IO.Files.UniImageFile[])
-  type: Method
-  source:
-    id: AddInputImages
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 305
-  namespace: Glitch9.AIDevKit
-  syntax:
-    content: public PromptRecord AddInputImages(params UniImageFile[] images)
-    parameters:
-    - id: images
-      type: Glitch9.IO.Files.UniImageFile[]
-    return:
-      type: Glitch9.AIDevKit.PromptRecord
-    content.vb: Public Function AddInputImages(ParamArray images As UniImageFile()) As PromptRecord
-  overload: Glitch9.AIDevKit.PromptRecord.AddInputImages*
-  nameWithType.vb: PromptRecord.AddInputImages(ParamArray UniImageFile())
-  fullName.vb: Glitch9.AIDevKit.PromptRecord.AddInputImages(ParamArray Glitch9.IO.Files.UniImageFile())
-  name.vb: AddInputImages(ParamArray UniImageFile())
-- uid: Glitch9.AIDevKit.PromptRecord.AddInputAudio(Glitch9.IO.Files.UniAudioFile[])
-  commentId: M:Glitch9.AIDevKit.PromptRecord.AddInputAudio(Glitch9.IO.Files.UniAudioFile[])
-  id: AddInputAudio(Glitch9.IO.Files.UniAudioFile[])
-  parent: Glitch9.AIDevKit.PromptRecord
-  langs:
-  - csharp
-  - vb
-  name: AddInputAudio(params UniAudioFile[])
-  nameWithType: PromptRecord.AddInputAudio(params UniAudioFile[])
-  fullName: Glitch9.AIDevKit.PromptRecord.AddInputAudio(params Glitch9.IO.Files.UniAudioFile[])
-  type: Method
-  source:
-    id: AddInputAudio
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 314
-  namespace: Glitch9.AIDevKit
-  syntax:
-    content: public PromptRecord AddInputAudio(params UniAudioFile[] audios)
-    parameters:
-    - id: audios
-      type: Glitch9.IO.Files.UniAudioFile[]
-    return:
-      type: Glitch9.AIDevKit.PromptRecord
-    content.vb: Public Function AddInputAudio(ParamArray audios As UniAudioFile()) As PromptRecord
-  overload: Glitch9.AIDevKit.PromptRecord.AddInputAudio*
-  nameWithType.vb: PromptRecord.AddInputAudio(ParamArray UniAudioFile())
-  fullName.vb: Glitch9.AIDevKit.PromptRecord.AddInputAudio(ParamArray Glitch9.IO.Files.UniAudioFile())
-  name.vb: AddInputAudio(ParamArray UniAudioFile())
 - uid: Glitch9.AIDevKit.PromptRecord.Equals(Glitch9.AIDevKit.PromptRecord)
   commentId: M:Glitch9.AIDevKit.PromptRecord.Equals(Glitch9.AIDevKit.PromptRecord)
   id: Equals(Glitch9.AIDevKit.PromptRecord)
@@ -526,7 +468,7 @@ items:
   source:
     id: Equals
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 433
+    startLine: 299
   namespace: Glitch9.AIDevKit
   syntax:
     content: public bool Equals(PromptRecord other)
@@ -551,7 +493,7 @@ items:
   source:
     id: Equals
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 440
+    startLine: 306
   namespace: Glitch9.AIDevKit
   summary: Determines whether the specified object is equal to the current object.
   example: []
@@ -584,7 +526,7 @@ items:
   source:
     id: GetHashCode
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 448
+    startLine: 314
   namespace: Glitch9.AIDevKit
   summary: Serves as the default hash function.
   example: []
@@ -610,7 +552,7 @@ items:
   source:
     id: op_Equality
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 453
+    startLine: 319
   namespace: Glitch9.AIDevKit
   syntax:
     content: public static bool operator ==(PromptRecord left, PromptRecord right)
@@ -640,7 +582,7 @@ items:
   source:
     id: op_Inequality
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Profiles/PromptRecord.cs
-    startLine: 461
+    startLine: 327
   namespace: Glitch9.AIDevKit
   syntax:
     content: public static bool operator !=(PromptRecord left, PromptRecord right)
@@ -764,13 +706,13 @@ references:
   name: Api
   nameWithType: PromptRecord.Api
   fullName: Glitch9.AIDevKit.PromptRecord.Api
-- uid: Glitch9.AIDevKit.AIProvider
-  commentId: T:Glitch9.AIDevKit.AIProvider
+- uid: Glitch9.AIDevKit.Api
+  commentId: T:Glitch9.AIDevKit.Api
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.AIProvider.html
-  name: AIProvider
-  nameWithType: AIProvider
-  fullName: Glitch9.AIDevKit.AIProvider
+  href: Glitch9.AIDevKit.Api.html
+  name: Api
+  nameWithType: Api
+  fullName: Glitch9.AIDevKit.Api
 - uid: Glitch9.AIDevKit.PromptRecord.ModelId*
   commentId: Overload:Glitch9.AIDevKit.PromptRecord.ModelId
   href: Glitch9.AIDevKit.PromptRecord.html#Glitch9_AIDevKit_PromptRecord_ModelId
@@ -783,31 +725,29 @@ references:
   name: ModelName
   nameWithType: PromptRecord.ModelName
   fullName: Glitch9.AIDevKit.PromptRecord.ModelName
-- uid: Glitch9.AIDevKit.PromptRecord.InputContents*
-  commentId: Overload:Glitch9.AIDevKit.PromptRecord.InputContents
-  href: Glitch9.AIDevKit.PromptRecord.html#Glitch9_AIDevKit_PromptRecord_InputContents
-  name: InputContents
-  nameWithType: PromptRecord.InputContents
-  fullName: Glitch9.AIDevKit.PromptRecord.InputContents
-- uid: System.Collections.Generic.List{Glitch9.AIDevKit.ISerializedContent}
-  commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.ISerializedContent}
+- uid: Glitch9.AIDevKit.PromptRecord.InputFiles*
+  commentId: Overload:Glitch9.AIDevKit.PromptRecord.InputFiles
+  href: Glitch9.AIDevKit.PromptRecord.html#Glitch9_AIDevKit_PromptRecord_InputFiles
+  name: InputFiles
+  nameWithType: PromptRecord.InputFiles
+  fullName: Glitch9.AIDevKit.PromptRecord.InputFiles
+- uid: System.Collections.Generic.List{Glitch9.IO.Files.IFile}
+  commentId: T:System.Collections.Generic.List{Glitch9.IO.Files.IFile}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
-  href: Glitch9.AIDevKit.ISerializedContent.html
-  name: List<ISerializedContent>
-  nameWithType: List<ISerializedContent>
-  fullName: System.Collections.Generic.List<Glitch9.AIDevKit.ISerializedContent>
-  nameWithType.vb: List(Of ISerializedContent)
-  fullName.vb: System.Collections.Generic.List(Of Glitch9.AIDevKit.ISerializedContent)
-  name.vb: List(Of ISerializedContent)
+  name: List<IFile>
+  nameWithType: List<IFile>
+  fullName: System.Collections.Generic.List<Glitch9.IO.Files.IFile>
+  nameWithType.vb: List(Of IFile)
+  fullName.vb: System.Collections.Generic.List(Of Glitch9.IO.Files.IFile)
+  name.vb: List(Of IFile)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
   - name: <
-  - uid: Glitch9.AIDevKit.ISerializedContent
-    name: ISerializedContent
-    href: Glitch9.AIDevKit.ISerializedContent.html
+  - uid: Glitch9.IO.Files.IFile
+    name: IFile
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -816,9 +756,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.AIDevKit.ISerializedContent
-    name: ISerializedContent
-    href: Glitch9.AIDevKit.ISerializedContent.html
+  - uid: Glitch9.IO.Files.IFile
+    name: IFile
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
@@ -882,12 +821,12 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: Glitch9.AIDevKit.PromptRecord.OutputContents*
-  commentId: Overload:Glitch9.AIDevKit.PromptRecord.OutputContents
-  href: Glitch9.AIDevKit.PromptRecord.html#Glitch9_AIDevKit_PromptRecord_OutputContents
-  name: OutputContents
-  nameWithType: PromptRecord.OutputContents
-  fullName: Glitch9.AIDevKit.PromptRecord.OutputContents
+- uid: Glitch9.AIDevKit.PromptRecord.OutputFiles*
+  commentId: Overload:Glitch9.AIDevKit.PromptRecord.OutputFiles
+  href: Glitch9.AIDevKit.PromptRecord.html#Glitch9_AIDevKit_PromptRecord_OutputFiles
+  name: OutputFiles
+  nameWithType: PromptRecord.OutputFiles
+  fullName: Glitch9.AIDevKit.PromptRecord.OutputFiles
 - uid: Glitch9.AIDevKit.PromptRecord.InputText*
   commentId: Overload:Glitch9.AIDevKit.PromptRecord.InputText
   href: Glitch9.AIDevKit.PromptRecord.html#Glitch9_AIDevKit_PromptRecord_InputText
@@ -952,30 +891,12 @@ references:
   name: GetMetadata
   nameWithType: PromptRecord.GetMetadata
   fullName: Glitch9.AIDevKit.PromptRecord.GetMetadata
-- uid: Glitch9.AIDevKit.PromptRecord.AddInputImages*
-  commentId: Overload:Glitch9.AIDevKit.PromptRecord.AddInputImages
-  href: Glitch9.AIDevKit.PromptRecord.html#Glitch9_AIDevKit_PromptRecord_AddInputImages_Glitch9_IO_Files_UniImageFile___
-  name: AddInputImages
-  nameWithType: PromptRecord.AddInputImages
-  fullName: Glitch9.AIDevKit.PromptRecord.AddInputImages
-- uid: Glitch9.IO.Files.UniImageFile[]
-  isExternal: true
-  name: UniImageFile[]
-  nameWithType: UniImageFile[]
-  fullName: Glitch9.IO.Files.UniImageFile[]
-  nameWithType.vb: UniImageFile()
-  fullName.vb: Glitch9.IO.Files.UniImageFile()
-  name.vb: UniImageFile()
-  spec.csharp:
-  - uid: Glitch9.IO.Files.UniImageFile
-    name: UniImageFile
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: Glitch9.IO.Files.UniImageFile
-    name: UniImageFile
-  - name: (
-  - name: )
+- uid: Glitch9.AIDevKit.PromptRecord.Equals*
+  commentId: Overload:Glitch9.AIDevKit.PromptRecord.Equals
+  href: Glitch9.AIDevKit.PromptRecord.html#Glitch9_AIDevKit_PromptRecord_Equals_Glitch9_AIDevKit_PromptRecord_
+  name: Equals
+  nameWithType: PromptRecord.Equals
+  fullName: Glitch9.AIDevKit.PromptRecord.Equals
 - uid: Glitch9.AIDevKit.PromptRecord
   commentId: T:Glitch9.AIDevKit.PromptRecord
   parent: Glitch9.AIDevKit
@@ -983,36 +904,6 @@ references:
   name: PromptRecord
   nameWithType: PromptRecord
   fullName: Glitch9.AIDevKit.PromptRecord
-- uid: Glitch9.AIDevKit.PromptRecord.AddInputAudio*
-  commentId: Overload:Glitch9.AIDevKit.PromptRecord.AddInputAudio
-  href: Glitch9.AIDevKit.PromptRecord.html#Glitch9_AIDevKit_PromptRecord_AddInputAudio_Glitch9_IO_Files_UniAudioFile___
-  name: AddInputAudio
-  nameWithType: PromptRecord.AddInputAudio
-  fullName: Glitch9.AIDevKit.PromptRecord.AddInputAudio
-- uid: Glitch9.IO.Files.UniAudioFile[]
-  isExternal: true
-  name: UniAudioFile[]
-  nameWithType: UniAudioFile[]
-  fullName: Glitch9.IO.Files.UniAudioFile[]
-  nameWithType.vb: UniAudioFile()
-  fullName.vb: Glitch9.IO.Files.UniAudioFile()
-  name.vb: UniAudioFile()
-  spec.csharp:
-  - uid: Glitch9.IO.Files.UniAudioFile
-    name: UniAudioFile
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: Glitch9.IO.Files.UniAudioFile
-    name: UniAudioFile
-  - name: (
-  - name: )
-- uid: Glitch9.AIDevKit.PromptRecord.Equals*
-  commentId: Overload:Glitch9.AIDevKit.PromptRecord.Equals
-  href: Glitch9.AIDevKit.PromptRecord.html#Glitch9_AIDevKit_PromptRecord_Equals_Glitch9_AIDevKit_PromptRecord_
-  name: Equals
-  nameWithType: PromptRecord.Equals
-  fullName: Glitch9.AIDevKit.PromptRecord.Equals
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

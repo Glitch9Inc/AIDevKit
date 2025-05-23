@@ -7,7 +7,7 @@ items:
   children:
   - Glitch9.AIDevKit.OpenRouter.Services.CompletionService.#ctor(Glitch9.AIDevKit.OpenRouter.OpenRouter)
   - Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CreateAsync(Glitch9.AIDevKit.CompletionRequest)
-  - Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+  - Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   langs:
   - csharp
   - vb
@@ -77,16 +77,16 @@ items:
       type: UniTask{Glitch9.AIDevKit.ChatCompletion}
     content.vb: Public Function CreateAsync(req As CompletionRequest) As UniTask(Of ChatCompletion)
   overload: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.CreateAsync*
-- uid: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  commentId: M:Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
-  id: Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.ChatStreamHandler)
+- uid: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  commentId: M:Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
+  id: Stream(Glitch9.AIDevKit.CompletionRequest,Glitch9.AIDevKit.IChatCompletionStreamHandler)
   parent: Glitch9.AIDevKit.OpenRouter.Services.CompletionService
   langs:
   - csharp
   - vb
-  name: Stream(CompletionRequest, ChatStreamHandler)
-  nameWithType: CompletionService.Stream(CompletionRequest, ChatStreamHandler)
-  fullName: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest, Glitch9.AIDevKit.ChatStreamHandler)
+  name: Stream(CompletionRequest, IChatCompletionStreamHandler)
+  nameWithType: CompletionService.Stream(CompletionRequest, IChatCompletionStreamHandler)
+  fullName: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream(Glitch9.AIDevKit.CompletionRequest, Glitch9.AIDevKit.IChatCompletionStreamHandler)
   type: Method
   source:
     id: Stream
@@ -94,15 +94,15 @@ items:
     startLine: 17
   namespace: Glitch9.AIDevKit.OpenRouter.Services
   syntax:
-    content: public UniTask Stream(CompletionRequest req, ChatStreamHandler streamHandler)
+    content: public UniTask Stream(CompletionRequest req, IChatCompletionStreamHandler streamHandler)
     parameters:
     - id: req
       type: Glitch9.AIDevKit.CompletionRequest
     - id: streamHandler
-      type: Glitch9.AIDevKit.ChatStreamHandler
+      type: Glitch9.AIDevKit.IChatCompletionStreamHandler
     return:
       type: UniTask
-    content.vb: Public Function Stream(req As CompletionRequest, streamHandler As ChatStreamHandler) As UniTask
+    content.vb: Public Function Stream(req As CompletionRequest, streamHandler As IChatCompletionStreamHandler) As UniTask
   overload: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream*
 references:
 - uid: Glitch9.AIDevKit.OpenRouter.Services
@@ -386,17 +386,17 @@ references:
   - name: )
 - uid: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream*
   commentId: Overload:Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream
-  href: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.html#Glitch9_AIDevKit_OpenRouter_Services_CompletionService_Stream_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_ChatStreamHandler_
+  href: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.html#Glitch9_AIDevKit_OpenRouter_Services_CompletionService_Stream_Glitch9_AIDevKit_CompletionRequest_Glitch9_AIDevKit_IChatCompletionStreamHandler_
   name: Stream
   nameWithType: CompletionService.Stream
   fullName: Glitch9.AIDevKit.OpenRouter.Services.CompletionService.Stream
-- uid: Glitch9.AIDevKit.ChatStreamHandler
-  commentId: T:Glitch9.AIDevKit.ChatStreamHandler
+- uid: Glitch9.AIDevKit.IChatCompletionStreamHandler
+  commentId: T:Glitch9.AIDevKit.IChatCompletionStreamHandler
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ChatStreamHandler.html
-  name: ChatStreamHandler
-  nameWithType: ChatStreamHandler
-  fullName: Glitch9.AIDevKit.ChatStreamHandler
+  href: Glitch9.AIDevKit.IChatCompletionStreamHandler.html
+  name: IChatCompletionStreamHandler
+  nameWithType: IChatCompletionStreamHandler
+  fullName: Glitch9.AIDevKit.IChatCompletionStreamHandler
 - uid: UniTask
   isExternal: true
   name: UniTask

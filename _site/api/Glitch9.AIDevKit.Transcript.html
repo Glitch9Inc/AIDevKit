@@ -90,14 +90,43 @@
       <div class="level2"><a class="xref" href="Glitch9.AIDevKit.ElevenLabs.ElevenLabsTranscript.html">ElevenLabsTranscript</a></div>
       <div class="level2"><a class="xref" href="Glitch9.AIDevKit.OpenAI.OpenAITranscript.html">OpenAITranscript</a></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.AIDevKit.IGeneratedResult.html">IGeneratedResult</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_Transcript_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Transcript</code></pre>
+    <pre><code class="lang-csharp hljs">public class Transcript : IGeneratedResult</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
+
+
+  <a id="Glitch9_AIDevKit_Transcript_Count_" data-uid="Glitch9.AIDevKit.Transcript.Count*"></a>
+  <h4 id="Glitch9_AIDevKit_Transcript_Count" data-uid="Glitch9.AIDevKit.Transcript.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="Glitch9_AIDevKit_Transcript_Language_" data-uid="Glitch9.AIDevKit.Transcript.Language*"></a>
@@ -148,19 +177,17 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-</h3>
 
 
-  <a id="Glitch9_AIDevKit_Transcript_CalculateUsage_" data-uid="Glitch9.AIDevKit.Transcript.CalculateUsage*"></a>
-  <h4 id="Glitch9_AIDevKit_Transcript_CalculateUsage" data-uid="Glitch9.AIDevKit.Transcript.CalculateUsage">CalculateUsage()</h4>
+  <a id="Glitch9_AIDevKit_Transcript_Usage_" data-uid="Glitch9.AIDevKit.Transcript.Usage*"></a>
+  <h4 id="Glitch9_AIDevKit_Transcript_Usage" data-uid="Glitch9.AIDevKit.Transcript.Usage">Usage</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Usage CalculateUsage()</code></pre>
+    <pre><code class="lang-csharp hljs">public Usage Usage { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -219,6 +246,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IGeneratedResult.html">IGeneratedResult</a>
+  </div>
 
 </article>
           </div>

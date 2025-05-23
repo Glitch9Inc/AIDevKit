@@ -5,7 +5,7 @@ items:
   id: VoiceLibrary
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI(Glitch9.AIDevKit.AIProvider)
+  - Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI(Glitch9.AIDevKit.Api)
   langs:
   - csharp
   - vb
@@ -21,8 +21,14 @@ items:
   summary: ScriptableObject database for storing voice data used for TTS (Text-to-Speech) and other voice-related tasks.
   example: []
   syntax:
-    content: 'public class VoiceLibrary : ScriptableDatabase<VoiceLibrary.Repo, Voice, VoiceLibrary>'
-    content.vb: Public Class VoiceLibrary Inherits ScriptableDatabase(Of VoiceLibrary.Repo, Voice, VoiceLibrary)
+    content: >-
+      [AssetPath("Resources/AIDevKit")]
+
+      public class VoiceLibrary : ScriptableDatabase<VoiceLibrary.Repo, Voice, VoiceLibrary>
+    content.vb: >-
+      <AssetPath("Resources/AIDevKit")>
+
+      Public Class VoiceLibrary Inherits ScriptableDatabase(Of VoiceLibrary.Repo, Voice, VoiceLibrary)
   inheritance:
   - System.Object
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.VoiceLibrary}
@@ -46,16 +52,22 @@ items:
   - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.VoiceLibrary.Repo,Glitch9.AIDevKit.Voice,Glitch9.AIDevKit.VoiceLibrary}.RestoreFromJsonFile(System.String)
   - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.VoiceLibrary.Repo,Glitch9.AIDevKit.Voice,Glitch9.AIDevKit.VoiceLibrary}.LogIfNull
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.VoiceLibrary}.Instance
-- uid: Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI(Glitch9.AIDevKit.AIProvider)
-  commentId: M:Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI(Glitch9.AIDevKit.AIProvider)
-  id: GetVoicesByAPI(Glitch9.AIDevKit.AIProvider)
+  attributes:
+  - type: Glitch9.AssetPathAttribute
+    ctor: Glitch9.AssetPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Resources/AIDevKit
+- uid: Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI(Glitch9.AIDevKit.Api)
+  commentId: M:Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI(Glitch9.AIDevKit.Api)
+  id: GetVoicesByAPI(Glitch9.AIDevKit.Api)
   parent: Glitch9.AIDevKit.VoiceLibrary
   langs:
   - csharp
   - vb
-  name: GetVoicesByAPI(AIProvider)
-  nameWithType: VoiceLibrary.GetVoicesByAPI(AIProvider)
-  fullName: Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI(Glitch9.AIDevKit.AIProvider)
+  name: GetVoicesByAPI(Api)
+  nameWithType: VoiceLibrary.GetVoicesByAPI(Api)
+  fullName: Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI(Glitch9.AIDevKit.Api)
   type: Method
   source:
     id: GetVoicesByAPI
@@ -63,13 +75,13 @@ items:
     startLine: 65
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public static List<Voice> GetVoicesByAPI(AIProvider api)
+    content: public static List<Voice> GetVoicesByAPI(Api api)
     parameters:
     - id: api
-      type: Glitch9.AIDevKit.AIProvider
+      type: Glitch9.AIDevKit.Api
     return:
       type: System.Collections.Generic.List{Glitch9.AIDevKit.Voice}
-    content.vb: Public Shared Function GetVoicesByAPI(api As AIProvider) As List(Of Voice)
+    content.vb: Public Shared Function GetVoicesByAPI(api As Api) As List(Of Voice)
   overload: Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI*
 references:
 - uid: Glitch9.AIDevKit
@@ -983,17 +995,17 @@ references:
   fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf).Instance
 - uid: Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI*
   commentId: Overload:Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI
-  href: Glitch9.AIDevKit.VoiceLibrary.html#Glitch9_AIDevKit_VoiceLibrary_GetVoicesByAPI_Glitch9_AIDevKit_AIProvider_
+  href: Glitch9.AIDevKit.VoiceLibrary.html#Glitch9_AIDevKit_VoiceLibrary_GetVoicesByAPI_Glitch9_AIDevKit_Api_
   name: GetVoicesByAPI
   nameWithType: VoiceLibrary.GetVoicesByAPI
   fullName: Glitch9.AIDevKit.VoiceLibrary.GetVoicesByAPI
-- uid: Glitch9.AIDevKit.AIProvider
-  commentId: T:Glitch9.AIDevKit.AIProvider
+- uid: Glitch9.AIDevKit.Api
+  commentId: T:Glitch9.AIDevKit.Api
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.AIProvider.html
-  name: AIProvider
-  nameWithType: AIProvider
-  fullName: Glitch9.AIDevKit.AIProvider
+  href: Glitch9.AIDevKit.Api.html
+  name: Api
+  nameWithType: Api
+  fullName: Glitch9.AIDevKit.Api
 - uid: System.Collections.Generic.List{Glitch9.AIDevKit.Voice}
   commentId: T:System.Collections.Generic.List{Glitch9.AIDevKit.Voice}
   parent: System.Collections.Generic

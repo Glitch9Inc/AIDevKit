@@ -5,11 +5,11 @@ items:
   id: Run
   parent: Glitch9.AIDevKit.OpenAI
   children:
-  - Glitch9.AIDevKit.OpenAI.Run.ActionRequest
   - Glitch9.AIDevKit.OpenAI.Run.IncompleteDetails
   - Glitch9.AIDevKit.OpenAI.Run.Instructions
   - Glitch9.AIDevKit.OpenAI.Run.MaxCompletionTokens
   - Glitch9.AIDevKit.OpenAI.Run.MaxPromptTokens
+  - Glitch9.AIDevKit.OpenAI.Run.RequiredAction
   - Glitch9.AIDevKit.OpenAI.Run.ResponseFormat
   - Glitch9.AIDevKit.OpenAI.Run.Temperature
   - Glitch9.AIDevKit.OpenAI.Run.ToolChoice
@@ -26,7 +26,7 @@ items:
   source:
     id: Run
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 9
+    startLine: 18
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     Represents an execution run on a <xref href="Glitch9.AIDevKit.OpenAI.Thread" data-throw-if-not-resolved="false"></xref>.
@@ -38,7 +38,7 @@ items:
     content.vb: Public Class Run Inherits RunBase
   inheritance:
   - System.Object
-  - Glitch9.AIDevKit.ModelResponse
+  - Glitch9.AIDevKit.AIResponse
   - Glitch9.AIDevKit.OpenAI.RunBase
   inheritedMembers:
   - Glitch9.AIDevKit.OpenAI.RunBase.AssistantId
@@ -50,27 +50,27 @@ items:
   - Glitch9.AIDevKit.OpenAI.RunBase.CompletedAt
   - Glitch9.AIDevKit.OpenAI.RunBase.FailedAt
   - Glitch9.AIDevKit.OpenAI.RunBase.LastError
-  - Glitch9.AIDevKit.ModelResponse.Id
-  - Glitch9.AIDevKit.ModelResponse.Object
-  - Glitch9.AIDevKit.ModelResponse.Model
-  - Glitch9.AIDevKit.ModelResponse.CreatedAt
-  - Glitch9.AIDevKit.ModelResponse.Metadata
-  - Glitch9.AIDevKit.ModelResponse.Usage
-- uid: Glitch9.AIDevKit.OpenAI.Run.ActionRequest
-  commentId: P:Glitch9.AIDevKit.OpenAI.Run.ActionRequest
-  id: ActionRequest
+  - Glitch9.AIDevKit.AIResponse.Id
+  - Glitch9.AIDevKit.AIResponse.Object
+  - Glitch9.AIDevKit.AIResponse.Model
+  - Glitch9.AIDevKit.AIResponse.CreatedAt
+  - Glitch9.AIDevKit.AIResponse.Metadata
+  - Glitch9.AIDevKit.AIResponse.Usage
+- uid: Glitch9.AIDevKit.OpenAI.Run.RequiredAction
+  commentId: P:Glitch9.AIDevKit.OpenAI.Run.RequiredAction
+  id: RequiredAction
   parent: Glitch9.AIDevKit.OpenAI.Run
   langs:
   - csharp
   - vb
-  name: ActionRequest
-  nameWithType: Run.ActionRequest
-  fullName: Glitch9.AIDevKit.OpenAI.Run.ActionRequest
+  name: RequiredAction
+  nameWithType: Run.RequiredAction
+  fullName: Glitch9.AIDevKit.OpenAI.Run.RequiredAction
   type: Property
   source:
-    id: ActionRequest
+    id: RequiredAction
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 15
+    startLine: 24
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     Details on the action required to continue the run.
@@ -78,12 +78,12 @@ items:
     Will be null if no action is required.
   example: []
   syntax:
-    content: public ActionRequest ActionRequest { get; set; }
+    content: public RequiredAction RequiredAction { get; set; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.OpenAI.ActionRequest
-    content.vb: Public Property ActionRequest As ActionRequest
-  overload: Glitch9.AIDevKit.OpenAI.Run.ActionRequest*
+      type: Glitch9.AIDevKit.OpenAI.RequiredAction
+    content.vb: Public Property RequiredAction As RequiredAction
+  overload: Glitch9.AIDevKit.OpenAI.Run.RequiredAction*
 - uid: Glitch9.AIDevKit.OpenAI.Run.Instructions
   commentId: P:Glitch9.AIDevKit.OpenAI.Run.Instructions
   id: Instructions
@@ -98,7 +98,7 @@ items:
   source:
     id: Instructions
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 20
+    startLine: 29
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The instructions that the AssistantObject used for this run.
   example: []
@@ -123,7 +123,7 @@ items:
   source:
     id: Tools
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 25
+    startLine: 34
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The list of tools that the AssistantObject used for this run.
   example: []
@@ -148,7 +148,7 @@ items:
   source:
     id: Temperature
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 30
+    startLine: 39
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The sampling temperature used for this run. If not set, defaults to 1.
   example: []
@@ -173,7 +173,7 @@ items:
   source:
     id: TopP
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 35
+    startLine: 44
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The nucleus sampling value used for this run. If not set, defaults to 1.
   example: []
@@ -198,7 +198,7 @@ items:
   source:
     id: MaxPromptTokens
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 40
+    startLine: 49
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The maximum number of prompt tokens specified to have been used over the course of the run.
   example: []
@@ -223,7 +223,7 @@ items:
   source:
     id: MaxCompletionTokens
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 45
+    startLine: 54
   namespace: Glitch9.AIDevKit.OpenAI
   summary: The maximum number of completion tokens specified to have been used over the course of the run.
   example: []
@@ -248,7 +248,7 @@ items:
   source:
     id: IncompleteDetails
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 51
+    startLine: 60
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     Details on why the run is incomplete.
@@ -276,7 +276,7 @@ items:
   source:
     id: TruncationStrategy
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 56
+    startLine: 65
   namespace: Glitch9.AIDevKit.OpenAI
   summary: Controls for how a thread will be truncated prior to the run. Use this to control the initial context window of the run.
   example: []
@@ -301,7 +301,7 @@ items:
   source:
     id: ToolChoice
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 65
+    startLine: 74
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     Controls which (if any) tool is called by the model.
@@ -335,7 +335,7 @@ items:
   source:
     id: ResponseFormat
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Assistants/Runs/Run.cs
-    startLine: 71
+    startLine: 80
   namespace: Glitch9.AIDevKit.OpenAI
   summary: >-
     Specifies the format that the model must output. Compatible with GPT-4o, GPT-4 Turbo, and all GPT-3.5 Turbo models since gpt-3.5-turbo-1106.
@@ -397,13 +397,13 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.AIDevKit.ModelResponse
-  commentId: T:Glitch9.AIDevKit.ModelResponse
+- uid: Glitch9.AIDevKit.AIResponse
+  commentId: T:Glitch9.AIDevKit.AIResponse
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelResponse.html
-  name: ModelResponse
-  nameWithType: ModelResponse
-  fullName: Glitch9.AIDevKit.ModelResponse
+  href: Glitch9.AIDevKit.AIResponse.html
+  name: AIResponse
+  nameWithType: AIResponse
+  fullName: Glitch9.AIDevKit.AIResponse
 - uid: Glitch9.AIDevKit.OpenAI.RunBase
   commentId: T:Glitch9.AIDevKit.OpenAI.RunBase
   parent: Glitch9.AIDevKit.OpenAI
@@ -474,48 +474,48 @@ references:
   name: LastError
   nameWithType: RunBase.LastError
   fullName: Glitch9.AIDevKit.OpenAI.RunBase.LastError
-- uid: Glitch9.AIDevKit.ModelResponse.Id
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Id
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Id
+- uid: Glitch9.AIDevKit.AIResponse.Id
+  commentId: P:Glitch9.AIDevKit.AIResponse.Id
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Id
   name: Id
-  nameWithType: ModelResponse.Id
-  fullName: Glitch9.AIDevKit.ModelResponse.Id
-- uid: Glitch9.AIDevKit.ModelResponse.Object
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Object
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Object
+  nameWithType: AIResponse.Id
+  fullName: Glitch9.AIDevKit.AIResponse.Id
+- uid: Glitch9.AIDevKit.AIResponse.Object
+  commentId: P:Glitch9.AIDevKit.AIResponse.Object
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Object
   name: Object
-  nameWithType: ModelResponse.Object
-  fullName: Glitch9.AIDevKit.ModelResponse.Object
-- uid: Glitch9.AIDevKit.ModelResponse.Model
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Model
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Model
+  nameWithType: AIResponse.Object
+  fullName: Glitch9.AIDevKit.AIResponse.Object
+- uid: Glitch9.AIDevKit.AIResponse.Model
+  commentId: P:Glitch9.AIDevKit.AIResponse.Model
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Model
   name: Model
-  nameWithType: ModelResponse.Model
-  fullName: Glitch9.AIDevKit.ModelResponse.Model
-- uid: Glitch9.AIDevKit.ModelResponse.CreatedAt
-  commentId: P:Glitch9.AIDevKit.ModelResponse.CreatedAt
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_CreatedAt
+  nameWithType: AIResponse.Model
+  fullName: Glitch9.AIDevKit.AIResponse.Model
+- uid: Glitch9.AIDevKit.AIResponse.CreatedAt
+  commentId: P:Glitch9.AIDevKit.AIResponse.CreatedAt
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_CreatedAt
   name: CreatedAt
-  nameWithType: ModelResponse.CreatedAt
-  fullName: Glitch9.AIDevKit.ModelResponse.CreatedAt
-- uid: Glitch9.AIDevKit.ModelResponse.Metadata
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Metadata
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Metadata
+  nameWithType: AIResponse.CreatedAt
+  fullName: Glitch9.AIDevKit.AIResponse.CreatedAt
+- uid: Glitch9.AIDevKit.AIResponse.Metadata
+  commentId: P:Glitch9.AIDevKit.AIResponse.Metadata
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Metadata
   name: Metadata
-  nameWithType: ModelResponse.Metadata
-  fullName: Glitch9.AIDevKit.ModelResponse.Metadata
-- uid: Glitch9.AIDevKit.ModelResponse.Usage
-  commentId: P:Glitch9.AIDevKit.ModelResponse.Usage
-  parent: Glitch9.AIDevKit.ModelResponse
-  href: Glitch9.AIDevKit.ModelResponse.html#Glitch9_AIDevKit_ModelResponse_Usage
+  nameWithType: AIResponse.Metadata
+  fullName: Glitch9.AIDevKit.AIResponse.Metadata
+- uid: Glitch9.AIDevKit.AIResponse.Usage
+  commentId: P:Glitch9.AIDevKit.AIResponse.Usage
+  parent: Glitch9.AIDevKit.AIResponse
+  href: Glitch9.AIDevKit.AIResponse.html#Glitch9_AIDevKit_AIResponse_Usage
   name: Usage
-  nameWithType: ModelResponse.Usage
-  fullName: Glitch9.AIDevKit.ModelResponse.Usage
+  nameWithType: AIResponse.Usage
+  fullName: Glitch9.AIDevKit.AIResponse.Usage
 - uid: System
   commentId: N:System
   isExternal: true
@@ -545,19 +545,19 @@ references:
   - uid: Glitch9.AIDevKit
     name: AIDevKit
     href: Glitch9.AIDevKit.html
-- uid: Glitch9.AIDevKit.OpenAI.Run.ActionRequest*
-  commentId: Overload:Glitch9.AIDevKit.OpenAI.Run.ActionRequest
-  href: Glitch9.AIDevKit.OpenAI.Run.html#Glitch9_AIDevKit_OpenAI_Run_ActionRequest
-  name: ActionRequest
-  nameWithType: Run.ActionRequest
-  fullName: Glitch9.AIDevKit.OpenAI.Run.ActionRequest
-- uid: Glitch9.AIDevKit.OpenAI.ActionRequest
-  commentId: T:Glitch9.AIDevKit.OpenAI.ActionRequest
+- uid: Glitch9.AIDevKit.OpenAI.Run.RequiredAction*
+  commentId: Overload:Glitch9.AIDevKit.OpenAI.Run.RequiredAction
+  href: Glitch9.AIDevKit.OpenAI.Run.html#Glitch9_AIDevKit_OpenAI_Run_RequiredAction
+  name: RequiredAction
+  nameWithType: Run.RequiredAction
+  fullName: Glitch9.AIDevKit.OpenAI.Run.RequiredAction
+- uid: Glitch9.AIDevKit.OpenAI.RequiredAction
+  commentId: T:Glitch9.AIDevKit.OpenAI.RequiredAction
   parent: Glitch9.AIDevKit.OpenAI
-  href: Glitch9.AIDevKit.OpenAI.ActionRequest.html
-  name: ActionRequest
-  nameWithType: ActionRequest
-  fullName: Glitch9.AIDevKit.OpenAI.ActionRequest
+  href: Glitch9.AIDevKit.OpenAI.RequiredAction.html
+  name: RequiredAction
+  nameWithType: RequiredAction
+  fullName: Glitch9.AIDevKit.OpenAI.RequiredAction
 - uid: Glitch9.AIDevKit.OpenAI.Run.Instructions*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Run.Instructions
   href: Glitch9.AIDevKit.OpenAI.Run.html#Glitch9_AIDevKit_OpenAI_Run_Instructions

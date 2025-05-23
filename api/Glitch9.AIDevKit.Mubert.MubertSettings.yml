@@ -18,8 +18,14 @@ items:
     startLine: 5
   namespace: Glitch9.AIDevKit.Mubert
   syntax:
-    content: 'public class MubertSettings : AIClientSettings<MubertSettings>'
-    content.vb: Public Class MubertSettings Inherits AIClientSettings(Of MubertSettings)
+    content: >-
+      [AssetPath("Resources/AIDevKit")]
+
+      public class MubertSettings : AIClientSettings<MubertSettings>
+    content.vb: >-
+      <AssetPath("Resources/AIDevKit")>
+
+      Public Class MubertSettings Inherits AIClientSettings(Of MubertSettings)
   inheritance:
   - System.Object
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Mubert.MubertSettings}
@@ -32,6 +38,12 @@ items:
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.Mubert.MubertSettings}.GetApiKey
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.Mubert.MubertSettings}.HasApiKey
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Mubert.MubertSettings}.Instance
+  attributes:
+  - type: Glitch9.AssetPathAttribute
+    ctor: Glitch9.AssetPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Resources/AIDevKit
 references:
 - uid: Glitch9.AIDevKit.Mubert
   commentId: N:Glitch9.AIDevKit.Mubert

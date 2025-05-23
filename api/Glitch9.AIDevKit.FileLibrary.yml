@@ -15,7 +15,7 @@ items:
   source:
     id: FileLibrary
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Databases/FileLibrary.cs
-    startLine: 10
+    startLine: 9
   namespace: Glitch9.AIDevKit
   summary: >-
     ScriptableObject database for storing file data.
@@ -23,31 +23,43 @@ items:
     This database is used to keep track of the files available in the AI library.
   example: []
   syntax:
-    content: 'public class FileLibrary : ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>'
-    content.vb: Public Class FileLibrary Inherits ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary)
+    content: >-
+      [AssetPath("Resources/AIDevKit")]
+
+      public class FileLibrary : ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>
+    content.vb: >-
+      <AssetPath("Resources/AIDevKit")>
+
+      Public Class FileLibrary Inherits ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary)
   inheritance:
   - System.Object
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.FileLibrary}
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   inheritedMembers:
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.DB
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Count
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.IsEmpty
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Get(System.String)
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.TryGetValue(System.String,Glitch9.AIDevKit.FileData@)
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Contains(System.String)
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Add(Glitch9.AIDevKit.FileData)
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Remove(Glitch9.AIDevKit.FileData)
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Remove(System.String)
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Clear
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.ToList
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.ToEnumerable
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.RemoveInvalidEntries
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.IsNullOrMissing(Glitch9.AIDevKit.FileData)
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.BackupToJsonFile(System.String)
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.RestoreFromJsonFile(System.String)
-  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.LogIfNull
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.DB
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Count
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.IsEmpty
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Get(System.String)
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.TryGetValue(System.String,Glitch9.AIDevKit.ApiFile@)
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Contains(System.String)
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Add(Glitch9.AIDevKit.ApiFile)
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Remove(Glitch9.AIDevKit.ApiFile)
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Remove(System.String)
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Clear
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.ToList
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.ToEnumerable
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.RemoveInvalidEntries
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.IsNullOrMissing(Glitch9.AIDevKit.ApiFile)
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.BackupToJsonFile(System.String)
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.RestoreFromJsonFile(System.String)
+  - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.LogIfNull
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.FileLibrary}.Instance
+  attributes:
+  - type: Glitch9.AssetPathAttribute
+    ctor: Glitch9.AssetPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Resources/AIDevKit
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -110,17 +122,17 @@ references:
     name: FileLibrary
     href: Glitch9.AIDevKit.FileLibrary.html
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
-  commentId: T:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
+  commentId: T:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   parent: Glitch9.ScriptableObjects
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3
   href: Glitch9.AIDevKit.FileLibrary.html
-  name: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary)
-  name.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary)
+  name: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary)
+  name.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary)
   spec.csharp:
   - uid: Glitch9.ScriptableObjects.ScriptableDatabase`3
     name: ScriptableDatabase
@@ -134,9 +146,9 @@ references:
     href: Glitch9.AIDevKit.FileLibrary.Repo.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
-    href: Glitch9.AIDevKit.FileData.html
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    href: Glitch9.AIDevKit.ApiFile.html
   - name: ','
   - name: " "
   - uid: Glitch9.AIDevKit.FileLibrary
@@ -158,54 +170,54 @@ references:
     href: Glitch9.AIDevKit.FileLibrary.Repo.html
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
-    href: Glitch9.AIDevKit.FileData.html
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    href: Glitch9.AIDevKit.ApiFile.html
   - name: ','
   - name: " "
   - uid: Glitch9.AIDevKit.FileLibrary
     name: FileLibrary
     href: Glitch9.AIDevKit.FileLibrary.html
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.DB
-  commentId: P:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.DB
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.DB
+  commentId: P:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.DB
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.DB
   name: DB
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.DB
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.DB
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).DB
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).DB
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Count
-  commentId: P:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Count
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.DB
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.DB
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).DB
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).DB
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Count
+  commentId: P:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Count
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.Count
   name: Count
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.Count
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.Count
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).Count
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).Count
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.IsEmpty
-  commentId: P:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.IsEmpty
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.Count
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.Count
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).Count
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).Count
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.IsEmpty
+  commentId: P:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.IsEmpty
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.IsEmpty
   name: IsEmpty
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.IsEmpty
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.IsEmpty
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).IsEmpty
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).IsEmpty
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Get(System.String)
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Get(System.String)
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.IsEmpty
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.IsEmpty
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).IsEmpty
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).IsEmpty
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Get(System.String)
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Get(System.String)
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.Get(System.String)
   name: Get(string)
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.Get(string)
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.Get(string)
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).Get(String)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).Get(String)
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.Get(string)
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.Get(string)
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).Get(String)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).Get(String)
   name.vb: Get(String)
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Get(System.String)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Get(System.String)
     name: Get
   - name: (
   - uid: System.String
@@ -213,26 +225,26 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Get(System.String)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Get(System.String)
     name: Get
   - name: (
   - uid: System.String
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.TryGetValue(System.String,Glitch9.AIDevKit.FileData@)
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.TryGetValue(System.String,Glitch9.AIDevKit.FileData@)
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.TryGetValue(System.String,Glitch9.AIDevKit.ApiFile@)
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.TryGetValue(System.String,Glitch9.AIDevKit.ApiFile@)
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.TryGetValue(System.String,`1@)
-  href: Glitch9.AIDevKit.FileData.html
-  name: TryGetValue(string, out FileData)
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.TryGetValue(string, out FileData)
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.TryGetValue(string, out Glitch9.AIDevKit.FileData)
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).TryGetValue(String, FileData)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).TryGetValue(String, Glitch9.AIDevKit.FileData)
-  name.vb: TryGetValue(String, FileData)
+  href: Glitch9.AIDevKit.ApiFile.html
+  name: TryGetValue(string, out ApiFile)
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.TryGetValue(string, out ApiFile)
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.TryGetValue(string, out Glitch9.AIDevKit.ApiFile)
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).TryGetValue(String, ApiFile)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).TryGetValue(String, Glitch9.AIDevKit.ApiFile)
+  name.vb: TryGetValue(String, ApiFile)
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.TryGetValue(System.String,Glitch9.AIDevKit.FileData@)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.TryGetValue(System.String,Glitch9.AIDevKit.ApiFile@)
     name: TryGetValue
   - name: (
   - uid: System.String
@@ -242,12 +254,12 @@ references:
   - name: " "
   - name: out
   - name: " "
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
-    href: Glitch9.AIDevKit.FileData.html
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    href: Glitch9.AIDevKit.ApiFile.html
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.TryGetValue(System.String,Glitch9.AIDevKit.FileData@)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.TryGetValue(System.String,Glitch9.AIDevKit.ApiFile@)
     name: TryGetValue
   - name: (
   - uid: System.String
@@ -255,22 +267,22 @@ references:
     isExternal: true
   - name: ','
   - name: " "
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
-    href: Glitch9.AIDevKit.FileData.html
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    href: Glitch9.AIDevKit.ApiFile.html
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Contains(System.String)
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Contains(System.String)
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Contains(System.String)
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Contains(System.String)
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.Contains(System.String)
   name: Contains(string)
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.Contains(string)
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.Contains(string)
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).Contains(String)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).Contains(String)
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.Contains(string)
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.Contains(string)
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).Contains(String)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).Contains(String)
   name.vb: Contains(String)
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Contains(System.String)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Contains(System.String)
     name: Contains
   - name: (
   - uid: System.String
@@ -278,77 +290,77 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Contains(System.String)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Contains(System.String)
     name: Contains
   - name: (
   - uid: System.String
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Add(Glitch9.AIDevKit.FileData)
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Add(Glitch9.AIDevKit.FileData)
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Add(Glitch9.AIDevKit.ApiFile)
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Add(Glitch9.AIDevKit.ApiFile)
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.Add(`1)
-  href: Glitch9.AIDevKit.FileData.html
-  name: Add(FileData)
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.Add(FileData)
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.Add(Glitch9.AIDevKit.FileData)
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).Add(FileData)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).Add(Glitch9.AIDevKit.FileData)
+  href: Glitch9.AIDevKit.ApiFile.html
+  name: Add(ApiFile)
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.Add(ApiFile)
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.Add(Glitch9.AIDevKit.ApiFile)
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).Add(ApiFile)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).Add(Glitch9.AIDevKit.ApiFile)
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Add(Glitch9.AIDevKit.FileData)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Add(Glitch9.AIDevKit.ApiFile)
     name: Add
   - name: (
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
-    href: Glitch9.AIDevKit.FileData.html
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    href: Glitch9.AIDevKit.ApiFile.html
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Add(Glitch9.AIDevKit.FileData)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Add(Glitch9.AIDevKit.ApiFile)
     name: Add
   - name: (
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
-    href: Glitch9.AIDevKit.FileData.html
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    href: Glitch9.AIDevKit.ApiFile.html
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Remove(Glitch9.AIDevKit.FileData)
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Remove(Glitch9.AIDevKit.FileData)
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Remove(Glitch9.AIDevKit.ApiFile)
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Remove(Glitch9.AIDevKit.ApiFile)
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.Remove(`1)
-  href: Glitch9.AIDevKit.FileData.html
-  name: Remove(FileData)
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.Remove(FileData)
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.Remove(Glitch9.AIDevKit.FileData)
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).Remove(FileData)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).Remove(Glitch9.AIDevKit.FileData)
+  href: Glitch9.AIDevKit.ApiFile.html
+  name: Remove(ApiFile)
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.Remove(ApiFile)
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.Remove(Glitch9.AIDevKit.ApiFile)
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).Remove(ApiFile)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).Remove(Glitch9.AIDevKit.ApiFile)
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Remove(Glitch9.AIDevKit.FileData)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Remove(Glitch9.AIDevKit.ApiFile)
     name: Remove
   - name: (
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
-    href: Glitch9.AIDevKit.FileData.html
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    href: Glitch9.AIDevKit.ApiFile.html
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Remove(Glitch9.AIDevKit.FileData)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Remove(Glitch9.AIDevKit.ApiFile)
     name: Remove
   - name: (
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
-    href: Glitch9.AIDevKit.FileData.html
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    href: Glitch9.AIDevKit.ApiFile.html
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Remove(System.String)
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Remove(System.String)
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Remove(System.String)
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Remove(System.String)
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.Remove(System.String)
   name: Remove(string)
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.Remove(string)
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.Remove(string)
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).Remove(String)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).Remove(String)
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.Remove(string)
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.Remove(string)
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).Remove(String)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).Remove(String)
   name.vb: Remove(String)
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Remove(System.String)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Remove(System.String)
     name: Remove
   - name: (
   - uid: System.String
@@ -356,127 +368,127 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Remove(System.String)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Remove(System.String)
     name: Remove
   - name: (
   - uid: System.String
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Clear
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Clear
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Clear
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Clear
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.Clear
   name: Clear()
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.Clear()
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.Clear()
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).Clear()
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).Clear()
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.Clear()
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.Clear()
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).Clear()
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).Clear()
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Clear
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Clear
     name: Clear
   - name: (
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.Clear
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.Clear
     name: Clear
   - name: (
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.ToList
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.ToList
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.ToList
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.ToList
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.ToList
   name: ToList()
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.ToList()
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.ToList()
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).ToList()
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).ToList()
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.ToList()
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.ToList()
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).ToList()
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).ToList()
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.ToList
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.ToList
     name: ToList
   - name: (
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.ToList
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.ToList
     name: ToList
   - name: (
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.ToEnumerable
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.ToEnumerable
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.ToEnumerable
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.ToEnumerable
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.ToEnumerable
   name: ToEnumerable()
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.ToEnumerable()
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.ToEnumerable()
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).ToEnumerable()
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).ToEnumerable()
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.ToEnumerable()
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.ToEnumerable()
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).ToEnumerable()
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).ToEnumerable()
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.ToEnumerable
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.ToEnumerable
     name: ToEnumerable
   - name: (
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.ToEnumerable
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.ToEnumerable
     name: ToEnumerable
   - name: (
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.RemoveInvalidEntries
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.RemoveInvalidEntries
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.RemoveInvalidEntries
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.RemoveInvalidEntries
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.RemoveInvalidEntries
   name: RemoveInvalidEntries()
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.RemoveInvalidEntries()
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.RemoveInvalidEntries()
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).RemoveInvalidEntries()
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).RemoveInvalidEntries()
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.RemoveInvalidEntries()
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.RemoveInvalidEntries()
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).RemoveInvalidEntries()
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).RemoveInvalidEntries()
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.RemoveInvalidEntries
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.RemoveInvalidEntries
     name: RemoveInvalidEntries
   - name: (
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.RemoveInvalidEntries
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.RemoveInvalidEntries
     name: RemoveInvalidEntries
   - name: (
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.IsNullOrMissing(Glitch9.AIDevKit.FileData)
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.IsNullOrMissing(Glitch9.AIDevKit.FileData)
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.IsNullOrMissing(Glitch9.AIDevKit.ApiFile)
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.IsNullOrMissing(Glitch9.AIDevKit.ApiFile)
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.IsNullOrMissing(`1)
-  href: Glitch9.AIDevKit.FileData.html
-  name: IsNullOrMissing(FileData)
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.IsNullOrMissing(FileData)
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.IsNullOrMissing(Glitch9.AIDevKit.FileData)
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).IsNullOrMissing(FileData)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).IsNullOrMissing(Glitch9.AIDevKit.FileData)
+  href: Glitch9.AIDevKit.ApiFile.html
+  name: IsNullOrMissing(ApiFile)
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.IsNullOrMissing(ApiFile)
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.IsNullOrMissing(Glitch9.AIDevKit.ApiFile)
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).IsNullOrMissing(ApiFile)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).IsNullOrMissing(Glitch9.AIDevKit.ApiFile)
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.IsNullOrMissing(Glitch9.AIDevKit.FileData)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.IsNullOrMissing(Glitch9.AIDevKit.ApiFile)
     name: IsNullOrMissing
   - name: (
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
-    href: Glitch9.AIDevKit.FileData.html
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    href: Glitch9.AIDevKit.ApiFile.html
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.IsNullOrMissing(Glitch9.AIDevKit.FileData)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.IsNullOrMissing(Glitch9.AIDevKit.ApiFile)
     name: IsNullOrMissing
   - name: (
-  - uid: Glitch9.AIDevKit.FileData
-    name: FileData
-    href: Glitch9.AIDevKit.FileData.html
+  - uid: Glitch9.AIDevKit.ApiFile
+    name: ApiFile
+    href: Glitch9.AIDevKit.ApiFile.html
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.BackupToJsonFile(System.String)
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.BackupToJsonFile(System.String)
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.BackupToJsonFile(System.String)
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.BackupToJsonFile(System.String)
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.BackupToJsonFile(System.String)
   name: BackupToJsonFile(string)
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.BackupToJsonFile(string)
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.BackupToJsonFile(string)
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).BackupToJsonFile(String)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).BackupToJsonFile(String)
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.BackupToJsonFile(string)
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.BackupToJsonFile(string)
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).BackupToJsonFile(String)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).BackupToJsonFile(String)
   name.vb: BackupToJsonFile(String)
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.BackupToJsonFile(System.String)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.BackupToJsonFile(System.String)
     name: BackupToJsonFile
   - name: (
   - uid: System.String
@@ -484,25 +496,25 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.BackupToJsonFile(System.String)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.BackupToJsonFile(System.String)
     name: BackupToJsonFile
   - name: (
   - uid: System.String
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.RestoreFromJsonFile(System.String)
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.RestoreFromJsonFile(System.String)
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.RestoreFromJsonFile(System.String)
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.RestoreFromJsonFile(System.String)
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.RestoreFromJsonFile(System.String)
   name: RestoreFromJsonFile(string)
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.RestoreFromJsonFile(string)
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.RestoreFromJsonFile(string)
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).RestoreFromJsonFile(String)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).RestoreFromJsonFile(String)
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.RestoreFromJsonFile(string)
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.RestoreFromJsonFile(string)
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).RestoreFromJsonFile(String)
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).RestoreFromJsonFile(String)
   name.vb: RestoreFromJsonFile(String)
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.RestoreFromJsonFile(System.String)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.RestoreFromJsonFile(System.String)
     name: RestoreFromJsonFile
   - name: (
   - uid: System.String
@@ -510,29 +522,29 @@ references:
     isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.RestoreFromJsonFile(System.String)
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.RestoreFromJsonFile(System.String)
     name: RestoreFromJsonFile
   - name: (
   - uid: System.String
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.LogIfNull
-  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.LogIfNull
-  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}
+- uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.LogIfNull
+  commentId: M:Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.LogIfNull
+  parent: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}
   definition: Glitch9.ScriptableObjects.ScriptableDatabase`3.LogIfNull
   name: LogIfNull()
-  nameWithType: ScriptableDatabase<FileLibrary.Repo, FileData, FileLibrary>.LogIfNull()
-  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary>.LogIfNull()
-  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, FileData, FileLibrary).LogIfNull()
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.FileData, Glitch9.AIDevKit.FileLibrary).LogIfNull()
+  nameWithType: ScriptableDatabase<FileLibrary.Repo, ApiFile, FileLibrary>.LogIfNull()
+  fullName: Glitch9.ScriptableObjects.ScriptableDatabase<Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary>.LogIfNull()
+  nameWithType.vb: ScriptableDatabase(Of FileLibrary.Repo, ApiFile, FileLibrary).LogIfNull()
+  fullName.vb: Glitch9.ScriptableObjects.ScriptableDatabase(Of Glitch9.AIDevKit.FileLibrary.Repo, Glitch9.AIDevKit.ApiFile, Glitch9.AIDevKit.FileLibrary).LogIfNull()
   spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.LogIfNull
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.LogIfNull
     name: LogIfNull
   - name: (
   - name: )
   spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.FileData,Glitch9.AIDevKit.FileLibrary}.LogIfNull
+  - uid: Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.FileLibrary.Repo,Glitch9.AIDevKit.ApiFile,Glitch9.AIDevKit.FileLibrary}.LogIfNull
     name: LogIfNull
   - name: (
   - name: )

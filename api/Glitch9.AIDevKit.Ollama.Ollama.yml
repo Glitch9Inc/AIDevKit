@@ -22,7 +22,7 @@ items:
   source:
     id: Ollama
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
-    startLine: 40
+    startLine: 41
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
     content: 'public class Ollama : AIClient<Ollama>'
@@ -33,8 +33,6 @@ items:
   - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}
   - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}
   inheritedMembers:
-  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.OnTokensConsumed
-  - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
   - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.FormatErrorMessage(System.String)
   - Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.IsDeletedPredicate(Glitch9.IO.Networking.RESTApi.RESTResponse)
   - Glitch9.IO.Networking.RESTApi.CRUDClient{Glitch9.AIDevKit.Ollama.Ollama}.Name
@@ -59,7 +57,7 @@ items:
   source:
     id: DefaultInstance
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
-    startLine: 45
+    startLine: 46
   namespace: Glitch9.AIDevKit.Ollama
   summary: The default instance of the Ollama client.
   example: []
@@ -84,7 +82,7 @@ items:
   source:
     id: Chat
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
-    startLine: 49
+    startLine: 50
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
     content: public ChatService Chat { get; }
@@ -107,7 +105,7 @@ items:
   source:
     id: Generate
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
-    startLine: 50
+    startLine: 51
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
     content: public GenerateService Generate { get; }
@@ -130,7 +128,7 @@ items:
   source:
     id: Models
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
-    startLine: 51
+    startLine: 52
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
     content: public ModelService Models { get; }
@@ -153,7 +151,7 @@ items:
   source:
     id: Embeddings
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
-    startLine: 52
+    startLine: 53
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
     content: public EmbeddingsService Embeddings { get; }
@@ -176,7 +174,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
-    startLine: 68
+    startLine: 69
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
     content: public Ollama()
@@ -199,7 +197,7 @@ items:
   source:
     id: GetVersionAsync
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Ollama/Client/Ollama.cs
-    startLine: 77
+    startLine: 78
   namespace: Glitch9.AIDevKit.Ollama
   syntax:
     content: public UniTask<string> GetVersionAsync()
@@ -313,54 +311,6 @@ references:
   - uid: Glitch9.AIDevKit.Ollama.Ollama
     name: Ollama
     href: Glitch9.AIDevKit.Ollama.Ollama.html
-  - name: )
-- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.OnTokensConsumed
-  commentId: P:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.OnTokensConsumed
-  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}
-  definition: Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
-  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed
-  name: OnTokensConsumed
-  nameWithType: AIClient<Ollama>.OnTokensConsumed
-  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Ollama.Ollama>.OnTokensConsumed
-  nameWithType.vb: AIClient(Of Ollama).OnTokensConsumed
-  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Ollama.Ollama).OnTokensConsumed
-- uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
-  commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
-  parent: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}
-  definition: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
-  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
-  name: HandleTokenUsage(Model, Usage)
-  nameWithType: AIClient<Ollama>.HandleTokenUsage(Model, Usage)
-  fullName: Glitch9.AIDevKit.Client.AIClient<Glitch9.AIDevKit.Ollama.Ollama>.HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
-  nameWithType.vb: AIClient(Of Ollama).HandleTokenUsage(Model, Usage)
-  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of Glitch9.AIDevKit.Ollama.Ollama).HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
-    name: HandleTokenUsage
-    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
-  - name: (
-  - uid: Glitch9.AIDevKit.Model
-    name: Model
-    href: Glitch9.AIDevKit.Model.html
-  - name: ','
-  - name: " "
-  - uid: Glitch9.AIDevKit.Usage
-    name: Usage
-    href: Glitch9.AIDevKit.Usage.html
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
-    name: HandleTokenUsage
-    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
-  - name: (
-  - uid: Glitch9.AIDevKit.Model
-    name: Model
-    href: Glitch9.AIDevKit.Model.html
-  - name: ','
-  - name: " "
-  - uid: Glitch9.AIDevKit.Usage
-    name: Usage
-    href: Glitch9.AIDevKit.Usage.html
   - name: )
 - uid: Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.FormatErrorMessage(System.String)
   commentId: M:Glitch9.AIDevKit.Client.AIClient{Glitch9.AIDevKit.Ollama.Ollama}.FormatErrorMessage(System.String)
@@ -637,50 +587,6 @@ references:
   - uid: Glitch9.AIDevKit.Client
     name: Client
     href: Glitch9.AIDevKit.Client.html
-- uid: Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
-  commentId: P:Glitch9.AIDevKit.Client.AIClient`1.OnTokensConsumed
-  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_OnTokensConsumed
-  name: OnTokensConsumed
-  nameWithType: AIClient<TSelf>.OnTokensConsumed
-  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.OnTokensConsumed
-  nameWithType.vb: AIClient(Of TSelf).OnTokensConsumed
-  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).OnTokensConsumed
-- uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
-  commentId: M:Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
-  href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
-  name: HandleTokenUsage(Model, Usage)
-  nameWithType: AIClient<TSelf>.HandleTokenUsage(Model, Usage)
-  fullName: Glitch9.AIDevKit.Client.AIClient<TSelf>.HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
-  nameWithType.vb: AIClient(Of TSelf).HandleTokenUsage(Model, Usage)
-  fullName.vb: Glitch9.AIDevKit.Client.AIClient(Of TSelf).HandleTokenUsage(Glitch9.AIDevKit.Model, Glitch9.AIDevKit.Usage)
-  spec.csharp:
-  - uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
-    name: HandleTokenUsage
-    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
-  - name: (
-  - uid: Glitch9.AIDevKit.Model
-    name: Model
-    href: Glitch9.AIDevKit.Model.html
-  - name: ','
-  - name: " "
-  - uid: Glitch9.AIDevKit.Usage
-    name: Usage
-    href: Glitch9.AIDevKit.Usage.html
-  - name: )
-  spec.vb:
-  - uid: Glitch9.AIDevKit.Client.AIClient`1.HandleTokenUsage(Glitch9.AIDevKit.Model,Glitch9.AIDevKit.Usage)
-    name: HandleTokenUsage
-    href: Glitch9.AIDevKit.Client.AIClient-1.html#Glitch9_AIDevKit_Client_AIClient_1_HandleTokenUsage_Glitch9_AIDevKit_Model_Glitch9_AIDevKit_Usage_
-  - name: (
-  - uid: Glitch9.AIDevKit.Model
-    name: Model
-    href: Glitch9.AIDevKit.Model.html
-  - name: ','
-  - name: " "
-  - uid: Glitch9.AIDevKit.Usage
-    name: Usage
-    href: Glitch9.AIDevKit.Usage.html
-  - name: )
 - uid: Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
   commentId: M:Glitch9.AIDevKit.Client.AIClient`1.FormatErrorMessage(System.String)
   isExternal: true

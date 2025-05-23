@@ -143,16 +143,16 @@
       <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_EnablePromptHistory_System_Boolean_">GENTask&lt;GENSoundEffectTask, string, GeneratedAudio&gt;.EnablePromptHistory(bool)</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetTextToTarget_Glitch9_AIDevKit_GeneratedText_">GENTask&lt;GENSoundEffectTask, string, GeneratedAudio&gt;.SetTextToTarget(GeneratedText)</a>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetCancellationToken_System_Threading_CancellationToken_">GENTask&lt;GENSoundEffectTask, string, GeneratedAudio&gt;.SetCancellationToken(CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetImageToTarget_Glitch9_AIDevKit_GeneratedImage_">GENTask&lt;GENSoundEffectTask, string, GeneratedAudio&gt;.SetImageToTarget(GeneratedImage)</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_SetAudioToTarget_Glitch9_AIDevKit_GeneratedAudio_">GENTask&lt;GENSoundEffectTask, string, GeneratedAudio&gt;.SetAudioToTarget(GeneratedAudio)</a>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL">GENTask&lt;GENSoundEffectTask, string, GeneratedAudio&gt;.ExecuteAsyncINTERNAL()</a>
     </div>
     <div>
       <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync">GENTask&lt;GENSoundEffectTask, string, GeneratedAudio&gt;.ExecuteAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync__1">GENTask&lt;GENSoundEffectTask, string, GeneratedAudio&gt;.ExecuteAsync&lt;T&gt;()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
@@ -166,12 +166,12 @@
 
 
   <a id="Glitch9_AIDevKit_GENSoundEffectTask__ctor_" data-uid="Glitch9.AIDevKit.GENSoundEffectTask.#ctor*"></a>
-  <h4 id="Glitch9_AIDevKit_GENSoundEffectTask__ctor_System_String_UnityEngine_Object_" data-uid="Glitch9.AIDevKit.GENSoundEffectTask.#ctor(System.String,UnityEngine.Object)">GENSoundEffectTask(string, Object)</h4>
+  <h4 id="Glitch9_AIDevKit_GENSoundEffectTask__ctor_System_String_" data-uid="Glitch9.AIDevKit.GENSoundEffectTask.#ctor(System.String)">GENSoundEffectTask(string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GENSoundEffectTask(string prompt, UnityEngine.Object target = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public GENSoundEffectTask(string prompt)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -188,25 +188,20 @@
         <td><span class="parametername">prompt</span></td>
         <td></td>
       </tr>
-      <tr>
-        <td><span class="xref">Object</span></td>
-        <td><span class="parametername">target</span></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
 </h3>
 
 
-  <a id="Glitch9_AIDevKit_GENSoundEffectTask_ExecuteAsync_" data-uid="Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_GENSoundEffectTask_ExecuteAsync" data-uid="Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsync">ExecuteAsync()</h4>
+  <a id="Glitch9_AIDevKit_GENSoundEffectTask_ExecuteAsyncINTERNAL_" data-uid="Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsyncINTERNAL*"></a>
+  <h4 id="Glitch9_AIDevKit_GENSoundEffectTask_ExecuteAsyncINTERNAL" data-uid="Glitch9.AIDevKit.GENSoundEffectTask.ExecuteAsyncINTERNAL">ExecuteAsyncINTERNAL()</h4>
   <div class="markdown level1 summary"><p>Executes the task and returns the generated result.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override UniTask&lt;GeneratedAudio&gt; ExecuteAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override UniTask&lt;GeneratedAudio&gt; ExecuteAsyncINTERNAL()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -224,7 +219,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsync">GENTask&lt;GENSoundEffectTask, string, GeneratedAudio&gt;.ExecuteAsync()</a></div>
+  <div><a class="xref" href="Glitch9.AIDevKit.GENTask-3.html#Glitch9_AIDevKit_GENTask_3_ExecuteAsyncINTERNAL">GENTask&lt;GENSoundEffectTask, string, GeneratedAudio&gt;.ExecuteAsyncINTERNAL()</a></div>
 
 
   <a id="Glitch9_AIDevKit_GENSoundEffectTask_SetDuration_" data-uid="Glitch9.AIDevKit.GENSoundEffectTask.SetDuration*"></a>

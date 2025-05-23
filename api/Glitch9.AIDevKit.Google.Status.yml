@@ -8,6 +8,7 @@ items:
   - Glitch9.AIDevKit.Google.Status.Code
   - Glitch9.AIDevKit.Google.Status.Details
   - Glitch9.AIDevKit.Google.Status.Message
+  - Glitch9.AIDevKit.Google.Status.ToString
   langs:
   - csharp
   - vb
@@ -17,8 +18,8 @@ items:
   type: Class
   source:
     id: Status
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
-    startLine: 173
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 197
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     The Status type defines a logical error model that is suitable for different programming environments, 
@@ -46,8 +47,8 @@ items:
   type: Property
   source:
     id: Code
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
-    startLine: 192
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 216
   namespace: Glitch9.AIDevKit.Google
   summary: The status code, which should be an enum value of google.rpc.Code.
   example: []
@@ -71,8 +72,8 @@ items:
   type: Property
   source:
     id: Message
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
-    startLine: 200
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 224
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     A developer-facing error message, which should be in English. 
@@ -103,8 +104,8 @@ items:
   type: Property
   source:
     id: Details
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/File.cs
-    startLine: 207
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 231
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     A list of messages that carry the error details. There is a common set of message types for APIs to use.
@@ -120,6 +121,32 @@ items:
       type: System.Collections.Generic.Dictionary{System.String,System.String}
     content.vb: Public Property Details As Dictionary(Of String, String)
   overload: Glitch9.AIDevKit.Google.Status.Details*
+- uid: Glitch9.AIDevKit.Google.Status.ToString
+  commentId: M:Glitch9.AIDevKit.Google.Status.ToString
+  id: ToString
+  parent: Glitch9.AIDevKit.Google.Status
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Status.ToString()
+  fullName: Glitch9.AIDevKit.Google.Status.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 233
+  namespace: Glitch9.AIDevKit.Google
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Glitch9.AIDevKit.Google.Status.ToString*
 references:
 - uid: Glitch9.AIDevKit.Google
   commentId: N:Glitch9.AIDevKit.Google
@@ -314,3 +341,30 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Google.Status.ToString*
+  commentId: Overload:Glitch9.AIDevKit.Google.Status.ToString
+  href: Glitch9.AIDevKit.Google.Status.html#Glitch9_AIDevKit_Google_Status_ToString
+  name: ToString
+  nameWithType: Status.ToString
+  fullName: Glitch9.AIDevKit.Google.Status.ToString

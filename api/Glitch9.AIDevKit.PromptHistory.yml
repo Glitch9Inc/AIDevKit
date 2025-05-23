@@ -15,7 +15,7 @@ items:
   source:
     id: PromptHistory
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/DataAssets/Databases/PromptHistory.cs
-    startLine: 13
+    startLine: 11
   namespace: Glitch9.AIDevKit
   summary: >-
     ScriptableObject database for storing prompt history data.
@@ -25,8 +25,14 @@ items:
     It is useful for debugging and analyzing the performance of the AI.
   example: []
   syntax:
-    content: 'public class PromptHistory : ScriptableDatabase<PromptHistory.Repo, PromptRecord, PromptHistory>'
-    content.vb: Public Class PromptHistory Inherits ScriptableDatabase(Of PromptHistory.Repo, PromptRecord, PromptHistory)
+    content: >-
+      [AssetPath("Resources/AIDevKit")]
+
+      public class PromptHistory : ScriptableDatabase<PromptHistory.Repo, PromptRecord, PromptHistory>
+    content.vb: >-
+      <AssetPath("Resources/AIDevKit")>
+
+      Public Class PromptHistory Inherits ScriptableDatabase(Of PromptHistory.Repo, PromptRecord, PromptHistory)
   inheritance:
   - System.Object
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.PromptHistory}
@@ -50,6 +56,12 @@ items:
   - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.PromptHistory.Repo,Glitch9.AIDevKit.PromptRecord,Glitch9.AIDevKit.PromptHistory}.RestoreFromJsonFile(System.String)
   - Glitch9.ScriptableObjects.ScriptableDatabase{Glitch9.AIDevKit.PromptHistory.Repo,Glitch9.AIDevKit.PromptRecord,Glitch9.AIDevKit.PromptHistory}.LogIfNull
   - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.PromptHistory}.Instance
+  attributes:
+  - type: Glitch9.AssetPathAttribute
+    ctor: Glitch9.AssetPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Resources/AIDevKit
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
