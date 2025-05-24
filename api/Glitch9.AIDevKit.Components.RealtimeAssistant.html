@@ -94,6 +94,15 @@
     <div>
       <a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_debugMode">AIDevKitComponent.debugMode</a>
     </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_onError">AIDevKitComponent.onError</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_">AIDevKitComponent.OnError(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_">AIDevKitComponent.OnError(Exception)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Components.html">Components</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
@@ -103,31 +112,6 @@
   </div>
   <h3 id="properties">Properties
 </h3>
-
-
-  <a id="Glitch9_AIDevKit_Components_RealtimeAssistant_AudioOutputEnabled_" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.AudioOutputEnabled*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_RealtimeAssistant_AudioOutputEnabled" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.AudioOutputEnabled">AudioOutputEnabled</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AudioOutputEnabled { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
   <a id="Glitch9_AIDevKit_Components_RealtimeAssistant_AudioRecorder_" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.AudioRecorder*"></a>
@@ -249,6 +233,31 @@
     <tbody>
       <tr>
         <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_Components_RealtimeAssistant_IsRecording_" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.IsRecording*"></a>
+  <h4 id="Glitch9_AIDevKit_Components_RealtimeAssistant_IsRecording" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.IsRecording">IsRecording</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRecording { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -430,31 +439,6 @@
   </table>
 
 
-  <a id="Glitch9_AIDevKit_Components_RealtimeAssistant_TranscriptOutputEnabled_" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.TranscriptOutputEnabled*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_RealtimeAssistant_TranscriptOutputEnabled" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.TranscriptOutputEnabled">TranscriptOutputEnabled</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TranscriptOutputEnabled { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
   <a id="Glitch9_AIDevKit_Components_RealtimeAssistant_Voice_" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.Voice*"></a>
   <h4 id="Glitch9_AIDevKit_Components_RealtimeAssistant_Voice" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.Voice">Voice</h4>
   <div class="markdown level1 summary"></div>
@@ -508,30 +492,13 @@
 
 
   <a id="Glitch9_AIDevKit_Components_RealtimeAssistant_CreateConnection_" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.CreateConnection*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_RealtimeAssistant_CreateConnection_System_Boolean_" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.CreateConnection(System.Boolean)">CreateConnection(bool)</h4>
+  <h4 id="Glitch9_AIDevKit_Components_RealtimeAssistant_CreateConnection" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.CreateConnection">CreateConnection()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UniTask CreateConnection(bool autoManageWebSocketState = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public UniTask CreateConnection()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">autoManageWebSocketState</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
     <thead>
@@ -543,33 +510,6 @@
     <tbody>
       <tr>
         <td><span class="xref">UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_Components_RealtimeAssistant_SetAudioData_" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.SetAudioData*"></a>
-  <h4 id="Glitch9_AIDevKit_Components_RealtimeAssistant_SetAudioData_System_Single___" data-uid="Glitch9.AIDevKit.Components.RealtimeAssistant.SetAudioData(System.Single[])">SetAudioData(float[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetAudioData(float[] audioData)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span>[]</td>
-        <td><span class="parametername">audioData</span></td>
         <td></td>
       </tr>
     </tbody>
