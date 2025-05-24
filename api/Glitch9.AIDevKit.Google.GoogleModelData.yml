@@ -34,10 +34,12 @@ items:
     startLine: 4
   namespace: Glitch9.AIDevKit.Google
   syntax:
-    content: public class GoogleModelData
-    content.vb: Public Class GoogleModelData
+    content: 'public class GoogleModelData : IData'
+    content.vb: Public Class GoogleModelData Implements IData
   inheritance:
   - System.Object
+  implements:
+  - IData
 - uid: Glitch9.AIDevKit.Google.GoogleModelData.Id
   commentId: P:Glitch9.AIDevKit.Google.GoogleModelData.Id
   id: Id
@@ -54,8 +56,6 @@ items:
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GoogleModelData.cs
     startLine: 6
   namespace: Glitch9.AIDevKit.Google
-  summary: Unique identifier for this data.
-  example: []
   syntax:
     content: public string Id { get; set; }
     parameters: []
@@ -200,8 +200,6 @@ items:
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Models/GoogleModelData.cs
     startLine: 20
   namespace: Glitch9.AIDevKit.Google
-  summary: Name of this data.
-  example: []
   syntax:
     content: public string Name { get; set; }
     parameters: []
@@ -466,6 +464,11 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: IData
+  isExternal: true
+  name: IData
+  nameWithType: IData
+  fullName: IData
 - uid: System
   commentId: N:System
   isExternal: true

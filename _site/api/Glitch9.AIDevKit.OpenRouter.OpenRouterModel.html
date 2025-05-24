@@ -98,23 +98,12 @@
 </h3>
 
 
-  <h4 id="Glitch9_AIDevKit_OpenRouter_OpenRouterModel_Dolphin_Mixtral_8x7b" data-uid="Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Dolphin_Mixtral_8x7b">Dolphin_Mixtral_8x7b</h4>
-  <div class="markdown level1 summary"><p>OpenRouter's Large Language Model
-This is a 16k context fine-tune of
-<a href="/models/mistralai/mixtral-8x7b">Mixtral-8x7b</a>.
-It excels in coding tasks due to extensive training with coding data
-and is known for its obedience, although it lacks DPO tuning.
-The model is uncensored and is stripped of alignment and bias.
-It requires an external alignment layer for ethical use.
-Users are cautioned to use this highly compliant model responsibly,
-as detailed in a blog post about uncensored models at <a href="https://erichartford.com/uncensored-models">erichartford.
-com/uncensored-models</a>.
-#moe #uncensored</p>
-</div>
+  <h4 id="Glitch9_AIDevKit_OpenRouter_OpenRouterModel_Claude3_Sonnet" data-uid="Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Claude3_Sonnet">Claude3_Sonnet</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string Dolphin_Mixtral_8x7b = &quot;cognitivecomputations/dolphin-mixtral-8x7b&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Claude3_Sonnet = &quot;anthropic/claude-3-sonnet&quot;</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -131,30 +120,17 @@ com/uncensored-models</a>.
       </tr>
     </tbody>
   </table>
-
-
-  <h4 id="Glitch9_AIDevKit_OpenRouter_OpenRouterModel_Ministral8b" data-uid="Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Ministral8b">Ministral8b</h4>
-  <div class="markdown level1 summary"><p>OpenRouter's Large Language Model
-Ministral 8B is a state-of-the-art language model optimized for on-device
-and edge computing.
-Designed for efficiency in knowledge-intensive tasks, commonsense reasoning,
-and function-calling,
-it features a specialized interleaved sliding-window attention mechanism,
-enabling faster and more memory-efficient inference.
-Ministral 8B excels in local,
-low-latency applications such as offline translation, smart assistants,
-autonomous robotics, and local analytics.
-The model supports up to 128k context length
-and can function as a performant intermediary in multi-step agentic workflows,
-efficiently handling tasks like input parsing, API calls, and task routing.
-It consistently outperforms comparable models like Mistral 7B across
-benchmarks, making it particularly suitable for compute-efficient,
-privacy-focused scenarios.</p>
+  <h5 id="Glitch9_AIDevKit_OpenRouter_OpenRouterModel_Claude3_Sonnet_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns a maximum of 4096 tokens.</p>
 </div>
+
+
+  <h4 id="Glitch9_AIDevKit_OpenRouter_OpenRouterModel_Goliath120b" data-uid="Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Goliath120b">Goliath120b</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string Ministral8b = &quot;mistral/ministral-8b&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Goliath120b = &quot;alpindale/goliath-120b&quot;</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -171,6 +147,9 @@ privacy-focused scenarios.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Glitch9_AIDevKit_OpenRouter_OpenRouterModel_Goliath120b_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns a maximum of 512 tokens.</p>
+</div>
 
 </article>
           </div>

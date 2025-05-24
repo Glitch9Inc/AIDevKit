@@ -127,7 +127,7 @@ items:
     content: public JsonSchema Parameters { get; set; }
     parameters: []
     return:
-      type: Glitch9.IO.Json.Schema.JsonSchema
+      type: JsonSchema
     content.vb: Public Property Parameters As JsonSchema
   overload: Glitch9.AIDevKit.FunctionDeclaration.Parameters*
 - uid: Glitch9.AIDevKit.FunctionDeclaration.Response
@@ -160,7 +160,7 @@ items:
     content: public JsonSchema Response { get; set; }
     parameters: []
     return:
-      type: Glitch9.IO.Json.Schema.JsonSchema
+      type: JsonSchema
     content.vb: Public Property Response As JsonSchema
   overload: Glitch9.AIDevKit.FunctionDeclaration.Response*
 - uid: Glitch9.AIDevKit.FunctionDeclaration.Arguments
@@ -367,50 +367,11 @@ references:
   name: Parameters
   nameWithType: FunctionDeclaration.Parameters
   fullName: Glitch9.AIDevKit.FunctionDeclaration.Parameters
-- uid: Glitch9.IO.Json.Schema.JsonSchema
-  commentId: T:Glitch9.IO.Json.Schema.JsonSchema
-  parent: Glitch9.IO.Json.Schema
+- uid: JsonSchema
+  isExternal: true
   name: JsonSchema
   nameWithType: JsonSchema
-  fullName: Glitch9.IO.Json.Schema.JsonSchema
-- uid: Glitch9.IO.Json.Schema
-  commentId: N:Glitch9.IO.Json.Schema
-  href: Glitch9.html
-  name: Glitch9.IO.Json.Schema
-  nameWithType: Glitch9.IO.Json.Schema
-  fullName: Glitch9.IO.Json.Schema
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Json
-    name: Json
-    href: Glitch9.IO.Json.html
-  - name: .
-  - uid: Glitch9.IO.Json.Schema
-    name: Schema
-    href: Glitch9.IO.Json.Schema.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Json
-    name: Json
-    href: Glitch9.IO.Json.html
-  - name: .
-  - uid: Glitch9.IO.Json.Schema
-    name: Schema
-    href: Glitch9.IO.Json.Schema.html
+  fullName: JsonSchema
 - uid: Glitch9.AIDevKit.FunctionDeclaration.Response*
   commentId: Overload:Glitch9.AIDevKit.FunctionDeclaration.Response
   href: Glitch9.AIDevKit.FunctionDeclaration.html#Glitch9_AIDevKit_FunctionDeclaration_Response

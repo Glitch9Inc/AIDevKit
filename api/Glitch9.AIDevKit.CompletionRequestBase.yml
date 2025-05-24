@@ -33,7 +33,6 @@ items:
     content.vb: Public MustInherit Class CompletionRequestBase Inherits AIRequest
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.RequestBody
   - Glitch9.AIDevKit.AIRequest
   derivedClasses:
   - Glitch9.AIDevKit.ChatCompletionRequest
@@ -173,11 +172,11 @@ items:
     Not all parameters may be configurable for every model.
   example: []
   syntax:
-    content: public ModelOptions ModelOptions { get; set; }
+    content: public ModelSettings ModelOptions { get; set; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.ModelOptions
-    content.vb: Public Property ModelOptions As ModelOptions
+      type: Glitch9.AIDevKit.ModelSettings
+    content.vb: Public Property ModelOptions As ModelSettings
   overload: Glitch9.AIDevKit.CompletionRequestBase.ModelOptions*
 - uid: Glitch9.AIDevKit.CompletionRequestBase.ResponseFormat
   commentId: P:Glitch9.AIDevKit.CompletionRequestBase.ResponseFormat
@@ -344,7 +343,7 @@ items:
     content: public List<IFile> AttachedFiles { get; set; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{Glitch9.IO.Files.IFile}
+      type: System.Collections.Generic.List{IFile}
     content.vb: Public Property AttachedFiles As List(Of IFile)
   overload: Glitch9.AIDevKit.CompletionRequestBase.AttachedFiles*
 references:
@@ -380,12 +379,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
-  parent: Glitch9.IO.Networking.RESTApi
-  name: RequestBody
-  nameWithType: RequestBody
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
 - uid: Glitch9.AIDevKit.AIRequest
   commentId: T:Glitch9.AIDevKit.AIRequest
   parent: Glitch9.AIDevKit
@@ -428,44 +421,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit.CompletionRequestBase.Prompt*
   commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.Prompt
   href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_Prompt
@@ -558,13 +513,13 @@ references:
   name: ModelOptions
   nameWithType: CompletionRequestBase.ModelOptions
   fullName: Glitch9.AIDevKit.CompletionRequestBase.ModelOptions
-- uid: Glitch9.AIDevKit.ModelOptions
-  commentId: T:Glitch9.AIDevKit.ModelOptions
+- uid: Glitch9.AIDevKit.ModelSettings
+  commentId: T:Glitch9.AIDevKit.ModelSettings
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelOptions.html
-  name: ModelOptions
-  nameWithType: ModelOptions
-  fullName: Glitch9.AIDevKit.ModelOptions
+  href: Glitch9.AIDevKit.ModelSettings.html
+  name: ModelSettings
+  nameWithType: ModelSettings
+  fullName: Glitch9.AIDevKit.ModelSettings
 - uid: Glitch9.AIDevKit.CompletionRequestBase.ResponseFormat*
   commentId: Overload:Glitch9.AIDevKit.CompletionRequestBase.ResponseFormat
   href: Glitch9.AIDevKit.CompletionRequestBase.html#Glitch9_AIDevKit_CompletionRequestBase_ResponseFormat
@@ -707,23 +662,24 @@ references:
   name: AttachedFiles
   nameWithType: CompletionRequestBase.AttachedFiles
   fullName: Glitch9.AIDevKit.CompletionRequestBase.AttachedFiles
-- uid: System.Collections.Generic.List{Glitch9.IO.Files.IFile}
-  commentId: T:System.Collections.Generic.List{Glitch9.IO.Files.IFile}
+- uid: System.Collections.Generic.List{IFile}
+  commentId: T:System.Collections.Generic.List{IFile}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   name: List<IFile>
   nameWithType: List<IFile>
-  fullName: System.Collections.Generic.List<Glitch9.IO.Files.IFile>
+  fullName: System.Collections.Generic.List<IFile>
   nameWithType.vb: List(Of IFile)
-  fullName.vb: System.Collections.Generic.List(Of Glitch9.IO.Files.IFile)
+  fullName.vb: System.Collections.Generic.List(Of IFile)
   name.vb: List(Of IFile)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
   - name: <
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -732,6 +688,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: )

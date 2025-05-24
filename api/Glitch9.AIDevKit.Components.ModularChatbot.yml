@@ -1,0 +1,533 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Components.ModularChatbot
+  commentId: T:Glitch9.AIDevKit.Components.ModularChatbot
+  id: ModularChatbot
+  parent: Glitch9.AIDevKit.Components
+  children:
+  - Glitch9.AIDevKit.Components.ModularChatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+  - Glitch9.AIDevKit.Components.ModularChatbot.StartRecording
+  - Glitch9.AIDevKit.Components.ModularChatbot.StopRecording
+  langs:
+  - csharp
+  - vb
+  name: ModularChatbot
+  nameWithType: ModularChatbot
+  fullName: Glitch9.AIDevKit.Components.ModularChatbot
+  type: Class
+  source:
+    id: ModularChatbot
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/ModularChatbot.cs
+    startLine: 9
+  namespace: Glitch9.AIDevKit.Components
+  summary: Extended version of the <xref href="Glitch9.AIDevKit.Components.Chatbot" data-throw-if-not-resolved="false"></xref> that offers modular system to create your own chatbot.
+  example: []
+  syntax:
+    content: 'public class ModularChatbot : Chatbot, IChatbot'
+    content.vb: Public Class ModularChatbot Inherits Chatbot Implements IChatbot
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.Components.AIDevKitComponent
+  - Glitch9.AIDevKit.Components.ChatbotComponent
+  - Glitch9.AIDevKit.Components.Chatbot
+  implements:
+  - Glitch9.AIDevKit.IChatbot
+  inheritedMembers:
+  - Glitch9.AIDevKit.Components.Chatbot.chatSessionId
+  - Glitch9.AIDevKit.Components.Chatbot.toolCallReceiver
+  - Glitch9.AIDevKit.Components.Chatbot.streamReceiver
+  - Glitch9.AIDevKit.Components.Chatbot.ChatSessionId
+  - Glitch9.AIDevKit.Components.Chatbot.Name
+  - Glitch9.AIDevKit.Components.Chatbot.Messages
+  - Glitch9.AIDevKit.Components.Chatbot.Model
+  - Glitch9.AIDevKit.Components.Chatbot.SystemInstruction
+  - Glitch9.AIDevKit.Components.Chatbot.StartingMessage
+  - Glitch9.AIDevKit.Components.Chatbot.Stream
+  - Glitch9.AIDevKit.Components.Chatbot.AutoSave
+  - Glitch9.AIDevKit.Components.Chatbot.Session
+  - Glitch9.AIDevKit.Components.Chatbot.IsInitialized
+  - Glitch9.AIDevKit.Components.ChatbotComponent.functionManager
+  - Glitch9.AIDevKit.Components.ChatbotComponent.chatEventReceiver
+  - Glitch9.AIDevKit.Components.ChatbotComponent.toolEventReceiver
+  - Glitch9.AIDevKit.Components.ChatbotComponent.EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+- uid: Glitch9.AIDevKit.Components.ModularChatbot.StartRecording
+  commentId: M:Glitch9.AIDevKit.Components.ModularChatbot.StartRecording
+  id: StartRecording
+  parent: Glitch9.AIDevKit.Components.ModularChatbot
+  langs:
+  - csharp
+  - vb
+  name: StartRecording()
+  nameWithType: ModularChatbot.StartRecording()
+  fullName: Glitch9.AIDevKit.Components.ModularChatbot.StartRecording()
+  type: Method
+  source:
+    id: StartRecording
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/ModularChatbot.cs
+    startLine: 32
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: public void StartRecording()
+    content.vb: Public Sub StartRecording()
+  overload: Glitch9.AIDevKit.Components.ModularChatbot.StartRecording*
+- uid: Glitch9.AIDevKit.Components.ModularChatbot.StopRecording
+  commentId: M:Glitch9.AIDevKit.Components.ModularChatbot.StopRecording
+  id: StopRecording
+  parent: Glitch9.AIDevKit.Components.ModularChatbot
+  langs:
+  - csharp
+  - vb
+  name: StopRecording()
+  nameWithType: ModularChatbot.StopRecording()
+  fullName: Glitch9.AIDevKit.Components.ModularChatbot.StopRecording()
+  type: Method
+  source:
+    id: StopRecording
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/ModularChatbot.cs
+    startLine: 43
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: public UniTask<ChatMessage> StopRecording()
+    return:
+      type: UniTask{Glitch9.AIDevKit.ChatMessage}
+    content.vb: Public Function StopRecording() As UniTask(Of ChatMessage)
+  overload: Glitch9.AIDevKit.Components.ModularChatbot.StopRecording*
+- uid: Glitch9.AIDevKit.Components.ModularChatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+  commentId: M:Glitch9.AIDevKit.Components.ModularChatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+  id: SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+  parent: Glitch9.AIDevKit.Components.ModularChatbot
+  langs:
+  - csharp
+  - vb
+  name: SendMessageAsyncINTERNAL(ChatMessage)
+  nameWithType: ModularChatbot.SendMessageAsyncINTERNAL(ChatMessage)
+  fullName: Glitch9.AIDevKit.Components.ModularChatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+  type: Method
+  source:
+    id: SendMessageAsyncINTERNAL
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/ModularChatbot.cs
+    startLine: 71
+  namespace: Glitch9.AIDevKit.Components
+  example: []
+  syntax:
+    content: protected override UniTask<ChatMessage> SendMessageAsyncINTERNAL(ChatMessage inputMessage)
+    parameters:
+    - id: inputMessage
+      type: Glitch9.AIDevKit.ChatMessage
+    return:
+      type: UniTask{Glitch9.AIDevKit.ChatMessage}
+    content.vb: Protected Overrides Function SendMessageAsyncINTERNAL(inputMessage As ChatMessage) As UniTask(Of ChatMessage)
+  overridden: Glitch9.AIDevKit.Components.Chatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+  overload: Glitch9.AIDevKit.Components.ModularChatbot.SendMessageAsyncINTERNAL*
+references:
+- uid: Glitch9.AIDevKit.Components.Chatbot
+  commentId: T:Glitch9.AIDevKit.Components.Chatbot
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.Chatbot.html
+  name: Chatbot
+  nameWithType: Chatbot
+  fullName: Glitch9.AIDevKit.Components.Chatbot
+- uid: Glitch9.AIDevKit.Components
+  commentId: N:Glitch9.AIDevKit.Components
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Components
+  nameWithType: Glitch9.AIDevKit.Components
+  fullName: Glitch9.AIDevKit.Components
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Components
+    name: Components
+    href: Glitch9.AIDevKit.Components.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Components
+    name: Components
+    href: Glitch9.AIDevKit.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent
+  commentId: T:Glitch9.AIDevKit.Components.AIDevKitComponent
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html
+  name: AIDevKitComponent
+  nameWithType: AIDevKitComponent
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent
+- uid: Glitch9.AIDevKit.Components.ChatbotComponent
+  commentId: T:Glitch9.AIDevKit.Components.ChatbotComponent
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.ChatbotComponent.html
+  name: ChatbotComponent
+  nameWithType: ChatbotComponent
+  fullName: Glitch9.AIDevKit.Components.ChatbotComponent
+- uid: Glitch9.AIDevKit.IChatbot
+  commentId: T:Glitch9.AIDevKit.IChatbot
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.IChatbot.html
+  name: IChatbot
+  nameWithType: IChatbot
+  fullName: Glitch9.AIDevKit.IChatbot
+- uid: Glitch9.AIDevKit.Components.Chatbot.chatSessionId
+  commentId: F:Glitch9.AIDevKit.Components.Chatbot.chatSessionId
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_chatSessionId
+  name: chatSessionId
+  nameWithType: Chatbot.chatSessionId
+  fullName: Glitch9.AIDevKit.Components.Chatbot.chatSessionId
+- uid: Glitch9.AIDevKit.Components.Chatbot.toolCallReceiver
+  commentId: F:Glitch9.AIDevKit.Components.Chatbot.toolCallReceiver
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_toolCallReceiver
+  name: toolCallReceiver
+  nameWithType: Chatbot.toolCallReceiver
+  fullName: Glitch9.AIDevKit.Components.Chatbot.toolCallReceiver
+- uid: Glitch9.AIDevKit.Components.Chatbot.streamReceiver
+  commentId: F:Glitch9.AIDevKit.Components.Chatbot.streamReceiver
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_streamReceiver
+  name: streamReceiver
+  nameWithType: Chatbot.streamReceiver
+  fullName: Glitch9.AIDevKit.Components.Chatbot.streamReceiver
+- uid: Glitch9.AIDevKit.Components.Chatbot.ChatSessionId
+  commentId: P:Glitch9.AIDevKit.Components.Chatbot.ChatSessionId
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_ChatSessionId
+  name: ChatSessionId
+  nameWithType: Chatbot.ChatSessionId
+  fullName: Glitch9.AIDevKit.Components.Chatbot.ChatSessionId
+- uid: Glitch9.AIDevKit.Components.Chatbot.Name
+  commentId: P:Glitch9.AIDevKit.Components.Chatbot.Name
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_Name
+  name: Name
+  nameWithType: Chatbot.Name
+  fullName: Glitch9.AIDevKit.Components.Chatbot.Name
+- uid: Glitch9.AIDevKit.Components.Chatbot.Messages
+  commentId: P:Glitch9.AIDevKit.Components.Chatbot.Messages
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_Messages
+  name: Messages
+  nameWithType: Chatbot.Messages
+  fullName: Glitch9.AIDevKit.Components.Chatbot.Messages
+- uid: Glitch9.AIDevKit.Components.Chatbot.Model
+  commentId: P:Glitch9.AIDevKit.Components.Chatbot.Model
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_Model
+  name: Model
+  nameWithType: Chatbot.Model
+  fullName: Glitch9.AIDevKit.Components.Chatbot.Model
+- uid: Glitch9.AIDevKit.Components.Chatbot.SystemInstruction
+  commentId: P:Glitch9.AIDevKit.Components.Chatbot.SystemInstruction
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_SystemInstruction
+  name: SystemInstruction
+  nameWithType: Chatbot.SystemInstruction
+  fullName: Glitch9.AIDevKit.Components.Chatbot.SystemInstruction
+- uid: Glitch9.AIDevKit.Components.Chatbot.StartingMessage
+  commentId: P:Glitch9.AIDevKit.Components.Chatbot.StartingMessage
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_StartingMessage
+  name: StartingMessage
+  nameWithType: Chatbot.StartingMessage
+  fullName: Glitch9.AIDevKit.Components.Chatbot.StartingMessage
+- uid: Glitch9.AIDevKit.Components.Chatbot.Stream
+  commentId: P:Glitch9.AIDevKit.Components.Chatbot.Stream
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_Stream
+  name: Stream
+  nameWithType: Chatbot.Stream
+  fullName: Glitch9.AIDevKit.Components.Chatbot.Stream
+- uid: Glitch9.AIDevKit.Components.Chatbot.AutoSave
+  commentId: P:Glitch9.AIDevKit.Components.Chatbot.AutoSave
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_AutoSave
+  name: AutoSave
+  nameWithType: Chatbot.AutoSave
+  fullName: Glitch9.AIDevKit.Components.Chatbot.AutoSave
+- uid: Glitch9.AIDevKit.Components.Chatbot.Session
+  commentId: P:Glitch9.AIDevKit.Components.Chatbot.Session
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_Session
+  name: Session
+  nameWithType: Chatbot.Session
+  fullName: Glitch9.AIDevKit.Components.Chatbot.Session
+- uid: Glitch9.AIDevKit.Components.Chatbot.IsInitialized
+  commentId: P:Glitch9.AIDevKit.Components.Chatbot.IsInitialized
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_IsInitialized
+  name: IsInitialized
+  nameWithType: Chatbot.IsInitialized
+  fullName: Glitch9.AIDevKit.Components.Chatbot.IsInitialized
+- uid: Glitch9.AIDevKit.Components.ChatbotComponent.functionManager
+  commentId: F:Glitch9.AIDevKit.Components.ChatbotComponent.functionManager
+  parent: Glitch9.AIDevKit.Components.ChatbotComponent
+  href: Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_functionManager
+  name: functionManager
+  nameWithType: ChatbotComponent.functionManager
+  fullName: Glitch9.AIDevKit.Components.ChatbotComponent.functionManager
+- uid: Glitch9.AIDevKit.Components.ChatbotComponent.chatEventReceiver
+  commentId: F:Glitch9.AIDevKit.Components.ChatbotComponent.chatEventReceiver
+  parent: Glitch9.AIDevKit.Components.ChatbotComponent
+  href: Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_chatEventReceiver
+  name: chatEventReceiver
+  nameWithType: ChatbotComponent.chatEventReceiver
+  fullName: Glitch9.AIDevKit.Components.ChatbotComponent.chatEventReceiver
+- uid: Glitch9.AIDevKit.Components.ChatbotComponent.toolEventReceiver
+  commentId: F:Glitch9.AIDevKit.Components.ChatbotComponent.toolEventReceiver
+  parent: Glitch9.AIDevKit.Components.ChatbotComponent
+  href: Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_toolEventReceiver
+  name: toolEventReceiver
+  nameWithType: ChatbotComponent.toolEventReceiver
+  fullName: Glitch9.AIDevKit.Components.ChatbotComponent.toolEventReceiver
+- uid: Glitch9.AIDevKit.Components.ChatbotComponent.EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
+  commentId: M:Glitch9.AIDevKit.Components.ChatbotComponent.EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
+  parent: Glitch9.AIDevKit.Components.ChatbotComponent
+  href: Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_
+  name: EnterChatAsync(ChatMessage)
+  nameWithType: ChatbotComponent.EnterChatAsync(ChatMessage)
+  fullName: Glitch9.AIDevKit.Components.ChatbotComponent.EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.ChatbotComponent.EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
+    name: EnterChatAsync
+    href: Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.ChatbotComponent.EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
+    name: EnterChatAsync
+    href: Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  commentId: F:Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_debugMode
+  name: debugMode
+  nameWithType: AIDevKitComponent.debugMode
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  commentId: F:Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_onError
+  name: onError
+  nameWithType: AIDevKitComponent.onError
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  commentId: M:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  isExternal: true
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  name: OnError(string)
+  nameWithType: AIDevKitComponent.OnError(string)
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(string)
+  nameWithType.vb: AIDevKitComponent.OnError(String)
+  fullName.vb: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(String)
+  name.vb: OnError(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  commentId: M:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  isExternal: true
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  name: OnError(Exception)
+  nameWithType: AIDevKitComponent.OnError(Exception)
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.Components.ModularChatbot.StartRecording*
+  commentId: Overload:Glitch9.AIDevKit.Components.ModularChatbot.StartRecording
+  href: Glitch9.AIDevKit.Components.ModularChatbot.html#Glitch9_AIDevKit_Components_ModularChatbot_StartRecording
+  name: StartRecording
+  nameWithType: ModularChatbot.StartRecording
+  fullName: Glitch9.AIDevKit.Components.ModularChatbot.StartRecording
+- uid: Glitch9.AIDevKit.Components.ModularChatbot.StopRecording*
+  commentId: Overload:Glitch9.AIDevKit.Components.ModularChatbot.StopRecording
+  href: Glitch9.AIDevKit.Components.ModularChatbot.html#Glitch9_AIDevKit_Components_ModularChatbot_StopRecording
+  name: StopRecording
+  nameWithType: ModularChatbot.StopRecording
+  fullName: Glitch9.AIDevKit.Components.ModularChatbot.StopRecording
+- uid: UniTask{Glitch9.AIDevKit.ChatMessage}
+  commentId: '!:UniTask{Glitch9.AIDevKit.ChatMessage}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.ChatMessage.html
+  name: UniTask<ChatMessage>
+  nameWithType: UniTask<ChatMessage>
+  fullName: UniTask<Glitch9.AIDevKit.ChatMessage>
+  nameWithType.vb: UniTask(Of ChatMessage)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.ChatMessage)
+  name.vb: UniTask(Of ChatMessage)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.Components.Chatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+  commentId: M:Glitch9.AIDevKit.Components.Chatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+  parent: Glitch9.AIDevKit.Components.Chatbot
+  href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_SendMessageAsyncINTERNAL_Glitch9_AIDevKit_ChatMessage_
+  name: SendMessageAsyncINTERNAL(ChatMessage)
+  nameWithType: Chatbot.SendMessageAsyncINTERNAL(ChatMessage)
+  fullName: Glitch9.AIDevKit.Components.Chatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.Chatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+    name: SendMessageAsyncINTERNAL
+    href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_SendMessageAsyncINTERNAL_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.Chatbot.SendMessageAsyncINTERNAL(Glitch9.AIDevKit.ChatMessage)
+    name: SendMessageAsyncINTERNAL
+    href: Glitch9.AIDevKit.Components.Chatbot.html#Glitch9_AIDevKit_Components_Chatbot_SendMessageAsyncINTERNAL_Glitch9_AIDevKit_ChatMessage_
+  - name: (
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: )
+- uid: Glitch9.AIDevKit.Components.ModularChatbot.SendMessageAsyncINTERNAL*
+  commentId: Overload:Glitch9.AIDevKit.Components.ModularChatbot.SendMessageAsyncINTERNAL
+  href: Glitch9.AIDevKit.Components.ModularChatbot.html#Glitch9_AIDevKit_Components_ModularChatbot_SendMessageAsyncINTERNAL_Glitch9_AIDevKit_ChatMessage_
+  name: SendMessageAsyncINTERNAL
+  nameWithType: ModularChatbot.SendMessageAsyncINTERNAL
+  fullName: Glitch9.AIDevKit.Components.ModularChatbot.SendMessageAsyncINTERNAL
+- uid: Glitch9.AIDevKit.ChatMessage
+  commentId: T:Glitch9.AIDevKit.ChatMessage
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.ChatMessage.html
+  name: ChatMessage
+  nameWithType: ChatMessage
+  fullName: Glitch9.AIDevKit.ChatMessage

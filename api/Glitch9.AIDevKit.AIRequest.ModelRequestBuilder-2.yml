@@ -21,14 +21,13 @@ items:
     startLine: 34
   namespace: Glitch9.AIDevKit
   syntax:
-    content: 'public abstract class AIRequest.ModelRequestBuilder<TBuilder, TRequest> : RequestBody.RequestBodyBuilder<TBuilder, TRequest> where TBuilder : AIRequest.ModelRequestBuilder<TBuilder, TRequest> where TRequest : AIRequest'
+    content: 'public abstract class AIRequest.ModelRequestBuilder<TBuilder, TRequest> : RequestBodyBuilder<TBuilder, TRequest> where TBuilder : AIRequest.ModelRequestBuilder<TBuilder, TRequest> where TRequest : AIRequest'
     typeParameters:
     - id: TBuilder
     - id: TRequest
-    content.vb: Public MustInherit Class AIRequest.ModelRequestBuilder(Of TBuilder As AIRequest.ModelRequestBuilder(Of TBuilder, TRequest), TRequest As AIRequest) Inherits RequestBody.RequestBodyBuilder(Of TBuilder, TRequest)
+    content.vb: Public MustInherit Class AIRequest.ModelRequestBuilder(Of TBuilder As AIRequest.ModelRequestBuilder(Of TBuilder, TRequest), TRequest As AIRequest) Inherits RequestBodyBuilder(Of TBuilder, TRequest)
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder{{TBuilder},{TRequest}}
   derivedClasses:
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2
   - Glitch9.AIDevKit.OpenAI.AssistantRequest.Builder
@@ -166,42 +165,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder{{TBuilder},{TRequest}}
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder{`0,`1}
-  parent: Glitch9.IO.Networking.RESTApi
-  definition: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-  name: RequestBody.RequestBodyBuilder<TBuilder, TRequest>
-  nameWithType: RequestBody.RequestBodyBuilder<TBuilder, TRequest>
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder<TBuilder, TRequest>
-  nameWithType.vb: RequestBody.RequestBodyBuilder(Of TBuilder, TRequest)
-  fullName.vb: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder(Of TBuilder, TRequest)
-  name.vb: RequestBody.RequestBodyBuilder(Of TBuilder, TRequest)
-  spec.csharp:
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
-    name: RequestBody
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-    name: RequestBodyBuilder
-  - name: <
-  - name: TBuilder
-  - name: ','
-  - name: " "
-  - name: TRequest
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
-    name: RequestBody
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-    name: RequestBodyBuilder
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TBuilder
-  - name: ','
-  - name: " "
-  - name: TRequest
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -209,78 +172,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-  name: RequestBody.RequestBodyBuilder<TBuilder, TReqBody>
-  nameWithType: RequestBody.RequestBodyBuilder<TBuilder, TReqBody>
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder<TBuilder, TReqBody>
-  nameWithType.vb: RequestBody.RequestBodyBuilder(Of TBuilder, TReqBody)
-  fullName.vb: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder(Of TBuilder, TReqBody)
-  name.vb: RequestBody.RequestBodyBuilder(Of TBuilder, TReqBody)
-  spec.csharp:
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
-    name: RequestBody
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-    name: RequestBodyBuilder
-  - name: <
-  - name: TBuilder
-  - name: ','
-  - name: " "
-  - name: TReqBody
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
-    name: RequestBody
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-    name: RequestBodyBuilder
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TBuilder
-  - name: ','
-  - name: " "
-  - name: TReqBody
-  - name: )
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2.SetUser*
   commentId: Overload:Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2.SetUser
   href: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder-2.html#Glitch9_AIDevKit_AIRequest_ModelRequestBuilder_2_SetUser_System_String_

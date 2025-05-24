@@ -5,8 +5,8 @@ items:
   id: OpenRouterModel
   parent: Glitch9.AIDevKit.OpenRouter
   children:
-  - Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Dolphin_Mixtral_8x7b
-  - Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Ministral8b
+  - Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Claude3_Sonnet
+  - Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Goliath120b
   langs:
   - csharp
   - vb
@@ -24,104 +24,52 @@ items:
     content.vb: Public Class OpenRouterModel
   inheritance:
   - System.Object
-- uid: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Dolphin_Mixtral_8x7b
-  commentId: F:Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Dolphin_Mixtral_8x7b
-  id: Dolphin_Mixtral_8x7b
+- uid: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Claude3_Sonnet
+  commentId: F:Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Claude3_Sonnet
+  id: Claude3_Sonnet
   parent: Glitch9.AIDevKit.OpenRouter.OpenRouterModel
   langs:
   - csharp
   - vb
-  name: Dolphin_Mixtral_8x7b
-  nameWithType: OpenRouterModel.Dolphin_Mixtral_8x7b
-  fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Dolphin_Mixtral_8x7b
+  name: Claude3_Sonnet
+  nameWithType: OpenRouterModel.Claude3_Sonnet
+  fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Claude3_Sonnet
   type: Field
   source:
-    id: Dolphin_Mixtral_8x7b
+    id: Claude3_Sonnet
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenRouter/Config/OpenRouterModel.cs
-    startLine: 19
+    startLine: 12
   namespace: Glitch9.AIDevKit.OpenRouter
-  summary: >-
-    OpenRouter's Large Language Model
-
-    This is a 16k context fine-tune of
-
-    [Mixtral-8x7b](/models/mistralai/mixtral-8x7b).
-
-    It excels in coding tasks due to extensive training with coding data
-
-    and is known for its obedience, although it lacks DPO tuning.
-
-    The model is uncensored and is stripped of alignment and bias.
-
-    It requires an external alignment layer for ethical use.
-
-    Users are cautioned to use this highly compliant model responsibly,
-
-    as detailed in a blog post about uncensored models at [erichartford.
-
-    com/uncensored-models](https://erichartford.com/uncensored-models).
-
-    #moe #uncensored
+  remarks: Returns a maximum of 4096 tokens.
   example: []
   syntax:
-    content: public const string Dolphin_Mixtral_8x7b = "cognitivecomputations/dolphin-mixtral-8x7b"
+    content: public const string Claude3_Sonnet = "anthropic/claude-3-sonnet"
     return:
       type: System.String
-    content.vb: Public Const Dolphin_Mixtral_8x7b As String = "cognitivecomputations/dolphin-mixtral-8x7b"
-- uid: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Ministral8b
-  commentId: F:Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Ministral8b
-  id: Ministral8b
+    content.vb: Public Const Claude3_Sonnet As String = "anthropic/claude-3-sonnet"
+- uid: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Goliath120b
+  commentId: F:Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Goliath120b
+  id: Goliath120b
   parent: Glitch9.AIDevKit.OpenRouter.OpenRouterModel
   langs:
   - csharp
   - vb
-  name: Ministral8b
-  nameWithType: OpenRouterModel.Ministral8b
-  fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Ministral8b
+  name: Goliath120b
+  nameWithType: OpenRouterModel.Goliath120b
+  fullName: Glitch9.AIDevKit.OpenRouter.OpenRouterModel.Goliath120b
   type: Field
   source:
-    id: Ministral8b
+    id: Goliath120b
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenRouter/Config/OpenRouterModel.cs
-    startLine: 39
+    startLine: 20
   namespace: Glitch9.AIDevKit.OpenRouter
-  summary: >-
-    OpenRouter's Large Language Model
-
-    Ministral 8B is a state-of-the-art language model optimized for on-device
-
-    and edge computing.
-
-    Designed for efficiency in knowledge-intensive tasks, commonsense reasoning,
-
-    and function-calling,
-
-    it features a specialized interleaved sliding-window attention mechanism,
-
-    enabling faster and more memory-efficient inference.
-
-    Ministral 8B excels in local,
-
-    low-latency applications such as offline translation, smart assistants,
-
-    autonomous robotics, and local analytics.
-
-    The model supports up to 128k context length
-
-    and can function as a performant intermediary in multi-step agentic workflows,
-
-    efficiently handling tasks like input parsing, API calls, and task routing.
-
-    It consistently outperforms comparable models like Mistral 7B across
-
-    benchmarks, making it particularly suitable for compute-efficient,
-
-    privacy-focused scenarios.
+  remarks: Returns a maximum of 512 tokens.
   example: []
   syntax:
-    content: public const string Ministral8b = "mistral/ministral-8b"
+    content: public const string Goliath120b = "alpindale/goliath-120b"
     return:
       type: System.String
-    content.vb: Public Const Ministral8b As String = "mistral/ministral-8b"
+    content.vb: Public Const Goliath120b As String = "alpindale/goliath-120b"
 references:
 - uid: Glitch9.AIDevKit.OpenRouter
   commentId: N:Glitch9.AIDevKit.OpenRouter

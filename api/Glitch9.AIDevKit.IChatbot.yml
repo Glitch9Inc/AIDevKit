@@ -5,7 +5,7 @@ items:
   id: IChatbot
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ResponseType)
+  - Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
   - Glitch9.AIDevKit.IChatbot.Messages
   - Glitch9.AIDevKit.IChatbot.Model
   - Glitch9.AIDevKit.IChatbot.Name
@@ -117,16 +117,16 @@ items:
       type: System.Collections.Generic.List{Glitch9.AIDevKit.ChatMessage}
     content.vb: ReadOnly Property Messages As List(Of ChatMessage)
   overload: Glitch9.AIDevKit.IChatbot.Messages*
-- uid: Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ResponseType)
-  commentId: M:Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ResponseType)
-  id: EnterChatAsync(Glitch9.AIDevKit.ChatMessage,Glitch9.AIDevKit.ResponseType)
+- uid: Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
+  commentId: M:Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
+  id: EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
   parent: Glitch9.AIDevKit.IChatbot
   langs:
   - csharp
   - vb
-  name: EnterChatAsync(ChatMessage, ResponseType)
-  nameWithType: IChatbot.EnterChatAsync(ChatMessage, ResponseType)
-  fullName: Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage, Glitch9.AIDevKit.ResponseType)
+  name: EnterChatAsync(ChatMessage)
+  nameWithType: IChatbot.EnterChatAsync(ChatMessage)
+  fullName: Glitch9.AIDevKit.IChatbot.EnterChatAsync(Glitch9.AIDevKit.ChatMessage)
   type: Method
   source:
     id: EnterChatAsync
@@ -134,15 +134,13 @@ items:
     startLine: 11
   namespace: Glitch9.AIDevKit
   syntax:
-    content: UniTask<ChatMessage> EnterChatAsync(ChatMessage inputMessage, ResponseType requestType = ResponseType.None)
+    content: UniTask<ChatMessage> EnterChatAsync(ChatMessage inputMessage)
     parameters:
     - id: inputMessage
       type: Glitch9.AIDevKit.ChatMessage
-    - id: requestType
-      type: Glitch9.AIDevKit.ResponseType
     return:
       type: UniTask{Glitch9.AIDevKit.ChatMessage}
-    content.vb: Function EnterChatAsync(inputMessage As ChatMessage, requestType As ResponseType = ResponseType.None) As UniTask(Of ChatMessage)
+    content.vb: Function EnterChatAsync(inputMessage As ChatMessage) As UniTask(Of ChatMessage)
   overload: Glitch9.AIDevKit.IChatbot.EnterChatAsync*
 references:
 - uid: Glitch9.AIDevKit
@@ -320,7 +318,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Glitch9.AIDevKit.IChatbot.EnterChatAsync*
   commentId: Overload:Glitch9.AIDevKit.IChatbot.EnterChatAsync
-  href: Glitch9.AIDevKit.IChatbot.html#Glitch9_AIDevKit_IChatbot_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_Glitch9_AIDevKit_ResponseType_
+  href: Glitch9.AIDevKit.IChatbot.html#Glitch9_AIDevKit_IChatbot_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_
   name: EnterChatAsync
   nameWithType: IChatbot.EnterChatAsync
   fullName: Glitch9.AIDevKit.IChatbot.EnterChatAsync
@@ -331,13 +329,6 @@ references:
   name: ChatMessage
   nameWithType: ChatMessage
   fullName: Glitch9.AIDevKit.ChatMessage
-- uid: Glitch9.AIDevKit.ResponseType
-  commentId: T:Glitch9.AIDevKit.ResponseType
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ResponseType.html
-  name: ResponseType
-  nameWithType: ResponseType
-  fullName: Glitch9.AIDevKit.ResponseType
 - uid: UniTask{Glitch9.AIDevKit.ChatMessage}
   commentId: '!:UniTask{Glitch9.AIDevKit.ChatMessage}'
   definition: UniTask`1

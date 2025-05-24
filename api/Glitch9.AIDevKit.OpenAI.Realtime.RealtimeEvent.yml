@@ -46,8 +46,8 @@ items:
     that can be sent to or received from the OpenAI API.
   example: []
   syntax:
-    content: public class RealtimeEvent
-    content.vb: Public Class RealtimeEvent
+    content: 'public class RealtimeEvent : IWebSocketEvent'
+    content.vb: Public Class RealtimeEvent Inherits IWebSocketEvent
   inheritance:
   - System.Object
 - uid: Glitch9.AIDevKit.OpenAI.Realtime.RealtimeEvent.CancellationTokenSource
@@ -66,7 +66,6 @@ items:
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Realtime/Common/RealtimeEvent.cs
     startLine: 131
   namespace: Glitch9.AIDevKit.OpenAI.Realtime
-  example: []
   syntax:
     content: public CancellationTokenSource CancellationTokenSource { get; set; }
     parameters: []

@@ -33,11 +33,11 @@ items:
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Metadata
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.Model
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(AudioClip,Glitch9.AIDevKit.OpenAI.RunRequest)
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.AIDevKit.OpenAI.ThreadMessageRequest,Glitch9.AIDevKit.OpenAI.RunRequest)
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.AIDevKit.OpenAI.TranscriptionRequest,Glitch9.AIDevKit.OpenAI.RunRequest)
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.IO.Files.File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest)
-  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,Glitch9.IO.Files.File{Texture2D}[])
+  - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,File{Texture2D}[])
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,System.String[])
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequiredActionTimeoutSeconds
   - Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequiredActions
@@ -1034,7 +1034,7 @@ items:
     content: public PrefsDictionary<string, ThreadMessage> SavedMessages { get; }
     parameters: []
     return:
-      type: Glitch9.Collections.PrefsDictionary{System.String,Glitch9.AIDevKit.OpenAI.ThreadMessage}
+      type: PrefsDictionary{System.String,Glitch9.AIDevKit.OpenAI.ThreadMessage}
     content.vb: Public ReadOnly Property SavedMessages As PrefsDictionary(Of String, ThreadMessage)
   overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.SavedMessages*
 - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.#ctor(Glitch9.AIDevKit.OpenAI.Assistants.AssistantSettings,Glitch9.AIDevKit.OpenAI.RunRequest)
@@ -1308,16 +1308,16 @@ items:
   nameWithType.vb: AssistantController.RequestAsync(String, RunRequest)
   fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(String, Glitch9.AIDevKit.OpenAI.RunRequest)
   name.vb: RequestAsync(String, RunRequest)
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,Glitch9.IO.Files.File{Texture2D}[])
-  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,Glitch9.IO.Files.File{Texture2D}[])
-  id: RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,Glitch9.IO.Files.File{Texture2D}[])
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,File{Texture2D}[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,File{Texture2D}[])
+  id: RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,File{Texture2D}[])
   parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController
   langs:
   - csharp
   - vb
   name: RequestAsync(string, RunRequest, params File<Texture2D>[])
   nameWithType: AssistantController.RequestAsync(string, RunRequest, params File<Texture2D>[])
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(string, Glitch9.AIDevKit.OpenAI.RunRequest, params Glitch9.IO.Files.File<Texture2D>[])
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(string, Glitch9.AIDevKit.OpenAI.RunRequest, params File<Texture2D>[])
   type: Method
   source:
     id: RequestAsync
@@ -1332,13 +1332,13 @@ items:
     - id: customRunRequest
       type: Glitch9.AIDevKit.OpenAI.RunRequest
     - id: imageFiles
-      type: Glitch9.IO.Files.File{Texture2D}[]
+      type: File{Texture2D}[]
     return:
       type: UniTask{Glitch9.AIDevKit.OpenAI.ThreadMessage}
     content.vb: Public Function RequestAsync(textPrompt As String, customRunRequest As RunRequest, ParamArray imageFiles As File(Of Texture2D)()) As UniTask(Of ThreadMessage)
   overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*
   nameWithType.vb: AssistantController.RequestAsync(String, RunRequest, ParamArray File(Of Texture2D)())
-  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(String, Glitch9.AIDevKit.OpenAI.RunRequest, ParamArray Glitch9.IO.Files.File(Of Texture2D)())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(String, Glitch9.AIDevKit.OpenAI.RunRequest, ParamArray File(Of Texture2D)())
   name.vb: RequestAsync(String, RunRequest, ParamArray File(Of Texture2D)())
 - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,System.String[])
   commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,System.String[])
@@ -1372,16 +1372,16 @@ items:
   nameWithType.vb: AssistantController.RequestAsync(String, RunRequest, ParamArray String())
   fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(String, Glitch9.AIDevKit.OpenAI.RunRequest, ParamArray String())
   name.vb: RequestAsync(String, RunRequest, ParamArray String())
-- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.IO.Files.File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)
-  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.IO.Files.File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)
-  id: RequestAsync(Glitch9.IO.Files.File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)
+- uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)
+  commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)
+  id: RequestAsync(File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)
   parent: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController
   langs:
   - csharp
   - vb
   name: RequestAsync(File<AudioClip>, RunRequest)
   nameWithType: AssistantController.RequestAsync(File<AudioClip>, RunRequest)
-  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.IO.Files.File<AudioClip>, Glitch9.AIDevKit.OpenAI.RunRequest)
+  fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(File<AudioClip>, Glitch9.AIDevKit.OpenAI.RunRequest)
   type: Method
   source:
     id: RequestAsync
@@ -1392,7 +1392,7 @@ items:
     content: public UniTask<ThreadMessage> RequestAsync(File<AudioClip> audioPrompt, RunRequest customRunRequest = null)
     parameters:
     - id: audioPrompt
-      type: Glitch9.IO.Files.File{AudioClip}
+      type: File{AudioClip}
     - id: customRunRequest
       type: Glitch9.AIDevKit.OpenAI.RunRequest
     return:
@@ -1400,7 +1400,7 @@ items:
     content.vb: Public Function RequestAsync(audioPrompt As File(Of AudioClip), customRunRequest As RunRequest = Nothing) As UniTask(Of ThreadMessage)
   overload: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*
   nameWithType.vb: AssistantController.RequestAsync(File(Of AudioClip), RunRequest)
-  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.IO.Files.File(Of AudioClip), Glitch9.AIDevKit.OpenAI.RunRequest)
+  fullName.vb: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(File(Of AudioClip), Glitch9.AIDevKit.OpenAI.RunRequest)
   name.vb: RequestAsync(File(Of AudioClip), RunRequest)
 - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(AudioClip,Glitch9.AIDevKit.OpenAI.RunRequest)
   commentId: M:Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(AudioClip,Glitch9.AIDevKit.OpenAI.RunRequest)
@@ -2212,20 +2212,20 @@ references:
   name: SavedMessages
   nameWithType: AssistantController.SavedMessages
   fullName: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.SavedMessages
-- uid: Glitch9.Collections.PrefsDictionary{System.String,Glitch9.AIDevKit.OpenAI.ThreadMessage}
-  commentId: T:Glitch9.Collections.PrefsDictionary{System.String,Glitch9.AIDevKit.OpenAI.ThreadMessage}
-  parent: Glitch9.Collections
-  definition: Glitch9.Collections.PrefsDictionary`2
+- uid: PrefsDictionary{System.String,Glitch9.AIDevKit.OpenAI.ThreadMessage}
+  commentId: '!:PrefsDictionary{System.String,Glitch9.AIDevKit.OpenAI.ThreadMessage}'
+  definition: PrefsDictionary`2
   href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
   name: PrefsDictionary<string, ThreadMessage>
   nameWithType: PrefsDictionary<string, ThreadMessage>
-  fullName: Glitch9.Collections.PrefsDictionary<string, Glitch9.AIDevKit.OpenAI.ThreadMessage>
+  fullName: PrefsDictionary<string, Glitch9.AIDevKit.OpenAI.ThreadMessage>
   nameWithType.vb: PrefsDictionary(Of String, ThreadMessage)
-  fullName.vb: Glitch9.Collections.PrefsDictionary(Of String, Glitch9.AIDevKit.OpenAI.ThreadMessage)
+  fullName.vb: PrefsDictionary(Of String, Glitch9.AIDevKit.OpenAI.ThreadMessage)
   name.vb: PrefsDictionary(Of String, ThreadMessage)
   spec.csharp:
-  - uid: Glitch9.Collections.PrefsDictionary`2
+  - uid: PrefsDictionary`2
     name: PrefsDictionary
+    isExternal: true
   - name: <
   - uid: System.String
     name: string
@@ -2237,8 +2237,9 @@ references:
     href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
   - name: '>'
   spec.vb:
-  - uid: Glitch9.Collections.PrefsDictionary`2
+  - uid: PrefsDictionary`2
     name: PrefsDictionary
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
@@ -2251,56 +2252,37 @@ references:
     name: ThreadMessage
     href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
   - name: )
-- uid: Glitch9.Collections.PrefsDictionary`2
-  commentId: T:Glitch9.Collections.PrefsDictionary`2
-  name: PrefsDictionary<TKey, TValue>
-  nameWithType: PrefsDictionary<TKey, TValue>
-  fullName: Glitch9.Collections.PrefsDictionary<TKey, TValue>
-  nameWithType.vb: PrefsDictionary(Of TKey, TValue)
-  fullName.vb: Glitch9.Collections.PrefsDictionary(Of TKey, TValue)
-  name.vb: PrefsDictionary(Of TKey, TValue)
+- uid: PrefsDictionary`2
+  commentId: '!:PrefsDictionary`2'
+  isExternal: true
+  name: PrefsDictionary<, >
+  nameWithType: PrefsDictionary<, >
+  fullName: PrefsDictionary<, >
+  nameWithType.vb: PrefsDictionary(Of , )
+  fullName.vb: PrefsDictionary(Of , )
+  name.vb: PrefsDictionary(Of , )
   spec.csharp:
-  - uid: Glitch9.Collections.PrefsDictionary`2
+  - uid: PrefsDictionary`2
     name: PrefsDictionary
+    isExternal: true
   - name: <
-  - name: TKey
+  - name: ''
   - name: ','
   - name: " "
-  - name: TValue
+  - name: ''
   - name: '>'
   spec.vb:
-  - uid: Glitch9.Collections.PrefsDictionary`2
+  - uid: PrefsDictionary`2
     name: PrefsDictionary
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
-  - name: TKey
+  - name: ''
   - name: ','
   - name: " "
-  - name: TValue
+  - name: ''
   - name: )
-- uid: Glitch9.Collections
-  commentId: N:Glitch9.Collections
-  href: Glitch9.html
-  name: Glitch9.Collections
-  nameWithType: Glitch9.Collections
-  fullName: Glitch9.Collections
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.Collections
-    name: Collections
-    href: Glitch9.Collections.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.Collections
-    name: Collections
-    href: Glitch9.Collections.html
 - uid: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.#ctor*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.#ctor
   href: Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.html#Glitch9_AIDevKit_OpenAI_Assistants_AssistantController__ctor_Glitch9_AIDevKit_OpenAI_Assistants_AssistantSettings_Glitch9_AIDevKit_OpenAI_RunRequest_
@@ -2527,17 +2509,18 @@ references:
     name: ThreadMessage
     href: Glitch9.AIDevKit.OpenAI.ThreadMessage.html
   - name: )
-- uid: Glitch9.IO.Files.File{Texture2D}[]
+- uid: File{Texture2D}[]
   isExternal: true
   name: File<Texture2D>[]
   nameWithType: File<Texture2D>[]
-  fullName: Glitch9.IO.Files.File<Texture2D>[]
+  fullName: File<Texture2D>[]
   nameWithType.vb: File(Of Texture2D)()
-  fullName.vb: Glitch9.IO.Files.File(Of Texture2D)()
+  fullName.vb: File(Of Texture2D)()
   name.vb: File(Of Texture2D)()
   spec.csharp:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
   - uid: Texture2D
     name: Texture2D
@@ -2546,8 +2529,9 @@ references:
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
@@ -2577,27 +2561,28 @@ references:
     isExternal: true
   - name: (
   - name: )
-- uid: Glitch9.IO.Files.File{AudioClip}
-  commentId: T:Glitch9.IO.Files.File{AudioClip}
-  parent: Glitch9.IO.Files
-  definition: Glitch9.IO.Files.File`1
+- uid: File{AudioClip}
+  commentId: '!:File{AudioClip}'
+  definition: File`1
   name: File<AudioClip>
   nameWithType: File<AudioClip>
-  fullName: Glitch9.IO.Files.File<AudioClip>
+  fullName: File<AudioClip>
   nameWithType.vb: File(Of AudioClip)
-  fullName.vb: Glitch9.IO.Files.File(Of AudioClip)
+  fullName.vb: File(Of AudioClip)
   name.vb: File(Of AudioClip)
   spec.csharp:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
   - uid: AudioClip
     name: AudioClip
     isExternal: true
   - name: '>'
   spec.vb:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
@@ -2605,58 +2590,30 @@ references:
     name: AudioClip
     isExternal: true
   - name: )
-- uid: Glitch9.IO.Files.File`1
-  commentId: T:Glitch9.IO.Files.File`1
-  name: File<T>
-  nameWithType: File<T>
-  fullName: Glitch9.IO.Files.File<T>
-  nameWithType.vb: File(Of T)
-  fullName.vb: Glitch9.IO.Files.File(Of T)
-  name.vb: File(Of T)
+- uid: File`1
+  isExternal: true
+  name: File<>
+  nameWithType: File<>
+  fullName: File<>
+  nameWithType.vb: File(Of )
+  fullName.vb: File(Of )
+  name.vb: File(Of )
   spec.csharp:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
-  - name: T
+  - name: ''
   - name: '>'
   spec.vb:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: ''
   - name: )
-- uid: Glitch9.IO.Files
-  commentId: N:Glitch9.IO.Files
-  href: Glitch9.html
-  name: Glitch9.IO.Files
-  nameWithType: Glitch9.IO.Files
-  fullName: Glitch9.IO.Files
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
 - uid: AudioClip
   isExternal: true
   name: AudioClip

@@ -44,7 +44,6 @@ items:
     content.vb: Public Class ElevenLabsQuery Inherits Query
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.Query
   extensionMethods:
   - Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.NextPageToken
@@ -69,17 +68,11 @@ items:
     The next page token to use for pagination. Returned from the previous request.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public string NextPageToken { get; set; }
+    content: public string NextPageToken { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property NextPageToken As String
+    content.vb: Public Property NextPageToken As String
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.NextPageToken*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Search
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Search
@@ -103,17 +96,11 @@ items:
     Search term to filter voices by. Searches in name, description, labels, and category.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public string Search { get; set; }
+    content: public string Search { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Search As String
+    content.vb: Public Property Search As String
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Search*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Sort
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Sort
@@ -137,17 +124,11 @@ items:
     Which field to sort by. One of: 'created_at_unix', 'name'.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public string Sort { get; set; }
+    content: public string Sort { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Sort As String
+    content.vb: Public Property Sort As String
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Sort*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.SortDirection
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.SortDirection
@@ -171,17 +152,11 @@ items:
     Which direction to sort the voices in. 'asc' or 'desc'.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public SortDirection? SortDirection { get; set; }
+    content: public SortDirection? SortDirection { get; set; }
     parameters: []
     return:
       type: System.Nullable{Glitch9.AIDevKit.ElevenLabs.SortDirection}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property SortDirection As SortDirection?
+    content.vb: Public Property SortDirection As SortDirection?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.SortDirection*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.VoiceType
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.VoiceType
@@ -205,17 +180,11 @@ items:
     Type of the voice to filter by. One of: 'personal', 'community', 'default', 'workspace'.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public string VoiceType { get; set; }
+    content: public string VoiceType { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property VoiceType As String
+    content.vb: Public Property VoiceType As String
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.VoiceType*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Category
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Category
@@ -239,17 +208,11 @@ items:
     Category of the voice to filter by. One of: 'premade', 'cloned', 'generated', 'professional'.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public VoiceCategory? Category { get; set; }
+    content: public VoiceCategory? Category { get; set; }
     parameters: []
     return:
       type: System.Nullable{Glitch9.AIDevKit.VoiceCategory}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Category As VoiceCategory?
+    content.vb: Public Property Category As VoiceCategory?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Category*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.FineTuningState
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.FineTuningState
@@ -275,17 +238,11 @@ items:
     One of: 'draft', 'not_verified', 'not_started', 'queued', 'fine_tuning', 'fine_tuned', 'failed', 'delayed'.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public string FineTuningState { get; set; }
+    content: public string FineTuningState { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property FineTuningState As String
+    content.vb: Public Property FineTuningState As String
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.FineTuningState*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.CollectionId
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.CollectionId
@@ -309,17 +266,11 @@ items:
     Collection ID to filter voices by.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public string CollectionId { get; set; }
+    content: public string CollectionId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property CollectionId As String
+    content.vb: Public Property CollectionId As String
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.CollectionId*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.IncludeTotalCount
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.IncludeTotalCount
@@ -345,17 +296,11 @@ items:
     Defaults to true. May incur performance cost.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public bool? IncludeTotalCount { get; set; }
+    content: public bool? IncludeTotalCount { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.Boolean}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property IncludeTotalCount As Boolean?
+    content.vb: Public Property IncludeTotalCount As Boolean?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.IncludeTotalCount*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Gender
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Gender
@@ -376,17 +321,11 @@ items:
   summary: Optional. Gender used for filtering
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public VoiceGender? Gender { get; set; }
+    content: public VoiceGender? Gender { get; set; }
     parameters: []
     return:
       type: System.Nullable{Glitch9.AIDevKit.VoiceGender}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Gender As VoiceGender?
+    content.vb: Public Property Gender As VoiceGender?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Gender*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Age
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Age
@@ -407,17 +346,11 @@ items:
   summary: Optional. Accent used for filtering
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public VoiceAge? Age { get; set; }
+    content: public VoiceAge? Age { get; set; }
     parameters: []
     return:
       type: System.Nullable{Glitch9.AIDevKit.VoiceAge}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Age As VoiceAge?
+    content.vb: Public Property Age As VoiceAge?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Age*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Language
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Language
@@ -438,17 +371,11 @@ items:
   summary: Optional. Language used for filtering
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public SystemLanguage? Language { get; set; }
+    content: public SystemLanguage? Language { get; set; }
     parameters: []
     return:
       type: System.Nullable{SystemLanguage}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Language As SystemLanguage?
+    content.vb: Public Property Language As SystemLanguage?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Language*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Accent
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Accent
@@ -469,17 +396,11 @@ items:
   summary: Optional. Accent used for filtering
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public string Accent { get; set; }
+    content: public string Accent { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Accent As String
+    content.vb: Public Property Accent As String
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Accent*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Locale
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Locale
@@ -500,17 +421,11 @@ items:
   summary: Optional. Locale used for filtering
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public string Locale { get; set; }
+    content: public string Locale { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Locale As String
+    content.vb: Public Property Locale As String
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Locale*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Type
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Type
@@ -531,17 +446,11 @@ items:
   summary: Optional. Use-case used for filtering
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public VoiceType? Type { get; set; }
+    content: public VoiceType? Type { get; set; }
     parameters: []
     return:
       type: System.Nullable{Glitch9.AIDevKit.VoiceType}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Type As VoiceType?
+    content.vb: Public Property Type As VoiceType?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Type*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.SearchTerm
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.SearchTerm
@@ -562,17 +471,11 @@ items:
   summary: Optional. Search term used for filtering
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public string SearchTerm { get; set; }
+    content: public string SearchTerm { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property SearchTerm As String
+    content.vb: Public Property SearchTerm As String
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.SearchTerm*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Featured
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Featured
@@ -596,17 +499,11 @@ items:
     Defaults to false
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public bool? Featured { get; set; }
+    content: public bool? Featured { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.Boolean}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Featured As Boolean?
+    content.vb: Public Property Featured As Boolean?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Featured*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.MinimumNoticePeriod
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.MinimumNoticePeriod
@@ -627,17 +524,11 @@ items:
   summary: Optional. Filter voices with a minimum notice period of the given number of days.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public int? MinimumNoticePeriod { get; set; }
+    content: public int? MinimumNoticePeriod { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.Int32}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property MinimumNoticePeriod As Integer?
+    content.vb: Public Property MinimumNoticePeriod As Integer?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.MinimumNoticePeriod*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.ReaderAppEnabled
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.ReaderAppEnabled
@@ -661,17 +552,11 @@ items:
     Defaults to false
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public bool? ReaderAppEnabled { get; set; }
+    content: public bool? ReaderAppEnabled { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.Boolean}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property ReaderAppEnabled As Boolean?
+    content.vb: Public Property ReaderAppEnabled As Boolean?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.ReaderAppEnabled*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.OwnerId
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.OwnerId
@@ -692,17 +577,11 @@ items:
   summary: Optional. Filter voices by public owner ID
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public string OwnerId { get; set; }
+    content: public string OwnerId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property OwnerId As String
+    content.vb: Public Property OwnerId As String
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.OwnerId*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Page
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Page
@@ -723,17 +602,11 @@ items:
   summary: Optional. Defaults to 0
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public int? Page { get; set; }
+    content: public int? Page { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.Int32}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property Page As Integer?
+    content.vb: Public Property Page As Integer?
   overload: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Page*
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.#ctor(System.Int32,System.Int32)
   commentId: M:Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.#ctor(System.Int32,System.Int32)
@@ -804,12 +677,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.Query
-  commentId: T:Glitch9.IO.Networking.RESTApi.Query
-  parent: Glitch9.IO.Networking.RESTApi
-  name: Query
-  nameWithType: Query
-  fullName: Glitch9.IO.Networking.RESTApi.Query
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
   commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery)
   parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
@@ -843,44 +710,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery)
   commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery)
   href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_ElevenLabsQuery_

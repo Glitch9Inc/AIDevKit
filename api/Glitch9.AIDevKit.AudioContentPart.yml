@@ -5,7 +5,7 @@ items:
   id: AudioContentPart
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.AudioContentPart.FromBase64(System.String,Glitch9.IO.Files.MIMEType)
+  - Glitch9.AIDevKit.AudioContentPart.FromBase64(System.String,MIMEType)
   - Glitch9.AIDevKit.AudioContentPart.InputAudio
   langs:
   - csharp
@@ -53,16 +53,16 @@ items:
       type: Glitch9.AIDevKit.AudioRef
     content.vb: Public Property InputAudio As AudioRef
   overload: Glitch9.AIDevKit.AudioContentPart.InputAudio*
-- uid: Glitch9.AIDevKit.AudioContentPart.FromBase64(System.String,Glitch9.IO.Files.MIMEType)
-  commentId: M:Glitch9.AIDevKit.AudioContentPart.FromBase64(System.String,Glitch9.IO.Files.MIMEType)
-  id: FromBase64(System.String,Glitch9.IO.Files.MIMEType)
+- uid: Glitch9.AIDevKit.AudioContentPart.FromBase64(System.String,MIMEType)
+  commentId: M:Glitch9.AIDevKit.AudioContentPart.FromBase64(System.String,MIMEType)
+  id: FromBase64(System.String,MIMEType)
   parent: Glitch9.AIDevKit.AudioContentPart
   langs:
   - csharp
   - vb
   name: FromBase64(string, MIMEType)
   nameWithType: AudioContentPart.FromBase64(string, MIMEType)
-  fullName: Glitch9.AIDevKit.AudioContentPart.FromBase64(string, Glitch9.IO.Files.MIMEType)
+  fullName: Glitch9.AIDevKit.AudioContentPart.FromBase64(string, MIMEType)
   type: Method
   source:
     id: FromBase64
@@ -70,18 +70,18 @@ items:
     startLine: 11
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public static AudioBase64ContentPart FromBase64(string base64Audio, MIMEType mimeType = MIMEType.WAV)
+    content: public static AudioBase64ContentPart FromBase64(string base64Audio, MIMEType mimeType = null)
     parameters:
     - id: base64Audio
       type: System.String
     - id: mimeType
-      type: Glitch9.IO.Files.MIMEType
+      type: MIMEType
     return:
       type: Glitch9.AIDevKit.AudioBase64ContentPart
-    content.vb: Public Shared Function FromBase64(base64Audio As String, mimeType As MIMEType = MIMEType.WAV) As AudioBase64ContentPart
+    content.vb: Public Shared Function FromBase64(base64Audio As String, mimeType As MIMEType = Nothing) As AudioBase64ContentPart
   overload: Glitch9.AIDevKit.AudioContentPart.FromBase64*
   nameWithType.vb: AudioContentPart.FromBase64(String, MIMEType)
-  fullName.vb: Glitch9.AIDevKit.AudioContentPart.FromBase64(String, Glitch9.IO.Files.MIMEType)
+  fullName.vb: Glitch9.AIDevKit.AudioContentPart.FromBase64(String, MIMEType)
   name.vb: FromBase64(String, MIMEType)
 references:
 - uid: Glitch9.AIDevKit
@@ -159,7 +159,7 @@ references:
   fullName: Glitch9.AIDevKit.AudioRef
 - uid: Glitch9.AIDevKit.AudioContentPart.FromBase64*
   commentId: Overload:Glitch9.AIDevKit.AudioContentPart.FromBase64
-  href: Glitch9.AIDevKit.AudioContentPart.html#Glitch9_AIDevKit_AudioContentPart_FromBase64_System_String_Glitch9_IO_Files_MIMEType_
+  href: Glitch9.AIDevKit.AudioContentPart.html#Glitch9_AIDevKit_AudioContentPart_FromBase64_System_String_MIMEType_
   name: FromBase64
   nameWithType: AudioContentPart.FromBase64
   fullName: Glitch9.AIDevKit.AudioContentPart.FromBase64
@@ -173,12 +173,11 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Glitch9.IO.Files.MIMEType
-  commentId: T:Glitch9.IO.Files.MIMEType
-  parent: Glitch9.IO.Files
+- uid: MIMEType
+  isExternal: true
   name: MIMEType
   nameWithType: MIMEType
-  fullName: Glitch9.IO.Files.MIMEType
+  fullName: MIMEType
 - uid: Glitch9.AIDevKit.AudioBase64ContentPart
   commentId: T:Glitch9.AIDevKit.AudioBase64ContentPart
   parent: Glitch9.AIDevKit
@@ -186,33 +185,3 @@ references:
   name: AudioBase64ContentPart
   nameWithType: AudioBase64ContentPart
   fullName: Glitch9.AIDevKit.AudioBase64ContentPart
-- uid: Glitch9.IO.Files
-  commentId: N:Glitch9.IO.Files
-  href: Glitch9.html
-  name: Glitch9.IO.Files
-  nameWithType: Glitch9.IO.Files
-  fullName: Glitch9.IO.Files
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html

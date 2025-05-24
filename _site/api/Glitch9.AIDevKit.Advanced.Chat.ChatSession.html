@@ -94,7 +94,7 @@ Provides support for saving, loading, summarizing, and auto-saving the session.<
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_Advanced_Chat_ChatSession_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ChatSession</code></pre>
+    <pre><code class="lang-csharp hljs">public class ChatSession : IData</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -352,7 +352,7 @@ Provides support for saving, loading, summarizing, and auto-saving the session.<
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ModelOptions ModelOptions { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ModelSettings ModelOptions { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -364,7 +364,7 @@ Provides support for saving, loading, summarizing, and auto-saving the session.<
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.ModelOptions.html">ModelOptions</a></td>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelSettings.html">ModelSettings</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -903,8 +903,7 @@ chatSession.GENChat(chatMessage).SetModel(OpenAIModel.GPT4o).ExecuteAsync();</p>
 
   <a id="Glitch9_AIDevKit_Advanced_Chat_ChatSession_GetHashCode_" data-uid="Glitch9.AIDevKit.Advanced.Chat.ChatSession.GetHashCode*"></a>
   <h4 id="Glitch9_AIDevKit_Advanced_Chat_ChatSession_GetHashCode" data-uid="Glitch9.AIDevKit.Advanced.Chat.ChatSession.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -921,13 +920,10 @@ chatSession.GENChat(chatMessage).SetModel(OpenAIModel.GPT4o).ExecuteAsync();</p>
     <tbody>
       <tr>
         <td><span class="xref">int</span></td>
-        <td><p>A hash code for the current object.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">object.GetHashCode()</span></div>
 
 
   <a id="Glitch9_AIDevKit_Advanced_Chat_ChatSession_LoadFile_" data-uid="Glitch9.AIDevKit.Advanced.Chat.ChatSession.LoadFile*"></a>
@@ -1068,8 +1064,7 @@ chatSession.GENChat(chatMessage).SetModel(OpenAIModel.GPT4o).ExecuteAsync();</p>
 
   <a id="Glitch9_AIDevKit_Advanced_Chat_ChatSession_ToString_" data-uid="Glitch9.AIDevKit.Advanced.Chat.ChatSession.ToString*"></a>
   <h4 id="Glitch9_AIDevKit_Advanced_Chat_ChatSession_ToString" data-uid="Glitch9.AIDevKit.Advanced.Chat.ChatSession.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1086,13 +1081,10 @@ chatSession.GENChat(chatMessage).SetModel(OpenAIModel.GPT4o).ExecuteAsync();</p>
     <tbody>
       <tr>
         <td><span class="xref">string</span></td>
-        <td><p>A string that represents the current object.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">object.ToString()</span></div>
 
 </article>
           </div>

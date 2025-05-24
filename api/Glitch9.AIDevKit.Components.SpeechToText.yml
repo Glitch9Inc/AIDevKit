@@ -1,0 +1,732 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Components.SpeechToText
+  commentId: T:Glitch9.AIDevKit.Components.SpeechToText
+  id: SpeechToText
+  parent: Glitch9.AIDevKit.Components
+  children:
+  - Glitch9.AIDevKit.Components.SpeechToText.OnAudioRecorded(File{AudioClip})
+  - Glitch9.AIDevKit.Components.SpeechToText.RemoveBackgroundNoise
+  - Glitch9.AIDevKit.Components.SpeechToText.SpokenLanguage
+  langs:
+  - csharp
+  - vb
+  name: SpeechToText
+  nameWithType: SpeechToText
+  fullName: Glitch9.AIDevKit.Components.SpeechToText
+  type: Class
+  source:
+    id: SpeechToText
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/SpeechToText.cs
+    startLine: 7
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: 'public class SpeechToText : AudioInputComponent<Transcript>'
+    content.vb: Public Class SpeechToText Inherits AudioInputComponent(Of Transcript)
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.Components.AIDevKitComponent
+  - Glitch9.AIDevKit.Components.AIModuleComponent
+  - Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  inheritedMembers:
+  - Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.microphone
+  - Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.recordingDuration
+  - Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.RecordingDuration
+  - Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.Recorder
+  - Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.IsRecording
+  - Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.StartRecording
+  - Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.StopRecording
+  - Glitch9.AIDevKit.Components.AIModuleComponent.model
+  - Glitch9.AIDevKit.Components.AIModuleComponent.outputPath
+  - Glitch9.AIDevKit.Components.AIModuleComponent.Model
+  - Glitch9.AIDevKit.Components.AIModuleComponent.OutputPath
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+- uid: Glitch9.AIDevKit.Components.SpeechToText.SpokenLanguage
+  commentId: P:Glitch9.AIDevKit.Components.SpeechToText.SpokenLanguage
+  id: SpokenLanguage
+  parent: Glitch9.AIDevKit.Components.SpeechToText
+  langs:
+  - csharp
+  - vb
+  name: SpokenLanguage
+  nameWithType: SpeechToText.SpokenLanguage
+  fullName: Glitch9.AIDevKit.Components.SpeechToText.SpokenLanguage
+  type: Property
+  source:
+    id: SpokenLanguage
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/SpeechToText.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: public SystemLanguage SpokenLanguage { get; set; }
+    parameters: []
+    return:
+      type: SystemLanguage
+    content.vb: Public Property SpokenLanguage As SystemLanguage
+  overload: Glitch9.AIDevKit.Components.SpeechToText.SpokenLanguage*
+- uid: Glitch9.AIDevKit.Components.SpeechToText.RemoveBackgroundNoise
+  commentId: P:Glitch9.AIDevKit.Components.SpeechToText.RemoveBackgroundNoise
+  id: RemoveBackgroundNoise
+  parent: Glitch9.AIDevKit.Components.SpeechToText
+  langs:
+  - csharp
+  - vb
+  name: RemoveBackgroundNoise
+  nameWithType: SpeechToText.RemoveBackgroundNoise
+  fullName: Glitch9.AIDevKit.Components.SpeechToText.RemoveBackgroundNoise
+  type: Property
+  source:
+    id: RemoveBackgroundNoise
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/SpeechToText.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: public bool RemoveBackgroundNoise { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RemoveBackgroundNoise As Boolean
+  overload: Glitch9.AIDevKit.Components.SpeechToText.RemoveBackgroundNoise*
+- uid: Glitch9.AIDevKit.Components.SpeechToText.OnAudioRecorded(File{AudioClip})
+  commentId: M:Glitch9.AIDevKit.Components.SpeechToText.OnAudioRecorded(File{AudioClip})
+  id: OnAudioRecorded(File{AudioClip})
+  parent: Glitch9.AIDevKit.Components.SpeechToText
+  langs:
+  - csharp
+  - vb
+  name: OnAudioRecorded(File<AudioClip>)
+  nameWithType: SpeechToText.OnAudioRecorded(File<AudioClip>)
+  fullName: Glitch9.AIDevKit.Components.SpeechToText.OnAudioRecorded(File<AudioClip>)
+  type: Method
+  source:
+    id: OnAudioRecorded
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/SpeechToText.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.Components
+  example: []
+  syntax:
+    content: protected override UniTask<Transcript> OnAudioRecorded(File<AudioClip> recordedFile)
+    parameters:
+    - id: recordedFile
+      type: File{AudioClip}
+    return:
+      type: UniTask{Glitch9.AIDevKit.Transcript}
+    content.vb: Protected Overrides Function OnAudioRecorded(recordedFile As File(Of AudioClip)) As UniTask(Of Transcript)
+  overridden: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.OnAudioRecorded(File{AudioClip})
+  overload: Glitch9.AIDevKit.Components.SpeechToText.OnAudioRecorded*
+  nameWithType.vb: SpeechToText.OnAudioRecorded(File(Of AudioClip))
+  fullName.vb: Glitch9.AIDevKit.Components.SpeechToText.OnAudioRecorded(File(Of AudioClip))
+  name.vb: OnAudioRecorded(File(Of AudioClip))
+references:
+- uid: Glitch9.AIDevKit.Components
+  commentId: N:Glitch9.AIDevKit.Components
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Components
+  nameWithType: Glitch9.AIDevKit.Components
+  fullName: Glitch9.AIDevKit.Components
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Components
+    name: Components
+    href: Glitch9.AIDevKit.Components.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Components
+    name: Components
+    href: Glitch9.AIDevKit.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent
+  commentId: T:Glitch9.AIDevKit.Components.AIDevKitComponent
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html
+  name: AIDevKitComponent
+  nameWithType: AIDevKitComponent
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent
+  commentId: T:Glitch9.AIDevKit.Components.AIModuleComponent
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html
+  name: AIModuleComponent
+  nameWithType: AIModuleComponent
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  commentId: T:Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  parent: Glitch9.AIDevKit.Components
+  definition: Glitch9.AIDevKit.Components.AudioInputComponent`1
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html
+  name: AudioInputComponent<Transcript>
+  nameWithType: AudioInputComponent<Transcript>
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<Glitch9.AIDevKit.Transcript>
+  nameWithType.vb: AudioInputComponent(Of Transcript)
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of Glitch9.AIDevKit.Transcript)
+  name.vb: AudioInputComponent(Of Transcript)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1
+    name: AudioInputComponent
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html
+  - name: <
+  - uid: Glitch9.AIDevKit.Transcript
+    name: Transcript
+    href: Glitch9.AIDevKit.Transcript.html
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1
+    name: AudioInputComponent
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Transcript
+    name: Transcript
+    href: Glitch9.AIDevKit.Transcript.html
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.microphone
+  commentId: F:Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.microphone
+  parent: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.Components.AudioInputComponent`1.microphone
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_microphone
+  name: microphone
+  nameWithType: AudioInputComponent<Transcript>.microphone
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<Glitch9.AIDevKit.Transcript>.microphone
+  nameWithType.vb: AudioInputComponent(Of Transcript).microphone
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of Glitch9.AIDevKit.Transcript).microphone
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.recordingDuration
+  commentId: F:Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.recordingDuration
+  parent: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.Components.AudioInputComponent`1.recordingDuration
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_recordingDuration
+  name: recordingDuration
+  nameWithType: AudioInputComponent<Transcript>.recordingDuration
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<Glitch9.AIDevKit.Transcript>.recordingDuration
+  nameWithType.vb: AudioInputComponent(Of Transcript).recordingDuration
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of Glitch9.AIDevKit.Transcript).recordingDuration
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.RecordingDuration
+  commentId: P:Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.RecordingDuration
+  parent: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.Components.AudioInputComponent`1.RecordingDuration
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_RecordingDuration
+  name: RecordingDuration
+  nameWithType: AudioInputComponent<Transcript>.RecordingDuration
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<Glitch9.AIDevKit.Transcript>.RecordingDuration
+  nameWithType.vb: AudioInputComponent(Of Transcript).RecordingDuration
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of Glitch9.AIDevKit.Transcript).RecordingDuration
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.Recorder
+  commentId: P:Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.Recorder
+  parent: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.Components.AudioInputComponent`1.Recorder
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_Recorder
+  name: Recorder
+  nameWithType: AudioInputComponent<Transcript>.Recorder
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<Glitch9.AIDevKit.Transcript>.Recorder
+  nameWithType.vb: AudioInputComponent(Of Transcript).Recorder
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of Glitch9.AIDevKit.Transcript).Recorder
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.IsRecording
+  commentId: P:Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.IsRecording
+  parent: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.Components.AudioInputComponent`1.IsRecording
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_IsRecording
+  name: IsRecording
+  nameWithType: AudioInputComponent<Transcript>.IsRecording
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<Glitch9.AIDevKit.Transcript>.IsRecording
+  nameWithType.vb: AudioInputComponent(Of Transcript).IsRecording
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of Glitch9.AIDevKit.Transcript).IsRecording
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.StartRecording
+  commentId: M:Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.StartRecording
+  parent: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.Components.AudioInputComponent`1.StartRecording
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StartRecording
+  name: StartRecording()
+  nameWithType: AudioInputComponent<Transcript>.StartRecording()
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<Glitch9.AIDevKit.Transcript>.StartRecording()
+  nameWithType.vb: AudioInputComponent(Of Transcript).StartRecording()
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of Glitch9.AIDevKit.Transcript).StartRecording()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.StartRecording
+    name: StartRecording
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StartRecording
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.StartRecording
+    name: StartRecording
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StartRecording
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.StopRecording
+  commentId: M:Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.StopRecording
+  parent: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.Components.AudioInputComponent`1.StopRecording
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StopRecording
+  name: StopRecording()
+  nameWithType: AudioInputComponent<Transcript>.StopRecording()
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<Glitch9.AIDevKit.Transcript>.StopRecording()
+  nameWithType.vb: AudioInputComponent(Of Transcript).StopRecording()
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of Glitch9.AIDevKit.Transcript).StopRecording()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.StopRecording
+    name: StopRecording
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StopRecording
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.StopRecording
+    name: StopRecording
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StopRecording
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent.model
+  commentId: F:Glitch9.AIDevKit.Components.AIModuleComponent.model
+  parent: Glitch9.AIDevKit.Components.AIModuleComponent
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html#Glitch9_AIDevKit_Components_AIModuleComponent_model
+  name: model
+  nameWithType: AIModuleComponent.model
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent.model
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent.outputPath
+  commentId: F:Glitch9.AIDevKit.Components.AIModuleComponent.outputPath
+  parent: Glitch9.AIDevKit.Components.AIModuleComponent
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html#Glitch9_AIDevKit_Components_AIModuleComponent_outputPath
+  name: outputPath
+  nameWithType: AIModuleComponent.outputPath
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent.outputPath
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent.Model
+  commentId: P:Glitch9.AIDevKit.Components.AIModuleComponent.Model
+  parent: Glitch9.AIDevKit.Components.AIModuleComponent
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html#Glitch9_AIDevKit_Components_AIModuleComponent_Model
+  name: Model
+  nameWithType: AIModuleComponent.Model
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent.Model
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent.OutputPath
+  commentId: P:Glitch9.AIDevKit.Components.AIModuleComponent.OutputPath
+  parent: Glitch9.AIDevKit.Components.AIModuleComponent
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html#Glitch9_AIDevKit_Components_AIModuleComponent_OutputPath
+  name: OutputPath
+  nameWithType: AIModuleComponent.OutputPath
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent.OutputPath
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  commentId: F:Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_debugMode
+  name: debugMode
+  nameWithType: AIDevKitComponent.debugMode
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  commentId: F:Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_onError
+  name: onError
+  nameWithType: AIDevKitComponent.onError
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  commentId: M:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  isExternal: true
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  name: OnError(string)
+  nameWithType: AIDevKitComponent.OnError(string)
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(string)
+  nameWithType.vb: AIDevKitComponent.OnError(String)
+  fullName.vb: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(String)
+  name.vb: OnError(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  commentId: M:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  isExternal: true
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  name: OnError(Exception)
+  nameWithType: AIDevKitComponent.OnError(Exception)
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent`1
+  commentId: T:Glitch9.AIDevKit.Components.AudioInputComponent`1
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html
+  name: AudioInputComponent<T>
+  nameWithType: AudioInputComponent<T>
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<T>
+  nameWithType.vb: AudioInputComponent(Of T)
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of T)
+  name.vb: AudioInputComponent(Of T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1
+    name: AudioInputComponent
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1
+    name: AudioInputComponent
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.microphone
+  commentId: F:Glitch9.AIDevKit.Components.AudioInputComponent`1.microphone
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_microphone
+  name: microphone
+  nameWithType: AudioInputComponent<T>.microphone
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<T>.microphone
+  nameWithType.vb: AudioInputComponent(Of T).microphone
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of T).microphone
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.recordingDuration
+  commentId: F:Glitch9.AIDevKit.Components.AudioInputComponent`1.recordingDuration
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_recordingDuration
+  name: recordingDuration
+  nameWithType: AudioInputComponent<T>.recordingDuration
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<T>.recordingDuration
+  nameWithType.vb: AudioInputComponent(Of T).recordingDuration
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of T).recordingDuration
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.RecordingDuration
+  commentId: P:Glitch9.AIDevKit.Components.AudioInputComponent`1.RecordingDuration
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_RecordingDuration
+  name: RecordingDuration
+  nameWithType: AudioInputComponent<T>.RecordingDuration
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<T>.RecordingDuration
+  nameWithType.vb: AudioInputComponent(Of T).RecordingDuration
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of T).RecordingDuration
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.Recorder
+  commentId: P:Glitch9.AIDevKit.Components.AudioInputComponent`1.Recorder
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_Recorder
+  name: Recorder
+  nameWithType: AudioInputComponent<T>.Recorder
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<T>.Recorder
+  nameWithType.vb: AudioInputComponent(Of T).Recorder
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of T).Recorder
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.IsRecording
+  commentId: P:Glitch9.AIDevKit.Components.AudioInputComponent`1.IsRecording
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_IsRecording
+  name: IsRecording
+  nameWithType: AudioInputComponent<T>.IsRecording
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<T>.IsRecording
+  nameWithType.vb: AudioInputComponent(Of T).IsRecording
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of T).IsRecording
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.StartRecording
+  commentId: M:Glitch9.AIDevKit.Components.AudioInputComponent`1.StartRecording
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StartRecording
+  name: StartRecording()
+  nameWithType: AudioInputComponent<T>.StartRecording()
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<T>.StartRecording()
+  nameWithType.vb: AudioInputComponent(Of T).StartRecording()
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of T).StartRecording()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.StartRecording
+    name: StartRecording
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StartRecording
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.StartRecording
+    name: StartRecording
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StartRecording
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.StopRecording
+  commentId: M:Glitch9.AIDevKit.Components.AudioInputComponent`1.StopRecording
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StopRecording
+  name: StopRecording()
+  nameWithType: AudioInputComponent<T>.StopRecording()
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<T>.StopRecording()
+  nameWithType.vb: AudioInputComponent(Of T).StopRecording()
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of T).StopRecording()
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.StopRecording
+    name: StopRecording
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StopRecording
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.StopRecording
+    name: StopRecording
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_StopRecording
+  - name: (
+  - name: )
+- uid: Glitch9.AIDevKit.Components.SpeechToText.SpokenLanguage*
+  commentId: Overload:Glitch9.AIDevKit.Components.SpeechToText.SpokenLanguage
+  href: Glitch9.AIDevKit.Components.SpeechToText.html#Glitch9_AIDevKit_Components_SpeechToText_SpokenLanguage
+  name: SpokenLanguage
+  nameWithType: SpeechToText.SpokenLanguage
+  fullName: Glitch9.AIDevKit.Components.SpeechToText.SpokenLanguage
+- uid: SystemLanguage
+  isExternal: true
+  name: SystemLanguage
+  nameWithType: SystemLanguage
+  fullName: SystemLanguage
+- uid: Glitch9.AIDevKit.Components.SpeechToText.RemoveBackgroundNoise*
+  commentId: Overload:Glitch9.AIDevKit.Components.SpeechToText.RemoveBackgroundNoise
+  href: Glitch9.AIDevKit.Components.SpeechToText.html#Glitch9_AIDevKit_Components_SpeechToText_RemoveBackgroundNoise
+  name: RemoveBackgroundNoise
+  nameWithType: SpeechToText.RemoveBackgroundNoise
+  fullName: Glitch9.AIDevKit.Components.SpeechToText.RemoveBackgroundNoise
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.OnAudioRecorded(File{AudioClip})
+  commentId: M:Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.OnAudioRecorded(File{AudioClip})
+  parent: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}
+  definition: Glitch9.AIDevKit.Components.AudioInputComponent`1.OnAudioRecorded(File{AudioClip})
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_OnAudioRecorded_File_AudioClip__
+  name: OnAudioRecorded(File<AudioClip>)
+  nameWithType: AudioInputComponent<Transcript>.OnAudioRecorded(File<AudioClip>)
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<Glitch9.AIDevKit.Transcript>.OnAudioRecorded(File<AudioClip>)
+  nameWithType.vb: AudioInputComponent(Of Transcript).OnAudioRecorded(File(Of AudioClip))
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of Glitch9.AIDevKit.Transcript).OnAudioRecorded(File(Of AudioClip))
+  name.vb: OnAudioRecorded(File(Of AudioClip))
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.OnAudioRecorded(File{AudioClip})
+    name: OnAudioRecorded
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_OnAudioRecorded_File_AudioClip__
+  - name: (
+  - uid: File`1
+    name: File
+    isExternal: true
+  - name: <
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent{Glitch9.AIDevKit.Transcript}.OnAudioRecorded(File{AudioClip})
+    name: OnAudioRecorded
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_OnAudioRecorded_File_AudioClip__
+  - name: (
+  - uid: File`1
+    name: File
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.Components.SpeechToText.OnAudioRecorded*
+  commentId: Overload:Glitch9.AIDevKit.Components.SpeechToText.OnAudioRecorded
+  href: Glitch9.AIDevKit.Components.SpeechToText.html#Glitch9_AIDevKit_Components_SpeechToText_OnAudioRecorded_File_AudioClip__
+  name: OnAudioRecorded
+  nameWithType: SpeechToText.OnAudioRecorded
+  fullName: Glitch9.AIDevKit.Components.SpeechToText.OnAudioRecorded
+- uid: File{AudioClip}
+  commentId: '!:File{AudioClip}'
+  definition: File`1
+  name: File<AudioClip>
+  nameWithType: File<AudioClip>
+  fullName: File<AudioClip>
+  nameWithType.vb: File(Of AudioClip)
+  fullName.vb: File(Of AudioClip)
+  name.vb: File(Of AudioClip)
+  spec.csharp:
+  - uid: File`1
+    name: File
+    isExternal: true
+  - name: <
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: File`1
+    name: File
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: )
+- uid: UniTask{Glitch9.AIDevKit.Transcript}
+  commentId: '!:UniTask{Glitch9.AIDevKit.Transcript}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.Transcript.html
+  name: UniTask<Transcript>
+  nameWithType: UniTask<Transcript>
+  fullName: UniTask<Glitch9.AIDevKit.Transcript>
+  nameWithType.vb: UniTask(Of Transcript)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.Transcript)
+  name.vb: UniTask(Of Transcript)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.Transcript
+    name: Transcript
+    href: Glitch9.AIDevKit.Transcript.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.Transcript
+    name: Transcript
+    href: Glitch9.AIDevKit.Transcript.html
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.OnAudioRecorded(File{AudioClip})
+  commentId: M:Glitch9.AIDevKit.Components.AudioInputComponent`1.OnAudioRecorded(File{AudioClip})
+  isExternal: true
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_OnAudioRecorded_File_AudioClip__
+  name: OnAudioRecorded(File<AudioClip>)
+  nameWithType: AudioInputComponent<T>.OnAudioRecorded(File<AudioClip>)
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<T>.OnAudioRecorded(File<AudioClip>)
+  nameWithType.vb: AudioInputComponent(Of T).OnAudioRecorded(File(Of AudioClip))
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of T).OnAudioRecorded(File(Of AudioClip))
+  name.vb: OnAudioRecorded(File(Of AudioClip))
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.OnAudioRecorded(File{AudioClip})
+    name: OnAudioRecorded
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_OnAudioRecorded_File_AudioClip__
+  - name: (
+  - uid: File`1
+    name: File
+    isExternal: true
+  - name: <
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1.OnAudioRecorded(File{AudioClip})
+    name: OnAudioRecorded
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html#Glitch9_AIDevKit_Components_AudioInputComponent_1_OnAudioRecorded_File_AudioClip__
+  - name: (
+  - uid: File`1
+    name: File
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: )
+  - name: )
+- uid: File`1
+  isExternal: true
+  name: File<>
+  nameWithType: File<>
+  fullName: File<>
+  nameWithType.vb: File(Of )
+  fullName.vb: File(Of )
+  name.vb: File(Of )
+  spec.csharp:
+  - uid: File`1
+    name: File
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: File`1
+    name: File
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )

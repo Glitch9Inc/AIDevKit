@@ -33,10 +33,12 @@ items:
   summary: Information about a single locally available model.
   example: []
   syntax:
-    content: public class OllamaModelData
-    content.vb: Public Class OllamaModelData
+    content: 'public class OllamaModelData : IData'
+    content.vb: Public Class OllamaModelData Implements IData
   inheritance:
   - System.Object
+  implements:
+  - IData
 - uid: Glitch9.AIDevKit.Ollama.OllamaModelData.Name
   commentId: P:Glitch9.AIDevKit.Ollama.OllamaModelData.Name
   id: Name
@@ -191,7 +193,7 @@ items:
     content: public ZuluTime ExpiresAt { get; set; }
     parameters: []
     return:
-      type: Glitch9.ZuluTime
+      type: ZuluTime
     content.vb: Public Property ExpiresAt As ZuluTime
   overload: Glitch9.AIDevKit.Ollama.OllamaModelData.ExpiresAt*
 - uid: Glitch9.AIDevKit.Ollama.OllamaModelData.SizeVram
@@ -403,6 +405,11 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: IData
+  isExternal: true
+  name: IData
+  nameWithType: IData
+  fullName: IData
 - uid: System
   commentId: N:System
   isExternal: true
@@ -473,18 +480,11 @@ references:
   name: ExpiresAt
   nameWithType: OllamaModelData.ExpiresAt
   fullName: Glitch9.AIDevKit.Ollama.OllamaModelData.ExpiresAt
-- uid: Glitch9.ZuluTime
-  commentId: T:Glitch9.ZuluTime
-  parent: Glitch9
+- uid: ZuluTime
+  isExternal: true
   name: ZuluTime
   nameWithType: ZuluTime
-  fullName: Glitch9.ZuluTime
-- uid: Glitch9
-  commentId: N:Glitch9
-  href: Glitch9.html
-  name: Glitch9
-  nameWithType: Glitch9
-  fullName: Glitch9
+  fullName: ZuluTime
 - uid: Glitch9.AIDevKit.Ollama.OllamaModelData.SizeVram*
   commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaModelData.SizeVram
   href: Glitch9.AIDevKit.Ollama.OllamaModelData.html#Glitch9_AIDevKit_Ollama_OllamaModelData_SizeVram

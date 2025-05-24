@@ -25,8 +25,8 @@ items:
     startLine: 7
   namespace: Glitch9.AIDevKit
   syntax:
-    content: public interface IApiFile
-    content.vb: Public Interface IApiFile
+    content: 'public interface IApiFile : IData'
+    content.vb: Public Interface IApiFile Inherits IData
 - uid: Glitch9.AIDevKit.IApiFile.Api
   commentId: P:Glitch9.AIDevKit.IApiFile.Api
   id: Api
@@ -93,7 +93,7 @@ items:
     content: UnixTime CreatedAt { get; }
     parameters: []
     return:
-      type: Glitch9.UnixTime
+      type: UnixTime
     content.vb: ReadOnly Property CreatedAt As UnixTime
   overload: Glitch9.AIDevKit.IApiFile.CreatedAt*
 - uid: Glitch9.AIDevKit.IApiFile.ExpiresAt
@@ -116,7 +116,7 @@ items:
     content: UnixTime ExpiresAt { get; }
     parameters: []
     return:
-      type: Glitch9.UnixTime
+      type: UnixTime
     content.vb: ReadOnly Property ExpiresAt As UnixTime
   overload: Glitch9.AIDevKit.IApiFile.ExpiresAt*
 - uid: Glitch9.AIDevKit.IApiFile.MimeType
@@ -139,7 +139,7 @@ items:
     content: MIMEType MimeType { get; }
     parameters: []
     return:
-      type: Glitch9.IO.Files.MIMEType
+      type: MIMEType
     content.vb: ReadOnly Property MimeType As MIMEType
   overload: Glitch9.AIDevKit.IApiFile.MimeType*
 - uid: Glitch9.AIDevKit.IApiFile.Uri
@@ -184,7 +184,7 @@ items:
   syntax:
     content: Metadata BuildMetadata()
     return:
-      type: Glitch9.Metadata
+      type: Metadata
     content.vb: Function BuildMetadata() As Metadata
   overload: Glitch9.AIDevKit.IApiFile.BuildMetadata*
 references:
@@ -252,18 +252,11 @@ references:
   name: CreatedAt
   nameWithType: IApiFile.CreatedAt
   fullName: Glitch9.AIDevKit.IApiFile.CreatedAt
-- uid: Glitch9.UnixTime
-  commentId: T:Glitch9.UnixTime
-  parent: Glitch9
+- uid: UnixTime
+  isExternal: true
   name: UnixTime
   nameWithType: UnixTime
-  fullName: Glitch9.UnixTime
-- uid: Glitch9
-  commentId: N:Glitch9
-  href: Glitch9.html
-  name: Glitch9
-  nameWithType: Glitch9
-  fullName: Glitch9
+  fullName: UnixTime
 - uid: Glitch9.AIDevKit.IApiFile.ExpiresAt*
   commentId: Overload:Glitch9.AIDevKit.IApiFile.ExpiresAt
   href: Glitch9.AIDevKit.IApiFile.html#Glitch9_AIDevKit_IApiFile_ExpiresAt
@@ -276,42 +269,11 @@ references:
   name: MimeType
   nameWithType: IApiFile.MimeType
   fullName: Glitch9.AIDevKit.IApiFile.MimeType
-- uid: Glitch9.IO.Files.MIMEType
-  commentId: T:Glitch9.IO.Files.MIMEType
-  parent: Glitch9.IO.Files
+- uid: MIMEType
+  isExternal: true
   name: MIMEType
   nameWithType: MIMEType
-  fullName: Glitch9.IO.Files.MIMEType
-- uid: Glitch9.IO.Files
-  commentId: N:Glitch9.IO.Files
-  href: Glitch9.html
-  name: Glitch9.IO.Files
-  nameWithType: Glitch9.IO.Files
-  fullName: Glitch9.IO.Files
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
+  fullName: MIMEType
 - uid: Glitch9.AIDevKit.IApiFile.Uri*
   commentId: Overload:Glitch9.AIDevKit.IApiFile.Uri
   href: Glitch9.AIDevKit.IApiFile.html#Glitch9_AIDevKit_IApiFile_Uri
@@ -334,9 +296,8 @@ references:
   name: BuildMetadata
   nameWithType: IApiFile.BuildMetadata
   fullName: Glitch9.AIDevKit.IApiFile.BuildMetadata
-- uid: Glitch9.Metadata
-  commentId: T:Glitch9.Metadata
-  parent: Glitch9
+- uid: Metadata
+  isExternal: true
   name: Metadata
   nameWithType: Metadata
-  fullName: Glitch9.Metadata
+  fullName: Metadata

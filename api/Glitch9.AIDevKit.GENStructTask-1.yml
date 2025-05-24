@@ -17,7 +17,7 @@ items:
   source:
     id: GENStructTask
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 433
+    startLine: 457
   namespace: Glitch9.AIDevKit
   summary: Task for generating structured output (e.g., JSON) using an LLM model.
   example: []
@@ -38,18 +38,21 @@ items:
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.Attach(System.IO.FileInfo[])
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.Attach(Texture2D[])
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.Attach(AudioClip[])
-  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.Attach(Glitch9.IO.Files.IFile[])
+  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.Attach(IFile[])
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetInstruction(System.String)
-  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
+  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetStartingMessage(System.String)
+  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetSpeechOutput(Glitch9.AIDevKit.SpeechOutputOptions)
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetWebSearchOptions(Glitch9.AIDevKit.WebSearchOptions)
-  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
+  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetModeration(Glitch9.AIDevKit.ModerationOptions)
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetTools(Glitch9.AIDevKit.ToolCall[])
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.AddTools(Glitch9.AIDevKit.ToolCall[])
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetFunctions(Glitch9.AIDevKit.FunctionCall[])
   - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.AddFunctions(Glitch9.AIDevKit.FunctionCall[])
+  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetMessages(Glitch9.AIDevKit.ChatMessage[])
+  - Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.AddMessages(Glitch9.AIDevKit.ChatMessage[])
   - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENStructTask`1,System.String,Glitch9.AIDevKit.StructuredOutput{{T}}}.token
   - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENStructTask`1,System.String,Glitch9.AIDevKit.StructuredOutput{{T}}}.enableHistory
   - Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENStructTask`1,System.String,Glitch9.AIDevKit.StructuredOutput{{T}}}.isCanceled
@@ -88,7 +91,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 435
+    startLine: 459
   namespace: Glitch9.AIDevKit
   syntax:
     content: public GENStructTask(string prompt)
@@ -114,7 +117,7 @@ items:
   source:
     id: ExecuteAsyncINTERNAL
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 438
+    startLine: 462
   namespace: Glitch9.AIDevKit
   summary: Executes the task and returns the generated result.
   example: []
@@ -439,38 +442,40 @@ references:
   - name: (
   - name: )
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.Attach(Glitch9.IO.Files.IFile[])
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.Attach(Glitch9.IO.Files.IFile[])
+- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.Attach(IFile[])
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.Attach(IFile[])
   parent: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}
-  definition: Glitch9.AIDevKit.GENCompletionTask`2.Attach(Glitch9.IO.Files.IFile[])
-  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_Glitch9_IO_Files_IFile___
+  definition: Glitch9.AIDevKit.GENCompletionTask`2.Attach(IFile[])
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_IFile___
   name: Attach(params IFile[])
   nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.Attach(params IFile[])
-  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.Attach(params Glitch9.IO.Files.IFile[])
+  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.Attach(params IFile[])
   nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).Attach(ParamArray IFile())
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).Attach(ParamArray Glitch9.IO.Files.IFile())
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).Attach(ParamArray IFile())
   name.vb: Attach(ParamArray IFile())
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.Attach(Glitch9.IO.Files.IFile[])
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.Attach(IFile[])
     name: Attach
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_Glitch9_IO_Files_IFile___
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_IFile___
   - name: (
   - name: params
   - name: " "
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.Attach(Glitch9.IO.Files.IFile[])
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.Attach(IFile[])
     name: Attach
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_Glitch9_IO_Files_IFile___
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_IFile___
   - name: (
   - name: ParamArray
   - name: " "
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: (
   - name: )
   - name: )
@@ -503,85 +508,114 @@ references:
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetStartingMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetStartingMessage(System.String)
   parent: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}
-  definition: Glitch9.AIDevKit.GENCompletionTask`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
-  name: SetModelOptions(ModelOptions)
-  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.SetModelOptions(ModelOptions)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).SetModelOptions(ModelOptions)
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  definition: Glitch9.AIDevKit.GENCompletionTask`2.SetStartingMessage(System.String)
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetStartingMessage_System_String_
+  name: SetStartingMessage(string)
+  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.SetStartingMessage(string)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.SetStartingMessage(string)
+  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).SetStartingMessage(String)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).SetStartingMessage(String)
+  name.vb: SetStartingMessage(String)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-    name: SetModelOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetStartingMessage(System.String)
+    name: SetStartingMessage
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetStartingMessage_System_String_
   - name: (
-  - uid: Glitch9.AIDevKit.ModelOptions
-    name: ModelOptions
-    href: Glitch9.AIDevKit.ModelOptions.html
+  - uid: System.String
+    name: string
+    isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-    name: SetModelOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetStartingMessage(System.String)
+    name: SetStartingMessage
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetStartingMessage_System_String_
   - name: (
-  - uid: Glitch9.AIDevKit.ModelOptions
-    name: ModelOptions
-    href: Glitch9.AIDevKit.ModelOptions.html
+  - uid: System.String
+    name: String
+    isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
+- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
   parent: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}
-  definition: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningEffort_Glitch9_AIDevKit_ReasoningEffort_
-  name: SetReasoningEffort(ReasoningEffort)
-  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.SetReasoningEffort(ReasoningEffort)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).SetReasoningEffort(ReasoningEffort)
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
+  definition: Glitch9.AIDevKit.GENCompletionTask`2.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelSettings_Glitch9_AIDevKit_ModelSettings_
+  name: SetModelSettings(ModelSettings)
+  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.SetModelSettings(ModelSettings)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).SetModelSettings(ModelSettings)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).SetModelSettings(Glitch9.AIDevKit.ModelSettings)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-    name: SetReasoningEffort
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningEffort_Glitch9_AIDevKit_ReasoningEffort_
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+    name: SetModelSettings
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelSettings_Glitch9_AIDevKit_ModelSettings_
+  - name: (
+  - uid: Glitch9.AIDevKit.ModelSettings
+    name: ModelSettings
+    href: Glitch9.AIDevKit.ModelSettings.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+    name: SetModelSettings
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelSettings_Glitch9_AIDevKit_ModelSettings_
+  - name: (
+  - uid: Glitch9.AIDevKit.ModelSettings
+    name: ModelSettings
+    href: Glitch9.AIDevKit.ModelSettings.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+  parent: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}
+  definition: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_
+  name: SetReasoning(ReasoningEffort)
+  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.SetReasoning(ReasoningEffort)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).SetReasoning(ReasoningEffort)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+    name: SetReasoning
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_
   - name: (
   - uid: Glitch9.AIDevKit.ReasoningEffort
     name: ReasoningEffort
     href: Glitch9.AIDevKit.ReasoningEffort.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-    name: SetReasoningEffort
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningEffort_Glitch9_AIDevKit_ReasoningEffort_
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+    name: SetReasoning
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_
   - name: (
   - uid: Glitch9.AIDevKit.ReasoningEffort
     name: ReasoningEffort
     href: Glitch9.AIDevKit.ReasoningEffort.html
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
+- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
   parent: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}
-  definition: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
-  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_
-  name: SetReasoningOptions(ReasoningOptions)
-  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.SetReasoningOptions(ReasoningOptions)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
-  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).SetReasoningOptions(ReasoningOptions)
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
+  definition: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningOptions_
+  name: SetReasoning(ReasoningOptions)
+  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.SetReasoning(ReasoningOptions)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
+  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).SetReasoning(ReasoningOptions)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
-    name: SetReasoningOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
+    name: SetReasoning
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningOptions_
   - name: (
   - uid: Glitch9.AIDevKit.ReasoningOptions
     name: ReasoningOptions
     href: Glitch9.AIDevKit.ReasoningOptions.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
-    name: SetReasoningOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
+    name: SetReasoning
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningOptions_
   - name: (
   - uid: Glitch9.AIDevKit.ReasoningOptions
     name: ReasoningOptions
@@ -643,29 +677,29 @@ references:
     name: WebSearchOptions
     href: Glitch9.AIDevKit.WebSearchOptions.html
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
+- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetModeration(Glitch9.AIDevKit.ModerationOptions)
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModeration(Glitch9.AIDevKit.ModerationOptions)
   parent: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}
-  definition: Glitch9.AIDevKit.GENCompletionTask`2.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
-  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModerationOptions_Glitch9_AIDevKit_ModerationOptions_
-  name: SetModerationOptions(ModerationOptions)
-  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.SetModerationOptions(ModerationOptions)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
-  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).SetModerationOptions(ModerationOptions)
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
+  definition: Glitch9.AIDevKit.GENCompletionTask`2.SetModeration(Glitch9.AIDevKit.ModerationOptions)
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModeration_Glitch9_AIDevKit_ModerationOptions_
+  name: SetModeration(ModerationOptions)
+  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.SetModeration(ModerationOptions)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.SetModeration(Glitch9.AIDevKit.ModerationOptions)
+  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).SetModeration(ModerationOptions)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).SetModeration(Glitch9.AIDevKit.ModerationOptions)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
-    name: SetModerationOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModerationOptions_Glitch9_AIDevKit_ModerationOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModeration(Glitch9.AIDevKit.ModerationOptions)
+    name: SetModeration
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModeration_Glitch9_AIDevKit_ModerationOptions_
   - name: (
   - uid: Glitch9.AIDevKit.ModerationOptions
     name: ModerationOptions
     href: Glitch9.AIDevKit.ModerationOptions.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
-    name: SetModerationOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModerationOptions_Glitch9_AIDevKit_ModerationOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetModeration(Glitch9.AIDevKit.ModerationOptions)
+    name: SetModeration
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModeration_Glitch9_AIDevKit_ModerationOptions_
   - name: (
   - uid: Glitch9.AIDevKit.ModerationOptions
     name: ModerationOptions
@@ -816,6 +850,80 @@ references:
   - uid: Glitch9.AIDevKit.FunctionCall
     name: FunctionCall
     href: Glitch9.AIDevKit.FunctionCall.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.SetMessages(Glitch9.AIDevKit.ChatMessage[])
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetMessages(Glitch9.AIDevKit.ChatMessage[])
+  parent: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}
+  definition: Glitch9.AIDevKit.GENCompletionTask`2.SetMessages(Glitch9.AIDevKit.ChatMessage[])
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetMessages_Glitch9_AIDevKit_ChatMessage___
+  name: SetMessages(params ChatMessage[])
+  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.SetMessages(params ChatMessage[])
+  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.SetMessages(params Glitch9.AIDevKit.ChatMessage[])
+  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).SetMessages(ParamArray ChatMessage())
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).SetMessages(ParamArray Glitch9.AIDevKit.ChatMessage())
+  name.vb: SetMessages(ParamArray ChatMessage())
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetMessages(Glitch9.AIDevKit.ChatMessage[])
+    name: SetMessages
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetMessages_Glitch9_AIDevKit_ChatMessage___
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.SetMessages(Glitch9.AIDevKit.ChatMessage[])
+    name: SetMessages
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetMessages_Glitch9_AIDevKit_ChatMessage___
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}.AddMessages(Glitch9.AIDevKit.ChatMessage[])
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.AddMessages(Glitch9.AIDevKit.ChatMessage[])
+  parent: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{{T}}}
+  definition: Glitch9.AIDevKit.GENCompletionTask`2.AddMessages(Glitch9.AIDevKit.ChatMessage[])
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_AddMessages_Glitch9_AIDevKit_ChatMessage___
+  name: AddMessages(params ChatMessage[])
+  nameWithType: GENCompletionTask<GENStructTask<T>, StructuredOutput<T>>.AddMessages(params ChatMessage[])
+  fullName: Glitch9.AIDevKit.GENCompletionTask<Glitch9.AIDevKit.GENStructTask<T>, Glitch9.AIDevKit.StructuredOutput<T>>.AddMessages(params Glitch9.AIDevKit.ChatMessage[])
+  nameWithType.vb: GENCompletionTask(Of GENStructTask(Of T), StructuredOutput(Of T)).AddMessages(ParamArray ChatMessage())
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of Glitch9.AIDevKit.GENStructTask(Of T), Glitch9.AIDevKit.StructuredOutput(Of T)).AddMessages(ParamArray Glitch9.AIDevKit.ChatMessage())
+  name.vb: AddMessages(ParamArray ChatMessage())
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.AddMessages(Glitch9.AIDevKit.ChatMessage[])
+    name: AddMessages
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_AddMessages_Glitch9_AIDevKit_ChatMessage___
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENCompletionTask{Glitch9.AIDevKit.GENStructTask`1,Glitch9.AIDevKit.StructuredOutput{`0}}.AddMessages(Glitch9.AIDevKit.ChatMessage[])
+    name: AddMessages
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_AddMessages_Glitch9_AIDevKit_ChatMessage___
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
   - name: (
   - name: )
   - name: )
@@ -1661,36 +1769,39 @@ references:
   - name: (
   - name: )
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask`2.Attach(Glitch9.IO.Files.IFile[])
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.Attach(Glitch9.IO.Files.IFile[])
-  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_Glitch9_IO_Files_IFile___
+- uid: Glitch9.AIDevKit.GENCompletionTask`2.Attach(IFile[])
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.Attach(IFile[])
+  isExternal: true
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_IFile___
   name: Attach(params IFile[])
   nameWithType: GENCompletionTask<TSelf, TOutput>.Attach(params IFile[])
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.Attach(params Glitch9.IO.Files.IFile[])
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.Attach(params IFile[])
   nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).Attach(ParamArray IFile())
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).Attach(ParamArray Glitch9.IO.Files.IFile())
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).Attach(ParamArray IFile())
   name.vb: Attach(ParamArray IFile())
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`2.Attach(Glitch9.IO.Files.IFile[])
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.Attach(IFile[])
     name: Attach
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_Glitch9_IO_Files_IFile___
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_IFile___
   - name: (
   - name: params
   - name: " "
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`2.Attach(Glitch9.IO.Files.IFile[])
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.Attach(IFile[])
     name: Attach
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_Glitch9_IO_Files_IFile___
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_Attach_IFile___
   - name: (
   - name: ParamArray
   - name: " "
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: (
   - name: )
   - name: )
@@ -1722,79 +1833,107 @@ references:
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
-  name: SetModelOptions(ModelOptions)
-  nameWithType: GENCompletionTask<TSelf, TOutput>.SetModelOptions(ModelOptions)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).SetModelOptions(ModelOptions)
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+- uid: Glitch9.AIDevKit.GENCompletionTask`2.SetStartingMessage(System.String)
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.SetStartingMessage(System.String)
+  isExternal: true
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetStartingMessage_System_String_
+  name: SetStartingMessage(string)
+  nameWithType: GENCompletionTask<TSelf, TOutput>.SetStartingMessage(string)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.SetStartingMessage(string)
+  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).SetStartingMessage(String)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).SetStartingMessage(String)
+  name.vb: SetStartingMessage(String)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-    name: SetModelOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetStartingMessage(System.String)
+    name: SetStartingMessage
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetStartingMessage_System_String_
   - name: (
-  - uid: Glitch9.AIDevKit.ModelOptions
-    name: ModelOptions
-    href: Glitch9.AIDevKit.ModelOptions.html
+  - uid: System.String
+    name: string
+    isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-    name: SetModelOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetStartingMessage(System.String)
+    name: SetStartingMessage
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetStartingMessage_System_String_
   - name: (
-  - uid: Glitch9.AIDevKit.ModelOptions
-    name: ModelOptions
-    href: Glitch9.AIDevKit.ModelOptions.html
+  - uid: System.String
+    name: String
+    isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningEffort_Glitch9_AIDevKit_ReasoningEffort_
-  name: SetReasoningEffort(ReasoningEffort)
-  nameWithType: GENCompletionTask<TSelf, TOutput>.SetReasoningEffort(ReasoningEffort)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).SetReasoningEffort(ReasoningEffort)
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
+- uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelSettings_Glitch9_AIDevKit_ModelSettings_
+  name: SetModelSettings(ModelSettings)
+  nameWithType: GENCompletionTask<TSelf, TOutput>.SetModelSettings(ModelSettings)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).SetModelSettings(ModelSettings)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).SetModelSettings(Glitch9.AIDevKit.ModelSettings)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-    name: SetReasoningEffort
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningEffort_Glitch9_AIDevKit_ReasoningEffort_
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+    name: SetModelSettings
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelSettings_Glitch9_AIDevKit_ModelSettings_
+  - name: (
+  - uid: Glitch9.AIDevKit.ModelSettings
+    name: ModelSettings
+    href: Glitch9.AIDevKit.ModelSettings.html
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModelSettings(Glitch9.AIDevKit.ModelSettings)
+    name: SetModelSettings
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModelSettings_Glitch9_AIDevKit_ModelSettings_
+  - name: (
+  - uid: Glitch9.AIDevKit.ModelSettings
+    name: ModelSettings
+    href: Glitch9.AIDevKit.ModelSettings.html
+  - name: )
+- uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_
+  name: SetReasoning(ReasoningEffort)
+  nameWithType: GENCompletionTask<TSelf, TOutput>.SetReasoning(ReasoningEffort)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).SetReasoning(ReasoningEffort)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+    name: SetReasoning
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_
   - name: (
   - uid: Glitch9.AIDevKit.ReasoningEffort
     name: ReasoningEffort
     href: Glitch9.AIDevKit.ReasoningEffort.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
-    name: SetReasoningEffort
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningEffort_Glitch9_AIDevKit_ReasoningEffort_
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)
+    name: SetReasoning
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_
   - name: (
   - uid: Glitch9.AIDevKit.ReasoningEffort
     name: ReasoningEffort
     href: Glitch9.AIDevKit.ReasoningEffort.html
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
-  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_
-  name: SetReasoningOptions(ReasoningOptions)
-  nameWithType: GENCompletionTask<TSelf, TOutput>.SetReasoningOptions(ReasoningOptions)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
-  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).SetReasoningOptions(ReasoningOptions)
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
+- uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningOptions_
+  name: SetReasoning(ReasoningOptions)
+  nameWithType: GENCompletionTask<TSelf, TOutput>.SetReasoning(ReasoningOptions)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
+  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).SetReasoning(ReasoningOptions)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
-    name: SetReasoningOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
+    name: SetReasoning
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningOptions_
   - name: (
   - uid: Glitch9.AIDevKit.ReasoningOptions
     name: ReasoningOptions
     href: Glitch9.AIDevKit.ReasoningOptions.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
-    name: SetReasoningOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)
+    name: SetReasoning
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningOptions_
   - name: (
   - uid: Glitch9.AIDevKit.ReasoningOptions
     name: ReasoningOptions
@@ -1852,27 +1991,27 @@ references:
     name: WebSearchOptions
     href: Glitch9.AIDevKit.WebSearchOptions.html
   - name: )
-- uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
-  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
-  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModerationOptions_Glitch9_AIDevKit_ModerationOptions_
-  name: SetModerationOptions(ModerationOptions)
-  nameWithType: GENCompletionTask<TSelf, TOutput>.SetModerationOptions(ModerationOptions)
-  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
-  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).SetModerationOptions(ModerationOptions)
-  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
+- uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModeration(Glitch9.AIDevKit.ModerationOptions)
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.SetModeration(Glitch9.AIDevKit.ModerationOptions)
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModeration_Glitch9_AIDevKit_ModerationOptions_
+  name: SetModeration(ModerationOptions)
+  nameWithType: GENCompletionTask<TSelf, TOutput>.SetModeration(ModerationOptions)
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.SetModeration(Glitch9.AIDevKit.ModerationOptions)
+  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).SetModeration(ModerationOptions)
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).SetModeration(Glitch9.AIDevKit.ModerationOptions)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
-    name: SetModerationOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModerationOptions_Glitch9_AIDevKit_ModerationOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModeration(Glitch9.AIDevKit.ModerationOptions)
+    name: SetModeration
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModeration_Glitch9_AIDevKit_ModerationOptions_
   - name: (
   - uid: Glitch9.AIDevKit.ModerationOptions
     name: ModerationOptions
     href: Glitch9.AIDevKit.ModerationOptions.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)
-    name: SetModerationOptions
-    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModerationOptions_Glitch9_AIDevKit_ModerationOptions_
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetModeration(Glitch9.AIDevKit.ModerationOptions)
+    name: SetModeration
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetModeration_Glitch9_AIDevKit_ModerationOptions_
   - name: (
   - uid: Glitch9.AIDevKit.ModerationOptions
     name: ModerationOptions
@@ -2015,6 +2154,76 @@ references:
   - uid: Glitch9.AIDevKit.FunctionCall
     name: FunctionCall
     href: Glitch9.AIDevKit.FunctionCall.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.GENCompletionTask`2.SetMessages(Glitch9.AIDevKit.ChatMessage[])
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.SetMessages(Glitch9.AIDevKit.ChatMessage[])
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetMessages_Glitch9_AIDevKit_ChatMessage___
+  name: SetMessages(params ChatMessage[])
+  nameWithType: GENCompletionTask<TSelf, TOutput>.SetMessages(params ChatMessage[])
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.SetMessages(params Glitch9.AIDevKit.ChatMessage[])
+  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).SetMessages(ParamArray ChatMessage())
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).SetMessages(ParamArray Glitch9.AIDevKit.ChatMessage())
+  name.vb: SetMessages(ParamArray ChatMessage())
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetMessages(Glitch9.AIDevKit.ChatMessage[])
+    name: SetMessages
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetMessages_Glitch9_AIDevKit_ChatMessage___
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.SetMessages(Glitch9.AIDevKit.ChatMessage[])
+    name: SetMessages
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_SetMessages_Glitch9_AIDevKit_ChatMessage___
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Glitch9.AIDevKit.GENCompletionTask`2.AddMessages(Glitch9.AIDevKit.ChatMessage[])
+  commentId: M:Glitch9.AIDevKit.GENCompletionTask`2.AddMessages(Glitch9.AIDevKit.ChatMessage[])
+  href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_AddMessages_Glitch9_AIDevKit_ChatMessage___
+  name: AddMessages(params ChatMessage[])
+  nameWithType: GENCompletionTask<TSelf, TOutput>.AddMessages(params ChatMessage[])
+  fullName: Glitch9.AIDevKit.GENCompletionTask<TSelf, TOutput>.AddMessages(params Glitch9.AIDevKit.ChatMessage[])
+  nameWithType.vb: GENCompletionTask(Of TSelf, TOutput).AddMessages(ParamArray ChatMessage())
+  fullName.vb: Glitch9.AIDevKit.GENCompletionTask(Of TSelf, TOutput).AddMessages(ParamArray Glitch9.AIDevKit.ChatMessage())
+  name.vb: AddMessages(ParamArray ChatMessage())
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.AddMessages(Glitch9.AIDevKit.ChatMessage[])
+    name: AddMessages
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_AddMessages_Glitch9_AIDevKit_ChatMessage___
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.GENCompletionTask`2.AddMessages(Glitch9.AIDevKit.ChatMessage[])
+    name: AddMessages
+    href: Glitch9.AIDevKit.GENCompletionTask-2.html#Glitch9_AIDevKit_GENCompletionTask_2_AddMessages_Glitch9_AIDevKit_ChatMessage___
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatMessage
+    name: ChatMessage
+    href: Glitch9.AIDevKit.ChatMessage.html
   - name: (
   - name: )
   - name: )

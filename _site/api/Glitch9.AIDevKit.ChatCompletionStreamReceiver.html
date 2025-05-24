@@ -93,12 +93,13 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Glitch9.AIDevKit.IChatCompletionStreamHandler.html">IChatCompletionStreamHandler</a></div>
+    <div><span class="xref">ITextStreamHandler</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_ChatCompletionStreamReceiver_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ChatCompletionStreamReceiver : MonoBehaviour, IChatCompletionStreamHandler</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ChatCompletionStreamReceiver : MonoBehaviour, IChatCompletionStreamHandler, ITextStreamHandler</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -453,6 +454,48 @@
   </table>
 
 
+  <a id="Glitch9_AIDevKit_ChatCompletionStreamReceiver_SetOnDone_" data-uid="Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetOnDone*"></a>
+  <h4 id="Glitch9_AIDevKit_ChatCompletionStreamReceiver_SetOnDone_System_Action_Glitch9_AIDevKit_ChatCompletion__" data-uid="Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetOnDone(System.Action{Glitch9.AIDevKit.ChatCompletion})">SetOnDone(Action&lt;ChatCompletion&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IChatCompletionStreamHandler SetOnDone(Action&lt;ChatCompletion&gt; onDone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ChatCompletion.html">ChatCompletion</a>&gt;</td>
+        <td><span class="parametername">onDone</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.IChatCompletionStreamHandler.html">IChatCompletionStreamHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
   <a id="Glitch9_AIDevKit_ChatCompletionStreamReceiver_SetTask_" data-uid="Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetTask*"></a>
   <h4 id="Glitch9_AIDevKit_ChatCompletionStreamReceiver_SetTask_Glitch9_AIDevKit_GENResponseTask_" data-uid="Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetTask(Glitch9.AIDevKit.GENResponseTask)">SetTask(GENResponseTask)</h4>
   <div class="markdown level1 summary"></div>
@@ -506,6 +549,9 @@
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Glitch9.AIDevKit.IChatCompletionStreamHandler.html">IChatCompletionStreamHandler</a>
+  </div>
+  <div>
+      <span class="xref">ITextStreamHandler</span>
   </div>
 
 </article>

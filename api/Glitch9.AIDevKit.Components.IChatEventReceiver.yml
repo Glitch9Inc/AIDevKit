@@ -5,7 +5,6 @@ items:
   id: IChatEventReceiver
   parent: Glitch9.AIDevKit.Components
   children:
-  - Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(System.String)
   - Glitch9.AIDevKit.Components.IChatEventReceiver.OnReceiveResponse(Glitch9.AIDevKit.ChatCompletion)
   - Glitch9.AIDevKit.Components.IChatEventReceiver.OnSendMessage(Glitch9.AIDevKit.ChatMessage)
   langs:
@@ -18,7 +17,7 @@ items:
   source:
     id: IChatEventReceiver
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/ChatEventReceiver.cs
-    startLine: 18
+    startLine: 11
   namespace: Glitch9.AIDevKit.Components
   syntax:
     content: public interface IChatEventReceiver
@@ -37,7 +36,7 @@ items:
   source:
     id: OnSendMessage
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/ChatEventReceiver.cs
-    startLine: 20
+    startLine: 13
   namespace: Glitch9.AIDevKit.Components
   syntax:
     content: void OnSendMessage(ChatMessage requestMessage)
@@ -60,7 +59,7 @@ items:
   source:
     id: OnReceiveResponse
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/ChatEventReceiver.cs
-    startLine: 21
+    startLine: 14
   namespace: Glitch9.AIDevKit.Components
   syntax:
     content: void OnReceiveResponse(ChatCompletion response)
@@ -69,32 +68,6 @@ items:
       type: Glitch9.AIDevKit.ChatCompletion
     content.vb: Sub OnReceiveResponse(response As ChatCompletion)
   overload: Glitch9.AIDevKit.Components.IChatEventReceiver.OnReceiveResponse*
-- uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(System.String)
-  commentId: M:Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(System.String)
-  id: OnError(System.String)
-  parent: Glitch9.AIDevKit.Components.IChatEventReceiver
-  langs:
-  - csharp
-  - vb
-  name: OnError(string)
-  nameWithType: IChatEventReceiver.OnError(string)
-  fullName: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(string)
-  type: Method
-  source:
-    id: OnError
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Receivers/ChatEventReceiver.cs
-    startLine: 22
-  namespace: Glitch9.AIDevKit.Components
-  syntax:
-    content: void OnError(string errorMessage)
-    parameters:
-    - id: errorMessage
-      type: System.String
-    content.vb: Sub OnError(errorMessage As String)
-  overload: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError*
-  nameWithType.vb: IChatEventReceiver.OnError(String)
-  fullName.vb: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError(String)
-  name.vb: OnError(String)
 references:
 - uid: Glitch9.AIDevKit.Components
   commentId: N:Glitch9.AIDevKit.Components
@@ -174,26 +147,3 @@ references:
   name: ChatCompletion
   nameWithType: ChatCompletion
   fullName: Glitch9.AIDevKit.ChatCompletion
-- uid: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError*
-  commentId: Overload:Glitch9.AIDevKit.Components.IChatEventReceiver.OnError
-  href: Glitch9.AIDevKit.Components.IChatEventReceiver.html#Glitch9_AIDevKit_Components_IChatEventReceiver_OnError_System_String_
-  name: OnError
-  nameWithType: IChatEventReceiver.OnError
-  fullName: Glitch9.AIDevKit.Components.IChatEventReceiver.OnError
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System

@@ -33,7 +33,6 @@ items:
     content.vb: Public Class SpeechRequest Inherits VoiceRequest
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.RequestBody
   - Glitch9.AIDevKit.ElevenLabs.AudioRequest
   - Glitch9.AIDevKit.ElevenLabs.VoiceRequest
   inheritedMembers:
@@ -44,7 +43,7 @@ items:
   - Glitch9.AIDevKit.ElevenLabs.AudioRequest.OutputFormat
   extensionMethods:
   - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync
-  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  - Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(RealtimeAudioPlayer)
 - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text
   commentId: P:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text
   id: Text
@@ -436,12 +435,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
-  parent: Glitch9.IO.Networking.RESTApi
-  name: RequestBody
-  nameWithType: RequestBody
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
 - uid: Glitch9.AIDevKit.ElevenLabs.AudioRequest
   commentId: T:Glitch9.AIDevKit.ElevenLabs.AudioRequest
   parent: Glitch9.AIDevKit.ElevenLabs
@@ -517,39 +510,41 @@ references:
     name: SpeechRequest
     href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
   - name: )
-- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
-  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+- uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(RealtimeAudioPlayer)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
   parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
-  definition: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
-  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
-  name: StreamAsync(SpeechRequest, StreamAudioPlayer)
-  nameWithType: RequestExtensions.StreamAsync(SpeechRequest, StreamAudioPlayer)
-  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest, Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  definition: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_RealtimeAudioPlayer_
+  name: StreamAsync(SpeechRequest, RealtimeAudioPlayer)
+  nameWithType: RequestExtensions.StreamAsync(SpeechRequest, RealtimeAudioPlayer)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest, RealtimeAudioPlayer)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
     name: StreamAsync
-    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_RealtimeAudioPlayer_
   - name: (
   - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
     name: SpeechRequest
     href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
-    name: StreamAudioPlayer
+  - uid: RealtimeAudioPlayer
+    name: RealtimeAudioPlayer
+    isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
     name: StreamAsync
-    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_RealtimeAudioPlayer_
   - name: (
   - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
     name: SpeechRequest
     href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
-    name: StreamAudioPlayer
+  - uid: RealtimeAudioPlayer
+    name: RealtimeAudioPlayer
+    isExternal: true
   - name: )
 - uid: System
   commentId: N:System
@@ -558,44 +553,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
   commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
   href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_ExecuteAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_
@@ -627,37 +584,40 @@ references:
   name: RequestExtensions
   nameWithType: RequestExtensions
   fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
-- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
-  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
-  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
-  name: StreamAsync(SpeechRequest, StreamAudioPlayer)
-  nameWithType: RequestExtensions.StreamAsync(SpeechRequest, StreamAudioPlayer)
-  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest, Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
+  isExternal: true
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_RealtimeAudioPlayer_
+  name: StreamAsync(SpeechRequest, RealtimeAudioPlayer)
+  nameWithType: RequestExtensions.StreamAsync(SpeechRequest, RealtimeAudioPlayer)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest, RealtimeAudioPlayer)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
     name: StreamAsync
-    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_RealtimeAudioPlayer_
   - name: (
   - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
     name: SpeechRequest
     href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
-    name: StreamAudioPlayer
+  - uid: RealtimeAudioPlayer
+    name: RealtimeAudioPlayer
+    isExternal: true
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
     name: StreamAsync
-    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+    href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_RealtimeAudioPlayer_
   - name: (
   - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
     name: SpeechRequest
     href: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.html
   - name: ','
   - name: " "
-  - uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
-    name: StreamAudioPlayer
+  - uid: RealtimeAudioPlayer
+    name: RealtimeAudioPlayer
+    isExternal: true
   - name: )
 - uid: Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text*
   commentId: Overload:Glitch9.AIDevKit.ElevenLabs.SpeechRequest.Text

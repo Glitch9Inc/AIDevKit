@@ -8,7 +8,7 @@ items:
   - Glitch9.AIDevKit.Google.ContentPart.#ctor
   - Glitch9.AIDevKit.Google.ContentPart.#ctor(Glitch9.AIDevKit.FunctionResponse)
   - Glitch9.AIDevKit.Google.ContentPart.FileData
-  - Glitch9.AIDevKit.Google.ContentPart.FromBase64(System.String,Glitch9.IO.Files.MIMEType)
+  - Glitch9.AIDevKit.Google.ContentPart.FromBase64(System.String,MIMEType)
   - Glitch9.AIDevKit.Google.ContentPart.FromText(System.String)
   - Glitch9.AIDevKit.Google.ContentPart.FromUrl(System.String)
   - Glitch9.AIDevKit.Google.ContentPart.FunctionCall
@@ -223,7 +223,7 @@ items:
     content: public File<Texture2D> ImageContent { get; set; }
     parameters: []
     return:
-      type: Glitch9.IO.Files.File{Texture2D}
+      type: File{Texture2D}
     content.vb: Public Property ImageContent As File(Of Texture2D)
   overload: Glitch9.AIDevKit.Google.ContentPart.ImageContent*
 - uid: Glitch9.AIDevKit.Google.ContentPart.#ctor
@@ -303,16 +303,16 @@ items:
   nameWithType.vb: ContentPart.FromText(String)
   fullName.vb: Glitch9.AIDevKit.Google.ContentPart.FromText(String)
   name.vb: FromText(String)
-- uid: Glitch9.AIDevKit.Google.ContentPart.FromBase64(System.String,Glitch9.IO.Files.MIMEType)
-  commentId: M:Glitch9.AIDevKit.Google.ContentPart.FromBase64(System.String,Glitch9.IO.Files.MIMEType)
-  id: FromBase64(System.String,Glitch9.IO.Files.MIMEType)
+- uid: Glitch9.AIDevKit.Google.ContentPart.FromBase64(System.String,MIMEType)
+  commentId: M:Glitch9.AIDevKit.Google.ContentPart.FromBase64(System.String,MIMEType)
+  id: FromBase64(System.String,MIMEType)
   parent: Glitch9.AIDevKit.Google.ContentPart
   langs:
   - csharp
   - vb
   name: FromBase64(string, MIMEType)
   nameWithType: ContentPart.FromBase64(string, MIMEType)
-  fullName: Glitch9.AIDevKit.Google.ContentPart.FromBase64(string, Glitch9.IO.Files.MIMEType)
+  fullName: Glitch9.AIDevKit.Google.ContentPart.FromBase64(string, MIMEType)
   type: Method
   source:
     id: FromBase64
@@ -325,13 +325,13 @@ items:
     - id: base64File
       type: System.String
     - id: mimeType
-      type: Glitch9.IO.Files.MIMEType
+      type: MIMEType
     return:
       type: Glitch9.AIDevKit.Google.ContentPart
     content.vb: Public Shared Function FromBase64(base64File As String, mimeType As MIMEType) As ContentPart
   overload: Glitch9.AIDevKit.Google.ContentPart.FromBase64*
   nameWithType.vb: ContentPart.FromBase64(String, MIMEType)
-  fullName.vb: Glitch9.AIDevKit.Google.ContentPart.FromBase64(String, Glitch9.IO.Files.MIMEType)
+  fullName.vb: Glitch9.AIDevKit.Google.ContentPart.FromBase64(String, MIMEType)
   name.vb: FromBase64(String, MIMEType)
 - uid: Glitch9.AIDevKit.Google.ContentPart.FromUrl(System.String)
   commentId: M:Glitch9.AIDevKit.Google.ContentPart.FromUrl(System.String)
@@ -547,27 +547,28 @@ references:
   name: ImageContent
   nameWithType: ContentPart.ImageContent
   fullName: Glitch9.AIDevKit.Google.ContentPart.ImageContent
-- uid: Glitch9.IO.Files.File{Texture2D}
-  commentId: T:Glitch9.IO.Files.File{Texture2D}
-  parent: Glitch9.IO.Files
-  definition: Glitch9.IO.Files.File`1
+- uid: File{Texture2D}
+  commentId: '!:File{Texture2D}'
+  definition: File`1
   name: File<Texture2D>
   nameWithType: File<Texture2D>
-  fullName: Glitch9.IO.Files.File<Texture2D>
+  fullName: File<Texture2D>
   nameWithType.vb: File(Of Texture2D)
-  fullName.vb: Glitch9.IO.Files.File(Of Texture2D)
+  fullName.vb: File(Of Texture2D)
   name.vb: File(Of Texture2D)
   spec.csharp:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
   - uid: Texture2D
     name: Texture2D
     isExternal: true
   - name: '>'
   spec.vb:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
@@ -575,58 +576,30 @@ references:
     name: Texture2D
     isExternal: true
   - name: )
-- uid: Glitch9.IO.Files.File`1
-  commentId: T:Glitch9.IO.Files.File`1
-  name: File<T>
-  nameWithType: File<T>
-  fullName: Glitch9.IO.Files.File<T>
-  nameWithType.vb: File(Of T)
-  fullName.vb: Glitch9.IO.Files.File(Of T)
-  name.vb: File(Of T)
+- uid: File`1
+  isExternal: true
+  name: File<>
+  nameWithType: File<>
+  fullName: File<>
+  nameWithType.vb: File(Of )
+  fullName.vb: File(Of )
+  name.vb: File(Of )
   spec.csharp:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
-  - name: T
+  - name: ''
   - name: '>'
   spec.vb:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: ''
   - name: )
-- uid: Glitch9.IO.Files
-  commentId: N:Glitch9.IO.Files
-  href: Glitch9.html
-  name: Glitch9.IO.Files
-  nameWithType: Glitch9.IO.Files
-  fullName: Glitch9.IO.Files
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
 - uid: Glitch9.AIDevKit.Google.ContentPart.#ctor*
   commentId: Overload:Glitch9.AIDevKit.Google.ContentPart.#ctor
   href: Glitch9.AIDevKit.Google.ContentPart.html#Glitch9_AIDevKit_Google_ContentPart__ctor
@@ -644,16 +617,15 @@ references:
   fullName: Glitch9.AIDevKit.Google.ContentPart.FromText
 - uid: Glitch9.AIDevKit.Google.ContentPart.FromBase64*
   commentId: Overload:Glitch9.AIDevKit.Google.ContentPart.FromBase64
-  href: Glitch9.AIDevKit.Google.ContentPart.html#Glitch9_AIDevKit_Google_ContentPart_FromBase64_System_String_Glitch9_IO_Files_MIMEType_
+  href: Glitch9.AIDevKit.Google.ContentPart.html#Glitch9_AIDevKit_Google_ContentPart_FromBase64_System_String_MIMEType_
   name: FromBase64
   nameWithType: ContentPart.FromBase64
   fullName: Glitch9.AIDevKit.Google.ContentPart.FromBase64
-- uid: Glitch9.IO.Files.MIMEType
-  commentId: T:Glitch9.IO.Files.MIMEType
-  parent: Glitch9.IO.Files
+- uid: MIMEType
+  isExternal: true
   name: MIMEType
   nameWithType: MIMEType
-  fullName: Glitch9.IO.Files.MIMEType
+  fullName: MIMEType
 - uid: Glitch9.AIDevKit.Google.ContentPart.FromUrl*
   commentId: Overload:Glitch9.AIDevKit.Google.ContentPart.FromUrl
   href: Glitch9.AIDevKit.Google.ContentPart.html#Glitch9_AIDevKit_Google_ContentPart_FromUrl_System_String_

@@ -5,27 +5,33 @@ items:
   id: Glitch9.AIDevKit.Components
   children:
   - Glitch9.AIDevKit.Components.AIDevKitComponent
+  - Glitch9.AIDevKit.Components.AIModuleComponent
+  - Glitch9.AIDevKit.Components.AssistantChatbot
   - Glitch9.AIDevKit.Components.AssistantEventReceiver
-  - Glitch9.AIDevKit.Components.AssistantsAPI
+  - Glitch9.AIDevKit.Components.AudioInputComponent`1
   - Glitch9.AIDevKit.Components.ChatEventReceiver
   - Glitch9.AIDevKit.Components.ChatTextEventReceiver
   - Glitch9.AIDevKit.Components.Chatbot
-  - Glitch9.AIDevKit.Components.ChatbotBase
+  - Glitch9.AIDevKit.Components.ChatbotComponent
   - Glitch9.AIDevKit.Components.FunctionManager
   - Glitch9.AIDevKit.Components.FunctionParameter
   - Glitch9.AIDevKit.Components.FunctionReference
   - Glitch9.AIDevKit.Components.IChatEventReceiver
   - Glitch9.AIDevKit.Components.IFunctionManager
   - Glitch9.AIDevKit.Components.IRealtimeEventReceiver
+  - Glitch9.AIDevKit.Components.ImageGenerator
   - Glitch9.AIDevKit.Components.MessageEventReceiver
+  - Glitch9.AIDevKit.Components.ModularChatbot
   - Glitch9.AIDevKit.Components.MultiChatEventReceiver
-  - Glitch9.AIDevKit.Components.RealtimeAPI
+  - Glitch9.AIDevKit.Components.RealtimeAssistant
   - Glitch9.AIDevKit.Components.RealtimeEventReceiver
   - Glitch9.AIDevKit.Components.RunEventReceiver
   - Glitch9.AIDevKit.Components.SingleChatEventReceiver
   - Glitch9.AIDevKit.Components.SpeechAPI
   - Glitch9.AIDevKit.Components.SpeechEventReceiver
+  - Glitch9.AIDevKit.Components.SpeechToText
   - Glitch9.AIDevKit.Components.StreamingAudioEventReceiver
+  - Glitch9.AIDevKit.Components.TextToSpeech
   - Glitch9.AIDevKit.Components.ThreadEventReceiver
   - Glitch9.AIDevKit.Components.ToolCallReceiver
   langs:
@@ -43,25 +49,58 @@ references:
   name: AIDevKitComponent
   nameWithType: AIDevKitComponent
   fullName: Glitch9.AIDevKit.Components.AIDevKitComponent
-- uid: Glitch9.AIDevKit.Components.AssistantsAPI
-  commentId: T:Glitch9.AIDevKit.Components.AssistantsAPI
-  href: Glitch9.AIDevKit.Components.AssistantsAPI.html
-  name: AssistantsAPI
-  nameWithType: AssistantsAPI
-  fullName: Glitch9.AIDevKit.Components.AssistantsAPI
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent
+  commentId: T:Glitch9.AIDevKit.Components.AIModuleComponent
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html
+  name: AIModuleComponent
+  nameWithType: AIModuleComponent
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent
+- uid: Glitch9.AIDevKit.Components.AudioInputComponent`1
+  commentId: T:Glitch9.AIDevKit.Components.AudioInputComponent`1
+  href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html
+  name: AudioInputComponent<T>
+  nameWithType: AudioInputComponent<T>
+  fullName: Glitch9.AIDevKit.Components.AudioInputComponent<T>
+  nameWithType.vb: AudioInputComponent(Of T)
+  fullName.vb: Glitch9.AIDevKit.Components.AudioInputComponent(Of T)
+  name.vb: AudioInputComponent(Of T)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1
+    name: AudioInputComponent
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1
+    name: AudioInputComponent
+    href: Glitch9.AIDevKit.Components.AudioInputComponent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Glitch9.AIDevKit.Components.ChatbotComponent
+  commentId: T:Glitch9.AIDevKit.Components.ChatbotComponent
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.ChatbotComponent.html
+  name: ChatbotComponent
+  nameWithType: ChatbotComponent
+  fullName: Glitch9.AIDevKit.Components.ChatbotComponent
+- uid: Glitch9.AIDevKit.Components.AssistantChatbot
+  commentId: T:Glitch9.AIDevKit.Components.AssistantChatbot
+  href: Glitch9.AIDevKit.Components.AssistantChatbot.html
+  name: AssistantChatbot
+  nameWithType: AssistantChatbot
+  fullName: Glitch9.AIDevKit.Components.AssistantChatbot
 - uid: Glitch9.AIDevKit.Components.Chatbot
   commentId: T:Glitch9.AIDevKit.Components.Chatbot
+  parent: Glitch9.AIDevKit.Components
   href: Glitch9.AIDevKit.Components.Chatbot.html
   name: Chatbot
   nameWithType: Chatbot
   fullName: Glitch9.AIDevKit.Components.Chatbot
-- uid: Glitch9.AIDevKit.Components.ChatbotBase
-  commentId: T:Glitch9.AIDevKit.Components.ChatbotBase
-  parent: Glitch9.AIDevKit.Components
-  href: Glitch9.AIDevKit.Components.ChatbotBase.html
-  name: ChatbotBase
-  nameWithType: ChatbotBase
-  fullName: Glitch9.AIDevKit.Components.ChatbotBase
 - uid: Glitch9.AIDevKit.Components.IFunctionManager
   commentId: T:Glitch9.AIDevKit.Components.IFunctionManager
   parent: Glitch9.AIDevKit.Components
@@ -88,18 +127,42 @@ references:
   name: FunctionReference
   nameWithType: FunctionReference
   fullName: Glitch9.AIDevKit.Components.FunctionReference
-- uid: Glitch9.AIDevKit.Components.RealtimeAPI
-  commentId: T:Glitch9.AIDevKit.Components.RealtimeAPI
-  href: Glitch9.AIDevKit.Components.RealtimeAPI.html
-  name: RealtimeAPI
-  nameWithType: RealtimeAPI
-  fullName: Glitch9.AIDevKit.Components.RealtimeAPI
+- uid: Glitch9.AIDevKit.Components.ImageGenerator
+  commentId: T:Glitch9.AIDevKit.Components.ImageGenerator
+  href: Glitch9.AIDevKit.Components.ImageGenerator.html
+  name: ImageGenerator
+  nameWithType: ImageGenerator
+  fullName: Glitch9.AIDevKit.Components.ImageGenerator
+- uid: Glitch9.AIDevKit.Components.ModularChatbot
+  commentId: T:Glitch9.AIDevKit.Components.ModularChatbot
+  href: Glitch9.AIDevKit.Components.ModularChatbot.html
+  name: ModularChatbot
+  nameWithType: ModularChatbot
+  fullName: Glitch9.AIDevKit.Components.ModularChatbot
+- uid: Glitch9.AIDevKit.Components.RealtimeAssistant
+  commentId: T:Glitch9.AIDevKit.Components.RealtimeAssistant
+  href: Glitch9.AIDevKit.Components.RealtimeAssistant.html
+  name: RealtimeAssistant
+  nameWithType: RealtimeAssistant
+  fullName: Glitch9.AIDevKit.Components.RealtimeAssistant
 - uid: Glitch9.AIDevKit.Components.SpeechAPI
   commentId: T:Glitch9.AIDevKit.Components.SpeechAPI
   href: Glitch9.AIDevKit.Components.SpeechAPI.html
   name: SpeechAPI
   nameWithType: SpeechAPI
   fullName: Glitch9.AIDevKit.Components.SpeechAPI
+- uid: Glitch9.AIDevKit.Components.SpeechToText
+  commentId: T:Glitch9.AIDevKit.Components.SpeechToText
+  href: Glitch9.AIDevKit.Components.SpeechToText.html
+  name: SpeechToText
+  nameWithType: SpeechToText
+  fullName: Glitch9.AIDevKit.Components.SpeechToText
+- uid: Glitch9.AIDevKit.Components.TextToSpeech
+  commentId: T:Glitch9.AIDevKit.Components.TextToSpeech
+  href: Glitch9.AIDevKit.Components.TextToSpeech.html
+  name: TextToSpeech
+  nameWithType: TextToSpeech
+  fullName: Glitch9.AIDevKit.Components.TextToSpeech
 - uid: Glitch9.AIDevKit.Components.AssistantEventReceiver
   commentId: T:Glitch9.AIDevKit.Components.AssistantEventReceiver
   href: Glitch9.AIDevKit.Components.AssistantEventReceiver.html

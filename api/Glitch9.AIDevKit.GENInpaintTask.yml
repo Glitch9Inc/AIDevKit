@@ -18,7 +18,7 @@ items:
   source:
     id: GENInpaintTask
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 503
+    startLine: 527
   namespace: Glitch9.AIDevKit
   summary: Task for editing an existing image based on a text prompt and optional mask (OpenAI or Google Gemini).
   example: []
@@ -67,14 +67,14 @@ items:
   source:
     id: outputMimeType
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 505
+    startLine: 529
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
     content: public override MIMEType outputMimeType { get; set; }
     parameters: []
     return:
-      type: Glitch9.IO.Files.MIMEType
+      type: MIMEType
     content.vb: Public Overrides Property outputMimeType As MIMEType
   overridden: Glitch9.AIDevKit.GENTask{Glitch9.AIDevKit.GENInpaintTask,Glitch9.AIDevKit.InpaintPrompt,Glitch9.AIDevKit.GeneratedImage}.outputMimeType
   overload: Glitch9.AIDevKit.GENInpaintTask.outputMimeType*
@@ -92,7 +92,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 506
+    startLine: 530
   namespace: Glitch9.AIDevKit
   syntax:
     content: public GENInpaintTask(InpaintPrompt prompt)
@@ -118,7 +118,7 @@ items:
   source:
     id: ExecuteAsyncINTERNAL
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Client/FluentAPI/GENTask.cs
-    startLine: 507
+    startLine: 531
   namespace: Glitch9.AIDevKit
   summary: Executes the task and returns the generated result.
   example: []
@@ -1509,42 +1509,11 @@ references:
   name: outputMimeType
   nameWithType: GENInpaintTask.outputMimeType
   fullName: Glitch9.AIDevKit.GENInpaintTask.outputMimeType
-- uid: Glitch9.IO.Files.MIMEType
-  commentId: T:Glitch9.IO.Files.MIMEType
-  parent: Glitch9.IO.Files
+- uid: MIMEType
+  isExternal: true
   name: MIMEType
   nameWithType: MIMEType
-  fullName: Glitch9.IO.Files.MIMEType
-- uid: Glitch9.IO.Files
-  commentId: N:Glitch9.IO.Files
-  href: Glitch9.html
-  name: Glitch9.IO.Files
-  nameWithType: Glitch9.IO.Files
-  fullName: Glitch9.IO.Files
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
+  fullName: MIMEType
 - uid: Glitch9.AIDevKit.GENInpaintTask.#ctor*
   commentId: Overload:Glitch9.AIDevKit.GENInpaintTask.#ctor
   href: Glitch9.AIDevKit.GENInpaintTask.html#Glitch9_AIDevKit_GENInpaintTask__ctor_Glitch9_AIDevKit_InpaintPrompt_

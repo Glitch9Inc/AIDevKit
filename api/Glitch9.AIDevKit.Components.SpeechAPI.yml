@@ -43,6 +43,9 @@ items:
   - Glitch9.AIDevKit.Components.AIDevKitComponent
   inheritedMembers:
   - Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
 - uid: Glitch9.AIDevKit.Components.SpeechAPI.TextToSpeechModel
   commentId: P:Glitch9.AIDevKit.Components.SpeechAPI.TextToSpeechModel
   id: TextToSpeechModel
@@ -247,7 +250,7 @@ items:
     content: public AudioRecorder Recorder { get; }
     parameters: []
     return:
-      type: Glitch9.CoreLib.IO.Audio.AudioRecorder
+      type: AudioRecorder
     content.vb: Public Property Recorder As AudioRecorder
   overload: Glitch9.AIDevKit.Components.SpeechAPI.Recorder*
 - uid: Glitch9.AIDevKit.Components.SpeechAPI.IsRecording
@@ -530,6 +533,68 @@ references:
   name: debugMode
   nameWithType: AIDevKitComponent.debugMode
   fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  commentId: F:Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_onError
+  name: onError
+  nameWithType: AIDevKitComponent.onError
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  commentId: M:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  isExternal: true
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  name: OnError(string)
+  nameWithType: AIDevKitComponent.OnError(string)
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(string)
+  nameWithType.vb: AIDevKitComponent.OnError(String)
+  fullName.vb: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(String)
+  name.vb: OnError(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  commentId: M:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  isExternal: true
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  name: OnError(Exception)
+  nameWithType: AIDevKitComponent.OnError(Exception)
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -652,50 +717,11 @@ references:
   name: Recorder
   nameWithType: SpeechAPI.Recorder
   fullName: Glitch9.AIDevKit.Components.SpeechAPI.Recorder
-- uid: Glitch9.CoreLib.IO.Audio.AudioRecorder
-  commentId: T:Glitch9.CoreLib.IO.Audio.AudioRecorder
-  parent: Glitch9.CoreLib.IO.Audio
+- uid: AudioRecorder
+  isExternal: true
   name: AudioRecorder
   nameWithType: AudioRecorder
-  fullName: Glitch9.CoreLib.IO.Audio.AudioRecorder
-- uid: Glitch9.CoreLib.IO.Audio
-  commentId: N:Glitch9.CoreLib.IO.Audio
-  href: Glitch9.html
-  name: Glitch9.CoreLib.IO.Audio
-  nameWithType: Glitch9.CoreLib.IO.Audio
-  fullName: Glitch9.CoreLib.IO.Audio
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.CoreLib
-    name: CoreLib
-    href: Glitch9.CoreLib.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO
-    name: IO
-    href: Glitch9.CoreLib.IO.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO.Audio
-    name: Audio
-    href: Glitch9.CoreLib.IO.Audio.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.CoreLib
-    name: CoreLib
-    href: Glitch9.CoreLib.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO
-    name: IO
-    href: Glitch9.CoreLib.IO.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO.Audio
-    name: Audio
-    href: Glitch9.CoreLib.IO.Audio.html
+  fullName: AudioRecorder
 - uid: Glitch9.AIDevKit.Components.SpeechAPI.IsRecording*
   commentId: Overload:Glitch9.AIDevKit.Components.SpeechAPI.IsRecording
   href: Glitch9.AIDevKit.Components.SpeechAPI.html#Glitch9_AIDevKit_Components_SpeechAPI_IsRecording

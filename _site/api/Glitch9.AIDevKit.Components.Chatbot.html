@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class Chatbot | AI Dev Kit ">
     
-    <meta name="description" content="A simple chatbot using Chat Completion API">
+    <meta name="description" content="A full-featured chatbot component that integrates with the AIDevKit&#39;s chat system. This component allows you to send messages, receive responses, and manage chat sessions. It supports both streaming and non-streaming responses, and can handle function calls.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,15 +81,18 @@
 
 
   <h1 id="Glitch9_AIDevKit_Components_Chatbot" data-uid="Glitch9.AIDevKit.Components.Chatbot" class="text-break">Class Chatbot</h1>
-  <div class="markdown level0 summary"><p>A simple chatbot using Chat Completion API</p>
+  <div class="markdown level0 summary"><p>A full-featured chatbot component that integrates with the AIDevKit's chat system.
+This component allows you to send messages, receive responses, and manage chat sessions.
+It supports both streaming and non-streaming responses, and can handle function calls.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html">AIDevKitComponent</a></div>
-    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html">ChatbotBase</a></div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotComponent.html">ChatbotComponent</a></div>
     <div class="level3"><span class="xref">Chatbot</span></div>
+      <div class="level4"><a class="xref" href="Glitch9.AIDevKit.Components.ModularChatbot.html">ModularChatbot</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -98,27 +101,110 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_functionManager">ChatbotBase.functionManager</a>
+      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_functionManager">ChatbotComponent.functionManager</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_chatEventReceiver">ChatbotBase.chatEventReceiver</a>
+      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_chatEventReceiver">ChatbotComponent.chatEventReceiver</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_toolEventReceiver">ChatbotBase.toolEventReceiver</a>
+      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_toolEventReceiver">ChatbotComponent.toolEventReceiver</a>
     </div>
     <div>
-      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_Glitch9_AIDevKit_ResponseType_">ChatbotBase.EnterChatAsync(ChatMessage, ResponseType)</a>
+      <a class="xref" href="Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_EnterChatAsync_Glitch9_AIDevKit_ChatMessage_">ChatbotComponent.EnterChatAsync(ChatMessage)</a>
     </div>
     <div>
       <a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_debugMode">AIDevKitComponent.debugMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_onError">AIDevKitComponent.onError</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_">AIDevKitComponent.OnError(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_">AIDevKitComponent.OnError(Exception)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Components.html">Components</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_Components_Chatbot_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Chatbot : ChatbotBase, IChatbot</code></pre>
+    <pre><code class="lang-csharp hljs">public class Chatbot : ChatbotComponent, IChatbot</code></pre>
   </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Glitch9_AIDevKit_Components_Chatbot_chatSessionId" data-uid="Glitch9.AIDevKit.Components.Chatbot.chatSessionId">chatSessionId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string chatSessionId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_Components_Chatbot_streamReceiver" data-uid="Glitch9.AIDevKit.Components.Chatbot.streamReceiver">streamReceiver</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ChatCompletionStreamReceiver streamReceiver</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatCompletionStreamReceiver.html">ChatCompletionStreamReceiver</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Glitch9_AIDevKit_Components_Chatbot_toolCallReceiver" data-uid="Glitch9.AIDevKit.Components.Chatbot.toolCallReceiver">toolCallReceiver</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ToolCallReceiver toolCallReceiver</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Components.ToolCallReceiver.html">ToolCallReceiver</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
 </h3>
 
@@ -222,7 +308,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_Messages">ChatbotBase.Messages</a></div>
+  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_Messages">ChatbotComponent.Messages</a></div>
 
 
   <a id="Glitch9_AIDevKit_Components_Chatbot_Model_" data-uid="Glitch9.AIDevKit.Components.Chatbot.Model*"></a>
@@ -249,7 +335,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_Model">ChatbotBase.Model</a></div>
+  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_Model">ChatbotComponent.Model</a></div>
 
 
   <a id="Glitch9_AIDevKit_Components_Chatbot_Name_" data-uid="Glitch9.AIDevKit.Components.Chatbot.Name*"></a>
@@ -276,7 +362,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_Name">ChatbotBase.Name</a></div>
+  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_Name">ChatbotComponent.Name</a></div>
 
 
   <a id="Glitch9_AIDevKit_Components_Chatbot_Session_" data-uid="Glitch9.AIDevKit.Components.Chatbot.Session*"></a>
@@ -353,7 +439,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_Stream">ChatbotBase.Stream</a></div>
+  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_Stream">ChatbotComponent.Stream</a></div>
 
 
   <a id="Glitch9_AIDevKit_Components_Chatbot_SystemInstruction_" data-uid="Glitch9.AIDevKit.Components.Chatbot.SystemInstruction*"></a>
@@ -424,7 +510,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotBase.html#Glitch9_AIDevKit_Components_ChatbotBase_SendMessageAsyncINTERNAL_Glitch9_AIDevKit_ChatMessage_">ChatbotBase.SendMessageAsyncINTERNAL(ChatMessage)</a></div>
+  <div><a class="xref" href="Glitch9.AIDevKit.Components.ChatbotComponent.html#Glitch9_AIDevKit_Components_ChatbotComponent_SendMessageAsyncINTERNAL_Glitch9_AIDevKit_ChatMessage_">ChatbotComponent.SendMessageAsyncINTERNAL(ChatMessage)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Glitch9.AIDevKit.IChatbot.html">IChatbot</a>

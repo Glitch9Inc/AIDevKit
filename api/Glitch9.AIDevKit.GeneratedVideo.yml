@@ -8,8 +8,8 @@ items:
   - Glitch9.AIDevKit.GeneratedVideo.#ctor(System.String,System.String,Glitch9.AIDevKit.Usage)
   - Glitch9.AIDevKit.GeneratedVideo.#ctor(System.String[],System.String[],Glitch9.AIDevKit.Usage)
   - Glitch9.AIDevKit.GeneratedVideo.ToFiles
-  - Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.RawFile
-  - Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.RawFile[]
+  - Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~RawFile
+  - Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~RawFile[]
   - Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~System.String
   - Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~System.String[]
   langs:
@@ -34,16 +34,14 @@ items:
     content.vb: Public Class GeneratedVideo Inherits GeneratedAsset(Of String, RawFile) Implements IGeneratedResult
   inheritance:
   - System.Object
-  - Glitch9.Result
-  - Glitch9.IO.Networking.RESTApi.RESTResponse
   - Glitch9.AIDevKit.GeneratedResult{System.String}
-  - Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}
+  - Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}
   implements:
   - Glitch9.AIDevKit.IGeneratedResult
   inheritedMembers:
-  - Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.Paths
-  - Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.Item(System.String)
-  - Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.ToFiles
+  - Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.Paths
+  - Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.Item(System.String)
+  - Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.ToFiles
   - Glitch9.AIDevKit.GeneratedResult{System.String}.Values
   - Glitch9.AIDevKit.GeneratedResult{System.String}.Count
   - Glitch9.AIDevKit.GeneratedResult{System.String}.Usage
@@ -106,16 +104,16 @@ items:
   nameWithType.vb: GeneratedVideo.CType(GeneratedVideo)
   fullName.vb: Glitch9.AIDevKit.GeneratedVideo.CType(Glitch9.AIDevKit.GeneratedVideo)
   name.vb: CType(GeneratedVideo)
-- uid: Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.RawFile
-  commentId: M:Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.RawFile
-  id: op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.RawFile
+- uid: Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~RawFile
+  commentId: M:Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~RawFile
+  id: op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~RawFile
   parent: Glitch9.AIDevKit.GeneratedVideo
   langs:
   - csharp
   - vb
   name: implicit operator RawFile(GeneratedVideo)
   nameWithType: GeneratedVideo.implicit operator RawFile(GeneratedVideo)
-  fullName: Glitch9.AIDevKit.GeneratedVideo.implicit operator Glitch9.IO.Files.RawFile(Glitch9.AIDevKit.GeneratedVideo)
+  fullName: Glitch9.AIDevKit.GeneratedVideo.implicit operator RawFile(Glitch9.AIDevKit.GeneratedVideo)
   type: Operator
   source:
     id: op_Implicit
@@ -128,22 +126,22 @@ items:
     - id: generatedVideo
       type: Glitch9.AIDevKit.GeneratedVideo
     return:
-      type: Glitch9.IO.Files.RawFile
+      type: RawFile
     content.vb: Public Shared Widening Operator CType(generatedVideo As GeneratedVideo) As RawFile
   overload: Glitch9.AIDevKit.GeneratedVideo.op_Implicit*
   nameWithType.vb: GeneratedVideo.CType(GeneratedVideo)
   fullName.vb: Glitch9.AIDevKit.GeneratedVideo.CType(Glitch9.AIDevKit.GeneratedVideo)
   name.vb: CType(GeneratedVideo)
-- uid: Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.RawFile[]
-  commentId: M:Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.RawFile[]
-  id: op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~Glitch9.IO.Files.RawFile[]
+- uid: Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~RawFile[]
+  commentId: M:Glitch9.AIDevKit.GeneratedVideo.op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~RawFile[]
+  id: op_Implicit(Glitch9.AIDevKit.GeneratedVideo)~RawFile[]
   parent: Glitch9.AIDevKit.GeneratedVideo
   langs:
   - csharp
   - vb
   name: implicit operator RawFile[](GeneratedVideo)
   nameWithType: GeneratedVideo.implicit operator RawFile[](GeneratedVideo)
-  fullName: Glitch9.AIDevKit.GeneratedVideo.implicit operator Glitch9.IO.Files.RawFile[](Glitch9.AIDevKit.GeneratedVideo)
+  fullName: Glitch9.AIDevKit.GeneratedVideo.implicit operator RawFile[](Glitch9.AIDevKit.GeneratedVideo)
   type: Operator
   source:
     id: op_Implicit
@@ -156,7 +154,7 @@ items:
     - id: generatedVideo
       type: Glitch9.AIDevKit.GeneratedVideo
     return:
-      type: Glitch9.IO.Files.RawFile[]
+      type: RawFile[]
     content.vb: Public Shared Widening Operator CType(generatedVideo As GeneratedVideo) As RawFile()
   overload: Glitch9.AIDevKit.GeneratedVideo.op_Implicit*
   nameWithType.vb: GeneratedVideo.CType(GeneratedVideo)
@@ -242,9 +240,9 @@ items:
   syntax:
     content: public override RawFile[] ToFiles()
     return:
-      type: Glitch9.IO.Files.RawFile[]
+      type: RawFile[]
     content.vb: Public Overrides Function ToFiles() As RawFile()
-  overridden: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.ToFiles
+  overridden: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.ToFiles
   overload: Glitch9.AIDevKit.GeneratedVideo.ToFiles*
 references:
 - uid: Glitch9.AIDevKit.GeneratedVideo
@@ -286,18 +284,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.Result
-  commentId: T:Glitch9.Result
-  parent: Glitch9
-  name: Result
-  nameWithType: Result
-  fullName: Glitch9.Result
-- uid: Glitch9.IO.Networking.RESTApi.RESTResponse
-  commentId: T:Glitch9.IO.Networking.RESTApi.RESTResponse
-  parent: Glitch9.IO.Networking.RESTApi
-  name: RESTResponse
-  nameWithType: RESTResponse
-  fullName: Glitch9.IO.Networking.RESTApi.RESTResponse
 - uid: Glitch9.AIDevKit.GeneratedResult{System.String}
   commentId: T:Glitch9.AIDevKit.GeneratedResult{System.String}
   parent: Glitch9.AIDevKit
@@ -329,16 +315,16 @@ references:
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}
-  commentId: T:Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}
+- uid: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}
+  commentId: T:Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}
   parent: Glitch9.AIDevKit
   definition: Glitch9.AIDevKit.GeneratedAsset`2
   href: Glitch9.AIDevKit.GeneratedAsset-2.html
   name: GeneratedAsset<string, RawFile>
   nameWithType: GeneratedAsset<string, RawFile>
-  fullName: Glitch9.AIDevKit.GeneratedAsset<string, Glitch9.IO.Files.RawFile>
+  fullName: Glitch9.AIDevKit.GeneratedAsset<string, RawFile>
   nameWithType.vb: GeneratedAsset(Of String, RawFile)
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of String, Glitch9.IO.Files.RawFile)
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of String, RawFile)
   name.vb: GeneratedAsset(Of String, RawFile)
   spec.csharp:
   - uid: Glitch9.AIDevKit.GeneratedAsset`2
@@ -350,8 +336,9 @@ references:
     isExternal: true
   - name: ','
   - name: " "
-  - uid: Glitch9.IO.Files.RawFile
+  - uid: RawFile
     name: RawFile
+    isExternal: true
   - name: '>'
   spec.vb:
   - uid: Glitch9.AIDevKit.GeneratedAsset`2
@@ -365,8 +352,9 @@ references:
     isExternal: true
   - name: ','
   - name: " "
-  - uid: Glitch9.IO.Files.RawFile
+  - uid: RawFile
     name: RawFile
+    isExternal: true
   - name: )
 - uid: Glitch9.AIDevKit.IGeneratedResult
   commentId: T:Glitch9.AIDevKit.IGeneratedResult
@@ -375,26 +363,26 @@ references:
   name: IGeneratedResult
   nameWithType: IGeneratedResult
   fullName: Glitch9.AIDevKit.IGeneratedResult
-- uid: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.Paths
-  commentId: P:Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.Paths
-  parent: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}
+- uid: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.Paths
+  commentId: P:Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.Paths
+  parent: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}
   definition: Glitch9.AIDevKit.GeneratedAsset`2.Paths
   href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Paths
   name: Paths
   nameWithType: GeneratedAsset<string, RawFile>.Paths
-  fullName: Glitch9.AIDevKit.GeneratedAsset<string, Glitch9.IO.Files.RawFile>.Paths
+  fullName: Glitch9.AIDevKit.GeneratedAsset<string, RawFile>.Paths
   nameWithType.vb: GeneratedAsset(Of String, RawFile).Paths
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of String, Glitch9.IO.Files.RawFile).Paths
-- uid: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.Item(System.String)
-  commentId: P:Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.Item(System.String)
-  parent: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of String, RawFile).Paths
+- uid: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.Item(System.String)
+  commentId: P:Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.Item(System.String)
+  parent: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}
   definition: Glitch9.AIDevKit.GeneratedAsset`2.Item(System.String)
   href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Item_System_String_
   name: this[string]
   nameWithType: GeneratedAsset<string, RawFile>.this[string]
-  fullName: Glitch9.AIDevKit.GeneratedAsset<string, Glitch9.IO.Files.RawFile>.this[string]
+  fullName: Glitch9.AIDevKit.GeneratedAsset<string, RawFile>.this[string]
   nameWithType.vb: GeneratedAsset(Of String, RawFile).this[](String)
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of String, Glitch9.IO.Files.RawFile).this[](String)
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of String, RawFile).this[](String)
   name.vb: this[](String)
   spec.csharp:
   - name: this
@@ -404,7 +392,7 @@ references:
     isExternal: true
   - name: ']'
   spec.vb:
-  - uid: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.Item(System.String)
+  - uid: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.Item(System.String)
     name: this[]
     href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Item_System_String_
   - name: (
@@ -412,24 +400,24 @@ references:
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.ToFiles
-  commentId: M:Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.ToFiles
-  parent: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}
+- uid: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.ToFiles
+  commentId: M:Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.ToFiles
+  parent: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}
   definition: Glitch9.AIDevKit.GeneratedAsset`2.ToFiles
   href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles
   name: ToFiles()
   nameWithType: GeneratedAsset<string, RawFile>.ToFiles()
-  fullName: Glitch9.AIDevKit.GeneratedAsset<string, Glitch9.IO.Files.RawFile>.ToFiles()
+  fullName: Glitch9.AIDevKit.GeneratedAsset<string, RawFile>.ToFiles()
   nameWithType.vb: GeneratedAsset(Of String, RawFile).ToFiles()
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of String, Glitch9.IO.Files.RawFile).ToFiles()
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of String, RawFile).ToFiles()
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.ToFiles
+  - uid: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.ToFiles
     name: ToFiles
     href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles
   - name: (
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GeneratedAsset{System.String,Glitch9.IO.Files.RawFile}.ToFiles
+  - uid: Glitch9.AIDevKit.GeneratedAsset{System.String,RawFile}.ToFiles
     name: ToFiles
     href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles
   - name: (
@@ -518,50 +506,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9
-  commentId: N:Glitch9
-  href: Glitch9.html
-  name: Glitch9
-  nameWithType: Glitch9
-  fullName: Glitch9
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit.GeneratedResult`1
   commentId: T:Glitch9.AIDevKit.GeneratedResult`1
   href: Glitch9.AIDevKit.GeneratedResult-1.html
@@ -780,58 +724,30 @@ references:
     isExternal: true
   - name: (
   - name: )
-- uid: Glitch9.IO.Files.RawFile
-  commentId: T:Glitch9.IO.Files.RawFile
-  parent: Glitch9.IO.Files
+- uid: RawFile
+  commentId: '!:RawFile'
+  isExternal: true
   name: RawFile
   nameWithType: RawFile
-  fullName: Glitch9.IO.Files.RawFile
-- uid: Glitch9.IO.Files
-  commentId: N:Glitch9.IO.Files
-  href: Glitch9.html
-  name: Glitch9.IO.Files
-  nameWithType: Glitch9.IO.Files
-  fullName: Glitch9.IO.Files
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-- uid: Glitch9.IO.Files.RawFile[]
+  fullName: RawFile
+- uid: RawFile[]
   isExternal: true
   name: RawFile[]
   nameWithType: RawFile[]
-  fullName: Glitch9.IO.Files.RawFile[]
+  fullName: RawFile[]
   nameWithType.vb: RawFile()
-  fullName.vb: Glitch9.IO.Files.RawFile()
+  fullName.vb: RawFile()
   name.vb: RawFile()
   spec.csharp:
-  - uid: Glitch9.IO.Files.RawFile
+  - uid: RawFile
     name: RawFile
+    isExternal: true
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: Glitch9.IO.Files.RawFile
+  - uid: RawFile
     name: RawFile
+    isExternal: true
   - name: (
   - name: )
 - uid: Glitch9.AIDevKit.GeneratedVideo.#ctor*

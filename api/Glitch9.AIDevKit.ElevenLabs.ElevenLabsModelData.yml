@@ -43,10 +43,12 @@ items:
   summary: Represents a voice synthesis model with supported capabilities and metadata.
   example: []
   syntax:
-    content: public class ElevenLabsModelData
-    content.vb: Public Class ElevenLabsModelData
+    content: 'public class ElevenLabsModelData : IData'
+    content.vb: Public Class ElevenLabsModelData Implements IData
   inheritance:
   - System.Object
+  implements:
+  - IData
 - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsModelData.Id
   commentId: P:Glitch9.AIDevKit.ElevenLabs.ElevenLabsModelData.Id
   id: Id
@@ -655,6 +657,11 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: IData
+  isExternal: true
+  name: IData
+  nameWithType: IData
+  fullName: IData
 - uid: System
   commentId: N:System
   isExternal: true

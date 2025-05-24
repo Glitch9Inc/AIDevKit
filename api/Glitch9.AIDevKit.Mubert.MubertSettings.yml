@@ -18,17 +18,10 @@ items:
     startLine: 5
   namespace: Glitch9.AIDevKit.Mubert
   syntax:
-    content: >-
-      [AssetPath("Resources/AIDevKit")]
-
-      public class MubertSettings : AIClientSettings<MubertSettings>
-    content.vb: >-
-      <AssetPath("Resources/AIDevKit")>
-
-      Public Class MubertSettings Inherits AIClientSettings(Of MubertSettings)
+    content: 'public class MubertSettings : AIClientSettings<MubertSettings>'
+    content.vb: Public Class MubertSettings Inherits AIClientSettings(Of MubertSettings)
   inheritance:
   - System.Object
-  - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Mubert.MubertSettings}
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.Mubert.MubertSettings}
   inheritedMembers:
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.Mubert.MubertSettings}.oldApiKey
@@ -37,13 +30,6 @@ items:
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.Mubert.MubertSettings}.apiKey
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.Mubert.MubertSettings}.GetApiKey
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.Mubert.MubertSettings}.HasApiKey
-  - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Mubert.MubertSettings}.Instance
-  attributes:
-  - type: Glitch9.AssetPathAttribute
-    ctor: Glitch9.AssetPathAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Resources/AIDevKit
 references:
 - uid: Glitch9.AIDevKit.Mubert
   commentId: N:Glitch9.AIDevKit.Mubert
@@ -85,35 +71,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Mubert.MubertSettings}
-  commentId: T:Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Mubert.MubertSettings}
-  parent: Glitch9.ScriptableObjects
-  definition: Glitch9.ScriptableObjects.ScriptableResource`1
-  href: Glitch9.AIDevKit.Mubert.MubertSettings.html
-  name: ScriptableResource<MubertSettings>
-  nameWithType: ScriptableResource<MubertSettings>
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<Glitch9.AIDevKit.Mubert.MubertSettings>
-  nameWithType.vb: ScriptableResource(Of MubertSettings)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of Glitch9.AIDevKit.Mubert.MubertSettings)
-  name.vb: ScriptableResource(Of MubertSettings)
-  spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: <
-  - uid: Glitch9.AIDevKit.Mubert.MubertSettings
-    name: MubertSettings
-    href: Glitch9.AIDevKit.Mubert.MubertSettings.html
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Glitch9.AIDevKit.Mubert.MubertSettings
-    name: MubertSettings
-    href: Glitch9.AIDevKit.Mubert.MubertSettings.html
-  - name: )
 - uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.Mubert.MubertSettings}
   commentId: T:Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.Mubert.MubertSettings}
   parent: Glitch9.AIDevKit.Client
@@ -229,15 +186,6 @@ references:
     href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_HasApiKey
   - name: (
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Mubert.MubertSettings}.Instance
-  commentId: P:Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Mubert.MubertSettings}.Instance
-  parent: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.Mubert.MubertSettings}
-  definition: Glitch9.ScriptableObjects.ScriptableResource`1.Instance
-  name: Instance
-  nameWithType: ScriptableResource<MubertSettings>.Instance
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<Glitch9.AIDevKit.Mubert.MubertSettings>.Instance
-  nameWithType.vb: ScriptableResource(Of MubertSettings).Instance
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of Glitch9.AIDevKit.Mubert.MubertSettings).Instance
 - uid: System
   commentId: N:System
   isExternal: true
@@ -245,50 +193,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.ScriptableObjects.ScriptableResource`1
-  commentId: T:Glitch9.ScriptableObjects.ScriptableResource`1
-  name: ScriptableResource<TSelf>
-  nameWithType: ScriptableResource<TSelf>
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<TSelf>
-  nameWithType.vb: ScriptableResource(Of TSelf)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf)
-  name.vb: ScriptableResource(Of TSelf)
-  spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: <
-  - name: TSelf
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TSelf
-  - name: )
-- uid: Glitch9.ScriptableObjects
-  commentId: N:Glitch9.ScriptableObjects
-  href: Glitch9.html
-  name: Glitch9.ScriptableObjects
-  nameWithType: Glitch9.ScriptableObjects
-  fullName: Glitch9.ScriptableObjects
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.ScriptableObjects
-    name: ScriptableObjects
-    href: Glitch9.ScriptableObjects.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.ScriptableObjects
-    name: ScriptableObjects
-    href: Glitch9.ScriptableObjects.html
 - uid: Glitch9.AIDevKit.Client.AIClientSettings`1
   commentId: T:Glitch9.AIDevKit.Client.AIClientSettings`1
   href: Glitch9.AIDevKit.Client.AIClientSettings-1.html
@@ -416,10 +320,3 @@ references:
     href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_HasApiKey
   - name: (
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableResource`1.Instance
-  commentId: P:Glitch9.ScriptableObjects.ScriptableResource`1.Instance
-  name: Instance
-  nameWithType: ScriptableResource<TSelf>.Instance
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<TSelf>.Instance
-  nameWithType.vb: ScriptableResource(Of TSelf).Instance
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf).Instance

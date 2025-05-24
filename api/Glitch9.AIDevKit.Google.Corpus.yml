@@ -119,7 +119,7 @@ items:
     content: public ZuluTime? CreateTime { get; set; }
     parameters: []
     return:
-      type: System.Nullable{Glitch9.ZuluTime}
+      type: System.Nullable{ZuluTime}
     content.vb: Public Property CreateTime As ZuluTime?
   overload: Glitch9.AIDevKit.Google.Corpus.CreateTime*
 - uid: Glitch9.AIDevKit.Google.Corpus.UpdateTime
@@ -147,7 +147,7 @@ items:
     content: public ZuluTime? UpdateTime { get; set; }
     parameters: []
     return:
-      type: System.Nullable{Glitch9.ZuluTime}
+      type: System.Nullable{ZuluTime}
     content.vb: Public Property UpdateTime As ZuluTime?
   overload: Glitch9.AIDevKit.Google.Corpus.UpdateTime*
 references:
@@ -232,20 +232,22 @@ references:
   name: CreateTime
   nameWithType: Corpus.CreateTime
   fullName: Glitch9.AIDevKit.Google.Corpus.CreateTime
-- uid: System.Nullable{Glitch9.ZuluTime}
-  commentId: T:System.Nullable{Glitch9.ZuluTime}
+- uid: System.Nullable{ZuluTime}
+  commentId: T:System.Nullable{ZuluTime}
   parent: System
   definition: System.Nullable`1
   name: ZuluTime?
   nameWithType: ZuluTime?
-  fullName: Glitch9.ZuluTime?
+  fullName: ZuluTime?
   spec.csharp:
-  - uid: Glitch9.ZuluTime
+  - uid: ZuluTime
     name: ZuluTime
+    isExternal: true
   - name: '?'
   spec.vb:
-  - uid: Glitch9.ZuluTime
+  - uid: ZuluTime
     name: ZuluTime
+    isExternal: true
   - name: '?'
 - uid: System.Nullable`1
   commentId: T:System.Nullable`1

@@ -22,17 +22,10 @@ items:
     startLine: 5
   namespace: Glitch9.AIDevKit.OpenRouter
   syntax:
-    content: >-
-      [AssetPath("Resources/AIDevKit")]
-
-      public class OpenRouterSettings : AIClientSettings<OpenRouterSettings>
-    content.vb: >-
-      <AssetPath("Resources/AIDevKit")>
-
-      Public Class OpenRouterSettings Inherits AIClientSettings(Of OpenRouterSettings)
+    content: 'public class OpenRouterSettings : AIClientSettings<OpenRouterSettings>'
+    content.vb: Public Class OpenRouterSettings Inherits AIClientSettings(Of OpenRouterSettings)
   inheritance:
   - System.Object
-  - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}
   inheritedMembers:
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}.oldApiKey
@@ -41,13 +34,6 @@ items:
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}.apiKey
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}.GetApiKey
   - Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}.HasApiKey
-  - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}.Instance
-  attributes:
-  - type: Glitch9.AssetPathAttribute
-    ctor: Glitch9.AssetPathAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Resources/AIDevKit
 - uid: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.HttpReferer
   commentId: P:Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.HttpReferer
   id: HttpReferer
@@ -188,35 +174,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}
-  commentId: T:Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}
-  parent: Glitch9.ScriptableObjects
-  definition: Glitch9.ScriptableObjects.ScriptableResource`1
-  href: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.html
-  name: ScriptableResource<OpenRouterSettings>
-  nameWithType: ScriptableResource<OpenRouterSettings>
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<Glitch9.AIDevKit.OpenRouter.OpenRouterSettings>
-  nameWithType.vb: ScriptableResource(Of OpenRouterSettings)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of Glitch9.AIDevKit.OpenRouter.OpenRouterSettings)
-  name.vb: ScriptableResource(Of OpenRouterSettings)
-  spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: <
-  - uid: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings
-    name: OpenRouterSettings
-    href: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.html
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings
-    name: OpenRouterSettings
-    href: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.html
-  - name: )
 - uid: Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}
   commentId: T:Glitch9.AIDevKit.Client.AIClientSettings{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}
   parent: Glitch9.AIDevKit.Client
@@ -332,15 +289,6 @@ references:
     href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_HasApiKey
   - name: (
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}.Instance
-  commentId: P:Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}.Instance
-  parent: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.OpenRouter.OpenRouterSettings}
-  definition: Glitch9.ScriptableObjects.ScriptableResource`1.Instance
-  name: Instance
-  nameWithType: ScriptableResource<OpenRouterSettings>.Instance
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<Glitch9.AIDevKit.OpenRouter.OpenRouterSettings>.Instance
-  nameWithType.vb: ScriptableResource(Of OpenRouterSettings).Instance
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of Glitch9.AIDevKit.OpenRouter.OpenRouterSettings).Instance
 - uid: System
   commentId: N:System
   isExternal: true
@@ -348,50 +296,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.ScriptableObjects.ScriptableResource`1
-  commentId: T:Glitch9.ScriptableObjects.ScriptableResource`1
-  name: ScriptableResource<TSelf>
-  nameWithType: ScriptableResource<TSelf>
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<TSelf>
-  nameWithType.vb: ScriptableResource(Of TSelf)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf)
-  name.vb: ScriptableResource(Of TSelf)
-  spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: <
-  - name: TSelf
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TSelf
-  - name: )
-- uid: Glitch9.ScriptableObjects
-  commentId: N:Glitch9.ScriptableObjects
-  href: Glitch9.html
-  name: Glitch9.ScriptableObjects
-  nameWithType: Glitch9.ScriptableObjects
-  fullName: Glitch9.ScriptableObjects
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.ScriptableObjects
-    name: ScriptableObjects
-    href: Glitch9.ScriptableObjects.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.ScriptableObjects
-    name: ScriptableObjects
-    href: Glitch9.ScriptableObjects.html
 - uid: Glitch9.AIDevKit.Client.AIClientSettings`1
   commentId: T:Glitch9.AIDevKit.Client.AIClientSettings`1
   href: Glitch9.AIDevKit.Client.AIClientSettings-1.html
@@ -519,13 +423,6 @@ references:
     href: Glitch9.AIDevKit.Client.AIClientSettings-1.html#Glitch9_AIDevKit_Client_AIClientSettings_1_HasApiKey
   - name: (
   - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableResource`1.Instance
-  commentId: P:Glitch9.ScriptableObjects.ScriptableResource`1.Instance
-  name: Instance
-  nameWithType: ScriptableResource<TSelf>.Instance
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<TSelf>.Instance
-  nameWithType.vb: ScriptableResource(Of TSelf).Instance
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf).Instance
 - uid: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.HttpReferer*
   commentId: Overload:Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.HttpReferer
   href: Glitch9.AIDevKit.OpenRouter.OpenRouterSettings.html#Glitch9_AIDevKit_OpenRouter_OpenRouterSettings_HttpReferer

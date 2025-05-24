@@ -25,7 +25,6 @@ items:
     content.vb: Public Class OllamaRequest Inherits RequestBody
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.RequestBody
   derivedClasses:
   - Glitch9.AIDevKit.Ollama.EmbedRequest
   - Glitch9.AIDevKit.Ollama.OllamaTextRequest
@@ -73,11 +72,11 @@ items:
   summary: Optional. Additional model parameters listed in the documentation for the Modelfile such as temperature.
   example: []
   syntax:
-    content: public ModelOptions Options { get; set; }
+    content: public ModelSettings Options { get; set; }
     parameters: []
     return:
-      type: Glitch9.AIDevKit.ModelOptions
-    content.vb: Public Property Options As ModelOptions
+      type: Glitch9.AIDevKit.ModelSettings
+    content.vb: Public Property Options As ModelSettings
   overload: Glitch9.AIDevKit.Ollama.OllamaRequest.Options*
 - uid: Glitch9.AIDevKit.Ollama.OllamaRequest.KeepAlive
   commentId: P:Glitch9.AIDevKit.Ollama.OllamaRequest.KeepAlive
@@ -145,12 +144,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
-  parent: Glitch9.IO.Networking.RESTApi
-  name: RequestBody
-  nameWithType: RequestBody
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
 - uid: System
   commentId: N:System
   isExternal: true
@@ -158,44 +151,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit.Ollama.OllamaRequest.Model*
   commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaRequest.Model
   href: Glitch9.AIDevKit.Ollama.OllamaRequest.html#Glitch9_AIDevKit_Ollama_OllamaRequest_Model
@@ -237,13 +192,13 @@ references:
   name: Options
   nameWithType: OllamaRequest.Options
   fullName: Glitch9.AIDevKit.Ollama.OllamaRequest.Options
-- uid: Glitch9.AIDevKit.ModelOptions
-  commentId: T:Glitch9.AIDevKit.ModelOptions
+- uid: Glitch9.AIDevKit.ModelSettings
+  commentId: T:Glitch9.AIDevKit.ModelSettings
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelOptions.html
-  name: ModelOptions
-  nameWithType: ModelOptions
-  fullName: Glitch9.AIDevKit.ModelOptions
+  href: Glitch9.AIDevKit.ModelSettings.html
+  name: ModelSettings
+  nameWithType: ModelSettings
+  fullName: Glitch9.AIDevKit.ModelSettings
 - uid: Glitch9.AIDevKit.Ollama.OllamaRequest.KeepAlive*
   commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaRequest.KeepAlive
   href: Glitch9.AIDevKit.Ollama.OllamaRequest.html#Glitch9_AIDevKit_Ollama_OllamaRequest_KeepAlive

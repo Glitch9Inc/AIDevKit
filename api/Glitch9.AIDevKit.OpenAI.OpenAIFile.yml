@@ -30,12 +30,13 @@ items:
   summary: The File object represents a document that has been uploaded to OpenAI.
   example: []
   syntax:
-    content: 'public class OpenAIFile : IApiFile'
-    content.vb: Public Class OpenAIFile Implements IApiFile
+    content: 'public class OpenAIFile : IApiFile, IData'
+    content.vb: Public Class OpenAIFile Implements IApiFile, IData
   inheritance:
   - System.Object
   implements:
   - Glitch9.AIDevKit.IApiFile
+  - IData
 - uid: Glitch9.AIDevKit.OpenAI.OpenAIFile.Id
   commentId: P:Glitch9.AIDevKit.OpenAI.OpenAIFile.Id
   id: Id
@@ -188,7 +189,7 @@ items:
     content: public UnixTime CreatedAt { get; set; }
     parameters: []
     return:
-      type: Glitch9.UnixTime
+      type: UnixTime
     content.vb: Public Property CreatedAt As UnixTime
   overload: Glitch9.AIDevKit.OpenAI.OpenAIFile.CreatedAt*
   implements:
@@ -215,7 +216,7 @@ items:
     content: public UnixTime ExpiresAt { get; set; }
     parameters: []
     return:
-      type: Glitch9.UnixTime
+      type: UnixTime
     content.vb: Public Property ExpiresAt As UnixTime
   overload: Glitch9.AIDevKit.OpenAI.OpenAIFile.ExpiresAt*
   implements:
@@ -267,7 +268,7 @@ items:
     content: public MIMEType MimeType { get; }
     parameters: []
     return:
-      type: Glitch9.IO.Files.MIMEType
+      type: MIMEType
     content.vb: Public ReadOnly Property MimeType As MIMEType
   overload: Glitch9.AIDevKit.OpenAI.OpenAIFile.MimeType*
   implements:
@@ -292,7 +293,7 @@ items:
   syntax:
     content: public Metadata BuildMetadata()
     return:
-      type: Glitch9.Metadata
+      type: Metadata
     content.vb: Public Function BuildMetadata() As Metadata
   overload: Glitch9.AIDevKit.OpenAI.OpenAIFile.BuildMetadata*
   implements:
@@ -345,6 +346,11 @@ references:
   name: IApiFile
   nameWithType: IApiFile
   fullName: Glitch9.AIDevKit.IApiFile
+- uid: IData
+  isExternal: true
+  name: IData
+  nameWithType: IData
+  fullName: IData
 - uid: System
   commentId: N:System
   isExternal: true
@@ -487,18 +493,11 @@ references:
   name: CreatedAt
   nameWithType: IApiFile.CreatedAt
   fullName: Glitch9.AIDevKit.IApiFile.CreatedAt
-- uid: Glitch9.UnixTime
-  commentId: T:Glitch9.UnixTime
-  parent: Glitch9
+- uid: UnixTime
+  isExternal: true
   name: UnixTime
   nameWithType: UnixTime
-  fullName: Glitch9.UnixTime
-- uid: Glitch9
-  commentId: N:Glitch9
-  href: Glitch9.html
-  name: Glitch9
-  nameWithType: Glitch9
-  fullName: Glitch9
+  fullName: UnixTime
 - uid: Glitch9.AIDevKit.OpenAI.OpenAIFile.ExpiresAt*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAIFile.ExpiresAt
   href: Glitch9.AIDevKit.OpenAI.OpenAIFile.html#Glitch9_AIDevKit_OpenAI_OpenAIFile_ExpiresAt
@@ -545,42 +544,11 @@ references:
   name: MimeType
   nameWithType: IApiFile.MimeType
   fullName: Glitch9.AIDevKit.IApiFile.MimeType
-- uid: Glitch9.IO.Files.MIMEType
-  commentId: T:Glitch9.IO.Files.MIMEType
-  parent: Glitch9.IO.Files
+- uid: MIMEType
+  isExternal: true
   name: MIMEType
   nameWithType: MIMEType
-  fullName: Glitch9.IO.Files.MIMEType
-- uid: Glitch9.IO.Files
-  commentId: N:Glitch9.IO.Files
-  href: Glitch9.html
-  name: Glitch9.IO.Files
-  nameWithType: Glitch9.IO.Files
-  fullName: Glitch9.IO.Files
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
+  fullName: MIMEType
 - uid: Glitch9.AIDevKit.OpenAI.OpenAIFile.BuildMetadata*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.OpenAIFile.BuildMetadata
   href: Glitch9.AIDevKit.OpenAI.OpenAIFile.html#Glitch9_AIDevKit_OpenAI_OpenAIFile_BuildMetadata
@@ -606,9 +574,8 @@ references:
     href: Glitch9.AIDevKit.IApiFile.html#Glitch9_AIDevKit_IApiFile_BuildMetadata
   - name: (
   - name: )
-- uid: Glitch9.Metadata
-  commentId: T:Glitch9.Metadata
-  parent: Glitch9
+- uid: Metadata
+  isExternal: true
   name: Metadata
   nameWithType: Metadata
-  fullName: Glitch9.Metadata
+  fullName: Metadata

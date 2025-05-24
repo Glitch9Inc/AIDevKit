@@ -25,7 +25,7 @@ items:
   source:
     id: ChatMessage
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 175
+    startLine: 185
   namespace: Glitch9.AIDevKit
   syntax:
     content: public abstract class ChatMessage
@@ -53,7 +53,7 @@ items:
   source:
     id: op_Implicit
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 178
+    startLine: 188
   namespace: Glitch9.AIDevKit
   syntax:
     content: public static implicit operator string(ChatMessage message)
@@ -81,7 +81,7 @@ items:
   source:
     id: op_Implicit
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 179
+    startLine: 189
   namespace: Glitch9.AIDevKit
   syntax:
     content: public static implicit operator ChatMessage(string message)
@@ -109,7 +109,7 @@ items:
   source:
     id: Role
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 184
+    startLine: 194
   namespace: Glitch9.AIDevKit
   summary: The role of the messages author.
   example: []
@@ -134,7 +134,7 @@ items:
   source:
     id: Content
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 189
+    startLine: 199
   namespace: Glitch9.AIDevKit
   summary: The contents of the user message.
   example: []
@@ -159,7 +159,7 @@ items:
   source:
     id: Name
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 195
+    startLine: 205
   namespace: Glitch9.AIDevKit
   summary: >-
     Optional. An optional name for the participant.
@@ -187,13 +187,13 @@ items:
   source:
     id: SentAt
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 198
+    startLine: 208
   namespace: Glitch9.AIDevKit
   syntax:
     content: public UnixTime SentAt { get; }
     parameters: []
     return:
-      type: Glitch9.UnixTime
+      type: UnixTime
     content.vb: Public Property SentAt As UnixTime
   overload: Glitch9.AIDevKit.ChatMessage.SentAt*
 - uid: Glitch9.AIDevKit.ChatMessage.ToString
@@ -210,7 +210,7 @@ items:
   source:
     id: ToString
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 199
+    startLine: 209
   namespace: Glitch9.AIDevKit
   summary: Returns a string that represents the current object.
   example: []
@@ -236,7 +236,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 201
+    startLine: 211
   namespace: Glitch9.AIDevKit
   syntax:
     content: public ChatMessage()
@@ -259,7 +259,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 202
+    startLine: 212
   namespace: Glitch9.AIDevKit
   syntax:
     content: public ChatMessage(Content content = null)
@@ -285,7 +285,7 @@ items:
   source:
     id: Create
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 204
+    startLine: 214
   namespace: Glitch9.AIDevKit
   syntax:
     content: public static ChatMessage Create(ChatRole role, Content content = null)
@@ -492,18 +492,11 @@ references:
   name: SentAt
   nameWithType: ChatMessage.SentAt
   fullName: Glitch9.AIDevKit.ChatMessage.SentAt
-- uid: Glitch9.UnixTime
-  commentId: T:Glitch9.UnixTime
-  parent: Glitch9
+- uid: UnixTime
+  isExternal: true
   name: UnixTime
   nameWithType: UnixTime
-  fullName: Glitch9.UnixTime
-- uid: Glitch9
-  commentId: N:Glitch9
-  href: Glitch9.html
-  name: Glitch9
-  nameWithType: Glitch9
-  fullName: Glitch9
+  fullName: UnixTime
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object

@@ -60,7 +60,7 @@ items:
     content: public ZuluTime CreatedAt { get; set; }
     parameters: []
     return:
-      type: Glitch9.ZuluTime
+      type: ZuluTime
     content.vb: Public Property CreatedAt As ZuluTime
   overload: Glitch9.AIDevKit.Ollama.OllamaTextResponse.CreatedAt*
 - uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason
@@ -82,11 +82,11 @@ items:
   summary: Optional. The reason the response generation was stopped.
   example: []
   syntax:
-    content: public string FinishReason { get; set; }
+    content: public StopReason? FinishReason { get; set; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public Property FinishReason As String
+      type: System.Nullable{Glitch9.AIDevKit.StopReason}
+    content.vb: Public Property FinishReason As StopReason?
   overload: Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason*
 - uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context
   commentId: P:Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context
@@ -277,34 +277,60 @@ references:
   name: CreatedAt
   nameWithType: OllamaTextResponse.CreatedAt
   fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.CreatedAt
-- uid: Glitch9.ZuluTime
-  commentId: T:Glitch9.ZuluTime
-  parent: Glitch9
+- uid: ZuluTime
+  isExternal: true
   name: ZuluTime
   nameWithType: ZuluTime
-  fullName: Glitch9.ZuluTime
-- uid: Glitch9
-  commentId: N:Glitch9
-  href: Glitch9.html
-  name: Glitch9
-  nameWithType: Glitch9
-  fullName: Glitch9
+  fullName: ZuluTime
 - uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason*
   commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason
   href: Glitch9.AIDevKit.Ollama.OllamaTextResponse.html#Glitch9_AIDevKit_Ollama_OllamaTextResponse_FinishReason
   name: FinishReason
   nameWithType: OllamaTextResponse.FinishReason
   fullName: Glitch9.AIDevKit.Ollama.OllamaTextResponse.FinishReason
-- uid: System.String
-  commentId: T:System.String
+- uid: System.Nullable{Glitch9.AIDevKit.StopReason}
+  commentId: T:System.Nullable{Glitch9.AIDevKit.StopReason}
   parent: System
+  definition: System.Nullable`1
+  href: Glitch9.AIDevKit.StopReason.html
+  name: StopReason?
+  nameWithType: StopReason?
+  fullName: Glitch9.AIDevKit.StopReason?
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.StopReason
+    name: StopReason
+    href: Glitch9.AIDevKit.StopReason.html
+  - name: '?'
+  spec.vb:
+  - uid: Glitch9.AIDevKit.StopReason
+    name: StopReason
+    href: Glitch9.AIDevKit.StopReason.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
   isExternal: true
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context*
   commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaTextResponse.Context
   href: Glitch9.AIDevKit.Ollama.OllamaTextResponse.html#Glitch9_AIDevKit_Ollama_OllamaTextResponse_Context
@@ -429,31 +455,6 @@ references:
     name: Long
     isExternal: true
   - name: '?'
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
-  isExternal: true
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: Glitch9.AIDevKit.Ollama.OllamaTextResponse.OutputTokenCount*
   commentId: Overload:Glitch9.AIDevKit.Ollama.OllamaTextResponse.OutputTokenCount
   href: Glitch9.AIDevKit.Ollama.OllamaTextResponse.html#Glitch9_AIDevKit_Ollama_OllamaTextResponse_OutputTokenCount

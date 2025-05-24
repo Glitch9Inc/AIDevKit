@@ -295,6 +295,9 @@ items:
   - uid: Glitch9.AIDevKit.ImageFormat
     name: ImageFormat
     type: Enum
+  - uid: Glitch9.AIDevKit.ImageMessage
+    name: ImageMessage
+    type: Class
   - uid: Glitch9.AIDevKit.ImageQuality
     name: ImageQuality
     type: Enum
@@ -355,17 +358,17 @@ items:
   - uid: Glitch9.AIDevKit.ModelLibrary.Repo
     name: ModelLibrary.Repo
     type: Class
-  - uid: Glitch9.AIDevKit.ModelOptions
-    name: ModelOptions
-    type: Class
-  - uid: Glitch9.AIDevKit.ModelOptions.Builder
-    name: ModelOptions.Builder
-    type: Class
   - uid: Glitch9.AIDevKit.ModelPrice
     name: ModelPrice
     type: Class
   - uid: Glitch9.AIDevKit.ModelPriceArrayExtensions
     name: ModelPriceArrayExtensions
+    type: Class
+  - uid: Glitch9.AIDevKit.ModelSettings
+    name: ModelSettings
+    type: Class
+  - uid: Glitch9.AIDevKit.ModelSettings.Builder
+    name: ModelSettings.Builder
     type: Class
   - uid: Glitch9.AIDevKit.ModerationOptions
     name: ModerationOptions
@@ -598,11 +601,17 @@ items:
   - uid: Glitch9.AIDevKit.Components.AIDevKitComponent
     name: AIDevKitComponent
     type: Class
+  - uid: Glitch9.AIDevKit.Components.AIModuleComponent
+    name: AIModuleComponent
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.AssistantChatbot
+    name: AssistantChatbot
+    type: Class
   - uid: Glitch9.AIDevKit.Components.AssistantEventReceiver
     name: AssistantEventReceiver
     type: Class
-  - uid: Glitch9.AIDevKit.Components.AssistantsAPI
-    name: AssistantsAPI
+  - uid: Glitch9.AIDevKit.Components.AudioInputComponent`1
+    name: AudioInputComponent<T>
     type: Class
   - uid: Glitch9.AIDevKit.Components.ChatEventReceiver
     name: ChatEventReceiver
@@ -613,8 +622,8 @@ items:
   - uid: Glitch9.AIDevKit.Components.Chatbot
     name: Chatbot
     type: Class
-  - uid: Glitch9.AIDevKit.Components.ChatbotBase
-    name: ChatbotBase
+  - uid: Glitch9.AIDevKit.Components.ChatbotComponent
+    name: ChatbotComponent
     type: Class
   - uid: Glitch9.AIDevKit.Components.FunctionManager
     name: FunctionManager
@@ -634,14 +643,20 @@ items:
   - uid: Glitch9.AIDevKit.Components.IRealtimeEventReceiver
     name: IRealtimeEventReceiver
     type: Interface
+  - uid: Glitch9.AIDevKit.Components.ImageGenerator
+    name: ImageGenerator
+    type: Class
   - uid: Glitch9.AIDevKit.Components.MessageEventReceiver
     name: MessageEventReceiver
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.ModularChatbot
+    name: ModularChatbot
     type: Class
   - uid: Glitch9.AIDevKit.Components.MultiChatEventReceiver
     name: MultiChatEventReceiver
     type: Class
-  - uid: Glitch9.AIDevKit.Components.RealtimeAPI
-    name: RealtimeAPI
+  - uid: Glitch9.AIDevKit.Components.RealtimeAssistant
+    name: RealtimeAssistant
     type: Class
   - uid: Glitch9.AIDevKit.Components.RealtimeEventReceiver
     name: RealtimeEventReceiver
@@ -658,8 +673,14 @@ items:
   - uid: Glitch9.AIDevKit.Components.SpeechEventReceiver
     name: SpeechEventReceiver
     type: Class
+  - uid: Glitch9.AIDevKit.Components.SpeechToText
+    name: SpeechToText
+    type: Class
   - uid: Glitch9.AIDevKit.Components.StreamingAudioEventReceiver
     name: StreamingAudioEventReceiver
+    type: Class
+  - uid: Glitch9.AIDevKit.Components.TextToSpeech
+    name: TextToSpeech
     type: Class
   - uid: Glitch9.AIDevKit.Components.ThreadEventReceiver
     name: ThreadEventReceiver
@@ -1051,6 +1072,9 @@ items:
   - uid: Glitch9.AIDevKit.Google.GoogleFileSource
     name: GoogleFileSource
     type: Enum
+  - uid: Glitch9.AIDevKit.Google.GoogleFileUploadMetadata
+    name: GoogleFileUploadMetadata
+    type: Class
   - uid: Glitch9.AIDevKit.Google.GoogleFileUploadRequest
     name: GoogleFileUploadRequest
     type: Class

@@ -27,7 +27,6 @@ items:
     content.vb: Public Class TranslationRequest Inherits AIRequest
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.RequestBody
   - Glitch9.AIDevKit.AIRequest
   inheritedMembers:
   - Glitch9.AIDevKit.AIRequest.Model
@@ -63,7 +62,7 @@ items:
     content: public File<AudioClip> File { get; set; }
     parameters: []
     return:
-      type: Glitch9.IO.Files.File{AudioClip}
+      type: File{AudioClip}
     content.vb: Public Property File As File(Of AudioClip)
   overload: Glitch9.AIDevKit.OpenAI.TranslationRequest.File*
 - uid: Glitch9.AIDevKit.OpenAI.TranslationRequest.Prompt
@@ -167,12 +166,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
-  parent: Glitch9.IO.Networking.RESTApi
-  name: RequestBody
-  nameWithType: RequestBody
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
 - uid: Glitch9.AIDevKit.AIRequest
   commentId: T:Glitch9.AIDevKit.AIRequest
   parent: Glitch9.AIDevKit
@@ -241,44 +234,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
   href: Glitch9.html
@@ -338,27 +293,28 @@ references:
   name: File
   nameWithType: TranslationRequest.File
   fullName: Glitch9.AIDevKit.OpenAI.TranslationRequest.File
-- uid: Glitch9.IO.Files.File{AudioClip}
-  commentId: T:Glitch9.IO.Files.File{AudioClip}
-  parent: Glitch9.IO.Files
-  definition: Glitch9.IO.Files.File`1
+- uid: File{AudioClip}
+  commentId: '!:File{AudioClip}'
+  definition: File`1
   name: File<AudioClip>
   nameWithType: File<AudioClip>
-  fullName: Glitch9.IO.Files.File<AudioClip>
+  fullName: File<AudioClip>
   nameWithType.vb: File(Of AudioClip)
-  fullName.vb: Glitch9.IO.Files.File(Of AudioClip)
+  fullName.vb: File(Of AudioClip)
   name.vb: File(Of AudioClip)
   spec.csharp:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
   - uid: AudioClip
     name: AudioClip
     isExternal: true
   - name: '>'
   spec.vb:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
@@ -366,58 +322,30 @@ references:
     name: AudioClip
     isExternal: true
   - name: )
-- uid: Glitch9.IO.Files.File`1
-  commentId: T:Glitch9.IO.Files.File`1
-  name: File<T>
-  nameWithType: File<T>
-  fullName: Glitch9.IO.Files.File<T>
-  nameWithType.vb: File(Of T)
-  fullName.vb: Glitch9.IO.Files.File(Of T)
-  name.vb: File(Of T)
+- uid: File`1
+  isExternal: true
+  name: File<>
+  nameWithType: File<>
+  fullName: File<>
+  nameWithType.vb: File(Of )
+  fullName.vb: File(Of )
+  name.vb: File(Of )
   spec.csharp:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
-  - name: T
+  - name: ''
   - name: '>'
   spec.vb:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: ''
   - name: )
-- uid: Glitch9.IO.Files
-  commentId: N:Glitch9.IO.Files
-  href: Glitch9.html
-  name: Glitch9.IO.Files
-  nameWithType: Glitch9.IO.Files
-  fullName: Glitch9.IO.Files
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
 - uid: Glitch9.AIDevKit.OpenAI.TranslationRequest.Prompt*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.TranslationRequest.Prompt
   href: Glitch9.AIDevKit.OpenAI.TranslationRequest.html#Glitch9_AIDevKit_OpenAI_TranslationRequest_Prompt

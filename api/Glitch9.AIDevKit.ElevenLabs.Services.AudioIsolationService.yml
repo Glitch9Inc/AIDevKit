@@ -7,7 +7,7 @@ items:
   children:
   - Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.#ctor(Glitch9.AIDevKit.ElevenLabs.ElevenLabs)
   - Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.CreateAsync(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest)
-  - Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  - Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest,RealtimeAudioPlayer)
   langs:
   - csharp
   - vb
@@ -25,7 +25,6 @@ items:
     content.vb: Public Class AudioIsolationService Inherits CRUDServiceBase(Of ElevenLabs)
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.ElevenLabs.ElevenLabs}
 - uid: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.#ctor(Glitch9.AIDevKit.ElevenLabs.ElevenLabs)
   commentId: M:Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.#ctor(Glitch9.AIDevKit.ElevenLabs.ElevenLabs)
   id: '#ctor(Glitch9.AIDevKit.ElevenLabs.ElevenLabs)'
@@ -77,16 +76,16 @@ items:
       type: UniTask{Glitch9.AIDevKit.GeneratedAudio}
     content.vb: Public Function CreateAsync(request As AudioIsolationRequest) As UniTask(Of GeneratedAudio)
   overload: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.CreateAsync*
-- uid: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
-  commentId: M:Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
-  id: Stream(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+- uid: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest,RealtimeAudioPlayer)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest,RealtimeAudioPlayer)
+  id: Stream(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest,RealtimeAudioPlayer)
   parent: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService
   langs:
   - csharp
   - vb
-  name: Stream(AudioIsolationRequest, StreamAudioPlayer)
-  nameWithType: AudioIsolationService.Stream(AudioIsolationRequest, StreamAudioPlayer)
-  fullName: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest, Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  name: Stream(AudioIsolationRequest, RealtimeAudioPlayer)
+  nameWithType: AudioIsolationService.Stream(AudioIsolationRequest, RealtimeAudioPlayer)
+  fullName: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream(Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest, RealtimeAudioPlayer)
   type: Method
   source:
     id: Stream
@@ -94,15 +93,15 @@ items:
     startLine: 26
   namespace: Glitch9.AIDevKit.ElevenLabs.Services
   syntax:
-    content: public UniTask Stream(AudioIsolationRequest request, StreamAudioPlayer streamAudioPlayer)
+    content: public UniTask Stream(AudioIsolationRequest request, RealtimeAudioPlayer streamAudioPlayer)
     parameters:
     - id: request
       type: Glitch9.AIDevKit.ElevenLabs.AudioIsolationRequest
     - id: streamAudioPlayer
-      type: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+      type: RealtimeAudioPlayer
     return:
       type: UniTask
-    content.vb: Public Function Stream(request As AudioIsolationRequest, streamAudioPlayer As StreamAudioPlayer) As UniTask
+    content.vb: Public Function Stream(request As AudioIsolationRequest, streamAudioPlayer As RealtimeAudioPlayer) As UniTask
   overload: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream*
 references:
 - uid: Glitch9.AIDevKit.ElevenLabs.Services
@@ -153,35 +152,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.ElevenLabs.ElevenLabs}
-  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase{Glitch9.AIDevKit.ElevenLabs.ElevenLabs}
-  parent: Glitch9.IO.Networking.RESTApi
-  definition: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
-  href: Glitch9.AIDevKit.ElevenLabs.ElevenLabs.html
-  name: CRUDServiceBase<ElevenLabs>
-  nameWithType: CRUDServiceBase<ElevenLabs>
-  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<Glitch9.AIDevKit.ElevenLabs.ElevenLabs>
-  nameWithType.vb: CRUDServiceBase(Of ElevenLabs)
-  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of Glitch9.AIDevKit.ElevenLabs.ElevenLabs)
-  name.vb: CRUDServiceBase(Of ElevenLabs)
-  spec.csharp:
-  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
-    name: CRUDServiceBase
-  - name: <
-  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabs
-    name: ElevenLabs
-    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabs.html
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
-    name: CRUDServiceBase
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabs
-    name: ElevenLabs
-    href: Glitch9.AIDevKit.ElevenLabs.ElevenLabs.html
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -189,66 +159,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
-  commentId: T:Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
-  name: CRUDServiceBase<TClient>
-  nameWithType: CRUDServiceBase<TClient>
-  fullName: Glitch9.IO.Networking.RESTApi.CRUDServiceBase<TClient>
-  nameWithType.vb: CRUDServiceBase(Of TClient)
-  fullName.vb: Glitch9.IO.Networking.RESTApi.CRUDServiceBase(Of TClient)
-  name.vb: CRUDServiceBase(Of TClient)
-  spec.csharp:
-  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
-    name: CRUDServiceBase
-  - name: <
-  - name: TClient
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.IO.Networking.RESTApi.CRUDServiceBase`1
-    name: CRUDServiceBase
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TClient
-  - name: )
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.#ctor*
   commentId: Overload:Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.#ctor
   href: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.html#Glitch9_AIDevKit_ElevenLabs_Services_AudioIsolationService__ctor_Glitch9_AIDevKit_ElevenLabs_ElevenLabs_
@@ -364,56 +274,17 @@ references:
   - name: )
 - uid: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream*
   commentId: Overload:Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream
-  href: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.html#Glitch9_AIDevKit_ElevenLabs_Services_AudioIsolationService_Stream_Glitch9_AIDevKit_ElevenLabs_AudioIsolationRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+  href: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.html#Glitch9_AIDevKit_ElevenLabs_Services_AudioIsolationService_Stream_Glitch9_AIDevKit_ElevenLabs_AudioIsolationRequest_RealtimeAudioPlayer_
   name: Stream
   nameWithType: AudioIsolationService.Stream
   fullName: Glitch9.AIDevKit.ElevenLabs.Services.AudioIsolationService.Stream
-- uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
-  commentId: T:Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
-  parent: Glitch9.CoreLib.IO.Audio
-  name: StreamAudioPlayer
-  nameWithType: StreamAudioPlayer
-  fullName: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+- uid: RealtimeAudioPlayer
+  isExternal: true
+  name: RealtimeAudioPlayer
+  nameWithType: RealtimeAudioPlayer
+  fullName: RealtimeAudioPlayer
 - uid: UniTask
   isExternal: true
   name: UniTask
   nameWithType: UniTask
   fullName: UniTask
-- uid: Glitch9.CoreLib.IO.Audio
-  commentId: N:Glitch9.CoreLib.IO.Audio
-  href: Glitch9.html
-  name: Glitch9.CoreLib.IO.Audio
-  nameWithType: Glitch9.CoreLib.IO.Audio
-  fullName: Glitch9.CoreLib.IO.Audio
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.CoreLib
-    name: CoreLib
-    href: Glitch9.CoreLib.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO
-    name: IO
-    href: Glitch9.CoreLib.IO.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO.Audio
-    name: Audio
-    href: Glitch9.CoreLib.IO.Audio.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.CoreLib
-    name: CoreLib
-    href: Glitch9.CoreLib.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO
-    name: IO
-    href: Glitch9.CoreLib.IO.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO.Audio
-    name: Audio
-    href: Glitch9.CoreLib.IO.Audio.html

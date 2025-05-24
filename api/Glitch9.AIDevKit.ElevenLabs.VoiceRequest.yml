@@ -26,7 +26,6 @@ items:
     content.vb: Public Class VoiceRequest Inherits AudioRequest
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.RequestBody
   - Glitch9.AIDevKit.ElevenLabs.AudioRequest
   derivedClasses:
   - Glitch9.AIDevKit.ElevenLabs.SpeechRequest
@@ -57,17 +56,11 @@ items:
     Use the Get voices endpoint list all the available voices.
   example: []
   syntax:
-    content: >-
-      [PathParameterAttribute]
-
-      public string VoiceId { get; set; }
+    content: public string VoiceId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <PathParameterAttribute>
-
-      Public Property VoiceId As String
+    content.vb: Public Property VoiceId As String
   overload: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId*
 - uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Voice
   commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Voice
@@ -118,17 +111,11 @@ items:
     Zero retention mode may only be used by enterprise customers.
   example: []
   syntax:
-    content: >-
-      [QueryParameterAttribute]
-
-      public bool? EnableLogging { get; set; }
+    content: public bool? EnableLogging { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.Boolean}
-    content.vb: >-
-      <QueryParameterAttribute>
-
-      Public Property EnableLogging As Boolean?
+    content.vb: Public Property EnableLogging As Boolean?
   overload: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.EnableLogging*
 - uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Model
   commentId: P:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.Model
@@ -215,12 +202,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
-  parent: Glitch9.IO.Networking.RESTApi
-  name: RequestBody
-  nameWithType: RequestBody
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
 - uid: Glitch9.AIDevKit.ElevenLabs.AudioRequest
   commentId: T:Glitch9.AIDevKit.ElevenLabs.AudioRequest
   parent: Glitch9.AIDevKit.ElevenLabs
@@ -242,44 +223,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId*
   commentId: Overload:Glitch9.AIDevKit.ElevenLabs.VoiceRequest.VoiceId
   href: Glitch9.AIDevKit.ElevenLabs.VoiceRequest.html#Glitch9_AIDevKit_ElevenLabs_VoiceRequest_VoiceId

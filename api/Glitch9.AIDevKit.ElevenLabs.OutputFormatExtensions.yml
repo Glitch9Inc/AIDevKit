@@ -50,7 +50,7 @@ items:
     - id: format
       type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
     return:
-      type: Glitch9.CoreLib.IO.Audio.AudioFormat
+      type: AudioFormat
     content.vb: Public Shared Function ToAudioFormat(format As ElevenLabsOutputFormat) As AudioFormat
   overload: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.ToAudioFormat*
 - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
@@ -76,7 +76,7 @@ items:
     - id: format
       type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
     return:
-      type: Glitch9.CoreLib.IO.Audio.AudioEncoding
+      type: AudioEncoding
     content.vb: Public Shared Function GetAudioEncoding(format As ElevenLabsOutputFormat) As AudioEncoding
   overload: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding*
 - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
@@ -102,7 +102,7 @@ items:
     - id: format
       type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
     return:
-      type: Glitch9.CoreLib.IO.Audio.Bitrate
+      type: Bitrate
     content.vb: Public Shared Function GetBitrate(format As ElevenLabsOutputFormat) As Bitrate
   overload: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate*
 - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
@@ -128,7 +128,7 @@ items:
     - id: format
       type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
     return:
-      type: Glitch9.CoreLib.IO.Audio.SampleRate
+      type: SampleRate
     content.vb: Public Shared Function GetSamplingRate(format As ElevenLabsOutputFormat) As SampleRate
   overload: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate*
 - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension(Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat)
@@ -218,86 +218,46 @@ references:
   name: ElevenLabsOutputFormat
   nameWithType: ElevenLabsOutputFormat
   fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsOutputFormat
-- uid: Glitch9.CoreLib.IO.Audio.AudioFormat
-  commentId: T:Glitch9.CoreLib.IO.Audio.AudioFormat
-  parent: Glitch9.CoreLib.IO.Audio
+- uid: AudioFormat
+  commentId: '!:AudioFormat'
+  isExternal: true
   name: AudioFormat
   nameWithType: AudioFormat
-  fullName: Glitch9.CoreLib.IO.Audio.AudioFormat
-- uid: Glitch9.CoreLib.IO.Audio
-  commentId: N:Glitch9.CoreLib.IO.Audio
-  href: Glitch9.html
-  name: Glitch9.CoreLib.IO.Audio
-  nameWithType: Glitch9.CoreLib.IO.Audio
-  fullName: Glitch9.CoreLib.IO.Audio
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.CoreLib
-    name: CoreLib
-    href: Glitch9.CoreLib.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO
-    name: IO
-    href: Glitch9.CoreLib.IO.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO.Audio
-    name: Audio
-    href: Glitch9.CoreLib.IO.Audio.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.CoreLib
-    name: CoreLib
-    href: Glitch9.CoreLib.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO
-    name: IO
-    href: Glitch9.CoreLib.IO.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO.Audio
-    name: Audio
-    href: Glitch9.CoreLib.IO.Audio.html
+  fullName: AudioFormat
 - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding*
   commentId: Overload:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding
   href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetAudioEncoding_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
   name: GetAudioEncoding
   nameWithType: OutputFormatExtensions.GetAudioEncoding
   fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetAudioEncoding
-- uid: Glitch9.CoreLib.IO.Audio.AudioEncoding
-  commentId: T:Glitch9.CoreLib.IO.Audio.AudioEncoding
-  parent: Glitch9.CoreLib.IO.Audio
+- uid: AudioEncoding
+  isExternal: true
   name: AudioEncoding
   nameWithType: AudioEncoding
-  fullName: Glitch9.CoreLib.IO.Audio.AudioEncoding
+  fullName: AudioEncoding
 - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate*
   commentId: Overload:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate
   href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetBitrate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
   name: GetBitrate
   nameWithType: OutputFormatExtensions.GetBitrate
   fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetBitrate
-- uid: Glitch9.CoreLib.IO.Audio.Bitrate
-  commentId: T:Glitch9.CoreLib.IO.Audio.Bitrate
-  parent: Glitch9.CoreLib.IO.Audio
+- uid: Bitrate
+  commentId: '!:Bitrate'
+  isExternal: true
   name: Bitrate
   nameWithType: Bitrate
-  fullName: Glitch9.CoreLib.IO.Audio.Bitrate
+  fullName: Bitrate
 - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate*
   commentId: Overload:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate
   href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetSamplingRate_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_
   name: GetSamplingRate
   nameWithType: OutputFormatExtensions.GetSamplingRate
   fullName: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetSamplingRate
-- uid: Glitch9.CoreLib.IO.Audio.SampleRate
-  commentId: T:Glitch9.CoreLib.IO.Audio.SampleRate
-  parent: Glitch9.CoreLib.IO.Audio
+- uid: SampleRate
+  isExternal: true
   name: SampleRate
   nameWithType: SampleRate
-  fullName: Glitch9.CoreLib.IO.Audio.SampleRate
+  fullName: SampleRate
 - uid: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension*
   commentId: Overload:Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.GetFileExtension
   href: Glitch9.AIDevKit.ElevenLabs.OutputFormatExtensions.html#Glitch9_AIDevKit_ElevenLabs_OutputFormatExtensions_GetFileExtension_Glitch9_AIDevKit_ElevenLabs_ElevenLabsOutputFormat_

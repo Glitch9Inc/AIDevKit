@@ -86,75 +86,13 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html">GoogleFile</a></div>
-    <div class="level2"><span class="xref">GoogleFileUploadRequest</span></div>
-  </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Glitch9.AIDevKit.IApiFile.html">IApiFile</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_Id">GoogleFile.Id</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_Name">GoogleFile.Name</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_MimeType">GoogleFile.MimeType</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_ByteSize">GoogleFile.ByteSize</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_CreateTime">GoogleFile.CreateTime</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_UpdateTime">GoogleFile.UpdateTime</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_ExpirationTime">GoogleFile.ExpirationTime</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_Sha256Hash">GoogleFile.Sha256Hash</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_Uri">GoogleFile.Uri</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_DownloadUri">GoogleFile.DownloadUri</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_Source">GoogleFile.Source</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_State">GoogleFile.State</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_Error">GoogleFile.Error</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_VideoMetadata">GoogleFile.VideoMetadata</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_Api">GoogleFile.Api</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_CreatedAt">GoogleFile.CreatedAt</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_ExpiresAt">GoogleFile.ExpiresAt</a>
-    </div>
-    <div>
-      <a class="xref" href="Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_BuildMetadata">GoogleFile.BuildMetadata()</a>
-    </div>
+    <div class="level1"><span class="xref">GoogleFileUploadRequest</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Google.html">Google</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="Glitch9_AIDevKit_Google_GoogleFileUploadRequest_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GoogleFileUploadRequest : GoogleFile, IApiFile</code></pre>
+    <pre><code class="lang-csharp hljs">public class GoogleFileUploadRequest : IMultipartFormRequest</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
@@ -183,10 +121,31 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Glitch9.AIDevKit.IApiFile.html">IApiFile</a>
+
+
+  <a id="Glitch9_AIDevKit_Google_GoogleFileUploadRequest_Metadata_" data-uid="Glitch9.AIDevKit.Google.GoogleFileUploadRequest.Metadata*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GoogleFileUploadRequest_Metadata" data-uid="Glitch9.AIDevKit.Google.GoogleFileUploadRequest.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GoogleFileUploadMetadata Metadata { get; set; }</code></pre>
   </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.GoogleFileUploadMetadata.html">GoogleFileUploadMetadata</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
           </div>

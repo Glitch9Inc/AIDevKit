@@ -20,13 +20,14 @@ items:
     startLine: 7
   namespace: Glitch9.AIDevKit
   syntax:
-    content: 'public class SingleResponseStreamReceiver : ChatCompletionStreamReceiver, IChatCompletionStreamHandler'
-    content.vb: Public Class SingleResponseStreamReceiver Inherits ChatCompletionStreamReceiver Implements IChatCompletionStreamHandler
+    content: 'public class SingleResponseStreamReceiver : ChatCompletionStreamReceiver, IChatCompletionStreamHandler, ITextStreamHandler'
+    content.vb: Public Class SingleResponseStreamReceiver Inherits ChatCompletionStreamReceiver Implements IChatCompletionStreamHandler, ITextStreamHandler
   inheritance:
   - System.Object
   - Glitch9.AIDevKit.ChatCompletionStreamReceiver
   implements:
   - Glitch9.AIDevKit.IChatCompletionStreamHandler
+  - ITextStreamHandler
   inheritedMembers:
   - Glitch9.AIDevKit.ChatCompletionStreamReceiver._task
   - Glitch9.AIDevKit.ChatCompletionStreamReceiver._chunkFactory
@@ -35,6 +36,7 @@ items:
   - Glitch9.AIDevKit.ChatCompletionStreamReceiver._onFunctionManagerCalls
   - Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetFactory(System.Func{System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ChatCompletionChunk}})
   - Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetTask(Glitch9.AIDevKit.GENResponseTask)
+  - Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetOnDone(System.Action{Glitch9.AIDevKit.ChatCompletion})
   - Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetFunctionManagerCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
   - Glitch9.AIDevKit.ChatCompletionStreamReceiver.StartStreaming
   - Glitch9.AIDevKit.ChatCompletionStreamReceiver.OnReceiveStreamedData(System.String)
@@ -137,6 +139,11 @@ references:
   name: IChatCompletionStreamHandler
   nameWithType: IChatCompletionStreamHandler
   fullName: Glitch9.AIDevKit.IChatCompletionStreamHandler
+- uid: ITextStreamHandler
+  isExternal: true
+  name: ITextStreamHandler
+  nameWithType: ITextStreamHandler
+  fullName: ITextStreamHandler
 - uid: Glitch9.AIDevKit.ChatCompletionStreamReceiver._task
   commentId: F:Glitch9.AIDevKit.ChatCompletionStreamReceiver._task
   parent: Glitch9.AIDevKit.ChatCompletionStreamReceiver
@@ -259,6 +266,47 @@ references:
   - uid: Glitch9.AIDevKit.GENResponseTask
     name: GENResponseTask
     href: Glitch9.AIDevKit.GENResponseTask.html
+  - name: )
+- uid: Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetOnDone(System.Action{Glitch9.AIDevKit.ChatCompletion})
+  commentId: M:Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetOnDone(System.Action{Glitch9.AIDevKit.ChatCompletion})
+  parent: Glitch9.AIDevKit.ChatCompletionStreamReceiver
+  isExternal: true
+  href: Glitch9.AIDevKit.ChatCompletionStreamReceiver.html#Glitch9_AIDevKit_ChatCompletionStreamReceiver_SetOnDone_System_Action_Glitch9_AIDevKit_ChatCompletion__
+  name: SetOnDone(Action<ChatCompletion>)
+  nameWithType: ChatCompletionStreamReceiver.SetOnDone(Action<ChatCompletion>)
+  fullName: Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetOnDone(System.Action<Glitch9.AIDevKit.ChatCompletion>)
+  nameWithType.vb: ChatCompletionStreamReceiver.SetOnDone(Action(Of ChatCompletion))
+  fullName.vb: Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetOnDone(System.Action(Of Glitch9.AIDevKit.ChatCompletion))
+  name.vb: SetOnDone(Action(Of ChatCompletion))
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetOnDone(System.Action{Glitch9.AIDevKit.ChatCompletion})
+    name: SetOnDone
+    href: Glitch9.AIDevKit.ChatCompletionStreamReceiver.html#Glitch9_AIDevKit_ChatCompletionStreamReceiver_SetOnDone_System_Action_Glitch9_AIDevKit_ChatCompletion__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetOnDone(System.Action{Glitch9.AIDevKit.ChatCompletion})
+    name: SetOnDone
+    href: Glitch9.AIDevKit.ChatCompletionStreamReceiver.html#Glitch9_AIDevKit_ChatCompletionStreamReceiver_SetOnDone_System_Action_Glitch9_AIDevKit_ChatCompletion__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.ChatCompletion
+    name: ChatCompletion
+    href: Glitch9.AIDevKit.ChatCompletion.html
+  - name: )
   - name: )
 - uid: Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetFunctionManagerCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})
   commentId: M:Glitch9.AIDevKit.ChatCompletionStreamReceiver.SetFunctionManagerCalls(System.Action{Glitch9.AIDevKit.ToolCall[]})

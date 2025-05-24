@@ -114,7 +114,7 @@ items:
     content: public List<IFile> AttachedFiles { get; set; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{Glitch9.IO.Files.IFile}
+      type: System.Collections.Generic.List{IFile}
     content.vb: Public Property AttachedFiles As List(Of IFile)
   overload: Glitch9.AIDevKit.UserMessage.AttachedFiles*
 - uid: Glitch9.AIDevKit.UserMessage.Moderations
@@ -536,23 +536,24 @@ references:
   name: AttachedFiles
   nameWithType: UserMessage.AttachedFiles
   fullName: Glitch9.AIDevKit.UserMessage.AttachedFiles
-- uid: System.Collections.Generic.List{Glitch9.IO.Files.IFile}
-  commentId: T:System.Collections.Generic.List{Glitch9.IO.Files.IFile}
+- uid: System.Collections.Generic.List{IFile}
+  commentId: T:System.Collections.Generic.List{IFile}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   name: List<IFile>
   nameWithType: List<IFile>
-  fullName: System.Collections.Generic.List<Glitch9.IO.Files.IFile>
+  fullName: System.Collections.Generic.List<IFile>
   nameWithType.vb: List(Of IFile)
-  fullName.vb: System.Collections.Generic.List(Of Glitch9.IO.Files.IFile)
+  fullName.vb: System.Collections.Generic.List(Of IFile)
   name.vb: List(Of IFile)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
   - name: <
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -561,8 +562,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1

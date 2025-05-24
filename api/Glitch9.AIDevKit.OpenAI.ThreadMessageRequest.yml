@@ -6,8 +6,8 @@ items:
   parent: Glitch9.AIDevKit.OpenAI
   children:
   - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.#ctor
-  - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ToolCall},System.Collections.Generic.IEnumerable{Glitch9.IO.Files.IFile},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})
-  - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles(Glitch9.IO.Files.IFile[])
+  - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ToolCall},System.Collections.Generic.IEnumerable{IFile},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})
+  - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles(IFile[])
   - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Attachments
   - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.ContentParts
   - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.Role
@@ -16,7 +16,7 @@ items:
   - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetImageUrls(System.Collections.Generic.IEnumerable{System.String})
   - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetPrompt(System.String)
   - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetTools(Glitch9.AIDevKit.ToolCall[])
-  - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles(Glitch9.IO.Files.IFile[])
+  - Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles(IFile[])
   langs:
   - csharp
   - vb
@@ -34,7 +34,6 @@ items:
     content.vb: Public Class ThreadMessageRequest Inherits AIRequest
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.RequestBody
   - Glitch9.AIDevKit.AIRequest
   inheritedMembers:
   - Glitch9.AIDevKit.AIRequest.Model
@@ -142,16 +141,16 @@ items:
   nameWithType.vb: ThreadMessageRequest.New()
   fullName.vb: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.New()
   name.vb: New()
-- uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ToolCall},System.Collections.Generic.IEnumerable{Glitch9.IO.Files.IFile},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})
-  commentId: M:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ToolCall},System.Collections.Generic.IEnumerable{Glitch9.IO.Files.IFile},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})
-  id: '#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ToolCall},System.Collections.Generic.IEnumerable{Glitch9.IO.Files.IFile},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})'
+- uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ToolCall},System.Collections.Generic.IEnumerable{IFile},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ToolCall},System.Collections.Generic.IEnumerable{IFile},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})
+  id: '#ctor(System.String,System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ToolCall},System.Collections.Generic.IEnumerable{IFile},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})'
   parent: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
   langs:
   - csharp
   - vb
   name: ThreadMessageRequest(string, IEnumerable<ToolCall>, IEnumerable<IFile>, IEnumerable<string>, IEnumerable<string>, IEnumerable<string>)
   nameWithType: ThreadMessageRequest.ThreadMessageRequest(string, IEnumerable<ToolCall>, IEnumerable<IFile>, IEnumerable<string>, IEnumerable<string>, IEnumerable<string>)
-  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.ThreadMessageRequest(string, System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.ToolCall>, System.Collections.Generic.IEnumerable<Glitch9.IO.Files.IFile>, System.Collections.Generic.IEnumerable<string>, System.Collections.Generic.IEnumerable<string>, System.Collections.Generic.IEnumerable<string>)
+  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.ThreadMessageRequest(string, System.Collections.Generic.IEnumerable<Glitch9.AIDevKit.ToolCall>, System.Collections.Generic.IEnumerable<IFile>, System.Collections.Generic.IEnumerable<string>, System.Collections.Generic.IEnumerable<string>, System.Collections.Generic.IEnumerable<string>)
   type: Constructor
   source:
     id: .ctor
@@ -166,7 +165,7 @@ items:
     - id: tools
       type: System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.ToolCall}
     - id: uploadFiles
-      type: System.Collections.Generic.IEnumerable{Glitch9.IO.Files.IFile}
+      type: System.Collections.Generic.IEnumerable{IFile}
     - id: imageUrls
       type: System.Collections.Generic.IEnumerable{System.String}
     - id: fileIds
@@ -176,7 +175,7 @@ items:
     content.vb: Public Sub New(prompt As String, tools As IEnumerable(Of ToolCall) = Nothing, uploadFiles As IEnumerable(Of IFile) = Nothing, imageUrls As IEnumerable(Of String) = Nothing, fileIds As IEnumerable(Of String) = Nothing, imageFileIds As IEnumerable(Of String) = Nothing)
   overload: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.#ctor*
   nameWithType.vb: ThreadMessageRequest.New(String, IEnumerable(Of ToolCall), IEnumerable(Of IFile), IEnumerable(Of String), IEnumerable(Of String), IEnumerable(Of String))
-  fullName.vb: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.New(String, System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.ToolCall), System.Collections.Generic.IEnumerable(Of Glitch9.IO.Files.IFile), System.Collections.Generic.IEnumerable(Of String), System.Collections.Generic.IEnumerable(Of String), System.Collections.Generic.IEnumerable(Of String))
+  fullName.vb: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.New(String, System.Collections.Generic.IEnumerable(Of Glitch9.AIDevKit.ToolCall), System.Collections.Generic.IEnumerable(Of IFile), System.Collections.Generic.IEnumerable(Of String), System.Collections.Generic.IEnumerable(Of String), System.Collections.Generic.IEnumerable(Of String))
   name.vb: New(String, IEnumerable(Of ToolCall), IEnumerable(Of IFile), IEnumerable(Of String), IEnumerable(Of String), IEnumerable(Of String))
 - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetPrompt(System.String)
   commentId: M:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetPrompt(System.String)
@@ -318,16 +317,16 @@ items:
   nameWithType.vb: ThreadMessageRequest.SetTools(ParamArray ToolCall())
   fullName.vb: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetTools(ParamArray Glitch9.AIDevKit.ToolCall())
   name.vb: SetTools(ParamArray ToolCall())
-- uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles(Glitch9.IO.Files.IFile[])
-  commentId: M:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles(Glitch9.IO.Files.IFile[])
-  id: SetUploadFiles(Glitch9.IO.Files.IFile[])
+- uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles(IFile[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles(IFile[])
+  id: SetUploadFiles(IFile[])
   parent: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
   langs:
   - csharp
   - vb
   name: SetUploadFiles(params IFile[])
   nameWithType: ThreadMessageRequest.SetUploadFiles(params IFile[])
-  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles(params Glitch9.IO.Files.IFile[])
+  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles(params IFile[])
   type: Method
   source:
     id: SetUploadFiles
@@ -338,24 +337,24 @@ items:
     content: public ThreadMessageRequest SetUploadFiles(params IFile[] files)
     parameters:
     - id: files
-      type: Glitch9.IO.Files.IFile[]
+      type: IFile[]
     return:
       type: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
     content.vb: Public Function SetUploadFiles(ParamArray files As IFile()) As ThreadMessageRequest
   overload: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles*
   nameWithType.vb: ThreadMessageRequest.SetUploadFiles(ParamArray IFile())
-  fullName.vb: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles(ParamArray Glitch9.IO.Files.IFile())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles(ParamArray IFile())
   name.vb: SetUploadFiles(ParamArray IFile())
-- uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles(Glitch9.IO.Files.IFile[])
-  commentId: M:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles(Glitch9.IO.Files.IFile[])
-  id: AddUploadFiles(Glitch9.IO.Files.IFile[])
+- uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles(IFile[])
+  commentId: M:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles(IFile[])
+  id: AddUploadFiles(IFile[])
   parent: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
   langs:
   - csharp
   - vb
   name: AddUploadFiles(params IFile[])
   nameWithType: ThreadMessageRequest.AddUploadFiles(params IFile[])
-  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles(params Glitch9.IO.Files.IFile[])
+  fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles(params IFile[])
   type: Method
   source:
     id: AddUploadFiles
@@ -366,13 +365,13 @@ items:
     content: public ThreadMessageRequest AddUploadFiles(params IFile[] files)
     parameters:
     - id: files
-      type: Glitch9.IO.Files.IFile[]
+      type: IFile[]
     return:
       type: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest
     content.vb: Public Function AddUploadFiles(ParamArray files As IFile()) As ThreadMessageRequest
   overload: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles*
   nameWithType.vb: ThreadMessageRequest.AddUploadFiles(ParamArray IFile())
-  fullName.vb: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles(ParamArray Glitch9.IO.Files.IFile())
+  fullName.vb: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles(ParamArray IFile())
   name.vb: AddUploadFiles(ParamArray IFile())
 references:
 - uid: Glitch9.AIDevKit.OpenAI
@@ -415,12 +414,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
-  parent: Glitch9.IO.Networking.RESTApi
-  name: RequestBody
-  nameWithType: RequestBody
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
 - uid: Glitch9.AIDevKit.AIRequest
   commentId: T:Glitch9.AIDevKit.AIRequest
   parent: Glitch9.AIDevKit
@@ -463,44 +456,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
   href: Glitch9.html
@@ -722,23 +677,24 @@ references:
     name: ToolCall
     href: Glitch9.AIDevKit.ToolCall.html
   - name: )
-- uid: System.Collections.Generic.IEnumerable{Glitch9.IO.Files.IFile}
-  commentId: T:System.Collections.Generic.IEnumerable{Glitch9.IO.Files.IFile}
+- uid: System.Collections.Generic.IEnumerable{IFile}
+  commentId: T:System.Collections.Generic.IEnumerable{IFile}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
   name: IEnumerable<IFile>
   nameWithType: IEnumerable<IFile>
-  fullName: System.Collections.Generic.IEnumerable<Glitch9.IO.Files.IFile>
+  fullName: System.Collections.Generic.IEnumerable<IFile>
   nameWithType.vb: IEnumerable(Of IFile)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of Glitch9.IO.Files.IFile)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of IFile)
   name.vb: IEnumerable(Of IFile)
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     isExternal: true
   - name: <
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.IEnumerable`1
@@ -747,8 +703,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: )
 - uid: System.Collections.Generic.IEnumerable{System.String}
   commentId: T:System.Collections.Generic.IEnumerable{System.String}
@@ -865,31 +822,33 @@ references:
   - name: )
 - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles
-  href: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html#Glitch9_AIDevKit_OpenAI_ThreadMessageRequest_SetUploadFiles_Glitch9_IO_Files_IFile___
+  href: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html#Glitch9_AIDevKit_OpenAI_ThreadMessageRequest_SetUploadFiles_IFile___
   name: SetUploadFiles
   nameWithType: ThreadMessageRequest.SetUploadFiles
   fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.SetUploadFiles
-- uid: Glitch9.IO.Files.IFile[]
+- uid: IFile[]
   isExternal: true
   name: IFile[]
   nameWithType: IFile[]
-  fullName: Glitch9.IO.Files.IFile[]
+  fullName: IFile[]
   nameWithType.vb: IFile()
-  fullName.vb: Glitch9.IO.Files.IFile()
+  fullName.vb: IFile()
   name.vb: IFile()
   spec.csharp:
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: (
   - name: )
 - uid: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles
-  href: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html#Glitch9_AIDevKit_OpenAI_ThreadMessageRequest_AddUploadFiles_Glitch9_IO_Files_IFile___
+  href: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.html#Glitch9_AIDevKit_OpenAI_ThreadMessageRequest_AddUploadFiles_IFile___
   name: AddUploadFiles
   nameWithType: ThreadMessageRequest.AddUploadFiles
   fullName: Glitch9.AIDevKit.OpenAI.ThreadMessageRequest.AddUploadFiles

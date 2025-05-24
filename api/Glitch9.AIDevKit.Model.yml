@@ -37,11 +37,13 @@ items:
     Supports token limits, ownership, creation time, and dynamic pricing for various content types (text, image, audio).
   example: []
   syntax:
-    content: 'public class Model : AIDevKitAsset'
-    content.vb: Public Class Model Inherits AIDevKitAsset
+    content: 'public class Model : AIDevKitAsset, IData'
+    content.vb: Public Class Model Inherits AIDevKitAsset Implements IData
   inheritance:
   - System.Object
   - Glitch9.AIDevKit.AIDevKitAsset
+  implements:
+  - IData
   inheritedMembers:
   - Glitch9.AIDevKit.AIDevKitAsset.id
   - Glitch9.AIDevKit.AIDevKitAsset.displayName
@@ -392,7 +394,7 @@ items:
       type: Glitch9.AIDevKit.Usage
       description: ''
     return:
-      type: Glitch9.Currency
+      type: Currency
       description: ''
     content.vb: Public Function EstimatePrice(usage As Usage) As Currency
   overload: Glitch9.AIDevKit.Model.EstimatePrice*
@@ -464,6 +466,11 @@ references:
   name: AIDevKitAsset
   nameWithType: AIDevKitAsset
   fullName: Glitch9.AIDevKit.AIDevKitAsset
+- uid: IData
+  isExternal: true
+  name: IData
+  nameWithType: IData
+  fullName: IData
 - uid: Glitch9.AIDevKit.AIDevKitAsset.id
   commentId: F:Glitch9.AIDevKit.AIDevKitAsset.id
   parent: Glitch9.AIDevKit.AIDevKitAsset
@@ -790,18 +797,11 @@ references:
   name: Usage
   nameWithType: Usage
   fullName: Glitch9.AIDevKit.Usage
-- uid: Glitch9.Currency
-  commentId: T:Glitch9.Currency
-  parent: Glitch9
+- uid: Currency
+  isExternal: true
   name: Currency
   nameWithType: Currency
-  fullName: Glitch9.Currency
-- uid: Glitch9
-  commentId: N:Glitch9
-  href: Glitch9.html
-  name: Glitch9
-  nameWithType: Glitch9
-  fullName: Glitch9
+  fullName: Currency
 - uid: Glitch9.AIDevKit.Model.op_Implicit*
   commentId: Overload:Glitch9.AIDevKit.Model.op_Implicit
   name: implicit operator

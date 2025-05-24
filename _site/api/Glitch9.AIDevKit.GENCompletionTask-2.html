@@ -252,6 +252,48 @@ a <a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequest.html">ChatComplet
   </table>
 
 
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_AddMessages_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.AddMessages*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_AddMessages_Glitch9_AIDevKit_ChatMessage___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.AddMessages(Glitch9.AIDevKit.ChatMessage[])">AddMessages(params ChatMessage[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf AddMessages(params ChatMessage[] messages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>[]</td>
+        <td><span class="parametername">messages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
   <a id="Glitch9_AIDevKit_GENCompletionTask_2_AddTools_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.AddTools*"></a>
   <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_AddTools_Glitch9_AIDevKit_ToolCall___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.AddTools(Glitch9.AIDevKit.ToolCall[])">AddTools(params ToolCall[])</h4>
   <div class="markdown level1 summary"></div>
@@ -337,7 +379,7 @@ a <a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequest.html">ChatComplet
 
 
   <a id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach*"></a>
-  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_Glitch9_IO_Files_IFile___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach(Glitch9.IO.Files.IFile[])">Attach(params IFile[])</h4>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_Attach_IFile___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.Attach(IFile[])">Attach(params IFile[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -589,14 +631,13 @@ a <a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequest.html">ChatComplet
   </table>
 
 
-  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetModelOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModelOptions*"></a>
-  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)">SetModelOptions(ModelOptions)</h4>
-  <div class="markdown level1 summary"><p>Sets the generation options for the task.</p>
-</div>
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetMessages_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetMessages*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetMessages_Glitch9_AIDevKit_ChatMessage___" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetMessages(Glitch9.AIDevKit.ChatMessage[])">SetMessages(params ChatMessage[])</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TSelf SetModelOptions(ModelOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public TSelf SetMessages(params ChatMessage[] messages)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -609,8 +650,8 @@ a <a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequest.html">ChatComplet
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.ModelOptions.html">ModelOptions</a></td>
-        <td><span class="parametername">options</span></td>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatMessage.html">ChatMessage</a>[]</td>
+        <td><span class="parametername">messages</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -632,13 +673,56 @@ a <a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequest.html">ChatComplet
   </table>
 
 
-  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetModerationOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModerationOptions*"></a>
-  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetModerationOptions_Glitch9_AIDevKit_ModerationOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModerationOptions(Glitch9.AIDevKit.ModerationOptions)">SetModerationOptions(ModerationOptions)</h4>
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetModelSettings_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModelSettings*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetModelSettings_Glitch9_AIDevKit_ModelSettings_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModelSettings(Glitch9.AIDevKit.ModelSettings)">SetModelSettings(ModelSettings)</h4>
+  <div class="markdown level1 summary"><p>Sets the generation options for the task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetModelSettings(ModelSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelSettings.html">ModelSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetModeration_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModeration*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetModeration_Glitch9_AIDevKit_ModerationOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetModeration(Glitch9.AIDevKit.ModerationOptions)">SetModeration(ModerationOptions)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TSelf SetModerationOptions(ModerationOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public TSelf SetModeration(ModerationOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -674,13 +758,13 @@ a <a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequest.html">ChatComplet
   </table>
 
 
-  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningEffort_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningEffort*"></a>
-  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningEffort_Glitch9_AIDevKit_ReasoningEffort_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)">SetReasoningEffort(ReasoningEffort)</h4>
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningEffort)">SetReasoning(ReasoningEffort)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TSelf SetReasoningEffort(ReasoningEffort effort)</code></pre>
+    <pre><code class="lang-csharp hljs">public TSelf SetReasoning(ReasoningEffort effort)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -716,13 +800,13 @@ a <a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequest.html">ChatComplet
   </table>
 
 
-  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningOptions*"></a>
-  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)">SetReasoningOptions(ReasoningOptions)</h4>
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetReasoning_Glitch9_AIDevKit_ReasoningOptions_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetReasoning(Glitch9.AIDevKit.ReasoningOptions)">SetReasoning(ReasoningOptions)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TSelf SetReasoningOptions(ReasoningOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public TSelf SetReasoning(ReasoningOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -779,6 +863,48 @@ a <a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequest.html">ChatComplet
       <tr>
         <td><a class="xref" href="Glitch9.AIDevKit.SpeechOutputOptions.html">SpeechOutputOptions</a></td>
         <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_GENCompletionTask_2_SetStartingMessage_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetStartingMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_GENCompletionTask_2_SetStartingMessage_System_String_" data-uid="Glitch9.AIDevKit.GENCompletionTask`2.SetStartingMessage(System.String)">SetStartingMessage(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetStartingMessage(string startingMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">startingMessage</span></td>
         <td></td>
       </tr>
     </tbody>

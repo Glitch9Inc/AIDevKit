@@ -11,7 +11,7 @@ items:
   - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest)
   - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.TranscriptRequest)
   - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
-  - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  - Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
   langs:
   - csharp
   - vb
@@ -55,17 +55,17 @@ items:
       type: UniTask{Glitch9.AIDevKit.GeneratedAudio}
     content.vb: Public Shared Function ExecuteAsync(request As SpeechRequest) As UniTask(Of GeneratedAudio)
   overload: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync*
-- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
-  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
-  id: StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+- uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
+  commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
+  id: StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest,RealtimeAudioPlayer)
   isExtensionMethod: true
   parent: Glitch9.AIDevKit.ElevenLabs.RequestExtensions
   langs:
   - csharp
   - vb
-  name: StreamAsync(SpeechRequest, StreamAudioPlayer)
-  nameWithType: RequestExtensions.StreamAsync(SpeechRequest, StreamAudioPlayer)
-  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest, Glitch9.CoreLib.IO.Audio.StreamAudioPlayer)
+  name: StreamAsync(SpeechRequest, RealtimeAudioPlayer)
+  nameWithType: RequestExtensions.StreamAsync(SpeechRequest, RealtimeAudioPlayer)
+  fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync(Glitch9.AIDevKit.ElevenLabs.SpeechRequest, RealtimeAudioPlayer)
   type: Method
   source:
     id: StreamAsync
@@ -73,15 +73,15 @@ items:
     startLine: 14
   namespace: Glitch9.AIDevKit.ElevenLabs
   syntax:
-    content: public static UniTask StreamAsync(this SpeechRequest request, StreamAudioPlayer streamAudioPlayer)
+    content: public static UniTask StreamAsync(this SpeechRequest request, RealtimeAudioPlayer streamAudioPlayer)
     parameters:
     - id: request
       type: Glitch9.AIDevKit.ElevenLabs.SpeechRequest
     - id: streamAudioPlayer
-      type: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+      type: RealtimeAudioPlayer
     return:
       type: UniTask
-    content.vb: Public Shared Function StreamAsync(request As SpeechRequest, streamAudioPlayer As StreamAudioPlayer) As UniTask
+    content.vb: Public Shared Function StreamAsync(request As SpeechRequest, streamAudioPlayer As RealtimeAudioPlayer) As UniTask
   overload: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync*
 - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.TranscriptRequest)
   commentId: M:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.TranscriptRequest)
@@ -158,7 +158,7 @@ items:
     - id: request
       type: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery
     return:
-      type: UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData}}
+      type: UniTask{QueryResponse{Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData}}
     content.vb: Public Shared Function ExecuteAsync(request As ElevenLabsQuery) As UniTask(Of QueryResponse(Of ElevenLabsSharedVoiceData))
   overload: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync*
 - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.ExecuteAsync(Glitch9.AIDevKit.ElevenLabs.VoiceChangerRequest)
@@ -330,59 +330,20 @@ references:
   - name: )
 - uid: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync*
   commentId: Overload:Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync
-  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_Glitch9_CoreLib_IO_Audio_StreamAudioPlayer_
+  href: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.html#Glitch9_AIDevKit_ElevenLabs_RequestExtensions_StreamAsync_Glitch9_AIDevKit_ElevenLabs_SpeechRequest_RealtimeAudioPlayer_
   name: StreamAsync
   nameWithType: RequestExtensions.StreamAsync
   fullName: Glitch9.AIDevKit.ElevenLabs.RequestExtensions.StreamAsync
-- uid: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
-  commentId: T:Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
-  parent: Glitch9.CoreLib.IO.Audio
-  name: StreamAudioPlayer
-  nameWithType: StreamAudioPlayer
-  fullName: Glitch9.CoreLib.IO.Audio.StreamAudioPlayer
+- uid: RealtimeAudioPlayer
+  isExternal: true
+  name: RealtimeAudioPlayer
+  nameWithType: RealtimeAudioPlayer
+  fullName: RealtimeAudioPlayer
 - uid: UniTask
   isExternal: true
   name: UniTask
   nameWithType: UniTask
   fullName: UniTask
-- uid: Glitch9.CoreLib.IO.Audio
-  commentId: N:Glitch9.CoreLib.IO.Audio
-  href: Glitch9.html
-  name: Glitch9.CoreLib.IO.Audio
-  nameWithType: Glitch9.CoreLib.IO.Audio
-  fullName: Glitch9.CoreLib.IO.Audio
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.CoreLib
-    name: CoreLib
-    href: Glitch9.CoreLib.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO
-    name: IO
-    href: Glitch9.CoreLib.IO.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO.Audio
-    name: Audio
-    href: Glitch9.CoreLib.IO.Audio.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.CoreLib
-    name: CoreLib
-    href: Glitch9.CoreLib.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO
-    name: IO
-    href: Glitch9.CoreLib.IO.html
-  - name: .
-  - uid: Glitch9.CoreLib.IO.Audio
-    name: Audio
-    href: Glitch9.CoreLib.IO.Audio.html
 - uid: Glitch9.AIDevKit.ElevenLabs.TranscriptRequest
   commentId: T:Glitch9.AIDevKit.ElevenLabs.TranscriptRequest
   parent: Glitch9.AIDevKit.ElevenLabs
@@ -434,23 +395,24 @@ references:
   name: ElevenLabsQuery
   nameWithType: ElevenLabsQuery
   fullName: Glitch9.AIDevKit.ElevenLabs.ElevenLabsQuery
-- uid: UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData}}
-  commentId: '!:UniTask{Glitch9.IO.Networking.RESTApi.QueryResponse{Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData}}'
+- uid: UniTask{QueryResponse{Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData}}
+  commentId: '!:UniTask{QueryResponse{Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData}}'
   definition: UniTask`1
   href: Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData.html
   name: UniTask<QueryResponse<ElevenLabsSharedVoiceData>>
   nameWithType: UniTask<QueryResponse<ElevenLabsSharedVoiceData>>
-  fullName: UniTask<Glitch9.IO.Networking.RESTApi.QueryResponse<Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData>>
+  fullName: UniTask<QueryResponse<Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData>>
   nameWithType.vb: UniTask(Of QueryResponse(Of ElevenLabsSharedVoiceData))
-  fullName.vb: UniTask(Of Glitch9.IO.Networking.RESTApi.QueryResponse(Of Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData))
+  fullName.vb: UniTask(Of QueryResponse(Of Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData))
   name.vb: UniTask(Of QueryResponse(Of ElevenLabsSharedVoiceData))
   spec.csharp:
   - uid: UniTask`1
     name: UniTask
     isExternal: true
   - name: <
-  - uid: Glitch9.IO.Networking.RESTApi.QueryResponse`1
+  - uid: QueryResponse`1
     name: QueryResponse
+    isExternal: true
   - name: <
   - uid: Glitch9.AIDevKit.ElevenLabs.ElevenLabsSharedVoiceData
     name: ElevenLabsSharedVoiceData
@@ -464,8 +426,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.IO.Networking.RESTApi.QueryResponse`1
+  - uid: QueryResponse`1
     name: QueryResponse
+    isExternal: true
   - name: (
   - name: Of
   - name: " "

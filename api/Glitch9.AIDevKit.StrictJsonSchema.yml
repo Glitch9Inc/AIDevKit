@@ -6,7 +6,7 @@ items:
   parent: Glitch9.AIDevKit
   children:
   - Glitch9.AIDevKit.StrictJsonSchema.#ctor
-  - Glitch9.AIDevKit.StrictJsonSchema.#ctor(Glitch9.AIDevKit.StrictJsonSchemaAttribute,Glitch9.IO.Json.Schema.JsonSchema)
+  - Glitch9.AIDevKit.StrictJsonSchema.#ctor(Glitch9.AIDevKit.StrictJsonSchemaAttribute,JsonSchema)
   - Glitch9.AIDevKit.StrictJsonSchema.Description
   - Glitch9.AIDevKit.StrictJsonSchema.Name
   - Glitch9.AIDevKit.StrictJsonSchema.Schema
@@ -117,7 +117,7 @@ items:
     content: public JsonSchema Schema { get; set; }
     parameters: []
     return:
-      type: Glitch9.IO.Json.Schema.JsonSchema
+      type: JsonSchema
     content.vb: Public Property Schema As JsonSchema
   overload: Glitch9.AIDevKit.StrictJsonSchema.Schema*
 - uid: Glitch9.AIDevKit.StrictJsonSchema.#ctor
@@ -143,16 +143,16 @@ items:
   nameWithType.vb: StrictJsonSchema.New()
   fullName.vb: Glitch9.AIDevKit.StrictJsonSchema.New()
   name.vb: New()
-- uid: Glitch9.AIDevKit.StrictJsonSchema.#ctor(Glitch9.AIDevKit.StrictJsonSchemaAttribute,Glitch9.IO.Json.Schema.JsonSchema)
-  commentId: M:Glitch9.AIDevKit.StrictJsonSchema.#ctor(Glitch9.AIDevKit.StrictJsonSchemaAttribute,Glitch9.IO.Json.Schema.JsonSchema)
-  id: '#ctor(Glitch9.AIDevKit.StrictJsonSchemaAttribute,Glitch9.IO.Json.Schema.JsonSchema)'
+- uid: Glitch9.AIDevKit.StrictJsonSchema.#ctor(Glitch9.AIDevKit.StrictJsonSchemaAttribute,JsonSchema)
+  commentId: M:Glitch9.AIDevKit.StrictJsonSchema.#ctor(Glitch9.AIDevKit.StrictJsonSchemaAttribute,JsonSchema)
+  id: '#ctor(Glitch9.AIDevKit.StrictJsonSchemaAttribute,JsonSchema)'
   parent: Glitch9.AIDevKit.StrictJsonSchema
   langs:
   - csharp
   - vb
   name: StrictJsonSchema(StrictJsonSchemaAttribute, JsonSchema)
   nameWithType: StrictJsonSchema.StrictJsonSchema(StrictJsonSchemaAttribute, JsonSchema)
-  fullName: Glitch9.AIDevKit.StrictJsonSchema.StrictJsonSchema(Glitch9.AIDevKit.StrictJsonSchemaAttribute, Glitch9.IO.Json.Schema.JsonSchema)
+  fullName: Glitch9.AIDevKit.StrictJsonSchema.StrictJsonSchema(Glitch9.AIDevKit.StrictJsonSchemaAttribute, JsonSchema)
   type: Constructor
   source:
     id: .ctor
@@ -165,11 +165,11 @@ items:
     - id: attribute
       type: Glitch9.AIDevKit.StrictJsonSchemaAttribute
     - id: schema
-      type: Glitch9.IO.Json.Schema.JsonSchema
+      type: JsonSchema
     content.vb: Public Sub New(attribute As StrictJsonSchemaAttribute, schema As JsonSchema)
   overload: Glitch9.AIDevKit.StrictJsonSchema.#ctor*
   nameWithType.vb: StrictJsonSchema.New(StrictJsonSchemaAttribute, JsonSchema)
-  fullName.vb: Glitch9.AIDevKit.StrictJsonSchema.New(Glitch9.AIDevKit.StrictJsonSchemaAttribute, Glitch9.IO.Json.Schema.JsonSchema)
+  fullName.vb: Glitch9.AIDevKit.StrictJsonSchema.New(Glitch9.AIDevKit.StrictJsonSchemaAttribute, JsonSchema)
   name.vb: New(StrictJsonSchemaAttribute, JsonSchema)
 references:
 - uid: Glitch9.AIDevKit
@@ -255,50 +255,11 @@ references:
   name: Schema
   nameWithType: StrictJsonSchema.Schema
   fullName: Glitch9.AIDevKit.StrictJsonSchema.Schema
-- uid: Glitch9.IO.Json.Schema.JsonSchema
-  commentId: T:Glitch9.IO.Json.Schema.JsonSchema
-  parent: Glitch9.IO.Json.Schema
+- uid: JsonSchema
+  isExternal: true
   name: JsonSchema
   nameWithType: JsonSchema
-  fullName: Glitch9.IO.Json.Schema.JsonSchema
-- uid: Glitch9.IO.Json.Schema
-  commentId: N:Glitch9.IO.Json.Schema
-  href: Glitch9.html
-  name: Glitch9.IO.Json.Schema
-  nameWithType: Glitch9.IO.Json.Schema
-  fullName: Glitch9.IO.Json.Schema
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Json
-    name: Json
-    href: Glitch9.IO.Json.html
-  - name: .
-  - uid: Glitch9.IO.Json.Schema
-    name: Schema
-    href: Glitch9.IO.Json.Schema.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Json
-    name: Json
-    href: Glitch9.IO.Json.html
-  - name: .
-  - uid: Glitch9.IO.Json.Schema
-    name: Schema
-    href: Glitch9.IO.Json.Schema.html
+  fullName: JsonSchema
 - uid: Glitch9.AIDevKit.StrictJsonSchema.#ctor*
   commentId: Overload:Glitch9.AIDevKit.StrictJsonSchema.#ctor
   href: Glitch9.AIDevKit.StrictJsonSchema.html#Glitch9_AIDevKit_StrictJsonSchema__ctor

@@ -27,7 +27,6 @@ items:
     content.vb: Public Class EmbeddingRequest Inherits AIRequest
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.RequestBody
   - Glitch9.AIDevKit.AIRequest
   inheritedMembers:
   - Glitch9.AIDevKit.AIRequest.Model
@@ -67,7 +66,7 @@ items:
     content: public StringOr<string> Input { get; set; }
     parameters: []
     return:
-      type: Glitch9.IO.Networking.RESTApi.StringOr{System.String}
+      type: StringOr{System.String}
     content.vb: Public Property Input As StringOr(Of String)
   overload: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Input*
 - uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat
@@ -164,12 +163,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody
-  parent: Glitch9.IO.Networking.RESTApi
-  name: RequestBody
-  nameWithType: RequestBody
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody
 - uid: Glitch9.AIDevKit.AIRequest
   commentId: T:Glitch9.AIDevKit.AIRequest
   parent: Glitch9.AIDevKit
@@ -238,44 +231,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
   href: Glitch9.html
@@ -335,27 +290,28 @@ references:
   name: Input
   nameWithType: EmbeddingRequest.Input
   fullName: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.Input
-- uid: Glitch9.IO.Networking.RESTApi.StringOr{System.String}
-  commentId: T:Glitch9.IO.Networking.RESTApi.StringOr{System.String}
-  parent: Glitch9.IO.Networking.RESTApi
-  definition: Glitch9.IO.Networking.RESTApi.StringOr`1
+- uid: StringOr{System.String}
+  commentId: '!:StringOr{System.String}'
+  definition: StringOr`1
   name: StringOr<string>
   nameWithType: StringOr<string>
-  fullName: Glitch9.IO.Networking.RESTApi.StringOr<string>
+  fullName: StringOr<string>
   nameWithType.vb: StringOr(Of String)
-  fullName.vb: Glitch9.IO.Networking.RESTApi.StringOr(Of String)
+  fullName.vb: StringOr(Of String)
   name.vb: StringOr(Of String)
   spec.csharp:
-  - uid: Glitch9.IO.Networking.RESTApi.StringOr`1
+  - uid: StringOr`1
     name: StringOr
+    isExternal: true
   - name: <
   - uid: System.String
     name: string
     isExternal: true
   - name: '>'
   spec.vb:
-  - uid: Glitch9.IO.Networking.RESTApi.StringOr`1
+  - uid: StringOr`1
     name: StringOr
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
@@ -363,27 +319,29 @@ references:
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.IO.Networking.RESTApi.StringOr`1
-  commentId: T:Glitch9.IO.Networking.RESTApi.StringOr`1
-  name: StringOr<T>
-  nameWithType: StringOr<T>
-  fullName: Glitch9.IO.Networking.RESTApi.StringOr<T>
-  nameWithType.vb: StringOr(Of T)
-  fullName.vb: Glitch9.IO.Networking.RESTApi.StringOr(Of T)
-  name.vb: StringOr(Of T)
+- uid: StringOr`1
+  isExternal: true
+  name: StringOr<>
+  nameWithType: StringOr<>
+  fullName: StringOr<>
+  nameWithType.vb: StringOr(Of )
+  fullName.vb: StringOr(Of )
+  name.vb: StringOr(Of )
   spec.csharp:
-  - uid: Glitch9.IO.Networking.RESTApi.StringOr`1
+  - uid: StringOr`1
     name: StringOr
+    isExternal: true
   - name: <
-  - name: T
+  - name: ''
   - name: '>'
   spec.vb:
-  - uid: Glitch9.IO.Networking.RESTApi.StringOr`1
+  - uid: StringOr`1
     name: StringOr
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: ''
   - name: )
 - uid: Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat*
   commentId: Overload:Glitch9.AIDevKit.OpenAI.EmbeddingRequest.EncodingFormat

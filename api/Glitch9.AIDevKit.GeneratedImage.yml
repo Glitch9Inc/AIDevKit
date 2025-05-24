@@ -6,8 +6,8 @@ items:
   parent: Glitch9.AIDevKit
   children:
   - Glitch9.AIDevKit.GeneratedImage.ToFiles
-  - Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Glitch9.IO.Files.File{Texture2D}
-  - Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Glitch9.IO.Files.File{Texture2D}[]
+  - Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~File{Texture2D}
+  - Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~File{Texture2D}[]
   - Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Sprite
   - Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Sprite[]
   - Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Texture2D
@@ -34,16 +34,14 @@ items:
     content.vb: Public Class GeneratedImage Inherits GeneratedAsset(Of Texture2D, File(Of Texture2D)) Implements IGeneratedResult
   inheritance:
   - System.Object
-  - Glitch9.Result
-  - Glitch9.IO.Networking.RESTApi.RESTResponse
   - Glitch9.AIDevKit.GeneratedResult{Texture2D}
-  - Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}
+  - Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}
   implements:
   - Glitch9.AIDevKit.IGeneratedResult
   inheritedMembers:
-  - Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.Paths
-  - Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.Item(System.String)
-  - Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.ToFiles
+  - Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.Paths
+  - Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.Item(System.String)
+  - Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.ToFiles
   - Glitch9.AIDevKit.GeneratedResult{Texture2D}.Values
   - Glitch9.AIDevKit.GeneratedResult{Texture2D}.Count
   - Glitch9.AIDevKit.GeneratedResult{Texture2D}.Usage
@@ -162,16 +160,16 @@ items:
   nameWithType.vb: GeneratedImage.CType(GeneratedImage)
   fullName.vb: Glitch9.AIDevKit.GeneratedImage.CType(Glitch9.AIDevKit.GeneratedImage)
   name.vb: CType(GeneratedImage)
-- uid: Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Glitch9.IO.Files.File{Texture2D}
-  commentId: M:Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Glitch9.IO.Files.File{Texture2D}
-  id: op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Glitch9.IO.Files.File{Texture2D}
+- uid: Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~File{Texture2D}
+  commentId: M:Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~File{Texture2D}
+  id: op_Implicit(Glitch9.AIDevKit.GeneratedImage)~File{Texture2D}
   parent: Glitch9.AIDevKit.GeneratedImage
   langs:
   - csharp
   - vb
   name: implicit operator File<Texture2D>(GeneratedImage)
   nameWithType: GeneratedImage.implicit operator File<Texture2D>(GeneratedImage)
-  fullName: Glitch9.AIDevKit.GeneratedImage.implicit operator Glitch9.IO.Files.File<Texture2D>(Glitch9.AIDevKit.GeneratedImage)
+  fullName: Glitch9.AIDevKit.GeneratedImage.implicit operator File<Texture2D>(Glitch9.AIDevKit.GeneratedImage)
   type: Operator
   source:
     id: op_Implicit
@@ -184,22 +182,22 @@ items:
     - id: generatedImage
       type: Glitch9.AIDevKit.GeneratedImage
     return:
-      type: Glitch9.IO.Files.File{Texture2D}
+      type: File{Texture2D}
     content.vb: Public Shared Widening Operator CType(generatedImage As GeneratedImage) As File(Of Texture2D)
   overload: Glitch9.AIDevKit.GeneratedImage.op_Implicit*
   nameWithType.vb: GeneratedImage.CType(GeneratedImage)
   fullName.vb: Glitch9.AIDevKit.GeneratedImage.CType(Glitch9.AIDevKit.GeneratedImage)
   name.vb: CType(GeneratedImage)
-- uid: Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Glitch9.IO.Files.File{Texture2D}[]
-  commentId: M:Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Glitch9.IO.Files.File{Texture2D}[]
-  id: op_Implicit(Glitch9.AIDevKit.GeneratedImage)~Glitch9.IO.Files.File{Texture2D}[]
+- uid: Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~File{Texture2D}[]
+  commentId: M:Glitch9.AIDevKit.GeneratedImage.op_Implicit(Glitch9.AIDevKit.GeneratedImage)~File{Texture2D}[]
+  id: op_Implicit(Glitch9.AIDevKit.GeneratedImage)~File{Texture2D}[]
   parent: Glitch9.AIDevKit.GeneratedImage
   langs:
   - csharp
   - vb
   name: implicit operator File<Texture2D>[](GeneratedImage)
   nameWithType: GeneratedImage.implicit operator File<Texture2D>[](GeneratedImage)
-  fullName: Glitch9.AIDevKit.GeneratedImage.implicit operator Glitch9.IO.Files.File<Texture2D>[](Glitch9.AIDevKit.GeneratedImage)
+  fullName: Glitch9.AIDevKit.GeneratedImage.implicit operator File<Texture2D>[](Glitch9.AIDevKit.GeneratedImage)
   type: Operator
   source:
     id: op_Implicit
@@ -212,7 +210,7 @@ items:
     - id: generatedImage
       type: Glitch9.AIDevKit.GeneratedImage
     return:
-      type: Glitch9.IO.Files.File{Texture2D}[]
+      type: File{Texture2D}[]
     content.vb: Public Shared Widening Operator CType(generatedImage As GeneratedImage) As File(Of Texture2D)()
   overload: Glitch9.AIDevKit.GeneratedImage.op_Implicit*
   nameWithType.vb: GeneratedImage.CType(GeneratedImage)
@@ -238,9 +236,9 @@ items:
   syntax:
     content: public override File<Texture2D>[] ToFiles()
     return:
-      type: Glitch9.IO.Files.File{Texture2D}[]
+      type: File{Texture2D}[]
     content.vb: Public Overrides Function ToFiles() As File(Of Texture2D)()
-  overridden: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.ToFiles
+  overridden: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.ToFiles
   overload: Glitch9.AIDevKit.GeneratedImage.ToFiles*
 references:
 - uid: Glitch9.AIDevKit
@@ -275,18 +273,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.Result
-  commentId: T:Glitch9.Result
-  parent: Glitch9
-  name: Result
-  nameWithType: Result
-  fullName: Glitch9.Result
-- uid: Glitch9.IO.Networking.RESTApi.RESTResponse
-  commentId: T:Glitch9.IO.Networking.RESTApi.RESTResponse
-  parent: Glitch9.IO.Networking.RESTApi
-  name: RESTResponse
-  nameWithType: RESTResponse
-  fullName: Glitch9.IO.Networking.RESTApi.RESTResponse
 - uid: Glitch9.AIDevKit.GeneratedResult{Texture2D}
   commentId: T:Glitch9.AIDevKit.GeneratedResult{Texture2D}
   parent: Glitch9.AIDevKit
@@ -318,16 +304,16 @@ references:
     name: Texture2D
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}
-  commentId: T:Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}
+- uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}
+  commentId: T:Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}
   parent: Glitch9.AIDevKit
   definition: Glitch9.AIDevKit.GeneratedAsset`2
   href: Glitch9.AIDevKit.GeneratedAsset-2.html
   name: GeneratedAsset<Texture2D, File<Texture2D>>
   nameWithType: GeneratedAsset<Texture2D, File<Texture2D>>
-  fullName: Glitch9.AIDevKit.GeneratedAsset<Texture2D, Glitch9.IO.Files.File<Texture2D>>
+  fullName: Glitch9.AIDevKit.GeneratedAsset<Texture2D, File<Texture2D>>
   nameWithType.vb: GeneratedAsset(Of Texture2D, File(Of Texture2D))
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of Texture2D, Glitch9.IO.Files.File(Of Texture2D))
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of Texture2D, File(Of Texture2D))
   name.vb: GeneratedAsset(Of Texture2D, File(Of Texture2D))
   spec.csharp:
   - uid: Glitch9.AIDevKit.GeneratedAsset`2
@@ -339,8 +325,9 @@ references:
     isExternal: true
   - name: ','
   - name: " "
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
   - uid: Texture2D
     name: Texture2D
@@ -359,8 +346,9 @@ references:
     isExternal: true
   - name: ','
   - name: " "
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
@@ -376,26 +364,26 @@ references:
   name: IGeneratedResult
   nameWithType: IGeneratedResult
   fullName: Glitch9.AIDevKit.IGeneratedResult
-- uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.Paths
-  commentId: P:Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.Paths
-  parent: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}
+- uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.Paths
+  commentId: P:Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.Paths
+  parent: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}
   definition: Glitch9.AIDevKit.GeneratedAsset`2.Paths
   href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Paths
   name: Paths
   nameWithType: GeneratedAsset<Texture2D, File<Texture2D>>.Paths
-  fullName: Glitch9.AIDevKit.GeneratedAsset<Texture2D, Glitch9.IO.Files.File<Texture2D>>.Paths
+  fullName: Glitch9.AIDevKit.GeneratedAsset<Texture2D, File<Texture2D>>.Paths
   nameWithType.vb: GeneratedAsset(Of Texture2D, File(Of Texture2D)).Paths
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of Texture2D, Glitch9.IO.Files.File(Of Texture2D)).Paths
-- uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.Item(System.String)
-  commentId: P:Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.Item(System.String)
-  parent: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of Texture2D, File(Of Texture2D)).Paths
+- uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.Item(System.String)
+  commentId: P:Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.Item(System.String)
+  parent: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}
   definition: Glitch9.AIDevKit.GeneratedAsset`2.Item(System.String)
   href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Item_System_String_
   name: this[string]
   nameWithType: GeneratedAsset<Texture2D, File<Texture2D>>.this[string]
-  fullName: Glitch9.AIDevKit.GeneratedAsset<Texture2D, Glitch9.IO.Files.File<Texture2D>>.this[string]
+  fullName: Glitch9.AIDevKit.GeneratedAsset<Texture2D, File<Texture2D>>.this[string]
   nameWithType.vb: GeneratedAsset(Of Texture2D, File(Of Texture2D)).this[](String)
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of Texture2D, Glitch9.IO.Files.File(Of Texture2D)).this[](String)
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of Texture2D, File(Of Texture2D)).this[](String)
   name.vb: this[](String)
   spec.csharp:
   - name: this
@@ -405,7 +393,7 @@ references:
     isExternal: true
   - name: ']'
   spec.vb:
-  - uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.Item(System.String)
+  - uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.Item(System.String)
     name: this[]
     href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_Item_System_String_
   - name: (
@@ -413,24 +401,24 @@ references:
     name: String
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.ToFiles
-  commentId: M:Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.ToFiles
-  parent: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}
+- uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.ToFiles
+  commentId: M:Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.ToFiles
+  parent: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}
   definition: Glitch9.AIDevKit.GeneratedAsset`2.ToFiles
   href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles
   name: ToFiles()
   nameWithType: GeneratedAsset<Texture2D, File<Texture2D>>.ToFiles()
-  fullName: Glitch9.AIDevKit.GeneratedAsset<Texture2D, Glitch9.IO.Files.File<Texture2D>>.ToFiles()
+  fullName: Glitch9.AIDevKit.GeneratedAsset<Texture2D, File<Texture2D>>.ToFiles()
   nameWithType.vb: GeneratedAsset(Of Texture2D, File(Of Texture2D)).ToFiles()
-  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of Texture2D, Glitch9.IO.Files.File(Of Texture2D)).ToFiles()
+  fullName.vb: Glitch9.AIDevKit.GeneratedAsset(Of Texture2D, File(Of Texture2D)).ToFiles()
   spec.csharp:
-  - uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.ToFiles
+  - uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.ToFiles
     name: ToFiles
     href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles
   - name: (
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,Glitch9.IO.Files.File{Texture2D}}.ToFiles
+  - uid: Glitch9.AIDevKit.GeneratedAsset{Texture2D,File{Texture2D}}.ToFiles
     name: ToFiles
     href: Glitch9.AIDevKit.GeneratedAsset-2.html#Glitch9_AIDevKit_GeneratedAsset_2_ToFiles
   - name: (
@@ -519,50 +507,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9
-  commentId: N:Glitch9
-  href: Glitch9.html
-  name: Glitch9
-  nameWithType: Glitch9
-  fullName: Glitch9
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit.GeneratedResult`1
   commentId: T:Glitch9.AIDevKit.GeneratedResult`1
   href: Glitch9.AIDevKit.GeneratedResult-1.html
@@ -808,27 +752,28 @@ references:
     isExternal: true
   - name: (
   - name: )
-- uid: Glitch9.IO.Files.File{Texture2D}
-  commentId: T:Glitch9.IO.Files.File{Texture2D}
-  parent: Glitch9.IO.Files
-  definition: Glitch9.IO.Files.File`1
+- uid: File{Texture2D}
+  commentId: '!:File{Texture2D}'
+  definition: File`1
   name: File<Texture2D>
   nameWithType: File<Texture2D>
-  fullName: Glitch9.IO.Files.File<Texture2D>
+  fullName: File<Texture2D>
   nameWithType.vb: File(Of Texture2D)
-  fullName.vb: Glitch9.IO.Files.File(Of Texture2D)
+  fullName.vb: File(Of Texture2D)
   name.vb: File(Of Texture2D)
   spec.csharp:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
   - uid: Texture2D
     name: Texture2D
     isExternal: true
   - name: '>'
   spec.vb:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
@@ -836,69 +781,42 @@ references:
     name: Texture2D
     isExternal: true
   - name: )
-- uid: Glitch9.IO.Files.File`1
-  commentId: T:Glitch9.IO.Files.File`1
-  name: File<T>
-  nameWithType: File<T>
-  fullName: Glitch9.IO.Files.File<T>
-  nameWithType.vb: File(Of T)
-  fullName.vb: Glitch9.IO.Files.File(Of T)
-  name.vb: File(Of T)
+- uid: File`1
+  isExternal: true
+  name: File<>
+  nameWithType: File<>
+  fullName: File<>
+  nameWithType.vb: File(Of )
+  fullName.vb: File(Of )
+  name.vb: File(Of )
   spec.csharp:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
-  - name: T
+  - name: ''
   - name: '>'
   spec.vb:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: ''
   - name: )
-- uid: Glitch9.IO.Files
-  commentId: N:Glitch9.IO.Files
-  href: Glitch9.html
-  name: Glitch9.IO.Files
-  nameWithType: Glitch9.IO.Files
-  fullName: Glitch9.IO.Files
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-- uid: Glitch9.IO.Files.File{Texture2D}[]
+- uid: File{Texture2D}[]
   isExternal: true
   name: File<Texture2D>[]
   nameWithType: File<Texture2D>[]
-  fullName: Glitch9.IO.Files.File<Texture2D>[]
+  fullName: File<Texture2D>[]
   nameWithType.vb: File(Of Texture2D)()
-  fullName.vb: Glitch9.IO.Files.File(Of Texture2D)()
+  fullName.vb: File(Of Texture2D)()
   name.vb: File(Of Texture2D)()
   spec.csharp:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: <
   - uid: Texture2D
     name: Texture2D
@@ -907,8 +825,9 @@ references:
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: Glitch9.IO.Files.File`1
+  - uid: File`1
     name: File
+    isExternal: true
   - name: (
   - name: Of
   - name: " "

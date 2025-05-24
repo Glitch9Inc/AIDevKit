@@ -16,6 +16,7 @@ items:
   - Glitch9.AIDevKit.Google.GoogleFile.ExpiresAt
   - Glitch9.AIDevKit.Google.GoogleFile.Id
   - Glitch9.AIDevKit.Google.GoogleFile.MimeType
+  - Glitch9.AIDevKit.Google.GoogleFile.MimeTypeAsString
   - Glitch9.AIDevKit.Google.GoogleFile.Name
   - Glitch9.AIDevKit.Google.GoogleFile.Sha256Hash
   - Glitch9.AIDevKit.Google.GoogleFile.Source
@@ -33,19 +34,18 @@ items:
   source:
     id: GoogleFile
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 34
+    startLine: 62
   namespace: Glitch9.AIDevKit.Google
   summary: A file uploaded to the API.
   example: []
   syntax:
-    content: 'public class GoogleFile : IApiFile'
-    content.vb: Public Class GoogleFile Implements IApiFile
+    content: 'public class GoogleFile : IApiFile, IData'
+    content.vb: Public Class GoogleFile Implements IApiFile, IData
   inheritance:
   - System.Object
-  derivedClasses:
-  - Glitch9.AIDevKit.Google.GoogleFileUploadRequest
   implements:
   - Glitch9.AIDevKit.IApiFile
+  - IData
 - uid: Glitch9.AIDevKit.Google.GoogleFile.Id
   commentId: P:Glitch9.AIDevKit.Google.GoogleFile.Id
   id: Id
@@ -60,7 +60,7 @@ items:
   source:
     id: Id
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 48
+    startLine: 76
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Immutable. Identifier. 
@@ -104,7 +104,7 @@ items:
   source:
     id: Name
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 58
+    startLine: 86
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Optional. 
@@ -126,6 +126,34 @@ items:
       type: System.String
     content.vb: Public Property Name As String
   overload: Glitch9.AIDevKit.Google.GoogleFile.Name*
+- uid: Glitch9.AIDevKit.Google.GoogleFile.MimeTypeAsString
+  commentId: P:Glitch9.AIDevKit.Google.GoogleFile.MimeTypeAsString
+  id: MimeTypeAsString
+  parent: Glitch9.AIDevKit.Google.GoogleFile
+  langs:
+  - csharp
+  - vb
+  name: MimeTypeAsString
+  nameWithType: GoogleFile.MimeTypeAsString
+  fullName: Glitch9.AIDevKit.Google.GoogleFile.MimeTypeAsString
+  type: Property
+  source:
+    id: MimeTypeAsString
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
+    startLine: 92
+  namespace: Glitch9.AIDevKit.Google
+  summary: >-
+    Output only. 
+
+    <p>MIME type of the <xref href="Glitch9.AIDevKit.Google.GoogleFile" data-throw-if-not-resolved="false"></xref>.</p>
+  example: []
+  syntax:
+    content: public string MimeTypeAsString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MimeTypeAsString As String
+  overload: Glitch9.AIDevKit.Google.GoogleFile.MimeTypeAsString*
 - uid: Glitch9.AIDevKit.Google.GoogleFile.MimeType
   commentId: P:Glitch9.AIDevKit.Google.GoogleFile.MimeType
   id: MimeType
@@ -140,19 +168,15 @@ items:
   source:
     id: MimeType
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 64
+    startLine: 93
   namespace: Glitch9.AIDevKit.Google
-  summary: >-
-    Output only. 
-
-    <p>MIME type of the <xref href="Glitch9.AIDevKit.Google.GoogleFile" data-throw-if-not-resolved="false"></xref>.</p>
   example: []
   syntax:
-    content: public MIMEType MimeType { get; set; }
+    content: public MIMEType MimeType { get; }
     parameters: []
     return:
-      type: Glitch9.IO.Files.MIMEType
-    content.vb: Public Property MimeType As MIMEType
+      type: MIMEType
+    content.vb: Public ReadOnly Property MimeType As MIMEType
   overload: Glitch9.AIDevKit.Google.GoogleFile.MimeType*
   implements:
   - Glitch9.AIDevKit.IApiFile.MimeType
@@ -170,7 +194,7 @@ items:
   source:
     id: ByteSize
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 70
+    startLine: 99
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Output only. 
@@ -200,7 +224,7 @@ items:
   source:
     id: CreateTime
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 76
+    startLine: 105
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Output only.
@@ -211,7 +235,7 @@ items:
     content: public ZuluTime? CreateTime { get; set; }
     parameters: []
     return:
-      type: System.Nullable{Glitch9.ZuluTime}
+      type: System.Nullable{ZuluTime}
     content.vb: Public Property CreateTime As ZuluTime?
   overload: Glitch9.AIDevKit.Google.GoogleFile.CreateTime*
 - uid: Glitch9.AIDevKit.Google.GoogleFile.UpdateTime
@@ -228,7 +252,7 @@ items:
   source:
     id: UpdateTime
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 82
+    startLine: 111
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Output only. 
@@ -239,7 +263,7 @@ items:
     content: public ZuluTime? UpdateTime { get; set; }
     parameters: []
     return:
-      type: System.Nullable{Glitch9.ZuluTime}
+      type: System.Nullable{ZuluTime}
     content.vb: Public Property UpdateTime As ZuluTime?
   overload: Glitch9.AIDevKit.Google.GoogleFile.UpdateTime*
 - uid: Glitch9.AIDevKit.Google.GoogleFile.ExpirationTime
@@ -256,7 +280,7 @@ items:
   source:
     id: ExpirationTime
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 91
+    startLine: 120
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Output only. 
@@ -273,7 +297,7 @@ items:
     content: public ZuluTime? ExpirationTime { get; set; }
     parameters: []
     return:
-      type: System.Nullable{Glitch9.ZuluTime}
+      type: System.Nullable{ZuluTime}
     content.vb: Public Property ExpirationTime As ZuluTime?
   overload: Glitch9.AIDevKit.Google.GoogleFile.ExpirationTime*
 - uid: Glitch9.AIDevKit.Google.GoogleFile.Sha256Hash
@@ -290,7 +314,7 @@ items:
   source:
     id: Sha256Hash
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 98
+    startLine: 127
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Output only. 
@@ -319,7 +343,7 @@ items:
   source:
     id: Uri
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 104
+    startLine: 133
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Output only. 
@@ -349,7 +373,7 @@ items:
   source:
     id: DownloadUri
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 106
+    startLine: 135
   namespace: Glitch9.AIDevKit.Google
   syntax:
     content: public string DownloadUri { get; set; }
@@ -372,7 +396,7 @@ items:
   source:
     id: Source
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 108
+    startLine: 137
   namespace: Glitch9.AIDevKit.Google
   syntax:
     content: public GoogleFileSource? Source { get; set; }
@@ -395,7 +419,7 @@ items:
   source:
     id: State
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 114
+    startLine: 143
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Output only. 
@@ -423,7 +447,7 @@ items:
   source:
     id: Error
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 120
+    startLine: 149
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Output only. 
@@ -451,7 +475,7 @@ items:
   source:
     id: VideoMetadata
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 126
+    startLine: 155
   namespace: Glitch9.AIDevKit.Google
   summary: >-
     Output only.
@@ -479,7 +503,7 @@ items:
   source:
     id: Api
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 128
+    startLine: 157
   namespace: Glitch9.AIDevKit.Google
   example: []
   syntax:
@@ -505,14 +529,14 @@ items:
   source:
     id: CreatedAt
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 129
+    startLine: 158
   namespace: Glitch9.AIDevKit.Google
   example: []
   syntax:
     content: public UnixTime CreatedAt { get; }
     parameters: []
     return:
-      type: Glitch9.UnixTime
+      type: UnixTime
     content.vb: Public ReadOnly Property CreatedAt As UnixTime
   overload: Glitch9.AIDevKit.Google.GoogleFile.CreatedAt*
   implements:
@@ -531,14 +555,14 @@ items:
   source:
     id: ExpiresAt
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 130
+    startLine: 159
   namespace: Glitch9.AIDevKit.Google
   example: []
   syntax:
     content: public UnixTime ExpiresAt { get; }
     parameters: []
     return:
-      type: Glitch9.UnixTime
+      type: UnixTime
     content.vb: Public ReadOnly Property ExpiresAt As UnixTime
   overload: Glitch9.AIDevKit.Google.GoogleFile.ExpiresAt*
   implements:
@@ -557,13 +581,13 @@ items:
   source:
     id: BuildMetadata
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 133
+    startLine: 162
   namespace: Glitch9.AIDevKit.Google
   example: []
   syntax:
     content: public Metadata BuildMetadata()
     return:
-      type: Glitch9.Metadata
+      type: Metadata
     content.vb: Public Function BuildMetadata() As Metadata
   overload: Glitch9.AIDevKit.Google.GoogleFile.BuildMetadata*
   implements:
@@ -616,6 +640,11 @@ references:
   name: IApiFile
   nameWithType: IApiFile
   fullName: Glitch9.AIDevKit.IApiFile
+- uid: IData
+  isExternal: true
+  name: IData
+  nameWithType: IData
+  fullName: IData
 - uid: System
   commentId: N:System
   isExternal: true
@@ -674,6 +703,12 @@ references:
   name: Name
   nameWithType: GoogleFile.Name
   fullName: Glitch9.AIDevKit.Google.GoogleFile.Name
+- uid: Glitch9.AIDevKit.Google.GoogleFile.MimeTypeAsString*
+  commentId: Overload:Glitch9.AIDevKit.Google.GoogleFile.MimeTypeAsString
+  href: Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_MimeTypeAsString
+  name: MimeTypeAsString
+  nameWithType: GoogleFile.MimeTypeAsString
+  fullName: Glitch9.AIDevKit.Google.GoogleFile.MimeTypeAsString
 - uid: Glitch9.AIDevKit.Google.GoogleFile.MimeType*
   commentId: Overload:Glitch9.AIDevKit.Google.GoogleFile.MimeType
   href: Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_MimeType
@@ -687,42 +722,11 @@ references:
   name: MimeType
   nameWithType: IApiFile.MimeType
   fullName: Glitch9.AIDevKit.IApiFile.MimeType
-- uid: Glitch9.IO.Files.MIMEType
-  commentId: T:Glitch9.IO.Files.MIMEType
-  parent: Glitch9.IO.Files
+- uid: MIMEType
+  isExternal: true
   name: MIMEType
   nameWithType: MIMEType
-  fullName: Glitch9.IO.Files.MIMEType
-- uid: Glitch9.IO.Files
-  commentId: N:Glitch9.IO.Files
-  href: Glitch9.html
-  name: Glitch9.IO.Files
-  nameWithType: Glitch9.IO.Files
-  fullName: Glitch9.IO.Files
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Files
-    name: Files
-    href: Glitch9.IO.Files.html
+  fullName: MIMEType
 - uid: Glitch9.AIDevKit.Google.GoogleFile.ByteSize*
   commentId: Overload:Glitch9.AIDevKit.Google.GoogleFile.ByteSize
   href: Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_ByteSize
@@ -752,20 +756,22 @@ references:
   name: CreateTime
   nameWithType: GoogleFile.CreateTime
   fullName: Glitch9.AIDevKit.Google.GoogleFile.CreateTime
-- uid: System.Nullable{Glitch9.ZuluTime}
-  commentId: T:System.Nullable{Glitch9.ZuluTime}
+- uid: System.Nullable{ZuluTime}
+  commentId: T:System.Nullable{ZuluTime}
   parent: System
   definition: System.Nullable`1
   name: ZuluTime?
   nameWithType: ZuluTime?
-  fullName: Glitch9.ZuluTime?
+  fullName: ZuluTime?
   spec.csharp:
-  - uid: Glitch9.ZuluTime
+  - uid: ZuluTime
     name: ZuluTime
+    isExternal: true
   - name: '?'
   spec.vb:
-  - uid: Glitch9.ZuluTime
+  - uid: ZuluTime
     name: ZuluTime
+    isExternal: true
   - name: '?'
 - uid: System.Nullable`1
   commentId: T:System.Nullable`1
@@ -925,18 +931,11 @@ references:
   name: CreatedAt
   nameWithType: IApiFile.CreatedAt
   fullName: Glitch9.AIDevKit.IApiFile.CreatedAt
-- uid: Glitch9.UnixTime
-  commentId: T:Glitch9.UnixTime
-  parent: Glitch9
+- uid: UnixTime
+  isExternal: true
   name: UnixTime
   nameWithType: UnixTime
-  fullName: Glitch9.UnixTime
-- uid: Glitch9
-  commentId: N:Glitch9
-  href: Glitch9.html
-  name: Glitch9
-  nameWithType: Glitch9
-  fullName: Glitch9
+  fullName: UnixTime
 - uid: Glitch9.AIDevKit.Google.GoogleFile.ExpiresAt*
   commentId: Overload:Glitch9.AIDevKit.Google.GoogleFile.ExpiresAt
   href: Glitch9.AIDevKit.Google.GoogleFile.html#Glitch9_AIDevKit_Google_GoogleFile_ExpiresAt
@@ -975,9 +974,8 @@ references:
     href: Glitch9.AIDevKit.IApiFile.html#Glitch9_AIDevKit_IApiFile_BuildMetadata
   - name: (
   - name: )
-- uid: Glitch9.Metadata
-  commentId: T:Glitch9.Metadata
-  parent: Glitch9
+- uid: Metadata
+  isExternal: true
   name: Metadata
   nameWithType: Metadata
-  fullName: Glitch9.Metadata
+  fullName: Metadata

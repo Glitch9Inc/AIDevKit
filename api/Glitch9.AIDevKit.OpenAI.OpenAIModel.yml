@@ -13,8 +13,10 @@ items:
   - Glitch9.AIDevKit.OpenAI.OpenAIModel.GPT_Image_1
   - Glitch9.AIDevKit.OpenAI.OpenAIModel.Omni_Moderation_Latest
   - Glitch9.AIDevKit.OpenAI.OpenAIModel.TTS1
+  - Glitch9.AIDevKit.OpenAI.OpenAIModel.TTS1_HD
   - Glitch9.AIDevKit.OpenAI.OpenAIModel.Text_Embedding_Ada_002
   - Glitch9.AIDevKit.OpenAI.OpenAIModel.Whisper1
+  - Glitch9.AIDevKit.OpenAI.OpenAIModel.o3_Mini
   langs:
   - csharp
   - vb
@@ -74,6 +76,27 @@ items:
     return:
       type: System.String
     content.vb: Public Const GPT4o_Mini As String = "gpt-4o-mini"
+- uid: Glitch9.AIDevKit.OpenAI.OpenAIModel.o3_Mini
+  commentId: F:Glitch9.AIDevKit.OpenAI.OpenAIModel.o3_Mini
+  id: o3_Mini
+  parent: Glitch9.AIDevKit.OpenAI.OpenAIModel
+  langs:
+  - csharp
+  - vb
+  name: o3_Mini
+  nameWithType: OpenAIModel.o3_Mini
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAIModel.o3_Mini
+  type: Field
+  source:
+    id: o3_Mini
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Config/OpenAIModel.cs
+    startLine: 10
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public const string o3_Mini = "o3-mini"
+    return:
+      type: System.String
+    content.vb: Public Const o3_Mini As String = "o3-mini"
 - uid: Glitch9.AIDevKit.OpenAI.OpenAIModel.DallE3
   commentId: F:Glitch9.AIDevKit.OpenAI.OpenAIModel.DallE3
   id: DallE3
@@ -88,7 +111,7 @@ items:
   source:
     id: DallE3
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Config/OpenAIModel.cs
-    startLine: 10
+    startLine: 12
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public const string DallE3 = "dall-e-3"
@@ -109,7 +132,7 @@ items:
   source:
     id: GPT_Image_1
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Config/OpenAIModel.cs
-    startLine: 12
+    startLine: 14
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public const string GPT_Image_1 = "gpt-image-1"
@@ -130,7 +153,7 @@ items:
   source:
     id: DallE2
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Config/OpenAIModel.cs
-    startLine: 14
+    startLine: 16
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public const string DallE2 = "dall-e-2"
@@ -151,13 +174,34 @@ items:
   source:
     id: TTS1
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Config/OpenAIModel.cs
-    startLine: 16
+    startLine: 18
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public const string TTS1 = "tts-1"
     return:
       type: System.String
     content.vb: Public Const TTS1 As String = "tts-1"
+- uid: Glitch9.AIDevKit.OpenAI.OpenAIModel.TTS1_HD
+  commentId: F:Glitch9.AIDevKit.OpenAI.OpenAIModel.TTS1_HD
+  id: TTS1_HD
+  parent: Glitch9.AIDevKit.OpenAI.OpenAIModel
+  langs:
+  - csharp
+  - vb
+  name: TTS1_HD
+  nameWithType: OpenAIModel.TTS1_HD
+  fullName: Glitch9.AIDevKit.OpenAI.OpenAIModel.TTS1_HD
+  type: Field
+  source:
+    id: TTS1_HD
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Config/OpenAIModel.cs
+    startLine: 20
+  namespace: Glitch9.AIDevKit.OpenAI
+  syntax:
+    content: public const string TTS1_HD = "tts-1-hd"
+    return:
+      type: System.String
+    content.vb: Public Const TTS1_HD As String = "tts-1-hd"
 - uid: Glitch9.AIDevKit.OpenAI.OpenAIModel.Whisper1
   commentId: F:Glitch9.AIDevKit.OpenAI.OpenAIModel.Whisper1
   id: Whisper1
@@ -172,7 +216,7 @@ items:
   source:
     id: Whisper1
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Config/OpenAIModel.cs
-    startLine: 18
+    startLine: 22
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public const string Whisper1 = "whisper-1"
@@ -193,7 +237,7 @@ items:
   source:
     id: Text_Embedding_Ada_002
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Config/OpenAIModel.cs
-    startLine: 20
+    startLine: 24
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public const string Text_Embedding_Ada_002 = "text-embedding-ada-002"
@@ -214,7 +258,7 @@ items:
   source:
     id: Omni_Moderation_Latest
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Config/OpenAIModel.cs
-    startLine: 22
+    startLine: 26
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public const string Omni_Moderation_Latest = "omni-moderation-latest"
@@ -235,7 +279,7 @@ items:
   source:
     id: GPT4o_Realtime_Preview
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Config/OpenAIModel.cs
-    startLine: 24
+    startLine: 28
   namespace: Glitch9.AIDevKit.OpenAI
   syntax:
     content: public const string GPT4o_Realtime_Preview = "gpt-4o-realtime-preview"

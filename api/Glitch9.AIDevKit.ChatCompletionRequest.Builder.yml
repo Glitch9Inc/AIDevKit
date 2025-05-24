@@ -33,7 +33,6 @@ items:
     content.vb: Public Class ChatCompletionRequest.Builder Inherits CompletionRequestBase.CompletionRequestBuilder(Of ChatCompletionRequest.Builder, ChatCompletionRequest)
   inheritance:
   - System.Object
-  - Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}
   - Glitch9.AIDevKit.AIRequest.ModelRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}
   inheritedMembers:
@@ -44,14 +43,14 @@ items:
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetResponseFormat(Glitch9.AIDevKit.ResponseFormat)
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetJsonSchema(System.Type)
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetJsonSchema(Glitch9.AIDevKit.StrictJsonSchema)
-  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModels(System.Collections.Generic.List{System.String})
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetTransforms(System.Collections.Generic.List{System.String})
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetReasoningEffort(Glitch9.AIDevKit.ReasoningEffort)
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetReasoningEffort(System.Int32)
   - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.ExcludeReasoning(System.Boolean)
-  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})
+  - Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetAttachedFiles(System.Collections.Generic.List{IFile})
   - Glitch9.AIDevKit.AIRequest.ModelRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetUser(System.String)
   - Glitch9.AIDevKit.AIRequest.ModelRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModel(Glitch9.AIDevKit.Model)
   - Glitch9.AIDevKit.AIRequest.ModelRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetMetadata(System.Collections.Generic.Dictionary{System.String,System.String})
@@ -378,59 +377,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}
-  parent: Glitch9.IO.Networking.RESTApi
-  definition: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-  href: Glitch9.AIDevKit.ChatCompletionRequest.html
-  name: RequestBody.RequestBodyBuilder<ChatCompletionRequest.Builder, ChatCompletionRequest>
-  nameWithType: RequestBody.RequestBodyBuilder<ChatCompletionRequest.Builder, ChatCompletionRequest>
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder<Glitch9.AIDevKit.ChatCompletionRequest.Builder, Glitch9.AIDevKit.ChatCompletionRequest>
-  nameWithType.vb: RequestBody.RequestBodyBuilder(Of ChatCompletionRequest.Builder, ChatCompletionRequest)
-  fullName.vb: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder(Of Glitch9.AIDevKit.ChatCompletionRequest.Builder, Glitch9.AIDevKit.ChatCompletionRequest)
-  name.vb: RequestBody.RequestBodyBuilder(Of ChatCompletionRequest.Builder, ChatCompletionRequest)
-  spec.csharp:
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
-    name: RequestBody
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-    name: RequestBodyBuilder
-  - name: <
-  - uid: Glitch9.AIDevKit.ChatCompletionRequest
-    name: ChatCompletionRequest
-    href: Glitch9.AIDevKit.ChatCompletionRequest.html
-  - name: .
-  - uid: Glitch9.AIDevKit.ChatCompletionRequest.Builder
-    name: Builder
-    href: Glitch9.AIDevKit.ChatCompletionRequest.Builder.html
-  - name: ','
-  - name: " "
-  - uid: Glitch9.AIDevKit.ChatCompletionRequest
-    name: ChatCompletionRequest
-    href: Glitch9.AIDevKit.ChatCompletionRequest.html
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
-    name: RequestBody
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-    name: RequestBodyBuilder
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Glitch9.AIDevKit.ChatCompletionRequest
-    name: ChatCompletionRequest
-    href: Glitch9.AIDevKit.ChatCompletionRequest.html
-  - name: .
-  - uid: Glitch9.AIDevKit.ChatCompletionRequest.Builder
-    name: Builder
-    href: Glitch9.AIDevKit.ChatCompletionRequest.Builder.html
-  - name: ','
-  - name: " "
-  - uid: Glitch9.AIDevKit.ChatCompletionRequest
-    name: ChatCompletionRequest
-    href: Glitch9.AIDevKit.ChatCompletionRequest.html
-  - name: )
 - uid: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}
   commentId: T:Glitch9.AIDevKit.AIRequest.ModelRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}
   parent: Glitch9.AIDevKit
@@ -745,33 +691,33 @@ references:
     name: StrictJsonSchema
     href: Glitch9.AIDevKit.StrictJsonSchema.html
   - name: )
-- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
   parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}
-  definition: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
-  name: SetModelOptions(ModelOptions)
-  nameWithType: CompletionRequestBase.CompletionRequestBuilder<ChatCompletionRequest.Builder, ChatCompletionRequest>.SetModelOptions(ModelOptions)
-  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<Glitch9.AIDevKit.ChatCompletionRequest.Builder, Glitch9.AIDevKit.ChatCompletionRequest>.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of ChatCompletionRequest.Builder, ChatCompletionRequest).SetModelOptions(ModelOptions)
-  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of Glitch9.AIDevKit.ChatCompletionRequest.Builder, Glitch9.AIDevKit.ChatCompletionRequest).SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  definition: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelSettings_
+  name: SetModelOptions(ModelSettings)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<ChatCompletionRequest.Builder, ChatCompletionRequest>.SetModelOptions(ModelSettings)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<Glitch9.AIDevKit.ChatCompletionRequest.Builder, Glitch9.AIDevKit.ChatCompletionRequest>.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of ChatCompletionRequest.Builder, ChatCompletionRequest).SetModelOptions(ModelSettings)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of Glitch9.AIDevKit.ChatCompletionRequest.Builder, Glitch9.AIDevKit.ChatCompletionRequest).SetModelOptions(Glitch9.AIDevKit.ModelSettings)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
     name: SetModelOptions
-    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
+    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelSettings_
   - name: (
-  - uid: Glitch9.AIDevKit.ModelOptions
-    name: ModelOptions
-    href: Glitch9.AIDevKit.ModelOptions.html
+  - uid: Glitch9.AIDevKit.ModelSettings
+    name: ModelSettings
+    href: Glitch9.AIDevKit.ModelSettings.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
     name: SetModelOptions
-    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
+    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelSettings_
   - name: (
-  - uid: Glitch9.AIDevKit.ModelOptions
-    name: ModelOptions
-    href: Glitch9.AIDevKit.ModelOptions.html
+  - uid: Glitch9.AIDevKit.ModelSettings
+    name: ModelSettings
+    href: Glitch9.AIDevKit.ModelSettings.html
   - name: )
 - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModels(System.Collections.Generic.List{System.String})
   commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetModels(System.Collections.Generic.List{System.String})
@@ -969,34 +915,35 @@ references:
     name: Boolean
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})
-  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetAttachedFiles(System.Collections.Generic.List{IFile})
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetAttachedFiles(System.Collections.Generic.List{IFile})
   parent: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}
-  definition: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})
-  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_Glitch9_IO_Files_IFile__
+  definition: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{IFile})
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_IFile__
   name: SetAttachedFiles(List<IFile>)
   nameWithType: CompletionRequestBase.CompletionRequestBuilder<ChatCompletionRequest.Builder, ChatCompletionRequest>.SetAttachedFiles(List<IFile>)
-  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<Glitch9.AIDevKit.ChatCompletionRequest.Builder, Glitch9.AIDevKit.ChatCompletionRequest>.SetAttachedFiles(System.Collections.Generic.List<Glitch9.IO.Files.IFile>)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<Glitch9.AIDevKit.ChatCompletionRequest.Builder, Glitch9.AIDevKit.ChatCompletionRequest>.SetAttachedFiles(System.Collections.Generic.List<IFile>)
   nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of ChatCompletionRequest.Builder, ChatCompletionRequest).SetAttachedFiles(List(Of IFile))
-  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of Glitch9.AIDevKit.ChatCompletionRequest.Builder, Glitch9.AIDevKit.ChatCompletionRequest).SetAttachedFiles(System.Collections.Generic.List(Of Glitch9.IO.Files.IFile))
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of Glitch9.AIDevKit.ChatCompletionRequest.Builder, Glitch9.AIDevKit.ChatCompletionRequest).SetAttachedFiles(System.Collections.Generic.List(Of IFile))
   name.vb: SetAttachedFiles(List(Of IFile))
   spec.csharp:
-  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})
+  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetAttachedFiles(System.Collections.Generic.List{IFile})
     name: SetAttachedFiles
-    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_Glitch9_IO_Files_IFile__
+    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_IFile__
   - name: (
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
   - name: <
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})
+  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetAttachedFiles(System.Collections.Generic.List{IFile})
     name: SetAttachedFiles
-    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_Glitch9_IO_Files_IFile__
+    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_IFile__
   - name: (
   - uid: System.Collections.Generic.List`1
     name: List
@@ -1004,8 +951,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: )
   - name: )
 - uid: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder{Glitch9.AIDevKit.ChatCompletionRequest.Builder,Glitch9.AIDevKit.ChatCompletionRequest}.SetUser(System.String)
@@ -1123,78 +1071,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-  commentId: T:Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-  name: RequestBody.RequestBodyBuilder<TBuilder, TReqBody>
-  nameWithType: RequestBody.RequestBodyBuilder<TBuilder, TReqBody>
-  fullName: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder<TBuilder, TReqBody>
-  nameWithType.vb: RequestBody.RequestBodyBuilder(Of TBuilder, TReqBody)
-  fullName.vb: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder(Of TBuilder, TReqBody)
-  name.vb: RequestBody.RequestBodyBuilder(Of TBuilder, TReqBody)
-  spec.csharp:
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
-    name: RequestBody
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-    name: RequestBodyBuilder
-  - name: <
-  - name: TBuilder
-  - name: ','
-  - name: " "
-  - name: TReqBody
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody
-    name: RequestBody
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi.RequestBody.RequestBodyBuilder`2
-    name: RequestBodyBuilder
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TBuilder
-  - name: ','
-  - name: " "
-  - name: TReqBody
-  - name: )
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
 - uid: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2
   commentId: T:Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2
   href: Glitch9.AIDevKit.AIRequest.html
@@ -1464,31 +1340,31 @@ references:
     name: StrictJsonSchema
     href: Glitch9.AIDevKit.StrictJsonSchema.html
   - name: )
-- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
-  name: SetModelOptions(ModelOptions)
-  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModelOptions(ModelOptions)
-  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
-  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModelOptions(ModelOptions)
-  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelSettings_
+  name: SetModelOptions(ModelSettings)
+  nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModelOptions(ModelSettings)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
+  nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModelOptions(ModelSettings)
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetModelOptions(Glitch9.AIDevKit.ModelSettings)
   spec.csharp:
-  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
     name: SetModelOptions
-    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
+    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelSettings_
   - name: (
-  - uid: Glitch9.AIDevKit.ModelOptions
-    name: ModelOptions
-    href: Glitch9.AIDevKit.ModelOptions.html
+  - uid: Glitch9.AIDevKit.ModelSettings
+    name: ModelSettings
+    href: Glitch9.AIDevKit.ModelSettings.html
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelOptions)
+  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModelOptions(Glitch9.AIDevKit.ModelSettings)
     name: SetModelOptions
-    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelOptions_
+    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetModelOptions_Glitch9_AIDevKit_ModelSettings_
   - name: (
-  - uid: Glitch9.AIDevKit.ModelOptions
-    name: ModelOptions
-    href: Glitch9.AIDevKit.ModelOptions.html
+  - uid: Glitch9.AIDevKit.ModelSettings
+    name: ModelSettings
+    href: Glitch9.AIDevKit.ModelSettings.html
   - name: )
 - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModels(System.Collections.Generic.List{System.String})
   commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetModels(System.Collections.Generic.List{System.String})
@@ -1678,33 +1554,34 @@ references:
     name: Boolean
     isExternal: true
   - name: )
-- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})
-  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})
+- uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{IFile})
+  commentId: M:Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{IFile})
   isExternal: true
-  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_Glitch9_IO_Files_IFile__
+  href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_IFile__
   name: SetAttachedFiles(List<IFile>)
   nameWithType: CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetAttachedFiles(List<IFile>)
-  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetAttachedFiles(System.Collections.Generic.List<Glitch9.IO.Files.IFile>)
+  fullName: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder<TBuilder, TRequest>.SetAttachedFiles(System.Collections.Generic.List<IFile>)
   nameWithType.vb: CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetAttachedFiles(List(Of IFile))
-  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetAttachedFiles(System.Collections.Generic.List(Of Glitch9.IO.Files.IFile))
+  fullName.vb: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder(Of TBuilder, TRequest).SetAttachedFiles(System.Collections.Generic.List(Of IFile))
   name.vb: SetAttachedFiles(List(Of IFile))
   spec.csharp:
-  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})
+  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{IFile})
     name: SetAttachedFiles
-    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_Glitch9_IO_Files_IFile__
+    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_IFile__
   - name: (
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
   - name: <
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{Glitch9.IO.Files.IFile})
+  - uid: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder`2.SetAttachedFiles(System.Collections.Generic.List{IFile})
     name: SetAttachedFiles
-    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_Glitch9_IO_Files_IFile__
+    href: Glitch9.AIDevKit.CompletionRequestBase.CompletionRequestBuilder-2.html#Glitch9_AIDevKit_CompletionRequestBase_CompletionRequestBuilder_2_SetAttachedFiles_System_Collections_Generic_List_IFile__
   - name: (
   - uid: System.Collections.Generic.List`1
     name: List
@@ -1712,8 +1589,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Glitch9.IO.Files.IFile
+  - uid: IFile
     name: IFile
+    isExternal: true
   - name: )
   - name: )
 - uid: Glitch9.AIDevKit.AIRequest.ModelRequestBuilder`2.SetUser(System.String)

@@ -25,11 +25,13 @@ items:
   remarks: Only used for List models and Retrieve model call.
   example: []
   syntax:
-    content: 'public class OpenAIModelData : AIResponse'
-    content.vb: Public Class OpenAIModelData Inherits AIResponse
+    content: 'public class OpenAIModelData : AIResponse, IData'
+    content.vb: Public Class OpenAIModelData Inherits AIResponse Implements IData
   inheritance:
   - System.Object
   - Glitch9.AIDevKit.AIResponse
+  implements:
+  - IData
   inheritedMembers:
   - Glitch9.AIDevKit.AIResponse.Id
   - Glitch9.AIDevKit.AIResponse.Object
@@ -129,8 +131,6 @@ items:
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/OpenAI/Models/Endpoints/Models/OpenAIModelData.cs
     startLine: 22
   namespace: Glitch9.AIDevKit.OpenAI
-  summary: Name of this data.
-  example: []
   syntax:
     content: public string Name { get; }
     parameters: []
@@ -186,6 +186,11 @@ references:
   name: AIResponse
   nameWithType: AIResponse
   fullName: Glitch9.AIDevKit.AIResponse
+- uid: IData
+  isExternal: true
+  name: IData
+  nameWithType: IData
+  fullName: IData
 - uid: Glitch9.AIDevKit.AIResponse.Id
   commentId: P:Glitch9.AIDevKit.AIResponse.Id
   parent: Glitch9.AIDevKit.AIResponse

@@ -5,7 +5,7 @@ items:
   id: FunctionParameter
   parent: Glitch9.AIDevKit.Components
   children:
-  - Glitch9.AIDevKit.Components.FunctionParameter.#ctor(Glitch9.IO.Json.Schema.JsonSchemaType,System.String,System.Nullable{Glitch9.IO.Json.Schema.JsonSchemaType})
+  - Glitch9.AIDevKit.Components.FunctionParameter.#ctor(JsonSchemaType,System.String,System.Nullable{JsonSchemaType})
   - Glitch9.AIDevKit.Components.FunctionParameter.#ctor(System.String,System.Type)
   - Glitch9.AIDevKit.Components.FunctionParameter.Description
   - Glitch9.AIDevKit.Components.FunctionParameter.ElementType
@@ -64,7 +64,7 @@ items:
     content: public JsonSchemaType Type { get; }
     parameters: []
     return:
-      type: Glitch9.IO.Json.Schema.JsonSchemaType
+      type: JsonSchemaType
     content.vb: Public ReadOnly Property Type As JsonSchemaType
   overload: Glitch9.AIDevKit.Components.FunctionParameter.Type*
 - uid: Glitch9.AIDevKit.Components.FunctionParameter.Name
@@ -189,19 +189,19 @@ items:
     content: public JsonSchemaType ElementType { get; }
     parameters: []
     return:
-      type: Glitch9.IO.Json.Schema.JsonSchemaType
+      type: JsonSchemaType
     content.vb: Public ReadOnly Property ElementType As JsonSchemaType
   overload: Glitch9.AIDevKit.Components.FunctionParameter.ElementType*
-- uid: Glitch9.AIDevKit.Components.FunctionParameter.#ctor(Glitch9.IO.Json.Schema.JsonSchemaType,System.String,System.Nullable{Glitch9.IO.Json.Schema.JsonSchemaType})
-  commentId: M:Glitch9.AIDevKit.Components.FunctionParameter.#ctor(Glitch9.IO.Json.Schema.JsonSchemaType,System.String,System.Nullable{Glitch9.IO.Json.Schema.JsonSchemaType})
-  id: '#ctor(Glitch9.IO.Json.Schema.JsonSchemaType,System.String,System.Nullable{Glitch9.IO.Json.Schema.JsonSchemaType})'
+- uid: Glitch9.AIDevKit.Components.FunctionParameter.#ctor(JsonSchemaType,System.String,System.Nullable{JsonSchemaType})
+  commentId: M:Glitch9.AIDevKit.Components.FunctionParameter.#ctor(JsonSchemaType,System.String,System.Nullable{JsonSchemaType})
+  id: '#ctor(JsonSchemaType,System.String,System.Nullable{JsonSchemaType})'
   parent: Glitch9.AIDevKit.Components.FunctionParameter
   langs:
   - csharp
   - vb
   name: FunctionParameter(JsonSchemaType, string, JsonSchemaType?)
   nameWithType: FunctionParameter.FunctionParameter(JsonSchemaType, string, JsonSchemaType?)
-  fullName: Glitch9.AIDevKit.Components.FunctionParameter.FunctionParameter(Glitch9.IO.Json.Schema.JsonSchemaType, string, Glitch9.IO.Json.Schema.JsonSchemaType?)
+  fullName: Glitch9.AIDevKit.Components.FunctionParameter.FunctionParameter(JsonSchemaType, string, JsonSchemaType?)
   type: Constructor
   source:
     id: .ctor
@@ -212,15 +212,15 @@ items:
     content: public FunctionParameter(JsonSchemaType type, string name, JsonSchemaType? elementType = null)
     parameters:
     - id: type
-      type: Glitch9.IO.Json.Schema.JsonSchemaType
+      type: JsonSchemaType
     - id: name
       type: System.String
     - id: elementType
-      type: System.Nullable{Glitch9.IO.Json.Schema.JsonSchemaType}
+      type: System.Nullable{JsonSchemaType}
     content.vb: Public Sub New(type As JsonSchemaType, name As String, elementType As JsonSchemaType? = Nothing)
   overload: Glitch9.AIDevKit.Components.FunctionParameter.#ctor*
   nameWithType.vb: FunctionParameter.New(JsonSchemaType, String, JsonSchemaType?)
-  fullName.vb: Glitch9.AIDevKit.Components.FunctionParameter.New(Glitch9.IO.Json.Schema.JsonSchemaType, String, Glitch9.IO.Json.Schema.JsonSchemaType?)
+  fullName.vb: Glitch9.AIDevKit.Components.FunctionParameter.New(JsonSchemaType, String, JsonSchemaType?)
   name.vb: New(JsonSchemaType, String, JsonSchemaType?)
 - uid: Glitch9.AIDevKit.Components.FunctionParameter.#ctor(System.String,System.Type)
   commentId: M:Glitch9.AIDevKit.Components.FunctionParameter.#ctor(System.String,System.Type)
@@ -304,50 +304,11 @@ references:
   name: Type
   nameWithType: FunctionParameter.Type
   fullName: Glitch9.AIDevKit.Components.FunctionParameter.Type
-- uid: Glitch9.IO.Json.Schema.JsonSchemaType
-  commentId: T:Glitch9.IO.Json.Schema.JsonSchemaType
-  parent: Glitch9.IO.Json.Schema
+- uid: JsonSchemaType
+  isExternal: true
   name: JsonSchemaType
   nameWithType: JsonSchemaType
-  fullName: Glitch9.IO.Json.Schema.JsonSchemaType
-- uid: Glitch9.IO.Json.Schema
-  commentId: N:Glitch9.IO.Json.Schema
-  href: Glitch9.html
-  name: Glitch9.IO.Json.Schema
-  nameWithType: Glitch9.IO.Json.Schema
-  fullName: Glitch9.IO.Json.Schema
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Json
-    name: Json
-    href: Glitch9.IO.Json.html
-  - name: .
-  - uid: Glitch9.IO.Json.Schema
-    name: Schema
-    href: Glitch9.IO.Json.Schema.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Json
-    name: Json
-    href: Glitch9.IO.Json.html
-  - name: .
-  - uid: Glitch9.IO.Json.Schema
-    name: Schema
-    href: Glitch9.IO.Json.Schema.html
+  fullName: JsonSchemaType
 - uid: Glitch9.AIDevKit.Components.FunctionParameter.Name*
   commentId: Overload:Glitch9.AIDevKit.Components.FunctionParameter.Name
   href: Glitch9.AIDevKit.Components.FunctionParameter.html#Glitch9_AIDevKit_Components_FunctionParameter_Name
@@ -420,27 +381,29 @@ references:
   fullName: Glitch9.AIDevKit.Components.FunctionParameter.ElementType
 - uid: Glitch9.AIDevKit.Components.FunctionParameter.#ctor*
   commentId: Overload:Glitch9.AIDevKit.Components.FunctionParameter.#ctor
-  href: Glitch9.AIDevKit.Components.FunctionParameter.html#Glitch9_AIDevKit_Components_FunctionParameter__ctor_Glitch9_IO_Json_Schema_JsonSchemaType_System_String_System_Nullable_Glitch9_IO_Json_Schema_JsonSchemaType__
+  href: Glitch9.AIDevKit.Components.FunctionParameter.html#Glitch9_AIDevKit_Components_FunctionParameter__ctor_JsonSchemaType_System_String_System_Nullable_JsonSchemaType__
   name: FunctionParameter
   nameWithType: FunctionParameter.FunctionParameter
   fullName: Glitch9.AIDevKit.Components.FunctionParameter.FunctionParameter
   nameWithType.vb: FunctionParameter.New
   fullName.vb: Glitch9.AIDevKit.Components.FunctionParameter.New
   name.vb: New
-- uid: System.Nullable{Glitch9.IO.Json.Schema.JsonSchemaType}
-  commentId: T:System.Nullable{Glitch9.IO.Json.Schema.JsonSchemaType}
+- uid: System.Nullable{JsonSchemaType}
+  commentId: T:System.Nullable{JsonSchemaType}
   parent: System
   definition: System.Nullable`1
   name: JsonSchemaType?
   nameWithType: JsonSchemaType?
-  fullName: Glitch9.IO.Json.Schema.JsonSchemaType?
+  fullName: JsonSchemaType?
   spec.csharp:
-  - uid: Glitch9.IO.Json.Schema.JsonSchemaType
+  - uid: JsonSchemaType
     name: JsonSchemaType
+    isExternal: true
   - name: '?'
   spec.vb:
-  - uid: Glitch9.IO.Json.Schema.JsonSchemaType
+  - uid: JsonSchemaType
     name: JsonSchemaType
+    isExternal: true
   - name: '?'
 - uid: System.Nullable`1
   commentId: T:System.Nullable`1

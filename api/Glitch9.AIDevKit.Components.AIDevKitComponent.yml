@@ -5,7 +5,10 @@ items:
   id: AIDevKitComponent
   parent: Glitch9.AIDevKit.Components
   children:
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
   - Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.onError
   langs:
   - csharp
   - vb
@@ -15,8 +18,8 @@ items:
   type: Class
   source:
     id: AIDevKitComponent
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Common/AIDevKitComponent.cs
-    startLine: 4
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Base/AIDevKitComponent.cs
+    startLine: 6
   namespace: Glitch9.AIDevKit.Components
   syntax:
     content: 'public abstract class AIDevKitComponent : MonoBehaviour'
@@ -24,8 +27,9 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
-  - Glitch9.AIDevKit.Components.ChatbotBase
-  - Glitch9.AIDevKit.Components.RealtimeAPI
+  - Glitch9.AIDevKit.Components.AIModuleComponent
+  - Glitch9.AIDevKit.Components.ChatbotComponent
+  - Glitch9.AIDevKit.Components.RealtimeAssistant
   - Glitch9.AIDevKit.Components.SpeechAPI
 - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
   commentId: F:Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
@@ -40,14 +44,84 @@ items:
   type: Field
   source:
     id: debugMode
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Common/AIDevKitComponent.cs
-    startLine: 6
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Base/AIDevKitComponent.cs
+    startLine: 8
   namespace: Glitch9.AIDevKit.Components
   syntax:
     content: protected bool debugMode
     return:
       type: System.Boolean
     content.vb: Protected debugMode As Boolean
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  commentId: F:Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  id: onError
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  langs:
+  - csharp
+  - vb
+  name: onError
+  nameWithType: AIDevKitComponent.onError
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  type: Field
+  source:
+    id: onError
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Base/AIDevKitComponent.cs
+    startLine: 9
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: protected UnityEvent<string> onError
+    return:
+      type: UnityEvent{System.String}
+    content.vb: Protected onError As UnityEvent(Of String)
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  commentId: M:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  id: OnError(System.String)
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  langs:
+  - csharp
+  - vb
+  name: OnError(string)
+  nameWithType: AIDevKitComponent.OnError(string)
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(string)
+  type: Method
+  source:
+    id: OnError
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Base/AIDevKitComponent.cs
+    startLine: 11
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: protected void OnError(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Protected Sub OnError(message As String)
+  overload: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError*
+  nameWithType.vb: AIDevKitComponent.OnError(String)
+  fullName.vb: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(String)
+  name.vb: OnError(String)
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  commentId: M:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  id: OnError(System.Exception)
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  langs:
+  - csharp
+  - vb
+  name: OnError(Exception)
+  nameWithType: AIDevKitComponent.OnError(Exception)
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  type: Method
+  source:
+    id: OnError
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Base/AIDevKitComponent.cs
+    startLine: 17
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: protected void OnError(Exception error)
+    parameters:
+    - id: error
+      type: System.Exception
+    content.vb: Protected Sub OnError([error] As Exception)
+  overload: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError*
 references:
 - uid: Glitch9.AIDevKit.Components
   commentId: N:Glitch9.AIDevKit.Components
@@ -106,3 +180,79 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: UnityEvent{System.String}
+  commentId: '!:UnityEvent{System.String}'
+  definition: UnityEvent`1
+  name: UnityEvent<string>
+  nameWithType: UnityEvent<string>
+  fullName: UnityEvent<string>
+  nameWithType.vb: UnityEvent(Of String)
+  fullName.vb: UnityEvent(Of String)
+  name.vb: UnityEvent(Of String)
+  spec.csharp:
+  - uid: UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: UnityEvent`1
+  isExternal: true
+  name: UnityEvent<>
+  nameWithType: UnityEvent<>
+  fullName: UnityEvent<>
+  nameWithType.vb: UnityEvent(Of )
+  fullName.vb: UnityEvent(Of )
+  name.vb: UnityEvent(Of )
+  spec.csharp:
+  - uid: UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError*
+  commentId: Overload:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  name: OnError
+  nameWithType: AIDevKitComponent.OnError
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception

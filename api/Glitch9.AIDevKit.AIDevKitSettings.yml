@@ -31,25 +31,10 @@ items:
     startLine: 7
   namespace: Glitch9.AIDevKit
   syntax:
-    content: >-
-      [AssetPath("Resources/AIDevKit")]
-
-      public class AIDevKitSettings : ScriptableResource<AIDevKitSettings>
-    content.vb: >-
-      <AssetPath("Resources/AIDevKit")>
-
-      Public Class AIDevKitSettings Inherits ScriptableResource(Of AIDevKitSettings)
+    content: 'public class AIDevKitSettings : ScriptableResource<AIDevKitSettings>'
+    content.vb: Public Class AIDevKitSettings Inherits ScriptableResource(Of AIDevKitSettings)
   inheritance:
   - System.Object
-  - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.AIDevKitSettings}
-  inheritedMembers:
-  - Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.AIDevKitSettings}.Instance
-  attributes:
-  - type: Glitch9.AssetPathAttribute
-    ctor: Glitch9.AssetPathAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Resources/AIDevKit
 - uid: Glitch9.AIDevKit.AIDevKitSettings.RuntimeOutputPath
   commentId: P:Glitch9.AIDevKit.AIDevKitSettings.RuntimeOutputPath
   id: RuntimeOutputPath
@@ -120,7 +105,7 @@ items:
     content: public static RESTLogLevel LogLevel { get; }
     parameters: []
     return:
-      type: Glitch9.IO.Networking.RESTApi.RESTLogLevel
+      type: RESTLogLevel
     content.vb: Public Shared ReadOnly Property LogLevel As RESTLogLevel
   overload: Glitch9.AIDevKit.AIDevKitSettings.LogLevel*
 - uid: Glitch9.AIDevKit.AIDevKitSettings.RequestTimeout
@@ -386,44 +371,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.AIDevKitSettings}
-  commentId: T:Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.AIDevKitSettings}
-  parent: Glitch9.ScriptableObjects
-  definition: Glitch9.ScriptableObjects.ScriptableResource`1
-  href: Glitch9.AIDevKit.AIDevKitSettings.html
-  name: ScriptableResource<AIDevKitSettings>
-  nameWithType: ScriptableResource<AIDevKitSettings>
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<Glitch9.AIDevKit.AIDevKitSettings>
-  nameWithType.vb: ScriptableResource(Of AIDevKitSettings)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of Glitch9.AIDevKit.AIDevKitSettings)
-  name.vb: ScriptableResource(Of AIDevKitSettings)
-  spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: <
-  - uid: Glitch9.AIDevKit.AIDevKitSettings
-    name: AIDevKitSettings
-    href: Glitch9.AIDevKit.AIDevKitSettings.html
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Glitch9.AIDevKit.AIDevKitSettings
-    name: AIDevKitSettings
-    href: Glitch9.AIDevKit.AIDevKitSettings.html
-  - name: )
-- uid: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.AIDevKitSettings}.Instance
-  commentId: P:Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.AIDevKitSettings}.Instance
-  parent: Glitch9.ScriptableObjects.ScriptableResource{Glitch9.AIDevKit.AIDevKitSettings}
-  definition: Glitch9.ScriptableObjects.ScriptableResource`1.Instance
-  name: Instance
-  nameWithType: ScriptableResource<AIDevKitSettings>.Instance
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<Glitch9.AIDevKit.AIDevKitSettings>.Instance
-  nameWithType.vb: ScriptableResource(Of AIDevKitSettings).Instance
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of Glitch9.AIDevKit.AIDevKitSettings).Instance
 - uid: System
   commentId: N:System
   isExternal: true
@@ -431,57 +378,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Glitch9.ScriptableObjects.ScriptableResource`1
-  commentId: T:Glitch9.ScriptableObjects.ScriptableResource`1
-  name: ScriptableResource<TSelf>
-  nameWithType: ScriptableResource<TSelf>
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<TSelf>
-  nameWithType.vb: ScriptableResource(Of TSelf)
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf)
-  name.vb: ScriptableResource(Of TSelf)
-  spec.csharp:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: <
-  - name: TSelf
-  - name: '>'
-  spec.vb:
-  - uid: Glitch9.ScriptableObjects.ScriptableResource`1
-    name: ScriptableResource
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TSelf
-  - name: )
-- uid: Glitch9.ScriptableObjects
-  commentId: N:Glitch9.ScriptableObjects
-  href: Glitch9.html
-  name: Glitch9.ScriptableObjects
-  nameWithType: Glitch9.ScriptableObjects
-  fullName: Glitch9.ScriptableObjects
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.ScriptableObjects
-    name: ScriptableObjects
-    href: Glitch9.ScriptableObjects.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.ScriptableObjects
-    name: ScriptableObjects
-    href: Glitch9.ScriptableObjects.html
-- uid: Glitch9.ScriptableObjects.ScriptableResource`1.Instance
-  commentId: P:Glitch9.ScriptableObjects.ScriptableResource`1.Instance
-  name: Instance
-  nameWithType: ScriptableResource<TSelf>.Instance
-  fullName: Glitch9.ScriptableObjects.ScriptableResource<TSelf>.Instance
-  nameWithType.vb: ScriptableResource(Of TSelf).Instance
-  fullName.vb: Glitch9.ScriptableObjects.ScriptableResource(Of TSelf).Instance
 - uid: Glitch9.AIDevKit.AIDevKitSettings.RuntimeOutputPath*
   commentId: Overload:Glitch9.AIDevKit.AIDevKitSettings.RuntimeOutputPath
   href: Glitch9.AIDevKit.AIDevKitSettings.html#Glitch9_AIDevKit_AIDevKitSettings_RuntimeOutputPath
@@ -510,50 +406,12 @@ references:
   name: LogLevel
   nameWithType: AIDevKitSettings.LogLevel
   fullName: Glitch9.AIDevKit.AIDevKitSettings.LogLevel
-- uid: Glitch9.IO.Networking.RESTApi.RESTLogLevel
-  commentId: T:Glitch9.IO.Networking.RESTApi.RESTLogLevel
-  parent: Glitch9.IO.Networking.RESTApi
+- uid: RESTLogLevel
+  commentId: '!:RESTLogLevel'
+  isExternal: true
   name: RESTLogLevel
   nameWithType: RESTLogLevel
-  fullName: Glitch9.IO.Networking.RESTApi.RESTLogLevel
-- uid: Glitch9.IO.Networking.RESTApi
-  commentId: N:Glitch9.IO.Networking.RESTApi
-  href: Glitch9.html
-  name: Glitch9.IO.Networking.RESTApi
-  nameWithType: Glitch9.IO.Networking.RESTApi
-  fullName: Glitch9.IO.Networking.RESTApi
-  spec.csharp:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
-  spec.vb:
-  - uid: Glitch9
-    name: Glitch9
-    href: Glitch9.html
-  - name: .
-  - uid: Glitch9.IO
-    name: IO
-    href: Glitch9.IO.html
-  - name: .
-  - uid: Glitch9.IO.Networking
-    name: Networking
-    href: Glitch9.IO.Networking.html
-  - name: .
-  - uid: Glitch9.IO.Networking.RESTApi
-    name: RESTApi
-    href: Glitch9.IO.Networking.RESTApi.html
+  fullName: RESTLogLevel
 - uid: Glitch9.AIDevKit.AIDevKitSettings.RequestTimeout*
   commentId: Overload:Glitch9.AIDevKit.AIDevKitSettings.RequestTimeout
   href: Glitch9.AIDevKit.AIDevKitSettings.html#Glitch9_AIDevKit_AIDevKitSettings_RequestTimeout

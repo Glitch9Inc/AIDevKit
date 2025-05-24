@@ -76,26 +76,9 @@ items:
     They should almost immediately move to in_progress.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      [Message("Run is queued")]
-
-      Queued = 1
+    content: Queued = 1
     return:
       type: Glitch9.AIDevKit.OpenAI.RunStatus
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      <Message("Run is queued")>
-
-      Queued = 1
-  attributes:
-  - type: Glitch9.MessageAttribute
-    ctor: Glitch9.MessageAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Run is queued
 - uid: Glitch9.AIDevKit.OpenAI.RunStatus.InProgress
   commentId: F:Glitch9.AIDevKit.OpenAI.RunStatus.InProgress
   id: InProgress
@@ -118,26 +101,9 @@ items:
     You can view progress being made by the Run by examining the Run Steps.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      [Message("Run is in progress")]
-
-      InProgress = 2
+    content: InProgress = 2
     return:
       type: Glitch9.AIDevKit.OpenAI.RunStatus
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      <Message("Run is in progress")>
-
-      InProgress = 2
-  attributes:
-  - type: Glitch9.MessageAttribute
-    ctor: Glitch9.MessageAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Run is in progress
 - uid: Glitch9.AIDevKit.OpenAI.RunStatus.Completed
   commentId: F:Glitch9.AIDevKit.OpenAI.RunStatus.Completed
   id: Completed
@@ -162,26 +128,9 @@ items:
     to the Thread and creating another Run.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      [Message("Run completed")]
-
-      Completed = 3
+    content: Completed = 3
     return:
       type: Glitch9.AIDevKit.OpenAI.RunStatus
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      <Message("Run completed")>
-
-      Completed = 3
-  attributes:
-  - type: Glitch9.MessageAttribute
-    ctor: Glitch9.MessageAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Run completed
 - uid: Glitch9.AIDevKit.OpenAI.RunStatus.RequiresAction
   commentId: F:Glitch9.AIDevKit.OpenAI.RunStatus.RequiresAction
   id: RequiresAction
@@ -208,26 +157,9 @@ items:
     (roughly 10 mins past creation), the run will move to an expired status.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      [Message("Run requires action")]
-
-      RequiresAction = 4
+    content: RequiresAction = 4
     return:
       type: Glitch9.AIDevKit.OpenAI.RunStatus
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      <Message("Run requires action")>
-
-      RequiresAction = 4
-  attributes:
-  - type: Glitch9.MessageAttribute
-    ctor: Glitch9.MessageAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Run requires action
 - uid: Glitch9.AIDevKit.OpenAI.RunStatus.Expired
   commentId: F:Glitch9.AIDevKit.OpenAI.RunStatus.Expired
   id: Expired
@@ -252,26 +184,9 @@ items:
     our systems will expire the run.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      [Message("Run expired")]
-
-      Expired = 5
+    content: Expired = 5
     return:
       type: Glitch9.AIDevKit.OpenAI.RunStatus
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      <Message("Run expired")>
-
-      Expired = 5
-  attributes:
-  - type: Glitch9.MessageAttribute
-    ctor: Glitch9.MessageAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Run expired
 - uid: Glitch9.AIDevKit.OpenAI.RunStatus.Cancelling
   commentId: F:Glitch9.AIDevKit.OpenAI.RunStatus.Cancelling
   id: Cancelling
@@ -296,26 +211,9 @@ items:
     Cancellation is attempted but not guaranteed.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      [Message("Run is cancelling")]
-
-      Cancelling = 6
+    content: Cancelling = 6
     return:
       type: Glitch9.AIDevKit.OpenAI.RunStatus
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      <Message("Run is cancelling")>
-
-      Cancelling = 6
-  attributes:
-  - type: Glitch9.MessageAttribute
-    ctor: Glitch9.MessageAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Run is cancelling
 - uid: Glitch9.AIDevKit.OpenAI.RunStatus.Cancelled
   commentId: F:Glitch9.AIDevKit.OpenAI.RunStatus.Cancelled
   id: Cancelled
@@ -335,26 +233,9 @@ items:
   summary: Run was successfully cancelled.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      [Message("Run cancelled")]
-
-      Cancelled = 7
+    content: Cancelled = 7
     return:
       type: Glitch9.AIDevKit.OpenAI.RunStatus
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      <Message("Run cancelled")>
-
-      Cancelled = 7
-  attributes:
-  - type: Glitch9.MessageAttribute
-    ctor: Glitch9.MessageAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Run cancelled
 - uid: Glitch9.AIDevKit.OpenAI.RunStatus.Failed
   commentId: F:Glitch9.AIDevKit.OpenAI.RunStatus.Failed
   id: Failed
@@ -377,26 +258,9 @@ items:
     The timestamp for the failure will be recorded under failed_at.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      [Message("Run failed")]
-
-      Failed = 8
+    content: Failed = 8
     return:
       type: Glitch9.AIDevKit.OpenAI.RunStatus
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      <Message("Run failed")>
-
-      Failed = 8
-  attributes:
-  - type: Glitch9.MessageAttribute
-    ctor: Glitch9.MessageAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Run failed
 - uid: Glitch9.AIDevKit.OpenAI.RunStatus.Incomplete
   commentId: F:Glitch9.AIDevKit.OpenAI.RunStatus.Incomplete
   id: Incomplete
@@ -419,26 +283,9 @@ items:
     You can view the specific reason by looking at the incomplete_details object in the Run.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      [Message("Run incomplete")]
-
-      Incomplete = 9
+    content: Incomplete = 9
     return:
       type: Glitch9.AIDevKit.OpenAI.RunStatus
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      <Message("Run incomplete")>
-
-      Incomplete = 9
-  attributes:
-  - type: Glitch9.MessageAttribute
-    ctor: Glitch9.MessageAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Run incomplete
 references:
 - uid: Glitch9.AIDevKit.OpenAI
   commentId: N:Glitch9.AIDevKit.OpenAI

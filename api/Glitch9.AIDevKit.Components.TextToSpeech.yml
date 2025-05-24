@@ -1,0 +1,383 @@
+### YamlMime:ManagedReference
+items:
+- uid: Glitch9.AIDevKit.Components.TextToSpeech
+  commentId: T:Glitch9.AIDevKit.Components.TextToSpeech
+  id: TextToSpeech
+  parent: Glitch9.AIDevKit.Components
+  children:
+  - Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync(System.String)
+  - Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync(System.String,Glitch9.AIDevKit.Voice)
+  - Glitch9.AIDevKit.Components.TextToSpeech.Voice
+  langs:
+  - csharp
+  - vb
+  name: TextToSpeech
+  nameWithType: TextToSpeech
+  fullName: Glitch9.AIDevKit.Components.TextToSpeech
+  type: Class
+  source:
+    id: TextToSpeech
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/TextToSpeech.cs
+    startLine: 6
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: 'public class TextToSpeech : AIModuleComponent'
+    content.vb: Public Class TextToSpeech Inherits AIModuleComponent
+  inheritance:
+  - System.Object
+  - Glitch9.AIDevKit.Components.AIDevKitComponent
+  - Glitch9.AIDevKit.Components.AIModuleComponent
+  inheritedMembers:
+  - Glitch9.AIDevKit.Components.AIModuleComponent.model
+  - Glitch9.AIDevKit.Components.AIModuleComponent.outputPath
+  - Glitch9.AIDevKit.Components.AIModuleComponent.Model
+  - Glitch9.AIDevKit.Components.AIModuleComponent.OutputPath
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  - Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+- uid: Glitch9.AIDevKit.Components.TextToSpeech.Voice
+  commentId: P:Glitch9.AIDevKit.Components.TextToSpeech.Voice
+  id: Voice
+  parent: Glitch9.AIDevKit.Components.TextToSpeech
+  langs:
+  - csharp
+  - vb
+  name: Voice
+  nameWithType: TextToSpeech.Voice
+  fullName: Glitch9.AIDevKit.Components.TextToSpeech.Voice
+  type: Property
+  source:
+    id: Voice
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/TextToSpeech.cs
+    startLine: 12
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: public Voice Voice { get; set; }
+    parameters: []
+    return:
+      type: Glitch9.AIDevKit.Voice
+    content.vb: Public Property Voice As Voice
+  overload: Glitch9.AIDevKit.Components.TextToSpeech.Voice*
+- uid: Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync(System.String)
+  commentId: M:Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync(System.String)
+  id: GenerateSpeechAsync(System.String)
+  parent: Glitch9.AIDevKit.Components.TextToSpeech
+  langs:
+  - csharp
+  - vb
+  name: GenerateSpeechAsync(string)
+  nameWithType: TextToSpeech.GenerateSpeechAsync(string)
+  fullName: Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync(string)
+  type: Method
+  source:
+    id: GenerateSpeechAsync
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/TextToSpeech.cs
+    startLine: 14
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: public UniTask<GeneratedAudio> GenerateSpeechAsync(string text)
+    parameters:
+    - id: text
+      type: System.String
+    return:
+      type: UniTask{Glitch9.AIDevKit.GeneratedAudio}
+    content.vb: Public Function GenerateSpeechAsync(text As String) As UniTask(Of GeneratedAudio)
+  overload: Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync*
+  nameWithType.vb: TextToSpeech.GenerateSpeechAsync(String)
+  fullName.vb: Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync(String)
+  name.vb: GenerateSpeechAsync(String)
+- uid: Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync(System.String,Glitch9.AIDevKit.Voice)
+  commentId: M:Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync(System.String,Glitch9.AIDevKit.Voice)
+  id: GenerateSpeechAsync(System.String,Glitch9.AIDevKit.Voice)
+  parent: Glitch9.AIDevKit.Components.TextToSpeech
+  langs:
+  - csharp
+  - vb
+  name: GenerateSpeechAsync(string, Voice)
+  nameWithType: TextToSpeech.GenerateSpeechAsync(string, Voice)
+  fullName: Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync(string, Glitch9.AIDevKit.Voice)
+  type: Method
+  source:
+    id: GenerateSpeechAsync
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Pro/Components/Integrations/TextToSpeech.cs
+    startLine: 15
+  namespace: Glitch9.AIDevKit.Components
+  syntax:
+    content: public UniTask<GeneratedAudio> GenerateSpeechAsync(string text, Voice voice)
+    parameters:
+    - id: text
+      type: System.String
+    - id: voice
+      type: Glitch9.AIDevKit.Voice
+    return:
+      type: UniTask{Glitch9.AIDevKit.GeneratedAudio}
+    content.vb: Public Function GenerateSpeechAsync(text As String, voice As Voice) As UniTask(Of GeneratedAudio)
+  overload: Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync*
+  nameWithType.vb: TextToSpeech.GenerateSpeechAsync(String, Voice)
+  fullName.vb: Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync(String, Glitch9.AIDevKit.Voice)
+  name.vb: GenerateSpeechAsync(String, Voice)
+references:
+- uid: Glitch9.AIDevKit.Components
+  commentId: N:Glitch9.AIDevKit.Components
+  href: Glitch9.html
+  name: Glitch9.AIDevKit.Components
+  nameWithType: Glitch9.AIDevKit.Components
+  fullName: Glitch9.AIDevKit.Components
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Components
+    name: Components
+    href: Glitch9.AIDevKit.Components.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  - name: .
+  - uid: Glitch9.AIDevKit.Components
+    name: Components
+    href: Glitch9.AIDevKit.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent
+  commentId: T:Glitch9.AIDevKit.Components.AIDevKitComponent
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html
+  name: AIDevKitComponent
+  nameWithType: AIDevKitComponent
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent
+  commentId: T:Glitch9.AIDevKit.Components.AIModuleComponent
+  parent: Glitch9.AIDevKit.Components
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html
+  name: AIModuleComponent
+  nameWithType: AIModuleComponent
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent.model
+  commentId: F:Glitch9.AIDevKit.Components.AIModuleComponent.model
+  parent: Glitch9.AIDevKit.Components.AIModuleComponent
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html#Glitch9_AIDevKit_Components_AIModuleComponent_model
+  name: model
+  nameWithType: AIModuleComponent.model
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent.model
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent.outputPath
+  commentId: F:Glitch9.AIDevKit.Components.AIModuleComponent.outputPath
+  parent: Glitch9.AIDevKit.Components.AIModuleComponent
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html#Glitch9_AIDevKit_Components_AIModuleComponent_outputPath
+  name: outputPath
+  nameWithType: AIModuleComponent.outputPath
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent.outputPath
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent.Model
+  commentId: P:Glitch9.AIDevKit.Components.AIModuleComponent.Model
+  parent: Glitch9.AIDevKit.Components.AIModuleComponent
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html#Glitch9_AIDevKit_Components_AIModuleComponent_Model
+  name: Model
+  nameWithType: AIModuleComponent.Model
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent.Model
+- uid: Glitch9.AIDevKit.Components.AIModuleComponent.OutputPath
+  commentId: P:Glitch9.AIDevKit.Components.AIModuleComponent.OutputPath
+  parent: Glitch9.AIDevKit.Components.AIModuleComponent
+  href: Glitch9.AIDevKit.Components.AIModuleComponent.html#Glitch9_AIDevKit_Components_AIModuleComponent_OutputPath
+  name: OutputPath
+  nameWithType: AIModuleComponent.OutputPath
+  fullName: Glitch9.AIDevKit.Components.AIModuleComponent.OutputPath
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  commentId: F:Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_debugMode
+  name: debugMode
+  nameWithType: AIDevKitComponent.debugMode
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.debugMode
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  commentId: F:Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_onError
+  name: onError
+  nameWithType: AIDevKitComponent.onError
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.onError
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  commentId: M:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  isExternal: true
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  name: OnError(string)
+  nameWithType: AIDevKitComponent.OnError(string)
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(string)
+  nameWithType.vb: AIDevKitComponent.OnError(String)
+  fullName.vb: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(String)
+  name.vb: OnError(String)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.String)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  commentId: M:Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  parent: Glitch9.AIDevKit.Components.AIDevKitComponent
+  isExternal: true
+  href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  name: OnError(Exception)
+  nameWithType: AIDevKitComponent.OnError(Exception)
+  fullName: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+  spec.csharp:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Glitch9.AIDevKit.Components.AIDevKitComponent.OnError(System.Exception)
+    name: OnError
+    href: Glitch9.AIDevKit.Components.AIDevKitComponent.html#Glitch9_AIDevKit_Components_AIDevKitComponent_OnError_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Glitch9.AIDevKit.Components.TextToSpeech.Voice*
+  commentId: Overload:Glitch9.AIDevKit.Components.TextToSpeech.Voice
+  href: Glitch9.AIDevKit.Components.TextToSpeech.html#Glitch9_AIDevKit_Components_TextToSpeech_Voice
+  name: Voice
+  nameWithType: TextToSpeech.Voice
+  fullName: Glitch9.AIDevKit.Components.TextToSpeech.Voice
+- uid: Glitch9.AIDevKit.Voice
+  commentId: T:Glitch9.AIDevKit.Voice
+  parent: Glitch9.AIDevKit
+  href: Glitch9.AIDevKit.Voice.html
+  name: Voice
+  nameWithType: Voice
+  fullName: Glitch9.AIDevKit.Voice
+- uid: Glitch9.AIDevKit
+  commentId: N:Glitch9.AIDevKit
+  href: Glitch9.html
+  name: Glitch9.AIDevKit
+  nameWithType: Glitch9.AIDevKit
+  fullName: Glitch9.AIDevKit
+  spec.csharp:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+  spec.vb:
+  - uid: Glitch9
+    name: Glitch9
+    href: Glitch9.html
+  - name: .
+  - uid: Glitch9.AIDevKit
+    name: AIDevKit
+    href: Glitch9.AIDevKit.html
+- uid: Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync*
+  commentId: Overload:Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync
+  href: Glitch9.AIDevKit.Components.TextToSpeech.html#Glitch9_AIDevKit_Components_TextToSpeech_GenerateSpeechAsync_System_String_
+  name: GenerateSpeechAsync
+  nameWithType: TextToSpeech.GenerateSpeechAsync
+  fullName: Glitch9.AIDevKit.Components.TextToSpeech.GenerateSpeechAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UniTask{Glitch9.AIDevKit.GeneratedAudio}
+  commentId: '!:UniTask{Glitch9.AIDevKit.GeneratedAudio}'
+  definition: UniTask`1
+  href: Glitch9.AIDevKit.GeneratedAudio.html
+  name: UniTask<GeneratedAudio>
+  nameWithType: UniTask<GeneratedAudio>
+  fullName: UniTask<Glitch9.AIDevKit.GeneratedAudio>
+  nameWithType.vb: UniTask(Of GeneratedAudio)
+  fullName.vb: UniTask(Of Glitch9.AIDevKit.GeneratedAudio)
+  name.vb: UniTask(Of GeneratedAudio)
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - uid: Glitch9.AIDevKit.GeneratedAudio
+    name: GeneratedAudio
+    href: Glitch9.AIDevKit.GeneratedAudio.html
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Glitch9.AIDevKit.GeneratedAudio
+    name: GeneratedAudio
+    href: Glitch9.AIDevKit.GeneratedAudio.html
+  - name: )
+- uid: UniTask`1
+  isExternal: true
+  name: UniTask<>
+  nameWithType: UniTask<>
+  fullName: UniTask<>
+  nameWithType.vb: UniTask(Of )
+  fullName.vb: UniTask(Of )
+  name.vb: UniTask(Of )
+  spec.csharp:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UniTask`1
+    name: UniTask
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )

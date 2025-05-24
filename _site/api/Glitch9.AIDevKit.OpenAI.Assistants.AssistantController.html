@@ -1362,6 +1362,53 @@ If deleteCurrent is true, the current thread will be deleted before creating a n
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_File_AudioClip__Glitch9_AIDevKit_OpenAI_RunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)">RequestAsync(File&lt;AudioClip&gt;, RunRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;ThreadMessage&gt; RequestAsync(File&lt;AudioClip&gt; audioPrompt, RunRequest customRunRequest = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">File</span>&lt;<span class="xref">AudioClip</span>&gt;</td>
+        <td><span class="parametername">audioPrompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
+        <td><span class="parametername">customRunRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
   <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_Glitch9_AIDevKit_OpenAI_ThreadMessageRequest_Glitch9_AIDevKit_OpenAI_RunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.AIDevKit.OpenAI.ThreadMessageRequest,Glitch9.AIDevKit.OpenAI.RunRequest)">RequestAsync(ThreadMessageRequest, RunRequest)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -1456,53 +1503,6 @@ If deleteCurrent is true, the current thread will be deleted before creating a n
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_Glitch9_IO_Files_File_AudioClip__Glitch9_AIDevKit_OpenAI_RunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(Glitch9.IO.Files.File{AudioClip},Glitch9.AIDevKit.OpenAI.RunRequest)">RequestAsync(File&lt;AudioClip&gt;, RunRequest)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UniTask&lt;ThreadMessage&gt; RequestAsync(File&lt;AudioClip&gt; audioPrompt, RunRequest customRunRequest = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">File</span>&lt;<span class="xref">AudioClip</span>&gt;</td>
-        <td><span class="parametername">audioPrompt</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.RunRequest.html">RunRequest</a></td>
-        <td><span class="parametername">customRunRequest</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.OpenAI.ThreadMessage.html">ThreadMessage</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
   <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_System_String_Glitch9_AIDevKit_OpenAI_RunRequest_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest)">RequestAsync(string, RunRequest)</h4>
   <div class="markdown level1 summary"><p>Requests a response from the assistant asynchronously.</p>
 </div>
@@ -1554,7 +1554,7 @@ If deleteCurrent is true, the current thread will be deleted before creating a n
 
 
   <a id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync*"></a>
-  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_System_String_Glitch9_AIDevKit_OpenAI_RunRequest_Glitch9_IO_Files_File_Texture2D____" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,Glitch9.IO.Files.File{Texture2D}[])">RequestAsync(string, RunRequest, params File&lt;Texture2D&gt;[])</h4>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Assistants_AssistantController_RequestAsync_System_String_Glitch9_AIDevKit_OpenAI_RunRequest_File_Texture2D____" data-uid="Glitch9.AIDevKit.OpenAI.Assistants.AssistantController.RequestAsync(System.String,Glitch9.AIDevKit.OpenAI.RunRequest,File{Texture2D}[])">RequestAsync(string, RunRequest, params File&lt;Texture2D&gt;[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>

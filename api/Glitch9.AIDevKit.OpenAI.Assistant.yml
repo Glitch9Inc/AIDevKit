@@ -29,11 +29,13 @@ items:
   summary: Renamed from AssistantObject to Assistant (2024.06.14)
   example: []
   syntax:
-    content: 'public class Assistant : AIResponse'
-    content.vb: Public Class Assistant Inherits AIResponse
+    content: 'public class Assistant : AIResponse, IData'
+    content.vb: Public Class Assistant Inherits AIResponse Implements IData
   inheritance:
   - System.Object
   - Glitch9.AIDevKit.AIResponse
+  implements:
+  - IData
   inheritedMembers:
   - Glitch9.AIDevKit.AIResponse.Id
   - Glitch9.AIDevKit.AIResponse.Object
@@ -339,6 +341,11 @@ references:
   name: AIResponse
   nameWithType: AIResponse
   fullName: Glitch9.AIDevKit.AIResponse
+- uid: IData
+  isExternal: true
+  name: IData
+  nameWithType: IData
+  fullName: IData
 - uid: Glitch9.AIDevKit.AIResponse.Id
   commentId: P:Glitch9.AIDevKit.AIResponse.Id
   parent: Glitch9.AIDevKit.AIResponse

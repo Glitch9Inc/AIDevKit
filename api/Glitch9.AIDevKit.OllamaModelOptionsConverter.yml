@@ -5,8 +5,8 @@ items:
   id: OllamaModelOptionsConverter
   parent: Glitch9.AIDevKit
   children:
-  - Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.ModelOptions,System.Boolean,JsonSerializer)
-  - Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson(JsonWriter,Glitch9.AIDevKit.ModelOptions,JsonSerializer)
+  - Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.ModelSettings,System.Boolean,JsonSerializer)
+  - Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson(JsonWriter,Glitch9.AIDevKit.ModelSettings,JsonSerializer)
   langs:
   - csharp
   - vb
@@ -16,79 +16,79 @@ items:
   type: Class
   source:
     id: OllamaModelOptionsConverter
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Options/ModelOptions.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Options/ModelSettings.cs
     startLine: 401
   namespace: Glitch9.AIDevKit
   syntax:
-    content: 'public class OllamaModelOptionsConverter : JsonConverter<ModelOptions>'
-    content.vb: Public Class OllamaModelOptionsConverter Inherits JsonConverter(Of ModelOptions)
+    content: 'public class OllamaModelOptionsConverter : JsonConverter<ModelSettings>'
+    content.vb: Public Class OllamaModelOptionsConverter Inherits JsonConverter(Of ModelSettings)
   inheritance:
   - System.Object
-- uid: Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson(JsonWriter,Glitch9.AIDevKit.ModelOptions,JsonSerializer)
-  commentId: M:Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson(JsonWriter,Glitch9.AIDevKit.ModelOptions,JsonSerializer)
-  id: WriteJson(JsonWriter,Glitch9.AIDevKit.ModelOptions,JsonSerializer)
+- uid: Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson(JsonWriter,Glitch9.AIDevKit.ModelSettings,JsonSerializer)
+  commentId: M:Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson(JsonWriter,Glitch9.AIDevKit.ModelSettings,JsonSerializer)
+  id: WriteJson(JsonWriter,Glitch9.AIDevKit.ModelSettings,JsonSerializer)
   parent: Glitch9.AIDevKit.OllamaModelOptionsConverter
   langs:
   - csharp
   - vb
-  name: WriteJson(JsonWriter, ModelOptions, JsonSerializer)
-  nameWithType: OllamaModelOptionsConverter.WriteJson(JsonWriter, ModelOptions, JsonSerializer)
-  fullName: Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson(JsonWriter, Glitch9.AIDevKit.ModelOptions, JsonSerializer)
+  name: WriteJson(JsonWriter, ModelSettings, JsonSerializer)
+  nameWithType: OllamaModelOptionsConverter.WriteJson(JsonWriter, ModelSettings, JsonSerializer)
+  fullName: Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson(JsonWriter, Glitch9.AIDevKit.ModelSettings, JsonSerializer)
   type: Method
   source:
     id: WriteJson
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Options/ModelOptions.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Options/ModelSettings.cs
     startLine: 403
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
-    content: public override void WriteJson(JsonWriter writer, ModelOptions value, JsonSerializer serializer)
+    content: public override void WriteJson(JsonWriter writer, ModelSettings value, JsonSerializer serializer)
     parameters:
     - id: writer
       type: JsonWriter
     - id: value
-      type: Glitch9.AIDevKit.ModelOptions
+      type: Glitch9.AIDevKit.ModelSettings
     - id: serializer
       type: JsonSerializer
-    content.vb: Public Overrides Sub WriteJson(writer As JsonWriter, value As ModelOptions, serializer As JsonSerializer)
+    content.vb: Public Overrides Sub WriteJson(writer As JsonWriter, value As ModelSettings, serializer As JsonSerializer)
   overload: Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson*
-- uid: Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.ModelOptions,System.Boolean,JsonSerializer)
-  commentId: M:Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.ModelOptions,System.Boolean,JsonSerializer)
-  id: ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.ModelOptions,System.Boolean,JsonSerializer)
+- uid: Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.ModelSettings,System.Boolean,JsonSerializer)
+  commentId: M:Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.ModelSettings,System.Boolean,JsonSerializer)
+  id: ReadJson(JsonReader,System.Type,Glitch9.AIDevKit.ModelSettings,System.Boolean,JsonSerializer)
   parent: Glitch9.AIDevKit.OllamaModelOptionsConverter
   langs:
   - csharp
   - vb
-  name: ReadJson(JsonReader, Type, ModelOptions, bool, JsonSerializer)
-  nameWithType: OllamaModelOptionsConverter.ReadJson(JsonReader, Type, ModelOptions, bool, JsonSerializer)
-  fullName: Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson(JsonReader, System.Type, Glitch9.AIDevKit.ModelOptions, bool, JsonSerializer)
+  name: ReadJson(JsonReader, Type, ModelSettings, bool, JsonSerializer)
+  nameWithType: OllamaModelOptionsConverter.ReadJson(JsonReader, Type, ModelSettings, bool, JsonSerializer)
+  fullName: Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson(JsonReader, System.Type, Glitch9.AIDevKit.ModelSettings, bool, JsonSerializer)
   type: Method
   source:
     id: ReadJson
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Options/ModelOptions.cs
+    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Completion/Options/ModelSettings.cs
     startLine: 425
   namespace: Glitch9.AIDevKit
   example: []
   syntax:
-    content: public override ModelOptions ReadJson(JsonReader reader, Type objectType, ModelOptions existingValue, bool hasExistingValue, JsonSerializer serializer)
+    content: public override ModelSettings ReadJson(JsonReader reader, Type objectType, ModelSettings existingValue, bool hasExistingValue, JsonSerializer serializer)
     parameters:
     - id: reader
       type: JsonReader
     - id: objectType
       type: System.Type
     - id: existingValue
-      type: Glitch9.AIDevKit.ModelOptions
+      type: Glitch9.AIDevKit.ModelSettings
     - id: hasExistingValue
       type: System.Boolean
     - id: serializer
       type: JsonSerializer
     return:
-      type: Glitch9.AIDevKit.ModelOptions
-    content.vb: Public Overrides Function ReadJson(reader As JsonReader, objectType As Type, existingValue As ModelOptions, hasExistingValue As Boolean, serializer As JsonSerializer) As ModelOptions
+      type: Glitch9.AIDevKit.ModelSettings
+    content.vb: Public Overrides Function ReadJson(reader As JsonReader, objectType As Type, existingValue As ModelSettings, hasExistingValue As Boolean, serializer As JsonSerializer) As ModelSettings
   overload: Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson*
-  nameWithType.vb: OllamaModelOptionsConverter.ReadJson(JsonReader, Type, ModelOptions, Boolean, JsonSerializer)
-  fullName.vb: Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson(JsonReader, System.Type, Glitch9.AIDevKit.ModelOptions, Boolean, JsonSerializer)
-  name.vb: ReadJson(JsonReader, Type, ModelOptions, Boolean, JsonSerializer)
+  nameWithType.vb: OllamaModelOptionsConverter.ReadJson(JsonReader, Type, ModelSettings, Boolean, JsonSerializer)
+  fullName.vb: Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson(JsonReader, System.Type, Glitch9.AIDevKit.ModelSettings, Boolean, JsonSerializer)
+  name.vb: ReadJson(JsonReader, Type, ModelSettings, Boolean, JsonSerializer)
 references:
 - uid: Glitch9.AIDevKit
   commentId: N:Glitch9.AIDevKit
@@ -131,7 +131,7 @@ references:
   fullName: System
 - uid: Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson*
   commentId: Overload:Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson
-  href: Glitch9.AIDevKit.OllamaModelOptionsConverter.html#Glitch9_AIDevKit_OllamaModelOptionsConverter_WriteJson_JsonWriter_Glitch9_AIDevKit_ModelOptions_JsonSerializer_
+  href: Glitch9.AIDevKit.OllamaModelOptionsConverter.html#Glitch9_AIDevKit_OllamaModelOptionsConverter_WriteJson_JsonWriter_Glitch9_AIDevKit_ModelSettings_JsonSerializer_
   name: WriteJson
   nameWithType: OllamaModelOptionsConverter.WriteJson
   fullName: Glitch9.AIDevKit.OllamaModelOptionsConverter.WriteJson
@@ -140,13 +140,13 @@ references:
   name: JsonWriter
   nameWithType: JsonWriter
   fullName: JsonWriter
-- uid: Glitch9.AIDevKit.ModelOptions
-  commentId: T:Glitch9.AIDevKit.ModelOptions
+- uid: Glitch9.AIDevKit.ModelSettings
+  commentId: T:Glitch9.AIDevKit.ModelSettings
   parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.ModelOptions.html
-  name: ModelOptions
-  nameWithType: ModelOptions
-  fullName: Glitch9.AIDevKit.ModelOptions
+  href: Glitch9.AIDevKit.ModelSettings.html
+  name: ModelSettings
+  nameWithType: ModelSettings
+  fullName: Glitch9.AIDevKit.ModelSettings
 - uid: JsonSerializer
   isExternal: true
   name: JsonSerializer
@@ -154,7 +154,7 @@ references:
   fullName: JsonSerializer
 - uid: Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson*
   commentId: Overload:Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson
-  href: Glitch9.AIDevKit.OllamaModelOptionsConverter.html#Glitch9_AIDevKit_OllamaModelOptionsConverter_ReadJson_JsonReader_System_Type_Glitch9_AIDevKit_ModelOptions_System_Boolean_JsonSerializer_
+  href: Glitch9.AIDevKit.OllamaModelOptionsConverter.html#Glitch9_AIDevKit_OllamaModelOptionsConverter_ReadJson_JsonReader_System_Type_Glitch9_AIDevKit_ModelSettings_System_Boolean_JsonSerializer_
   name: ReadJson
   nameWithType: OllamaModelOptionsConverter.ReadJson
   fullName: Glitch9.AIDevKit.OllamaModelOptionsConverter.ReadJson

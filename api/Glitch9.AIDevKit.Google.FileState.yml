@@ -19,7 +19,7 @@ items:
   source:
     id: FileState
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 166
+    startLine: 195
   namespace: Glitch9.AIDevKit.Google
   summary: States for the lifecycle of a File.
   example: []
@@ -40,21 +40,14 @@ items:
   source:
     id: None
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 171
+    startLine: 200
   namespace: Glitch9.AIDevKit.Google
   summary: The default value. This value is used if the state is omitted.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      None = 0
+    content: None = 0
     return:
       type: Glitch9.AIDevKit.Google.FileState
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      None = 0
 - uid: Glitch9.AIDevKit.Google.FileState.Processing
   commentId: F:Glitch9.AIDevKit.Google.FileState.Processing
   id: Processing
@@ -69,21 +62,14 @@ items:
   source:
     id: Processing
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 176
+    startLine: 205
   namespace: Glitch9.AIDevKit.Google
   summary: File is being processed and cannot be used for inference yet.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      Processing = 1
+    content: Processing = 1
     return:
       type: Glitch9.AIDevKit.Google.FileState
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      Processing = 1
 - uid: Glitch9.AIDevKit.Google.FileState.Active
   commentId: F:Glitch9.AIDevKit.Google.FileState.Active
   id: Active
@@ -98,21 +84,14 @@ items:
   source:
     id: Active
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 181
+    startLine: 210
   namespace: Glitch9.AIDevKit.Google
   summary: File is processed and available for inference.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      Active = 2
+    content: Active = 2
     return:
       type: Glitch9.AIDevKit.Google.FileState
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      Active = 2
 - uid: Glitch9.AIDevKit.Google.FileState.Failed
   commentId: F:Glitch9.AIDevKit.Google.FileState.Failed
   id: Failed
@@ -127,21 +106,14 @@ items:
   source:
     id: Failed
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Google/Models/Files/GoogleFile.cs
-    startLine: 186
+    startLine: 215
   namespace: Glitch9.AIDevKit.Google
   summary: File failed processing.
   example: []
   syntax:
-    content: >-
-      [ApiEnumAttribute]
-
-      Failed = 3
+    content: Failed = 3
     return:
       type: Glitch9.AIDevKit.Google.FileState
-    content.vb: >-
-      <ApiEnumAttribute>
-
-      Failed = 3
 references:
 - uid: Glitch9.AIDevKit.Google
   commentId: N:Glitch9.AIDevKit.Google

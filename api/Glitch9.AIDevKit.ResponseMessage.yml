@@ -7,7 +7,6 @@ items:
   children:
   - Glitch9.AIDevKit.ResponseMessage.#ctor
   - Glitch9.AIDevKit.ResponseMessage.#ctor(Glitch9.AIDevKit.Content)
-  - Glitch9.AIDevKit.ResponseMessage.Image
   - Glitch9.AIDevKit.ResponseMessage.Role
   - Glitch9.AIDevKit.ResponseMessage.Tools
   - Glitch9.AIDevKit.ResponseMessage.Usage
@@ -31,6 +30,7 @@ items:
   - System.Object
   - Glitch9.AIDevKit.ChatMessage
   derivedClasses:
+  - Glitch9.AIDevKit.ImageMessage
   - Glitch9.AIDevKit.ToolMessage
   inheritedMembers:
   - Glitch9.AIDevKit.ChatMessage.Content
@@ -142,29 +142,6 @@ items:
       type: Glitch9.AIDevKit.Usage
     content.vb: Public Property Usage As Usage
   overload: Glitch9.AIDevKit.ResponseMessage.Usage*
-- uid: Glitch9.AIDevKit.ResponseMessage.Image
-  commentId: P:Glitch9.AIDevKit.ResponseMessage.Image
-  id: Image
-  parent: Glitch9.AIDevKit.ResponseMessage
-  langs:
-  - csharp
-  - vb
-  name: Image
-  nameWithType: ResponseMessage.Image
-  fullName: Glitch9.AIDevKit.ResponseMessage.Image
-  type: Property
-  source:
-    id: Image
-    path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 141
-  namespace: Glitch9.AIDevKit
-  syntax:
-    content: public GeneratedImage Image { get; set; }
-    parameters: []
-    return:
-      type: Glitch9.AIDevKit.GeneratedImage
-    content.vb: Public Property Image As GeneratedImage
-  overload: Glitch9.AIDevKit.ResponseMessage.Image*
 - uid: Glitch9.AIDevKit.ResponseMessage.#ctor
   commentId: M:Glitch9.AIDevKit.ResponseMessage.#ctor
   id: '#ctor'
@@ -179,7 +156,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 143
+    startLine: 142
   namespace: Glitch9.AIDevKit
   syntax:
     content: public ResponseMessage()
@@ -202,7 +179,7 @@ items:
   source:
     id: .ctor
     path: E:/UnityProjects/Glitch9/AIDevKit-Unity6/Assets/Glitch9/AIDevKit/Runtime/Scripts/Common/Models/Chat/Common/ChatMessage.cs
-    startLine: 144
+    startLine: 143
   namespace: Glitch9.AIDevKit
   syntax:
     content: public ResponseMessage(Content content)
@@ -512,19 +489,6 @@ references:
   name: Usage
   nameWithType: Usage
   fullName: Glitch9.AIDevKit.Usage
-- uid: Glitch9.AIDevKit.ResponseMessage.Image*
-  commentId: Overload:Glitch9.AIDevKit.ResponseMessage.Image
-  href: Glitch9.AIDevKit.ResponseMessage.html#Glitch9_AIDevKit_ResponseMessage_Image
-  name: Image
-  nameWithType: ResponseMessage.Image
-  fullName: Glitch9.AIDevKit.ResponseMessage.Image
-- uid: Glitch9.AIDevKit.GeneratedImage
-  commentId: T:Glitch9.AIDevKit.GeneratedImage
-  parent: Glitch9.AIDevKit
-  href: Glitch9.AIDevKit.GeneratedImage.html
-  name: GeneratedImage
-  nameWithType: GeneratedImage
-  fullName: Glitch9.AIDevKit.GeneratedImage
 - uid: Glitch9.AIDevKit.ResponseMessage.#ctor*
   commentId: Overload:Glitch9.AIDevKit.ResponseMessage.#ctor
   href: Glitch9.AIDevKit.ResponseMessage.html#Glitch9_AIDevKit_ResponseMessage__ctor

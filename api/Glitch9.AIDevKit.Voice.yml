@@ -20,11 +20,13 @@ items:
     startLine: 8
   namespace: Glitch9.AIDevKit
   syntax:
-    content: 'public class Voice : AIDevKitAsset'
-    content.vb: Public Class Voice Inherits AIDevKitAsset
+    content: 'public class Voice : AIDevKitAsset, IData'
+    content.vb: Public Class Voice Inherits AIDevKitAsset Implements IData
   inheritance:
   - System.Object
   - Glitch9.AIDevKit.AIDevKitAsset
+  implements:
+  - IData
   inheritedMembers:
   - Glitch9.AIDevKit.AIDevKitAsset.id
   - Glitch9.AIDevKit.AIDevKitAsset.displayName
@@ -141,6 +143,11 @@ references:
   name: AIDevKitAsset
   nameWithType: AIDevKitAsset
   fullName: Glitch9.AIDevKit.AIDevKitAsset
+- uid: IData
+  isExternal: true
+  name: IData
+  nameWithType: IData
+  fullName: IData
 - uid: Glitch9.AIDevKit.AIDevKitAsset.id
   commentId: F:Glitch9.AIDevKit.AIDevKitAsset.id
   parent: Glitch9.AIDevKit.AIDevKitAsset
