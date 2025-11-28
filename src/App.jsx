@@ -1,3 +1,5 @@
+import { Routes, Route } from 'react-router-dom';
+import { LanguageProvider } from './contexts/LanguageContext';
 import GetInTouch from "./sections/get-in-touch";
 import OurTestimonials from "./sections/our-testimonials";
 import Pricing from "./sections/pricing";
@@ -8,8 +10,10 @@ import AboutOurApps from "./sections/about-our-apps";
 import HeroSection from "./sections/hero-section";
 import OurLatestCreation from "./sections/our-latest-creation";
 import TrustedCompanies from "./sections/trusted-companies";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
-export default function Page() {
+function HomePage() {
     return (
         <>
             <LenisScroll />
@@ -25,5 +29,17 @@ export default function Page() {
             </main>
             <Footer />
         </>
+    );
+}
+
+export default function App() {
+    return (
+        <LanguageProvider>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-of-service" element={<TermsOfService />} />
+            </Routes>
+        </LanguageProvider>
     );
 }

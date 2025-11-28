@@ -3,21 +3,23 @@ import { ArrowUpRight, SendIcon, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import emailjs from '@emailjs/browser';
+import { useLanguage } from "../contexts/LanguageContext";
 
 const providers = [
-    { value: "User can choose from your supported providers", label: "User can choose from your supported providers", icon: "🎯" },
-    { value: "OpenAI", label: "OpenAI", icon: "🤖" },
-    { value: "Google Gemini", label: "Google Gemini", icon: "💎" },
-    { value: "Anthropic Claude", label: "Anthropic Claude", icon: "🧠" },
-    { value: "Perplexity", label: "Perplexity", icon: "🔍" },
-    { value: "xAI Grok", label: "xAI Grok", icon: "⚡" },
-    { value: "Microsoft Azure", label: "Microsoft Azure", icon: "☁️" },
-    { value: "Open Router", label: "Open Router", icon: "🌐" },
-    { value: "Groq Cloud", label: "Groq Cloud", icon: "⚙️" },
-    { value: "Something not on this list", label: "Something not on this list", icon: "➕" }
+    { value: "User can choose from your supported providers", label: "User can choose from your supported providers" },
+    { value: "OpenAI", label: "OpenAI" },
+    { value: "Google Gemini", label: "Google Gemini" },
+    { value: "Anthropic Claude", label: "Anthropic Claude" },
+    { value: "Perplexity", label: "Perplexity" },
+    { value: "xAI Grok", label: "xAI Grok" },
+    { value: "Microsoft Azure", label: "Microsoft Azure" },
+    { value: "Open Router", label: "Open Router" },
+    { value: "Groq Cloud", label: "Groq Cloud" },
+    { value: "Something not on this list", label: "Something not on this list" }
 ];
 
 export default function GetInTouch() {
+    const { t } = useLanguage();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [selectedProvider, setSelectedProvider] = useState(null);
@@ -73,7 +75,7 @@ export default function GetInTouch() {
 
     return (
         <section className="flex flex-col items-center" id="custom-plugin">
-            <SectionTitle title="Custom Plugin Development" description="Need a custom AI-Unity integration? We create tailored solutions for your unique requirements. Starting from $1,800." />
+            <SectionTitle title={t('contact.title')} description={t('contact.description')} />
             <form onSubmit={handleSubmit} className='grid sm:grid-cols-2 gap-3 sm:gap-5 max-w-3xl mx-auto text-slate-400 mt-16 w-full' >
                 <motion.div
                     initial={{ y: 150, opacity: 0 }}
@@ -108,7 +110,7 @@ export default function GetInTouch() {
                         className='w-full mt-2 p-3 border border-slate-700 rounded-lg bg-slate-900 text-slate-300 cursor-pointer hover:border-slate-600 transition flex items-center justify-between'
                     >
                         <span className={selectedProvider ? 'text-slate-200' : 'text-slate-500'}>
-                            {selectedProvider ? `${selectedProvider.icon} ${selectedProvider.label}` : '✨ Select your preferred AI provider'}
+                            {selectedProvider ? selectedProvider.label : '✨ Select your preferred AI provider'}
                         </span>
                         <ChevronDown className={`size-5 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                     </div>
@@ -129,9 +131,8 @@ export default function GetInTouch() {
                                             setSelectedProvider(provider);
                                             setIsOpen(false);
                                         }}
-                                        className='p-3 hover:bg-slate-800 cursor-pointer text-slate-200 transition flex items-center gap-2'
+                                        className='p-3 hover:bg-slate-800 cursor-pointer text-slate-200 transition'
                                     >
-                                        <span>{provider.icon}</span>
                                         <span>{provider.label}</span>
                                     </div>
                                 ))}

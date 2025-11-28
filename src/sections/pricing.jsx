@@ -1,64 +1,73 @@
 import SectionTitle from "../components/section-title";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Pricing() {
+    const { t, currentLanguage } = useLanguage();
+
     const plans = [
         {
-            name: "Free",
-            price: "$0",
-            description: "Perfect for trying out AI Dev Kit",
-            features: [
-                "OpenAI GPT-3.5 Integration",
-                "5,000 API calls/month",
-                "Basic documentation",
-                "Community support",
-                "Single project license"
-            ],
-            buttonText: "Get Started",
-            buttonStyle: "border-2 border-slate-400 hover:bg-white/10"
+            name: t('pricing.studio.name'),
+            price: t('pricing.studio.price'),
+            description: t('pricing.studio.description'),
+            features: currentLanguage === 'en' ? [
+                "OpenAI & ElevenLabs Integration",
+                "Editor Tools & Generators",
+                "AI Chat Assistant with voice",
+                "Text, Shader, Image, Audio generators",
+                "AI Model & Voice Library",
+                "Project-aware suggestions",
+                "Community support"
+            ] : t('pricing.studio.features'),
+            buttonText: t('pricing.studio.button'),
+            buttonStyle: "border-2 border-slate-400 hover:bg-white/10",
+            link: "https://assetstore.unity.com/packages/tools/generative-ai/ai-dev-kit-studio-327138"
         },
         {
-            name: "Pro",
-            price: "$49",
-            description: "For professional developers",
-            features: [
-                "All Free features",
-                "OpenAI GPT-4 & Claude 3.5",
-                "Unlimited API calls",
-                "Priority support",
-                "Up to 5 projects",
-                "Advanced editor tools",
-                "Custom model fine-tuning"
-            ],
-            buttonText: "Go Pro",
+            name: t('pricing.pro.name'),
+            price: t('pricing.pro.price'),
+            description: t('pricing.pro.description'),
+            features: currentLanguage === 'en' ? [
+                "Everything in Studio",
+                "Advanced AI Agent System",
+                "Google Gemini, Anthropic Claude",
+                "Ollama local server support",
+                "Custom Inspector components",
+                "Memory & Function Calling",
+                "Streaming & Moderation",
+                "Priority support"
+            ] : t('pricing.pro.features'),
+            buttonText: t('pricing.pro.button'),
             buttonStyle: "bg-indigo-600 hover:bg-indigo-700 text-white",
-            popular: true
+            popular: true,
+            popularText: t('pricing.pro.popular'),
+            link: "https://assetstore.unity.com/packages/tools/generative-ai/ai-dev-kit-pro-281225"
         },
         {
-            name: "Enterprise",
-            price: "$199",
-            description: "For teams and organizations",
-            features: [
-                "All Pro features",
-                "All AI models (GPT-4, Claude, Gemini)",
-                "Unlimited projects",
-                "Dedicated support",
-                "Custom integrations",
-                "On-premise deployment",
-                "Team collaboration tools",
-                "SLA guarantee"
-            ],
-            buttonText: "Contact Sales",
-            buttonStyle: "border-2 border-slate-400 hover:bg-white/10"
+            name: t('pricing.researchLab.name'),
+            price: t('pricing.researchLab.price'),
+            description: t('pricing.researchLab.description'),
+            features: currentLanguage === 'en' ? [
+                "Everything in Pro",
+                "All AI Providers (10+)",
+                "Azure, GroqCloud, Perplexity, xAI",
+                "Enterprise-grade workflows",
+                "Early access to experimental features",
+                "Fast updates via Discord",
+                "Direct developer access"
+            ] : t('pricing.researchLab.features'),
+            buttonText: t('pricing.researchLab.button'),
+            buttonStyle: "border-2 border-slate-400 hover:bg-white/10",
+            link: "https://assetstore.unity.com/packages/tools/generative-ai/ai-dev-kit-research-lab-327128"
         }
     ];
 
     return (
         <section id="pricing" className="flex flex-col items-center py-20">
             <SectionTitle
-                title="Simple, Transparent Pricing"
-                description="Choose the perfect plan for your AI development needs. All plans include lifetime updates."
+                title={t('pricing.title')}
+                description={t('pricing.description')}
             />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-7xl w-full px-4">
                 {plans.map((plan, index) => (
@@ -75,14 +84,13 @@ export default function Pricing() {
                     >
                         {plan.popular && (
                             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-sm font-semibold px-4 py-1 rounded-full">
-                                Most Popular
+                                {plan.popularText}
                             </div>
                         )}
 
                         <h3 className="text-2xl font-bold">{plan.name}</h3>
                         <div className="mt-4 mb-2">
                             <span className="text-5xl font-bold">{plan.price}</span>
-                            <span className="text-slate-400 ml-2">/month</span>
                         </div>
                         <p className="text-slate-400 text-sm mb-8">{plan.description}</p>
 
@@ -95,9 +103,14 @@ export default function Pricing() {
                             ))}
                         </ul>
 
-                        <button className={`w-full py-3 rounded-lg font-semibold transition active:scale-95 ${plan.buttonStyle}`}>
+                        <a
+                            href={plan.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`w-full py-3 rounded-lg font-semibold transition active:scale-95 text-center block ${plan.buttonStyle}`}
+                        >
                             {plan.buttonText}
-                        </button>
+                        </a>
                     </motion.div>
                 ))}
             </div>

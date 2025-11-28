@@ -45,7 +45,7 @@ export default function TiltedImage({ rotateAmplitude = 3, }) {
     }
 
     return (
-        <motion.figure ref={ref} className="relative w-full h-[300px] [perspective:800px] mt-32 max-w-6xl mx-auto flex flex-col items-center justify-center" onMouseMove={handleMouse} onMouseLeave={handleMouseLeave}
+        <motion.figure ref={ref} className="relative w-full h-[300px] [perspective:800px] mt-32 max-w-6xl mx-auto flex flex-col items-center justify-center -z-10" onMouseMove={handleMouse} onMouseLeave={handleMouseLeave}
             initial={{ y: 150, opacity: 0 }}
             whileInView={{ y: 0, opacity: 0.35 }}
             viewport={{ once: true }}

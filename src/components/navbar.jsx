@@ -2,11 +2,12 @@ import { useState } from "react";
 import { MenuIcon, XIcon, ChevronDown, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLangOpen, setIsLangOpen] = useState(false);
-    const [selectedLang, setSelectedLang] = useState("English");
+    const { currentLanguage, changeLanguage, t } = useLanguage();
 
     const languages = [
         { code: "en", label: "English" },
@@ -16,27 +17,29 @@ export default function Navbar() {
         { code: "es", label: "Español" },
     ];
 
+    const selectedLang = languages.find(lang => lang.code === currentLanguage)?.label || "English";
+
     const navlinks = [
         {
             href: "#features",
-            text: "Features",
+            text: t('nav.features'),
         },
         {
             href: "#pricing",
-            text: "Pricing",
+            text: t('nav.pricing'),
         },
         {
             href: "#custom-plugin",
-            text: "Custom Plugin",
+            text: t('nav.customPlugin'),
         },
         {
             href: "https://glitch9.gitbook.io/ai-dev-kit/",
-            text: "Docs",
+            text: t('nav.docs'),
             external: true,
         },
         {
             href: "https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AIDevKit.html",
-            text: "API Reference",
+            text: t('nav.apiReference'),
             external: true,
         },
     ];
@@ -80,14 +83,14 @@ export default function Navbar() {
                                 <button
                                     key={lang.code}
                                     onClick={() => {
-                                        setSelectedLang(lang.label);
+                                        changeLanguage(lang.code);
                                         setIsLangOpen(false);
                                     }}
-                                    className={`w-full text-left px-4 py-2 hover:bg-slate-700 transition flex items-center justify-between ${selectedLang === lang.label ? 'bg-slate-700/50' : ''
+                                    className={`w-full text-left px-4 py-2 hover:bg-slate-700 transition flex items-center justify-between ${currentLanguage === lang.code ? 'bg-slate-700/50' : ''
                                         }`}
                                 >
                                     {lang.label}
-                                    {selectedLang === lang.label && (
+                                    {currentLanguage === lang.code && (
                                         <Check className="size-4 text-blue-500" />
                                     )}
                                 </button>

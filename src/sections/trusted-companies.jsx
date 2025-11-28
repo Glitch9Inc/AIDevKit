@@ -1,18 +1,26 @@
 import { motion } from "framer-motion";
+import SectionTitle from "../components/section-title";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const stats = [
-    { number: "10+", label: "Supported AI Providers", gradient: "from-blue-400 to-cyan-400" },
-    { number: "1", label: "Unified API", gradient: "from-purple-400 to-blue-400" },
-    { number: "3", label: "Lines of Code", gradient: "from-pink-400 to-orange-400" },
-    { number: "1min", label: "Integration Time", gradient: "from-green-400 to-cyan-400" },
-    { number: "24/7", label: "Support", gradient: "from-indigo-400 to-purple-400" }
+    { number: "10+", labelKey: "stats.providers", gradient: "from-blue-400 to-cyan-400" },
+    { number: "1", labelKey: "stats.api", gradient: "from-purple-400 to-blue-400" },
+    { number: "3", labelKey: "stats.lines", gradient: "from-pink-400 to-orange-400" },
+    { number: "1min", labelKey: "stats.integration", gradient: "from-green-400 to-cyan-400" },
+    { number: "24/7", labelKey: "stats.support", gradient: "from-indigo-400 to-purple-400" }
 ];
 
 export default function TrustedCompanies() {
+    const { t } = useLanguage();
+
     return (
         <section className="flex flex-col items-center py-20">
+            <SectionTitle
+                title={t('stats.title')}
+                description={t('stats.description')}
+            />
             <motion.div
-                className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 max-w-6xl w-full px-6"
+                className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 max-w-6xl w-full px-6 mt-16"
                 initial={{ y: 150, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
@@ -31,7 +39,7 @@ export default function TrustedCompanies() {
                             {stat.number}
                         </h3>
                         <p className="text-slate-400 text-sm md:text-base font-medium">
-                            {stat.label}
+                            {t(stat.labelKey)}
                         </p>
                     </motion.div>
                 ))}

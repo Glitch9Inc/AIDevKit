@@ -1,29 +1,31 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import SectionTitle from "../components/section-title";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function OurLatestCreation() {
+    const { t } = useLanguage();
     const [isHovered, setIsHovered] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
     const [className, setClassName] = useState("");
 
     const sectionData = [
         {
-            title: "Prompt engineers",
-            description: "Bridging the gap between human intent and machine understanding through expert prompt design.",
-            image: "https://images.unsplash.com/photo-1543269865-0a740d43b90c?q=80&w=800&h=400&auto=format&fit=crop",
+            title: t('features.fluentApi.title'),
+            description: t('features.fluentApi.description'),
+            image: "/assets/fluent-api.png",
             align: "object-center",
         },
         {
-            title: "Data scientists",
-            description: "Turning data into actionable insights that drive intelligent innovation and growth.",
-            image: "https://images.unsplash.com/photo-1714976326351-0ecf0244f0fc?q=80&w=800&h=400&auto=format&fit=crop",
-            align: "object-right",
+            title: t('features.aiAgent.title'),
+            description: t('features.aiAgent.description'),
+            image: "/assets/ai-agent.png",
+            align: "object-center",
         },
         {
-            title: "Software engineers",
-            description: "Building scalable and efficient systems that bring ideas to life through code.",
-            image: "https://images.unsplash.com/photo-1736220690062-79e12ca75262?q=80&w=800&h=400&auto=format&fit=crop",
+            title: t('features.editorTools.title'),
+            description: t('features.editorTools.description'),
+            image: "/assets/editor-tools.png",
             align: "object-center",
         },
     ];
@@ -37,10 +39,10 @@ export default function OurLatestCreation() {
     }, [isHovered, sectionData.length]);
 
     return (
-        <section className="flex flex-col items-center" id="creations">
+        <section className="flex flex-col items-center" id="features">
             <SectionTitle
-                title="Our latest creation"
-                description="A visual collection of our most recent works - each piece crafted with intention, emotion, and style."
+                title={t('features.title')}
+                description={t('features.description')}
             />
 
             <div className="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >
