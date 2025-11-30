@@ -39,7 +39,7 @@ export default function OurLatestCreation() {
     }, [isHovered, sectionData.length]);
 
     return (
-        <section className="flex flex-col items-center" id="features">
+        <section className="flex flex-col items-center py-20" id="features">
             <SectionTitle
                 title={t('features.title')}
                 description={t('features.description')}

@@ -3,7 +3,7 @@ export const translations = {
         nav: {
             features: "Features",
             pricing: "Pricing",
-            customPlugin: "Custom Plugin",
+            customPlugin: "Custom Solutions",
             docs: "Docs",
             apiReference: "API Reference"
         },
@@ -30,12 +30,15 @@ export const translations = {
             }
         },
         stats: {
-            title: "By the Numbers",
-            description: "One API to rule them all. No more wrestling with different SDKs, regions, and rate limits.",
+            title: "The Power of One",
+            description: "Stop juggling multiple SDKs.\nOne API gives you instant access to 500+ models.",
             providers: "AI Models",
-            api: "Unified API",
-            lines: "Line of Code",
+            apiNumber: "1 API",
+            api: "Unified Interface",
+            linesNumber: "1 line",
+            lines: "Code",
             integration: "Integration",
+            integrationTime: "1 min",
             support: "Support"
         },
         providers: {
@@ -44,19 +47,31 @@ export const translations = {
             list: ["OpenAI", "Google Gemini", "Anthropic Claude", "Azure OpenAI", "GroqCloud", "Perplexity", "xAI Grok", "Ollama", "Hugging Face", "Cohere"]
         },
         about: {
-            title: "Bring AI into your project—without the chaos",
-            description: "Every provider uses different models, regions, keys, SDK rules, and rate limits. AI Dev Kit gives you one unified, fluent API for all major AI services.",
+            title: "Own It Forever. Pay Once.",
+            description: "No subscriptions, no recurring fees, no surprises. Buy once and get lifetime updates, 24/7 Discord support, and full access to all features—forever.",
             noLockIn: {
-                title: "No Provider Lock-in",
-                description: "Access 500+ AI models instantly. From OpenAI to local Ollama servers—your choice, your control."
+                title: "No Subscription Required",
+                description: "One-time purchase with lifetime updates. No monthly fees, no hidden costs. Own it forever."
             },
             productionReady: {
-                title: "Production-Ready Agent System",
-                description: "Advanced agents with streaming, memory, function calling, and MCP support. Built for real applications."
+                title: "24/7 Discord Support",
+                description: "Get help anytime through our active Discord community. Direct communication with developers and fast responses."
             },
             unityFirst: {
-                title: "Unity-First Development",
-                description: "Native Unity integration with editor tools, UniTask optimization, and seamless workflow integration."
+                title: "Lifetime Updates",
+                description: "All future updates included at no extra cost. New features, improvements, and bug fixes—forever."
+            },
+            crossPlatform: {
+                title: "Cross-Platform Ready",
+                description: "Build for Windows, macOS, Linux, iOS, Android, and WebGL. One codebase, all platforms."
+            },
+            sourceIncluded: {
+                title: "Full Source Code",
+                description: "Complete source code included. Customize, extend, and adapt to your exact needs."
+            },
+            commercialUse: {
+                title: "Commercial License",
+                description: "Use in unlimited commercial projects. No royalties, no revenue sharing, no restrictions."
             }
         },
         testimonials: {
@@ -87,7 +102,7 @@ export const translations = {
             }
         },
         contact: {
-            title: "Need a Custom AI Plugin?",
+            title: "Need a Custom AI Integration?",
             description: "From 2,000 USD, I can build tailored solutions to fit your exact needs, whether it's specialized AI integrations or automated workflows.",
             form: {
                 name: "Your Name",
@@ -126,13 +141,13 @@ export const translations = {
         nav: {
             features: "기능",
             pricing: "가격",
-            customPlugin: "커스텀 플러그인",
+            customPlugin: "커스텀 솔루션",
             docs: "문서",
             apiReference: "API 레퍼런스"
         },
         hero: {
-            title: "멀티 AI 서비스 통합 개발 키트",
-            subtitle: "최신 AI 모델을 Unity 프로젝트에 쉽고 빠르게 적용하세요. 직관적인 API, 강력한 에디터 도구, 크로스 플랫폼 런타임을 제공합니다.",
+            title: "통합 AI 서비스\nUnity용 개발 키트",
+            subtitle: "최신 AI 모델을 Unity 프로젝트에 쉽고 빠르게 적용하세요.\n직관적인 API, 강력한 에디터 도구, 크로스 플랫폼 런타임을 제공합니다.",
             joinDiscord: "디스코드 참여하기",
             getFromAssetStore: "에셋 스토어에서 받기"
         },
@@ -154,32 +169,47 @@ export const translations = {
         },
         stats: {
             title: "극한의 미니멀리즘",
-            description: "모든 것을 하나의 API로 해결. 더 이상 각종 SDK, 지역 설정, 속도 제한과 씨름할 필요가 없습니다.",
+            description: "복잡한 SDK 관리를 멈추세요.\n단일 API로 500개 이상의 AI모델을 바로 사용할 수 있습니다.",
             providers: "AI 모델",
-            api: "통합 API",
-            lines: "1줄 코드",
+            apiNumber: "1 API",
+            api: "통합 인터페이스",
+            linesNumber: "1줄",
+            lines: "코드",
             integration: "설치 & 구현",
+            integrationTime: "1분",
             support: "지원"
         },
         providers: {
-            title: "지원하는 AI 프로바이더",
-            description: "단일 통합 API로 모든 주요 AI 서비스에 연결하기",
+            title: "AI 서비스 제공업체",
+            description: "단일 통합 API로 모든 주요 AI 서비스를 이용할 수 있습니다.",
             list: ["OpenAI", "Google Gemini", "Anthropic Claude", "Azure OpenAI", "GroqCloud", "Perplexity", "xAI Grok", "Ollama", "Hugging Face", "Cohere"]
         },
         about: {
-            title: "부담없는 AI 연동",
-            description: "AI 제공업체마다 모델, 지역, 인증 방식, SDK 규칙, 속도 제한이 달라 혼란스러울 수 있습니다. AI Dev Kit은 주요 AI 서비스들을 모두 아우르는 통합 API를 제공합니다.",
+            title: "한 번 구매로 평생 소유",
+            description: "구독료 없음, 반복 결제 없음, 숨겨진 비용 없음.\n한 번 구매로 평생 업데이트, 디스코드를 통한 24시간 안내 지원",
             noLockIn: {
-                title: "업체 종속 없음",
-                description: "500+ AI 모델에 즉시 접근하세요. OpenAI부터 로컬 Ollama 서버까지—완전한 선택권을 드립니다."
+                title: "구독 없이 소유",
+                description: "한 번만 구매하면 평생 업데이트를 받을 수 있습니다. 월 사용료 없음, 숨겨진 비용 없음. 영구 소유."
             },
             productionReady: {
-                title: "실서비스에 최적화된 에이전트",
-                description: "스트리밍, 메모리, 함수 호출, MCP를 갖춘 고성능 에이전트 시스템. 실제 프로젝트에서 바로 사용 가능하도록 설계되었습니다."
+                title: "24시간 디스코드 지원",
+                description: "활발한 디스코드 커뮤니티를 통해 언제든지 도움을 받을 수 있습니다. 개발자와 직접 소통하고 빠른 응답을 받으세요."
             },
             unityFirst: {
-                title: "Unity 환경에 최적화",
-                description: "에디터 통합, UniTask 최적화, 자연스러운 워크플로우 연동 등 Unity에 특화된 개발 경험을 제공합니다."
+                title: "평생 업데이트",
+                description: "미래의 모든 업데이트가 추가 비용 없이 포함됩니다. 새로운 기능, 개선사항, 버그 수정—영구적으로."
+            },
+            crossPlatform: {
+                title: "크로스 플랫폼 지원",
+                description: "Windows, macOS, Linux, iOS, Android, WebGL 빌드 가능. 하나의 코드베이스로 모든 플랫폼 지원."
+            },
+            sourceIncluded: {
+                title: "전체 소스 코드",
+                description: "전체 소스 코드 포함. 커스터마이징, 확장, 필요에 맞게 수정 가능."
+            },
+            commercialUse: {
+                title: "상업용 라이선스",
+                description: "무제한 상업 프로젝트에 사용 가능. 로열티 없음, 수익 공유 없음, 제한 없음."
             }
         },
         testimonials: {
@@ -246,8 +276,8 @@ export const translations = {
             addon: ["PixelLab"]
         },
         contact: {
-            title: "맞춤형 AI 플러그인이 필요하신가요?",
-            description: "특화된 AI 통합 또는 자동화 워크플로우가 필요하신가요? 요구사항에 딱 맞는 솔루션을 제작해드립니다. 가격은 $2,000부터 시작합니다.",
+            title: "맞춤형 AI 솔루션이 필요하신가요?",
+            description: "특화된 AI 통합 또는 자동화 워크플로우가 필요하신가요?\n요구사항에 딱 맞는 솔루션을 제작해드립니다. 가격은 $2,000부터 시작합니다.",
             form: {
                 name: "이름",
                 email: "이메일",
@@ -286,8 +316,8 @@ export const translations = {
             apiReference: "APIリファレンス"
         },
         hero: {
-            title: "複数のAIサービスに\n対応する\n統合開発キット",
-            subtitle: "UnityでAIアプリを手軽に構築",
+            title: "多数のAIサービスを\n1つに統合する\n開発キット",
+            subtitle: "UnityアプリにAI機能を簡単に構築",
             joinDiscord: "Discordに参加する",
             getFromAssetStore: "Asset Storeで入手"
         },
@@ -308,33 +338,48 @@ export const translations = {
             }
         },
         stats: {
-            title: "数字で見るAI Dev Kit",
-            description: "面倒なSDKやリージョン設定、レート制限などを気にせず、ひとつのAPIで完結できます。",
+            title: "究極のミニマリズム",
+            description: "複数のSDKを扱う手間を省きます。\n1つのAPIで500以上のモデルに即アクセス可能。",
             providers: "AIモデル",
-            api: "API",
-            lines: "1行のコード",
+            apiNumber: "1API",
+            api: "統一API",
+            linesNumber: "1行",
+            lines: "コード",
             integration: "統合",
+            integrationTime: "1分",
             support: "サポート"
         },
         providers: {
-            title: "対応するAIプロバイダー",
-            description: "ひとつの統一APIですべての主要AIサービスに接続",
+            title: "AIサービス提供者",
+            description: "主要なAIサービスを単一の統合APIで利用可能にします。",
             list: ["OpenAI", "Google Gemini", "Anthropic Claude", "Azure OpenAI", "GroqCloud", "Perplexity", "xAI Grok", "Ollama", "Hugging Face", "Cohere"]
         },
         about: {
-            title: "複雑さを取り除いてAIを導入",
-            description: "AIサービスごとにモデル、リージョン、APIキー、SDK仕様やレート制限が異なります。AI Dev Kitは主要AIサービスを統一APIで一元管理します。",
+            title: "一度の購入で永久所有",
+            description: "サブスクなし、継続料金なし、隠れた費用なし。一度購入すれば、永久アップデート、24時間Discordサポート、全機能へのフルアクセス—永久に。",
             noLockIn: {
-                title: "プロバイダーに縛られない設計",
-                description: "500+ のAIモデルに即座にアクセス可能。OpenAIからローカルOllamaサーバーまで、選択肢はあなた次第です。"
+                title: "サブスク不要",
+                description: "一度の購入で永久アップデート。月額費用なし、隠れたコストなし。永久所有できます。"
             },
             productionReady: {
-                title: "本番環境対応のエージェント",
-                description: "ストリーミング、メモリ、関数呼び出し、MCP対応など、実アプリに必要な機能を備えています。"
+                title: "24時間Discordサポート",
+                description: "活発なDiscordコミュニティを通じていつでもサポートを受けられます。開発者と直接コミュニケーションでき、迅速な対応が得られます。"
             },
             unityFirst: {
-                title: "Unityに最適化",
-                description: "エディター統合、UniTask最適化、自然なワークフロー連携など、Unity開発者のために設計されています。"
+                title: "永久アップデート",
+                description: "すべての将来のアップデートが追加費用なしで含まれます。新機能、改善、バグ修正—永久に。"
+            },
+            crossPlatform: {
+                title: "クロスプラットフォーム対応",
+                description: "Windows、macOS、Linux、iOS、Android、WebGL向けにビルド可能。一つのコードベースで全プラットフォームに対応。"
+            },
+            sourceIncluded: {
+                title: "完全なソースコード",
+                description: "完全なソースコードが含まれています。カスタマイズ、拡張、ニーズに合わせた調整が可能。"
+            },
+            commercialUse: {
+                title: "商用ライセンス",
+                description: "無制限の商用プロジェクトで使用可能。ロイヤリティなし、収益分配なし、制限なし。"
             }
         },
         testimonials: {
@@ -436,13 +481,13 @@ export const translations = {
         nav: {
             features: "功能",
             pricing: "价格",
-            customPlugin: "定制插件",
+            customPlugin: "定制解决方案",
             docs: "文档",
             apiReference: "API 参考"
         },
         hero: {
-            title: "跨多家 AI 服务的统一开发套件",
-            subtitle: "轻松构建基于 Unity 的 AI 应用",
+            title: "整合多家AI服务的\n统一\n开发套件",
+            subtitle: "轻松为Unity应用构建AI功能",
             joinDiscord: "加入 Discord",
             getFromAssetStore: "从 Asset Store 获取"
         },
@@ -463,33 +508,48 @@ export const translations = {
             }
         },
         stats: {
-            title: "数据一览",
-            description: "一个 API 处理所有服务，不再为不同 SDK、区域与速率限制而烦恼。",
-            providers: "AI 模型",
-            api: "API",
-            lines: "1行代码",
-            integration: "集成",
+            title: "极致简约",
+            description: "停止复杂的SDK管理。\n通过单一API即可访问500+个AI模型。",
+            providers: "AI模型",
+            apiNumber: "1API",
+            api: "统一接口",
+            linesNumber: "1行",
+            lines: "代码",
+            integration: "安装与实施",
+            integrationTime: "1分钟",
             support: "支持"
         },
         providers: {
-            title: "支持的 AI 提供商",
-            description: "通过单一统一 API 连接所有主流 AI 服务",
+            title: "AI服务提供商",
+            description: "通过单一统一API使用所有主要AI服务。",
             list: ["OpenAI", "Google Gemini", "Anthropic Claude", "Azure OpenAI", "GroqCloud", "Perplexity", "xAI Grok", "Ollama", "Hugging Face", "Cohere"]
         },
         about: {
-            title: "无混乱地为项目引入 AI",
-            description: "每家 AI 服务都有不同的模型、区域、密钥、SDK 规则与速率限制。AI Dev Kit 为所有主流 AI 服务提供统一、流畅的 API。",
+            title: "一次购买，永久拥有",
+            description: "无订阅费、无重复付款、无隐藏费用。\n一次购买即可获得终身更新、24小时Discord支持指导",
             noLockIn: {
-                title: "无服务商绑定",
-                description: "可即时访问 500+ 个 AI 模型。从 OpenAI 到本地 Ollama 服务器，完全由你掌控。"
+                title: "无需订阅",
+                description: "一次性购买，终身更新。无月费，无隐藏成本。永久拥有。"
             },
             productionReady: {
-                title: "面向生产环境的代理系统",
-                description: "支持流式输出、记忆、函数调用和 MCP 的高性能代理，为真实应用而打造。"
+                title: "全天候 Discord 支持",
+                description: "通过活跃的 Discord 社区随时获得帮助。与开发者直接沟通，快速响应。"
             },
             unityFirst: {
-                title: "为 Unity 量身打造",
-                description: "编辑器集成、UniTask 优化、顺畅的工作流程——以 Unity 开发者为核心设计。"
+                title: "终身更新",
+                description: "所有未来更新均无需额外费用。新功能、改进和错误修复—永久有效。"
+            },
+            crossPlatform: {
+                title: "跨平台支持",
+                description: "支持 Windows、macOS、Linux、iOS、Android 和 WebGL。一套代码，全平台运行。"
+            },
+            sourceIncluded: {
+                title: "完整源代码",
+                description: "包含完整源代码。可自定义、扩展并根据您的具体需求进行调整。"
+            },
+            commercialUse: {
+                title: "商用许可证",
+                description: "可用于无限商业项目。无版税，无收益分成，无限制。"
             }
         },
         testimonials: {
@@ -556,8 +616,8 @@ export const translations = {
             addon: ["PixelLab"]
         },
         contact: {
-            title: "需要定制 AI 插件？",
-            description: "无论是特别的 AI 集成，还是定制的工作流自动化，我们都可以为你打造专属方案。价格从 $2,000 起。",
+            title: "需要定制AI解决方案？",
+            description: "无论是特别的 AI 集成，还是定制的工作流自动化，\n我们都可以为你打造专属方案。价格从 $2,000 起。",
             form: {
                 name: "姓名",
                 email: "邮箱",
@@ -591,13 +651,13 @@ export const translations = {
         nav: {
             features: "Características",
             pricing: "Precios",
-            customPlugin: "Plugin Personalizado",
+            customPlugin: "Soluciones Personalizadas",
             docs: "Documentación",
             apiReference: "Referencia de API"
         },
         hero: {
-            title: "Kit de Desarrollo para Múltiples Servicios de IA",
-            subtitle: "Crea aplicaciones de IA en Unity sin complicaciones",
+            title: "Kit de Desarrollo que\nintegra múltiples\nservicios de IA",
+            subtitle: "Construye funciones de IA para aplicaciones Unity con facilidad",
             joinDiscord: "Unirse a Discord",
             getFromAssetStore: "Obtener en Asset Store"
         },
@@ -618,33 +678,48 @@ export const translations = {
             }
         },
         stats: {
-            title: "En Números",
-            description: "Una API para controlarlo todo. Sin pelear con SDKs, regiones o límites de velocidad diferentes.",
+            title: "Minimalismo Extremo",
+            description: "Deja de lidiar con múltiples SDKs.\nAccede instantáneamente a más de 500 modelos con una sola API.",
             providers: "Modelos",
-            api: "API",
-            lines: "Línea de Código",
-            integration: "Integración",
+            apiNumber: "1 API",
+            api: "Interfaz Unificada",
+            linesNumber: "1 Línea",
+            lines: "Código",
+            integration: "Instalación e Implementación",
+            integrationTime: "1min",
             support: "Soporte"
         },
         providers: {
-            title: "Proveedores de IA Soportados",
-            description: "Conecta a todos los servicios principales de IA con una única API unificada",
+            title: "Proveedores de Servicios de IA",
+            description: "Utiliza todos los servicios principales de IA con una sola API unificada.",
             list: ["OpenAI", "Google Gemini", "Anthropic Claude", "Azure OpenAI", "GroqCloud", "Perplexity", "xAI Grok", "Ollama", "Hugging Face", "Cohere"]
         },
         about: {
-            title: "Incorpora IA a tu proyecto—sin caos",
-            description: "Cada proveedor usa modelos, regiones, claves y reglas SDK diferentes. AI Dev Kit ofrece una API fluida y unificada para todos los servicios principales de IA.",
+            title: "Compra Una Vez, Tuyo Para Siempre",
+            description: "Sin suscripciones, sin cuotas recurrentes, sin sorpresas.\nCompra una vez y obtén actualizaciones de por vida, soporte 24/7 en Discord",
             noLockIn: {
-                title: "Sin Dependencia de Proveedor",
-                description: "Accede a 500+ modelos de IA al instante. Desde OpenAI hasta servidores locales de Ollama—tu proyecto, tus reglas."
+                title: "Sin Suscripción Requerida",
+                description: "Compra única con actualizaciones de por vida. Sin cuotas mensuales, sin costos ocultos. Tuyo para siempre."
             },
             productionReady: {
-                title: "Agentes Listos para Producción",
-                description: "Agentes avanzados con memoria, streaming, llamadas a funciones y soporte MCP. Diseñados para aplicaciones reales."
+                title: "Soporte 24/7 en Discord",
+                description: "Obtén ayuda en cualquier momento a través de nuestra comunidad activa de Discord. Comunicación directa con desarrolladores y respuestas rápidas."
             },
             unityFirst: {
-                title: "Desarrollado con Unity en Mente",
-                description: "Integración nativa con Unity, herramientas de editor, optimización UniTask y un flujo de trabajo totalmente fluido."
+                title: "Actualizaciones de Por Vida",
+                description: "Todas las actualizaciones futuras incluidas sin costo adicional. Nuevas funciones, mejoras y correcciones—para siempre."
+            },
+            crossPlatform: {
+                title: "Multiplataforma",
+                description: "Compila para Windows, macOS, Linux, iOS, Android y WebGL. Un código base, todas las plataformas."
+            },
+            sourceIncluded: {
+                title: "Código Fuente Completo",
+                description: "Código fuente completo incluido. Personaliza, extiende y adapta a tus necesidades exactas."
+            },
+            commercialUse: {
+                title: "Licencia Comercial",
+                description: "Usa en proyectos comerciales ilimitados. Sin regalías, sin compartir ingresos, sin restricciones."
             }
         },
         testimonials: {
@@ -711,8 +786,8 @@ export const translations = {
             addon: ["PixelLab"]
         },
         contact: {
-            title: "¿Necesitas un plugin de IA personalizado?",
-            description: "Si necesitas una integración de IA especializada o automatizar tu flujo de trabajo, podemos desarrollar exactamente lo que buscas. Desde $2,000.",
+            title: "¿Necesitas una solución de IA personalizada?",
+            description: "Si necesitas una integración de IA especializada o automatizar tu flujo de trabajo,\npodemos desarrollar exactamente lo que buscas. Desde $2,000.",
             form: {
                 name: "Tu Nombre",
                 email: "Tu Correo",

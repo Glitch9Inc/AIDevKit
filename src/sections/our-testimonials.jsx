@@ -14,7 +14,7 @@ export default function OurTestimonials() {
     ];
 
     return (
-        <section className="flex flex-col items-center" id="testimonials">
+        <section className="flex flex-col items-center py-20" id="testimonials">
             <SectionTitle title={t('testimonials.title')} description={t('testimonials.description')} />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-18 max-w-6xl mx-auto">
                 {testimonials.map((testimonial, index) => (

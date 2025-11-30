@@ -90,7 +90,7 @@ export default function Pricing() {
                             </div>
                         )}
 
-                        <div className="w-full h-48 mb-6 rounded-lg bg-gradient-to-br from-slate-800 to-slate-900 overflow-hidden">
+                        <div className="w-full h-52 mb-6 rounded-lg bg-gradient-to-br from-slate-800 to-slate-900 overflow-hidden">
                             <img
                                 src={plan.image}
                                 alt={plan.name}
