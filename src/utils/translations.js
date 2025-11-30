@@ -32,18 +32,23 @@ export const translations = {
         stats: {
             title: "By the Numbers",
             description: "One API to rule them all. No more wrestling with different SDKs, regions, and rate limits.",
-            providers: "Providers",
-            api: "API",
-            lines: "Lines",
+            providers: "AI Models",
+            api: "Unified API",
+            lines: "Line of Code",
             integration: "Integration",
             support: "Support"
+        },
+        providers: {
+            title: "Supported AI Providers",
+            description: "Connect to all major AI services with a single unified API",
+            list: ["OpenAI", "Google Gemini", "Anthropic Claude", "Azure OpenAI", "GroqCloud", "Perplexity", "xAI Grok", "Ollama", "Hugging Face", "Cohere"]
         },
         about: {
             title: "Bring AI into your project—without the chaos",
             description: "Every provider uses different models, regions, keys, SDK rules, and rate limits. AI Dev Kit gives you one unified, fluent API for all major AI services.",
             noLockIn: {
                 title: "No Provider Lock-in",
-                description: "Switch between 10+ AI providers instantly. From OpenAI to local Ollama servers—your choice, your control."
+                description: "Access 500+ AI models instantly. From OpenAI to local Ollama servers—your choice, your control."
             },
             productionReady: {
                 title: "Production-Ready Agent System",
@@ -83,7 +88,7 @@ export const translations = {
         },
         contact: {
             title: "Need a Custom AI Plugin?",
-            description: "Whether you need a specialized AI integration or custom workflow automation, our team can build exactly what you need.",
+            description: "From 2,000 USD, I can build tailored solutions to fit your exact needs, whether it's specialized AI integrations or automated workflows.",
             form: {
                 name: "Your Name",
                 email: "Your Email",
@@ -93,6 +98,14 @@ export const translations = {
                 messagePlaceholder: "Tell us about your project requirements...",
                 submit: "Send Request"
             }
+        },
+        providers: {
+            title: "Supported AI Providers",
+            description: "AI Dev Kit supports a wide range of AI providers and services",
+            studio: ["OpenAI", "ElevenLabs"],
+            pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok"],
+            addon: ["PixelLab"]
         },
         footer: {
             description: "AI Dev Kit provides a unified, fluent API for all major AI services in Unity. Build AI-powered features without the chaos of managing multiple providers, SDKs, and rate limits.",
@@ -140,20 +153,25 @@ export const translations = {
             }
         },
         stats: {
-            title: "숫자로 보는 강점",
+            title: "극한의 미니멀리즘",
             description: "모든 것을 하나의 API로 해결. 더 이상 각종 SDK, 지역 설정, 속도 제한과 씨름할 필요가 없습니다.",
-            providers: "제공업체",
-            api: "API",
-            lines: "코드 라인",
-            integration: "통합",
+            providers: "AI 모델",
+            api: "통합 API",
+            lines: "1줄 코드",
+            integration: "설치 & 구현",
             support: "지원"
         },
+        providers: {
+            title: "지원하는 AI 프로바이더",
+            description: "단일 통합 API로 모든 주요 AI 서비스에 연결하기",
+            list: ["OpenAI", "Google Gemini", "Anthropic Claude", "Azure OpenAI", "GroqCloud", "Perplexity", "xAI Grok", "Ollama", "Hugging Face", "Cohere"]
+        },
         about: {
-            title: "복잡함 없이 AI를 프로젝트에 적용하세요",
+            title: "부담없는 AI 연동",
             description: "AI 제공업체마다 모델, 지역, 인증 방식, SDK 규칙, 속도 제한이 달라 혼란스러울 수 있습니다. AI Dev Kit은 주요 AI 서비스들을 모두 아우르는 통합 API를 제공합니다.",
             noLockIn: {
                 title: "업체 종속 없음",
-                description: "10개 이상의 AI 제공업체를 자유롭게 전환하세요. OpenAI부터 로컬 Ollama 서버까지—완전한 선택권을 드립니다."
+                description: "500+ AI 모델에 즉시 접근하세요. OpenAI부터 로컬 Ollama 서버까지—완전한 선택권을 드립니다."
             },
             productionReady: {
                 title: "실서비스에 최적화된 에이전트",
@@ -165,8 +183,8 @@ export const translations = {
             }
         },
         testimonials: {
-            title: "개발자들의 실제 평가",
-            description: "AI Dev Kit으로 프로젝트를 향상시킨 Unity 개발자들의 경험담입니다."
+            title: "개발자들의 실제 후기",
+            description: "AI Dev Kit으로 AI를 도입한 Unity 개발자들의 경험담입니다."
         },
         pricing: {
             title: "에디션을 선택하세요",
@@ -210,7 +228,7 @@ export const translations = {
                 button: "리서치 랩 참여",
                 features: [
                     "프로의 모든 기능 포함",
-                    "10개+ 모든 AI 제공업체 지원",
+                    "500+ AI 모델 지원",
                     "Azure, GroqCloud, Perplexity, xAI",
                     "기업용 워크플로우",
                     "실험 기능 조기 이용 가능",
@@ -219,9 +237,17 @@ export const translations = {
                 ]
             }
         },
+        providers: {
+            title: "지원하는 AI 프로바이더",
+            description: "AI Dev Kit는 다양한 AI 프로바이더와 서비스를 지원합니다",
+            studio: ["OpenAI", "ElevenLabs"],
+            pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok"],
+            addon: ["PixelLab"]
+        },
         contact: {
             title: "맞춤형 AI 플러그인이 필요하신가요?",
-            description: "특화된 AI 통합 또는 자동화 워크플로우가 필요하신가요? 요구사항에 딱 맞는 솔루션을 제작해드립니다. 가격은 $1,800부터 시작합니다.",
+            description: "특화된 AI 통합 또는 자동화 워크플로우가 필요하신가요? 요구사항에 딱 맞는 솔루션을 제작해드립니다. 가격은 $2,000부터 시작합니다.",
             form: {
                 name: "이름",
                 email: "이메일",
@@ -237,7 +263,7 @@ export const translations = {
             description: "최근 작업과 프로젝트를 시각적으로 정리한 컬렉션입니다. 각 작품에는 명확한 의도와 감정, 스타일이 담겨 있습니다."
         },
         footer: {
-            description: "AI Dev Kit은 Unity 내 주요 AI 서비스를 하나의 플루언트 API로 통합합니다. 여러 제공업체와 SDK, 속도 제한 관리에서 오는 복잡함 없이 AI 기능을 구축하세요.",
+            description: "AI Dev Kit은 Unity 내 주요 AI 서비스를 하나의 플루언트 API로 통합합니다. 여러 AI 서비스와 SDK, 속도 제한 관리에서 오는 복잡함 없이 AI 기능을 구축하세요.",
             addons: "애드온",
             connect: "연결",
             company: "회사",
@@ -284,18 +310,23 @@ export const translations = {
         stats: {
             title: "数字で見るAI Dev Kit",
             description: "面倒なSDKやリージョン設定、レート制限などを気にせず、ひとつのAPIで完結できます。",
-            providers: "AIサービス",
+            providers: "AIモデル",
             api: "API",
-            lines: "コード行数",
+            lines: "1行のコード",
             integration: "統合",
             support: "サポート"
+        },
+        providers: {
+            title: "対応するAIプロバイダー",
+            description: "ひとつの統一APIですべての主要AIサービスに接続",
+            list: ["OpenAI", "Google Gemini", "Anthropic Claude", "Azure OpenAI", "GroqCloud", "Perplexity", "xAI Grok", "Ollama", "Hugging Face", "Cohere"]
         },
         about: {
             title: "複雑さを取り除いてAIを導入",
             description: "AIサービスごとにモデル、リージョン、APIキー、SDK仕様やレート制限が異なります。AI Dev Kitは主要AIサービスを統一APIで一元管理します。",
             noLockIn: {
                 title: "プロバイダーに縛られない設計",
-                description: "10以上のAIサービスを自由に切り替え可能。OpenAIからローカルOllamaサーバーまで、選択肢はあなた次第です。"
+                description: "500+ のAIモデルに即座にアクセス可能。OpenAIからローカルOllamaサーバーまで、選択肢はあなた次第です。"
             },
             productionReady: {
                 title: "本番環境対応のエージェント",
@@ -352,8 +383,8 @@ export const translations = {
                 button: "リサーチラボに参加",
                 features: [
                     "プロ版のすべての機能",
-                    "10種以上のAIサービスに完全対応",
-                    "Azure・GroqCloud・Perplexity・xAI",
+                    "500+ のAIモデルに完全対応",
+                    "Azure・GroqCloud・Perplexit qy・xAI",
                     "エンタープライズ向けワークフロー",
                     "実験的機能への早期アクセス",
                     "Discordでの高速アップデート",
@@ -361,9 +392,17 @@ export const translations = {
                 ]
             }
         },
+        providers: {
+            title: "対応するAIプロバイダー",
+            description: "AI Dev Kitは幅広いAIプロバイダーとサービスに対応しています",
+            studio: ["OpenAI", "ElevenLabs"],
+            pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok"],
+            addon: ["PixelLab"]
+        },
         contact: {
             title: "カスタムAIプラグインをご希望ですか？",
-            description: "特殊なAI統合やワークフロー自動化も、要件に合わせて最適なソリューションを構築します。料金は$1,800から承ります。",
+            description: "特殊なAI統合やワークフロー自動化も、要件に合わせて最適なソリューションを構築します。料金は$2,000から承ります。",
             form: {
                 name: "お名前",
                 email: "メールアドレス",
@@ -426,18 +465,23 @@ export const translations = {
         stats: {
             title: "数据一览",
             description: "一个 API 处理所有服务，不再为不同 SDK、区域与速率限制而烦恼。",
-            providers: "服务商",
+            providers: "AI 模型",
             api: "API",
-            lines: "代码行数",
+            lines: "1行代码",
             integration: "集成",
             support: "支持"
+        },
+        providers: {
+            title: "支持的 AI 提供商",
+            description: "通过单一统一 API 连接所有主流 AI 服务",
+            list: ["OpenAI", "Google Gemini", "Anthropic Claude", "Azure OpenAI", "GroqCloud", "Perplexity", "xAI Grok", "Ollama", "Hugging Face", "Cohere"]
         },
         about: {
             title: "无混乱地为项目引入 AI",
             description: "每家 AI 服务都有不同的模型、区域、密钥、SDK 规则与速率限制。AI Dev Kit 为所有主流 AI 服务提供统一、流畅的 API。",
             noLockIn: {
                 title: "无服务商绑定",
-                description: "可在 10+ 个 AI 服务之间即时切换。从 OpenAI 到本地 Ollama 服务器，完全由你掌控。"
+                description: "可即时访问 500+ 个 AI 模型。从 OpenAI 到本地 Ollama 服务器，完全由你掌控。"
             },
             productionReady: {
                 title: "面向生产环境的代理系统",
@@ -494,7 +538,7 @@ export const translations = {
                 button: "加入 Research Lab",
                 features: [
                     "包含 Pro 的全部功能",
-                    "支持所有 10+ AI 服务商",
+                    "支持 500+ AI 模型",
                     "Azure、GroqCloud、Perplexity、xAI",
                     "企业级工作流程",
                     "实验性功能提前体验",
@@ -503,9 +547,17 @@ export const translations = {
                 ]
             }
         },
+        providers: {
+            title: "支持的 AI 提供商",
+            description: "AI Dev Kit 支持多种 AI 提供商和服务",
+            studio: ["OpenAI", "ElevenLabs"],
+            pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok"],
+            addon: ["PixelLab"]
+        },
         contact: {
             title: "需要定制 AI 插件？",
-            description: "无论是特别的 AI 集成，还是定制的工作流自动化，我们都可以为你打造专属方案。价格从 $1,800 起。",
+            description: "无论是特别的 AI 集成，还是定制的工作流自动化，我们都可以为你打造专属方案。价格从 $2,000 起。",
             form: {
                 name: "姓名",
                 email: "邮箱",
@@ -568,18 +620,23 @@ export const translations = {
         stats: {
             title: "En Números",
             description: "Una API para controlarlo todo. Sin pelear con SDKs, regiones o límites de velocidad diferentes.",
-            providers: "Proveedores",
+            providers: "Modelos",
             api: "API",
-            lines: "Líneas",
+            lines: "Línea de Código",
             integration: "Integración",
             support: "Soporte"
+        },
+        providers: {
+            title: "Proveedores de IA Soportados",
+            description: "Conecta a todos los servicios principales de IA con una única API unificada",
+            list: ["OpenAI", "Google Gemini", "Anthropic Claude", "Azure OpenAI", "GroqCloud", "Perplexity", "xAI Grok", "Ollama", "Hugging Face", "Cohere"]
         },
         about: {
             title: "Incorpora IA a tu proyecto—sin caos",
             description: "Cada proveedor usa modelos, regiones, claves y reglas SDK diferentes. AI Dev Kit ofrece una API fluida y unificada para todos los servicios principales de IA.",
             noLockIn: {
                 title: "Sin Dependencia de Proveedor",
-                description: "Cambia entre más de 10 proveedores de IA al instante. Desde OpenAI hasta servidores locales de Ollama—tu proyecto, tus reglas."
+                description: "Accede a 500+ modelos de IA al instante. Desde OpenAI hasta servidores locales de Ollama—tu proyecto, tus reglas."
             },
             productionReady: {
                 title: "Agentes Listos para Producción",
@@ -636,7 +693,7 @@ export const translations = {
                 button: "Unirse al Lab",
                 features: [
                     "Incluye todas las funciones de Pro",
-                    "Todos los proveedores de IA (10+)",
+                    "Todos los modelos de IA (500+)",
                     "Azure, GroqCloud, Perplexity, xAI",
                     "Flujos de trabajo de nivel empresarial",
                     "Acceso anticipado a funciones experimentales",
@@ -645,9 +702,17 @@ export const translations = {
                 ]
             }
         },
+        providers: {
+            title: "Proveedores de IA Soportados",
+            description: "AI Dev Kit admite una amplia gama de proveedores y servicios de IA",
+            studio: ["OpenAI", "ElevenLabs"],
+            pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok"],
+            addon: ["PixelLab"]
+        },
         contact: {
             title: "¿Necesitas un plugin de IA personalizado?",
-            description: "Si necesitas una integración de IA especializada o automatizar tu flujo de trabajo, podemos desarrollar exactamente lo que buscas. Desde $1,800.",
+            description: "Si necesitas una integración de IA especializada o automatizar tu flujo de trabajo, podemos desarrollar exactamente lo que buscas. Desde $2,000.",
             form: {
                 name: "Tu Nombre",
                 email: "Tu Correo",

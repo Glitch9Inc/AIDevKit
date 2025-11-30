@@ -55,7 +55,10 @@ export default function OurLatestCreation() {
                         transition={{ delay: `${index * 0.15}`, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                     >
                         <img className={`h-full w-full object-cover ${data.align}`} src={data.image} alt={data.title} />
-                        <div className={`absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 ${isHovered && className ? "opacity-0 group-hover:opacity-100" : index === activeIndex ? "opacity-100" : "opacity-0"}`}>
+                        <div className={`absolute inset-0 transition-all duration-500 
+                            ${isHovered && className ? "bg-black/40 group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:via-black/30 group-hover:to-transparent"
+                                : index === activeIndex ? "bg-gradient-to-t from-black/80 via-black/30 to-transparent" : "bg-black/60"}`} />
+                        <div className={`absolute inset-0 flex flex-col justify-end p-10 text-white transition-all duration-300 ${isHovered && className ? "opacity-0 group-hover:opacity-100" : index === activeIndex ? "opacity-100" : "opacity-0"}`}>
                             <h1 className="text-3xl font-semibold">{data.title}</h1>
                             <p className="text-sm mt-2">{data.description}</p>
                         </div>

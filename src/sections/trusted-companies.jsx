@@ -3,11 +3,10 @@ import SectionTitle from "../components/section-title";
 import { useLanguage } from "../contexts/LanguageContext";
 
 const stats = [
-    { number: "10+", labelKey: "stats.providers", gradient: "from-blue-400 to-cyan-400" },
+    { number: "500+", labelKey: "stats.providers", gradient: "from-blue-400 to-cyan-400" },
     { number: "1", labelKey: "stats.api", gradient: "from-purple-400 to-blue-400" },
-    { number: "3", labelKey: "stats.lines", gradient: "from-pink-400 to-orange-400" },
-    { number: "1min", labelKey: "stats.integration", gradient: "from-green-400 to-cyan-400" },
-    { number: "24/7", labelKey: "stats.support", gradient: "from-indigo-400 to-purple-400" }
+    { number: "1", labelKey: "stats.lines", gradient: "from-pink-400 to-orange-400" },
+    { number: "1min", labelKey: "stats.integration", gradient: "from-green-400 to-cyan-400" }
 ];
 
 export default function TrustedCompanies() {
@@ -20,7 +19,7 @@ export default function TrustedCompanies() {
                 description={t('stats.description')}
             />
             <motion.div
-                className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 max-w-6xl w-full px-6 mt-16"
+                className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-5xl w-full px-6 mt-16 mx-auto"
                 initial={{ y: 150, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}

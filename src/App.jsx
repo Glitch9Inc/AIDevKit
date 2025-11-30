@@ -10,6 +10,7 @@ import AboutOurApps from "./sections/about-our-apps";
 import HeroSection from "./sections/hero-section";
 import OurLatestCreation from "./sections/our-latest-creation";
 import TrustedCompanies from "./sections/trusted-companies";
+import SupportedProviders from "./sections/supported-providers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 
@@ -20,6 +21,7 @@ function HomePage() {
             <Navbar />
             <HeroSection />
             <TrustedCompanies />
+            <SupportedProviders />
             <main className="px-6 md:px-16 lg:px-24 xl:px-32">
                 <OurLatestCreation />
                 <AboutOurApps />

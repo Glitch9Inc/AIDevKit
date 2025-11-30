@@ -12,7 +12,6 @@ export default function Pricing() {
             price: t('pricing.studio.price'),
             description: t('pricing.studio.description'),
             features: currentLanguage === 'en' ? [
-                "OpenAI & ElevenLabs Integration",
                 "Editor Tools & Generators",
                 "AI Chat Assistant with voice",
                 "Text, Shader, Image, Audio generators",
@@ -20,6 +19,8 @@ export default function Pricing() {
                 "Project-aware suggestions",
                 "Community support"
             ] : t('pricing.studio.features'),
+            providers: t('providers.studio'),
+            image: "/assets/package-studio.png",
             buttonText: t('pricing.studio.button'),
             buttonStyle: "border-2 border-slate-400 hover:bg-white/10",
             link: "https://assetstore.unity.com/packages/tools/generative-ai/ai-dev-kit-studio-327138"
@@ -30,14 +31,14 @@ export default function Pricing() {
             description: t('pricing.pro.description'),
             features: currentLanguage === 'en' ? [
                 "Everything in Studio",
-                "Advanced AI Agent System",
-                "Google Gemini, Anthropic Claude",
-                "Ollama local server support",
+                "Advanced AI Agent Integration",
+                "Local server support with Ollama",
                 "Custom Inspector components",
                 "Memory & Function Calling",
-                "Streaming & Moderation",
                 "Priority support"
             ] : t('pricing.pro.features'),
+            providers: [...t('providers.studio'), ...t('providers.pro')],
+            image: "/assets/package-pro.png",
             buttonText: t('pricing.pro.button'),
             buttonStyle: "bg-indigo-600 hover:bg-indigo-700 text-white",
             popular: true,
@@ -51,12 +52,13 @@ export default function Pricing() {
             features: currentLanguage === 'en' ? [
                 "Everything in Pro",
                 "All AI Providers (10+)",
-                "Azure, GroqCloud, Perplexity, xAI",
                 "Enterprise-grade workflows",
                 "Early access to experimental features",
-                "Fast updates via Discord",
+                "Realtime updates via Discord",
                 "Direct developer access"
             ] : t('pricing.researchLab.features'),
+            providers: [...t('providers.studio'), ...t('providers.pro'), ...t('providers.researchLab'), ...t('providers.addon')],
+            image: "/assets/package-research.png",
             buttonText: t('pricing.researchLab.button'),
             buttonStyle: "border-2 border-slate-400 hover:bg-white/10",
             link: "https://assetstore.unity.com/packages/tools/generative-ai/ai-dev-kit-research-lab-327128"
@@ -88,6 +90,14 @@ export default function Pricing() {
                             </div>
                         )}
 
+                        <div className="w-full h-48 mb-6 rounded-lg bg-gradient-to-br from-slate-800 to-slate-900 overflow-hidden">
+                            <img
+                                src={plan.image}
+                                alt={plan.name}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+
                         <h3 className="text-2xl font-bold">{plan.name}</h3>
                         <div className="mt-4 mb-2">
                             <span className="text-5xl font-bold">{plan.price}</span>
@@ -102,6 +112,20 @@ export default function Pricing() {
                                 </li>
                             ))}
                         </ul>
+
+                        <div className="mb-6 pt-6 border-t border-slate-700">
+                            <h4 className="text-sm font-semibold text-slate-400 mb-3">Supported Providers</h4>
+                            <div className="flex flex-wrap gap-2">
+                                {plan.providers.map((provider) => (
+                                    <span
+                                        key={provider}
+                                        className="px-3 py-1 text-xs font-medium rounded-full bg-slate-800/50 text-slate-300 border border-slate-700"
+                                    >
+                                        {provider}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
 
                         <a
                             href={plan.link}
