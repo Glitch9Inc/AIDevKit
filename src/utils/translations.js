@@ -76,7 +76,23 @@ export const translations = {
         },
         testimonials: {
             title: "What Developers Say",
-            description: "Real feedback from Unity developers who've integrated AI into their projects with our toolkit."
+            description: "Real feedback from Unity developers who've integrated AI into their projects with our toolkit.",
+            reviews: [
+                "The very best AI model family consolidation package with Agent support I have seen yet on the Asset Store! Only one that has proper Agent support, makes it super easy to extend and supports pretty much every model and family you can think of.",
+                "Simply the most complete OpenAI solution. This suite helped me make a speech-only avatar in Unity, it supports the new Assistant API, Speech to Text and Text to Speech. I wish I could give 10 stars!",
+                "Very good!! AI Dev Kit Pro is significantly more powerful than typical chatbot packages—you'll get a full-featured voice assistant, text-to-speech, image generation, sound effects toolkit, and more. An amazing tool with many updates!",
+                "This is exactly the AI asset I was looking for! I'm building an app with AI conversation features and this has all the functionality I needed. Everything works perfectly for my project.",
+                "It's not often you find plugin developers so helpful and above all active in bug resolution and assistance. The developer answered my email in an hour! Support is 10/10.",
+                "Best tool for OpenAI integration. It contains many demos for beginners and the developer is super responsive, helpful and constantly upgrading the package. Very strong recommend!"
+            ],
+            roles: {
+                unityDev: "Unity Developer",
+                vrDev: "VR/AR Developer",
+                gameDev: "Game Developer",
+                appDev: "App Developer",
+                indieDev: "Indie Developer",
+                engineer: "Software Engineer"
+            }
         },
         pricing: {
             title: "Choose Your Edition",
@@ -214,7 +230,23 @@ export const translations = {
         },
         testimonials: {
             title: "개발자들의 실제 후기",
-            description: "AI Dev Kit으로 AI를 도입한 Unity 개발자들의 경험담입니다."
+            description: "AI Dev Kit으로 AI를 도입한 Unity 개발자들의 경험담입니다.",
+            reviews: [
+                "Asset Store에서 본 최고의 AI 모델 통합 패키지입니다! 제대로 된 Agent 지원을 하는 유일한 패키지이고, 확장이 정말 쉬우며 생각할 수 있는 거의 모든 모델과 패밀리를 지원합니다.",
+                "가장 완벽한 OpenAI 솔루션입니다. 이 도구로 Unity에서 음성 전용 아바타를 만들었습니다. 새로운 Assistant API, 음성-텍스트, 텍스트-음성을 모두 지원합니다. 10점 만점을 주고 싶습니다!",
+                "정말 훌륭합니다!! AI Dev Kit Pro는 일반적인 챗봇 패키지보다 훨씬 강력합니다. 완전한 기능의 음성 비서, 텍스트-음성, 이미지 생성, 사운드 이펙트 툴킷 등을 제공합니다. 업데이트도 자주 되는 놀라운 도구입니다!",
+                "제가 찾던 바로 그 AI 에셋입니다! AI 대화 기능이 있는 앱을 개발 중인데 필요한 모든 기능이 다 들어있습니다. 제 프로젝트에 완벽하게 작동합니다.",
+                "이렇게 도움이 되고 무엇보다 버그 해결과 지원에 적극적인 플러그인 개발자를 찾기는 힘듭니다. 개발자가 한 시간 만에 이메일에 답변해줬습니다! 지원은 10점 만점에 10점입니다.",
+                "OpenAI 통합을 위한 최고의 도구입니다. 초보자를 위한 많은 데모가 포함되어 있고 개발자는 매우 빠른 응답, 친절하며 패키지를 지속적으로 업그레이드합니다. 강력 추천!"
+            ],
+            roles: {
+                unityDev: "Unity 개발자",
+                vrDev: "VR/AR 개발자",
+                gameDev: "게임 개발자",
+                appDev: "앱 개발자",
+                indieDev: "인디 개발자",
+                engineer: "소프트웨어 엔지니어"
+            }
         },
         pricing: {
             title: "에디션을 선택하세요",
@@ -384,7 +416,23 @@ export const translations = {
         },
         testimonials: {
             title: "開発者の声",
-            description: "実際にAI Dev Kitを導入したUnity開発者からのフィードバックをご紹介します。"
+            description: "実際にAI Dev Kitを導入したUnity開発者からのフィードバックをご紹介します。",
+            reviews: [
+                "Asset Storeで見た中で最高のAIモデル統合パッケージです！適切なAgentサポートを持つ唯一のパッケージで、拡張が非常に簡単で、ありとあらゆるモデルとファミリーをサポートしています。",
+                "最も完全なOpenAIソリューションです。このツールでUnityで音声専用アバターを作成しました。新しいAssistant API、音声からテキスト、テキストから音声をサポートしています。10星をあげたいです！",
+                "非常に優れています！！ AI Dev Kit Proは一般的なチャットボットパッケージより遥かに強力です。完全機能の音声アシスタント、テキスト読み上げ、画像生成、効果音ツールキットなどが得られます。多くのアップデートがある素晴らしいツールです！",
+                "私が探していたまさにそのAIアセットです！ AI会話機能を持つアプリを構築中で、必要なすべての機能が入っています。私のプロジェクトで完璧に動作します。",
+                "これほど親切で、何よりバグ解決と支援に積極的なプラグイン開発者を見つけることはめったにありません。開発者は1時間以内にメールに返信してくれました！サポートは10点満点です。",
+                "OpenAI統合のための最高のツールです。初心者向けの多くのデモが含まれており、開発者は非常に応答が速く、親切で、パッケージを絶えずアップグレードしています。強くおすすめします！"
+            ],
+            roles: {
+                unityDev: "Unity開発者",
+                vrDev: "VR/AR開発者",
+                gameDev: "ゲーム開発者",
+                appDev: "アプリ開発者",
+                indieDev: "インディー開発者",
+                engineer: "ソフトウェアエンジニア"
+            }
         },
         pricing: {
             title: "エディションを選択",
@@ -554,7 +602,23 @@ export const translations = {
         },
         testimonials: {
             title: "开发者评价",
-            description: "来自实际使用 AI Dev Kit 的 Unity 开发者的真实反馈。"
+            description: "来自实际使用 AI Dev Kit 的 Unity 开发者的真实反馈。",
+            reviews: [
+                "这是我在Asset Store上看到的最好的AI模型整合包！唯一一个有适当Agent支持的包，非常容易扩展，几乎支持您能想到的所有模型和系列。",
+                "最完整的OpenAI解决方案。这个工具帮助我在Unity中制作了一个纯语音化身，它支持新的Assistant API、语音转文本和文本转语音。我希望能给10星！",
+                "非常好！！ AI Dev Kit Pro比典型的聊天机器人包强大得多——您将获得功能齐全的语音助手、文本转语音、图像生成、声效工具包等。有很多更新的令人惊叹的工具！",
+                "这正是我一直在寻找的AI资产！我正在构建一个具有AI对话功能的应用，这里有我需要的所有功能。一切都完美运行。",
+                "很少能找到如此乐于助人并且积极解决bug和提供帮助的插件开发者。开发者在一小时内就回复了我的邮件！支持10分满分。",
+                "OpenAI集成的最佳工具。它包含很多适合初学者的演示，开发者非常及时回应、乐于助人并不断升级包。强烈推荐！"
+            ],
+            roles: {
+                unityDev: "Unity开发者",
+                vrDev: "VR/AR开发者",
+                gameDev: "游戏开发者",
+                appDev: "应用开发者",
+                indieDev: "独立开发者",
+                engineer: "软件工程师"
+            }
         },
         pricing: {
             title: "选择适合你的版本",
@@ -724,7 +788,23 @@ export const translations = {
         },
         testimonials: {
             title: "Lo que dicen los desarrolladores",
-            description: "Opiniones reales de desarrolladores de Unity que integraron IA en sus proyectos gracias a nuestro kit."
+            description: "Opiniones reales de desarrolladores de Unity que integraron IA en sus proyectos gracias a nuestro kit.",
+            reviews: [
+                "¡El mejor paquete de consolidación de familias de modelos de IA con soporte de Agent que he visto en Asset Store! Es el único con soporte adecuado de Agent, hace que sea muy fácil extenderlo y admite prácticamente todos los modelos y familias que puedas imaginar.",
+                "Simplemente la solución de OpenAI más completa. Este conjunto me ayudó a crear un avatar de solo voz en Unity, admite la nueva API de Asistente, voz a texto y texto a voz. ¡Desearía poder dar 10 estrellas!",
+                "¡Muy bueno! AI Dev Kit Pro es significativamente más poderoso que los paquetes típicos de chatbot: obtendrás un asistente de voz completo, texto a voz, generación de imágenes, kit de efectos de sonido y más. ¡Una herramienta increíble con muchas actualizaciones!",
+                "¡Este es exactamente el asset de IA que estaba buscando! Estoy construyendo una aplicación con funciones de conversación de IA y esto tiene toda la funcionalidad que necesitaba. Todo funciona perfectamente para mi proyecto.",
+                "No es frecuente encontrar desarrolladores de plugins tan serviciales y sobre todo activos en la resolución de errores y asistencia. ¡El desarrollador respondió mi correo en una hora! El soporte es 10/10.",
+                "La mejor herramienta para la integración de OpenAI. Contiene muchas demos para principiantes y el desarrollador es muy receptivo, servicial y actualiza constantemente el paquete. ¡Muy recomendado!"
+            ],
+            roles: {
+                unityDev: "Desarrollador Unity",
+                vrDev: "Desarrollador VR/AR",
+                gameDev: "Desarrollador de Juegos",
+                appDev: "Desarrollador de Apps",
+                indieDev: "Desarrollador Indie",
+                engineer: "Ingeniero de Software"
+            }
         },
         pricing: {
             title: "Elige la Edición Adecuada",

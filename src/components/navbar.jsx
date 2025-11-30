@@ -114,6 +114,37 @@ export default function Navbar() {
                         </Link>
                     )
                 ))}
+
+                <div className="relative">
+                    <button
+                        onClick={() => setIsLangOpen(!isLangOpen)}
+                        className="hover:bg-slate-300/20 transition px-6 py-2 border border-slate-400 rounded-md active:scale-95 flex items-center gap-2 w-32 justify-between"
+                    >
+                        {selectedLang}
+                        <ChevronDown className={`size-4 transition-transform ${isLangOpen ? 'rotate-180' : ''}`} />
+                    </button>
+                    {isLangOpen && (
+                        <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-40 bg-slate-800 border border-slate-700 rounded-md shadow-lg overflow-hidden">
+                            {languages.map((lang) => (
+                                <button
+                                    key={lang.code}
+                                    onClick={() => {
+                                        changeLanguage(lang.code);
+                                        setIsLangOpen(false);
+                                    }}
+                                    className={`w-full text-left px-4 py-2 hover:bg-slate-700 transition flex items-center justify-between ${currentLanguage === lang.code ? 'bg-slate-700/50' : ''
+                                        }`}
+                                >
+                                    {lang.label}
+                                    {currentLanguage === lang.code && (
+                                        <Check className="size-4 text-blue-500" />
+                                    )}
+                                </button>
+                            ))}
+                        </div>
+                    )}
+                </div>
+
                 <button onClick={() => setIsMenuOpen(false)} className="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-slate-100 hover:bg-slate-200 transition text-black rounded-md flex">
                     <XIcon />
                 </button>
