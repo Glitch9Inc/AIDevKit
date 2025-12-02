@@ -5,21 +5,26 @@ import { useState, useRef, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 import { useLanguage } from "../contexts/LanguageContext";
 
-const providers = [
-    { value: "User can choose from your supported providers", label: "User can choose from your supported providers" },
-    { value: "OpenAI", label: "OpenAI" },
-    { value: "Google Gemini", label: "Google Gemini" },
-    { value: "Anthropic Claude", label: "Anthropic Claude" },
-    { value: "Perplexity", label: "Perplexity" },
-    { value: "xAI Grok", label: "xAI Grok" },
-    { value: "Microsoft Azure", label: "Microsoft Azure" },
-    { value: "Open Router", label: "Open Router" },
-    { value: "Groq Cloud", label: "Groq Cloud" },
-    { value: "Something not on this list", label: "Something not on this list" }
-];
-
 export default function GetInTouch() {
     const { t } = useLanguage();
+
+    const providers = [
+        { value: "User can choose from your supported providers", label: t('contact.form.userCanChoose') },
+        { value: "OpenAI", label: "OpenAI" },
+        { value: "Google Gemini", label: "Google Gemini" },
+        { value: "Anthropic Claude", label: "Anthropic Claude" },
+        { value: "Perplexity", label: "Perplexity" },
+        { value: "xAI Grok", label: "xAI Grok" },
+        { value: "Microsoft Azure", label: "Microsoft Azure" },
+        { value: "GroqCloud", label: "GroqCloud" },
+        { value: "OpenRouter", label: "OpenRouter" },
+        { value: "DeepSeek", label: "DeepSeek" },
+        { value: "Ollama", label: "Ollama" },
+        { value: "ElevenLabs", label: "ElevenLabs" },
+        { value: "Cohere", label: "Cohere" },
+        { value: "Amazon Bedrock", label: "Amazon Bedrock" },
+        { value: "Something not on this list", label: t('contact.form.notOnList') }
+    ];
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [selectedProvider, setSelectedProvider] = useState(null);
@@ -83,8 +88,8 @@ export default function GetInTouch() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    <label className='font-medium text-slate-200'>Your name</label>
-                    <input name='name' type="text" placeholder='Enter your name' required className='w-full mt-2 p-3 outline-none border border-slate-700 rounded-lg focus-within:ring-1 transition focus:ring-indigo-600' />
+                    <label className='font-medium text-slate-200'>{t('contact.form.name')}</label>
+                    <input name='name' type="text" placeholder={t('contact.form.namePlaceholder')} required className='w-full mt-2 p-3 outline-none border border-slate-700 rounded-lg focus-within:ring-1 transition focus:ring-indigo-600' />
                 </motion.div>
 
                 <motion.div
@@ -93,8 +98,8 @@ export default function GetInTouch() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 280, damping: 70, mass: 1 }}
                 >
-                    <label className='font-medium text-slate-200'>Your email</label>
-                    <input name='email' type="email" placeholder='Enter your email' required className='w-full mt-2 p-3 outline-none border border-slate-700 rounded-lg focus-within:ring-1 transition focus:ring-indigo-600' />
+                    <label className='font-medium text-slate-200'>{t('contact.form.email')}</label>
+                    <input name='email' type="email" placeholder={t('contact.form.emailPlaceholder')} required className='w-full mt-2 p-3 outline-none border border-slate-700 rounded-lg focus-within:ring-1 transition focus:ring-indigo-600' />
                 </motion.div>
 
                 <motion.div className='sm:col-span-2 relative'
@@ -104,13 +109,13 @@ export default function GetInTouch() {
                     transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
                     ref={dropdownRef}
                 >
-                    <label className='font-medium text-slate-200'>Preferred Provider</label>
+                    <label className='font-medium text-slate-200'>{t('contact.form.provider')}</label>
                     <div
                         onClick={() => setIsOpen(!isOpen)}
                         className='w-full mt-2 p-3 border border-slate-700 rounded-lg bg-slate-900 text-slate-300 cursor-pointer hover:border-slate-600 transition flex items-center justify-between'
                     >
                         <span className={selectedProvider ? 'text-slate-200' : 'text-slate-500'}>
-                            {selectedProvider ? selectedProvider.label : '✨ Select your preferred AI provider'}
+                            {selectedProvider ? selectedProvider.label : `✨ ${t('contact.form.selectProvider')}`}
                         </span>
                         <ChevronDown className={`size-5 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                     </div>
@@ -147,8 +152,8 @@ export default function GetInTouch() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
                 >
-                    <label className='font-medium text-slate-200'>Project details</label>
-                    <textarea name='message' rows={8} placeholder='Describe your custom plugin requirements...' required className='resize-none w-full mt-2 p-3 outline-none rounded-lg focus-within:ring-1 transition focus:ring-indigo-600 border border-slate-700' />
+                    <label className='font-medium text-slate-200'>{t('contact.form.message')}</label>
+                    <textarea name='message' rows={8} placeholder={t('contact.form.messagePlaceholder')} required className='resize-none w-full mt-2 p-3 outline-none rounded-lg focus-within:ring-1 transition focus:ring-indigo-600 border border-slate-700' />
                 </motion.div>
 
                 <motion.button
@@ -160,7 +165,7 @@ export default function GetInTouch() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 280, damping: 70, mass: 1 }}
                 >
-                    {isSubmitting ? 'Sending...' : 'Request Quote'}
+                    {isSubmitting ? t('contact.form.sending') : t('contact.form.submit')}
                     <ArrowUpRight className="size-4.5" />
                 </motion.button>
             </form>

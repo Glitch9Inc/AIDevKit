@@ -122,12 +122,17 @@ export const translations = {
             description: "From 2,000 USD, I can build tailored solutions to fit your exact needs, whether it's specialized AI integrations or automated workflows.",
             form: {
                 name: "Your Name",
+                namePlaceholder: "Enter your name",
                 email: "Your Email",
+                emailPlaceholder: "Enter your email",
                 provider: "AI Provider",
                 selectProvider: "Select AI Provider",
                 message: "Project Details",
                 messagePlaceholder: "Tell us about your project requirements...",
-                submit: "Send Request"
+                submit: "Send Request",
+                sending: "Sending...",
+                userCanChoose: "User can choose from your supported providers",
+                notOnList: "Something not on this list"
             }
         },
         providers: {
@@ -135,7 +140,7 @@ export const translations = {
             description: "AI Dev Kit supports a wide range of AI providers and services",
             studio: ["OpenAI", "ElevenLabs"],
             pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere"],
             addon: ["PixelLab"]
         },
         footer: {
@@ -165,6 +170,7 @@ export const translations = {
             title: "통합 AI 서비스\nUnity용 개발 키트",
             subtitle: "최신 AI 모델을 Unity 프로젝트에 쉽고 빠르게 적용하세요.\n직관적인 API, 강력한 에디터 도구, 크로스 플랫폼 런타임을 제공합니다.",
             joinDiscord: "디스코드 참여하기",
+            discordLanguageSupport: "🇰🇷 한국어 지원 가능",
             getFromAssetStore: "에셋 스토어에서 받기"
         },
         features: {
@@ -255,7 +261,7 @@ export const translations = {
                 name: "스튜디오",
                 price: "$19.99",
                 description: "코딩에 익숙하지 않은 사용자와 크리에이터에게 적합",
-                button: "스튜디오 구매",
+                button: "구매",
                 features: [
                     "OpenAI & ElevenLabs 지원",
                     "에디터 도구 · 생성기 포함",
@@ -270,7 +276,7 @@ export const translations = {
                 name: "프로",
                 price: "$39.99",
                 description: "Unity 개발자를 위한 완전한 솔루션",
-                button: "프로 구매",
+                button: "구매",
                 popular: "인기",
                 features: [
                     "스튜디오 포함 전체 기능",
@@ -287,7 +293,7 @@ export const translations = {
                 name: "리서치 랩",
                 price: "$69.99",
                 description: "연구자와 AI 전문가를 위한 최고급 버전",
-                button: "리서치 랩 참여",
+                button: "구매",
                 features: [
                     "프로의 모든 기능 포함",
                     "500+ AI 모델 지원",
@@ -304,7 +310,7 @@ export const translations = {
             description: "AI Dev Kit는 다양한 AI 프로바이더와 서비스를 지원합니다",
             studio: ["OpenAI", "ElevenLabs"],
             pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere"],
             addon: ["PixelLab"]
         },
         contact: {
@@ -312,17 +318,18 @@ export const translations = {
             description: "특화된 AI 통합 또는 자동화 워크플로우가 필요하신가요?\n요구사항에 딱 맞는 솔루션을 제작해드립니다. 가격은 $2,000부터 시작합니다.",
             form: {
                 name: "이름",
+                namePlaceholder: "이름을 입력하세요",
                 email: "이메일",
+                emailPlaceholder: "이메일을 입력하세요",
                 provider: "AI 제공업체",
                 selectProvider: "AI 제공업체 선택",
                 message: "프로젝트 상세",
                 messagePlaceholder: "프로젝트 요구사항을 자세히 적어주세요...",
-                submit: "요청 보내기"
+                submit: "요청 보내기",
+                sending: "전송 중...",
+                userCanChoose: "사용자가 지원되는 서비스 중에서 선택 가능",
+                notOnList: "이 목록에 없는 서비스"
             }
-        },
-        newsletter: {
-            title: "뉴스레터 구독",
-            description: "최근 작업과 프로젝트를 시각적으로 정리한 컬렉션입니다. 각 작품에는 명확한 의도와 감정, 스타일이 담겨 있습니다."
         },
         footer: {
             description: "AI Dev Kit은 Unity 내 주요 AI 서비스를 하나의 플루언트 API로 통합합니다. 여러 AI 서비스와 SDK, 속도 제한 관리에서 오는 복잡함 없이 AI 기능을 구축하세요.",
@@ -342,8 +349,8 @@ export const translations = {
     ja: {
         nav: {
             features: "機能",
-            pricing: "料金",
-            customPlugin: "カスタムプラグイン",
+            pricing: "価格",
+            customPlugin: "オーダーメイドソリューション",
             docs: "ドキュメント",
             apiReference: "APIリファレンス"
         },
@@ -351,7 +358,8 @@ export const translations = {
             title: "多数のAIサービスを\n1つに統合する\n開発キット",
             subtitle: "UnityアプリにAI機能を簡単に構築",
             joinDiscord: "Discordに参加する",
-            getFromAssetStore: "Asset Storeで入手"
+            discordLanguageSupport: "🇯🇵 日本語対応可能",
+            getFromAssetStore: "Asset Storeから入手"
         },
         features: {
             title: "AI統合に必要なすべてを一つに",
@@ -486,29 +494,30 @@ export const translations = {
             }
         },
         providers: {
-            title: "対応するAIプロバイダー",
-            description: "AI Dev Kitは幅広いAIプロバイダーとサービスに対応しています",
+            title: "対応するAIサービス",
+            description: "AI Dev Kitは幅広いAIサービスに対応しています",
             studio: ["OpenAI", "ElevenLabs"],
             pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere"],
             addon: ["PixelLab"]
         },
         contact: {
-            title: "カスタムAIプラグインをご希望ですか？",
+            title: "オーダーメイドAIソリューションを\nご希望ですか？",
             description: "特殊なAI統合やワークフロー自動化も、要件に合わせて最適なソリューションを構築します。料金は$2,000から承ります。",
             form: {
                 name: "お名前",
+                namePlaceholder: "お名前を入力してください",
                 email: "メールアドレス",
-                provider: "AIプロバイダー",
-                selectProvider: "AIプロバイダーを選択",
+                emailPlaceholder: "メールアドレスを入力してください",
+                provider: "AIサービス",
+                selectProvider: "AIサービスを選択",
                 message: "プロジェクト詳細",
                 messagePlaceholder: "プロジェクトのご要望をお聞かせください...",
-                submit: "リクエストを送信"
+                submit: "リクエストを送信",
+                sending: "送信中...",
+                userCanChoose: "ユーザーが対応サービスから選択可能",
+                notOnList: "このリストにないサービス"
             }
-        },
-        newsletter: {
-            title: "ニュースレター購読",
-            description: "最新の制作物をまとめたビジュアルコレクション。各作品には意図、感情、スタイルが込められています。"
         },
         footer: {
             description: "AI Dev Kitは、Unityで利用できる主要AIサービスをひとつのフルーエントAPIに統合します。複数プロバイダーやSDK管理の煩雑さから解放され、AI機能をスムーズに構築できます。",
@@ -672,11 +681,11 @@ export const translations = {
             }
         },
         providers: {
-            title: "支持的 AI 提供商",
+            title: "支持的 AI 服务商",
             description: "AI Dev Kit 支持多种 AI 提供商和服务",
             studio: ["OpenAI", "ElevenLabs"],
             pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere"],
             addon: ["PixelLab"]
         },
         contact: {
@@ -684,17 +693,18 @@ export const translations = {
             description: "无论是特别的 AI 集成，还是定制的工作流自动化，\n我们都可以为你打造专属方案。价格从 $2,000 起。",
             form: {
                 name: "姓名",
+                namePlaceholder: "输入你的姓名",
                 email: "邮箱",
+                emailPlaceholder: "输入你的邮箱",
                 provider: "AI 服务商",
                 selectProvider: "选择 AI 服务商",
                 message: "项目详情",
                 messagePlaceholder: "请告诉我们你的项目需求…",
-                submit: "发送请求"
+                submit: "发送请求",
+                sending: "发送中...",
+                userCanChoose: "用户可从支持的服务中选择",
+                notOnList: "不在此列表中的服务"
             }
-        },
-        newsletter: {
-            title: "订阅我们的通讯",
-            description: "展示我们最新作品的视觉合集——每一件都凝聚了意图、情感与风格。"
         },
         footer: {
             description: "AI Dev Kit 为 Unity 提供统一流畅的 API，让你无需面对多个服务商、SDK 和速率限制的混乱，也能轻松构建 AI 功能。",
@@ -858,11 +868,11 @@ export const translations = {
             }
         },
         providers: {
-            title: "Proveedores de IA Soportados",
+            title: "Proveedores de IA compatibles",
             description: "AI Dev Kit admite una amplia gama de proveedores y servicios de IA",
             studio: ["OpenAI", "ElevenLabs"],
             pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere"],
             addon: ["PixelLab"]
         },
         contact: {
@@ -870,17 +880,18 @@ export const translations = {
             description: "Si necesitas una integración de IA especializada o automatizar tu flujo de trabajo,\npodemos desarrollar exactamente lo que buscas. Desde $2,000.",
             form: {
                 name: "Tu Nombre",
+                namePlaceholder: "Ingresa tu nombre",
                 email: "Tu Correo",
+                emailPlaceholder: "Ingresa tu correo",
                 provider: "Proveedor de IA",
                 selectProvider: "Selecciona un Proveedor",
                 message: "Detalles del Proyecto",
                 messagePlaceholder: "Cuéntanos qué necesitas para tu proyecto...",
-                submit: "Enviar Solicitud"
+                submit: "Enviar Solicitud",
+                sending: "Enviando...",
+                userCanChoose: "El usuario puede elegir entre los proveedores compatibles",
+                notOnList: "Algo que no está en esta lista"
             }
-        },
-        newsletter: {
-            title: "Suscríbete al Boletín",
-            description: "Una colección visual de nuestros trabajos más recientes — cada pieza creada con intención, emoción y estilo."
         },
         footer: {
             description: "AI Dev Kit ofrece una API unificada y fluida para todos los servicios principales de IA en Unity. Crea funciones impulsadas por IA sin el caos de gestionar múltiples proveedores, SDKs o límites.",

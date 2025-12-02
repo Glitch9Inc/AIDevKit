@@ -11,6 +11,7 @@ const providerIcons = {
     "GroqCloud": "/icons/api-groq-cloud.png",
     "Perplexity": "/icons/api-perplexity.png",
     "xAI Grok": "/icons/api-xai.png",
+    "Cohere": "/icons/api-cohere.png",
     "Ollama": "/icons/api-ollama.png",
     "ElevenLabs": "/icons/api-eleven-labs.png",
     "OpenRouter": "/icons/api-open-router.png",

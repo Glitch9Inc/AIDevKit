@@ -13,19 +13,32 @@ export default function HeroSection() {
                 <div className="absolute top-40 -right-32 w-[600px] h-[600px] bg-indigo-500/20 rounded-full blur-[130px]"></div>
                 <div className="absolute bottom-0 left-1/3 w-[450px] h-[450px] bg-purple-600/15 rounded-full blur-[100px]"></div>
             </div>
-            <motion.a
-                href="https://discord.gg/hgajxPpJYf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center mt-48 gap-2 border border-slate-600 text-gray-50 rounded-full px-4 py-2 hover:border-slate-500 transition"
-                initial={{ y: -20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
-            >
-                <div className="size-2.5 bg-[#5865F2] rounded-full animate-pulse"></div>
-                <span>{t('hero.joinDiscord')}</span>
-            </motion.a>
+            <div className="flex flex-col items-center gap-1">
+                <motion.a
+                    href="https://discord.gg/hgajxPpJYf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center mt-48 gap-2 border border-slate-600 text-gray-50 rounded-full px-4 py-2 hover:border-slate-500 transition"
+                    initial={{ y: -20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
+                >
+                    <div className="size-2.5 bg-[#5865F2] rounded-full animate-pulse"></div>
+                    <span>{t('hero.joinDiscord')}</span>
+                </motion.a>
+                {t('hero.discordLanguageSupport') && (
+                    <motion.p
+                        className="text-xs text-slate-500"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3 }}
+                    >
+                        {t('hero.discordLanguageSupport')}
+                    </motion.p>
+                )}
+            </div>
             <motion.h1 className="text-center text-5xl leading-[68px] md:text-6xl md:leading-[70px] mt-4 font-semibold max-w-2xl whitespace-pre-line"
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}

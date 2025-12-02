@@ -12,7 +12,24 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-    const [currentLanguage, setCurrentLanguage] = useState('en');
+    const getInitialLanguage = () => {
+        // Check localStorage first
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) return savedLanguage;
+
+        // Detect browser language
+        const browserLang = navigator.language.toLowerCase();
+
+        // Map browser language to supported languages
+        if (browserLang.startsWith('ko')) return 'ko';
+        if (browserLang.startsWith('ja')) return 'ja';
+        if (browserLang.startsWith('zh')) return 'zh';
+        if (browserLang.startsWith('es')) return 'es';
+
+        return 'en'; // default
+    };
+
+    const [currentLanguage, setCurrentLanguage] = useState(getInitialLanguage());
 
     const t = (key) => {
         const keys = key.split('.');
@@ -22,11 +39,12 @@ export const LanguageProvider = ({ children }) => {
             value = value?.[k];
         }
 
-        return value || key;
+        return value !== undefined ? value : '';
     };
 
     const changeLanguage = (langCode) => {
         setCurrentLanguage(langCode);
+        localStorage.setItem('language', langCode);
     };
 
     return (
