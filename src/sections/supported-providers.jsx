@@ -12,6 +12,7 @@ const providerIcons = {
     "Perplexity": "/icons/api-perplexity.png",
     "xAI Grok": "/icons/api-xai.png",
     "Cohere": "/icons/api-cohere.png",
+    "Mistral": "/icons/api-mistral.png",
     "Ollama": "/icons/api-ollama.png",
     "ElevenLabs": "/icons/api-eleven-labs.png",
     "OpenRouter": "/icons/api-open-router.png",

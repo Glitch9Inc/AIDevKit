@@ -140,7 +140,7 @@ export const translations = {
             description: "AI Dev Kit supports a wide range of AI providers and services",
             studio: ["OpenAI", "ElevenLabs"],
             pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral"],
             addon: ["PixelLab"]
         },
         footer: {
@@ -310,7 +310,7 @@ export const translations = {
             description: "AI Dev Kit는 다양한 AI 프로바이더와 서비스를 지원합니다",
             studio: ["OpenAI", "ElevenLabs"],
             pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral"],
             addon: ["PixelLab"]
         },
         contact: {
@@ -498,7 +498,7 @@ export const translations = {
             description: "AI Dev Kitは幅広いAIサービスに対応しています",
             studio: ["OpenAI", "ElevenLabs"],
             pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral"],
             addon: ["PixelLab"]
         },
         contact: {
@@ -685,7 +685,7 @@ export const translations = {
             description: "AI Dev Kit 支持多种 AI 提供商和服务",
             studio: ["OpenAI", "ElevenLabs"],
             pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral"],
             addon: ["PixelLab"]
         },
         contact: {
@@ -872,7 +872,7 @@ export const translations = {
             description: "AI Dev Kit admite una amplia gama de proveedores y servicios de IA",
             studio: ["OpenAI", "ElevenLabs"],
             pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral"],
             addon: ["PixelLab"]
         },
         contact: {

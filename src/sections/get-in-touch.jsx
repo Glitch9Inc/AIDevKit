@@ -22,6 +22,7 @@ export default function GetInTouch() {
         { value: "Ollama", label: "Ollama" },
         { value: "ElevenLabs", label: "ElevenLabs" },
         { value: "Cohere", label: "Cohere" },
+        { value: "Mistral", label: "Mistral" },
         { value: "Amazon Bedrock", label: "Amazon Bedrock" },
         { value: "Something not on this list", label: t('contact.form.notOnList') }
     ];
