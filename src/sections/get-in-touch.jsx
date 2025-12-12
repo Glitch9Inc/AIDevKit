@@ -56,9 +56,13 @@ export default function GetInTouch() {
         const templateParams = {
             from_name: form.name.value,
             from_email: form.email.value,
+            reply_to: form.email.value,
+            customer_name: form.name.value,
+            customer_email: form.email.value,
             provider: selectedProvider.value,
             message: form.message.value,
-            to_email: 'munchkin@glitch9.dev'
+            to_email: 'munchkin@glitch9.dev',
+            to_name: 'Glitch9 Team'
         };
 
         try {
