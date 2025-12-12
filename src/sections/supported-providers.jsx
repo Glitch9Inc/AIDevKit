@@ -17,7 +17,11 @@ const providerIcons = {
     "ElevenLabs": "/icons/api-eleven-labs.png",
     "OpenRouter": "/icons/api-open-router.png",
     "DeepSeek": "/icons/api-deepseek.png",
-    "PixelLab": "/icons/api-pixel-lab.png"
+    "PixelLab": "/icons/api-pixel-lab.png",
+    "AI21 Labs": "/icons/api-ai21-labs.png",
+    "Amazon Bedrock": "/icons/api-amazon-bedrock.png",
+    "Amazon Polly": "/icons/api-amazon-aws.png",
+    "Amazon Transcribe": "/icons/api-amazon-aws.png"
 };
 
 export default function SupportedProviders() {

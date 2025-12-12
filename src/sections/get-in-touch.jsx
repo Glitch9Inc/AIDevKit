@@ -130,18 +130,23 @@ export default function GetInTouch() {
                                 transition={{ duration: 0.2 }}
                                 className='absolute z-10 w-full mt-2 border border-slate-600 rounded-xl bg-slate-900 shadow-2xl overflow-hidden'
                             >
-                                {providers.map((provider, index) => (
-                                    <div
-                                        key={index}
-                                        onClick={() => {
-                                            setSelectedProvider(provider);
-                                            setIsOpen(false);
-                                        }}
-                                        className='p-3 hover:bg-slate-800 cursor-pointer text-slate-200 transition'
-                                    >
-                                        <span>{provider.label}</span>
-                                    </div>
-                                ))}
+                                <div
+                                    className='max-h-80 overflow-y-auto'
+                                    onWheel={(e) => e.stopPropagation()}
+                                >
+                                    {providers.map((provider, index) => (
+                                        <div
+                                            key={index}
+                                            onClick={() => {
+                                                setSelectedProvider(provider);
+                                                setIsOpen(false);
+                                            }}
+                                            className='p-3 hover:bg-slate-800 cursor-pointer text-slate-200 transition'
+                                        >
+                                            <span>{provider.label}</span>
+                                        </div>
+                                    ))}
+                                </div>
                             </motion.div>
                         )}
                     </AnimatePresence>
