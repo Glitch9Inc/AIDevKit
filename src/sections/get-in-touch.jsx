@@ -8,22 +8,16 @@ import { useLanguage } from "../contexts/LanguageContext";
 export default function GetInTouch() {
     const { t } = useLanguage();
 
+    const providerOptions = Array.from(new Set([
+        ...((Array.isArray(t('providers.studio')) && t('providers.studio')) || []),
+        ...((Array.isArray(t('providers.pro')) && t('providers.pro')) || []),
+        ...((Array.isArray(t('providers.researchLab')) && t('providers.researchLab')) || []),
+        ...((Array.isArray(t('providers.addon')) && t('providers.addon')) || [])
+    ]));
+
     const providers = [
         { value: "User can choose from your supported providers", label: t('contact.form.userCanChoose') },
-        { value: "OpenAI", label: "OpenAI" },
-        { value: "Google Gemini", label: "Google Gemini" },
-        { value: "Anthropic Claude", label: "Anthropic Claude" },
-        { value: "Perplexity", label: "Perplexity" },
-        { value: "xAI Grok", label: "xAI Grok" },
-        { value: "Microsoft Azure", label: "Microsoft Azure" },
-        { value: "GroqCloud", label: "GroqCloud" },
-        { value: "OpenRouter", label: "OpenRouter" },
-        { value: "DeepSeek", label: "DeepSeek" },
-        { value: "Ollama", label: "Ollama" },
-        { value: "ElevenLabs", label: "ElevenLabs" },
-        { value: "Cohere", label: "Cohere" },
-        { value: "Mistral", label: "Mistral" },
-        { value: "Amazon Bedrock", label: "Amazon Bedrock" },
+        ...providerOptions.map((provider) => ({ value: provider, label: provider })),
         { value: "Something not on this list", label: t('contact.form.notOnList') }
     ];
     const [isSubmitting, setIsSubmitting] = useState(false);

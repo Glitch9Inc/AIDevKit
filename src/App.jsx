@@ -11,6 +11,7 @@ import HeroSection from "./sections/hero-section";
 import OurLatestCreation from "./sections/our-latest-creation";
 import TrustedCompanies from "./sections/trusted-companies";
 import SupportedProviders from "./sections/supported-providers";
+import AddonsSection from "./sections/addons";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 
@@ -27,6 +28,7 @@ function HomePage() {
                 <AboutOurApps />
                 <OurTestimonials />
                 <Pricing />
+                <AddonsSection />
                 <GetInTouch />
             </main>
             <Footer />

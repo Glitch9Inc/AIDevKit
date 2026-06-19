@@ -4,21 +4,14 @@ import { Check } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Pricing() {
-    const { t, currentLanguage } = useLanguage();
+    const { t } = useLanguage();
 
     const plans = [
         {
             name: t('pricing.studio.name'),
             price: t('pricing.studio.price'),
             description: t('pricing.studio.description'),
-            features: currentLanguage === 'en' ? [
-                "Editor Tools & Generators",
-                "AI Chat Assistant with voice",
-                "Text, Shader, Image, Audio generators",
-                "AI Model & Voice Library",
-                "Project-aware suggestions",
-                "Community support"
-            ] : t('pricing.studio.features'),
+            features: t('pricing.studio.features'),
             providers: t('providers.studio'),
             image: "/assets/package-studio.png",
             buttonText: t('pricing.studio.button'),
@@ -29,15 +22,8 @@ export default function Pricing() {
             name: t('pricing.pro.name'),
             price: t('pricing.pro.price'),
             description: t('pricing.pro.description'),
-            features: currentLanguage === 'en' ? [
-                "Everything in Studio",
-                "Advanced AI Agent Integration",
-                "Local server support with Ollama",
-                "Custom Inspector components",
-                "Memory & Function Calling",
-                "Priority support"
-            ] : t('pricing.pro.features'),
-            providers: [...t('providers.studio'), ...t('providers.pro')],
+            features: t('pricing.pro.features'),
+            providers: t('providers.pro'),
             image: "/assets/package-pro.png",
             buttonText: t('pricing.pro.button'),
             buttonStyle: "bg-indigo-600 hover:bg-indigo-700 text-white",
@@ -49,15 +35,8 @@ export default function Pricing() {
             name: t('pricing.researchLab.name'),
             price: t('pricing.researchLab.price'),
             description: t('pricing.researchLab.description'),
-            features: currentLanguage === 'en' ? [
-                "Everything in Pro",
-                "All AI Providers (10+)",
-                "Enterprise-grade workflows",
-                "Early access to experimental features",
-                "Realtime updates via Discord",
-                "Direct developer access"
-            ] : t('pricing.researchLab.features'),
-            providers: [...t('providers.studio'), ...t('providers.pro'), ...t('providers.researchLab'), ...t('providers.addon')],
+            features: t('pricing.researchLab.features'),
+            providers: t('providers.researchLab'),
             image: "/assets/package-research.png",
             buttonText: t('pricing.researchLab.button'),
             buttonStyle: "border-2 border-slate-400 hover:bg-white/10",

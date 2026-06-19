@@ -98,23 +98,51 @@ export const translations = {
             title: "Choose Your Edition",
             description: "One-time purchase Unity packages with different feature sets. All editions include lifetime updates.",
             studio: {
-                name: "Studio",
-                price: "$19.99",
+                name: "Lite",
+                price: "Free",
                 description: "Perfect for non-coders and content creators",
-                button: "Get Studio"
+                button: "Get Lite",
+                features: [
+                    "OpenAI-only runtime API",
+                    "No-code Editor Playgrounds",
+                    "Inspector-integrated AI tools",
+                    "Text, image, audio, and code generation",
+                    "Generation History",
+                    "Beginner-friendly quick start"
+                ]
             },
             pro: {
                 name: "Pro",
                 price: "$39.99",
                 description: "Complete solution for Unity developers",
                 button: "Go Pro",
-                popular: "Most Popular"
+                popular: "Most Popular",
+                features: [
+                    "Includes all Lite features",
+                    "Drop-in AI Agent component",
+                    "In-Editor agent playground",
+                    "Voice interaction with mic + streaming playback",
+                    "Tool calling and action workflows",
+                    "Realtime voice agents",
+                    "Local-first providers: Ollama, LM Studio, Sherpa-ONNX",
+                    "Ready-to-run sample scenes"
+                ]
             },
             researchLab: {
                 name: "Research Lab",
-                price: "$69.99",
-                description: "For researchers and AI experts",
-                button: "Join Research Lab"
+                price: "$79.99",
+                description: "For researchers and enterprise-level solutions",
+                button: "Join Research Lab",
+                features: [
+                    "Includes all Pro features",
+                    "Microsoft Graph for SharePoint, OneDrive, Mail, Calendar, and To Do",
+                    "Document RAG with indexing, embeddings, and citations",
+                    "Azure and AWS enterprise integrations",
+                    "Expanded enterprise provider set",
+                    "Enterprise OAuth and secure credential flows",
+                    "Vector store workflow + server gateway template",
+                    "Enterprise sample scenes"
+                ]
             }
         },
         contact: {
@@ -138,18 +166,47 @@ export const translations = {
         providers: {
             title: "Supported AI Providers",
             description: "AI Dev Kit supports a wide range of AI providers and services",
-            studio: ["OpenAI", "ElevenLabs"],
-            pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral", "AI21 Labs", "Amazon Bedrock", "Amazon Polly", "Amazon Transcribe"],
-            addon: ["PixelLab"]
+            studio: ["OpenAI"],
+            pro: ["Google Gemini", "Anthropic Claude", "DeepSeek", "ElevenLabs", "OpenRouter", "Ollama (Local)", "LM Studio (Local)", "Sherpa-ONNX (Local)"],
+            researchLab: ["Amazon AWS", "Microsoft Azure", "xAI Grok", "Perplexity", "Cohere", "Mistral", "AI21", "GroqCloud"],
+            addon: ["Replicate", "Stability AI", "PixelLab", "RetroDiffusion"]
+        },
+        addonsSection: {
+            title: "Specialized Addons",
+            description: "Extend AI Dev Kit with focused tools for localization, image pipelines, and pixel-first workflows.",
+            legacyLabel: "Previously:",
+            providersLabel: "Powered by",
+            viewAddon: "View Add-on",
+            aiSheets: {
+                name: "AI Sheets",
+                legacy: "AI DevKit Localization",
+                description: "Localization and spreadsheet workflows for teams managing multilingual Unity content.",
+                status: "Coming Soon",
+                providers: []
+            },
+            aiImageStudio: {
+                name: "AI Image Studio",
+                legacy: "New add-on",
+                description: "A dedicated image generation toolkit for concept art, marketing visuals, and content production.",
+                status: "New",
+                providers: ["Replicate", "Stability AI"]
+            },
+            aiPixelStudio: {
+                name: "AI Pixel Studio",
+                legacy: "AI DevKit PixelArt",
+                description: "Pixel-art focused generation workflows for sprites, tiles, icons, and retro-style asset pipelines.",
+                status: "Coming Soon",
+                providers: ["PixelLab", "RetroDiffusion"]
+            }
         },
         footer: {
             description: "AI Dev Kit provides a unified, fluent API for all major AI services in Unity. Build AI-powered features without the chaos of managing multiple providers, SDKs, and rate limits.",
             addons: "Addons",
             connect: "Connect",
             company: "Company",
-            localization: "AI DevKit Localization",
-            pixelart: "AI DevKit PixelArt (Coming Soon)",
+            sheets: "AI Sheets",
+            imageStudio: "AI Image Studio",
+            pixelStudio: "AI Pixel Studio",
             glitch9: "Glitch9",
             about: "Glitch9",
             contactUs: "Contact us",
@@ -258,18 +315,17 @@ export const translations = {
             title: "에디션을 선택하세요",
             description: "기능 구성이 다른 Unity 패키지를 일회성 구매로 제공하며, 모든 버전에 평생 업데이트가 포함됩니다.",
             studio: {
-                name: "스튜디오",
-                price: "$19.99",
+                name: "라이트",
+                price: "무료",
                 description: "코딩에 익숙하지 않은 사용자와 크리에이터에게 적합",
-                button: "구매",
+                button: "받기",
                 features: [
-                    "OpenAI & ElevenLabs 지원",
-                    "에디터 도구 · 생성기 포함",
-                    "음성 기반 AI 채팅 어시스턴트",
-                    "텍스트/셰이더/이미지/오디오 생성기",
-                    "AI 모델 & 음성 라이브러리",
-                    "프로젝트 맞춤 추천",
-                    "커뮤니티 지원"
+                    "OpenAI 전용 런타임 API",
+                    "노코드 에디터 플레이그라운드",
+                    "인스펙터 통합 AI 도구",
+                    "텍스트/이미지/오디오/코드 생성",
+                    "생성 히스토리",
+                    "초보자용 빠른 시작 워크플로우"
                 ]
             },
             pro: {
@@ -279,39 +335,40 @@ export const translations = {
                 button: "구매",
                 popular: "인기",
                 features: [
-                    "스튜디오 포함 전체 기능",
-                    "고급 AI 에이전트 시스템",
-                    "Google Gemini · Anthropic Claude",
-                    "Ollama 로컬 서버 통합",
-                    "커스텀 인스펙터 컴포넌트",
-                    "메모리 · 함수 호출",
-                    "스트리밍 · 모더레이션 기능",
-                    "우선 기술 지원"
+                    "라이트의 모든 기능 포함",
+                    "드롭인 AI 에이전트 컴포넌트",
+                    "에디터 내 에이전트 플레이그라운드",
+                    "마이크 입력 + 스트리밍 재생 음성 상호작용",
+                    "툴 호출 및 액션 워크플로우",
+                    "실시간 음성 에이전트",
+                    "Ollama · LM Studio · Sherpa-ONNX 로컬 지원",
+                    "바로 실행 가능한 샘플 씬"
                 ]
             },
             researchLab: {
                 name: "리서치 랩",
-                price: "$69.99",
+                price: "$79.99",
                 description: "연구자와 AI 전문가를 위한 최고급 버전",
                 button: "구매",
                 features: [
                     "프로의 모든 기능 포함",
-                    "500+ AI 모델 지원",
-                    "Azure, GroqCloud, Perplexity, xAI",
-                    "기업용 워크플로우",
-                    "실험 기능 조기 이용 가능",
-                    "Discord 기반 빠른 업데이트",
-                    "개발자 직접 소통"
+                    "SharePoint · OneDrive · Mail · Calendar · To Do용 Microsoft Graph",
+                    "인덱싱 · 임베딩 · 출처 인용이 포함된 Document RAG",
+                    "Azure 및 AWS 엔터프라이즈 통합",
+                    "확장된 엔터프라이즈 provider 세트",
+                    "엔터프라이즈 OAuth 및 보안 자격 증명 흐름",
+                    "벡터 스토어 워크플로우 + 서버 게이트웨이 템플릿",
+                    "엔터프라이즈 샘플 씬"
                 ]
             }
         },
         providers: {
             title: "지원하는 AI 프로바이더",
             description: "AI Dev Kit는 다양한 AI 프로바이더와 서비스를 지원합니다",
-            studio: ["OpenAI", "ElevenLabs"],
-            pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral", "AI21 Labs", "Amazon Bedrock", "Amazon Polly", "Amazon Transcribe"],
-            addon: ["PixelLab"]
+            studio: ["OpenAI"],
+            pro: ["ElevenLabs", "Google Gemini", "OpenRouter", "Ollama (Local)", "DeepSeek", "Sherpa-ONNX (Local)", "Anthropic Claude", "LM Studio (Local)"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral", "AI21", "Amazon AWS"],
+            addon: ["Replicate", "Stability AI", "PixelLab", "RetroDiffusion"]
         },
         contact: {
             title: "맞춤형 AI 솔루션이 필요하신가요?",
@@ -331,13 +388,42 @@ export const translations = {
                 notOnList: "이 목록에 없는 서비스"
             }
         },
+        addonsSection: {
+            title: "전문 애드온",
+            description: "로컬라이제이션, 이미지 제작, 픽셀 작업에 특화된 확장 도구로 AI Dev Kit를 더 넓게 활용하세요.",
+            legacyLabel: "기존 이름:",
+            providersLabel: "지원 Provider",
+            viewAddon: "애드온 보기",
+            aiSheets: {
+                name: "AI Sheets",
+                legacy: "AI DevKit Localization",
+                description: "다국어 Unity 콘텐츠를 관리하는 팀을 위한 로컬라이제이션 및 스프레드시트 워크플로우입니다.",
+                status: "출시됨",
+                providers: []
+            },
+            aiImageStudio: {
+                name: "AI Image Studio",
+                legacy: "신규 애드온",
+                description: "컨셉 아트, 마케팅 비주얼, 콘텐츠 제작을 위한 전용 이미지 생성 툴킷입니다.",
+                status: "신규",
+                providers: ["Replicate", "Stability AI"]
+            },
+            aiPixelStudio: {
+                name: "AI Pixel Studio",
+                legacy: "AI DevKit PixelArt",
+                description: "스프라이트, 타일, 아이콘, 레트로풍 에셋 제작을 위한 픽셀 아트 전용 워크플로우입니다.",
+                status: "출시됨",
+                providers: ["PixelLab", "RetroDiffusion"]
+            }
+        },
         footer: {
             description: "AI Dev Kit은 Unity 내 주요 AI 서비스를 하나의 플루언트 API로 통합합니다. 여러 AI 서비스와 SDK, 속도 제한 관리에서 오는 복잡함 없이 AI 기능을 구축하세요.",
             addons: "애드온",
             connect: "연결",
             company: "회사",
-            localization: "AI DevKit 로컬라이제이션",
-            pixelart: "AI DevKit 픽셀아트 (출시 예정)",
+            sheets: "AI Sheets",
+            imageStudio: "AI Image Studio",
+            pixelStudio: "AI Pixel Studio",
             glitch9: "Glitch9",
             about: "Glitch9",
             contactUs: "문의하기",
@@ -446,18 +532,17 @@ export const translations = {
             title: "エディションを選択",
             description: "一度の購入で利用できるUnityパッケージ。すべてのエディションに永久アップデートが含まれます。",
             studio: {
-                name: "スタジオ",
-                price: "$19.99",
+                name: "Lite",
+                price: "無料",
                 description: "ノンコーダーやクリエイターに最適",
-                button: "スタジオを入手",
+                button: "Liteを入手",
                 features: [
-                    "OpenAI & ElevenLabs対応",
-                    "エディターツール・ジェネレーター",
-                    "音声付きAIチャットアシスタント",
-                    "テキスト／シェーダー／画像／音声生成",
-                    "AIモデル & ボイスライブラリ",
-                    "プロジェクトに基づく提案",
-                    "コミュニティサポート"
+                    "OpenAI専用ランタイムAPI",
+                    "ノーコードのエディタープレイグラウンド",
+                    "インスペクター統合AIツール",
+                    "テキスト／画像／音声／コード生成",
+                    "生成履歴",
+                    "初心者向けクイックスタート"
                 ]
             },
             pro: {
@@ -467,39 +552,40 @@ export const translations = {
                 button: "プロを入手",
                 popular: "人気",
                 features: [
-                    "スタジオ版のすべての機能",
-                    "高度なAIエージェントシステム",
-                    "Google Gemini・Anthropic Claude",
-                    "Ollamaローカルサーバー対応",
-                    "カスタムインスペクターコンポーネント",
-                    "メモリ・関数呼び出し",
-                    "ストリーミング・モデレーション",
-                    "優先サポート"
+                    "Liteの全機能を含む",
+                    "ドロップインAIエージェントコンポーネント",
+                    "エディター内エージェントプレイグラウンド",
+                    "マイク入力とストリーミング再生による音声対話",
+                    "ツール呼び出しとアクションワークフロー",
+                    "リアルタイム音声エージェント",
+                    "Ollama・LM Studio・Sherpa-ONNX のローカル対応",
+                    "すぐに使えるサンプルシーン"
                 ]
             },
             researchLab: {
                 name: "リサーチラボ",
-                price: "$69.99",
+                price: "$79.99",
                 description: "研究者・AI専門家向けの最上位版",
                 button: "リサーチラボに参加",
                 features: [
-                    "プロ版のすべての機能",
-                    "500+ のAIモデルに完全対応",
-                    "Azure・GroqCloud・Perplexit qy・xAI",
-                    "エンタープライズ向けワークフロー",
-                    "実験的機能への早期アクセス",
-                    "Discordでの高速アップデート",
-                    "開発者との直接コミュニケーション"
+                    "Proの全機能を含む",
+                    "SharePoint・OneDrive・Mail・Calendar・To Do 向け Microsoft Graph",
+                    "インデックス化・埋め込み・出典付きの Document RAG",
+                    "Azure と AWS のエンタープライズ統合",
+                    "拡張されたエンタープライズ向けプロバイダー群",
+                    "エンタープライズOAuthと安全な認証情報フロー",
+                    "ベクターストアワークフロー + サーバーゲートウェイテンプレート",
+                    "エンタープライズ向けサンプルシーン"
                 ]
             }
         },
         providers: {
             title: "対応するAIサービス",
             description: "AI Dev Kitは幅広いAIサービスに対応しています",
-            studio: ["OpenAI", "ElevenLabs"],
-            pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral", "AI21 Labs", "Amazon Bedrock", "Amazon Polly", "Amazon Transcribe"],
-            addon: ["PixelLab"]
+            studio: ["OpenAI"],
+            pro: ["ElevenLabs", "Google Gemini", "OpenRouter", "Ollama (Local)", "DeepSeek", "Sherpa-ONNX (Local)", "Anthropic Claude", "LM Studio (Local)"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral", "AI21", "Amazon AWS"],
+            addon: ["Replicate", "Stability AI", "PixelLab", "RetroDiffusion"]
         },
         contact: {
             title: "オーダーメイドAIソリューションを\nご希望ですか？",
@@ -519,13 +605,42 @@ export const translations = {
                 notOnList: "このリストにないサービス"
             }
         },
+        addonsSection: {
+            title: "専用アドオン",
+            description: "ローカライズ、画像制作、ピクセル制作に特化した拡張ツールで AI Dev Kit を広げられます。",
+            legacyLabel: "旧名称:",
+            providersLabel: "対応プロバイダー",
+            viewAddon: "アドオンを見る",
+            aiSheets: {
+                name: "AI Sheets",
+                legacy: "AI DevKit Localization",
+                description: "多言語の Unity コンテンツを管理するチーム向けのローカライズおよびスプレッドシートワークフローです。",
+                status: "提供中",
+                providers: []
+            },
+            aiImageStudio: {
+                name: "AI Image Studio",
+                legacy: "新規アドオン",
+                description: "コンセプトアート、マーケティング用ビジュアル、制作ワークフロー向けの画像生成ツールキットです。",
+                status: "新規",
+                providers: ["Replicate", "Stability AI"]
+            },
+            aiPixelStudio: {
+                name: "AI Pixel Studio",
+                legacy: "AI DevKit PixelArt",
+                description: "スプライト、タイル、アイコン、レトロ調アセット制作向けのピクセルアート専用ワークフローです。",
+                status: "提供中",
+                providers: ["PixelLab", "RetroDiffusion"]
+            }
+        },
         footer: {
             description: "AI Dev Kitは、Unityで利用できる主要AIサービスをひとつのフルーエントAPIに統合します。複数プロバイダーやSDK管理の煩雑さから解放され、AI機能をスムーズに構築できます。",
             addons: "アドオン",
             connect: "つながる",
             company: "企業情報",
-            localization: "AI DevKit ローカライゼーション",
-            pixelart: "AI DevKit ピクセルアート（近日公開）",
+            sheets: "AI Sheets",
+            imageStudio: "AI Image Studio",
+            pixelStudio: "AI Pixel Studio",
             glitch9: "Glitch9",
             about: "Glitch9",
             contactUs: "お問い合わせ",
@@ -633,18 +748,17 @@ export const translations = {
             title: "选择适合你的版本",
             description: "一次性购买的 Unity 套件，功能配置不同，所有版本均包含终身更新。",
             studio: {
-                name: "Studio",
-                price: "$19.99",
+                name: "Lite",
+                price: "免费",
                 description: "适合非程序员与内容创作者",
-                button: "获取 Studio",
+                button: "获取 Lite",
                 features: [
-                    "支持 OpenAI 与 ElevenLabs",
-                    "编辑器工具与生成器",
-                    "语音驱动 AI 聊天助手",
-                    "文本 / 着色器 / 图像 / 音频生成",
-                    "AI 模型与声音库",
-                    "基于项目的智能建议",
-                    "社区支持"
+                    "仅限 OpenAI 的运行时 API",
+                    "无需编写代码的编辑器 Playground",
+                    "集成到 Inspector 的 AI 工具",
+                    "文本 / 图像 / 音频 / 代码生成",
+                    "生成历史记录",
+                    "面向新手的快速上手流程"
                 ]
             },
             pro: {
@@ -654,39 +768,40 @@ export const translations = {
                 button: "获取 Pro",
                 popular: "最受欢迎",
                 features: [
-                    "包含 Studio 的全部功能",
-                    "高级 AI 代理系统",
-                    "Google Gemini、Anthropic Claude",
-                    "支持 Ollama 本地服务器",
-                    "自定义 Inspector 组件",
-                    "记忆与函数调用",
-                    "流式输出与内容调控",
-                    "优先技术支持"
+                    "包含 Lite 的所有功能",
+                    "即插即用的 AI Agent 组件",
+                    "编辑器内 Agent Playground",
+                    "麦克风输入与流式播放的语音交互",
+                    "工具调用与动作工作流",
+                    "实时语音 Agent",
+                    "支持 Ollama、LM Studio、Sherpa-ONNX 本地运行",
+                    "可直接运行的示例场景"
                 ]
             },
             researchLab: {
                 name: "Research Lab",
-                price: "$69.99",
+                price: "$79.99",
                 description: "研究人员与 AI 专家专用的高级版本",
                 button: "加入 Research Lab",
                 features: [
-                    "包含 Pro 的全部功能",
-                    "支持 500+ AI 模型",
-                    "Azure、GroqCloud、Perplexity、xAI",
-                    "企业级工作流程",
-                    "实验性功能提前体验",
-                    "通过 Discord 快速更新",
-                    "开发者直接沟通"
+                    "包含 Pro 的所有功能",
+                    "面向 SharePoint、OneDrive、Mail、Calendar、To Do 的 Microsoft Graph",
+                    "带索引、嵌入与引用出处的 Document RAG",
+                    "Azure 与 AWS 企业级集成",
+                    "扩展的企业级 Provider 集合",
+                    "企业级 OAuth 与安全凭据流程",
+                    "向量存储工作流 + 服务器网关模板",
+                    "企业级示例场景"
                 ]
             }
         },
         providers: {
             title: "支持的 AI 服务商",
             description: "AI Dev Kit 支持多种 AI 提供商和服务",
-            studio: ["OpenAI", "ElevenLabs"],
-            pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral", "AI21 Labs", "Amazon Bedrock", "Amazon Polly", "Amazon Transcribe"],
-            addon: ["PixelLab"]
+            studio: ["OpenAI"],
+            pro: ["ElevenLabs", "Google Gemini", "OpenRouter", "Ollama (Local)", "DeepSeek", "Sherpa-ONNX (Local)", "Anthropic Claude", "LM Studio (Local)"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral", "AI21", "Amazon AWS"],
+            addon: ["Replicate", "Stability AI", "PixelLab", "RetroDiffusion"]
         },
         contact: {
             title: "需要定制AI解决方案？",
@@ -706,13 +821,42 @@ export const translations = {
                 notOnList: "不在此列表中的服务"
             }
         },
+        addonsSection: {
+            title: "专用附加组件",
+            description: "通过面向本地化、图像生成和像素工作流的专用扩展，进一步扩展 AI Dev Kit。",
+            legacyLabel: "原名称:",
+            providersLabel: "支持 Provider",
+            viewAddon: "查看附加组件",
+            aiSheets: {
+                name: "AI Sheets",
+                legacy: "AI DevKit Localization",
+                description: "适合管理多语言 Unity 内容团队的本地化与表格工作流工具。",
+                status: "已发布",
+                providers: []
+            },
+            aiImageStudio: {
+                name: "AI Image Studio",
+                legacy: "新附加组件",
+                description: "面向概念图、营销视觉和内容生产的专用图像生成工具包。",
+                status: "全新",
+                providers: ["Replicate", "Stability AI"]
+            },
+            aiPixelStudio: {
+                name: "AI Pixel Studio",
+                legacy: "AI DevKit PixelArt",
+                description: "面向精灵、地块、图标和复古风资源制作的像素艺术工作流。",
+                status: "已发布",
+                providers: ["PixelLab", "RetroDiffusion"]
+            }
+        },
         footer: {
             description: "AI Dev Kit 为 Unity 提供统一流畅的 API，让你无需面对多个服务商、SDK 和速率限制的混乱，也能轻松构建 AI 功能。",
             addons: "附加组件",
             connect: "联系",
             company: "公司",
-            localization: "AI DevKit 本地化",
-            pixelart: "AI DevKit 像素艺术（即将推出）",
+            sheets: "AI Sheets",
+            imageStudio: "AI Image Studio",
+            pixelStudio: "AI Pixel Studio",
             glitch9: "Glitch9",
             about: "关于 Glitch9",
             contactUs: "联系我们",
@@ -820,18 +964,17 @@ export const translations = {
             title: "Elige la Edición Adecuada",
             description: "Paquetes de compra única con diferentes conjuntos de funciones. Todas las ediciones incluyen actualizaciones de por vida.",
             studio: {
-                name: "Studio",
-                price: "$19.99",
+                name: "Lite",
+                price: "Gratis",
                 description: "Perfecto para creadores de contenido y usuarios sin experiencia en programación",
-                button: "Obtener Studio",
+                button: "Obtener Lite",
                 features: [
-                    "Integración con OpenAI y ElevenLabs",
-                    "Herramientas de editor y generadores",
-                    "Asistente de chat con voz",
-                    "Generación de texto, shaders, imágenes y audio",
-                    "Biblioteca de modelos de IA y voces",
-                    "Sugerencias inteligentes basadas en tu proyecto",
-                    "Soporte de la comunidad"
+                    "API de runtime exclusiva para OpenAI",
+                    "Playgrounds del Editor sin código",
+                    "Herramientas de IA integradas en el Inspector",
+                    "Generación de texto, imagen, audio y código",
+                    "Historial de generaciones",
+                    "Inicio rápido para principiantes"
                 ]
             },
             pro: {
@@ -841,39 +984,40 @@ export const translations = {
                 button: "Obtener Pro",
                 popular: "Más Popular",
                 features: [
-                    "Incluye todas las funciones de Studio",
-                    "Sistema avanzado de agentes de IA",
-                    "Google Gemini, Anthropic Claude",
-                    "Compatibilidad con servidores locales de Ollama",
-                    "Componentes personalizados de Inspector",
-                    "Memoria y llamadas a funciones",
-                    "Streaming y moderación",
-                    "Soporte prioritario"
+                    "Incluye todas las funciones de Lite",
+                    "Componente de AI Agent listo para usar",
+                    "Playground de agentes dentro del Editor",
+                    "Interacción por voz con micrófono y reproducción en streaming",
+                    "Llamadas a herramientas y flujos de acciones",
+                    "Agentes de voz en tiempo real",
+                    "Soporte local para Ollama, LM Studio y Sherpa-ONNX",
+                    "Escenas de ejemplo listas para ejecutar"
                 ]
             },
             researchLab: {
                 name: "Research Lab",
-                price: "$69.99",
+                price: "$79.99",
                 description: "La edición ideal para investigadores y expertos en IA",
                 button: "Unirse al Lab",
                 features: [
                     "Incluye todas las funciones de Pro",
-                    "Todos los modelos de IA (500+)",
-                    "Azure, GroqCloud, Perplexity, xAI",
-                    "Flujos de trabajo de nivel empresarial",
-                    "Acceso anticipado a funciones experimentales",
-                    "Actualizaciones rápidas vía Discord",
-                    "Comunicación directa con el desarrollador"
+                    "Microsoft Graph para SharePoint, OneDrive, Mail, Calendar y To Do",
+                    "Document RAG con indexación, embeddings y citas",
+                    "Integraciones empresariales con Azure y AWS",
+                    "Conjunto ampliado de proveedores empresariales",
+                    "OAuth empresarial y flujos seguros de credenciales",
+                    "Flujo de vector store + plantilla de server gateway",
+                    "Escenas de ejemplo para escenarios empresariales"
                 ]
             }
         },
         providers: {
             title: "Proveedores de IA compatibles",
             description: "AI Dev Kit admite una amplia gama de proveedores y servicios de IA",
-            studio: ["OpenAI", "ElevenLabs"],
-            pro: ["Google Gemini", "Ollama", "OpenRouter", "DeepSeek", "Anthropic Claude"],
-            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral", "AI21 Labs", "Amazon Bedrock", "Amazon Polly", "Amazon Transcribe"],
-            addon: ["PixelLab"]
+            studio: ["OpenAI"],
+            pro: ["ElevenLabs", "Google Gemini", "OpenRouter", "Ollama (Local)", "DeepSeek", "Sherpa-ONNX (Local)", "Anthropic Claude", "LM Studio (Local)"],
+            researchLab: ["GroqCloud", "Microsoft Azure", "Perplexity", "xAI Grok", "Cohere", "Mistral", "AI21", "Amazon AWS"],
+            addon: ["Replicate", "Stability AI", "PixelLab", "RetroDiffusion"]
         },
         contact: {
             title: "¿Necesitas una solución de IA personalizada?",
@@ -893,13 +1037,42 @@ export const translations = {
                 notOnList: "Algo que no está en esta lista"
             }
         },
+        addonsSection: {
+            title: "Complementos Especializados",
+            description: "Amplía AI Dev Kit con herramientas enfocadas en localización, generación de imágenes y flujos pixel art.",
+            legacyLabel: "Antes:",
+            providersLabel: "Impulsado por",
+            viewAddon: "Ver complemento",
+            aiSheets: {
+                name: "AI Sheets",
+                legacy: "AI DevKit Localization",
+                description: "Flujos de localización y hojas de cálculo para equipos que gestionan contenido multilingüe en Unity.",
+                status: "Disponible",
+                providers: []
+            },
+            aiImageStudio: {
+                name: "AI Image Studio",
+                legacy: "Nuevo complemento",
+                description: "Un kit dedicado a la generación de imágenes para concept art, visuales de marketing y producción de contenido.",
+                status: "Nuevo",
+                providers: ["Replicate", "Stability AI"]
+            },
+            aiPixelStudio: {
+                name: "AI Pixel Studio",
+                legacy: "AI DevKit PixelArt",
+                description: "Flujos de trabajo centrados en pixel art para sprites, tiles, iconos y assets de estilo retro.",
+                status: "Disponible",
+                providers: ["PixelLab", "RetroDiffusion"]
+            }
+        },
         footer: {
             description: "AI Dev Kit ofrece una API unificada y fluida para todos los servicios principales de IA en Unity. Crea funciones impulsadas por IA sin el caos de gestionar múltiples proveedores, SDKs o límites.",
             addons: "Complementos",
             connect: "Conectar",
             company: "Compañía",
-            localization: "Localización de AI DevKit",
-            pixelart: "AI DevKit PixelArt (Próximamente)",
+            sheets: "AI Sheets",
+            imageStudio: "AI Image Studio",
+            pixelStudio: "AI Pixel Studio",
             glitch9: "Glitch9",
             about: "Sobre Glitch9",
             contactUs: "Contáctanos",
